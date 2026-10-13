@@ -11,7 +11,8 @@ export interface Overview {
   updatesCover: { from: string; to: string } | null;
   latestBrief: string | null;
 }
-export interface Meta { overview: Overview; sectors: Sector[]; companies: CompanyLite[]; modes: { id: string; label: string }[]; brief: Brief; upcoming: Catalyst[] }
+export interface Meta { overview: Overview; sectors: Sector[]; companies: CompanyLite[]; modes: { id: string; label: string }[]; sources: { id: string; label: string }[]; semantic: boolean; brief: Brief; upcoming: Catalyst[] }
+export interface Paper { id: string; title: string; summary: string; published: string; upvotes: number; url: string; arxiv: string }
 export interface SectorDetail extends Sector {
   recentUpdates: UpdateLite[];
   companies: { name: string; type: string; edge: string }[];
@@ -26,7 +27,7 @@ export interface AskRequest {
   question: string;
   focus: { mode: string; sector?: string; company?: string; days?: number };
   effort: "low" | "medium" | "high";
-  web: boolean;
+  sources: string;
 }
 
 export type AskEvent =
@@ -47,6 +48,7 @@ export const api = {
   meta: () => getJson<Meta>("/api/meta"),
   sector: (id: string) => getJson<SectorDetail>(`/api/sector?id=${encodeURIComponent(id)}`),
   company: (id: string) => getJson<CompanyDetail>(`/api/company?id=${encodeURIComponent(id)}`),
+  papers: (q: string, limit = 5) => getJson<Paper[]>(`/api/papers?q=${encodeURIComponent(q)}&limit=${limit}`),
   reset: (conversationId: string) =>
     fetch("/api/reset", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ conversationId }) }),
 

@@ -2,17 +2,24 @@ import readline from "node:readline/promises";
 import type Anthropic from "@anthropic-ai/sdk";
 import { loadDesk } from "./store.ts";
 import { describeApiError, runJarvis, type RunHandlers } from "./jarvis.ts";
+import { buildIndex } from "./semantic.ts";
 
 // Jarvis on the command line. For the app with dropdowns and panels, use `npm run app`.
 //   npm run ask -- "What should I learn first about counter-drone?"
 //   npm run ask                      (conversation; type "exit" to quit)
 //   npm run ask -- --web "…"         (also lets Jarvis search the web for news newer than the data)
+//   npm run ask -- --no-papers "…"   (turns off Hugging Face Papers research search)
 // Uses the paid Claude API (ANTHROPIC_API_KEY or an `ant auth login` profile).
 
 const desk = await loadDesk();
 const args = process.argv.slice(2);
 const web = args.includes("--web");
-const question = args.filter((a) => a !== "--web").join(" ").trim();
+const papers = !args.includes("--no-papers");
+const question = args.filter((a) => !a.startsWith("--")).join(" ").trim();
+const index = await buildIndex(desk, (m) => console.error(m)).catch((err) => {
+  console.error(`Semantic search off (${err instanceof Error ? err.message : err}); using keyword search.`);
+  return undefined;
+});
 
 const handlers: RunHandlers = {
   onText: (t) => process.stdout.write(t),
@@ -20,7 +27,7 @@ const handlers: RunHandlers = {
 };
 
 async function turn(messages: Anthropic.Beta.BetaMessageParam[]) {
-  const res = await runJarvis(desk, messages, { web }, handlers);
+  const res = await runJarvis(desk, messages, { web, papers, index }, handlers);
   process.stdout.write("\n");
   if (res.stopReason === "refusal") console.error(`\n[Declined: ${res.refusalCategory ?? "no category"}]`);
   else if (res.stopReason === "max_tokens") console.error("\n[Answer was cut off at the length limit.]");

@@ -16,6 +16,9 @@ Your knowledge base is `data/` in this repo. Query it with the free command line
 - `npm run -s kb -- research "<keywords>" [--sector id]`
 - `npm run -s kb -- ideas [--sector id]`
 - `npm run -s kb -- brief [YYYY-MM-DD]`
+- `npm run -s kb -- semantic "<question in plain words>" [--kinds update,company,research,idea,sector] [--sector id]` — search by meaning (local Hugging Face model); best for concepts
+- `npm run -s kb -- related <id>` — updates most similar to an update, company, research, idea or sector
+- `npm run -s kb -- papers "<technical topic>" [--since YYYY-MM-DD]` — recent AI/robotics/sensing research from Hugging Face Papers; label it research, not news
 
 Look things up before answering, and search again with different words when results are thin. Use web search only for news newer than the stored data, and cite the page.
 

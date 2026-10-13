@@ -6,6 +6,8 @@ import type Anthropic from "@anthropic-ai/sdk";
 import { loadDesk } from "./store.ts";
 import { getBrief, getSector, overview, searchUpdates, upcomingEvents } from "./kb.ts";
 import { describeApiError, runJarvis, type Effort } from "./jarvis.ts";
+import { buildIndex, type SemanticIndex } from "./semantic.ts";
+import { searchPapers } from "./hf.ts";
 
 // Local server for the Jarvis app: serves the React UI from app-dist/, free data
 // endpoints from data/, and streams agent answers over server-sent events.
@@ -15,6 +17,22 @@ const PORT = Number(process.env.PORT ?? 8787);
 const STATIC_DIR = "app-dist";
 const desk = await loadDesk();
 const conversations = new Map<string, Anthropic.Beta.BetaMessageParam[]>();
+
+// Semantic search runs on a local Hugging Face model; if it can't load, Jarvis falls back to keywords.
+let index: SemanticIndex | undefined;
+try {
+  index = await buildIndex(desk, console.log);
+  console.log(`Semantic index ready: ${index.docs.length} items.`);
+} catch (err) {
+  console.warn(`Semantic search off (${err instanceof Error ? err.message : err}); using keyword search.`);
+}
+
+export const SOURCES = {
+  data: { label: "My data only", papers: false, web: false },
+  papers: { label: "Data + AI papers", papers: true, web: false },
+  all: { label: "Data + papers + web", papers: true, web: true },
+} as const;
+type SourceId = keyof typeof SOURCES;
 
 export const MODES = {
   learn: { label: "Teach me", instruction: "Teach me this from the ground up: the basics, key terms and acronyms, the main players, how the money flows, and what to read next." },
@@ -30,7 +48,7 @@ interface AskBody {
   question: string;
   focus?: { mode?: Mode; sector?: string; company?: string; days?: number };
   effort?: Effort;
-  web?: boolean;
+  sources?: SourceId;
 }
 
 function focusLine(f: AskBody["focus"]): string {
@@ -79,7 +97,7 @@ async function ask(req: http.IncomingMessage, res: http.ServerResponse) {
     const result = await runJarvis(
       desk,
       [...history, { role: "user", content: focusLine(body.focus) + body.question.trim() }],
-      { web: body.web, effort: body.effort },
+      { ...(SOURCES[body.sources ?? "papers"] ?? SOURCES.papers), effort: body.effort, index },
       {
         onText: (text) => send("text", { text }),
         onTool: (name, input) => send("tool", { name, input }),
@@ -118,6 +136,8 @@ const server = http.createServer(async (req, res) => {
         sectors: [...desk.sectors].sort((a, b) => a.order - b.order),
         companies: desk.companies.map((c) => ({ id: c.id, name: c.name, sectors: c.sectors, type: c.type })).sort((a, b) => String(a.name).localeCompare(String(b.name))),
         modes: Object.entries(MODES).map(([id, m]) => ({ id, label: m.label })),
+        sources: Object.entries(SOURCES).map(([id, s]) => ({ id, label: s.label })),
+        semantic: !!index,
         brief: getBrief(desk),
         upcoming: upcomingEvents(desk, { days: 60 }),
       });
@@ -126,6 +146,13 @@ const server = http.createServer(async (req, res) => {
     if (req.method === "GET" && url.pathname === "/api/company") {
       const c = companyDetail(url.searchParams.get("id") ?? "");
       return c ? sendJson(res, 200, c) : sendJson(res, 404, { error: "Unknown company" });
+    }
+    if (req.method === "GET" && url.pathname === "/api/papers") {
+      try {
+        return sendJson(res, 200, await searchPapers(url.searchParams.get("q") ?? "", { limit: Number(url.searchParams.get("limit") ?? 5) }));
+      } catch (err) {
+        return sendJson(res, 502, { error: err instanceof Error ? err.message : String(err) });
+      }
     }
     if (req.method === "POST" && url.pathname === "/api/ask") return await ask(req, res);
     if (req.method === "POST" && url.pathname === "/api/reset") {

@@ -113,3 +113,6 @@ h1 span { color: var(--accent); }
   h1 { font-size: 36px; }
   .composer { padding: 10px; }
 }
+
+.hint { margin: -4px 0 0; font-size: 12px; color: var(--muted); }
+.linkish { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font: 12px var(--mono); }

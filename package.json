@@ -12,13 +12,15 @@
     "kb": "tsx src/kb-cli.ts",
     "ask": "tsx src/agent.ts",
     "app": "vite build && tsx src/server.ts",
-    "app:dev": "tsx src/server.ts & vite"
+    "app:dev": "tsx src/server.ts & vite",
+    "enrich": "tsx src/enrich.ts"
   },
   "engines": {
     "node": ">=22"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.133.0",
+    "@huggingface/transformers": "^4.3.1",
     "fast-xml-parser": "^5.11.2",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",

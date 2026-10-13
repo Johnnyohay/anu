@@ -4,6 +4,8 @@ import { z } from "zod/v4";
 import { SECTOR_IDS, UPDATE_TYPES } from "./schema.ts";
 import type { Desk } from "./store.ts";
 import { findCompanies, getBrief, getSector, listIdeas, overview, searchResearch, searchUpdates, upcomingEvents } from "./kb.ts";
+import { KINDS, related, semanticSearch, updateSimilarities, type SemanticIndex } from "./semantic.ts";
+import { searchPapers } from "./hf.ts";
 
 // The Jarvis agent: Claude with read-only tools over data/. Used by the command line
 // (src/agent.ts) and the web app's server (src/server.ts).
@@ -28,7 +30,11 @@ export interface RunHandlers {
 
 export interface RunOptions {
   web?: boolean;
+  /** Lets Jarvis search Hugging Face Papers (free) for technical research. */
+  papers?: boolean;
   effort?: Effort;
+  /** Semantic index from src/semantic.ts; without it, search is keyword-only. */
+  index?: SemanticIndex;
 }
 
 export interface RunResult {
@@ -40,11 +46,12 @@ export interface RunResult {
 const Sector = z.enum(SECTOR_IDS);
 const json = (v: unknown) => JSON.stringify(v);
 
-function makeTools(desk: Desk, onEvidence: (items: Evidence[]) => void) {
+function makeTools(desk: Desk, opts: RunOptions, onEvidence: (items: Evidence[]) => void) {
+  const index = opts.index;
   const report = (updates: { id: string; date: string; title: string; source: string | null }[]) =>
     onEvidence(updates.map(({ id, date, title, source }) => ({ id, date, title, source })));
 
-  return [
+  const tools = [
     betaZodTool({
       name: "overview",
       description: "The big picture: the headline thesis, the forces moving the industry, how much data is stored and the 20 sectors with their ids. Call this first when you need orientation.",
@@ -53,7 +60,7 @@ function makeTools(desk: Desk, onEvidence: (items: Evidence[]) => void) {
     }),
     betaZodTool({
       name: "search_updates",
-      description: "Search the dated, sourced news updates (contracts, funding, policy, milestones, deals). Every filter is optional; results are ranked by keyword match, then newest first.",
+      description: `Search the dated, sourced news updates (contracts, funding, policy, milestones, deals). Every filter is optional. ${index ? "Results are ranked by meaning and keywords together, so concept queries work." : "Results are ranked by keyword match, then newest first."}`,
       inputSchema: z.object({
         query: z.string().optional().describe("Keywords, e.g. 'hypersonic test' or 'Golden Dome'"),
         sectors: z.array(Sector).optional(),
@@ -64,7 +71,7 @@ function makeTools(desk: Desk, onEvidence: (items: Evidence[]) => void) {
         limit: z.number().int().optional().describe("Default 15, max 50"),
       }),
       run: async (input) => {
-        const result = searchUpdates(desk, input);
+        const result = searchUpdates(desk, input, index && input.query ? await updateSimilarities(index, input.query) : undefined);
         report(result.updates);
         return json(result);
       },
@@ -109,13 +116,70 @@ function makeTools(desk: Desk, onEvidence: (items: Evidence[]) => void) {
       inputSchema: z.object({ date: z.string().optional().describe("YYYY-MM-DD") }),
       run: async ({ date }) => json(getBrief(desk, date)),
     }),
-  ].map((t) => ({ ...t, eager_input_streaming: true }));
+  ];
+
+  const semanticTools = index
+    ? [
+        betaZodTool({
+          name: "semantic_search",
+          description: "Find anything in the knowledge base by meaning, across updates, companies, research, build ideas and sectors. Best for concepts and questions phrased in your own words (e.g. 'cheap ways to stop drone swarms'). Each result has a similarity from 0 to 1; below about 0.6 is weak.",
+          inputSchema: z.object({
+            query: z.string(),
+            kinds: z.array(z.enum(KINDS)).optional().describe("Limit to these kinds of item"),
+            sector: Sector.optional(),
+            since: z.string().optional().describe("YYYY-MM-DD; applies to updates"),
+            limit: z.number().int().optional().describe("Default 12, max 40"),
+          }),
+          run: async (input) => {
+            const results = await semanticSearch(desk, index, input);
+            report(results.filter((r) => r.kind === "update").map((r) => r.item as Evidence));
+            return json(results);
+          },
+        }),
+        betaZodTool({
+          name: "related_updates",
+          description: "The updates most similar in meaning to one item (an update, company, research, idea or sector id): other coverage of the same story, or the news most relevant to that company or idea.",
+          inputSchema: z.object({ id: z.string(), limit: z.number().int().optional() }),
+          run: async ({ id, limit }) => {
+            const result = related(desk, index, id, limit);
+            if (Array.isArray(result)) report(result.map((r) => r.update as Evidence));
+            return json(result);
+          },
+        }),
+      ]
+    : [];
+
+  const paperTools = opts.papers
+    ? [
+        betaZodTool({
+          name: "search_papers",
+          description: "Search Hugging Face Papers: recent arXiv research (AI, autonomy, robotics, computer vision, RF and sensing, cyber, materials) with community upvotes. Use it to explain the technology behind a trend or to see what is technically possible now. Results are research, not news: say so when you use them.",
+          inputSchema: z.object({
+            query: z.string().describe("Technical topic, e.g. 'drone swarm coordination' or 'synthetic aperture radar target detection'"),
+            since: z.string().optional().describe("YYYY-MM-DD, only papers published on or after"),
+            limit: z.number().int().optional().describe("Default 8, max 20"),
+          }),
+          run: async (input) => {
+            try {
+              const papers = await searchPapers(input.query, input);
+              onEvidence(papers.map((p) => ({ id: `paper-${p.id}`, date: p.published, title: p.title, source: `Hugging Face Papers [research] ${p.url}` })));
+              return json(papers);
+            } catch (err) {
+              return json({ error: err instanceof Error ? err.message : String(err) });
+            }
+          },
+        }),
+      ]
+    : [];
+
+  return [...tools, ...semanticTools, ...paperTools].map((t) => ({ ...t, eager_input_streaming: true }));
 }
 
-function systemPrompt(desk: Desk, web: boolean) {
+function systemPrompt(desk: Desk, opts: RunOptions) {
+  const web = !!opts.web;
   return `You are Jarvis, Johnny's personal helper for learning about and keeping up with the defense-technology industry. Johnny is a founder who is learning this industry, wants to understand where it is going, and wants to find something worth building.
 
-Your knowledge base is the data in this repo, reachable through your tools: sourced news updates, 20 sector briefs, a company directory, upcoming events, a research library, build ideas and daily briefs. Look things up before answering; search more than once when the first results are thin.
+Your knowledge base is the data in this repo, reachable through your tools: sourced news updates, 20 sector briefs, a company directory, upcoming events, a research library, build ideas and daily briefs. Look things up before answering; search more than once when the first results are thin.${opts.index ? " semantic_search finds items by meaning, so use it for concepts and for questions in everyday words." : ""}${opts.papers ? " search_papers finds technical research (arXiv via Hugging Face) when Johnny wants to understand how a technology works or where it is heading; label it as research, not news, and cite the paper." : ""}
 
 A question may start with a bracketed focus line set in Johnny's app (mode, sector, company, time range). Treat it as the scope of the question and follow the mode's instruction.
 
@@ -138,7 +202,7 @@ export async function runJarvis(
   signal?: AbortSignal,
 ): Promise<RunResult> {
   const web = !!opts.web;
-  const tools = makeTools(desk, (items) => on.onEvidence?.(items));
+  const tools = makeTools(desk, opts, (items) => on.onEvidence?.(items));
   const runner = client.beta.messages.toolRunner(
     {
       model: MODEL,
@@ -148,7 +212,7 @@ export async function runJarvis(
       thinking: { type: "adaptive" },
       output_config: { effort: opts.effort ?? "high" },
       cache_control: { type: "ephemeral" },
-      system: systemPrompt(desk, web),
+      system: systemPrompt(desk, opts),
       tools: web ? [...tools, { type: "web_search_20260209" as const, name: "web_search" as const, max_uses: 8 }] : tools,
       messages,
       max_iterations: 20,

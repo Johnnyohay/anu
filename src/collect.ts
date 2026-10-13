@@ -6,6 +6,7 @@
 import { XMLParser } from "fast-xml-parser";
 import { loadDesk, saveDaily, slug } from "./store.ts";
 import { buildApi } from "./build-api.ts";
+import { tagCompanies } from "./companies.ts";
 import type { Brief, Update } from "./schema.ts";
 
 type Tier = "primary" | "news" | "research" | "aggregator";
@@ -172,7 +173,14 @@ for (const a of articles) {
   } as Update & { score: number; auto: boolean });
 }
 
-desk.updates.push(...added.map(({ score, ...u }) => u));
+const fresh = added.map(({ score, ...u }) => u);
+// Tag companies with the local Hugging Face NER model; keyword matches above still stand if it can't load.
+try {
+  if (fresh.length) console.log(`Tagged companies on ${await tagCompanies(desk, fresh)} updates that had none.`);
+} catch (err) {
+  console.warn(`Company tagging skipped: ${err instanceof Error ? err.message : err}`);
+}
+desk.updates.push(...fresh);
 console.log(`Added ${added.length} new updates.`);
 
 // Free brief: only when nothing (e.g. a Claude-written brief) exists for today yet.
