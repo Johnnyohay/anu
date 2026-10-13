@@ -11,7 +11,7 @@ export interface Overview {
   updatesCover: { from: string; to: string } | null;
   latestBrief: string | null;
 }
-export interface Meta { overview: Overview; sectors: Sector[]; companies: CompanyLite[]; modes: { id: string; label: string }[]; sources: { id: string; label: string }[]; semantic: boolean; brief: Brief; upcoming: Catalyst[] }
+export interface Meta { overview: Overview; sectors: Sector[]; companies: CompanyLite[]; modes: { id: string; label: string }[]; sources: { id: string; label: string }[]; semantic: boolean; engine: { engine: string; model: string; label: string; web: boolean }; brief: Brief; upcoming: Catalyst[] }
 export interface Paper { id: string; title: string; summary: string; published: string; upvotes: number; url: string; arxiv: string }
 export interface SectorDetail extends Sector {
   recentUpdates: UpdateLite[];

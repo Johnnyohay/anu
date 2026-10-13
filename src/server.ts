@@ -2,10 +2,9 @@ import http from "node:http";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
-import type Anthropic from "@anthropic-ai/sdk";
 import { loadDesk } from "./store.ts";
 import { getBrief, getSector, overview, searchUpdates, upcomingEvents } from "./kb.ts";
-import { describeApiError, runAnu, type Effort } from "./anu.ts";
+import { describeApiError, engineInfo, runAnu, type ChatMessage, type Effort } from "./anu.ts";
 import { buildIndex, type SemanticIndex } from "./semantic.ts";
 import { searchPapers } from "./hf.ts";
 
@@ -16,7 +15,7 @@ import { searchPapers } from "./hf.ts";
 const PORT = Number(process.env.PORT ?? 8787);
 const STATIC_DIR = "app-dist";
 const desk = await loadDesk();
-const conversations = new Map<string, Anthropic.Beta.BetaMessageParam[]>();
+const conversations = new Map<string, ChatMessage[]>();
 
 // Semantic search runs on a local Hugging Face model; if it can't load, ANU falls back to keywords.
 let index: SemanticIndex | undefined;
@@ -136,7 +135,8 @@ const server = http.createServer(async (req, res) => {
         sectors: [...desk.sectors].sort((a, b) => a.order - b.order),
         companies: desk.companies.map((c) => ({ id: c.id, name: c.name, sectors: c.sectors, type: c.type })).sort((a, b) => String(a.name).localeCompare(String(b.name))),
         modes: Object.entries(MODES).map(([id, m]) => ({ id, label: m.label })),
-        sources: Object.entries(SOURCES).map(([id, s]) => ({ id, label: s.label })),
+        engine: engineInfo(),
+        sources: Object.entries(SOURCES).filter(([, s]) => !s.web || engineInfo().web).map(([id, s]) => ({ id, label: s.label })),
         semantic: !!index,
         brief: getBrief(desk),
         upcoming: upcomingEvents(desk, { days: 60 }),
@@ -167,4 +167,4 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, "127.0.0.1", () => console.log(`ANU is running at http://localhost:${PORT}`));
+server.listen(PORT, "127.0.0.1", () => console.log(`ANU is running at http://localhost:${PORT} (${engineInfo().label})`));
