@@ -26,7 +26,7 @@ function deskContext(desk: Desk, today: string) {
  */
 export async function research(desk: Desk, today: string): Promise<string> {
   const ctx = deskContext(desk, today);
-  const prompt = `Today is ${ctx.today}. You are the researcher for Jarvis, a personal daily defense-tech brief for a founder who is learning the industry, wants to stay ahead of it and find things to build.
+  const prompt = `Today is ${ctx.today}. You are the researcher for ANU, a personal daily defense-tech brief for a founder who is learning the industry, wants to stay ahead of it and find things to build.
 
 Find the significant developments across the whole defense-tech industry published since ${ctx.sinceDate}. Cover every sector below, not only the famous companies: contracts and awards, funding rounds, policy and budget moves, technology milestones, deals and IPOs, earnings, lessons from conflicts, allies' and adversaries' moves, and notable research reports.
 
@@ -90,7 +90,7 @@ export async function structure(desk: Desk, today: string, memo: string): Promis
     messages: [
       {
         role: "user",
-        content: `Today is ${ctx.today}. Turn this research memo into the day's entries for Jarvis, a personal defense-tech learning helper.
+        content: `Today is ${ctx.today}. Turn this research memo into the day's entries for ANU, a personal defense-tech learning helper.
 
 Rules:
 - updates: one entry per significant new development in the memo, with its exact source URL. Skip anything already on the desk (listed below). Sector ids must come from: ${SECTOR_IDS.join(", ")}.

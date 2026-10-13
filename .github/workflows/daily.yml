@@ -32,6 +32,12 @@ jobs:
           cache: npm
       - run: npm ci
 
+      # Hugging Face model weights (company tagging) download once, then come from this cache.
+      - uses: actions/cache@v4
+        with:
+          path: .hf-cache
+          key: hf-models-bert-base-NER-v1
+
       - name: Collect today's news and write the brief (free, no API key)
         if: github.event_name != 'push'
         run: npm run collect
@@ -42,7 +48,7 @@ jobs:
       - name: Commit new data
         if: github.event_name != 'push'
         run: |
-          git config user.name "jarvis bot"
+          git config user.name "anu bot"
           git config user.email "actions@users.noreply.github.com"
           git add data public/api
           git diff --cached --quiet || git commit -m "Daily brief $(date -u +%F)"

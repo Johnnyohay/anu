@@ -1,7 +1,7 @@
 import type { Desk } from "./store.ts";
 import type { Update } from "./schema.ts";
 
-// Read-only queries over the stored data. Shared by the Jarvis agent (src/agent.ts)
+// Read-only queries over the stored data. Shared by the ANU agent (src/agent.ts)
 // and the free command line (src/kb-cli.ts), so both answer from the same evidence.
 
 type Row = Record<string, unknown>;
@@ -48,7 +48,14 @@ export interface UpdateQuery {
   limit?: number;
 }
 
-export function searchUpdates(desk: Desk, f: UpdateQuery) {
+/** Similarity at or above which a semantic match counts even with no shared keywords. */
+export const SEMANTIC_MIN = 0.62;
+
+/**
+ * Ranks updates by keyword match, or, when `semantic` (update id → similarity to the
+ * query, from src/semantic.ts) is given, by a blend that also finds matches by meaning.
+ */
+export function searchUpdates(desk: Desk, f: UpdateQuery, semantic?: Map<string, number>) {
   const q = words(f.query ?? "");
   const company = f.company?.toLowerCase();
   const hits = desk.updates
@@ -56,13 +63,17 @@ export function searchUpdates(desk: Desk, f: UpdateQuery) {
     .filter((u) => !f.type || u.type === f.type)
     .filter((u) => !company || u.companies.some((c) => c.toLowerCase().includes(company)) || u.title.toLowerCase().includes(company))
     .filter((u) => (!f.since || u.d >= f.since) && (!f.until || u.d <= f.until))
-    .map((u) => ({ u, s: score(`${u.title} ${u.body} ${u.why} ${u.companies.join(" ")}`, q) }))
-    .filter((x) => x.s > 0)
+    .map((u) => {
+      const kw = score(`${u.title} ${u.body} ${u.why} ${u.companies.join(" ")}`, q);
+      const sem = semantic?.get(u.id);
+      return { u, kw, sem, s: sem === undefined || !q.length ? kw : 0.65 * sem + 0.35 * kw };
+    })
+    .filter((x) => x.kw > 0 || (x.sem ?? 0) >= SEMANTIC_MIN)
     .sort((a, b) => b.s - a.s || b.u.d.localeCompare(a.u.d));
   return { total: hits.length, updates: hits.slice(0, clamp(f.limit, 15, 50)).map((x) => slimUpdate(x.u)) };
 }
 
-function slimUpdate(u: Update) {
+export function slimUpdate(u: Update) {
   return { id: u.id, date: u.d, title: u.title, body: u.body, why: u.why, sectors: u.sectors, type: u.type, companies: u.companies, source: u.src ? `${u.src.t} [${u.src.q}] ${u.src.u}` : null };
 }
 

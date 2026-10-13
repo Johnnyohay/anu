@@ -6,6 +6,7 @@
 import { XMLParser } from "fast-xml-parser";
 import { loadDesk, saveDaily, slug } from "./store.ts";
 import { buildApi } from "./build-api.ts";
+import { tagCompanies } from "./companies.ts";
 import type { Brief, Update } from "./schema.ts";
 
 type Tier = "primary" | "news" | "research" | "aggregator";
@@ -116,7 +117,7 @@ interface Article { title: string; link: string; date: string; summary: string; 
 
 async function fetchFeed(feed: (typeof FEEDS)[number]): Promise<Article[]> {
   try {
-    const res = await fetch(feed.url, { headers: { "user-agent": "Mozilla/5.0 (jarvis news collector)" }, signal: AbortSignal.timeout(20000) });
+    const res = await fetch(feed.url, { headers: { "user-agent": "Mozilla/5.0 (anu news collector)" }, signal: AbortSignal.timeout(20000) });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const xml = parser.parse(await res.text());
     const items = xml?.rss?.channel?.item ?? xml?.feed?.entry ?? [];
@@ -172,7 +173,14 @@ for (const a of articles) {
   } as Update & { score: number; auto: boolean });
 }
 
-desk.updates.push(...added.map(({ score, ...u }) => u));
+const fresh = added.map(({ score, ...u }) => u);
+// Tag companies with the local Hugging Face NER model; keyword matches above still stand if it can't load.
+try {
+  if (fresh.length) console.log(`Tagged companies on ${await tagCompanies(desk, fresh)} updates that had none.`);
+} catch (err) {
+  console.warn(`Company tagging skipped: ${err instanceof Error ? err.message : err}`);
+}
+desk.updates.push(...fresh);
 console.log(`Added ${added.length} new updates.`);
 
 // Free brief: only when nothing (e.g. a Claude-written brief) exists for today yet.

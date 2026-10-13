@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { api, type AskRequest, type Catalyst, type CompanyDetail, type Evidence, type Meta, type SectorDetail } from "./api.ts";
+import { api, type AskRequest, type Catalyst, type CompanyDetail, type Evidence, type Meta, type Paper, type SectorDetail } from "./api.ts";
 import { Markdown } from "./Markdown.tsx";
 
 type Effort = AskRequest["effort"];
@@ -34,6 +34,9 @@ const TOOL_LABELS: Record<string, string> = {
   search_research: "Searched research",
   list_ideas: "Reviewed build ideas",
   get_brief: "Read a brief",
+  semantic_search: "Searched by meaning",
+  related_updates: "Found related stories",
+  search_papers: "Searched AI research papers",
   web_search: "Searched the web",
 };
 
@@ -42,15 +45,16 @@ function toolLabel(name: string, input: Record<string, unknown>) {
   return `${TOOL_LABELS[name] ?? name}${detail ? ` · ${detail}` : ""}`;
 }
 
-function suggestions(mode: string, scope: string, companyName: string | undefined, days: number): string[] {
+function suggestions(mode: string, scope: string, companyName: string | undefined, days: number, papers: boolean): string[] {
+  const research = papers ? [`What does recent AI and robotics research say about ${scope}?`] : [];
   const when = days ? `the last ${days} days` : "recently";
   switch (mode) {
     case "learn":
-      return [`Explain ${scope} to me like I'm new to it`, `What acronyms and programs do I need to know in ${scope}?`, `How does the Pentagon buy in ${scope}, and who decides?`, `What should I read first to understand ${scope}?`];
+      return [`Explain ${scope} to me like I'm new to it`, `What acronyms and programs do I need to know in ${scope}?`, `How does the Pentagon buy in ${scope}, and who decides?`, `What should I read first to understand ${scope}?`, ...research];
     case "news":
       return [`What happened in ${scope} ${when}?`, `Which development in ${scope} matters most for a founder, and why?`, `What's coming up next in ${scope}?`, `Give me the 60-second briefing on ${scope}`];
     case "advise":
-      return [`What should I build in ${scope}?`, `Where are the incumbents in ${scope} weakest?`, `If I had $1M and 12 months in ${scope}, what would you do?`, `Who is the buyer and budget line for a startup in ${scope}?`];
+      return [`What should I build in ${scope}?`, `Where are the incumbents in ${scope} weakest?`, `If I had $1M and 12 months in ${scope}, what would you do?`, `Who is the buyer and budget line for a startup in ${scope}?`, ...(papers ? [`Which new research in ${scope} is close to being a product?`] : [])];
     case "company":
       return companyName
         ? [`Who is ${companyName} and how do they make money?`, `Who competes with ${companyName}, and who is winning?`, `Where is ${companyName} vulnerable to a startup?`, `What's the latest on ${companyName}?`]
@@ -70,7 +74,7 @@ export function App() {
   const [company, setCompany] = useState("");
   const [days, setDays] = useState(0);
   const [effort, setEffort] = useState<Effort>("medium");
-  const [web, setWeb] = useState(false);
+  const [sources, setSources] = useState("papers");
   const [question, setQuestion] = useState("");
   const [turns, setTurns] = useState<Turn[]>([]);
   const [conversationId, setConversationId] = useState<string | null>(null);
@@ -111,7 +115,7 @@ export function App() {
     const ctl = new AbortController();
     abortRef.current = ctl;
     try {
-      const req: AskRequest = { conversationId, question: text, focus: { mode, sector: sector || undefined, company: company || undefined, days: days || undefined }, effort, web };
+      const req: AskRequest = { conversationId, question: text, focus: { mode, sector: sector || undefined, company: company || undefined, days: days || undefined }, effort, sources };
       for await (const ev of api.ask(req, ctl.signal)) {
         if (ev.event === "start") setConversationId(ev.data.conversationId);
         else if (ev.event === "text") patchLast((t) => ({ ...t, answer: t.answer + ev.data.text }));
@@ -122,7 +126,7 @@ export function App() {
             return { ...t, evidence: [...t.evidence, ...ev.data.items.filter((e) => !seen.has(e.id))] };
           });
         else if (ev.event === "done") {
-          const note = ev.data.stopReason === "refusal" ? "Jarvis declined this question." : ev.data.stopReason === "max_tokens" ? "The answer hit the length limit." : undefined;
+          const note = ev.data.stopReason === "refusal" ? "ANU declined this question." : ev.data.stopReason === "max_tokens" ? "The answer hit the length limit." : undefined;
           patchLast((t) => ({ ...t, status: "done", note }));
         } else if (ev.event === "error") patchLast((t) => ({ ...t, status: "error", note: ev.data.message }));
       }
@@ -139,15 +143,15 @@ export function App() {
     setTurns([]);
   }
 
-  if (loadError) return <div className="fatal">Couldn't reach the Jarvis server ({loadError}). Start it with <code>npm run app</code>.</div>;
-  if (!meta) return <div className="fatal">Loading Jarvis…</div>;
+  if (loadError) return <div className="fatal">Couldn't reach the ANU server ({loadError}). Start it with <code>npm run app</code>.</div>;
+  if (!meta) return <div className="fatal">Loading ANU…</div>;
 
   return (
     <div className="shell">
       <header className="top">
         <div>
           <div className="eyebrow">Your personal guide to learning and following defense tech</div>
-          <h1>Jar<span>vis</span></h1>
+          <h1>AN<span>U</span></h1>
         </div>
         <div className="stamp">
           {meta.overview.counts.updates} updates · {meta.overview.counts.companies} companies · data to {meta.overview.updatesCover?.to}
@@ -189,10 +193,16 @@ export function App() {
               {DEPTHS.map((d) => <option key={d.id} value={d.id}>{d.label}</option>)}
             </select>
           </label>
-          <label className="check">
-            <input type="checkbox" checked={web} onChange={(e) => setWeb(e.target.checked)} />
-            Also search the web for newer news
+          <label>
+            Research sources
+            <select value={sources} onChange={(e) => setSources(e.target.value)}>
+              {meta.sources.map((s) => <option key={s.id} value={s.id}>{s.label}</option>)}
+            </select>
           </label>
+          <p className="hint">
+            {meta.semantic ? "Semantic search on: ANU matches by meaning, not just keywords." : "Keyword search only (the local model didn't load)."}
+            {sources !== "data" && " AI papers come from Hugging Face."}
+          </p>
           <button className="btn ghost" onClick={newConversation} disabled={!turns.length}>New conversation</button>
         </aside>
 
@@ -202,7 +212,7 @@ export function App() {
               <div className="empty">
                 <p className="lead">Ask anything about {scope}. Pick a starting point:</p>
                 <div className="chips">
-                  {suggestions(mode, scope, companyName, days).map((s) => (
+                  {suggestions(mode, scope, companyName, days, sources !== "data").map((s) => (
                     <button key={s} className="chip" onClick={() => void ask(s)}>{s}</button>
                   ))}
                 </div>
@@ -228,7 +238,7 @@ export function App() {
                   <p>{t.question}</p>
                 </div>
                 <div className="a">
-                  <div className="who">Jarvis</div>
+                  <div className="who">ANU</div>
                   {!!t.tools.length && (
                     <div className="tools">
                       {t.tools.map((tool, j) => <span key={j} className="tool">{toolLabel(tool.name, tool.input)}</span>)}
@@ -238,7 +248,7 @@ export function App() {
                   {t.note && <p className={`note ${t.status}`}>{t.note}</p>}
                   {!!t.evidence.length && t.status !== "streaming" && (
                     <details className="evidence">
-                      <summary>Evidence Jarvis looked at ({t.evidence.length})</summary>
+                      <summary>Evidence ANU looked at ({t.evidence.length})</summary>
                       <ul>
                         {t.evidence.map((e) => (
                           <li key={e.id}>
@@ -255,7 +265,7 @@ export function App() {
           </div>
           {!!turns.length && !busy && (
             <div className="chips follow">
-              {suggestions(mode, scope, companyName, days).slice(0, 3).map((s) => (
+              {suggestions(mode, scope, companyName, days, sources !== "data").slice(0, 3).map((s) => (
                 <button key={s} className="chip" onClick={() => void ask(s)}>{s}</button>
               ))}
             </div>
@@ -265,7 +275,7 @@ export function App() {
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
               onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); void ask(question); } }}
-              placeholder={`Ask Jarvis about ${scope}…`}
+              placeholder={`Ask ANU about ${scope}…`}
               aria-label="Your question"
               rows={2}
             />
@@ -345,6 +355,32 @@ function SectorCard({ s, onAsk }: { s: SectorDetail; onAsk: (q: string) => void 
       <ul className="events">
         {s.recentUpdates.slice(0, 5).map((u) => <li key={u.id}><span className="date">{u.date}</span> {u.title}</li>)}
       </ul>
+      <Papers query={s.name} onAsk={onAsk} />
+    </>
+  );
+}
+
+function Papers({ query, onAsk }: { query: string; onAsk: (q: string) => void }) {
+  const [papers, setPapers] = useState<Paper[] | null>(null);
+  const [failed, setFailed] = useState(false);
+  useEffect(() => {
+    setPapers(null);
+    setFailed(false);
+    api.papers(query.replace(/&/g, " "), 4).then(setPapers, () => setFailed(true));
+  }, [query]);
+  return (
+    <>
+      <h3>Research papers (Hugging Face)</h3>
+      {failed ? <p className="muted">Couldn't reach Hugging Face Papers.</p> : !papers ? <p className="muted">Loading…</p> : !papers.length ? <p className="muted">No matching papers.</p> : (
+        <ul className="events">
+          {papers.map((p) => (
+            <li key={p.id}>
+              <span className="date">{p.published}</span> <a href={p.url} target="_blank" rel="noreferrer">{p.title}</a>{" "}
+              <button className="linkish" onClick={() => onAsk(`Explain this research paper in plain words and what it could mean for defense tech: "${p.title}" (${p.url})`)}>Explain</button>
+            </li>
+          ))}
+        </ul>
+      )}
     </>
   );
 }

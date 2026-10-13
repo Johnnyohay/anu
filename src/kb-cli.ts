@@ -1,5 +1,7 @@
 import { loadDesk } from "./store.ts";
 import { findCompanies, getBrief, getSector, listIdeas, overview, searchResearch, searchUpdates, upcomingEvents } from "./kb.ts";
+import { buildIndex, related, semanticSearch, KINDS, type Kind } from "./semantic.ts";
+import { searchPapers } from "./hf.ts";
 
 // Free, offline lookups over data/ — no API key. Prints JSON.
 //   npm run kb -- overview
@@ -10,6 +12,10 @@ import { findCompanies, getBrief, getSector, listIdeas, overview, searchResearch
 //   npm run kb -- research autonomy
 //   npm run kb -- ideas --sector air
 //   npm run kb -- brief [YYYY-MM-DD]
+//   npm run kb -- semantic "cheap ways to stop drone swarms" [--kinds update,company] [--sector id]
+//   npm run kb -- related <id>
+//   npm run kb -- papers "drone swarm coordination" [--since YYYY-MM-DD]
+// semantic/related use a local Hugging Face embedding model; papers queries Hugging Face Papers.
 
 const [cmd, ...rest] = process.argv.slice(2);
 const flags: Record<string, string> = {};
@@ -22,7 +28,18 @@ const query = positional.join(" ") || undefined;
 const num = (k: string) => (flags[k] ? Number(flags[k]) : undefined);
 
 const desk = await loadDesk();
+const index = () => buildIndex(desk, (m) => console.error(m));
 const commands: Record<string, () => unknown> = {
+  semantic: async () =>
+    semanticSearch(desk, await index(), {
+      query: query ?? "",
+      kinds: flags.kinds?.split(",").filter((k): k is Kind => (KINDS as readonly string[]).includes(k)),
+      sector: flags.sector,
+      since: flags.since,
+      limit: num("limit"),
+    }),
+  related: async () => related(desk, await index(), query ?? "", num("limit")),
+  papers: () => searchPapers(query ?? "", { since: flags.since, limit: num("limit") }),
   overview: () => overview(desk),
   updates: () =>
     searchUpdates(desk, {
@@ -47,4 +64,4 @@ if (!run) {
   console.error(`Usage: npm run kb -- <${Object.keys(commands).join("|")}> [query] [--sector id] [--type T] [--company name] [--since YYYY-MM-DD] [--until YYYY-MM-DD] [--days N] [--limit N]`);
   process.exit(1);
 }
-console.log(JSON.stringify(run(), null, 2));
+console.log(JSON.stringify(await run(), null, 2));
