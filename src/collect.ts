@@ -116,7 +116,7 @@ interface Article { title: string; link: string; date: string; summary: string; 
 
 async function fetchFeed(feed: (typeof FEEDS)[number]): Promise<Article[]> {
   try {
-    const res = await fetch(feed.url, { headers: { "user-agent": "Mozilla/5.0 (kill-chain-ledger news collector)" }, signal: AbortSignal.timeout(20000) });
+    const res = await fetch(feed.url, { headers: { "user-agent": "Mozilla/5.0 (jarvis news collector)" }, signal: AbortSignal.timeout(20000) });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const xml = parser.parse(await res.text());
     const items = xml?.rss?.channel?.item ?? xml?.feed?.entry ?? [];

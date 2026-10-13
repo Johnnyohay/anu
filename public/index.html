@@ -1,4 +1,4 @@
-<title>Kill Chain Ledger</title>
+<title>Jarvis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -202,11 +202,11 @@ footer{border-top:1px solid var(--line);padding-block:20px 40px;font-size:12.5px
 @keyframes rise{from{transform:translateY(4px)}to{transform:none}}
 </style>
 
-<div class="banner">Unclassified // Open-source intelligence // <span id="asof">Loading</span></div>
+<div class="banner">Jarvis // Your defense-tech helper // <span id="asof">Loading</span></div>
 
 <header class="top wrap">
-  <div class="eyebrow">Your morning read on defense tech</div>
-  <h1>Kill Chain <span>Ledger</span></h1>
+  <div class="eyebrow">Your personal guide to learning and following defense tech</div>
+  <h1>Jar<span>vis</span></h1>
 </header>
 
 <nav class="tabs" aria-label="Sections">
@@ -265,7 +265,7 @@ footer{border-top:1px solid var(--line);padding-block:20px 40px;font-size:12.5px
     <aside style="display:grid;gap:16px;align-content:start">
       <div class="box">
         <h3 style="margin-bottom:6px">How this stays current</h3>
-        <p style="font-size:14px;color:var(--ink-2)">Updates are stored records, so the desk grows without being rebuilt. New items come from your own entries below and from Claude's research runs. <span id="refresh-note"></span></p>
+        <p style="font-size:14px;color:var(--ink-2)">Updates are stored records, so Jarvis grows without being rebuilt. New items come from your own entries below and from Claude's research runs. <span id="refresh-note"></span></p>
       </div>
       <div class="box">
         <h3 style="margin-bottom:8px">Log an update</h3>
@@ -316,12 +316,12 @@ footer{border-top:1px solid var(--line);padding-block:20px 40px;font-size:12.5px
 
 <!-- BUILD -->
 <section class="panel" data-panel="build" hidden>
-  <div style="display:grid;gap:6px"><h2>Gaps you could build into</h2><p class="sub">Openings that come out of the evidence on this desk, scored on capital needed, time to first revenue, and how directly they collide with entrenched players.</p></div>
+  <div style="display:grid;gap:6px"><h2>Gaps you could build into</h2><p class="sub">Openings that come out of the evidence in Jarvis, scored on capital needed, time to first revenue, and how directly they collide with entrenched players.</p></div>
   <div class="grid g3" id="ideas"></div>
   <div class="split">
     <div class="box" style="display:grid;gap:12px">
       <h3>Pressure-test your own idea</h3>
-      <p class="sub" style="font-size:14px">Describe what you want to build. Claude checks it against everything on this desk: incumbents, buyer, budget line, why now, the fastest path to a contract, and what would kill it.</p>
+      <p class="sub" style="font-size:14px">Describe what you want to build. Jarvis checks it against everything it has collected: incumbents, buyer, budget line, why now, the fastest path to a contract, and what would kill it.</p>
       <textarea id="pt-in" placeholder="e.g. Software that maps every part in a drone to its country of origin and flags anything that breaks the 2027 magnet ban."></textarea>
       <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="btn" id="pt-go">Pressure-test</button><button class="btn ghost" id="pt-stop" hidden>Stop</button><span class="status" id="pt-status"></span></div>
       <div class="msg bot" id="pt-out" hidden></div>
@@ -337,14 +337,14 @@ footer{border-top:1px solid var(--line);padding-block:20px 40px;font-size:12.5px
 
 <!-- RESEARCH -->
 <section class="panel" data-panel="research" hidden>
-  <div style="display:grid;gap:6px"><h2>Research library</h2><p class="sub">Filings, budget documents, think-tank reports and data behind this desk. Start with primary sources; use aggregators to find leads, then confirm them.</p></div>
+  <div style="display:grid;gap:6px"><h2>Research library</h2><p class="sub">Filings, budget documents, think-tank reports and data behind Jarvis. Start with primary sources; use aggregators to find leads, then confirm them.</p></div>
   <div class="toolbar"><input type="search" id="r-q" placeholder="Search research" aria-label="Search research"><select id="r-sector" aria-label="Filter by sector"></select></div>
   <div id="r-list"></div>
 </section>
 
 <!-- ASK -->
 <section class="panel" data-panel="ask" hidden>
-  <div style="display:grid;gap:6px"><h2>Ask the analyst</h2><p class="sub">Claude answers from everything stored on this desk and names the source behind each claim. Anything from outside the desk is labelled as possibly out of date. The first question asks you to allow Claude on this page.</p></div>
+  <div style="display:grid;gap:6px"><h2>Ask Jarvis</h2><p class="sub">Jarvis answers from everything it has collected and names the source behind each claim. Anything from outside that is labelled as possibly out of date. The first question asks you to allow Claude on this page.</p></div>
   <div class="box" style="display:grid;gap:14px">
     <div class="suggest" id="suggest"></div>
     <div class="log" id="log" aria-live="polite"></div>
@@ -354,7 +354,7 @@ footer{border-top:1px solid var(--line);padding-block:20px 40px;font-size:12.5px
 </section>
 </main>
 
-<footer class="wrap">Kill Chain Ledger compiles open sources. Items tagged “aggregator” are unconfirmed. This is research, not investment advice.</footer>
+<footer class="wrap">Jarvis is my personal helper for learning and keeping up with defense tech. It compiles open sources; items tagged “aggregator” are unconfirmed. This is for learning, not investment advice.</footer>
 
 <script>
 const TIERS={primary:{name:"Primary",desc:"Filings, company and government releases"},news:{name:"News",desc:"Reported journalism and trade press"},research:{name:"Research",desc:"Think tanks, CRS, data providers"},aggregator:{name:"Aggregator",desc:"Secondary compilations; confirm before relying on them"}};
@@ -482,7 +482,7 @@ function renderSectors(){
     </div>
     <div><div class="lbl">Key players</div><div class="chips">${cos.map(c=>`<button class="chip" data-company="${esc(c.name)}">${esc(c.name)}</button>`).join("")||`<span class="status">No companies listed yet.</span>`}</div></div>
     ${cats.length?`<div><div class="lbl">Coming up</div><div class="cal">${cats.map(calRow).join("")}</div></div>`:""}
-    <div><div class="head-row"><div class="lbl">Updates (${ups.length})</div><button class="linkish" data-ask-sector="${esc(s.id)}">Ask the analyst about this sector →</button></div><div class="feed">${ups.map(u=>itemHTML(u)).join("")||`<p class="status" style="padding:12px 0">No updates yet.</p>`}</div></div>
+    <div><div class="head-row"><div class="lbl">Updates (${ups.length})</div><button class="linkish" data-ask-sector="${esc(s.id)}">Ask Jarvis about this sector →</button></div><div class="feed">${ups.map(u=>itemHTML(u)).join("")||`<p class="status" style="padding:12px 0">No updates yet.</p>`}</div></div>
     ${refs.length?`<div><div class="lbl">Research</div>${refs.map(refHTML).join("")}</div>`:""}`;
 }
 $("#sec-select").addEventListener("change",e=>openSector(e.target.value));
@@ -534,7 +534,7 @@ $("#add-date").value=new Date().toISOString().slice(0,10);
 function renderMeta(){
   const last=[...S.updates].sort(byDateDesc)[0]?.d||"—";
   $("#meta-row").innerHTML=`<span><b>${S.updates.length}</b> updates</span><span><b>${S.sectors.length}</b> sectors</span><span><b>${S.companies.length}</b> companies</span><span><b>${S.catalysts.filter(c=>daysUntil(c.d)>=0).length}</b> upcoming events</span><span>Latest event <b>${esc(last)}</b></span>`;
-  const asof=S.meta?.asOf;$("#asof").textContent=asof?`Desk reviewed ${asof}`:"Open sources";
+  const asof=S.meta?.asOf;$("#asof").textContent=asof?`Updated ${asof}`:"Open sources";
   $("#refresh-note").textContent=asof?`Last full review: ${asof}.`:"";
 }
 let raf=0;function renderAll(){cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>{fillSelects();renderMeta();renderToday();renderPulse();renderUpdates();renderSectors();renderCompanies();renderCalendar();renderResearch();renderIdeas();});}
@@ -551,7 +551,7 @@ function kb(){
     buildIdeas:S.ideas.map(i=>({idea:i.t,what:i.what,why:i.why,wedge:i.wedge}))
   });
 }
-const RULES=()=>`You are the analyst behind "Kill Chain Ledger", an intelligence desk covering the whole defense-technology industry: AI and software, drones and autonomy (air, sea, ground), space, missile defense, missiles and munitions, counter-drone and directed energy, EW, cyber, sensing and quantum, manufacturing, critical minerals, energy, biotech, budget and policy, capital markets, primes, allies, and adversaries. Today is ${new Date().toISOString().slice(0,10)}. The reader is a founder who wants to keep up, see where the industry is going, and find something to build that competes.
+const RULES=()=>`You are Jarvis, a personal helper for learning about and keeping up with the whole defense-technology industry: AI and software, drones and autonomy (air, sea, ground), space, missile defense, missiles and munitions, counter-drone and directed energy, EW, cyber, sensing and quantum, manufacturing, critical minerals, energy, biotech, budget and policy, capital markets, primes, allies, and adversaries. Today is ${new Date().toISOString().slice(0,10)}. The reader is a founder who is learning this industry: explain it so they understand it, help them keep up, see where the industry is going, and find something to build that competes.
 
 Rules:
 - Use the KNOWLEDGE BASE below as your main evidence. After each factual claim, name the source in brackets, e.g. [SEC 8-K]. Sources tagged [aggregator] are unconfirmed; say so when you lean on one.
@@ -559,6 +559,7 @@ Rules:
 - Connect across sectors when relevant (e.g. minerals affect drones; budget deadlines affect space).
 - Be concrete and skimmable: short paragraphs or bullets, real numbers, named programs and budget lines. Say when evidence is thin.
 - For opportunities, name the buyer, the budget line, the incumbents and a first-contract path.
+- Teach as you go: explain acronyms, programs and jargon in plain words the first time they appear, and give the background a newcomer needs to follow the story.
 - Plain text only, no markdown tables.
 
 KNOWLEDGE BASE (JSON):
@@ -569,7 +570,7 @@ let sample=null;const turns=[];let ctl=null,ptCtl=null;
 const SUGGEST=["What were the five most important developments in the last 30 days, across all sectors?","Which sectors are underbuilt compared with where the money is going?","How does the 11 Dec funding deadline ripple through the industry?","Where are the primes most exposed to new entrants?","What does China's magnet squeeze mean for drone and munitions startups?","If I had $1M and 12 months, what should I build?"];
 $("#suggest").innerHTML=SUGGEST.map(s=>`<button>${esc(s)}</button>`).join("");
 $("#suggest").querySelectorAll("button").forEach(b=>b.onclick=()=>{$("#q").value=b.textContent;ask();});
-const ERR={not_granted:"Claude isn't allowed on this page for you, so this feature is off.",sampling_disabled:"Claude isn't available on this account.",rate_limited:"Too many questions at once. Wait a minute, then ask again.",session_expired:"Your session expired. Sign in again, then ask.",refused:"Claude declined that question. Try rephrasing it.",prompt_too_large:"The desk has grown too large to send whole. Ask about one sector at a time."};
+const ERR={not_granted:"Claude isn't allowed on this page for you, so this feature is off.",sampling_disabled:"Claude isn't available on this account.",rate_limited:"Too many questions at once. Wait a minute, then ask again.",session_expired:"Your session expired. Sign in again, then ask.",refused:"Claude declined that question. Try rephrasing it.",prompt_too_large:"Jarvis has grown too large to send whole. Ask about one sector at a time."};
 const errText=e=>ERR[e?.code]||"Something interrupted the answer. Ask again.";
 const HIDE=["not_granted","sampling_disabled","not_declared","capability_disabled","capability_removed"];
 function addMsg(cls,text){const d=document.createElement("div");d.className="msg "+cls;d.textContent=text;$("#log").appendChild(d);$("#log").scrollTop=$("#log").scrollHeight;return d;}
@@ -606,18 +607,18 @@ $("#add-form").addEventListener("submit",async e=>{
   const rec={d,title,body,why:$("#add-why").value.trim(),sectors:[$("#add-sector").value],type:$("#add-type").value,companies:[],
     src:safeUrl($("#add-url").value.trim())?{t:$("#add-src").value.trim()||"Source",u:$("#add-url").value.trim(),q:$("#add-tier").value}:null,addedBy:"viewer",addedAt:new Date().toISOString()};
   $("#add-status").textContent="Saving…";
-  try{await db.collection("updates").doc("u-"+d.replace(/-/g,"")+"-"+slug(title)).set(rec);$("#add-form").reset();$("#add-date").value=new Date().toISOString().slice(0,10);fillSelects();$("#add-status").textContent="Saved to the desk.";}
-  catch(err){if(err?.code==="invalid_argument")setForm("#add-form",false,"You can read the desk but not add to it.","#add-status");else if(err?.code==="quota_exceeded")$("#add-status").textContent="The desk is full. Remove old entries to add more.";else $("#add-status").textContent="Couldn't save. Try again.";}
+  try{await db.collection("updates").doc("u-"+d.replace(/-/g,"")+"-"+slug(title)).set(rec);$("#add-form").reset();$("#add-date").value=new Date().toISOString().slice(0,10);fillSelects();$("#add-status").textContent="Saved to Jarvis.";}
+  catch(err){if(err?.code==="invalid_argument")setForm("#add-form",false,"You can read Jarvis but not add to it.","#add-status");else if(err?.code==="quota_exceeded")$("#add-status").textContent="Jarvis is full. Remove old entries to add more.";else $("#add-status").textContent="Couldn't save. Try again.";}
 });
 function renderNotes(docs){$("#notes").innerHTML=docs.length?docs.map(d=>{const n=d.data();return `<div class="note-row"><span>${esc(n.text)}<br><span class="status">${esc((n.at||"").slice(0,10))}</span></span><button data-del="${esc(d.id)}" aria-label="Delete note">Delete</button></div>`;}).join(""):`<p class="status">No notes yet. Ideas you save here are visible only to you.</p>`;}
 $("#notes").addEventListener("click",async e=>{const b=e.target.closest("[data-del]");if(!b||!db||!uid)return;b.disabled=true;try{await db.collection("data/users/"+uid).doc(b.dataset.del).delete();}catch{b.disabled=false;}});
 $("#note-form").addEventListener("submit",async e=>{e.preventDefault();const t=$("#note-in").value.trim();if(!t||!db||!uid)return;try{await db.collection("data/users/"+uid).add({text:t,at:new Date().toISOString()});$("#note-in").value="";}catch{setForm("#note-form",false);$("#notes").innerHTML=`<p class="status">Notes can't be saved for you on this page.</p>`;}});
 
-/* Outside Claude (e.g. GitHub Pages) the desk reads the static JSON API published next to this page. */
+/* Outside Claude (e.g. GitHub Pages) the page reads the static JSON API published next to this page. */
 async function loadFromApi(){
   let data;
   try{const r=await fetch("api/v1/all.json",{cache:"no-cache"});if(!r.ok)throw new Error(r.status);data=await r.json();}
-  catch{offline("The desk's data couldn't load. Refresh the page to try again.");return;}
+  catch{offline("Jarvis's data couldn't load. Refresh the page to try again.");return;}
   Object.assign(S,{meta:data.meta,briefs:(data.briefs||[]).map(b=>({id:b.date,...b})),sectors:(data.sectors||[]).sort((a,b)=>(a.order||99)-(b.order||99)),updates:data.updates||[],companies:data.companies||[],catalysts:data.catalysts||[],research:data.research||[],ideas:data.ideas||[]});
   renderAll();
   const ro="Read-only here. Saving and Ask work in the Claude-hosted version.";
@@ -629,7 +630,7 @@ function offline(msg){const o=$("#offline");o.hidden=false;o.textContent=msg;$("
   if(!window.claude?.use){await loadFromApi();return;}
   claude.use("sample").then(s=>{sample=s;if(s){setAsk(true);$("#ask-status").textContent="";}else $("#ask-status").textContent="Asking Claude isn't available in this view.";});
   const [d,u]=await Promise.all([claude.use("db"),claude.use("user")]);db=d;
-  if(!db){offline("The desk's data couldn't load in this view. Open it in Claude while signed in.");setForm("#add-form",false,"Unavailable here.","#add-status");return;}
+  if(!db){offline("Jarvis's data couldn't load in this view. Open it in Claude while signed in.");setForm("#add-form",false,"Unavailable here.","#add-status");return;}
   const sub=(col,fn)=>db.collection(col).limit(1000).onSnapshot(snap=>{fn(snap.docs.map(x=>({id:x.id,...x.data()})));renderAll();},()=>{});
   const seen=new Set();let firstUpdates=true;
   sub("sectors",r=>S.sectors=r.sort((a,b)=>(a.order||99)-(b.order||99)));

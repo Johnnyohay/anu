@@ -1,8 +1,8 @@
 {
-  "name": "kill-chain-ledger",
+  "name": "jarvis",
   "version": "1.0.0",
   "private": true,
-  "description": "Daily defense-tech intelligence: a research pipeline, a static JSON API and the Kill Chain Ledger site.",
+  "description": "Jarvis: a personal helper for learning and following defense tech, with a daily brief, a static JSON API and a site.",
   "type": "module",
   "scripts": {
     "collect": "tsx src/collect.ts",
