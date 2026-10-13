@@ -40,6 +40,30 @@ npx serve public       # view the site locally
 
 `DESK_DATE=YYYY-MM-DD` sets the date; `LOOKBACK_DAYS=N` changes how far back it reads (default 3).
 
+## Ask Jarvis: the app (`npm run app`)
+
+An agent that answers questions and gives advice using everything stored in `data/`. It runs on your machine, so your Claude API key never goes into the public site.
+
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...   # paid Claude API; each question costs a few cents
+npm run app                           # builds the UI and opens the server at http://localhost:8787
+```
+
+- **Focus panel (dropdowns):** what you want (Teach me, What's new, Advise me, Company deep dive, Compare), sector, company, time range, answer depth (Quick / Standard / Deep), and an optional web search for news newer than the data.
+- **Suggested questions** change with your focus; today's brief stories are one click away.
+- **Conversation:** answers stream in, show which lookups Jarvis made, and list the evidence (dated, sourced updates) behind each answer. Follow-up questions keep the context; "New conversation" starts fresh.
+- **Context panel:** the selected sector's state, money, watch list, upcoming events, companies and latest news, or the selected company's profile, all read straight from `data/` with no API cost.
+
+`npm run app:dev` runs the same thing with hot reload while you change the UI (`app/`).
+
+**Command line:** `npm run ask -- "What should I build in counter-drone?"`, or `npm run ask` for a conversation. Add `--web` to let it search the web.
+
+**Free lookups (no API key):** `npm run kb -- <overview|updates|sector|companies|events|research|ideas|brief> [query] [--sector id] …` prints JSON from `data/`.
+
+**In Claude Code:** `.claude/agents/jarvis.md` defines a `jarvis` subagent that answers from the same data through `npm run kb`, using your Claude Code plan instead of the API. Ask Claude Code to "use the jarvis agent" in this repo.
+
+How it works: `src/kb.ts` holds the read-only queries; `src/jarvis.ts` gives them to Claude Opus 5.5 as tools (via the SDK's tool runner); `src/server.ts` streams answers to the React app in `app/`.
+
 ## Optional: Claude-written briefs (`npm run daily:claude`)
 
 `src/daily.ts` and `src/pipeline.ts` research the news with Claude and web search and write richer briefs. That uses the paid Claude API (`ANTHROPIC_API_KEY`), so it is **not** part of the daily job. If a Claude-written brief exists for a date, the free collector leaves it alone.

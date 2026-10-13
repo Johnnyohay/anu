@@ -8,7 +8,11 @@
     "collect": "tsx src/collect.ts",
     "daily:claude": "tsx src/daily.ts",
     "build:api": "tsx src/build-api.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit && tsc --noEmit -p app",
+    "kb": "tsx src/kb-cli.ts",
+    "ask": "tsx src/agent.ts",
+    "app": "vite build && tsx src/server.ts",
+    "app:dev": "tsx src/server.ts & vite"
   },
   "engines": {
     "node": ">=22"
@@ -16,11 +20,17 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.133.0",
     "fast-xml-parser": "^5.11.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
     "tsx": "^4.23.15",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
   }
 }
