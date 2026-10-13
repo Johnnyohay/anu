@@ -447,6 +447,26 @@
     "auto": true
   },
   {
+    "id": "u-20261013-centcom-forces-disable-cargo-vessel-attempting-to-",
+    "d": "2026-10-13",
+    "title": "Centcom Forces Disable Cargo Vessel Attempting to Violate Blockade",
+    "body": "Service members operating in the U.S. Central Command area of responsibility recently disabled a commercial cargo vessel in the Gulf of Oman, after the ship's crew ignored repeated warnings and attempted to run the ongoing naval blockade against Iran.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4624371/centcom-forces-disable-cargo-vessel-attempting-to-violate-blockade/",
+      "q": "primary"
+    },
+    "addedAt": "2026-10-13T16:42:28.048Z",
+    "auto": true
+  },
+  {
     "id": "u-20261012-at-warsaw-security-forum-poland-s-tusk-raises-alar",
     "d": "2026-10-12",
     "title": "At Warsaw Security Forum, Poland’s Tusk raises alarm over ‘real threat’ from Russia",
