@@ -39,12 +39,12 @@ export async function loadDesk(): Promise<Desk> {
   };
 }
 
-export async function saveDaily(desk: Desk, brief: Brief): Promise<void> {
+export async function saveDaily(desk: Desk, brief: Brief | null): Promise<void> {
   const byDateDesc = (a: { d: string }, b: { d: string }) => b.d.localeCompare(a.d);
   await writeJson("updates.json", [...desk.updates].sort(byDateDesc));
   await writeJson("catalysts.json", [...desk.catalysts].sort((a, b) => a.d.localeCompare(b.d)));
   await writeJson("meta.json", desk.meta);
-  await writeJson(`briefs/${brief.date}.json`, brief);
+  if (brief) await writeJson(`briefs/${brief.date}.json`, brief);
 }
 
 export function slug(s: string): string {

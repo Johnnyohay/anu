@@ -1,19 +1,22 @@
 # Kill Chain Ledger
 
-A daily intelligence desk for the defense-technology industry. Every morning a GitHub Action researches what happened across 20 sectors, writes a short plain-language brief, adds sourced updates and upcoming events, and publishes everything as a static JSON API and a website on GitHub Pages.
+A free daily intelligence desk for the defense-technology industry. Every morning a GitHub Action collects the latest articles from 14 defense news sources, sorts them into 20 sectors, writes a short headline brief, and publishes everything as a website and a JSON API on GitHub Pages.
 
-## How the daily update works
+**Site:** https://johnnyohay.github.io/kill-chain-ledger/
+**API:** https://johnnyohay.github.io/kill-chain-ledger/api/v1/
 
-1. **Research** (`src/pipeline.ts` → `research`): Claude (`claude-opus-5`) uses web search to find developments since the last brief, skipping what's already on the desk. The memo is saved to `logs/<date>-research.md`.
-2. **Structure** (`structure`): a second call turns the memo into schema-checked JSON (structured outputs, `src/schema.ts`): new updates, the morning brief, and new calendar events.
-3. **Merge** (`src/daily.ts`): drops duplicates by id and source URL, then writes `data/`.
-4. **Publish** (`src/build-api.ts`): writes `public/api/v1/`, and the workflow deploys `public/` to GitHub Pages.
+Running it costs nothing: GitHub Actions and Pages are free for public repos, and the daily job uses no paid APIs.
 
-The research call opts into server-side refusal fallbacks (`fallbacks: "default"`, beta `server-side-fallback-2026-07-01`), so a declined request is retried on Anthropic's recommended fallback model instead of failing the run.
+## How the daily update works (`npm run collect`)
+
+1. **Collect** (`src/collect.ts`): reads RSS feeds from Breaking Defense, DefenseScoop, Defense News, The War Zone, Air & Space Forces, USNI News, SpaceNews, C4ISRNET, GovConWire, Defense One, the Department of War, CSIS, Defence Blog and ExecutiveGov, keeping articles from the last 3 days.
+2. **Sort**: keyword rules tag each article with sectors (AI, drones, space, missile defense, counter-drone, minerals, policy…) and a type (contract, funding, policy, deal…). Personnel moves and other noise are dropped; duplicates are removed by URL.
+3. **Brief**: if there's no brief for today yet, it picks the five strongest stories across different sectors (deals, contracts and policy first), adds a plain-language "why it matters" for each sector, the next date on the calendar, and an idea to build.
+4. **Publish** (`src/build-api.ts`): writes `public/api/v1/`, commits `data/`, and deploys `public/` to GitHub Pages.
+
+Runs daily at 10:00 UTC (6:00 New York time in summer, 5:00 in winter). Run it by hand with `gh workflow run "Daily brief"`.
 
 ## API
-
-Served from GitHub Pages at `https://<user>.github.io/kill-chain-ledger/api/v1/`:
 
 | Endpoint | Contents |
 |---|---|
@@ -26,23 +29,21 @@ Served from GitHub Pages at `https://<user>.github.io/kill-chain-ledger/api/v1/`
 | `companies.json`, `research.json`, `ideas.json` | Directory, library, build ideas |
 | `all.json` | Everything above in one file (what the site loads) |
 
-## Setup
-
-1. Add your Anthropic API key as a repository secret: `gh secret set ANTHROPIC_API_KEY`
-2. Enable Pages with GitHub Actions as the source: Settings → Pages → Source: GitHub Actions.
-3. Run it once by hand: `gh workflow run "Daily brief"`. After that it runs every day at 10:00 UTC.
-
 ## Local use
 
 ```bash
 npm ci
-ANTHROPIC_API_KEY=... npm run daily      # research and write today's brief
-npm run build:api                         # rebuild public/api/v1 from data/
-npx serve public                          # view the site locally
+npm run collect        # fetch news, add updates, write today's brief if missing
+npm run build:api      # rebuild public/api/v1 from data/
+npx serve public       # view the site locally
 ```
 
-Set `DESK_DATE=YYYY-MM-DD` to write a brief for a specific date, and `FORCE=1` to redo one that exists.
+`DESK_DATE=YYYY-MM-DD` sets the date; `LOOKBACK_DAYS=N` changes how far back it reads (default 3).
+
+## Optional: Claude-written briefs (`npm run daily:claude`)
+
+`src/daily.ts` and `src/pipeline.ts` research the news with Claude and web search and write richer briefs. That uses the paid Claude API (`ANTHROPIC_API_KEY`), so it is **not** part of the daily job. If a Claude-written brief exists for a date, the free collector leaves it alone.
 
 ## The Claude-hosted version
 
-`public/index.html` is the same page published as a Claude artifact. Inside Claude it reads and writes the artifact's own database and offers Ask and a private notebook. Elsewhere it reads `api/v1/all.json` and is read-only. Claude artifacts can't fetch outside URLs, so the artifact gets new data only when Claude writes it there.
+`public/index.html` is the same page published as a Claude artifact. Inside Claude it reads and writes the artifact's own database and offers Ask and a private notebook. Elsewhere it reads `api/v1/all.json` and is read-only.
