@@ -1,0 +1,64 @@
+name: Daily brief
+
+on:
+  schedule:
+    # 10:00 UTC = 6:00 New York time in summer (EDT), 5:00 in winter (EST).
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Redo today's brief even if it already exists"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["public/**", "data/**", "src/build-api.ts"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-brief
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Research and write today's brief
+        if: github.event_name != 'push'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORCE: ${{ inputs.force && '1' || '' }}
+        run: npm run daily
+
+      - name: Rebuild the JSON API
+        run: npm run build:api
+
+      - name: Commit new data
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "kill-chain-ledger bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data logs public/api
+          git diff --cached --quiet || git commit -m "Daily brief $(date -u +%F)"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - id: deployment
+        uses: actions/deploy-pages@v4
