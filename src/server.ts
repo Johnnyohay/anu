@@ -5,11 +5,11 @@ import { randomUUID } from "node:crypto";
 import type Anthropic from "@anthropic-ai/sdk";
 import { loadDesk } from "./store.ts";
 import { getBrief, getSector, overview, searchUpdates, upcomingEvents } from "./kb.ts";
-import { describeApiError, runJarvis, type Effort } from "./jarvis.ts";
+import { describeApiError, runAnu, type Effort } from "./anu.ts";
 import { buildIndex, type SemanticIndex } from "./semantic.ts";
 import { searchPapers } from "./hf.ts";
 
-// Local server for the Jarvis app: serves the React UI from app-dist/, free data
+// Local server for the ANU app: serves the React UI from app-dist/, free data
 // endpoints from data/, and streams agent answers over server-sent events.
 // Runs on your machine only, so the Claude API key never reaches a browser.
 
@@ -18,7 +18,7 @@ const STATIC_DIR = "app-dist";
 const desk = await loadDesk();
 const conversations = new Map<string, Anthropic.Beta.BetaMessageParam[]>();
 
-// Semantic search runs on a local Hugging Face model; if it can't load, Jarvis falls back to keywords.
+// Semantic search runs on a local Hugging Face model; if it can't load, ANU falls back to keywords.
 let index: SemanticIndex | undefined;
 try {
   index = await buildIndex(desk, console.log);
@@ -94,7 +94,7 @@ async function ask(req: http.IncomingMessage, res: http.ServerResponse) {
   const abort = new AbortController();
   res.on("close", () => abort.abort());
   try {
-    const result = await runJarvis(
+    const result = await runAnu(
       desk,
       [...history, { role: "user", content: focusLine(body.focus) + body.question.trim() }],
       { ...(SOURCES[body.sources ?? "papers"] ?? SOURCES.papers), effort: body.effort, index },
@@ -167,4 +167,4 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, "127.0.0.1", () => console.log(`Jarvis is running at http://localhost:${PORT}`));
+server.listen(PORT, "127.0.0.1", () => console.log(`ANU is running at http://localhost:${PORT}`));

@@ -1,6 +1,6 @@
 import { Fragment, type ReactNode } from "react";
 
-// Small renderer for the subset Jarvis writes: paragraphs, "- " bullets, numbered
+// Small renderer for the subset ANU writes: paragraphs, "- " bullets, numbered
 // lists, **bold**, [Source] tags and bare URLs. Everything is rendered as text nodes.
 
 function inline(text: string): ReactNode[] {

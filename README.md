@@ -1,9 +1,9 @@
-# Jarvis
+# ANU
 
 My personal helper for learning about and keeping up with the defense-technology industry. Every morning a GitHub Action collects the latest articles from 14 defense news sources, sorts them into 20 sectors, writes a short headline brief, and publishes everything as a website and a JSON API on GitHub Pages.
 
-**Site:** https://johnnyohay.github.io/jarvis/
-**API:** https://johnnyohay.github.io/jarvis/api/v1/
+**Site:** https://johnnyohay.github.io/anu/
+**API:** https://johnnyohay.github.io/anu/api/v1/
 
 Running it costs nothing: GitHub Actions and Pages are free for public repos, and the daily job uses no paid APIs.
 
@@ -40,7 +40,7 @@ npx serve public       # view the site locally
 
 `DESK_DATE=YYYY-MM-DD` sets the date; `LOOKBACK_DAYS=N` changes how far back it reads (default 3).
 
-## Ask Jarvis: the app (`npm run app`)
+## Ask ANU: the app (`npm run app`)
 
 An agent that answers questions and gives advice using everything stored in `data/`. It runs on your machine, so your Claude API key never goes into the public site.
 
@@ -51,7 +51,7 @@ npm run app                           # builds the UI and opens the server at ht
 
 - **Focus panel (dropdowns):** what you want (Teach me, What's new, Advise me, Company deep dive, Compare), sector, company, time range, answer depth (Quick / Standard / Deep), and research sources (stored data, + AI research papers, + web).
 - **Suggested questions** change with your focus; today's brief stories are one click away.
-- **Conversation:** answers stream in, show which lookups Jarvis made, and list the evidence (dated, sourced updates) behind each answer. Follow-up questions keep the context; "New conversation" starts fresh.
+- **Conversation:** answers stream in, show which lookups ANU made, and list the evidence (dated, sourced updates) behind each answer. Follow-up questions keep the context; "New conversation" starts fresh.
 - **Context panel:** the selected sector's state, money, watch list, upcoming events, companies and latest news, or the selected company's profile, all read straight from `data/` with no API cost.
 
 `npm run app:dev` runs the same thing with hot reload while you change the UI (`app/`).
@@ -60,17 +60,17 @@ npm run app                           # builds the UI and opens the server at ht
 
 **Free lookups (no API key):** `npm run kb -- <overview|updates|sector|companies|events|research|ideas|brief|semantic|related|papers> [query] [--sector id] …` prints JSON from `data/` (and Hugging Face Papers).
 
-**In Claude Code:** `.claude/agents/jarvis.md` defines a `jarvis` subagent that answers from the same data through `npm run kb`, using your Claude Code plan instead of the API. Ask Claude Code to "use the jarvis agent" in this repo.
+**In Claude Code:** `.claude/agents/anu.md` defines a `anu` subagent that answers from the same data through `npm run kb`, using your Claude Code plan instead of the API. Ask Claude Code to "use the anu agent" in this repo.
 
 ### Hugging Face models (free, run locally)
 
-- **Semantic search** with [`bge-small-en-v1.5`](https://huggingface.co/Xenova/bge-small-en-v1.5): Jarvis finds updates, companies, research and ideas by meaning, so "cheap ways to stop drone swarms" finds microwave and interceptor stories with none of those words. Keyword and meaning scores are blended in update search, and `semantic_search` / `related_updates` are extra agent tools. Vectors are cached in `.hf-cache/` and only new items are embedded.
+- **Semantic search** with [`bge-small-en-v1.5`](https://huggingface.co/Xenova/bge-small-en-v1.5): ANU finds updates, companies, research and ideas by meaning, so "cheap ways to stop drone swarms" finds microwave and interceptor stories with none of those words. Keyword and meaning scores are blended in update search, and `semantic_search` / `related_updates` are extra agent tools. Vectors are cached in `.hf-cache/` and only new items are embedded.
 - **Company tagging** with [`bert-base-NER`](https://huggingface.co/Xenova/bert-base-NER): the daily collector tags the companies each story mentions (matched to the directory's spelling; governments, militaries and publishers are filtered out). `npm run enrich` backfills stored updates.
 - **Research papers** from [Hugging Face Papers](https://huggingface.co/papers): the `search_papers` tool and the sector panel pull recent arXiv research on the technology behind a trend. Pick the sources in the app's "Research sources" dropdown.
 
 The models run on your CPU through `@huggingface/transformers` (ONNX). The first run downloads about 150 MB of weights; no Hugging Face account or key is needed (set `HF_TOKEN` only if you hit rate limits on Papers search).
 
-How it works: `src/kb.ts` holds the read-only queries; `src/hf.ts` and `src/semantic.ts` run the Hugging Face models; `src/jarvis.ts` gives them to Claude Opus 5.5 as tools (via the SDK's tool runner); `src/server.ts` streams answers to the React app in `app/`.
+How it works: `src/kb.ts` holds the read-only queries; `src/hf.ts` and `src/semantic.ts` run the Hugging Face models; `src/anu.ts` gives them to Claude Opus 5.5 as tools (via the SDK's tool runner); `src/server.ts` streams answers to the React app in `app/`.
 
 ## Optional: Claude-written briefs (`npm run daily:claude`)
 

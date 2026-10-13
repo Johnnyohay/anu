@@ -126,7 +126,7 @@ export function App() {
             return { ...t, evidence: [...t.evidence, ...ev.data.items.filter((e) => !seen.has(e.id))] };
           });
         else if (ev.event === "done") {
-          const note = ev.data.stopReason === "refusal" ? "Jarvis declined this question." : ev.data.stopReason === "max_tokens" ? "The answer hit the length limit." : undefined;
+          const note = ev.data.stopReason === "refusal" ? "ANU declined this question." : ev.data.stopReason === "max_tokens" ? "The answer hit the length limit." : undefined;
           patchLast((t) => ({ ...t, status: "done", note }));
         } else if (ev.event === "error") patchLast((t) => ({ ...t, status: "error", note: ev.data.message }));
       }
@@ -143,15 +143,15 @@ export function App() {
     setTurns([]);
   }
 
-  if (loadError) return <div className="fatal">Couldn't reach the Jarvis server ({loadError}). Start it with <code>npm run app</code>.</div>;
-  if (!meta) return <div className="fatal">Loading Jarvis…</div>;
+  if (loadError) return <div className="fatal">Couldn't reach the ANU server ({loadError}). Start it with <code>npm run app</code>.</div>;
+  if (!meta) return <div className="fatal">Loading ANU…</div>;
 
   return (
     <div className="shell">
       <header className="top">
         <div>
           <div className="eyebrow">Your personal guide to learning and following defense tech</div>
-          <h1>Jar<span>vis</span></h1>
+          <h1>AN<span>U</span></h1>
         </div>
         <div className="stamp">
           {meta.overview.counts.updates} updates · {meta.overview.counts.companies} companies · data to {meta.overview.updatesCover?.to}
@@ -200,7 +200,7 @@ export function App() {
             </select>
           </label>
           <p className="hint">
-            {meta.semantic ? "Semantic search on: Jarvis matches by meaning, not just keywords." : "Keyword search only (the local model didn't load)."}
+            {meta.semantic ? "Semantic search on: ANU matches by meaning, not just keywords." : "Keyword search only (the local model didn't load)."}
             {sources !== "data" && " AI papers come from Hugging Face."}
           </p>
           <button className="btn ghost" onClick={newConversation} disabled={!turns.length}>New conversation</button>
@@ -238,7 +238,7 @@ export function App() {
                   <p>{t.question}</p>
                 </div>
                 <div className="a">
-                  <div className="who">Jarvis</div>
+                  <div className="who">ANU</div>
                   {!!t.tools.length && (
                     <div className="tools">
                       {t.tools.map((tool, j) => <span key={j} className="tool">{toolLabel(tool.name, tool.input)}</span>)}
@@ -248,7 +248,7 @@ export function App() {
                   {t.note && <p className={`note ${t.status}`}>{t.note}</p>}
                   {!!t.evidence.length && t.status !== "streaming" && (
                     <details className="evidence">
-                      <summary>Evidence Jarvis looked at ({t.evidence.length})</summary>
+                      <summary>Evidence ANU looked at ({t.evidence.length})</summary>
                       <ul>
                         {t.evidence.map((e) => (
                           <li key={e.id}>
@@ -275,7 +275,7 @@ export function App() {
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
               onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); void ask(question); } }}
-              placeholder={`Ask Jarvis about ${scope}…`}
+              placeholder={`Ask ANU about ${scope}…`}
               aria-label="Your question"
               rows={2}
             />

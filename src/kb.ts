@@ -1,7 +1,7 @@
 import type { Desk } from "./store.ts";
 import type { Update } from "./schema.ts";
 
-// Read-only queries over the stored data. Shared by the Jarvis agent (src/agent.ts)
+// Read-only queries over the stored data. Shared by the ANU agent (src/agent.ts)
 // and the free command line (src/kb-cli.ts), so both answer from the same evidence.
 
 type Row = Record<string, unknown>;

@@ -7,7 +7,7 @@ import { findCompanies, getBrief, getSector, listIdeas, overview, searchResearch
 import { KINDS, related, semanticSearch, updateSimilarities, type SemanticIndex } from "./semantic.ts";
 import { searchPapers } from "./hf.ts";
 
-// The Jarvis agent: Claude with read-only tools over data/. Used by the command line
+// The ANU agent: Claude with read-only tools over data/. Used by the command line
 // (src/agent.ts) and the web app's server (src/server.ts).
 
 const MODEL = "claude-opus-5-5";
@@ -30,7 +30,7 @@ export interface RunHandlers {
 
 export interface RunOptions {
   web?: boolean;
-  /** Lets Jarvis search Hugging Face Papers (free) for technical research. */
+  /** Lets ANU search Hugging Face Papers (free) for technical research. */
   papers?: boolean;
   effort?: Effort;
   /** Semantic index from src/semantic.ts; without it, search is keyword-only. */
@@ -177,7 +177,7 @@ function makeTools(desk: Desk, opts: RunOptions, onEvidence: (items: Evidence[])
 
 function systemPrompt(desk: Desk, opts: RunOptions) {
   const web = !!opts.web;
-  return `You are Jarvis, Johnny's personal helper for learning about and keeping up with the defense-technology industry. Johnny is a founder who is learning this industry, wants to understand where it is going, and wants to find something worth building.
+  return `You are ANU, Johnny's personal helper for learning about and keeping up with the defense-technology industry. Johnny is a founder who is learning this industry, wants to understand where it is going, and wants to find something worth building.
 
 Your knowledge base is the data in this repo, reachable through your tools: sourced news updates, 20 sector briefs, a company directory, upcoming events, a research library, build ideas and daily briefs. Look things up before answering; search more than once when the first results are thin.${opts.index ? " semantic_search finds items by meaning, so use it for concepts and for questions in everyday words." : ""}${opts.papers ? " search_papers finds technical research (arXiv via Hugging Face) when Johnny wants to understand how a technology works or where it is heading; label it as research, not news, and cite the paper." : ""}
 
@@ -194,7 +194,7 @@ The stored data covers updates up to ${overview(desk).updatesCover?.to ?? "unkno
 }
 
 /** Runs one user turn to completion and returns the full history (tool turns included) for follow-ups. */
-export async function runJarvis(
+export async function runAnu(
   desk: Desk,
   messages: Anthropic.Beta.BetaMessageParam[],
   opts: RunOptions = {},
@@ -245,6 +245,6 @@ export function describeApiError(err: unknown): string | null {
   if (err instanceof Anthropic.RateLimitError) return "Rate limited by the Claude API. Wait a minute and ask again.";
   if (err instanceof Anthropic.APIError) return `Claude API error ${err.status}: ${err.message}`;
   // Thrown by the client before any request when no credentials are configured at all.
-  if (err instanceof Error && /authentication method/i.test(err.message)) return "No Claude API key found. Set ANTHROPIC_API_KEY (or run `ant auth login`) and restart Jarvis.";
+  if (err instanceof Error && /authentication method/i.test(err.message)) return "No Claude API key found. Set ANTHROPIC_API_KEY (or run `ant auth login`) and restart ANU.";
   return null;
 }

@@ -1,8 +1,8 @@
 {
-  "name": "jarvis",
+  "name": "anu",
   "version": "1.0.0",
   "private": true,
-  "description": "Jarvis: a personal helper for learning and following defense tech, with a daily brief, a static JSON API and a site.",
+  "description": "ANU: a personal helper for learning and following defense tech, with a daily brief, a static JSON API and a site.",
   "type": "module",
   "scripts": {
     "collect": "tsx src/collect.ts",
