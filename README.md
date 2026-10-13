@@ -1,9 +1,9 @@
-# Kill Chain Ledger
+# Jarvis
 
-A free daily intelligence desk for the defense-technology industry. Every morning a GitHub Action collects the latest articles from 14 defense news sources, sorts them into 20 sectors, writes a short headline brief, and publishes everything as a website and a JSON API on GitHub Pages.
+My personal helper for learning about and keeping up with the defense-technology industry. Every morning a GitHub Action collects the latest articles from 14 defense news sources, sorts them into 20 sectors, writes a short headline brief, and publishes everything as a website and a JSON API on GitHub Pages.
 
-**Site:** https://johnnyohay.github.io/kill-chain-ledger/
-**API:** https://johnnyohay.github.io/kill-chain-ledger/api/v1/
+**Site:** https://johnnyohay.github.io/jarvis/
+**API:** https://johnnyohay.github.io/jarvis/api/v1/
 
 Running it costs nothing: GitHub Actions and Pages are free for public repos, and the daily job uses no paid APIs.
 
