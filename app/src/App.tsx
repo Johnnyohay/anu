@@ -203,6 +203,7 @@ export function App() {
             {meta.semantic ? "Semantic search on: ANU matches by meaning, not just keywords." : "Keyword search only (the local model didn't load)."}
             {sources !== "data" && " AI papers come from Hugging Face."}
           </p>
+          <p className="hint">Answering with: <strong>{meta.engine.label}</strong></p>
           <button className="btn ghost" onClick={newConversation} disabled={!turns.length}>New conversation</button>
         </aside>
 
@@ -244,7 +245,7 @@ export function App() {
                       {t.tools.map((tool, j) => <span key={j} className="tool">{toolLabel(tool.name, tool.input)}</span>)}
                     </div>
                   )}
-                  {t.answer ? <Markdown text={t.answer} /> : t.status === "streaming" && <p className="thinking">Looking through your data…</p>}
+                  {t.answer ? <Markdown text={t.answer} /> : t.status === "streaming" && <p className="thinking">{meta.engine.engine === "ollama" ? "Thinking on your Mac and looking through your data…" : "Looking through your data…"}</p>}
                   {t.note && <p className={`note ${t.status}`}>{t.note}</p>}
                   {!!t.evidence.length && t.status !== "streaming" && (
                     <details className="evidence">

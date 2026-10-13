@@ -1,5 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { betaZodTool } from "@anthropic-ai/sdk/helpers/beta/zod";
+import { Ollama, type Message as OllamaMessage, type Tool as OllamaTool } from "ollama";
 import { z } from "zod/v4";
 import { SECTOR_IDS, UPDATE_TYPES } from "./schema.ts";
 import type { Desk } from "./store.ts";
@@ -7,11 +8,34 @@ import { findCompanies, getBrief, getSector, listIdeas, overview, searchResearch
 import { KINDS, related, semanticSearch, updateSimilarities, type SemanticIndex } from "./semantic.ts";
 import { searchPapers } from "./hf.ts";
 
-// The ANU agent: Claude with read-only tools over data/. Used by the command line
-// (src/agent.ts) and the web app's server (src/server.ts).
+// The ANU agent: a language model with read-only tools over data/. Used by the command
+// line (src/agent.ts) and the web app's server (src/server.ts).
+//
+// Two engines run the same tools:
+// - "ollama" (default): a free open-source model on this computer via Ollama. No account,
+//   no key, nothing leaves the machine. Model: OLLAMA_MODEL (default qwen3.5:9b).
+// - "claude": the paid Claude API, used only when ANTHROPIC_API_KEY is set (or ANU_ENGINE=claude).
 
-const MODEL = "claude-opus-5-5";
-const client = new Anthropic();
+export type Engine = "ollama" | "claude";
+export const ENGINE: Engine =
+  process.env.ANU_ENGINE === "claude" || process.env.ANU_ENGINE === "ollama"
+    ? process.env.ANU_ENGINE
+    : process.env.ANTHROPIC_API_KEY
+      ? "claude"
+      : "ollama";
+
+const CLAUDE_MODEL = "claude-opus-5-5";
+export const OLLAMA_MODEL = process.env.OLLAMA_MODEL ?? "qwen3.5:9b";
+const OLLAMA_HOST = process.env.OLLAMA_HOST ?? "http://127.0.0.1:11434";
+const OLLAMA_MAX_STEPS = 12;
+// Tool results are trimmed so a small model's context window isn't swamped.
+const OLLAMA_TOOL_RESULT_CHARS = 12000;
+
+/** What the app shows about the engine, and whether web search is available with it. */
+export const engineInfo = () =>
+  ENGINE === "claude"
+    ? { engine: ENGINE, model: CLAUDE_MODEL, label: "Claude API (paid)", web: true }
+    : { engine: ENGINE, model: OLLAMA_MODEL, label: `Local model: ${OLLAMA_MODEL} (free)`, web: false };
 
 export type Effort = "low" | "medium" | "high";
 
@@ -37,8 +61,11 @@ export interface RunOptions {
   index?: SemanticIndex;
 }
 
+/** A conversation turn in the active engine's format; the server stores and replays it as-is. */
+export type ChatMessage = Anthropic.Beta.BetaMessageParam | OllamaMessage;
+
 export interface RunResult {
-  history: Anthropic.Beta.BetaMessageParam[];
+  history: ChatMessage[];
   stopReason: string | null;
   refusalCategory?: string | null;
 }
@@ -185,6 +212,7 @@ A question may start with a bracketed focus line set in Johnny's app (mode, sect
 
 How to answer:
 - Ground claims in the tools' results and name the source after each one, e.g. [Breaking Defense] or [SEC 8-K]. Sources marked [aggregator] are unconfirmed; say so when you rely on one.
+- Never guess names, founders, dates or numbers. If a fact is not in the tool results, look it up or leave it out; do not fill gaps from memory unless you label it.
 - Anything beyond the stored data is labelled "(general knowledge, may be outdated)"${web ? ", unless you found it with web search, in which case cite the page" : ""}.
 - Teach as you go: explain acronyms, programs, budget terms and how buying works in plain words the first time they come up. Connect developments across sectors when it helps.
 - When Johnny asks for advice (what to build, where to focus, who the buyer is), be direct: give a recommendation, the buyer and budget line, the incumbents, why now, the risks and a first step. Say plainly when the evidence is thin.
@@ -194,18 +222,116 @@ The stored data covers updates up to ${overview(desk).updatesCover?.to ?? "unkno
 }
 
 /** Runs one user turn to completion and returns the full history (tool turns included) for follow-ups. */
-export async function runAnu(
-  desk: Desk,
-  messages: Anthropic.Beta.BetaMessageParam[],
-  opts: RunOptions = {},
-  on: RunHandlers = {},
-  signal?: AbortSignal,
-): Promise<RunResult> {
+export function runAnu(desk: Desk, messages: ChatMessage[], opts: RunOptions = {}, on: RunHandlers = {}, signal?: AbortSignal): Promise<RunResult> {
+  return ENGINE === "claude"
+    ? runClaude(desk, messages as Anthropic.Beta.BetaMessageParam[], opts, on, signal)
+    : runOllama(desk, messages as OllamaMessage[], { ...opts, web: false }, on, signal);
+}
+
+interface PortableTool {
+  name: string;
+  description: string;
+  input_schema: unknown;
+  parse: (input: unknown) => unknown;
+  run: (input: unknown) => Promise<unknown> | unknown;
+}
+
+/**
+ * Small local models often send arrays and numbers as strings ('["update"]', "15").
+ * Validate as sent first; if that fails, decode such strings and validate again.
+ */
+function parseLenient(tool: PortableTool, args: Record<string, unknown>): unknown {
+  try {
+    return tool.parse(args);
+  } catch (err) {
+    const decoded = Object.fromEntries(
+      Object.entries(args).map(([k, v]) => {
+        if (typeof v !== "string") return [k, v];
+        if (/^\s*[[{]/.test(v)) {
+          try {
+            return [k, JSON.parse(v)];
+          } catch {}
+        }
+        if (/^-?\d+(\.\d+)?$/.test(v.trim())) return [k, Number(v)];
+        if (v === "") return [k, undefined];
+        return [k, v];
+      }),
+    );
+    try {
+      return tool.parse(decoded);
+    } catch {
+      throw err;
+    }
+  }
+}
+
+async function runOllama(desk: Desk, messages: OllamaMessage[], opts: RunOptions, on: RunHandlers, signal?: AbortSignal): Promise<RunResult> {
+  const ollama = new Ollama({ host: OLLAMA_HOST });
+  // The same runnable tools the Claude engine uses, viewed through what this loop needs.
+  const tools = makeTools(desk, opts, (items) => on.onEvidence?.(items)) as unknown as PortableTool[];
+  const byName = new Map(tools.map((t) => [t.name, t]));
+  const defs: OllamaTool[] = tools.map((t) => ({
+    type: "function",
+    function: { name: t.name, description: t.description, parameters: t.input_schema as OllamaTool["function"]["parameters"] },
+  }));
+  const system: OllamaMessage = { role: "system", content: systemPrompt(desk, opts) };
+  const history = [...messages];
+
+  for (let step = 0; step < OLLAMA_MAX_STEPS; step++) {
+    const stream = await ollama.chat({
+      model: OLLAMA_MODEL,
+      messages: [system, ...history],
+      tools: defs,
+      stream: true,
+      // Thinking makes answers better but slower; "Quick" depth turns it off.
+      think: opts.effort !== "low",
+      options: { num_ctx: 32768, temperature: 0.2 },
+    });
+    const stop = () => stream.abort();
+    signal?.addEventListener("abort", stop);
+
+    let content = "";
+    const calls: NonNullable<OllamaMessage["tool_calls"]> = [];
+    try {
+      for await (const part of stream) {
+        if (part.message.content) {
+          content += part.message.content;
+          on.onText?.(part.message.content);
+        }
+        if (part.message.tool_calls) calls.push(...part.message.tool_calls);
+      }
+    } finally {
+      signal?.removeEventListener("abort", stop);
+    }
+    history.push({ role: "assistant", content, ...(calls.length ? { tool_calls: calls } : {}) });
+    if (!calls.length) return { history, stopReason: "end_turn" };
+    if (content.trim()) on.onText?.("\n\n");
+
+    for (const call of calls) {
+      const { name, arguments: args } = call.function;
+      on.onTool?.(name, args);
+      const tool = byName.get(name);
+      let result: string;
+      try {
+        const out = tool ? await tool.run(parseLenient(tool, args)) : json({ error: `Unknown tool "${name}". Available: ${[...byName.keys()].join(", ")}` });
+        result = typeof out === "string" ? out : json(out);
+      } catch (err) {
+        result = json({ error: `Invalid call to ${name}: ${err instanceof Error ? err.message : String(err)}` });
+      }
+      if (result.length > OLLAMA_TOOL_RESULT_CHARS) result = result.slice(0, OLLAMA_TOOL_RESULT_CHARS) + "…(truncated; narrow the search for more)";
+      history.push({ role: "tool", tool_name: name, content: result });
+    }
+  }
+  return { history, stopReason: "max_steps" };
+}
+
+async function runClaude(desk: Desk, messages: Anthropic.Beta.BetaMessageParam[], opts: RunOptions, on: RunHandlers, signal?: AbortSignal): Promise<RunResult> {
+  const client = new Anthropic();
   const web = !!opts.web;
   const tools = makeTools(desk, opts, (items) => on.onEvidence?.(items));
   const runner = client.beta.messages.toolRunner(
     {
-      model: MODEL,
+      model: CLAUDE_MODEL,
       max_tokens: 32000,
       betas: ["server-side-fallback-2026-07-01"],
       fallbacks: "default",
@@ -241,6 +367,15 @@ export async function runAnu(
 }
 
 export function describeApiError(err: unknown): string | null {
+  if (ENGINE === "ollama" && err instanceof Error) {
+    const cause = (err as { cause?: { code?: string } }).cause;
+    if (cause?.code === "ECONNREFUSED" || /fetch failed|ECONNREFUSED/i.test(err.message))
+      return `Can't reach Ollama at ${OLLAMA_HOST}. Start it with \`brew services start ollama\` (or open the Ollama app), then ask again.`;
+    if (/not found/i.test(err.message) && /model/i.test(err.message))
+      return `The local model ${OLLAMA_MODEL} isn't downloaded yet. Run \`ollama pull ${OLLAMA_MODEL}\`, then ask again.`;
+    if (err.name === "AbortError") return null;
+    return `Local model error: ${err.message}`;
+  }
   if (err instanceof Anthropic.AuthenticationError) return "No valid Claude API credentials. Set ANTHROPIC_API_KEY or run `ant auth login`.";
   if (err instanceof Anthropic.RateLimitError) return "Rate limited by the Claude API. Wait a minute and ask again.";
   if (err instanceof Anthropic.APIError) return `Claude API error ${err.status}: ${err.message}`;

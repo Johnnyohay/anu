@@ -42,21 +42,26 @@ npx serve public       # view the site locally
 
 ## Ask ANU: the app (`npm run app`)
 
-An agent that answers questions and gives advice using everything stored in `data/`. It runs on your machine, so your Claude API key never goes into the public site.
+An agent that answers questions and gives advice using everything stored in `data/`. **It's free by default:** answers come from an open-source model running on your own computer through [Ollama](https://ollama.com), with no account, no API key and nothing sent to a paid service.
 
 ```bash
-export ANTHROPIC_API_KEY=sk-ant-...   # paid Claude API; each question costs a few cents
-npm run app                           # builds the UI and opens the server at http://localhost:8787
+brew install ollama && brew services start ollama   # one time: install and run Ollama in the background
+ollama pull qwen3.5:9b                              # one time: download the model (7.6 GB)
+npm run app                                         # builds the UI and opens http://localhost:8787
 ```
 
-- **Focus panel (dropdowns):** what you want (Teach me, What's new, Advise me, Company deep dive, Compare), sector, company, time range, answer depth (Quick / Standard / Deep), and research sources (stored data, + AI research papers, + web).
+A good answer takes 30–60 seconds on an Apple M-series Mac ("Quick" depth is faster). Use a different local model with `OLLAMA_MODEL=qwen3.5:27b npm run app` (smarter, slower, needs more memory). Small local models can still get details wrong, so check the evidence list under each answer.
+
+**Optional, paid:** if you ever set `ANTHROPIC_API_KEY`, ANU switches to Claude, which is stronger and adds web search. Force either with `ANU_ENGINE=ollama` or `ANU_ENGINE=claude`.
+
+- **Focus panel (dropdowns):** what you want (Teach me, What's new, Advise me, Company deep dive, Compare), sector, company, time range, answer depth (Quick / Standard / Deep), and research sources (your data, + AI research papers; + web with Claude).
 - **Suggested questions** change with your focus; today's brief stories are one click away.
 - **Conversation:** answers stream in, show which lookups ANU made, and list the evidence (dated, sourced updates) behind each answer. Follow-up questions keep the context; "New conversation" starts fresh.
 - **Context panel:** the selected sector's state, money, watch list, upcoming events, companies and latest news, or the selected company's profile, all read straight from `data/` with no API cost.
 
 `npm run app:dev` runs the same thing with hot reload while you change the UI (`app/`).
 
-**Command line:** `npm run ask -- "What should I build in counter-drone?"`, or `npm run ask` for a conversation. Add `--web` to let it search the web.
+**Command line:** `npm run ask -- "What should I build in counter-drone?"`, or `npm run ask` for a conversation (same free local model; `--web` works only with Claude).
 
 **Free lookups (no API key):** `npm run kb -- <overview|updates|sector|companies|events|research|ideas|brief|semantic|related|papers> [query] [--sector id] …` prints JSON from `data/` (and Hugging Face Papers).
 
@@ -70,7 +75,7 @@ npm run app                           # builds the UI and opens the server at ht
 
 The models run on your CPU through `@huggingface/transformers` (ONNX). The first run downloads about 150 MB of weights; no Hugging Face account or key is needed (set `HF_TOKEN` only if you hit rate limits on Papers search).
 
-How it works: `src/kb.ts` holds the read-only queries; `src/hf.ts` and `src/semantic.ts` run the Hugging Face models; `src/anu.ts` gives them to Claude Opus 5.5 as tools (via the SDK's tool runner); `src/server.ts` streams answers to the React app in `app/`.
+How it works: `src/kb.ts` holds the read-only queries; `src/hf.ts` and `src/semantic.ts` run the Hugging Face models; `src/anu.ts` gives them as tools to the local Ollama model (or to Claude Opus 5.5 via the SDK's tool runner when a key is set); `src/server.ts` streams answers to the React app in `app/`.
 
 ## Optional: Claude-written briefs (`npm run daily:claude`)
 
