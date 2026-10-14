@@ -273,8 +273,11 @@ export function App() {
                   {t.answer ? <Markdown text={t.answer} /> : t.status === "streaming" && <p className="thinking">{meta.engine.engine === "ollama" ? "Thinking on your Mac and looking through your data…" : "Looking through your data…"}</p>}
                   {t.progress && t.status === "streaming" && <p className="note">{t.progress}</p>}
                   {t.note && <p className={`note ${t.status}`}>{t.note}</p>}
-                  {i === turns.length - 1 && t.status === "done" && t.answer && meta.checker && (
-                    <CheckPanel check={t.check} checker={meta.checker} onVerify={() => void verifyLast()} />
+                  {i === turns.length - 1 && t.status === "done" && t.answer && conversationId && (
+                    <>
+                      <GrokButton conversationId={conversationId} />
+                      {meta.checker && <CheckPanel check={t.check} checker={meta.checker} onVerify={() => void verifyLast()} />}
+                    </>
                   )}
                   {!!t.evidence.length && t.status !== "streaming" && (
                     <details className="evidence">
@@ -321,6 +324,40 @@ export function App() {
           {companyDetail ? <CompanyCard c={companyDetail} onAsk={ask} /> : sectorDetail ? <SectorCard s={sectorDetail} onAsk={ask} /> : <OverviewCard meta={meta} />}
         </aside>
       </div>
+    </div>
+  );
+}
+
+/**
+ * The free Grok app has no API, so this copies a fact-check prompt (question, answer and
+ * the evidence ANU used) and opens grok.com to paste it into.
+ */
+function GrokButton({ conversationId }: { conversationId: string }) {
+  const [state, setState] = useState<"idle" | "copied" | "blocked" | "error">("idle");
+  const [prompt, setPrompt] = useState("");
+  async function go() {
+    try {
+      const text = await api.grokPrompt(conversationId);
+      setPrompt(text);
+      await navigator.clipboard.writeText(text);
+      const tab = window.open("https://grok.com/", "_blank", "noopener");
+      setState(tab === null ? "blocked" : "copied");
+    } catch {
+      setState("error");
+    }
+  }
+  return (
+    <div className="grok">
+      <button className="btn ghost verify" onClick={() => void go()}>Check with Grok (free)</button>
+      {state === "copied" && <span className="note"> Copied. In the Grok tab, paste (⌘V) and send.</span>}
+      {state === "blocked" && <span className="note"> Copied. Open <a href="https://grok.com/" target="_blank" rel="noreferrer">grok.com</a>, paste (⌘V) and send.</span>}
+      {state === "error" && (
+        <span className="note error">
+          {" "}Couldn't copy automatically.{" "}
+          {prompt ? <button className="linkish" onClick={() => setState("idle")}>Select the prompt below and copy it</button> : "Try again."}
+        </span>
+      )}
+      {state === "error" && prompt && <textarea className="grok-prompt" readOnly value={prompt} onFocus={(e) => e.currentTarget.select()} />}
     </div>
   );
 }

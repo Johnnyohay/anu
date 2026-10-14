@@ -51,6 +51,12 @@ export const api = {
   sector: (id: string) => getJson<SectorDetail>(`/api/sector?id=${encodeURIComponent(id)}`),
   company: (id: string) => getJson<CompanyDetail>(`/api/company?id=${encodeURIComponent(id)}`),
   papers: (q: string, limit = 5) => getJson<Paper[]>(`/api/papers?q=${encodeURIComponent(q)}&limit=${limit}`),
+  async grokPrompt(conversationId: string): Promise<string> {
+    const res = await fetch("/api/grok-prompt", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ conversationId }) });
+    const body = (await res.json()) as { prompt?: string; error?: string };
+    if (!res.ok || !body.prompt) throw new Error(body.error ?? `Couldn't build the Grok prompt (${res.status})`);
+    return body.prompt;
+  },
   async verify(conversationId: string): Promise<Check> {
     const res = await fetch("/api/verify", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ conversationId }) });
     const body = (await res.json()) as Check & { error?: string };
