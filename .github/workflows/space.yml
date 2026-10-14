@@ -1,0 +1,29 @@
+name: Deploy to Hugging Face Space
+
+# Publishes the app to https://huggingface.co/spaces/<HF_USERNAME>/anu whenever the code
+# changes. Data-only commits are skipped: the Space reads data from the JSON API itself.
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["data/**", "public/api/**", "logs/**"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Push the app to the Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_USERNAME: ${{ secrets.HF_USERNAME }}
+        run: |
+          if [ -z "$HF_TOKEN" ] || [ -z "$HF_USERNAME" ]; then echo "::warning::Skipping: set the HF_TOKEN and HF_USERNAME repository secrets to deploy."; exit 0; fi
+          cp space/README.md README.md
+          rm -rf data public/api logs
+          git config user.name "anu bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout --orphan space-deploy
+          git add -A
+          git commit -qm "Deploy ${GITHUB_SHA::7}"
+          git push --force "https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/anu" space-deploy:main

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { api, type AskRequest, type Catalyst, type CompanyDetail, type Evidence, type Meta, type Paper, type SectorDetail } from "./api.ts";
+import { api, type AskRequest, type Catalyst, type Check, type CompanyDetail, type Evidence, type Meta, type Paper, type SectorDetail } from "./api.ts";
 import { Markdown } from "./Markdown.tsx";
 
 type Effort = AskRequest["effort"];
@@ -12,6 +12,8 @@ interface Turn {
   evidence: Evidence[];
   status: "streaming" | "done" | "error" | "stopped";
   note?: string;
+  progress?: string;
+  check?: { state: "loading" } | { state: "done"; result: Check } | { state: "error"; message: string };
 }
 
 const RANGES = [
@@ -82,6 +84,8 @@ export function App() {
   const [companyDetail, setCompanyDetail] = useState<CompanyDetail | null>(null);
   const abortRef = useRef<AbortController | null>(null);
   const logRef = useRef<HTMLDivElement>(null);
+  // Follow new text only while the reader is at the bottom; scrolling up stops the follow.
+  const followRef = useRef(true);
 
   useEffect(() => {
     api.meta().then(setMeta, (e: Error) => setLoadError(e.message));
@@ -95,7 +99,7 @@ export function App() {
     if (company) api.company(company).then(setCompanyDetail, () => {});
   }, [company]);
   useEffect(() => {
-    logRef.current?.scrollTo({ top: logRef.current.scrollHeight });
+    if (followRef.current) logRef.current?.scrollTo({ top: logRef.current.scrollHeight });
   }, [turns]);
 
   const companies = useMemo(() => (meta?.companies ?? []).filter((c) => !sector || c.sectors.includes(sector)), [meta, sector]);
@@ -111,6 +115,7 @@ export function App() {
     const text = q.trim();
     if (!text || busy) return;
     setQuestion("");
+    followRef.current = true;
     setTurns((ts) => [...ts, { question: text, focusLabel, answer: "", tools: [], evidence: [], status: "streaming" }]);
     const ctl = new AbortController();
     abortRef.current = ctl;
@@ -118,7 +123,8 @@ export function App() {
       const req: AskRequest = { conversationId, question: text, focus: { mode, sector: sector || undefined, company: company || undefined, days: days || undefined }, effort, sources };
       for await (const ev of api.ask(req, ctl.signal)) {
         if (ev.event === "start") setConversationId(ev.data.conversationId);
-        else if (ev.event === "text") patchLast((t) => ({ ...t, answer: t.answer + ev.data.text }));
+        else if (ev.event === "text") patchLast((t) => ({ ...t, answer: t.answer + ev.data.text, progress: undefined }));
+        else if (ev.event === "status") patchLast((t) => ({ ...t, progress: ev.data.note }));
         else if (ev.event === "tool") patchLast((t) => ({ ...t, tools: [...t.tools, ev.data] }));
         else if (ev.event === "evidence")
           patchLast((t) => {
@@ -133,6 +139,17 @@ export function App() {
       patchLast((t) => (t.status === "streaming" ? { ...t, status: "done" } : t));
     } catch (e) {
       patchLast((t) => (ctl.signal.aborted ? { ...t, status: "stopped", note: "Stopped." } : { ...t, status: "error", note: e instanceof Error ? e.message : String(e) }));
+    }
+  }
+
+  async function verifyLast() {
+    if (!conversationId) return;
+    patchLast((t) => ({ ...t, check: { state: "loading" } }));
+    try {
+      const result = await api.verify(conversationId);
+      patchLast((t) => ({ ...t, check: { state: "done", result } }));
+    } catch (e) {
+      patchLast((t) => ({ ...t, check: { state: "error", message: e instanceof Error ? e.message : String(e) } }));
     }
   }
 
@@ -208,7 +225,15 @@ export function App() {
         </aside>
 
         <main className="panel chat">
-          <div className="log" ref={logRef} aria-live="polite">
+          <div
+            className="log"
+            ref={logRef}
+            aria-live="polite"
+            onScroll={(e) => {
+              const el = e.currentTarget;
+              followRef.current = el.scrollHeight - el.scrollTop - el.clientHeight < 40;
+            }}
+          >
             {!turns.length && (
               <div className="empty">
                 <p className="lead">Ask anything about {scope}. Pick a starting point:</p>
@@ -246,7 +271,11 @@ export function App() {
                     </div>
                   )}
                   {t.answer ? <Markdown text={t.answer} /> : t.status === "streaming" && <p className="thinking">{meta.engine.engine === "ollama" ? "Thinking on your Mac and looking through your data…" : "Looking through your data…"}</p>}
+                  {t.progress && t.status === "streaming" && <p className="note">{t.progress}</p>}
                   {t.note && <p className={`note ${t.status}`}>{t.note}</p>}
+                  {i === turns.length - 1 && t.status === "done" && t.answer && meta.checker && (
+                    <CheckPanel check={t.check} checker={meta.checker} onVerify={() => void verifyLast()} />
+                  )}
                   {!!t.evidence.length && t.status !== "streaming" && (
                     <details className="evidence">
                       <summary>Evidence ANU looked at ({t.evidence.length})</summary>
@@ -292,6 +321,38 @@ export function App() {
           {companyDetail ? <CompanyCard c={companyDetail} onAsk={ask} /> : sectorDetail ? <SectorCard s={sectorDetail} onAsk={ask} /> : <OverviewCard meta={meta} />}
         </aside>
       </div>
+    </div>
+  );
+}
+
+const VERDICTS = {
+  supported: { label: "Supported", cls: "ok" },
+  not_in_evidence: { label: "Not in evidence", cls: "warn" },
+  contradicted: { label: "Contradicted", cls: "bad" },
+} as const;
+
+function CheckPanel({ check, checker, onVerify }: { check: Turn["check"]; checker: string; onVerify: () => void }) {
+  if (!check) return <button className="btn ghost verify" onClick={onVerify}>Verify this answer with a second model</button>;
+  if (check.state === "loading") return <p className="note thinking">Checking every claim against the evidence with {checker}…</p>;
+  if (check.state === "error") return <p className="note error">Couldn't verify: {check.message} <button className="linkish" onClick={onVerify}>Try again</button></p>;
+  const r = check.result;
+  const level = r.confidence >= 75 ? "ok" : r.confidence >= 45 ? "warn" : "bad";
+  return (
+    <div className="check">
+      <div className="check-head">
+        <span className={`score ${level}`}>{r.confidence}/100</span>
+        <span>
+          <strong>Second opinion</strong> by {r.checker}. {r.summary}
+        </span>
+      </div>
+      <ul>
+        {r.claims.map((c, i) => (
+          <li key={i}>
+            <span className={`verdict ${VERDICTS[c.verdict].cls}`}>{VERDICTS[c.verdict].label}</span> {c.claim}
+            {c.note && <span className="why"> — {c.note}</span>}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

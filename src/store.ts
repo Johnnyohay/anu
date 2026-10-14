@@ -25,6 +25,23 @@ export interface Desk {
   briefs: Brief[];
 }
 
+/** Loads everything from the published JSON API (api/v1/all.json), so no local copy is needed. */
+export async function loadDeskRemote(url: string): Promise<Desk> {
+  const res = await fetch(url, { signal: AbortSignal.timeout(30000) });
+  if (!res.ok) throw new Error(`Couldn't load data from ${url} (${res.status})`);
+  const all = (await res.json()) as Omit<Desk, "meta"> & { meta: Record<string, unknown> };
+  return {
+    meta: all.meta,
+    sectors: all.sectors,
+    updates: all.updates,
+    companies: all.companies,
+    catalysts: all.catalysts,
+    research: all.research,
+    ideas: all.ideas,
+    briefs: all.briefs,
+  };
+}
+
 export async function loadDesk(): Promise<Desk> {
   const briefFiles = (await readdir(path.join(DATA_DIR, "briefs"))).filter((f) => f.endsWith(".json")).sort();
   return {

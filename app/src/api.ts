@@ -11,7 +11,7 @@ export interface Overview {
   updatesCover: { from: string; to: string } | null;
   latestBrief: string | null;
 }
-export interface Meta { overview: Overview; sectors: Sector[]; companies: CompanyLite[]; modes: { id: string; label: string }[]; sources: { id: string; label: string }[]; semantic: boolean; engine: { engine: string; model: string; label: string; web: boolean }; brief: Brief; upcoming: Catalyst[] }
+export interface Meta { overview: Overview; sectors: Sector[]; companies: CompanyLite[]; modes: { id: string; label: string }[]; sources: { id: string; label: string }[]; semantic: boolean; engine: { engine: string; model: string; label: string; web: boolean }; checker: string | null; brief: Brief; upcoming: Catalyst[] }
 export interface Paper { id: string; title: string; summary: string; published: string; upvotes: number; url: string; arxiv: string }
 export interface SectorDetail extends Sector {
   recentUpdates: UpdateLite[];
@@ -21,6 +21,7 @@ export interface SectorDetail extends Sector {
 }
 export interface CompanyDetail { id: string; name: string; sectors: string[]; type: string; hq: string; status: string; edge: string; latest: string; src?: string; updates: UpdateLite[] }
 export interface Evidence { id: string; date: string; title: string; source: string | null }
+export interface Check { checker: string; confidence: number; summary: string; claims: { claim: string; verdict: "supported" | "not_in_evidence" | "contradicted"; note: string }[] }
 
 export interface AskRequest {
   conversationId: string | null;
@@ -35,6 +36,7 @@ export type AskEvent =
   | { event: "text"; data: { text: string } }
   | { event: "tool"; data: { name: string; input: Record<string, unknown> } }
   | { event: "evidence"; data: { items: Evidence[] } }
+  | { event: "status"; data: { note: string } }
   | { event: "done"; data: { stopReason: string | null; refusalCategory: string | null } }
   | { event: "error"; data: { message: string } };
 
@@ -49,6 +51,12 @@ export const api = {
   sector: (id: string) => getJson<SectorDetail>(`/api/sector?id=${encodeURIComponent(id)}`),
   company: (id: string) => getJson<CompanyDetail>(`/api/company?id=${encodeURIComponent(id)}`),
   papers: (q: string, limit = 5) => getJson<Paper[]>(`/api/papers?q=${encodeURIComponent(q)}&limit=${limit}`),
+  async verify(conversationId: string): Promise<Check> {
+    const res = await fetch("/api/verify", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ conversationId }) });
+    const body = (await res.json()) as Check & { error?: string };
+    if (!res.ok) throw new Error(body.error ?? `Verify failed (${res.status})`);
+    return body;
+  },
   reset: (conversationId: string) =>
     fetch("/api/reset", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ conversationId }) }),
 

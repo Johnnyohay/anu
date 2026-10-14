@@ -22,7 +22,6 @@
     "@anthropic-ai/sdk": "^0.133.0",
     "@huggingface/transformers": "^4.3.1",
     "fast-xml-parser": "^5.11.2",
-    "ollama": "^0.6.4",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "zod": "^4.6.7"

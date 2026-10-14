@@ -40,6 +40,17 @@ npx serve public       # view the site locally
 
 `DESK_DATE=YYYY-MM-DD` sets the date; `LOOKBACK_DAYS=N` changes how far back it reads (default 3).
 
+## ANU online (Hugging Face Space)
+
+ANU runs online on a free [Hugging Face Space](https://huggingface.co/spaces), so nothing is stored or computed on your own device:
+
+- **Hosting:** the Space (free CPU) runs the app from this repo's `Dockerfile`. `.github/workflows/space.yml` redeploys it whenever the code on `main` changes.
+- **Data:** read from the published JSON API (`api/v1/all.json`) and refreshed every 30 minutes; the daily GitHub Action keeps that up to date.
+- **Answers:** an open-source model hosted by [Groq](https://console.groq.com) on its free tier (`openai/gpt-oss-120b`; about 8K tokens per minute and 200K per day). If the per-minute limit is hit, ANU waits and continues.
+- **Verify:** under each answer, "Verify this answer" has a second, independent model (`qwen/qwen3.8-27b` on Groq, free) check every claim against the exact evidence ANU used: supported, not in evidence, or contradicted, with a confidence score. Set `XAI_API_KEY` to use xAI's Grok as the checker instead (paid).
+
+One-time setup: create the Space (Docker, private), add `GROQ_API_KEY` as a Space secret, and add `HF_TOKEN` and `HF_USERNAME` as GitHub repository secrets.
+
 ## Ask ANU: the app (`npm run app`)
 
 An agent that answers questions and gives advice using everything stored in `data/`. **It's free by default:** answers come from an open-source model running on your own computer through [Ollama](https://ollama.com), with no account, no API key and nothing sent to a paid service.

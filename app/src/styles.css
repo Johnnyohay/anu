@@ -116,3 +116,19 @@ h1 span { color: var(--accent); }
 
 .hint { margin: -4px 0 0; font-size: 12px; color: var(--muted); }
 .linkish { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font: 12px var(--mono); }
+
+.btn.verify { margin-top: 12px; font-size: 13px; padding: 6px 12px; }
+.check { margin-top: 14px; border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; background: var(--surface-2); font-size: 14px; }
+.check-head { display: flex; gap: 10px; align-items: flex-start; }
+.check ul { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 6px; }
+.check .why { color: var(--muted); }
+.score { font: 600 15px var(--mono); border-radius: 6px; padding: 2px 8px; white-space: nowrap; }
+.verdict { font: 500 11px var(--mono); text-transform: uppercase; border-radius: 4px; padding: 1px 6px; margin-right: 4px; white-space: nowrap; }
+.ok { background: #D7EBDD; color: #1D6B43; }
+.warn { background: #F5E7C8; color: #8A5A00; }
+.bad { background: #F6D5CD; color: #A3301A; }
+@media (prefers-color-scheme: dark) {
+  .ok { background: #1E3A2A; color: #8FD3A8; }
+  .warn { background: #3A2F17; color: #F0C46A; }
+  .bad { background: #3D1F18; color: #F29C86; }
+}
