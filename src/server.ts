@@ -2,29 +2,51 @@ import http from "node:http";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
-import { loadDesk } from "./store.ts";
+import { loadDesk, loadDeskRemote, type Desk } from "./store.ts";
 import { getBrief, getSector, overview, searchUpdates, upcomingEvents } from "./kb.ts";
 import { describeApiError, engineInfo, runAnu, type ChatMessage, type Effort } from "./anu.ts";
 import { buildIndex, type SemanticIndex } from "./semantic.ts";
 import { searchPapers } from "./hf.ts";
+import { checkerProvider, verifyAnswer } from "./verify.ts";
 
-// Local server for the ANU app: serves the React UI from app-dist/, free data
-// endpoints from data/, and streams agent answers over server-sent events.
-// Runs on your machine only, so the Claude API key never reaches a browser.
+// Server for the ANU app: serves the React UI from app-dist/, the data endpoints, and
+// streams agent answers over server-sent events. Model keys stay on the server.
+//
+// Online (the Hugging Face Space): ANU_DATA_URL points at the published JSON API, so the
+// data is read from the web and refreshed every 30 minutes; nothing is kept on a device.
+// Locally without ANU_DATA_URL, it reads data/.
 
 const PORT = Number(process.env.PORT ?? 8787);
+const HOST = process.env.HOST ?? "127.0.0.1";
 const STATIC_DIR = "app-dist";
-const desk = await loadDesk();
-const conversations = new Map<string, ChatMessage[]>();
+const DATA_URL = process.env.ANU_DATA_URL;
+const REFRESH_MS = 30 * 60 * 1000;
 
-// Semantic search runs on a local Hugging Face model; if it can't load, ANU falls back to keywords.
-let index: SemanticIndex | undefined;
-try {
-  index = await buildIndex(desk, console.log);
-  console.log(`Semantic index ready: ${index.docs.length} items.`);
-} catch (err) {
-  console.warn(`Semantic search off (${err instanceof Error ? err.message : err}); using keyword search.`);
+interface Turn {
+  question: string;
+  answer: string;
+  evidence: { tool: string; output: string }[];
 }
+const conversations = new Map<string, { history: ChatMessage[]; turns: Turn[] }>();
+
+let desk: Desk;
+// Semantic search runs a Hugging Face model in this process; if it can't load, ANU falls back to keywords.
+let index: SemanticIndex | undefined;
+
+async function loadData() {
+  const next = DATA_URL ? await loadDeskRemote(DATA_URL) : await loadDesk();
+  let nextIndex: SemanticIndex | undefined;
+  try {
+    nextIndex = await buildIndex(next, console.log);
+  } catch (err) {
+    console.warn(`Semantic search off (${err instanceof Error ? err.message : err}); using keyword search.`);
+  }
+  desk = next;
+  index = nextIndex;
+  console.log(`Data loaded from ${DATA_URL ?? "data/"}: ${desk.updates.length} updates${index ? `, semantic index ${index.docs.length} items` : ""}.`);
+}
+await loadData();
+if (DATA_URL) setInterval(() => loadData().catch((err) => console.warn(`Data refresh failed: ${err instanceof Error ? err.message : err}`)), REFRESH_MS).unref();
 
 export const SOURCES = {
   data: { label: "My data only", papers: false, web: false },
@@ -84,7 +106,8 @@ async function ask(req: http.IncomingMessage, res: http.ServerResponse) {
   const body = await readBody<AskBody>(req);
   if (!body.question?.trim()) return sendJson(res, 400, { error: "Empty question" });
   const id = body.conversationId && conversations.has(body.conversationId) ? body.conversationId : randomUUID();
-  const history = conversations.get(id) ?? [];
+  const convo = conversations.get(id) ?? { history: [], turns: [] };
+  const turn: Turn = { question: body.question.trim(), answer: "", evidence: [] };
 
   res.writeHead(200, { "content-type": "text/event-stream", "cache-control": "no-cache", connection: "keep-alive" });
   const send = (event: string, data: unknown) => res.write(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`);
@@ -95,21 +118,38 @@ async function ask(req: http.IncomingMessage, res: http.ServerResponse) {
   try {
     const result = await runAnu(
       desk,
-      [...history, { role: "user", content: focusLine(body.focus) + body.question.trim() }],
+      [...convo.history, { role: "user", content: focusLine(body.focus) + body.question.trim() }],
       { ...(SOURCES[body.sources ?? "papers"] ?? SOURCES.papers), effort: body.effort, index },
       {
-        onText: (text) => send("text", { text }),
+        onText: (text) => {
+          turn.answer += text;
+          send("text", { text });
+        },
         onTool: (name, input) => send("tool", { name, input }),
+        onToolResult: (tool, output) => turn.evidence.push({ tool, output }),
+        onStatus: (note) => send("status", { note }),
         onEvidence: (items) => send("evidence", { items }),
       },
       abort.signal,
     );
-    conversations.set(id, result.history);
+    conversations.set(id, { history: result.history, turns: [...convo.turns, turn] });
     send("done", { stopReason: result.stopReason, refusalCategory: result.refusalCategory ?? null });
   } catch (err) {
     if (!abort.signal.aborted) send("error", { message: describeApiError(err) ?? (err instanceof Error ? err.message : String(err)) });
   }
   res.end();
+}
+
+/** Fact-checks the conversation's latest answer with an independent model. */
+async function verify(req: http.IncomingMessage, res: http.ServerResponse) {
+  const { conversationId } = await readBody<{ conversationId?: string }>(req);
+  const turn = conversationId ? conversations.get(conversationId)?.turns.at(-1) : undefined;
+  if (!turn) return sendJson(res, 404, { error: "Nothing to check yet. Ask a question first." });
+  try {
+    sendJson(res, 200, await verifyAnswer(turn));
+  } catch (err) {
+    sendJson(res, 502, { error: describeApiError(err) ?? (err instanceof Error ? err.message : String(err)) });
+  }
 }
 
 const MIME: Record<string, string> = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".svg": "image/svg+xml", ".json": "application/json" };
@@ -136,6 +176,7 @@ const server = http.createServer(async (req, res) => {
         companies: desk.companies.map((c) => ({ id: c.id, name: c.name, sectors: c.sectors, type: c.type })).sort((a, b) => String(a.name).localeCompare(String(b.name))),
         modes: Object.entries(MODES).map(([id, m]) => ({ id, label: m.label })),
         engine: engineInfo(),
+        checker: checkerProvider()?.label ?? null,
         sources: Object.entries(SOURCES).filter(([, s]) => !s.web || engineInfo().web).map(([id, s]) => ({ id, label: s.label })),
         semantic: !!index,
         brief: getBrief(desk),
@@ -155,6 +196,7 @@ const server = http.createServer(async (req, res) => {
       }
     }
     if (req.method === "POST" && url.pathname === "/api/ask") return await ask(req, res);
+    if (req.method === "POST" && url.pathname === "/api/verify") return await verify(req, res);
     if (req.method === "POST" && url.pathname === "/api/reset") {
       const { conversationId } = await readBody<{ conversationId?: string }>(req);
       if (conversationId) conversations.delete(conversationId);
@@ -167,4 +209,4 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, "127.0.0.1", () => console.log(`ANU is running at http://localhost:${PORT} (${engineInfo().label})`));
+server.listen(PORT, HOST, () => console.log(`ANU is running at http://localhost:${PORT} (${engineInfo().label})`));
