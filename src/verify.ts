@@ -1,5 +1,7 @@
 import { chat, LlmError, PROVIDERS, type Provider } from "./llm.ts";
 
+const env = (name: string) => (typeof process !== "undefined" ? process.env?.[name] : undefined);
+
 // Second-opinion fact check: an independent model reads ANU's answer and the exact
 // lookup results ANU saw, and rates each factual claim. Checker, in order of preference:
 // xAI Grok when XAI_API_KEY is set (paid); otherwise a different model on Groq's free
@@ -18,17 +20,17 @@ export interface Check {
 const EVIDENCE_CHARS = 14000;
 
 export function checkerProvider(): Provider | null {
-  if (process.env.XAI_API_KEY) return PROVIDERS.xai();
-  if (process.env.GROQ_API_KEY) return PROVIDERS.groq(process.env.VERIFY_MODEL ?? "qwen/qwen3.8-27b");
-  if (process.env.ANU_ENGINE !== "claude") return PROVIDERS.ollama(process.env.VERIFY_MODEL);
+  if (env("XAI_API_KEY")) return PROVIDERS.xai();
+  if (env("GROQ_API_KEY")) return PROVIDERS.groq(env("VERIFY_MODEL") ?? "qwen/qwen3.8-27b");
+  if (env("ANU_ENGINE") !== "claude") return PROVIDERS.ollama(env("VERIFY_MODEL"));
   return null;
 }
 
 export async function verifyAnswer(
   input: { question: string; answer: string; evidence: { tool: string; output: string }[] },
-  opts: { signal?: AbortSignal; onWait?: (s: number) => void } = {},
+  opts: { signal?: AbortSignal; onWait?: (s: number) => void; provider?: Provider } = {},
 ): Promise<Check> {
-  const p = checkerProvider();
+  const p = opts.provider ?? checkerProvider();
   if (!p) throw new Error("No checker model is configured. Set GROQ_API_KEY (free) or XAI_API_KEY.");
 
   let evidence = input.evidence.map((e, i) => `[${i + 1}] ${e.tool}:\n${e.output}`).join("\n\n");

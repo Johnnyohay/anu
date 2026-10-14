@@ -46,7 +46,7 @@ async function getJson<T>(url: string): Promise<T> {
   return res.json() as Promise<T>;
 }
 
-export const api = {
+const serverApi = {
   meta: () => getJson<Meta>("/api/meta"),
   sector: (id: string) => getJson<SectorDetail>(`/api/sector?id=${encodeURIComponent(id)}`),
   company: (id: string) => getJson<CompanyDetail>(`/api/company?id=${encodeURIComponent(id)}`),
@@ -87,3 +87,9 @@ export const api = {
     }
   },
 };
+
+export type Api = typeof serverApi;
+
+// The GitHub Pages build (VITE_STATIC=1) has no server, so everything runs in the page.
+import { browserApi } from "./browser.ts";
+export const api: Api = import.meta.env.VITE_STATIC ? browserApi : serverApi;
