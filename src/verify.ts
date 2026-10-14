@@ -78,3 +78,31 @@ Reply with JSON only: {"confidence": number, "summary": string, "claims": [{"cla
     })),
   };
 }
+
+// Prompts pasted into a chat app are kept shorter than API requests.
+const PASTE_EVIDENCE_CHARS = 8000;
+
+/**
+ * A ready-to-paste prompt for checking an answer in the free Grok app (grok.com or X),
+ * which has no free API. Grok checks each claim against the evidence ANU used and
+ * against its own live web and X search, so it can catch what the stored data missed.
+ */
+export function grokPrompt(input: { question: string; answer: string; evidence: { tool: string; output: string }[] }): string {
+  let evidence = input.evidence.map((e, i) => `[${i + 1}] ${e.tool}:\n${e.output}`).join("\n\n");
+  if (evidence.length > PASTE_EVIDENCE_CHARS) evidence = evidence.slice(0, PASTE_EVIDENCE_CHARS) + "\n…(evidence truncated)";
+  return `Please fact-check this answer from my defense-tech research assistant.
+
+For each specific factual claim (names, numbers, dates, contracts, who did what):
+1. Say whether the EVIDENCE below supports it.
+2. Check it independently with your own web and X search, and link what you find.
+Then give a verdict per claim (confirmed / unconfirmed / wrong), an overall trust score from 0 to 100, and anything important the answer missed or got out of date.
+
+QUESTION:
+${input.question}
+
+ANSWER:
+${input.answer}
+
+EVIDENCE THE ASSISTANT USED:
+${evidence || "(no lookups were made)"}`;
+}

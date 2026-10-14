@@ -7,7 +7,7 @@ import { getBrief, getSector, overview, searchUpdates, upcomingEvents } from "./
 import { describeApiError, engineInfo, runAnu, type ChatMessage, type Effort } from "./anu.ts";
 import { buildIndex, type SemanticIndex } from "./semantic.ts";
 import { searchPapers } from "./hf.ts";
-import { checkerProvider, verifyAnswer } from "./verify.ts";
+import { checkerProvider, grokPrompt, verifyAnswer } from "./verify.ts";
 
 // Server for the ANU app: serves the React UI from app-dist/, the data endpoints, and
 // streams agent answers over server-sent events. Model keys stay on the server.
@@ -197,6 +197,11 @@ const server = http.createServer(async (req, res) => {
     }
     if (req.method === "POST" && url.pathname === "/api/ask") return await ask(req, res);
     if (req.method === "POST" && url.pathname === "/api/verify") return await verify(req, res);
+    if (req.method === "POST" && url.pathname === "/api/grok-prompt") {
+      const { conversationId } = await readBody<{ conversationId?: string }>(req);
+      const turn = conversationId ? conversations.get(conversationId)?.turns.at(-1) : undefined;
+      return turn ? sendJson(res, 200, { prompt: grokPrompt(turn) }) : sendJson(res, 404, { error: "Nothing to check yet. Ask a question first." });
+    }
     if (req.method === "POST" && url.pathname === "/api/reset") {
       const { conversationId } = await readBody<{ conversationId?: string }>(req);
       if (conversationId) conversations.delete(conversationId);
