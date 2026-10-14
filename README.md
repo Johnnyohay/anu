@@ -40,18 +40,19 @@ npx serve public       # view the site locally
 
 `DESK_DATE=YYYY-MM-DD` sets the date; `LOOKBACK_DAYS=N` changes how far back it reads (default 3).
 
-## ANU online (Hugging Face Space)
+## Ask ANU online, free (GitHub only)
 
-ANU runs online on a free [Hugging Face Space](https://huggingface.co/spaces), so nothing is stored or computed on your own device:
+Everything runs on GitHub, for free, with nothing to install, no extra accounts, no keys and no payments:
 
-- **Hosting:** the Space (free CPU) runs the app from this repo's `Dockerfile`. `.github/workflows/space.yml` redeploys it whenever the code on `main` changes.
-- **Data:** read from the published JSON API (`api/v1/all.json`) and refreshed every 30 minutes; the daily GitHub Action keeps that up to date.
-- **Answers:** an open-source model hosted by [Groq](https://console.groq.com) on its free tier (`openai/gpt-oss-120b`; about 8K tokens per minute and 200K per day). If the per-minute limit is hit, ANU waits and continues.
-- **Verify:** under each answer, "Verify this answer" has a second, independent model (`qwen/qwen3.8-27b` on Groq, free) check every claim against the exact evidence ANU used: supported, not in evidence, or contradicted, with a confidence score. Set `XAI_API_KEY` to use xAI's Grok as the checker instead (paid). With the **free** Grok app instead, use "Check with Grok (free)": it copies a fact-check prompt (question, answer and the evidence ANU used) and opens grok.com, where Grok also checks the claims with its own web and X search.
+1. Open **https://johnnyohay.github.io/anu/app/** (or "Ask ANU →" on the site), pick your focus in the dropdowns and type a question.
+2. ANU opens a pre-filled GitHub issue titled "Ask ANU: …". Click **Submit new issue**.
+3. Within about a minute, `.github/workflows/ask.yml` answers in a comment, and the answer also appears in the app. Reply on the issue to ask a follow-up.
 
-One-time setup: create the Space (Docker, private), add `GROQ_API_KEY` as a Space secret, and add `HF_TOKEN` and `HF_USERNAME` as GitHub repository secrets.
+Each reply has the answer, sources with links, a **second-opinion fact-check** by a different model (every claim marked supported, not in evidence or contradicted, plus a 0-100 score), and a ready-made prompt to paste into **free Grok** (grok.com) for an independent check.
 
-## Ask ANU: the app (`npm run app`)
+The models are **GitHub Models**, free with any GitHub account and called with the workflow's built-in token (`permissions: models: read`). The free tier allows a limited number of requests per day; if it runs out, ANU says so and works again the next day. The data comes from this repo, and nothing is stored on your device.
+
+## Running ANU on your own computer (optional)
 
 An agent that answers questions and gives advice using everything stored in `data/`. **It's free by default:** answers come from an open-source model running on your own computer through [Ollama](https://ollama.com), with no account, no API key and nothing sent to a paid service.
 

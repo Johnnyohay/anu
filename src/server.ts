@@ -4,6 +4,7 @@ import path from "node:path";
 import { randomUUID } from "node:crypto";
 import { loadDesk, loadDeskRemote, type Desk } from "./store.ts";
 import { getBrief, getSector, overview, searchUpdates, upcomingEvents } from "./kb.ts";
+import { focusLine, MODES, type Focus } from "./prompts.ts";
 import { describeApiError, engineInfo, runAnu, type ChatMessage, type Effort } from "./anu.ts";
 import { buildIndex, type SemanticIndex } from "./semantic.ts";
 import { searchPapers } from "./hf.ts";
@@ -55,34 +56,15 @@ export const SOURCES = {
 } as const;
 type SourceId = keyof typeof SOURCES;
 
-export const MODES = {
-  learn: { label: "Teach me", instruction: "Teach me this from the ground up: the basics, key terms and acronyms, the main players, how the money flows, and what to read next." },
-  news: { label: "What's new", instruction: "Summarize the most important recent developments and explain why each one matters." },
-  advise: { label: "Advise me", instruction: "Advise me as a founder: what is worth building or focusing on here? Give a direct recommendation with buyer, budget line, incumbents, why now, risks and a first step." },
-  company: { label: "Company deep dive", instruction: "Deep dive on the company: what they sell, who buys it, their edge, recent news, competitors and where they are vulnerable." },
-  compare: { label: "Compare", instruction: "Compare the options side by side in bullets and say which is stronger and why." },
-} as const;
-type Mode = keyof typeof MODES;
 
 interface AskBody {
   conversationId?: string;
   question: string;
-  focus?: { mode?: Mode; sector?: string; company?: string; days?: number };
+  focus?: Focus;
   effort?: Effort;
   sources?: SourceId;
 }
 
-function focusLine(f: AskBody["focus"]): string {
-  if (!f) return "";
-  const parts: string[] = [];
-  if (f.mode && MODES[f.mode]) parts.push(`Mode: ${MODES[f.mode].label}. ${MODES[f.mode].instruction}`);
-  const sector = desk.sectors.find((s) => s.id === f.sector);
-  if (sector) parts.push(`Sector: ${sector.name} (${sector.id})`);
-  const company = desk.companies.find((c) => c.id === f.company);
-  if (company) parts.push(`Company: ${company.name}`);
-  if (f.days) parts.push(`Time range: the last ${f.days} days (since ${new Date(Date.now() - f.days * 864e5).toISOString().slice(0, 10)})`);
-  return parts.length ? `[Focus — ${parts.join(" · ")}]\n\n` : "";
-}
 
 function sendJson(res: http.ServerResponse, status: number, body: unknown) {
   res.writeHead(status, { "content-type": "application/json" });
@@ -118,7 +100,7 @@ async function ask(req: http.IncomingMessage, res: http.ServerResponse) {
   try {
     const result = await runAnu(
       desk,
-      [...convo.history, { role: "user", content: focusLine(body.focus) + body.question.trim() }],
+      [...convo.history, { role: "user", content: focusLine(desk, body.focus) + body.question.trim() }],
       { ...(SOURCES[body.sources ?? "papers"] ?? SOURCES.papers), effort: body.effort, index },
       {
         onText: (text) => {

@@ -1,9 +1,12 @@
-// Minimal client for OpenAI-compatible chat APIs: Groq (free tier), xAI Grok, and
-// Ollama's /v1 endpoint. Free tiers cap tokens per minute, so a 429 waits for the
+// Minimal client for OpenAI-compatible chat APIs: GitHub Models (free with any GitHub
+// account; in Actions via the built-in GITHUB_TOKEN), Groq, xAI Grok, and Ollama. Free tiers cap tokens per minute, so a 429 waits for the
 // time the provider asks for and retries instead of failing the answer.
 
+// Works in Node and in the browser (where there is no process.env).
+const env = (name: string) => (typeof process !== "undefined" ? process.env?.[name] : undefined);
+
 export interface Provider {
-  id: "groq" | "xai" | "ollama";
+  id: "groq" | "xai" | "ollama" | "github";
   label: string;
   baseUrl: string;
   apiKey?: string;
@@ -11,24 +14,33 @@ export interface Provider {
 }
 
 export const PROVIDERS = {
-  groq: (model = process.env.GROQ_MODEL ?? "openai/gpt-oss-120b"): Provider => ({
+  // Free with a GitHub account. Inside GitHub Actions the built-in GITHUB_TOKEN works
+  // (with `permissions: models: read`), so no personal token is needed.
+  github: (model: string): Provider => ({
+    id: "github",
+    label: `${model} on GitHub Models (free)`,
+    baseUrl: "https://models.github.ai/inference",
+    apiKey: env("GITHUB_TOKEN"),
+    model,
+  }),
+  groq: (model = env("GROQ_MODEL") ?? "openai/gpt-oss-120b"): Provider => ({
     id: "groq",
     label: `${model} on Groq (free tier)`,
     baseUrl: "https://api.groq.com/openai/v1",
-    apiKey: process.env.GROQ_API_KEY,
+    apiKey: env("GROQ_API_KEY"),
     model,
   }),
-  xai: (model = process.env.XAI_MODEL ?? "grok-4.3"): Provider => ({
+  xai: (model = env("XAI_MODEL") ?? "grok-4.3"): Provider => ({
     id: "xai",
     label: `${model} by xAI (paid)`,
     baseUrl: "https://api.x.ai/v1",
-    apiKey: process.env.XAI_API_KEY,
+    apiKey: env("XAI_API_KEY"),
     model,
   }),
-  ollama: (model = process.env.OLLAMA_MODEL ?? "qwen3.5:9b"): Provider => ({
+  ollama: (model = env("OLLAMA_MODEL") ?? "qwen3.5:9b"): Provider => ({
     id: "ollama",
     label: `${model} on this computer (free)`,
-    baseUrl: `${process.env.OLLAMA_HOST ?? "http://127.0.0.1:11434"}/v1`,
+    baseUrl: `${env("OLLAMA_HOST") ?? "http://127.0.0.1:11434"}/v1`,
     model,
   }),
 };

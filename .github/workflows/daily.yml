@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["public/**", "data/**", "src/build-api.ts"]
+    paths: ["public/**", "data/**", "src/**", "app/**"]
 
 permissions:
   contents: write
@@ -53,6 +53,9 @@ jobs:
           git add data public/api
           git diff --cached --quiet || git commit -m "Daily brief $(date -u +%F)"
           git push
+
+      - name: Build the in-browser ANU app into public/app
+        run: npm run build:pages
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

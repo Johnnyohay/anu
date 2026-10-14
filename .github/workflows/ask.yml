@@ -1,0 +1,48 @@
+name: Ask ANU
+
+# Open an issue titled "Ask ANU: <question>" (the site's Ask button does this for you),
+# or comment on one to follow up. ANU answers in a comment within about a minute.
+# Free: runs on GitHub Actions and GitHub Models with the built-in token; nothing to pay or set up.
+on:
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  issues: write
+  models: read
+
+concurrency:
+  group: ask-anu-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  answer:
+    if: >-
+      startsWith(github.event.issue.title, 'Ask ANU:') &&
+      github.actor == github.repository_owner &&
+      (github.event_name == 'issues' || !contains(github.event.comment.body, '<!-- anu-answer -->'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Collect the conversation so far
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api "repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments" --paginate --jq '[.[] | {author: .user.login, body: .body}]' > thread.json
+      - name: Answer with GitHub Models
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: THREAD="$(cat thread.json)" npx tsx src/answer-issue.ts
+      - name: Post the answer
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} --body-file answer.md

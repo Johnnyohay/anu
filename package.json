@@ -13,7 +13,8 @@
     "ask": "tsx src/agent.ts",
     "app": "vite build && tsx src/server.ts",
     "app:dev": "tsx src/server.ts & vite",
-    "enrich": "tsx src/enrich.ts"
+    "enrich": "tsx src/enrich.ts",
+    "build:pages": "VITE_STATIC=1 vite build --outDir ../public/app --emptyOutDir --base ./"
   },
   "engines": {
     "node": ">=22"
