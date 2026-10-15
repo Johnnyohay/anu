@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["public/**", "data/**", "src/**", "app/**"]
+    paths: ["public/**", "data/**", "src/**", "app/**", "config/**"]
 
 permissions:
   contents: write
@@ -41,6 +41,17 @@ jobs:
       - name: Collect today's news and write the brief (free, no API key)
         if: github.event_name != 'push'
         run: npm run collect
+
+      # Housing and videos don't block the defense brief: if a source is down, yesterday's data stays.
+      - name: Collect housing data and news (free, no API key)
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: npm run housing
+
+      - name: Collect videos from config/videos.yaml (free, no API key)
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: npm run videos
 
       - name: Rebuild the JSON API
         run: npm run build:api

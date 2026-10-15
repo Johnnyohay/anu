@@ -200,7 +200,11 @@ footer{border-top:1px solid var(--line);padding-block:20px 40px;font-size:12.5px
 .linkish{background:none;border:0;padding:0;color:var(--accent);cursor:pointer;font-family:var(--mono);font-size:12px}
 @media (prefers-reduced-motion:no-preference){section.panel{animation:rise .22s ease-out}}
 @keyframes rise{from{transform:translateY(4px)}to{transform:none}}
-.ask-anu{display:inline-block;margin-top:10px;padding:8px 16px;border-radius:7px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
+nav.desks{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+nav.desks a{font-family:var(--display);font-weight:600;font-size:17px;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;padding:6px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);background:var(--surface)}
+nav.desks a:hover{border-color:var(--ink-2);color:var(--ink)}
+nav.desks a[aria-current="page"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+nav.desks a.ask{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 </style>
 
 <div class="banner">ANU // Your defense-tech helper // <span id="asof">Loading</span></div>
@@ -208,7 +212,7 @@ footer{border-top:1px solid var(--line);padding-block:20px 40px;font-size:12.5px
 <header class="top wrap">
   <div class="eyebrow">Your personal guide to learning and following defense tech</div>
   <h1>AN<span>U</span></h1>
-  <a class="ask-anu" href="app/">Ask ANU →</a>
+  <nav class="desks" id="desks" aria-label="ANU desks"><a href="./" aria-current="page">Defense</a><a href="housing.html">Housing</a><a href="videos.html">Watch</a><a href="docs.html">Docs</a><a class="ask" href="app/">Ask ANU →</a></nav>
 </header>
 
 <nav class="tabs" aria-label="Sections">
@@ -627,6 +631,9 @@ async function loadFromApi(){
   setForm("#add-form",false,ro,"#add-status");setForm("#note-form",false);$("#notes").innerHTML=`<p class="status">${esc(ro)}</p>`;
   setAsk(false);$("#ask-status").textContent=ro;
 }
+/* Tabs come from config/anu.yaml (api/v1/config.json); the links above are the fallback. */
+fetch("api/v1/config.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(c=>{if(!c?.desks)return;
+  $("#desks").innerHTML=c.desks.filter(d=>d.enabled!==false).map(d=>`<a href="${esc(d.page)}"${d.id==="defense"?' aria-current="page"':""}>${esc(d.label)}</a>`).join("")+'<a class="ask" href="app/">Ask ANU →</a>';}).catch(()=>{});
 function offline(msg){const o=$("#offline");o.hidden=false;o.textContent=msg;$("#meta-row").innerHTML=`<span>${esc(msg)}</span>`;$("#headline").textContent="";}
 (async()=>{
   if(!window.claude?.use){await loadFromApi();return;}

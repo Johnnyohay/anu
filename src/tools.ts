@@ -3,6 +3,7 @@ import { SECTOR_IDS, UPDATE_TYPES } from "./schema.ts";
 import type { Desk } from "./store.ts";
 import { findCompanies, getBrief, getSector, listIdeas, overview, searchResearch, searchUpdates, upcomingEvents } from "./kb.ts";
 import { searchPapers } from "./papers.ts";
+import { getMetro, housingOverview, rankMetros, searchHousingNews, searchVideos, SORTS } from "./housing-kb.ts";
 
 // ANU's lookup tools over the data, with no server dependencies, so the local server
 // (wrapped for Claude via betaZodTool, or sent to an open model) and the in-browser app
@@ -104,6 +105,68 @@ export function toolSpecs(desk: Desk, opts: ToolOptions, onEvidence: (items: Evi
       run: async ({ date }) => json(getBrief(desk, date)),
     }),
   ];
+  const housing = desk.housing;
+  if (housing)
+    tools.push(
+      spec({
+        name: "housing_overview",
+        description: "The US housing market for a rental investor: current mortgage rates and a year ago, national home value and rent with yearly change, Zillow's 12-month forecast, standout metros among the 100 largest (best score, highest rent yield, fastest rent growth, biggest price gains and drops), every state's typical price and change, and the latest housing headlines. Call this first for any housing question.",
+        inputSchema: z.object({}),
+        run: async () => json(housingOverview(housing)),
+      }),
+      spec({
+        name: "rank_metros",
+        description: "Rank US metro areas by an investor metric, with filters. Metrics: score (ANU's buy-to-rent ranking), grossYield (annual rent ÷ price, %), capRate (after operating costs, %), cashFlow (monthly, after costs and mortgage at today's rate with 25% down), rentYoY, priceYoY, price5y, forecast12m (Zillow), price, fromPeak (% below 5-year high), inventoryYoY (listings change). Sorted high to low unless ascending.",
+        inputSchema: z.object({
+          sortBy: z.enum(SORTS).optional().describe("Default score"),
+          ascending: z.boolean().optional(),
+          states: z.array(z.string()).optional().describe("Two-letter state codes, e.g. ['TX','FL']"),
+          maxPrice: z.number().optional().describe("Typical home value at most this, dollars"),
+          minPrice: z.number().optional(),
+          largestOnly: z.number().int().optional().describe("Only the N largest metros, e.g. 100 for big, liquid markets"),
+          limit: z.number().int().optional().describe("Default 15, max 60"),
+        }),
+        run: async (input) => json(rankMetros(housing, input)),
+      }),
+      spec({
+        name: "get_metro",
+        description: "Everything on one metro area: typical price and rent, their trends (month, year, five years, from peak), yearly history, rent yield, rental math at today's mortgage rate (down payment, payment, cash flow, cap rate, cash-on-cash), Zillow forecast, inventory, ANU score, its state, and related housing news.",
+        inputSchema: z.object({ name: z.string().describe("Metro or main city, e.g. 'Cleveland' or 'Tampa, FL'") }),
+        run: async ({ name }) => json(getMetro(housing, name)),
+      }),
+      spec({
+        name: "housing_news",
+        description: "Search recent housing and mortgage news (HousingWire, Realtor.com Research, Mortgage News Daily, BiggerPockets). Topics: rates, prices, rents, inventory, sales, construction, investing, policy.",
+        inputSchema: z.object({
+          query: z.string().optional(),
+          state: z.string().optional().describe("Two-letter state code"),
+          topic: z.enum(["rates", "prices", "rents", "inventory", "sales", "construction", "investing", "policy"]).optional(),
+          since: z.string().optional().describe("YYYY-MM-DD"),
+          limit: z.number().int().optional(),
+        }),
+        run: async (input) => {
+          const result = searchHousingNews(housing, input);
+          onEvidence(result.news.map((n) => ({ id: n.id, date: n.d, title: n.title, source: n.source })));
+          return json(result);
+        },
+      }),
+    );
+  if (desk.videos?.length) {
+    const videos = desk.videos;
+    tools.push(
+      spec({
+        name: "find_videos",
+        description: "Find recent YouTube videos and Shorts on defense tech or housing from the channels ANU follows, to recommend something to watch. Returns title, channel, date, views and link.",
+        inputSchema: z.object({
+          query: z.string().optional(),
+          topic: z.enum(["defense", "housing"]).optional(),
+          shortsOnly: z.boolean().optional(),
+          limit: z.number().int().optional().describe("Default 10, max 30"),
+        }),
+        run: async (input) => json(searchVideos(videos, input)),
+      }),
+    );
+  }
   if (opts.papers)
     tools.push(
         spec({

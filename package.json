@@ -2,7 +2,7 @@
   "name": "anu",
   "version": "1.0.0",
   "private": true,
-  "description": "ANU: a personal helper for learning and following defense tech, with a daily brief, a static JSON API and a site.",
+  "description": "ANU: a personal helper for learning and following defense tech and the US housing market, with daily briefs, a static JSON API and a site.",
   "type": "module",
   "scripts": {
     "collect": "tsx src/collect.ts",
@@ -14,7 +14,10 @@
     "app": "vite build && tsx src/server.ts",
     "app:dev": "tsx src/server.ts & vite",
     "enrich": "tsx src/enrich.ts",
-    "build:pages": "VITE_STATIC=1 vite build --outDir ../public/app --emptyOutDir --base ./"
+    "build:pages": "VITE_STATIC=1 vite build --outDir ../public/app --emptyOutDir --base ./",
+    "housing": "tsx src/housing.ts",
+    "housing:coords": "tsx src/housing-coords.ts",
+    "videos": "tsx src/videos.ts"
   },
   "engines": {
     "node": ">=22"
@@ -25,6 +28,7 @@
     "fast-xml-parser": "^5.11.2",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
+    "yaml": "^2.9.1",
     "zod": "^4.6.7"
   },
   "devDependencies": {

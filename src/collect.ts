@@ -3,7 +3,7 @@
  * articles into sectors with keyword rules, writes new updates and (if no brief
  * exists yet for today) an automatic headline brief, then rebuilds the JSON API.
  */
-import { XMLParser } from "fast-xml-parser";
+import { fetchFeed } from "./rss.ts";
 import { loadDesk, saveDaily, slug } from "./store.ts";
 import { buildApi } from "./build-api.ts";
 import { tagCompanies } from "./companies.ts";
@@ -91,56 +91,17 @@ const TYPE_WEIGHT: Record<string, number> = {
   Contract: 3, Funding: 3, "Policy & budget": 3, "M&A & IPO": 3, Earnings: 2, "Tech milestone": 2, "Conflict & allies": 2, Research: 1,
 };
 
-const parser = new XMLParser({ ignoreAttributes: false });
-const strip = (s: unknown) =>
-  String(s ?? "")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/&#8217;|&rsquo;/g, "’")
-    .replace(/&#8216;|&lsquo;/g, "‘")
-    .replace(/&#8220;|&ldquo;/g, "“")
-    .replace(/&#8221;|&rdquo;/g, "”")
-    .replace(/&#8211;|&ndash;/g, "–")
-    .replace(/&#8212;|&mdash;/g, "—")
-    .replace(/&#\d+;|&[a-z]+;/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-const firstSentences = (s: string, max = 260) => {
-  if (s.length <= max) return s;
-  const cut = s.slice(0, max);
-  const end = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("? "));
-  return end > 80 ? cut.slice(0, end + 1) : cut.replace(/\s+\S*$/, "") + "…";
-};
-
 interface Article { title: string; link: string; date: string; summary: string; source: (typeof FEEDS)[number] }
 
-async function fetchFeed(feed: (typeof FEEDS)[number]): Promise<Article[]> {
-  try {
-    const res = await fetch(feed.url, { headers: { "user-agent": "Mozilla/5.0 (anu news collector)" }, signal: AbortSignal.timeout(20000) });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const xml = parser.parse(await res.text());
-    const items = xml?.rss?.channel?.item ?? xml?.feed?.entry ?? [];
-    return (Array.isArray(items) ? items : [items]).flatMap((it: Record<string, unknown>) => {
-      const link = typeof it.link === "string" ? it.link : (it.link as Record<string, string>)?.["@_href"] ?? "";
-      const raw = (it.pubDate ?? it.published ?? it.updated ?? it["dc:date"]) as string | undefined;
-      const when = raw ? new Date(raw) : null;
-      const title = strip(it.title);
-      if (!title || !/^https?:\/\//.test(link) || !when || isNaN(+when)) return [];
-      return [{ title, link: link.trim(), date: when.toISOString().slice(0, 10), summary: firstSentences(strip(it.description ?? it.summary ?? it["content:encoded"])), source: feed }];
-    });
-  } catch (err) {
-    console.warn(`Skipped ${feed.name}: ${(err as Error).message}`);
-    return [];
-  }
-}
+const fetchArticles = async (feed: (typeof FEEDS)[number]): Promise<Article[]> =>
+  (await fetchFeed(feed.name, feed.url)).map(({ title, link, date, summary }) => ({ title, link, date, summary, source: feed }));
 
 const today = process.env.DESK_DATE ?? new Date().toISOString().slice(0, 10);
 const lookbackDays = Number(process.env.LOOKBACK_DAYS ?? 3);
 const since = new Date(Date.parse(today) - lookbackDays * 864e5).toISOString().slice(0, 10);
 
 const desk = await loadDesk();
-const articles = (await Promise.all(FEEDS.map(fetchFeed))).flat().filter((a) => a.date >= since && a.date <= today);
+const articles = (await Promise.all(FEEDS.map(fetchArticles))).flat().filter((a) => a.date >= since && a.date <= today);
 console.log(`Fetched ${articles.length} recent articles from ${FEEDS.length} feeds.`);
 
 const knownUrls = new Set(desk.updates.map((u) => u.src?.u));
