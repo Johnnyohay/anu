@@ -2,6 +2,7 @@ import { writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { loadDesk, type Desk } from "./store.ts";
+import { FORMULA_FIELDS, loadRequests, loadSiteConfig, loadVideoConfig } from "./config.ts";
 
 const API_DIR = path.join("public", "api", "v1");
 
@@ -28,9 +29,32 @@ export async function buildApi(desk: Desk): Promise<void> {
   await put("research.json", desk.research);
   await put("ideas.json", desk.ideas);
   await put("meta.json", { ...desk.meta, generatedAt });
+  // The housing desk and videos are separate files so the defense page stays light.
+  if (desk.housing) {
+    await put("housing.json", desk.housing.market);
+    await put("housing-news.json", desk.housing.news);
+  }
+  if (desk.videos) await put("videos.json", desk.videos);
+
+  // Settings from config/*.yaml that the pages read (tabs, flags, defaults, custom attributes, requests).
+  const site = await loadSiteConfig();
+  const video = await loadVideoConfig();
+  await put("config.json", {
+    generatedAt,
+    ...site,
+    videos: { topics: [...new Set(video.channels.map((c) => c.topic).filter((t) => t !== "mixed").concat(Object.keys(video.match)))], channels: video.channels, keepDays: video.keepDays },
+    requests: await loadRequests(),
+    formulaFields: FORMULA_FIELDS,
+  });
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1] ?? "").href) {
-  await buildApi(await loadDesk());
+  try {
+    await buildApi(await loadDesk());
+  } catch (err) {
+    // Config mistakes (config/*.yaml) come with a readable message; show just that.
+    console.error(err instanceof Error ? err.message : err);
+    process.exit(1);
+  }
   console.log(`API written to ${API_DIR}/`);
 }
