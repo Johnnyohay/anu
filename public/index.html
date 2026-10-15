@@ -36,6 +36,8 @@
   --banner:#1F4A33; --banner-ink:#D6F5E2;
 }
 *{box-sizing:border-box}
+/* The hidden attribute must win over display rules (e.g. section.panel{display:grid}), or every tab shows at once. */
+[hidden]{display:none!important}
 body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;margin:0}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
