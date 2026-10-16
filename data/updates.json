@@ -1,5 +1,426 @@
 [
   {
+    "id": "u-20261016-open-system-architecture-will-be-hyper-important-i",
+    "d": "2026-10-16",
+    "title": "Open system architecture will be ‘hyper important’ in downselect of Army’s XM30: Senior official",
+    "body": "An open systems architecture allows the Army and its industry partners to plug new and different software and hardware capabilities into the platform.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/open-system-architecture-will-be-hyper-important-in-downselect-of-armys-xm30-senior-official/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261016-turkish-aerospace-expands-anka-3-production-with-n",
+    "d": "2026-10-16",
+    "title": "Turkish Aerospace expands Anka 3 production with new line for upgraded drone",
+    "body": "A company official said the first aircraft to be built on the new line is expected to roll out “soon” and undergo flight testing afterward.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Turkish Aerospace"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/turkish-aerospace-expands-anka-3-production-with-new-line-for-upgraded-drone/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Turkish Aerospace"
+    ]
+  },
+  {
+    "id": "u-20261016-latvian-official-warns-russia-tempted-to-test-euro",
+    "d": "2026-10-16",
+    "title": "Latvian official warns Russia ‘tempted to test’ European readiness, sounds alarm over border issues",
+    "body": "Airis Rikveilis, the state secretary at Latvia’s Ministry of Defense, told Breaking Defense the military and border guards are working jointly to stem the tide of illegal entries, including via tunnels.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/latvian-official-warns-russia-tempted-to-test-european-readiness-sounds-alarm-over-border-issues/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Ministry of Defense",
+      "Breaking Defense"
+    ]
+  },
+  {
+    "id": "u-20261016-israel-secures-procurement-of-12-apache-gunships-i",
+    "d": "2026-10-16",
+    "title": "Israel secures procurement of 12 Apache gunships in last-minute maneuver",
+    "body": "Israel is set to acquire 12 Apache “Echo” attack helicopters from Boeing, according to an Israeli ministry of defense announcement this week.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [
+      "Boeing"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/mideast-africa/2026/10/16/israel-secures-procurement-of-12-apache-gunships-in-last-minute-maneuver/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Boeing"
+    ]
+  },
+  {
+    "id": "u-20261016-weaponized-light-kbr-s-new-base-defense-technology",
+    "d": "2026-10-16",
+    "title": "‘Weaponized light’: KBR’s new base defense technology pits lasers against drones",
+    "body": "The Pentagon recently selected KBR's Firefly system for a pilot program to test defending U.S. military installations against adversarial drones.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Contract",
+    "companies": [
+      "KBR"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/news/your-military/2026/10/15/weaponized-light-kbrs-new-base-defense-technology-pits-lasers-against-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "KBR",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261016-team-digitally-traces-polish-revolutionary-war-her",
+    "d": "2026-10-16",
+    "title": "Team digitally traces Polish Revolutionary War hero’s West Point contributions",
+    "body": "West Point and a three-man team from Poland have teamed up to ensure that Tadeusz Kościuszko’s Revolutionary War legacy endures.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "West"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/10/15/team-digitally-traces-polish-revolutionary-war-heros-west-point-contributions/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "West"
+    ]
+  },
+  {
+    "id": "u-20261016-new-human-machine-interface-will-help-boxer-punch-",
+    "d": "2026-10-16",
+    "title": "New human-machine interface will help Boxer punch above its weight",
+    "body": "An Australian startup has teamed with Rheinmetall to enable soldiers to direct nearby drones with voice commands from aboard Boxer vehicles.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/land/2026/10/14/new-human-machine-interface-will-help-boxer-punch-above-its-weight/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261016-lockheed-invests-300m-in-texas-plant-to-feed-missi",
+    "d": "2026-10-16",
+    "title": "Lockheed invests $300M in Texas plant to feed missile surge",
+    "body": "Lockheed is investing $300 million to expand its Grand Prairie, Texas, plant, which supports all programs within its Missiles and Fire Control business.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "primes"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Lockheed Martin",
+      "Missiles",
+      "Fire Control"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/10/15/lockheed-invests-300m-in-texas-plant-to-feed-missile-surge/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Lockheed",
+      "Missiles",
+      "Fire Control"
+    ]
+  },
+  {
+    "id": "u-20261016-carrier-uss-theodore-roosevelt-arrives-in-japan-ah",
+    "d": "2026-10-16",
+    "title": "Carrier USS Theodore Roosevelt Arrives in Japan Ahead of Keen Sword Exercise",
+    "body": "USS Theodore Roosevelt (CVN-71), cruiser USS Chosin (CG 65) and destroyer USS Decatur (DDG 73) docked at Commander Fleet Activities Yokosuka (CFAY) at 9.20 a.m. local time on Friday ahead of its participation in exercise Keen Sword 27.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Commander Fleet Activities"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/16/carrier-uss-theodore-roosevelt-arrives-in-japan-ahead-of-keen-sword-exercise",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Commander Fleet Activities"
+    ]
+  },
+  {
+    "id": "u-20261016-fast-flying-shahed-drones-spur-new-class-of-interc",
+    "d": "2026-10-16",
+    "title": "Fast-flying Shahed drones spur new class of interceptors",
+    "body": "Drone tech company Powerus eyes rocket or jet-powered interceptors as the next product target.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Powerus"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/business/2026/10/fast-flying-shahed-drones-spur-new-class-interceptors/416643/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Powerus"
+    ]
+  },
+  {
+    "id": "u-20261016-shield-ai-software-lets-taiwan-drone-boats-shadow-",
+    "d": "2026-10-16",
+    "title": "Shield AI software lets Taiwan drone boats shadow intruder",
+    "body": "Shield AI has released new details on how its Hivemind autonomy software steered two Taiwanese uncrewed boats through a joint patrol off southern Taiwan, fusing radar and ship-tracking data into a single picture and switching the pair from patrol to escort…",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "air",
+      "global",
+      "sea"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Shield AI"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/shield-ai-software-lets-taiwan-drone-boats-shadow-intruder/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Shield AI"
+    ]
+  },
+  {
+    "id": "u-20261016-u-s-navy-carrier-group-arrives-in-japan-for-keen-s",
+    "d": "2026-10-16",
+    "title": "U.S. Navy carrier group arrives in Japan for Keen Sword",
+    "body": "The aircraft carrier USS Theodore Roosevelt (CVN 71) arrived at Yokosuka, Japan, on Oct. 16, 2026, with the cruiser USS Chosin (CG 65) and the destroyer USS Decatur (DDG 73), as the strike group prepares for the U.S.-Japan exercise Keen Sword.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "global",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "USS Theodore Roosevelt"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-navy-carrier-group-arrives-in-japan-for-keen-sword/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Navy",
+      "USS Theodore Roosevelt"
+    ]
+  },
+  {
+    "id": "u-20261016-u-s-army-s-europe-typhon-battery-fires-its-first-t",
+    "d": "2026-10-16",
+    "title": "U.S. Army’s Europe Typhon battery fires its first Tomahawk",
+    "body": "A newly fielded U.S. Army Typhon missile battery assigned to Europe has fired its first Tomahawk cruise missile, launching it during a live-fire at Naval Air Weapons Station China Lake, California, on Sept.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "energy",
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-armys-europe-typhon-battery-fires-its-first-tomahawk/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261016-u-s-marine-corps-stands-up-first-missile-battalion",
+    "d": "2026-10-16",
+    "title": "U.S. Marine Corps stands up first missile battalion",
+    "body": "The U.S. Marine Corps has turned a 2nd Marine Division artillery battalion at Camp Lejeune, North Carolina, into its first medium-range missile battalion, built around a launcher that fires Naval Strike Missiles at enemy ships from land.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-marine-corps-stands-up-first-missile-battalion/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Marine Corps",
+      "2nd Marine Division"
+    ]
+  },
+  {
+    "id": "u-20261016-u-s-army-wants-autonomous-missile-launchers-ready-",
+    "d": "2026-10-16",
+    "title": "U.S. Army wants autonomous missile launchers ready by August 2027",
+    "body": "The U.S. Army has asked industry for a lighter version of its planned autonomous missile launcher and wants working prototypes ready to fire live munitions in Australia during the Talisman Sabre 2027 exercise in August 2027.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-wants-autonomous-missile-launchers-ready-by-august-2027/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261016-taiwan-buys-three-years-of-support-for-mq-9b-drone",
+    "d": "2026-10-16",
+    "title": "Taiwan buys three years of support for MQ-9B drones",
+    "body": "Taiwan is paying General Atomics Aeronautical Systems $38.8 million to keep its new MQ-9B SkyGuardian drones flying, under a contractor logistics support deal that runs through August 2029, the U.S. Department of War said. The award, announced on Oct.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "Contract",
+    "companies": [
+      "General Atomics"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/taiwan-buys-three-years-of-support-for-mq-9b-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "General Atomics Aeronautical Systems",
+      "U.S. Department of War"
+    ]
+  },
+  {
+    "id": "u-20261016-mystery-foreign-buyer-pays-for-its-own-custom-f-35",
+    "d": "2026-10-16",
+    "title": "Mystery foreign buyer pays for its own custom F-35",
+    "body": "An unnamed foreign government is paying Lockheed Martin another $18.8 million to develop and integrate a version of the F-35 fighter jet built to its own specifications, the U.S. Department of War said on Oct. 15.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "primes"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Lockheed Martin"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/mystery-foreign-buyer-pays-for-its-own-custom-f-35/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Lockheed Martin",
+      "S. Department of War"
+    ]
+  },
+  {
     "id": "u-20261015-as-critical-mineral-deadline-looms-army-expects-to",
     "d": "2026-10-15",
     "title": "As critical mineral deadline looms, Army expects to feel ‘some impact’",
@@ -414,6 +835,802 @@
     "orgs": [
       "U.S. Army",
       "MSI Defense Solutions"
+    ]
+  },
+  {
+    "id": "u-20261015-finding-the-adversary-s-hidden-signals-is-the-army",
+    "d": "2026-10-15",
+    "title": "Finding the adversary’s hidden signals is the Army’s next electromagnetic warfare challenge",
+    "body": "[Sponsored] RF sensing at greater distance gives operators more decision space to act.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/finding-the-adversarys-hidden-signals-is-the-armys-next-electromagnetic-warfare-challenge/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261015-pentagon-averts-cyber-pay-cuts-for-now-with-one-ye",
+    "d": "2026-10-15",
+    "title": "Pentagon averts cyber pay cuts — for now — with one-year C-MIP ‘transition plan’",
+    "body": "After the services scrambled to prepare for the new program and leaders warned subordinates about looming pay cuts, the Pentagon authorized the military branches to preserve their legacy incentive pay programs for a year.",
+    "why": "State hackers are still inside critical networks, which keeps defensive and offensive cyber in demand.",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/10/15/pentagon-cyber-pay-c-mip-transition-plan/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261015-military-service-members-to-square-off-against-ai-",
+    "d": "2026-10-15",
+    "title": "Military service members to square off against AI in ‘Mindgame’ tournament",
+    "body": "Human participants will also be given access to an after-action review tool that features a large language model. The post Military service members to square off against AI in ‘Mindgame’ tournament appeared first on DefenseScoop .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/10/15/humans-vs-artificial-intelligence-wargames-drone-swarms/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261015-us-army-eyes-developing-soldier-worn-drone-detecti",
+    "d": "2026-10-15",
+    "title": "US Army eyes developing soldier-worn drone detection gear",
+    "body": "The Army is in the early stages of developing and testing a wearable or lightweight device that could alert soldiers to the presence of hostile drones.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/10/15/us-army-eyes-developing-soldier-worn-drone-detection-gear/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "US Army"
+    ]
+  },
+  {
+    "id": "u-20261015-kratos-combat-drone-completes-first-euro-flight-ad",
+    "d": "2026-10-15",
+    "title": "Kratos combat drone completes first Euro flight, advances turbojet engine production",
+    "body": "The company said it is positioning itself to support a range of unmanned missions with new aircraft and engine capabilities.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Kratos"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/10/15/kratos-combat-drone-completes-first-euro-flight-advances-turbojet-engine-production/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261015-us-army-to-stand-up-second-expeditionary-cyber-bat",
+    "d": "2026-10-15",
+    "title": "US Army to stand up second expeditionary cyber battalion in coming months",
+    "body": "The head of U.S. Army Cyber Command said this week that the service would be building an exact replica of the 11th Cyber Battalion in the next few months.",
+    "why": "State hackers are still inside critical networks, which keeps defensive and offensive cyber in demand.",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "11th Cyber Battalion"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/10/14/us-army-to-stand-up-second-expeditionary-cyber-battalion-in-coming-months/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "US Army",
+      "U.S. Army Cyber Command",
+      "11th Cyber Battalion"
+    ]
+  },
+  {
+    "id": "u-20261015-france-to-go-it-alone-on-next-gen-combat-aircraft-",
+    "d": "2026-10-15",
+    "title": "France to go it alone on next-gen combat aircraft after FCAS collapse",
+    "body": "France will develop a next-generation combat aircraft domestically, after a joint project with Germany and Spain collapsed earlier this year.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "FCAS"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/10/15/france-to-go-it-alone-on-next-gen-combat-aircraft-after-fcas-collapse/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "FCAS"
+    ]
+  },
+  {
+    "id": "u-20261015-mq-72c-cargo-helicopter-drone-capabilities-demonst",
+    "d": "2026-10-15",
+    "title": "MQ-72C Cargo Helicopter Drone Capabilities Demonstrated For U.S. Army",
+    "body": "The Marines have been the primary interested party in the MQ-72C, but the Army already flies the UH-72 Lakota and needs similar capabilities. The post MQ-72C Cargo Helicopter Drone Capabilities Demonstrated For U.S. Army appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/mq-72c-cargo-helicopter-drone-capabilities-demonstrated-for-u-s-army",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "Marines"
+    ]
+  },
+  {
+    "id": "u-20261015-new-montana-super-range-complex-could-add-critical",
+    "d": "2026-10-15",
+    "title": "New Montana “Super Range” Complex Could Add Critical Weapons Testing Capacity",
+    "body": "Trump announced a new facility aimed at testing autonomous weapons, space, and electronic ​warfare technology, supersonics and ⁠hypersonics. The post New Montana “Super Range” Complex Could Add Critical Weapons Testing Capacity appeared first on TWZ .",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/new-montana-super-range-complex-could-add-critical-weapons-testing-capacity",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261015-north-korea-s-hunchback-submarine-makes-first-at-s",
+    "d": "2026-10-15",
+    "title": "North Korea’s ‘Hunchback’ Submarine Makes First At-Sea Appearance For Missile Tests",
+    "body": "North Korea claims to have launched two cruise missiles from its bizarre modified Romeo class missile boat. The post North Korea’s ‘Hunchback’ Submarine Makes First At-Sea Appearance For Missile Tests appeared first on TWZ .",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "strike",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/north-koreas-hunchback-missile-submarine-makes-first-at-sea-appearance-for-missile-tests",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261015-army-wants-high-energy-laser-weapons-it-can-put-on",
+    "d": "2026-10-15",
+    "title": "Army Wants High-Energy Laser Weapons It Can Put On “Any Vehicle In The Motorpool”",
+    "body": "The Army sees modular laser systems not tied to specific vehicles as key to truly operationalizing and distributing counter-drone laser capabilities.",
+    "why": "Bases need their own power for AI, sensors and lasers, which creates a defense market for new energy tech.",
+    "sectors": [
+      "energy",
+      "air",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/army-wants-high-energy-laser-weapons-it-can-put-on-any-vehicle-in-the-motorpool",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261015-f-35-drops-8-bombs-in-quick-succession-during-ripp",
+    "d": "2026-10-15",
+    "title": "F-35 Drops 8 Bombs in Quick Succession During ‘Ripple’ Test",
+    "body": "The Marine Corps recently conducted its first-ever “ripple” release of eight Small Diameter Bomb IIs from an F-35B, a key early step in proving out the capability for all F-35 variants.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/f-35-drops-8-bombs-in-quick-succession-during-ripple-test/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Marine Corps"
+    ]
+  },
+  {
+    "id": "u-20261015-army-building-up-new-space-operations-branch",
+    "d": "2026-10-15",
+    "title": "Army Building Up New Space Operations Branch",
+    "body": "The Army has long been dependent on space capabilities to navigate terrain, communicate in hard-to-reach areas, and identify and strike targets.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "New Space Operations"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/how-the-army-expanding-its-space-operations-branch/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Army",
+      "New Space Operations"
+    ]
+  },
+  {
+    "id": "u-20261015-acc-mulls-commercial-counter-drone-services-for-ai",
+    "d": "2026-10-15",
+    "title": "ACC Mulls Commercial Counter-Drone Services for Air Base Defense",
+    "body": "Air Combat Command is looking for defense firms capable of providing a private counter-drone service, complete with the personnel to operate it, for defending air bases across the Air Force.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Air Base Defense"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/acc-commercial-counter-drone-services-air-base-defense/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Air Base Defense",
+      "Air Combat Command",
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261015-navy-civilianizes-six-former-flag-billets-reduces-",
+    "d": "2026-10-15",
+    "title": "Navy Civilianizes Six Former Flag Billets, Reduces Six to Captains",
+    "body": "The Navy quietly changed six billets held by flag officers to civilian posts as the service looks to follow Defense Secretary Pete Hegseth’s call for “less generals, more GIs.” Overall, the Navy identified 14 billets held by flag officers that it would either…",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/15/navy-civilianizes-six-former-flag-billets-reduces-six-to-captains",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261015-japan-wants-to-sell-air-defense-maritime-surveilla",
+    "d": "2026-10-15",
+    "title": "Japan Wants to Sell Air Defense, Maritime Surveillance Systems to Philippine Forces",
+    "body": "MANILA, Philippines — Japan wants to sell air defense, maritime surveillance and counter-drone systems to the Philippines amid its push to bolster forces in the South China Sea and Luzon Strait.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "missiledef",
+      "sensing",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Air Defense",
+      "Maritime Surveillance Systems",
+      "MANILA"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/15/japan-wants-to-sell-air-defense-maritime-surveillance-systems-to-philippine-forces",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Air Defense",
+      "Maritime Surveillance Systems",
+      "Philippine Forces",
+      "MANILA"
+    ]
+  },
+  {
+    "id": "u-20261015-north-korea-tests-first-submarine-launched-cruise-",
+    "d": "2026-10-15",
+    "title": "North Korea Tests First Submarine-launched Cruise Missile in Nearly 3 Years",
+    "body": "North Korea fired two submarine-launched cruise missiles on Wednesday in the Sea of Japan, the first public disclosure of a SLCM test firing in nearly three years.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "strike",
+      "adversary",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/15/north-korea-tests-first-submarine-launched-cruise-missile-in-nearly-3-years",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261015-oct-29-applying-ai-to-the-geoint-mission",
+    "d": "2026-10-15",
+    "title": "Oct. 29: Applying AI to the GEOINT Mission",
+    "body": "Join us for a conversation on how machine learning is transforming the GEOINT mission across different markets The post Oct. 29: Applying AI to the GEOINT Mission appeared first on SpaceNews .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/applying-ai-to-the-geoint-mission-event/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "SpaceNews"
+    ]
+  },
+  {
+    "id": "u-20261015-how-nasa-is-thinking-about-a-moon-base",
+    "d": "2026-10-15",
+    "title": "How NASA is thinking about a moon base",
+    "body": "In this episode, SpaceNews’ Mike Gruss talks with NASA’s Shatel Bhakta, the principal systems engineer for Moon Base, about what’s needed between now and 2028 and the incremental steps to [ ] The post How NASA is thinking about a moon base appeared first on…",
+    "why": "Where investors put money shows which parts of the industry they expect to win next.",
+    "sectors": [
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Moon"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/how-nasa-is-thinking-about-a-moon-base/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "NASA",
+      "SpaceNews",
+      "Moon"
+    ]
+  },
+  {
+    "id": "u-20261015-the-most-important-alliances-will-lead-to-critical",
+    "d": "2026-10-15",
+    "title": "The most important alliances will lead to critical minerals",
+    "body": "In the 21st century, geopolitical and economic advantage will depend on forging new links in strong supply chains.",
+    "why": "Whoever controls materials such as rare-earth magnets controls what can be built; supply-chain tools and substitutes are in demand.",
+    "sectors": [
+      "minerals"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/ideas/2026/10/most-important-alliances-will-lead-critical-minerals/416619/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261015-meet-the-agency-using-ai-to-screen-grant-applicant",
+    "d": "2026-10-15",
+    "title": "Meet the agency using AI to screen grant applicants for links to potential adversaries",
+    "body": "The Transportation Department is deepening its background checks on people and organizations that apply for research grants.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/threats/2026/10/ai-grant-recipients-adversaries/416622/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Transportation Department"
+    ]
+  },
+  {
+    "id": "u-20261015-joint-interagency-task-force-401-marks-one-year-of",
+    "d": "2026-10-15",
+    "title": "Joint Interagency Task Force 401 Marks One Year of Accelerating Counter-UAS Capabilities",
+    "body": "The War Department marked its first year since establishing Joint Interagency Task Force 401, and has made rapid progress in delivering counter-unmanned aircraft systems capabilities to warfighters worldwide.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Task Force"
+    ],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4626931/joint-interagency-task-force-401-marks-one-year-of-accelerating-counter-uas-cap/",
+      "q": "primary"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "War Department",
+      "Task Force"
+    ]
+  },
+  {
+    "id": "u-20261015-navy-demonstrates-successful-drone-ship-landing-wi",
+    "d": "2026-10-15",
+    "title": "Navy Demonstrates Successful Drone Ship Landing Without GPS",
+    "body": "The Navy recently demonstrated autonomous drone flight and shipboard landings without GPS or pilot input advancing unmanned operations where satellites are disrupted.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4626366/navy-demonstrates-successful-drone-ship-landing-without-gps/",
+      "q": "primary"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261015-hegseth-welcomes-u-k-counterpart-to-pentagon",
+    "d": "2026-10-15",
+    "title": "Hegseth Welcomes U.K. Counterpart to Pentagon",
+    "body": "Secretary of War Pete Hegseth hosted Wes Streeting, the United Kingdom's defense secretary, at the Pentagon, where the two leaders participated in a bilateral engagement.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4626344/hegseth-welcomes-uk-counterpart-to-pentagon/",
+      "q": "primary"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261015-lockheed-adds-6-000-jobs-to-speed-up-missile-produ",
+    "d": "2026-10-15",
+    "title": "Lockheed adds 6,000 jobs to speed up missile production",
+    "body": "Lockheed Martin plans to create 6,000 jobs across the United States, including 2,000 in Texas, as it expands munitions production.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "primes"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Lockheed Martin"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/lockheed-adds-6000-jobs-to-speed-up-missile-production/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Lockheed Martin"
+    ]
+  },
+  {
+    "id": "u-20261015-uk-scraps-three-planned-boxer-variants-after-budge",
+    "d": "2026-10-15",
+    "title": "UK scraps three planned Boxer variants after budget cut",
+    "body": "The British Army has dropped plans for armored mortar, repair and recovery, and anti-tank overwatch versions of its Boxer wheeled armored vehicle, and has ruled out using Boxer in the armored cavalry role, Defence Minister Luke Pollard told Parliament.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy",
+      "global",
+      "ground"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/uk-scraps-three-planned-boxer-variants-after-budget-cut/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "British Army"
+    ]
+  },
+  {
+    "id": "u-20261015-pentagon-requests-50b-fund-to-scale-autonomous-wea",
+    "d": "2026-10-15",
+    "title": "Pentagon Requests $50B Fund to Scale Autonomous Weapons Production",
+    "body": "The fiscal 2027 budget request includes $53.6 billion for the Drone Dominance initiative, with $16.9 billion for unmanned systems. The post Pentagon Requests $50B Fund to Scale Autonomous Weapons Production first appeared on Executive Gov .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/pentagon-funding-autonomous-weapons-hegseth-50-billion",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261015-northcom-s-jtf-gold-takes-on-cyber-defense-mission",
+    "d": "2026-10-15",
+    "title": "NORTHCOM’s JTF-Gold Takes On Cyber Defense Mission for Golden Dome",
+    "body": "Col. Kevin Stonerook said NORTHCOM's 100-person task force is still sorting out asset management and operations center roles. The post NORTHCOM’s JTF-Gold Takes On Cyber Defense Mission for Golden Dome first appeared on Executive Gov .",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "cyber"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "NORTHCOM"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/northcom-jtf-gold-golden-dome-cyber-defense",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "NORTHCOM"
+    ]
+  },
+  {
+    "id": "u-20261015-zero-trust-chief-randy-resnick-to-retire-from-dow-",
+    "d": "2026-10-15",
+    "title": "Zero Trust Chief Randy Resnick to Retire From DOW for Field CTO Role at IGEL",
+    "body": "Resnick’s team issued DOW guidance for applying zero-trust controls to operational technology systems in November 2025. The post Zero Trust Chief Randy Resnick to Retire From DOW for Field CTO Role at IGEL first appeared on Executive Gov .",
+    "why": "State hackers are still inside critical networks, which keeps defensive and offensive cyber in demand.",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "Earnings",
+    "companies": [
+      "Trust",
+      "IGEL"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/randy-resnick-retire-dow-igel",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Trust",
+      "IGEL"
+    ]
+  },
+  {
+    "id": "u-20261015-bath-iron-works-can-take-on-second-destroyer-if-co",
+    "d": "2026-10-15",
+    "title": "Bath Iron Works Can Take On Second Destroyer If Congress Funds It, DOW Says",
+    "body": "DOW certified Bath Iron Works can build a second Arleigh Burke-class destroyer if Congress funds it, citing shipyard improvements. The post Bath Iron Works Can Take On Second Destroyer If Congress Funds It, DOW Says first appeared on Executive Gov .",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Bath Iron Works"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/bath-iron-works-second-destroyer-congress-funding-dow",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Bath Iron Works",
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261015-gao-urges-pentagon-to-charter-responsible-ai-counc",
+    "d": "2026-10-15",
+    "title": "GAO Urges Pentagon to Charter Responsible AI Council, Staff CDAO Division",
+    "body": "GAO saw only three of 10 Responsible AI Division posts were filled as of February, with a key AI working council dormant for months. The post GAO Urges Pentagon to Charter Responsible AI Council, Staff CDAO Division first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Staff",
+      "AI Division",
+      "Charter"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/gao-pentagon-responsible-ai-council-cdao-workforce",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "AI Council",
+      "Staff",
+      "GAO",
+      "AI Division",
+      "Charter",
+      "CDAO Division"
+    ]
+  },
+  {
+    "id": "u-20261015-sda-launches-fourth-tranche-1-orbital-plane-with-2",
+    "d": "2026-10-15",
+    "title": "SDA Launches Fourth Tranche 1 Orbital Plane With 21 Northrop-Built Satellites",
+    "body": "SDA’s fourth Tranche 1 launch sent 21 Northrop-built satellites to orbit to relay missile tracking and targeting data to U.S. forces. The post SDA Launches Fourth Tranche 1 Orbital Plane With 21 Northrop-Built Satellites first appeared on Executive Gov .",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "primes",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/sda-launches-fourth-tranche-1-plane-northrop-satellites",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "SDA"
+    ]
+  },
+  {
+    "id": "u-20261015-commerce-shifts-955m-in-globalfoundries-chips-awar",
+    "d": "2026-10-15",
+    "title": "Commerce Shifts $955M in GlobalFoundries CHIPS Award to Photonics, Advanced Packaging",
+    "body": "Commerce amended GlobalFoundries’ CHIPS award to redirect up to $955M to silicon photonics, silicon-germanium and advanced packaging.",
+    "why": "Whoever controls materials such as rare-earth magnets controls what can be built; supply-chain tools and substitutes are in demand.",
+    "sectors": [
+      "minerals"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Commerce",
+      "GlobalFoundries"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/commerce-globalfoundries-chips-award-955m-advanced-packaging",
+      "q": "news"
+    },
+    "addedAt": "2026-10-16T14:43:02.764Z",
+    "auto": true,
+    "orgs": [
+      "Commerce",
+      "GlobalFoundries"
     ]
   },
   {

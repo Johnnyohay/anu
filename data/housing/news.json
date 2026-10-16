@@ -1,5 +1,92 @@
 [
  {
+  "id": "h-20261016-candidates-pitch-housing-affordability-fixes-as-a-",
+  "d": "2026-10-16",
+  "title": "Candidates pitch housing affordability fixes as a midterm gambit",
+  "body": "Candidates pair pro-supply policies with populist proposals like investor limits, LIHTC expansion and down payment help",
+  "topics": [
+   "inventory",
+   "investing",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/housing-affordability-core-midterm-issue/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261016-ai-voice-agents-target-real-estate-s-next-conversi",
+  "d": "2026-10-16",
+  "title": "AI voice agents target real estate’s next conversion opportunity",
+  "body": "CINC’s Jeff Walker says the priority is recognizing lead intent during a 12-month sales cycle and acting at the right moment",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/ai-voice-real-estate-leads/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261016-housing-m-a-shifts-as-global-capital-retargets-res",
+  "d": "2026-10-16",
+  "title": "Housing M A shifts as global capital retargets residential futures",
+  "body": "Zelman data shows housing M&A deal value up 56% through Aug. 2026 while investment grade issuance fell 71%",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/housing-ma-global-capital/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261016-could-your-lead-gen-and-referral-practices-face-ft",
+  "d": "2026-10-16",
+  "title": "Could your lead-gen and referral practices face FTC scrutiny? Senators want a closer look",
+  "body": "Letter cites lead gen referrals, mortgage steering, and office exclusive listings as affordability pressures",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/ftc-online-real-estate-practices/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261016-mortgage-underwriting-has-a-blind-spot-the-homeown",
+  "d": "2026-10-16",
+  "title": "Mortgage underwriting has a blind spot: The homeowner’s largest risk",
+  "body": "A diversified benchmark approach could reduce balance sheet shocks that precede credit deterioration",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/homeowner-concentration-risk/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261016-20-of-homes-see-price-cuts-sellers-face-reality-oc",
+  "d": "2026-10-16",
+  "title": "20% of Homes See Price Cuts (Sellers Face Reality) Oct. 2026 Housing Market Update",
+  "body": "Seller desperation just hit a recent peak, creating a major buying opportunity in the housing market. Over 20% of properties saw a price cut in the past four weeks, and [ ]",
+  "topics": [
+   "prices",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1344",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261015-homa-raises-5m-to-expand-across-california-add-mor",
   "d": "2026-10-15",
   "title": "Homa raises $5M to expand across California, add mortgage lending",
@@ -157,6 +244,34 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/on-the-market-469",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261015-beazer-homes-stockholders-approve-2-2b-sale-to-dre",
+  "d": "2026-10-15",
+  "title": "Beazer Homes stockholders approve $2.2B sale to Dream Finders",
+  "body": "The all-cash deal is now expected to close on October 20",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/beazer-homes-dream-finders-approval/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261015-surging-jobsite-raids-put-370-000-new-home-complet",
+  "d": "2026-10-15",
+  "title": "Surging jobsite raids put 370,000 new home completions at risk",
+  "body": "Census data show 256,000 homes under construction and 114,000 not started, as builders push for year end completions",
+  "topics": [
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/immigration-enforcement-home-pipeline-risk/",
    "q": "news"
   }
  },
