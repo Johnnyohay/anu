@@ -1,5 +1,179 @@
 [
   {
+    "id": "u-20261018-russia-has-moved-past-hybrid-war-why-hasn-t-washin",
+    "d": "2026-10-18",
+    "title": "Russia has moved past ‘hybrid war.’ Why hasn’t Washington?",
+    "body": "Europe is adapting to Moscow’s increasingly brazen and kinetic operations. The US should catch up.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/ideas/2026/10/russia-has-moved-past-hybrid-war-why-hasnt-washington/416629/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-18T13:53:15.829Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261018-houthis-release-video-of-saudi-ah-6i-helicopter-be",
+    "d": "2026-10-18",
+    "title": "Houthis release video of Saudi AH-6i helicopter being hit",
+    "body": "Footage released by Yemen’s Houthis appears to show a Saudi National Guard AH-6i helicopter being struck by a loitering munition over Saudi Arabia’s Najran province, after the Saudi-led coalition said the aircraft crashed because of a technical malfunction,…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/houthis-release-video-of-saudi-ah-6i-helicopter-being-hit/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-18T13:53:15.829Z",
+    "auto": true,
+    "orgs": [
+      "Saudi National Guard"
+    ]
+  },
+  {
+    "id": "u-20261018-slovenian-firm-arms-drone-killer-systems-with-gatl",
+    "d": "2026-10-18",
+    "title": "Slovenian firm arms drone killer systems with Gatling gun",
+    "body": "Slovenian turret maker Valhalla Turrets is preparing a new version of its Skythunder air defense system armed with General Dynamics Land Systems’ 20 mm M197 Gatling gun and 70 mm laser-guided rockets, designed to shoot down drones and protect critical…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "missiledef",
+      "primes"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Valhalla Turrets",
+      "General Dynamics Land Systems"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/slovenian-firm-arms-drone-killer-systems-with-gatling-gun/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-18T13:53:15.829Z",
+    "auto": true,
+    "orgs": [
+      "Valhalla Turrets",
+      "General Dynamics Land Systems"
+    ]
+  },
+  {
+    "id": "u-20261018-u-s-army-tests-ukrainian-uncrewed-surface-vessels-",
+    "d": "2026-10-18",
+    "title": "U.S. Army tests Ukrainian uncrewed surface vessels as drone carriers",
+    "body": "Ukraine’s Magura uncrewed surface vessels, the drone boats that have sunk Russian warships in the Black Sea, took part in a U.S. Army exercise in Michigan, where they were used as floating launch pads for aerial drones.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "space",
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-tests-ukrainian-uncrewed-surface-vessels-as-drone-carriers/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-18T13:53:15.829Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261018-russian-satellite-shadows-radar-sat-used-by-ukrain",
+    "d": "2026-10-18",
+    "title": "Russian satellite shadows radar sat used by Ukraine",
+    "body": "A Russian military satellite has maneuvered to within about 5 km (3 miles) of a commercial radar imaging satellite owned by ICEYE and appears to be holding position there, in what independent tracker Jonathan McDowell said may be the first rendezvous in low…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "sensing",
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "ICEYE"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russian-satellite-shadows-radar-sat-used-by-ukraine/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-18T13:53:15.829Z",
+    "auto": true,
+    "orgs": [
+      "ICEYE"
+    ]
+  },
+  {
+    "id": "u-20261018-latvia-s-combat-tested-ground-drone-shows-off-in-f",
+    "d": "2026-10-18",
+    "title": "Latvia’s combat-tested ground drone shows off in Finland",
+    "body": "Latvian company NATRIX, already a supplier of ground drones to Latvia’s armed forces, showed its battle-tested unmanned ground vehicle to Finnish military and security officials on Oct.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "NATRIX"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/latvias-combat-tested-ground-drone-shows-off-in-finland/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-18T13:53:15.829Z",
+    "auto": true,
+    "orgs": [
+      "NATRIX"
+    ]
+  },
+  {
+    "id": "u-20261018-british-startup-develos-modular-ground-drone-for-f",
+    "d": "2026-10-18",
+    "title": "British startup develos modular ground drone for front line",
+    "body": "British defense technology company Stratonex Defence Technologies has unveiled VARAN, a modular unmanned ground vehicle concept designed to accompany and support forward units on the battlefield, with swappable mission equipment and the ability to navigate…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Stratonex Defence Technologies"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/british-startup-develos-modular-ground-drone-for-front-line/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-18T13:53:15.829Z",
+    "auto": true,
+    "orgs": [
+      "Stratonex Defence Technologies"
+    ]
+  },
+  {
     "id": "u-20261017-russia-rebuilt-its-blackjack-bomber-on-a-new-tech-",
     "d": "2026-10-17",
     "title": "Russia rebuilt its Blackjack bomber on a new tech base",
@@ -206,6 +380,49 @@
     "orgs": [
       "U.S. Air Force",
       "Red Air"
+    ]
+  },
+  {
+    "id": "u-20261017-where-are-the-aircraft-carriers-october-17-2026",
+    "d": "2026-10-17",
+    "title": "Where Are The Aircraft Carriers?: October 17, 2026",
+    "body": "USS Theodore Roosevelt arrives in Japan ahead of exercise Keen Sword, while the U.S. once again positions two aircraft carriers in the Middle East. The post Where Are The Aircraft Carriers?: October 17, 2026 appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/where-are-the-aircraft-carriers-october-17-2026",
+      "q": "news"
+    },
+    "addedAt": "2026-10-18T13:53:15.829Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261017-hegseth-thanks-young-americans-in-knoxville-who-sa",
+    "d": "2026-10-17",
+    "title": "Hegseth Thanks Young Americans in Knoxville Who Say 'Send Me'",
+    "body": "On the University of Tennessee campus in Knoxville, Secretary of War Pete Hegseth met with two groups of young Americans who opted to defend the nation, falling in line behind generations of Americans who served the nation since the nation was founded.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4628064/hegseth-thanks-young-americans-in-knoxville-who-say-send-me/",
+      "q": "primary"
+    },
+    "addedAt": "2026-10-18T13:53:15.829Z",
+    "auto": true,
+    "orgs": [
+      "University of Tennessee"
     ]
   },
   {
