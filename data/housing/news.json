@@ -1,5 +1,139 @@
 [
  {
+  "id": "h-20261019-mba-calls-for-policy-changes-to-lower-housing-cost",
+  "d": "2026-10-19",
+  "title": "MBA calls for policy changes to lower housing costs",
+  "body": "Trade group points to tri-merge costs, plus LLPA and FHA MIP changes",
+  "topics": [
+   "rates",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mba-road-map-housing-costs/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261019-pulte-signals-review-of-llpas-credit-reports",
+  "d": "2026-10-19",
+  "title": "Pulte signals review of LLPAs, credit reports",
+  "body": "Pulte pushed back on media reports that he might become White House chief of staff",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/pulte-llpa-review-credit-reports/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261019-do-listing-sites-create-a-real-estate-resort-fee-p",
+  "d": "2026-10-19",
+  "title": "Do listing sites create a real estate ‘resort fee’ problem?",
+  "body": "Warren and Booker cite lead routing, lender steering, and private listings in a letter to the FTC",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/ftc-hidden-real-estate-fees/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261019-bloomberg-philanthropies-funds-local-housing-refor",
+  "d": "2026-10-19",
+  "title": "Bloomberg Philanthropies funds local housing reforms nationwide",
+  "body": "The initiative aims to streamline and expand digital permitting, ADU and zoning reforms and housing strike teams",
+  "topics": [
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/bloomberg-philanthropies-funds-local-housing-reforms-nationwide/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261019-a-coaching-framework-for-real-estate-agents-when-n",
+  "d": "2026-10-19",
+  "title": "A coaching framework for real estate agents when nothing is working",
+  "body": "Darryl Davis argues leaders should diagnose who first, then why, then strategy, and use a monthly integrity sheet to guide coaching",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/coach-agents-production-stalls/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261019-builder-inventory-to-backlog-ratios-flag-spec-risk",
+  "d": "2026-10-19",
+  "title": "Builder inventory-to-backlog ratios flag spec risk pre-Q3 earnings",
+  "body": "Inventory to backlog ranges from 0.44x at NVR to 3.09x at Century, with margin pressure risk into Q4",
+  "topics": [
+   "inventory",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/builder-inventory-backlog-ratios/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261019-video-october-19-2026-economic-and-housing-market-",
+  "d": "2026-10-19",
+  "title": "Video: October 19, 2026, Economic and Housing Market Outlook",
+  "body": "The October 19, 2026 Housing Market Outlook video gives you the info you need to know to navigate the housing market as a homebuyer, home seller, renter, or industry professional.",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/video-economic-and-housing-market-update-october-19-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261019-market-clock-2026-q3-as-rates-top-7-buyers-gain-le",
+  "d": "2026-10-19",
+  "title": "Market Clock 2026 Q3: As Rates Top 7%, Buyers Gain Leverage but Lose Purchasing Power",
+  "body": "The Realtor.com® Market Clock® sits at 4 o’clock, and about two-thirds of the top 100 metros favor buyers or are moving that way. Mortgage rates above 7% mean buyers gain negotiating leverage while losing purchasing power.",
+  "topics": [
+   "rates",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/market-clock-report-2026q3/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261019-3-paid-off-rentals-the-boring-but-proven-path-to-f",
+  "d": "2026-10-19",
+  "title": "3 Paid-Off Rentals: The “Boring” (But Proven) Path to Financial Freedom",
+  "body": "Financial freedom with three rental properties? It almost sounds too easy, but it’s reality for today’s guest, who went from making roughly $11 an hour to having more than enough [ ]",
+  "topics": [
+   "rents"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1345",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261017-can-mortgage-rates-get-under-7-for-the-holidays",
   "d": "2026-10-17",
   "title": "Can mortgage rates get under 7% for the holidays?",

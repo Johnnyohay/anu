@@ -1,5 +1,526 @@
 [
   {
+    "id": "u-20261019-why-the-army-can-t-build-its-pacific-network-like-",
+    "d": "2026-10-19",
+    "title": "Why the Army can’t build its Pacific network like the one in Europe",
+    "body": "[Sponsored] Distance, sparse infrastructure, and contested communications force a different approach to connectivity.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/why-the-army-cant-build-its-pacific-network-like-the-one-in-europe/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261019-shield-ai-software-cuts-autonomous-flight-developm",
+    "d": "2026-10-19",
+    "title": "Shield AI software cuts autonomous flight development to six weeks",
+    "body": "Shield AI said this week that its Hivemind software helped Honeywell Aerospace achieve autonomous flight after six weeks, down from 54 weeks.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Shield AI",
+      "Honeywell Aerospace"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/10/16/shield-ai-software-cuts-autonomous-flight-development-to-six-weeks/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "Shield AI",
+      "Honeywell Aerospace"
+    ]
+  },
+  {
+    "id": "u-20261019-groups-seek-clarity-on-motive-behind-pentagon-s-st",
+    "d": "2026-10-19",
+    "title": "Groups seek clarity on motive behind Pentagon’s study of women in combat",
+    "body": "Citing concerns about Hegseth’s views on the topic, the lawsuit asks for records showing the scope, purpose, methodology and anticipated use of the study.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/news/pentagon-congress/2026/10/19/groups-seek-clarity-on-motive-behind-pentagons-study-of-women-in-combat/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261019-us-army-cyber-command-charts-course-for-human-ai-e",
+    "d": "2026-10-19",
+    "title": "US Army Cyber Command charts course for human-AI equilibrium",
+    "body": "U.S. Army Cyber Command is constantly refining human oversight of artificial intelligence, Lt. Gen. Christopher Eubank said last week.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "cyber"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/10/19/us-army-cyber-command-charts-course-for-human-ai-equilibrium/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "US Army Cyber Command",
+      "U.S. Army Cyber Command"
+    ]
+  },
+  {
+    "id": "u-20261019-australia-gets-the-ball-rolling-on-medium-range-ai",
+    "d": "2026-10-19",
+    "title": "Australia gets the ball rolling on medium-range air defense",
+    "body": "Recognizing the massive gap, Canberra has launched a formal tender for a medium-range, ground-based air defense solution for the Australian Army.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/asia-pacific/2026/10/19/australia-gets-the-ball-rolling-on-medium-range-air-defense/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "Australian Army"
+    ]
+  },
+  {
+    "id": "u-20261019-us-army-showing-interest-in-g-ator-missile-killing",
+    "d": "2026-10-19",
+    "title": "US Army showing interest in G/ATOR missile-killing radar, Northrop says",
+    "body": "Northrop Grumman’s new multi-mission radar system has earned high marks from Marine Corps leadership. The U.S. Army has taken notice.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "sensing",
+      "primes"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Northrop Grumman"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/10/15/us-army-showing-interest-in-gator-missile-killing-radar-northrop-says/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "US Army",
+      "Northrop Grumman",
+      "Marine Corps",
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261019-us-army-fields-new-system-for-sweeping-munitions-p",
+    "d": "2026-10-19",
+    "title": "US Army fields new system for sweeping munitions planning, management",
+    "body": "The service expects this first increment of TACTMIS to replace the previously used TAMIS system once it retires on Oct. 30.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/news/your-military/2026/10/15/us-army-fields-new-system-for-sweeping-munitions-planning-management/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "US Army"
+    ]
+  },
+  {
+    "id": "u-20261019-aerial-drones-appear-to-be-picking-up-wounded-off-",
+    "d": "2026-10-19",
+    "title": "Aerial Drones Appear To Be Picking Up Wounded Off The Battlefield In Ukraine",
+    "body": "A heavy-lift hexacopter is shown pulling a wounded soldier from what Ukraine describes as a drone-saturated kill zone in what would be a world first. The post Aerial Drones Appear To Be Picking Up Wounded Off The Battlefield In Ukraine appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "TWZ"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/aerial-drones-appear-to-be-picking-up-wounded-off-the-battlefield-in-ukraine",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "TWZ"
+    ]
+  },
+  {
+    "id": "u-20261019-what-it-took-to-deliver-a-legendary-f-117a-stealth",
+    "d": "2026-10-19",
+    "title": "What It Took to Deliver a Legendary F-117A Stealth Aircraft to the Smithsonian",
+    "body": "More than 40 years after the original YF-117 operational prototype flew test runs from a Lockheed Martin Skunk Works facility, an F-117 returned for a $1 million refurbishment to look its best when it assumes its place in history alongside other iconic…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "primes"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Lockheed Martin",
+      "Stealth Aircraft"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/what-it-took-to-deliver-f-117-stealth-aircraft-to-smithsonian/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "Stealth Aircraft",
+      "Lockheed Martin"
+    ]
+  },
+  {
+    "id": "u-20261019-usni-news-fleet-and-marine-tracker-oct-19-2026",
+    "d": "2026-10-19",
+    "title": "USNI News Fleet and Marine Tracker: Oct. 19, 2026",
+    "body": "These are the approximate positions of the U.S. Navy’s deployed carrier strike groups and amphibious ready groups throughout the world as of Oct. 19, 2026, based on Navy and public data.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/19/usni-news-fleet-and-marine-tracker-oct-19-2026",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "USNI News Fleet",
+      "U.S. Navy"
+    ]
+  },
+  {
+    "id": "u-20261019-uarx-space-troubleshoots-anomalies-on-maiden-otv-f",
+    "d": "2026-10-19",
+    "title": "UARX Space troubleshoots anomalies on maiden OTV Flight",
+    "body": "SAN FRANCISCO –Spanish startup UARX Space is remedying anomalies identified during the maiden flight of OSSIE-D, an orbital transfer vehicle (OTV) launched Oct. 1 aboard SpaceX’s Transporter-18 mission.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "SpaceX / Starshield",
+      "UARX Space",
+      "SAN FRANCISCO"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/uarx-space-troubleshoots-anomalies-on-maiden-otv-flight/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "UARX Space",
+      "SAN FRANCISCO",
+      "SpaceX"
+    ]
+  },
+  {
+    "id": "u-20261019-nato-plans-to-buy-jammers-that-black-out-gps-for-1",
+    "d": "2026-10-19",
+    "title": "NATO plans to buy jammers that black out GPS for 11 km",
+    "body": "NATO plans to buy six portable kits that can jam satellite navigation signals and the radio links drones use for control and video, so its trainers can expose ships, aircrews and drone operators to realistic interference during exercises.",
+    "why": "Where investors put money shows which parts of the industry they expect to win next.",
+    "sectors": [
+      "capital",
+      "global",
+      "air",
+      "sea"
+    ],
+    "type": "M&A & IPO",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/nato-plans-to-buy-jammers-that-black-out-gps-for-11-km/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261019-u-s-air-force-wants-a-missile-engine-that-runs-on-",
+    "d": "2026-10-19",
+    "title": "U.S. Air Force wants a missile engine that runs on explosions",
+    "body": "The U.S. Air Force Research Laboratory wants industry to build and fly a combined-cycle rotating detonation rocket engine, a type of propulsion that runs on a continuous chain of explosions, as a step toward cheap, high-speed weapons that could be built in…",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-air-force-wants-a-missile-engine-that-runs-on-explosions/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Air Force Research Laboratory"
+    ]
+  },
+  {
+    "id": "u-20261019-u-s-firm-fires-cheap-3d-printed-jet-drones-from-a-",
+    "d": "2026-10-19",
+    "title": "U.S. firm fires cheap 3D-printed jet drones from a buggy",
+    "body": "Cummings Aerospace has fired two of its 3D-printed Hellhound S3 jet-powered drones from a launcher mounted on a utility vehicle, with a single operator using one handheld controller to send both on separate autonomous missions, the company said.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Cummings Aerospace"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-firm-fires-cheap-3d-printed-jet-drones-from-a-buggy/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "Cummings Aerospace"
+    ]
+  },
+  {
+    "id": "u-20261019-u-s-army-orders-more-fd-1-drone-interceptors",
+    "d": "2026-10-19",
+    "title": "U.S. Army orders more FD-1 drone interceptors",
+    "body": "The U.S. Army has placed a second order for the FD-1, a drone interceptor that a single soldier can set up and launch in under two minutes, from Florida-based Mountain Horse Solutions, less than a year after the system first came to the service’s attention.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "space",
+      "missiledef"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Mountain Horse Solutions"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-orders-more-fd-1-drone-interceptors/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "Mountain Horse Solutions"
+    ]
+  },
+  {
+    "id": "u-20261019-france-doubles-down-on-its-homegrown-kamikaze-dron",
+    "d": "2026-10-19",
+    "title": "France doubles down on its homegrown kamikaze drone",
+    "body": "France has ordered several hundred more MX-10 DAMOCLES kamikaze drones from KNDS France and Delair, and the quadcopter munition has won its first export customer, Luxembourg, which signed a contract worth just over 1.6 million euros ($1.8 million) for an…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "strike"
+    ],
+    "type": "Contract",
+    "companies": [
+      "KNDS France",
+      "Delair"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/france-doubles-down-on-its-homegrown-kamikaze-drone/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "KNDS France",
+      "Delair"
+    ]
+  },
+  {
+    "id": "u-20261019-russian-drones-hunt-ukrainian-heavy-supply-drone",
+    "d": "2026-10-19",
+    "title": "Russian drones hunt Ukrainian heavy supply drone",
+    "body": "Russian forces have released video of an FPV drone striking one of Ukraine’s largest uncrewed ground vehicles, a Protector, while it was hauling logs near Orikhiv in Ukraine’s Zaporizhzhia region.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "adversary",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russian-drones-hunt-ukrainian-heavy-supply-drone/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261019-russia-calls-its-upgraded-t-80-a-stealthy-assassin",
+    "d": "2026-10-19",
+    "title": "Russia calls its upgraded T-80 a stealthy ‘assassin’ tank",
+    "body": "Russian state defense conglomerate Rostec has described its T-80BVM main battle tank as an “assassin,” claiming the gas turbine-powered vehicle is quiet and well camouflaged enough to make fast, unnoticed flanking moves on the battlefield.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Rostec"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-calls-its-upgraded-t-80-a-stealthy-assassin-tank/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "Rostec"
+    ]
+  },
+  {
+    "id": "u-20261019-ukraine-uses-heavy-drone-to-fly-wounded-soldier-of",
+    "d": "2026-10-19",
+    "title": "Ukraine uses heavy drone to fly wounded soldier off front",
+    "body": "Ukrainian troops have flown a wounded soldier off the front line with a heavy multirotor drone, in what the unit that organized the mission called the world’s first aerial evacuation of a casualty from the battlefield.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/ukraine-uses-heavy-drone-to-fly-wounded-soldier-off-front/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261019-mystery-european-buyer-signs-235m-israeli-rocket-d",
+    "d": "2026-10-19",
+    "title": "Mystery European buyer signs $235M Israeli rocket deal",
+    "body": "Israel’s Elbit Systems has won a contract worth about $235 million to supply PULS rocket artillery launchers and EXTRA-MR precision-guided rockets to an unnamed European country, along with additional rocket artillery platforms and integrated logistics…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "global",
+      "strike"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Elbit Systems"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/mystery-european-buyer-signs-235m-israeli-rocket-deal/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "Elbit Systems"
+    ]
+  },
+  {
+    "id": "u-20261019-u-s-soldiers-fly-ukrainian-designed-stork-drone-in",
+    "d": "2026-10-19",
+    "title": "U.S. soldiers fly Ukrainian-designed Stork drone in Germany",
+    "body": "A U.S. Army soldier has been spotted assembling a Stork reconnaissance drone, built by Czech-Ukrainian company U C UAS, during a major training exercise in Germany, showing the battle-tested design in American hands. The U.S.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global",
+      "sensing"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Stork",
+      "U C UAS"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-soldiers-fly-ukrainian-designed-stork-drone-in-germany/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "Stork",
+      "U C UAS"
+    ]
+  },
+  {
     "id": "u-20261018-russia-has-moved-past-hybrid-war-why-hasn-t-washin",
     "d": "2026-10-18",
     "title": "Russia has moved past ‘hybrid war.’ Why hasn’t Washington?",
@@ -171,6 +692,57 @@
     "auto": true,
     "orgs": [
       "Stratonex Defence Technologies"
+    ]
+  },
+  {
+    "id": "u-20261018-us-arms-firm-anduril-could-make-interceptors-in-eu",
+    "d": "2026-10-18",
+    "title": "US arms firm Anduril could make interceptors in Europe, executive says",
+    "body": "U.S. defense firm Anduril could eventually manufacture its newly unveiled Steelfin interceptor missiles in Europe, a company executive said.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "missiledef"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Anduril"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/10/18/us-arms-firm-anduril-could-make-interceptors-in-europe-executive-says/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "Anduril"
+    ]
+  },
+  {
+    "id": "u-20261018-second-chinese-submarine-drone-mothership-emerges",
+    "d": "2026-10-18",
+    "title": "Second Chinese Submarine Drone Mothership Emerges",
+    "body": "It is a scaled-down version of the first and was built by Guangzhou Shipyard International, which is well-known for pumping out special use vessels. The post Second Chinese Submarine Drone Mothership Emerges appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Guangzhou Shipyard International"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/second-chinese-submarine-drone-mothership-emerges",
+      "q": "news"
+    },
+    "addedAt": "2026-10-19T16:53:58.289Z",
+    "auto": true,
+    "orgs": [
+      "Guangzhou Shipyard International"
     ]
   },
   {
