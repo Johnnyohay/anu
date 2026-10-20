@@ -1,5 +1,153 @@
 [
  {
+  "id": "h-20261020-side-s-new-google-deal-with-housecanary-could-give",
+  "d": "2026-10-20",
+  "title": "Side’s new Google deal with HouseCanary could give its agents an edge in listing visibility",
+  "body": "More than 600 Side partners across 19 states can qualify to show in a Google mobile carousel via My State MLS",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/side-housecanary-google-listings/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261020-california-starter-home-laws-reshape-small-home-bu",
+  "d": "2026-10-20",
+  "title": "California starter home laws reshape small home building",
+  "body": "Small developers are stacking state tools to make lots feasible, from backyard units to 10-home subdivisions",
+  "topics": [],
+  "states": [
+   "CA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/california-adu-boom-starter-homes/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261020-two-questions-that-prevent-homebuilder-growth-mist",
+  "d": "2026-10-20",
+  "title": "Two questions that prevent homebuilder growth mistakes",
+  "body": "A former banker turned builder hire learns why risk tolerance and return assumptions decide outcomes",
+  "topics": [
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/builder-growth-two-questions/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261020-mortgage-needs-a-new-productivity-metric-human-att",
+  "d": "2026-10-20",
+  "title": "Mortgage needs a new productivity metric: Human attention per loan",
+  "body": "AI will not change mortgage economics until lenders measure how much expert attention each loan actually consumes",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/human-attention-per-loan/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261020-affordability-changed-the-buyer-now-builders-have-",
+  "d": "2026-10-20",
+  "title": "Affordability changed the buyer. Now builders have to change the sales conversation.",
+  "body": "New Home Star’s buyer insights show why homebuyer affordability, buyer psychology and new home sales conversion increasingly depend on understanding what buyers value beyond price",
+  "topics": [
+   "sales",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/homebuyer-affordability-new-home-sales/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261020-ready-for-surging-short-sales-in-2027",
+  "d": "2026-10-20",
+  "title": "Ready for surging short sales in 2027?",
+  "body": "Mortgage servicers are offering more pre-foreclosure short sale options to a rapidly growing pool of underwater homeowners who are also behind on mortgage payments",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/short-sales-2027-negative-equity/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261020-pending-homes-sales-hit-record-low-in-september",
+  "d": "2026-10-20",
+  "title": "Pending Homes Sales Hit Record Low in September",
+  "body": "Pending home sales dropped 7.3% month-over-month and 11.3% year-over-year in September, reaching the lowest level in the data’s history, as mortgage rates climbed past 7% for the first time since January 2025.",
+  "topics": [
+   "rates",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/pending-home-sales-september-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261020-new-construction-struggles-in-september",
+  "d": "2026-10-20",
+  "title": "New Construction Struggles in September",
+  "body": "New residential construction took a step backward in September. Permits had the least dramatic pullback, falling just 0.2% below August levels and 3.0% below September 2025, a sign that builders have some optimism for future projects once the current…",
+  "topics": [
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/new-home-construction-september-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261020-luxury-market-showdown-denver-co-vs-portland-or",
+  "d": "2026-10-20",
+  "title": "Luxury Market Showdown: Denver, CO vs. Portland, OR",
+  "body": "Mountains, trails, and luxury homes starting near $1.25 million. Denver offers faster sales and a higher ceiling, while Portland has held its value through the cycle.",
+  "topics": [],
+  "states": [
+   "CO",
+   "OR",
+   "ME"
+  ],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/luxury-market-showdown-denver-vs-portland/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261020-the-2nd-wave-of-the-commercial-real-estate-crash-i",
+  "d": "2026-10-20",
+  "title": "The “2nd Wave” of the Commercial Real Estate Crash Is Close",
+  "body": "Commercial real estate prices have fallen 20%-50% from their peaks just a few years ago—but the slide may not be over yet. A “second wave” of the commercial real estate [ ]",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/on-the-market-470",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261019-mba-calls-for-policy-changes-to-lower-housing-cost",
   "d": "2026-10-19",
   "title": "MBA calls for policy changes to lower housing costs",
@@ -130,6 +278,38 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/real-estate-1345",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261019-builder-confidence-plunges-as-rate-shock-costs-squ",
+  "d": "2026-10-19",
+  "title": "Builder confidence plunges as rate shock, costs squeeze margins",
+  "body": "NAHB’s October Housing Market Index for builder confidence dropped three points to 29, a low since June 2012",
+  "topics": [
+   "rates",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/nahb-builder-confidence-14-year-low-october/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261019-first-american-s-odeta-kushi-on-how-labor-ai-and-m",
+  "d": "2026-10-19",
+  "title": "First American’s Odeta Kushi on how labor, AI and migration will impact the housing market",
+  "body": "Economist explains how 7% mortgage rates and lower home price growth are reshaping affordability and mobility",
+  "topics": [
+   "rates",
+   "prices"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/odeta-kushi-labor-ai-migration/",
    "q": "news"
   }
  },
