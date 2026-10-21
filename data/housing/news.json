@@ -1,5 +1,147 @@
 [
  {
+  "id": "h-20261021-mortgage-applications-drop-5-3-despite-rate-declin",
+  "d": "2026-10-21",
+  "title": "Mortgage applications drop 5.3% despite rate decline",
+  "body": "Purchase applications dropped 7% week over week and ran 18% below last year",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mba-applications-drop-53/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261021-zillow-seeks-another-shot-at-dismissing-mortgage-t",
+  "d": "2026-10-21",
+  "title": "Zillow seeks another shot at dismissing mortgage tying lawsuit",
+  "body": "The Washington state federal case would keep antitrust and consumer claims alive if the order stands",
+  "topics": [],
+  "states": [
+   "WA",
+   "DC"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/zillow-antitrust-reconsideration-motion/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261021-why-john-ho-sold-landsea-after-growing-it-to-a-nat",
+  "d": "2026-10-21",
+  "title": "Why John Ho sold Landsea after growing it to a national footprint",
+  "body": "An inside look at the company's genesis, growth and the $1.2 billion sale to New Home Co. in 2025",
+  "topics": [
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/landsea-homes-growth-sale/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261021-2026-governor-races-put-housing-affordabilty-on-th",
+  "d": "2026-10-21",
+  "title": "2026 governor races put housing affordabilty on the line",
+  "body": "With 36 states voting, platforms span supply reforms, rent rules, and tax changes that could steer 2027 sessions",
+  "topics": [
+   "rents",
+   "inventory",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/governor-races-housing-policy-2026/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261021-national-housing-forecasts-miss-the-lot-level-real",
+  "d": "2026-10-21",
+  "title": "National housing forecasts miss the lot level reality",
+  "body": "DFW’s 110,000 vacant developed lots equal 32 months of supply, but submarket mix drives outcomes",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/underwrite-land-local-data/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261021-in-november-the-appraisal-becomes-data-the-cma-sta",
+  "d": "2026-10-21",
+  "title": "In November, the appraisal becomes data. The CMA stays a document.",
+  "body": "Fannie and Freddie shift to MISMO-aligned fields, while listing pricing still starts with an unstructured CMA",
+  "topics": [
+   "inventory",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/appraisal-data-cma-gap/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261021-h1-2026-investor-report-small-investors-take-over-",
+  "d": "2026-10-21",
+  "title": "H1 2026 Investor Report: Small Investors Take Over as Institutional Buyers Retreat",
+  "body": "Investor competition has been a mounting challenge for many hopeful homebuyers that reached new heights during the pandemic.",
+  "topics": [
+   "sales",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/investor-report-november-2025-2/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261021-how-to-start-your-rental-portfolio-in-2027-no-expe",
+  "d": "2026-10-21",
+  "title": "How to Start Your Rental Portfolio in 2027 (No Experience, Little Money)",
+  "body": "What would you do if you had to start your real estate portfolio over with little money and no experience? We’d do it a lot differently the second time around! [ ]",
+  "topics": [
+   "rents",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-786",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261021-was-dave-ramsey-right-about-rentals-don-t-use-debt",
+  "d": "2026-10-21",
+  "title": "Was Dave Ramsey Right About Rentals? (Don’t Use Debt)",
+  "body": "You want to buy a rental property, so you put 20% down and get a mortgage to cover the rest. This is how most investors buy real estate, but some [ ]",
+  "topics": [
+   "rents",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1346",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261020-side-s-new-google-deal-with-housecanary-could-give",
   "d": "2026-10-20",
   "title": "Side’s new Google deal with HouseCanary could give its agents an edge in listing visibility",
@@ -144,6 +286,36 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/on-the-market-470",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261020-mutually-assured-destruction-brokers-warn-of-fallo",
+  "d": "2026-10-20",
+  "title": "‘Mutually assured destruction’: Brokers warn of fallout from Compass’s MLS demands",
+  "body": "Brown Harris Stevens, NextHome and Lamacchia Realty leaders say listing hoarding could undermine comps and appraisals",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/compass-mls-antitrust-pushback/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261020-real-remax-ceo-says-ai-will-take-over-housing-syst",
+  "d": "2026-10-20",
+  "title": "Real-REMAX CEO says AI will take over housing systems",
+  "body": "Poleg also predicted that U.S. home prices could decline over the coming months",
+  "topics": [
+   "prices"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/real-remax-ceo-says-ai-will-take-over-housing-systems/",
    "q": "news"
   }
  },
@@ -310,6 +482,21 @@
   "src": {
    "t": "HousingWire",
    "u": "https://www.housingwire.com/articles/odeta-kushi-labor-ai-migration/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261019-building-a-6-property-portfolio-while-working-a-w-",
+  "d": "2026-10-19",
+  "title": "Building a 6-Property Portfolio While Working a W-2 and Raising 6 Kids",
+  "body": "Ever made a money decision you’d give anything to redo? You can’t rewind the clock, but you can try again, even with a full-time job and a full house! Welcome [ ]",
+  "topics": [
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-785",
    "q": "news"
   }
  },
