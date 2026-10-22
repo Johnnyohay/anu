@@ -1,5 +1,106 @@
 [
  {
+  "id": "h-20261022-stop-staging-homes-for-photos-start-staging-them-f",
+  "d": "2026-10-22",
+  "title": "Stop staging homes for photos. Start staging them for buyers.",
+  "body": "Agents can reduce friction by making online marketing align with room size, light and walkability",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/photos-vs-reality-staging/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261022-real-estate-agent-trust-gap-points-to-commission-i",
+  "d": "2026-10-22",
+  "title": "Real estate agent trust gap points to commission incentives",
+  "body": "Gallup ethics ratings fell to 17% in 2025 as lawsuits and studies spotlighted incentive misalignment",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/real-estate-agent-trust-commissions/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261022-balance-homes-rolls-out-co-ownership-program-acros",
+  "d": "2026-10-22",
+  "title": "Balance Homes rolls out co-ownership program across 12 states",
+  "body": "The move doubles Balance Homes' footprint following a relaunch backed by $30 million led by Falco Group",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/balance-homes-co-ownership-12-states/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261022-yimby-backed-raman-seeks-to-beat-la-mayor-bass-on-",
+  "d": "2026-10-22",
+  "title": "YIMBY-backed Raman seeks to beat LA Mayor Bass on housing",
+  "body": "Los Angeles ordinances that took effect June 30 hold off full SB 79 compliance citywide until 2030, which Raman opposed",
+  "topics": [],
+  "states": [
+   "CA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/yimby-backed-raman-seeks-to-beat-la-mayor-bass-on-housing/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261022-support-starter-homes-not-looser-lending-or-financ",
+  "d": "2026-10-22",
+  "title": "Support starter homes, not looser lending or financial fixes",
+  "body": "Research estimates smaller lots could have added 3.1 million starter homes in 10 years, at 10% to 15% lower prices",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/starter-homes-affordability-fix/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261022-weekly-housing-trends-u-s-market-update-week-endin",
+  "d": "2026-10-22",
+  "title": "Weekly Housing Trends: U.S. Market Update (Week Ending Oct. 17, 2026)",
+  "body": "Get the latest U.S. housing market trends, including inventory shifts, listing activity, prices, and buyer-seller dynamics, with fresh weekly data and insights.",
+  "topics": [
+   "inventory",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/eekly-housing-trends-view-data-week-october-17-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261022-the-slow-unlock-stalls-as-rates-climb",
+  "d": "2026-10-22",
+  "title": "The Slow Unlock Stalls as Rates Climb",
+  "body": "The slow unlock of the housing market picked up a little bit in Q2 of 2026, but generally held steady as climbing rates discouraged buyers.",
+  "topics": [
+   "rates",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/2026-q2-outstanding-mortgage-data/",
+   "q": "research"
+  }
+ },
+ {
   "id": "h-20261021-mortgage-applications-drop-5-3-despite-rate-declin",
   "d": "2026-10-21",
   "title": "Mortgage applications drop 5.3% despite rate decline",
@@ -139,6 +240,22 @@
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/real-estate-1346",
    "q": "news"
+  }
+ },
+ {
+  "id": "h-20261021-h1-2026-investor-report-small-investors-take-over-",
+  "d": "2026-10-21",
+  "title": "H1 2026 Investor Report: Small Investors Take Over as Institutional Buyers Retreat",
+  "body": "Investor competition has been a mounting challenge for many hopeful homebuyers that reached new heights during the pandemic.",
+  "topics": [
+   "sales",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/investor-report-october-2026/",
+   "q": "research"
   }
  },
  {
