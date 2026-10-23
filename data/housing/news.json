@@ -1,5 +1,78 @@
 [
  {
+  "id": "h-20261023-a-caltrain-railyard-plan-targets-5-834-new-san-fra",
+  "d": "2026-10-23",
+  "title": "A Caltrain railyard plan targets 5,834 new San Francisco homes",
+  "body": "Planners began CEQA review; the tallest tower would rank second only to San Francisco's Salesforce Tower",
+  "topics": [],
+  "states": [
+   "CA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/a-caltrain-railyard-plan-targets-5834-new-san-francisco-homes/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261023-real-estate-brokerages-cannot-recruit-their-way-ou",
+  "d": "2026-10-23",
+  "title": "Real estate brokerages cannot recruit their way out of a training problem",
+  "body": "Prelicensing teaches eligibility, brokerages must teach workflows, supervision and document quality reviews",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/brokerage-training-not-recruiting/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261023-how-one-real-estate-broker-uses-housingwire-intell",
+  "d": "2026-10-23",
+  "title": "How one real estate broker uses HousingWire Intelligence to spot market shifts before they happen",
+  "body": "Angie Mykel says combining inventory, pending sales, and new listings helps flag demand changes earlier",
+  "topics": [
+   "inventory",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/housingwire-intelligence-leading-indicators/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261023-corporate-brand-vs-loan-officer-brand-mortgage-com",
+  "d": "2026-10-23",
+  "title": "Corporate brand vs. loan officer brand: Mortgage companies need both",
+  "body": "Standard templates help consistency, but individual bios, reviews, and specialties drive borrower trust",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/corporate-loan-officer-brand/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261023-how-much-do-rental-properties-make-real-numbers-fr",
+  "d": "2026-10-23",
+  "title": "How Much Do Rental Properties Make? Real Numbers From Investors",
+  "body": "How much do landlords make? Whether you want to own rentals or want to benchmark your property portfolio, this episode is for you. We’ve got four real rental properties with [ ]",
+  "topics": [
+   "rents",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1347",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261022-stop-staging-homes-for-photos-start-staging-them-f",
   "d": "2026-10-22",
   "title": "Stop staging homes for photos. Start staging them for buyers.",
@@ -97,6 +170,68 @@
   "src": {
    "t": "Realtor.com Research",
    "u": "https://www.realtor.com/research/2026-q2-outstanding-mortgage-data/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261022-trump-signs-executive-order-targeting-mortgage-ins",
+  "d": "2026-10-22",
+  "title": "Trump signs executive order targeting mortgage insurance, manufactured housing and more",
+  "body": "White House fact sheet also mentions expansion of title insurance waivers, along with lower USDA and VA direct loan rates",
+  "topics": [
+   "rates",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/trump-order-mortgage-insurance/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261022-internal-ai-ecosystem-a-big-win-for-independent-ar",
+  "d": "2026-10-22",
+  "title": "Internal AI ecosystem a big win for independent Arizona brokerage",
+  "body": "The brokerage also created a consumer-direct mortgage tool",
+  "topics": [],
+  "states": [
+   "AZ"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/internal-ai-ecosystem-a-big-win-for-independent-arizona-brokerage/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261022-the-10-year-yield-is-under-5-are-sub-7-mortgage-ra",
+  "d": "2026-10-22",
+  "title": "The 10-year yield is under 5%. Are sub-7% mortgage rates next?",
+  "body": "Thursday was a wild day, and there was some short covering in bonds",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/the-10-year-yield-is-under-5-are-sub-7-mortgage-rates-next/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261022-mortgage-rates-drop-for-the-first-time-in-two-mont",
+  "d": "2026-10-22",
+  "title": "Mortgage rates drop for the first time in two months",
+  "body": "The Freddie Mac 30-year mortgage rate fall to steady at 7.32% this week as the 10-year Treasury yield declines.",
+  "topics": [
+   "rates",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/freddie-mac-mortgage-rates-october-22-2026/",
    "q": "research"
   }
  },
