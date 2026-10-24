@@ -1,5 +1,254 @@
 [
   {
+    "id": "u-20261024-russia-and-china-step-up-spy-flights-near-japan",
+    "d": "2026-10-24",
+    "title": "Russia and China step up spy flights near Japan",
+    "body": "China and Russia sent military intelligence aircraft toward Japan on four consecutive days this week, prompting the Japan Air Self-Defense Force to scramble fighters each day, as two Chinese Y-9 aircraft crossed the gap between Okinawa and Miyako-jima into…",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary",
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Japan Air Self-Defense Force"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-and-china-step-up-spy-flights-near-japan/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Japan Air Self-Defense Force"
+    ]
+  },
+  {
+    "id": "u-20261024-u-s-air-base-in-japan-to-block-chinese-byd-cars-ov",
+    "d": "2026-10-24",
+    "title": "U.S. air base in Japan to block Chinese BYD cars over data fears",
+    "body": "Kadena Air Base in Okinawa will bar all vehicles made by Chinese electric carmaker BYD from entering the installation starting Oct. 26 over concerns that the cars could expose sensitive military information, Kangnam Times reported.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "BYD",
+      "Kangnam Times"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-air-base-in-japan-to-block-chinese-byd-cars-over-data-fears/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "BYD",
+      "Kangnam Times"
+    ]
+  },
+  {
+    "id": "u-20261024-japan-weighs-rewrite-of-its-military-ai-policy",
+    "d": "2026-10-24",
+    "title": "Japan weighs rewrite of its military AI policy",
+    "body": "Japanese Defense Minister Shinjiro Koizumi said on Oct. 19 that the basic policy governing how the Ministry of Defense and the Self-Defense Forces use artificial intelligence needs to be reviewed, telling lawmakers that AI development has moved faster than…",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "global",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/japan-weighs-rewrite-of-its-military-ai-policy/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Ministry of Defense",
+      "Self-Defense Forces"
+    ]
+  },
+  {
+    "id": "u-20261024-china-south-korea-jointly-patrol-in-yellow-sea",
+    "d": "2026-10-24",
+    "title": "China, South Korea jointly patrol in Yellow Sea",
+    "body": "China and South Korea completed a 10-day joint maritime law enforcement patrol in the Yellow Sea fishing zone the two countries share under their bilateral fisheries agreement, with the China Coast Guard ship Changshan and the South Korean fisheries guidance…",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary",
+      "sea"
+    ],
+    "type": "Earnings",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/china-south-korea-jointly-patrol-in-yellow-sea/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "China Coast Guard"
+    ]
+  },
+  {
+    "id": "u-20261024-china-s-liaoning-carrier-10-years-from-training-sh",
+    "d": "2026-10-24",
+    "title": "China’s Liaoning carrier: 10 years from training ship to warship",
+    "body": "China’s Liaoning carrier group has carried out its second far-seas training deployment to the Western Pacific this year, a decade after the carrier’s first such voyage in 2016, Chinese state broadcaster CCTV reported on Oct.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "CCTV"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/chinas-liaoning-carrier-10-years-from-training-ship-to-warship/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "CCTV"
+    ]
+  },
+  {
+    "id": "u-20261024-chinese-navy-flotilla-returns-after-record-378-day",
+    "d": "2026-10-24",
+    "title": "Chinese navy flotilla returns after record 378 days at sea",
+    "body": "China’s 48th naval escort task force returned to a military port in Qingdao on Oct.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/chinese-navy-flotilla-returns-after-record-378-days-at-sea/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261024-turkish-naval-forces-test-barkan-ugv-in-amphibious",
+    "d": "2026-10-24",
+    "title": "Turkish Naval Forces test Barkan UGV in amphibious raid",
+    "body": "The Turkish Naval Forces used HAVELSAN’s Barkan unmanned ground vehicle to support amphibious raid and urban warfare training and then to evacuate simulated wounded personnel during TURNAs-2026, the service’s unmanned maritime systems exercise under way in…",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/turkish-naval-forces-test-barkan-ugv-in-amphibious-raid/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Turkish Naval Forces"
+    ]
+  },
+  {
+    "id": "u-20261024-u-s-army-fields-azak-robotic-wheel-system-in-germa",
+    "d": "2026-10-24",
+    "title": "U.S. Army fields AZAK robotic wheel system in Germany",
+    "body": "U.S. Army soldiers in Germany are training with AZAK’s S26 unmanned ground vehicle. On Oct.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "AZAK"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-fields-azak-robotic-wheel-system-in-germany/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "AZAK"
+    ]
+  },
+  {
+    "id": "u-20261024-turkish-long-endurance-drone-tests-anti-submarine-",
+    "d": "2026-10-24",
+    "title": "Turkish long-endurance drone tests anti-submarine task at sea",
+    "body": "Turkish Aerospace’s Aksungur long-endurance drone has completed its mission with Aselsan’s aselBUOY 100P underwater acoustic listening system during the Turkish Naval Forces’ TURNAs-2026 unmanned maritime systems exercise, the company announced on X on Oct.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Turkish Aerospace",
+      "Aselsan"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/turkish-long-endurance-drone-tests-anti-submarine-task-at-sea/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Turkish Aerospace",
+      "Aselsan",
+      "Turkish Naval Forces"
+    ]
+  },
+  {
+    "id": "u-20261024-engine-faults-leave-some-of-poland-s-k2-tanks-in-r",
+    "d": "2026-10-24",
+    "title": "Engine faults leave some of Poland’s K2 tanks in repair",
+    "body": "About 30 of Poland’s South Korean-built K2 tanks are sitting in military workshops with various faults, most of them at the army base in Braniewo in the country’s northeast, Radio ZET reported, and some of the damage involves the engines of a fleet that has…",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Radio ZET"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/engine-faults-leave-some-of-polands-k2-tanks-in-repair/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Radio ZET"
+    ]
+  },
+  {
     "id": "u-20261023-hd-hyundai-kiewit-unveil-plans-for-new-us-shipyard",
     "d": "2026-10-23",
     "title": "HD Hyundai, Kiewit unveil plans for new US shipyard",
@@ -438,6 +687,521 @@
     "auto": true,
     "orgs": [
       "U.S. Navy"
+    ]
+  },
+  {
+    "id": "u-20261023-space-force-reveals-first-6-operational-contracts-",
+    "d": "2026-10-23",
+    "title": "Space Force reveals first 6 ‘operational’ contracts for civil reserve support in space monitoring",
+    "body": "Space Systems Command officials said the contracts are an initial step for the Commercial Augmentation Space Reserve (CASR) initiative, and don’t address the thornier issues of US rights to deny other customers service or reimbursement for satellites lost in…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Commercial Augmentation Space Reserve",
+      "CASR"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/space-force-reveals-first-6-operational-contracts-for-civil-reserve-support-in-space-monitoring/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Space Force",
+      "Space Systems Command",
+      "Commercial Augmentation Space Reserve",
+      "CASR"
+    ]
+  },
+  {
+    "id": "u-20261023-kyiv-eyes-purchase-of-planned-iceye-nokia-sovereig",
+    "d": "2026-10-23",
+    "title": "Kyiv eyes purchase of planned ICEYE, Nokia ‘sovereign’ communication sats",
+    "body": "The letter of intent comes on the heels of the political dust up between US President Donald Trump and Elon Musk over a US move to throttle Ukraine’s Starshield access that has all but grounded the countries military drones in its war with Russia.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "space",
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "SpaceX / Starshield",
+      "Nokia"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/kyiv-eyes-purchase-of-planned-iceye-nokia-sovereign-communication-sats/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Nokia"
+    ]
+  },
+  {
+    "id": "u-20261023-qatari-barzan-unveils-aerial-drones-unmanned-surfa",
+    "d": "2026-10-23",
+    "title": "Qatari Barzan unveils aerial drones, unmanned surface vessels at Milipol 2026",
+    "body": "“This is a significant achievement, particularly as we continue to expand Qatar’s domestic defence and security capabilities in a year where we have had to rise to a number of regional challenges,” the company said in a statement.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Barzan"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/qatari-barzan-unveils-aerial-drones-unmanned-surface-vessels-at-milipol-2026/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Barzan"
+    ]
+  },
+  {
+    "id": "u-20261023-pentagon-issues-guidance-on-ai-procurements-to-sup",
+    "d": "2026-10-23",
+    "title": "Pentagon issues guidance on AI procurements to support Trump’s ‘truth-seeking’ and ‘ideological neutrality’ directives",
+    "body": "The memo to acquisition leaders came from the principal director for Defense Pricing, Contracting, and Acquisition Policy.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Earnings",
+    "companies": [
+      "Defense Pricing, Contracting,"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/10/23/pentagon-guidance-ai-procurement-trump-directive/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Defense Pricing, Contracting,"
+    ]
+  },
+  {
+    "id": "u-20261023-the-west-can-t-stop-me-space-wars-heat-up-as-russi",
+    "d": "2026-10-23",
+    "title": "‘The West can’t stop me’: Space wars heat up as Russia tails a Ukraine-linked US satellite",
+    "body": "Washington blamed Moscow for deliberately moving a Russian military satellite with an undisclosed mission close last week to a U.S.-registered satellite.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/space/2026/10/23/the-west-cant-stop-me-space-wars-heat-up-as-russia-tails-a-ukraine-linked-us-satellite/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261023-france-uk-carry-out-joint-airborne-nuclear-strike-",
+    "d": "2026-10-23",
+    "title": "France, UK carry out joint airborne nuclear-strike exercise for first time",
+    "body": "“This is a revolution for the Strategic Air Forces, which have always operated in complete autonomy since their creation in the 1960s,” said one analyst.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/10/23/france-uk-carry-out-joint-airborne-nuclear-strike-exercise-for-first-time/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Strategic Air Forces"
+    ]
+  },
+  {
+    "id": "u-20261023-on-the-brink-of-epic-fury-round-two",
+    "d": "2026-10-23",
+    "title": "On The Brink Of Epic Fury Round Two?",
+    "body": "Israeli Air Force operations, ship movements, ominous messaging and more point to the possibility that the war with Iran is about to erupt again. The post On The Brink Of Epic Fury Round Two? appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Force"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/on-the-brink-of-epic-fury-round-two",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Force"
+    ]
+  },
+  {
+    "id": "u-20261023-general-atomics-fq-42-cca-drone-production-ramp-up",
+    "d": "2026-10-23",
+    "title": "General Atomics FQ-42 CCA Drone Production Ramp Up To Be Boosted By Boeing Subsidiary",
+    "body": "General Atomics is now working with Spirit Defense to help meet surging USAF demands for fighter drones within the next six years. The post General Atomics FQ-42 CCA Drone Production Ramp Up To Be Boosted By Boeing Subsidiary appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "General Atomics",
+      "Spirit Defense",
+      "USAF"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/general-atomics-fq-42-cca-drone-production-ramp-up-to-be-boosted-by-boeing-subsidiary",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "General Atomics",
+      "Spirit Defense",
+      "USAF"
+    ]
+  },
+  {
+    "id": "u-20261023-denmark-to-buy-anthem-munitions-joint-strike-missi",
+    "d": "2026-10-23",
+    "title": "Denmark To Buy Anthem Munitions, Joint Strike Missiles In Dual Long-Range Strike Push",
+    "body": "The ground- and air-launched weapons will give Denmark all-new options for striking deep behind enemy lines as NATO reinforces its Baltic flank.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "capital",
+      "global"
+    ],
+    "type": "M&A & IPO",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/denmark-to-buy-anthem-munitions-joint-strike-missiles-in-dual-long-range-strike-push",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261023-air-force-considering-air-to-air-role-for-bombers-",
+    "d": "2026-10-23",
+    "title": "Air Force Considering Air-to-Air Role for Bombers amid Fighter Procurement Constraints",
+    "body": "The Air Force’s future strategy for fighting wars could include arming bombers with air-to-air strike capabilities, the service said in a new report to Congress.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/air-force-considering-air-to-air-role-for-bombers/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Air Force",
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261023-uss-mcfaul-returns-to-norfolk-after-332-day-deploy",
+    "d": "2026-10-23",
+    "title": "USS McFaul Returns to Norfolk After 332 Day Deployment",
+    "body": "Guided-missile destroyer USS McFaul (DDG-74) returned Friday to Naval Station Norfolk, Va., after 11 months deployed. McFaul left Norfolk on Nov. 25, 2026, for an independent deployment and spent the bulk of the time away in the Middle East.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/23/uss-mcfaul-returns-to-norfolk-after-332-day-deployment",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261023-collaboration-on-autonomous-undersea-warfare-is-on",
+    "d": "2026-10-23",
+    "title": "Collaboration on Autonomous Undersea Warfare is on Track, AUKUS Officials Say",
+    "body": "This post has been updated to include photos from the AUKUS Pillar II “Maritime Big Play-Pacific” demonstration in Southern California. SAN DIEGO, Calif.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/23/collaboration-on-autonomous-undersea-warfare-is-on-track-aukus-officials-say",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261023-usni-news-western-pacific-pulse-oct-23-2026",
+    "d": "2026-10-23",
+    "title": "USNI News Western Pacific Pulse: Oct. 23, 2026",
+    "body": "The following is a summary of major ship movements and exercises in the Western Pacific over the last week.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/23/usni-news-western-pacific-pulse-oct-23-2026",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "USNI News Western Pacific"
+    ]
+  },
+  {
+    "id": "u-20261023-army-activates-air-defense-guam-battalion-focused-",
+    "d": "2026-10-23",
+    "title": "Army Activates Air Defense Guam Battalion Focused on Chinese, North Korean Threats",
+    "body": "The U.S. Army’s recently activated a Guam-based air defense battalion meant to protect the island from increasingly advanced air and missile threats fielded by China and North Korea. The 3rd Battalion, 43rd Air Defense Artillery Regiment, activated on Oct.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "adversary",
+      "strike"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Air Defense Guam",
+      "Defense Artillery Regiment"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/23/army-activates-air-defense-guam-battalion-focused-on-chinese-north-korean-threats",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Air Defense Guam",
+      "U.S. Army",
+      "Defense Artillery Regiment"
+    ]
+  },
+  {
+    "id": "u-20261023-nov-5-satellite-mission-management-at-the-edge",
+    "d": "2026-10-23",
+    "title": "Nov. 5: Satellite Mission Management at the Edge",
+    "body": "Join us to explore how emerging technologies and commercial capabilities are transforming satellite operations The post Nov. 5: Satellite Mission Management at the Edge appeared first on SpaceNews .",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Satellite Mission Management"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/satellite-mission-management-at-the-edge-event/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Satellite Mission Management",
+      "SpaceNews"
+    ]
+  },
+  {
+    "id": "u-20261023-va-requests-industry-input-on-ai-agents-event-driv",
+    "d": "2026-10-23",
+    "title": "VA Requests Industry Input on AI Agents Event-Driven Data Access for MOSAIC Contract",
+    "body": "VA is evaluating VA Profile, VADIR and HDR for MOSAIC as it considers future data integration and transition requirements. The post VA Requests Industry Input on AI Agents Event-Driven Data Access for MOSAIC Contract first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/veterans-affairs-mosaic-data-access-rfi",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261023-air-force-pegs-2035-fighter-requirement-at-1-509-c",
+    "d": "2026-10-23",
+    "title": "Air Force Pegs 2035 Fighter Requirement at 1,509 Combat-Ready Jets",
+    "body": "Lt. Gen. David Tabor says the service plans to moderate risk as its low-risk estimate has climbed to 1,723 combat-ready jets. The post Air Force Pegs 2035 Fighter Requirement at 1,509 Combat-Ready Jets first appeared on Executive Gov .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/air-force-1509-combat-ready-fighters-2035",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Air Force Pegs"
+    ]
+  },
+  {
+    "id": "u-20261023-noaa-cowboy-space-will-test-in-orbit-satellite-dat",
+    "d": "2026-10-23",
+    "title": "NOAA, Cowboy Space Will Test In-Orbit Satellite Data Processing Under New Agreement",
+    "body": "NOAA and Cowboy Space have signed a two-year agreement to test in-orbit processing of environmental satellite data. The post NOAA, Cowboy Space Will Test In-Orbit Satellite Data Processing Under New Agreement first appeared on Executive Gov .",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Cowboy Space"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/noaa-cowboy-space-in-orbit-satellite-data-processing",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "Cowboy Space"
+    ]
+  },
+  {
+    "id": "u-20261023-beth-puchek-named-cpsc-chief-ai-officer",
+    "d": "2026-10-23",
+    "title": "Beth Puchek Named CPSC Chief AI Officer",
+    "body": "CPSC Chief Data Officer Beth Puchek has been named the agency’s chief AI officer to lead its AI strategy and technology governance. The post Beth Puchek Named CPSC Chief AI Officer first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "CPSC"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/beth-puchek-cpsc-chief-ai-officer-appointment-2",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "CPSC"
+    ]
+  },
+  {
+    "id": "u-20261023-ssc-s-comso-seeks-to-expedite-classified-access-fo",
+    "d": "2026-10-23",
+    "title": "SSC’s COMSO Seeks to Expedite Classified Access for Industry Through ACES",
+    "body": "SSC’s COMSO has launched ACES to help commercial firms gain security access for classified space work through OTAs and other vehicles. The post SSC’s COMSO Seeks to Expedite Classified Access for Industry Through ACES first appeared on Executive Gov .",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "SSC"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/ssc-comso-aces-program-industry-classified-access",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "SSC"
+    ]
+  },
+  {
+    "id": "u-20261023-cisa-allies-warn-of-denial-of-wallet-risks-in-ai-t",
+    "d": "2026-10-23",
+    "title": "CISA, Allies Warn of Denial-of-Wallet Risks in AI Token Guidance",
+    "body": "CISA and allies advised tiering AI token use, detecting cost-draining attacks and vetting providers before signing contracts. The post CISA, Allies Warn of Denial-of-Wallet Risks in AI Token Guidance first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Earnings",
+    "companies": [
+      "CISA",
+      "Allies Warn"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/cisa-allies-ai-token-guidance-denial-of-wallet",
+      "q": "news"
+    },
+    "addedAt": "2026-10-24T13:55:40.552Z",
+    "auto": true,
+    "orgs": [
+      "CISA",
+      "Allies Warn"
     ]
   },
   {

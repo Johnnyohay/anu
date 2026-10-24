@@ -73,6 +73,133 @@
   }
  },
  {
+  "id": "h-20261023-appraisers-warn-of-risks-as-more-real-estate-listi",
+  "d": "2026-10-23",
+  "title": "Appraisers warn of risks as more real estate listings go private",
+  "body": "Appraisers say hidden interiors and off-market sales limit comp verification and will extend turnaround times",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/uad-36-mls-photo-privacy/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261023-housing-leaders-weigh-in-on-trump-s-scaled-back-eo",
+  "d": "2026-10-23",
+  "title": "Housing leaders weigh in on Trump’s scaled-back EO",
+  "body": "Analysts see the moves as largely benign for mortgage and title insurers",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/trump-eo-mortgage-insurance-title-refi-costs/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261023-subservicer-benchmark-survey-shows-27-point-gap-be",
+  "d": "2026-10-23",
+  "title": "Subservicer benchmark survey shows 27-point gap between best, worst performers",
+  "body": "Garrett, McAuley & Co. surveyed 53 mortgage banking firms, with composite scores ranging from 53 to 80",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mortgage-subservicer-benchmark-gap/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261023-foreclosure-auctions-up-25-in-the-past-year-hit-a-",
+  "d": "2026-10-23",
+  "title": "Foreclosure auctions, up 25% in the past year, hit a post-pandemic peak",
+  "body": "Mortgages originated in 2022 or later represented 46% of all foreclosure auction activity in the third quarter",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/foreclosure-auctions-up-25-in-the-past-year-hit-a-post-pandemic-peak/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261023-real-estate-coaching-that-builds-authentic-agent-t",
+  "d": "2026-10-23",
+  "title": "Real estate coaching that builds authentic agent trust",
+  "body": "As automated messaging rises, leaders can create an edge by coaching voice, temperament fit and sustainability",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/authentic-agent-trust/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261023-mortgage-applications-aren-t-ready-to-rebound-just",
+  "d": "2026-10-23",
+  "title": "Mortgage Applications Aren't Ready to Rebound Just Yet",
+  "body": "Mortgage applications continued to decline even as mortgage rates finally moved lower.",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "Mortgage News Daily",
+   "u": "https://www.mortgagenewsdaily.com/news/10232026-mortgage-applications-mba",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261023-building-permits-hold-steady-despite-slide-in-hous",
+  "d": "2026-10-23",
+  "title": "Building Permits Hold Steady Despite Slide in Housing Starts",
+  "body": "Residential construction failed to find even footing in September, with housing starts declining and single-family building permits pulling back, while total permits held nearly steady and completions edged higher.",
+  "topics": [
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "Mortgage News Daily",
+   "u": "https://www.mortgagenewsdaily.com/news/10232026-housing-starts-building-permits-new-residenti",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261023-builder-confidence-hits-lowest-level-since-2012",
+  "d": "2026-10-23",
+  "title": "Builder Confidence Hits Lowest Level Since 2012",
+  "body": "The National Association of Home Builders (NAHB)/Wells Fargo Housing Market Index (HMI) dropped three points to 29 in October--its lowest level in 14 years.",
+  "topics": [
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "Mortgage News Daily",
+   "u": "https://www.mortgagenewsdaily.com/news/10232026-builder-confidence-nahb-hmi",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261023-ran-the-numbers-but-nothing-cash-flows-what-to-do-",
+  "d": "2026-10-23",
+  "title": "Ran the Numbers but Nothing Cash Flows? What to Do Next (Rookie Reply)",
+  "body": "So you ran the numbers and the cash flow shows negative? You don’t have to give up on rentals. With a few smarter assumptions, the right strategy, or the right [ ]",
+  "topics": [
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-787",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261022-stop-staging-homes-for-photos-start-staging-them-f",
   "d": "2026-10-22",
   "title": "Stop staging homes for photos. Start staging them for buyers.",
