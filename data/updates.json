@@ -1,5 +1,232 @@
 [
   {
+    "id": "u-20261025-funding-force-structure-issues-could-hinder-hegset",
+    "d": "2026-10-25",
+    "title": "Funding, force-structure issues could hinder Hegseth’s new autonomous command",
+    "body": "The money to start AUTOWARCOM is to come from a reconciliation bill whose passage is in doubt.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/threats/2026/10/funding-hegseth-autonomous-command/416800/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-25T14:13:24.179Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261025-russia-s-once-feared-lancet-kamikaze-drone-is-losi",
+    "d": "2026-10-25",
+    "title": "Russia’s once-feared Lancet kamikaze drone is losing its edge",
+    "body": "A Russian drone unit fired about 100 Lancet loitering munitions over three months and hit only three targets, according to pro-Russian militant Pavel Gubarev, who said Ukrainian air defenses brought down most of the rest.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "adversary",
+      "strike"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/the-once-feared-russian-lancet-kamikaze-drone-is-losing-its-edge/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-25T14:13:24.179Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261025-royal-navy-moves-to-buy-u-s-made-skydio-x10d-drone",
+    "d": "2026-10-25",
+    "title": "Royal Navy moves to buy U.S.-made Skydio X10D drones",
+    "body": "Britain’s Ministry of Defence has opened a tender to buy Skydio X10D small drones, the American-made reconnaissance quadcopter already ordered by the thousands by the U.S.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea",
+      "capital",
+      "sensing"
+    ],
+    "type": "M&A & IPO",
+    "companies": [
+      "Skydio"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/royal-navy-moves-to-buy-u-s-made-skydio-x10d-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-25T14:13:24.179Z",
+    "auto": true,
+    "orgs": [
+      "Royal Navy",
+      "Ministry of Defence"
+    ]
+  },
+  {
+    "id": "u-20261025-u-s-navy-begins-upgrading-22-year-old-destroyer-wi",
+    "d": "2026-10-25",
+    "title": "U.S. Navy begins upgrading 22-year-old destroyer with new radar",
+    "body": "The U.S. Navy destroyer USS Pinckney (DDG 91) has entered General Dynamics NASSCO’s shipyard in San Diego for a second depot modernization period that will make it the first warship to receive the Raytheon AN/SPY-6(V)4 radar, the Navy’s Portfolio Acquisition…",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "sensing",
+      "primes"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "General Dynamics NASSCO"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-navy-begins-upgrading-22-year-old-destroyer-with-new-radar/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-25T14:13:24.179Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Navy",
+      "General Dynamics NASSCO"
+    ]
+  },
+  {
+    "id": "u-20261025-darpa-tests-autonomous-vehicles-that-team-up-to-fi",
+    "d": "2026-10-25",
+    "title": "DARPA tests autonomous vehicles that team up to find enemy targets",
+    "body": "DARPA, a central research and development organization within the United States Department of War, put four autonomous unmanned ground vehicles through their first end-to-end test at Fort Knox, Kentucky, on Oct.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/darpa-tests-autonomous-vehicles-that-team-up-to-find-enemy-targets/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-25T14:13:24.179Z",
+    "auto": true,
+    "orgs": [
+      "DARPA",
+      "United States Department of War"
+    ]
+  },
+  {
+    "id": "u-20261025-russia-launches-new-stealth-corvette-grozny",
+    "d": "2026-10-25",
+    "title": "Russia launches new stealth corvette Grozny",
+    "body": "Russia’s Amur Shipbuilding Plant has launched the multipurpose corvette Grozny, the fifth Project 20380 warship it has built for the Russian Navy’s Pacific Fleet, the fleet’s press service said. The ceremony took place on Oct.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "sea"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Shipbuilding",
+      "Fleet"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-launches-new-stealth-corvette-grozny/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-25T14:13:24.179Z",
+    "auto": true,
+    "orgs": [
+      "Shipbuilding",
+      "Navy",
+      "Fleet"
+    ]
+  },
+  {
+    "id": "u-20261025-france-sends-patrol-planes-to-black-sea-after-ship",
+    "d": "2026-10-25",
+    "title": "France sends patrol planes to Black Sea after ship attacks",
+    "body": "A French Navy Atlantique 2 maritime patrol aircraft has deployed to Romania and is supporting search and rescue efforts after a wave of drone attacks on merchant ships off the Romanian and Bulgarian coasts, while a U.S.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/france-sends-patrol-planes-to-black-sea-after-ship-attacks/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-25T14:13:24.179Z",
+    "auto": true,
+    "orgs": [
+      "Navy Atlantique"
+    ]
+  },
+  {
+    "id": "u-20261025-philadelphia-startup-s-unmanned-vehicle-makes-u-s-",
+    "d": "2026-10-25",
+    "title": "Philadelphia startup’s unmanned vehicle makes U.S. Army shortlist",
+    "body": "Philadelphia-based Raptor Defense Company is advancing in two U.S. Army programs with PIT VIPER, a small modular wheeled unmanned ground vehicle the company calls a “Personal Combat Vehicle” and designs to be fielded at the level of the individual soldier,…",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Raptor Defense Company"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/philadelphia-startups-unmanned-vehicle-makes-u-s-army-shortlist/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-25T14:13:24.179Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "Raptor Defense Company"
+    ]
+  },
+  {
+    "id": "u-20261025-ukraine-accuses-musk-of-false-claims-over-starlink",
+    "d": "2026-10-25",
+    "title": "Ukraine accuses Musk of false claims over Starlink",
+    "body": "Ukraine has rejected Elon Musk’s claim that its military broke Starlink’s terms of service by using the civilian satellite network for offensive drone strikes, with a presidential adviser saying that restrictions SpaceX placed on the service in February make…",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "air",
+      "space",
+      "capital"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "SpaceX / Starshield",
+      "Starlink",
+      "Elon Musk"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/ukraine-accuses-musk-of-false-claims-over-starlink/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-25T14:13:24.179Z",
+    "auto": true,
+    "orgs": [
+      "Starlink",
+      "Elon Musk",
+      "SpaceX"
+    ]
+  },
+  {
     "id": "u-20261024-russia-and-china-step-up-spy-flights-near-japan",
     "d": "2026-10-24",
     "title": "Russia and China step up spy flights near Japan",
