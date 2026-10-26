@@ -1,5 +1,554 @@
 [
   {
+    "id": "u-20261026-is-the-pentagon-s-demand-signal-for-drones-working",
+    "d": "2026-10-26",
+    "title": "Is the Pentagon’s demand signal for drones working? It depends on who you ask.",
+    "body": "“There’s a lot of positive signaling, but we need to see the whites of the eyes: We need to see sustained, normalized demand,” said James Slider, CEO of Performance Drone Works.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Performance Drone Works"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/is-the-pentagons-demand-signal-for-drones-working-it-depends-on-who-you-ask/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Performance Drone Works"
+    ]
+  },
+  {
+    "id": "u-20261026-unmanned-systems-take-center-stage-at-turkish-ate-",
+    "d": "2026-10-26",
+    "title": "Unmanned systems take center stage at Turkish Ateş Serbest military demonstration",
+    "body": "The highlight of the exercise may have been the Turkish military showing off a new drone for the first time: Turkish Aerospace Industries’ Ayaz, a turbojet-powered one-way attack unmanned aerial vehicle.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Ateş",
+      "Turkish Aerospace Industries"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/unmanned-systems-take-center-stage-at-turkish-ates-serbest-military-demonstration/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Ateş",
+      "Turkish Aerospace Industries"
+    ]
+  },
+  {
+    "id": "u-20261026-smack-technologies-lands-new-deal-for-ai-prototype",
+    "d": "2026-10-26",
+    "title": "Smack Technologies lands new deal for AI prototype to enhance joint military campaigning",
+    "body": "The OTA comes as SOCOM is fast-tracking frontier AI capabilities to solve real-world operational challenges and free up its leaders to focus on the most complex strategic and tactical priorities.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Smack Technologies",
+      "OTA"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/10/26/smack-technologies-ai-prototype-special-operations-command/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Smack Technologies",
+      "OTA"
+    ]
+  },
+  {
+    "id": "u-20261026-as-project-gatekeeper-goes-live-army-plans-integra",
+    "d": "2026-10-26",
+    "title": "As Project Gatekeeper goes live, Army plans integration with frontier AI models",
+    "body": "Soon, Project Gatekeeper’s security testing will be powered by frontier AI models and the wider public will be able to access the platform using Login.Gov credentials.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Project"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/10/26/army-project-gatekeeper-goes-live-integration-frontier-ai-models/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Army",
+      "Project"
+    ]
+  },
+  {
+    "id": "u-20261026-bce-consulting-outlines-the-critical-elements-of-l",
+    "d": "2026-10-26",
+    "title": "BCE Consulting outlines the critical elements of layered air defense architecture",
+    "body": "What does the future of layered air defense look like? BCE Consulting lays out what it will take to protect American forces.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "BCE Consulting"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/10/26/bce-consulting-outlines-the-critical-elements-of-layered-air-defense-architecture/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "BCE Consulting"
+    ]
+  },
+  {
+    "id": "u-20261026-helsing-unveils-interceptor-missiles-designed-to-c",
+    "d": "2026-10-26",
+    "title": "Helsing unveils interceptor missiles designed to chase Russia’s fast-flying Geran drones",
+    "body": "Germany’s Helsing is offering a novel pair of air-defense missiles, plus the requisite AI software to organize intercepts, for downing fast attack drones for under $100,000 per shot.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "missiledef",
+      "adversary",
+      "ai"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Helsing"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/10/26/helsing-unveils-interceptor-missiles-designed-to-chase-russias-fast-flying-geran-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Helsing"
+    ]
+  },
+  {
+    "id": "u-20261026-defense-leaders-weigh-in-on-expanding-production-d",
+    "d": "2026-10-26",
+    "title": "Defense leaders weigh in on expanding production Defense News Weekly Full Episode 10.27.26",
+    "body": "Top leaders from the defense industry share their ideas on how to scale up production and integrate AI in remarks from the show floor at AUSA 2026.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/10/26/defense-leaders-weigh-in-on-expanding-production-defense-news-weekly-full-episode-102726/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Defense News Weekly"
+    ]
+  },
+  {
+    "id": "u-20261026-defense-industry-leaders-weigh-in-how-to-increase-",
+    "d": "2026-10-26",
+    "title": "Defense industry leaders weigh in: How to increase production and integrate AI",
+    "body": "As military leaders clamor for increased weapons and systems productions, top defense company leaders chart ways they can meet the demand.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/10/26/defense-industry-leaders-weigh-in-how-to-increase-production-and-integrate-ai/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261026-semiautomatic-grenade-launcher-and-aim-assist-for-",
+    "d": "2026-10-26",
+    "title": "Semiautomatic grenade launcher and aim-assist for shooting down drones Highlights from AUSA 2026",
+    "body": "Advances in weapons, new drones and personal drone protection were on display at the Army’s premier annual defense conference in Washington, D.C.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/10/26/semiautomatic-grenade-launcher-and-aim-assist-for-shooting-down-drones-highlights-from-ausa-2026/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261026-afrl-moves-cargo-through-space-with-spacex-demonst",
+    "d": "2026-10-26",
+    "title": "AFRL Moves Cargo Through Space with SpaceX Demonstration",
+    "body": "When a SpaceX Falcon 9 rocket took off from Cape Canaveral Space Force Station, Fla., on Oct.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "SpaceX / Starshield"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/afrl-rocket-cargo-spacex-demonstration/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261026-new-philippine-coast-guard-vessel-shadows-chinese-",
+    "d": "2026-10-26",
+    "title": "New Philippine Coast Guard Vessel Shadows Chinese Carrier Strike Group off Mindanao",
+    "body": "MANILA, Philippines — The Philippine Coast Guard’s new patrol vessel from Taiwan shadowed the Chinese Navy’s Liaoning Carrier Strike Group on Friday off Mindanao.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "adversary",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Chinese Carrier Strike Group",
+      "Liaoning Carrier Strike Group"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/26/new-philippine-coast-guard-vessel-shadows-chinese-carrier-strike-group-off-mindanao",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Philippine Coast Guard",
+      "Chinese Carrier Strike Group",
+      "Navy",
+      "Liaoning Carrier Strike Group"
+    ]
+  },
+  {
+    "id": "u-20261026-astranis-upgrades-falcon-9-launch-contract-to-dedi",
+    "d": "2026-10-26",
+    "title": "Astranis Upgrades Falcon 9 Launch Contract to Dedicated Mission for Entire Block 4 Production Run of Satellites",
+    "body": "SAN FRANCISCO —October 26, 2026—Today, Astranis announced it has upgraded its 4th launch to a dedicated mission aboard a SpaceX Falcon 9 rocket set to launch in 2028, allowing it [ ] The post Astranis Upgrades Falcon 9 Launch Contract to Dedicated Mission for…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Contract",
+    "companies": [
+      "SpaceX / Starshield"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/astranis-upgrades-falcon-9-launch-contract-to-dedicated-mission-for-entire-block-4-production-run-of-satellites/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261026-u-s-air-force-trains-with-heavy-drone-hunter-with-",
+    "d": "2026-10-26",
+    "title": "U.S. Air Force trains with heavy drone hunter with net gun",
+    "body": "The U.S. Air Force has put the Paladin, a heavy counter-drone multirotor built by California-based Zone 5 Technologies, through training with Joint Interagency Task Force 401 at MacDill Air Force Base in Florida on Oct.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Zone 5 Technologies",
+      "Joint Interagency Task Force 401"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-air-force-trains-with-heavy-drone-hunter-with-net-gun/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Air Force",
+      "Zone 5 Technologies",
+      "Joint Interagency Task Force 401"
+    ]
+  },
+  {
+    "id": "u-20261026-german-firm-develops-low-cost-interceptor-to-stop-",
+    "d": "2026-10-26",
+    "title": "German firm develops low-cost interceptor to stop mass drone attacks",
+    "body": "German defense AI company Helsing on Oct. 26 unveiled Contra, an autonomous, AI-controlled air defense system designed to protect countries against large-scale drone and missile attacks, along with two new interceptor missiles, the jet-powered AD-1 Inferno…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "missiledef",
+      "ai",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Helsing"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/german-firm-develops-low-cost-interceptor-to-stop-mass-drone-attacks/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Helsing"
+    ]
+  },
+  {
+    "id": "u-20261026-royal-navy-frigate-crisis-deepens-as-old-warships-",
+    "d": "2026-10-26",
+    "title": "Royal Navy frigate crisis deepens as old warships wear out",
+    "body": "Britain’s Royal Navy could be left with just one frigate available for operations at any given time next year, as two more of its five remaining Type 23 frigates are expected to be declared unseaworthy within months, leaving three ships in service in 2027…",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/royal-navy-frigate-crisis-deepens-as-old-warships-wear-out/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Royal Navy"
+    ]
+  },
+  {
+    "id": "u-20261026-japanese-troops-drill-with-new-long-range-ship-kil",
+    "d": "2026-10-26",
+    "title": "Japanese troops drill with new long-range ship-killer missile",
+    "body": "Japan Ground Self-Defense Force troops deployed the new Type 25 surface-to-ship missile system to the Ōnohara training area in Nagasaki Prefecture and rehearsed anti-ship strikes using targeting information from U.S.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "strike",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Japan Ground Self-Defense Force"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/japanese-troops-drill-with-new-long-range-ship-killer-missile/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Japan Ground Self-Defense Force"
+    ]
+  },
+  {
+    "id": "u-20261026-china-s-h-6-bomber-spotted-with-a-new-large-jammin",
+    "d": "2026-10-26",
+    "title": "China’s H-6 bomber spotted with a new large jamming pod",
+    "body": "A Chinese H-6KG bomber has been seen carrying what appears to be a new large electronic jamming pod that closely resembles the pods carried by the J-16D, the People’s Liberation Army Air Force’s dedicated electronic warfare jet, military aviation analyst…",
+    "why": "Jamming and spectrum fights decide whether drones and radios work at all, so this quiet area keeps getting funded.",
+    "sectors": [
+      "ew",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/chinas-h-6-bomber-spotted-with-a-new-large-jamming-pod/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "People’s Liberation Army Air Force"
+    ]
+  },
+  {
+    "id": "u-20261026-simulated-north-korean-attack-pierces-south-s-line",
+    "d": "2026-10-26",
+    "title": "Simulated North Korean attack pierces South’s lines without nukes",
+    "body": "A computer simulation run by South Korean and U.S. forces during this summer’s Ulchi Freedom Shield exercise ended with North Korean troops breaking through allied defensive lines and advancing to the outskirts of Seoul, South Korea’s Chosun Ilbo newspaper…",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Freedom Shield",
+      "Chosun Ilbo"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/simulated-north-korean-attack-pierces-souths-lines-without-nukes/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Freedom Shield",
+      "Chosun Ilbo"
+    ]
+  },
+  {
+    "id": "u-20261026-japan-cannibalizes-p-1-maritime-patrol-planes",
+    "d": "2026-10-26",
+    "title": "Japan cannibalizes P-1 maritime patrol planes",
+    "body": "Posts on X lamenting the state of Japan’s Kawasaki P-1 maritime patrol fleet have drawn more than 100,000 views, as Japanese aviation enthusiasts urged the public to spread the word about the hardships facing Maritime Self-Defense Force units after reports…",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Maritime Self-Defense Force"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/japan-cannibalizes-p-1-maritime-patrol-planes/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Maritime Self-Defense Force"
+    ]
+  },
+  {
+    "id": "u-20261026-south-korea-bans-missile-maker-lig-d-a-from-bids-o",
+    "d": "2026-10-26",
+    "title": "South Korea bans missile maker LIG D A from bids over bribery",
+    "body": "South Korea’s Defense Acquisition Program Administration (DAPA) has barred LIG Defense Aerospace, the maker of the Cheongung air defense missile formerly known as LIG Nex1, from bidding on government contracts for two years after prosecutors accused the…",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "global",
+      "missiledef"
+    ],
+    "type": "Contract",
+    "companies": [
+      "LIG D A",
+      "DAPA",
+      "LIG Defense Aerospace"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/south-korea-bans-missile-maker-lig-da-from-bids-over-bribery/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "LIG D A",
+      "Defense Acquisition Program Administration",
+      "DAPA",
+      "LIG Defense Aerospace"
+    ]
+  },
+  {
+    "id": "u-20261026-myanmar-rebels-destroy-chinese-made-armored-vehicl",
+    "d": "2026-10-26",
+    "title": "Myanmar rebels destroy Chinese-made armored vehicles with FPV drones",
+    "body": "Fighters from a local armed group in Myanmar have destroyed several Chinese-made ZSL-92 infantry fighting vehicles belonging to the Myanmar Army using first-person-view (FPV) drones, open-source analyst Jesus Roman reported on Oct.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "ground",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/myanmar-rebels-destroy-chinese-made-armored-vehicles-with-fpv-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": [
+      "Myanmar Army"
+    ]
+  },
+  {
+    "id": "u-20261026-ukraine-war-lessons-show-up-on-chinese-armor-in-pa",
+    "d": "2026-10-26",
+    "title": "Ukraine war lessons show up on Chinese armor in Pakistan drill",
+    "body": "Chinese Type 08 infantry fighting vehicles fitted with anti-drone roof cages and side grilles carried assault troops during Karakoram 2026, the first joint army training between China and Pakistan, now under way in Korla in China’s northwestern Xinjiang…",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary",
+      "air",
+      "ground"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/ukraine-war-lessons-show-up-on-chinese-armor-in-pakistan-drill/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-26T16:42:03.537Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
     "id": "u-20261025-funding-force-structure-issues-could-hinder-hegset",
     "d": "2026-10-25",
     "title": "Funding, force-structure issues could hinder Hegseth’s new autonomous command",

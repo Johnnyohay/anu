@@ -1,5 +1,167 @@
 [
  {
+  "id": "h-20261026-unlock-closes-433-1m-home-equity-agreement-securit",
+  "d": "2026-10-26",
+  "title": "Unlock closes $433.1M home equity agreement securitization",
+  "body": "The transaction includes 4,474 HEAs originated and managed by Unlock",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/unlock-433m-hea-securitization/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261026-fico-freezes-10-mortgage-score-bundle-price",
+  "d": "2026-10-26",
+  "title": "FICO freezes $10 mortgage score bundle price",
+  "body": "Flat pricing on Classic FICO and FICO 10T comes amid competition",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/fico-holds-10-mortgage-score-pricing/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261026-open-real-estate-housing-markets-must-remain-open-",
+  "d": "2026-10-26",
+  "title": "Open Real Estate: Housing markets must remain open to all",
+  "body": "Industry open letter calls for standardized data sharing across MLSs and portals",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/open-real-estate-listing-access/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261026-4-real-estate-giants-team-up-to-create-new-shared-",
+  "d": "2026-10-26",
+  "title": "4 Real estate giants team up to create new, shared listings platform",
+  "body": "eXp, NextHome, HomeServices, Keller Williams and Real REMAX Group join forces to create a national data-sharing program",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/open-real-estate-data-initiative/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261026-homebuilding-scale-grows-as-institutional-knowledg",
+  "d": "2026-10-26",
+  "title": "Homebuilding scale grows as institutional knowledge fades",
+  "body": "The Fox & Jacobs 'North Dallas Special' model 402 showed how buyer research and market focus can outperform national scale",
+  "topics": [
+   "sales"
+  ],
+  "states": [
+   "TX"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/homebuilding-institutional-wisdom-loss/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261026-splitero-s-michael-gifford-says-heis-could-gain-ma",
+  "d": "2026-10-26",
+  "title": "Splitero’s Michael Gifford says HEIs could gain market share as mortgage rates stay high",
+  "body": "Michael Gifford says securitization demand could lower pricing over time, but the regulatory picture remains cloudy",
+  "topics": [
+   "rates",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/splitero-ceo-hei-rates/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261026-at-7-28-the-american-dream-just-got-a-215-a-month-",
+  "d": "2026-10-26",
+  "title": "At 7.28%, the American dream just got a $215-a-month surcharge",
+  "body": "On a $429,100 median home with 20% down, principal and interest rises from about $2,130 to $2,350",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mortgage-rates-american-dream/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261026-playbook-triage-first-strategy-second",
+  "d": "2026-10-26",
+  "title": "Playbook: Triage first, strategy second.",
+  "body": "Mortgage rates are volatile. The time for C-level decisions is now.",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mortgage-lender-triage-strategy/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261026-video-october-26-2026-economic-and-housing-market-",
+  "d": "2026-10-26",
+  "title": "Video: October 26, 2026, Economic and Housing Market Outlook",
+  "body": "The October 26, 2026 Housing Market Outlook video gives you the info you need to know to navigate the housing market as a homebuyer, home seller, renter, or industry professional.",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/video-economic-and-housing-market-update-october-26-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261026-from-factory-to-first-home-bill-enables-manufactur",
+  "d": "2026-10-26",
+  "title": "From Factory to First Home: Bill Enables Manufactured Housing to Supply Starter Market",
+  "body": "Recent federal legislation has removed the requirement for manufactured homes to be built on a permanent steel chassis.",
+  "topics": [
+   "inventory",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/manufactured-housing-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261026-rentals-helped-me-quit-my-14-year-nursing-job-and-",
+  "d": "2026-10-26",
+  "title": "Rentals Helped Me Quit My 14-Year Nursing Job (And Start My Own Business)",
+  "body": "Have you ever thought, maybe real estate investing isn’t worth it anymore? Lindsay Barrientos didn’t start buying rentals after the 2008 crash or ride the low-interest-rate wave in 2021. She [ ]",
+  "topics": [
+   "rates",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1348",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261024-slightly-lower-mortgage-rates-finally-pause-slide-",
   "d": "2026-10-24",
   "title": "Slightly lower mortgage rates finally pause slide in housing demand",
