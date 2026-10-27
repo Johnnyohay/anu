@@ -1,5 +1,554 @@
 [
   {
+    "id": "u-20261027-how-the-pentagon-wants-to-buy-cyber-outcomes-not-e",
+    "d": "2026-10-27",
+    "title": "How the Pentagon wants to buy cyber outcomes, not equipment",
+    "body": "The Pentagon has been exploring a new paradigm dubbed Cyber Effects-as-a-Service, aiming to purchase specific outcomes as opposed to bespoke capabilities.",
+    "why": "State hackers are still inside critical networks, which keeps defensive and offensive cyber in demand.",
+    "sectors": [
+      "cyber",
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/how-the-pentagon-wants-to-buy-cyber-outcomes-not-equipment/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261027-2026-midterm-cheat-sheet-which-races-to-watch-on-d",
+    "d": "2026-10-27",
+    "title": "2026 midterm cheat sheet: Which races to watch on defense",
+    "body": "With pollsters predicting that Democrats will flip one or both chambers of Congress, there could be major changes to the roster of defense advocates on Capitol Hill.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/2026-midterm-cheat-sheet-which-races-to-watch-on-defense/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261027-the-new-must-have-capabilities-for-drones",
+    "d": "2026-10-27",
+    "title": "The new must-have capabilities for drones",
+    "body": "[Sponsored] Electronic warfare, GPS denial, and battlefield attrition are driving new requirements for small UAS.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "ew"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/the-new-must-have-capabilities-for-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261027-usaf-should-buy-newly-designed-air-refuelers-to-me",
+    "d": "2026-10-27",
+    "title": "USAF should buy newly designed air refuelers to meet China threat: Report",
+    "body": "Although there’s a “temptation” to keep buying KC-46s, a plan to procure 75 more of the Boeing-made tankers should be an “upper limit” followed by a new, longer range tanker, the Hudson Institute’s Timothy Walton told Breaking Defense.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Research",
+    "companies": [
+      "USAF"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/usaf-should-buy-newly-designed-air-refuelers-to-meet-china-threat-report/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "USAF",
+      "Hudson Institute",
+      "Breaking Defense"
+    ]
+  },
+  {
+    "id": "u-20261027-anduril-expanding-into-laptop-manufacturing-in-par",
+    "d": "2026-10-27",
+    "title": "Anduril expanding into laptop manufacturing in partnership with Qualcomm",
+    "body": "The companies plan to market the tech to government and military customers, among other potential buyers. The post Anduril expanding into laptop manufacturing in partnership with Qualcomm appeared first on DefenseScoop .",
+    "why": "Being able to produce at scale has become a competitive edge in its own right; factories are now a venture category.",
+    "sectors": [
+      "mfg"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Anduril",
+      "Qualcomm"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/10/27/anduril-palmer-luckey-bluechip-computers-qualcomm/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Anduril",
+      "Qualcomm",
+      "DefenseScoop"
+    ]
+  },
+  {
+    "id": "u-20261027-building-a-power-layer-for-the-robotic-battlefield",
+    "d": "2026-10-27",
+    "title": "Building a power layer for the robotic battlefield — Chariot Defense",
+    "body": "Chariot Defense looks to provide power solutions for a modern, drone-driven military force when traditional methods fail.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Chariot Defense"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/news/2026/10/27/building-a-power-layer-for-the-robotic-battlefield-chariot-defense/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Chariot Defense"
+    ]
+  },
+  {
+    "id": "u-20261027-india-capitalizes-on-europe-s-growing-demand-for-a",
+    "d": "2026-10-27",
+    "title": "India capitalizes on Europe’s growing demand for ammunition",
+    "body": "Indian Defence Secretary Rajesh Kumar Singh said that demand linked to the European Union’s “ReArm Europe” initiative is boosting exports.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "European Union"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/asia-pacific/2026/10/27/india-capitalizes-on-europes-growing-demand-for-ammunition/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "European Union"
+    ]
+  },
+  {
+    "id": "u-20261027-britain-will-not-join-canada-led-defense-bank-init",
+    "d": "2026-10-27",
+    "title": "Britain will not join Canada-led defense bank initiative",
+    "body": "Britain will not join the Canada-led Defence, Security and Resilience Bank, in a setback to efforts to create the world's first global defense bank, according to a person familiar with the matter.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Defence, Security",
+      "Resilience Bank"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/10/27/britain-will-not-join-canada-led-defense-bank-initiative/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Defence, Security",
+      "Resilience Bank"
+    ]
+  },
+  {
+    "id": "u-20261027-usaf-orders-arrw-hypersonic-missile-into-productio",
+    "d": "2026-10-27",
+    "title": "USAF Orders ARRW Hypersonic Missile Into Production, The Same Weapon It Nearly Cancelled",
+    "body": "The fortunes of the AGM-183A, which is now set to arm B-52 and B-1 bombers, have now been fully reversed. The post USAF Orders ARRW Hypersonic Missile Into Production, The Same Weapon It Nearly Cancelled appeared first on TWZ .",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/usaf-orders-arrw-hypersonic-missile-into-production-the-same-weapon-it-nearly-cancelled",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261027-marine-rotational-force-concludes-deployment-to-th",
+    "d": "2026-10-27",
+    "title": "Marine Rotational Force Concludes Deployment to the Outback",
+    "body": "Marine Rotational Force-Darwin 26.3 completed its six month rotational deployment to Australia and the Indo-Pacific, the service announced on Friday. The conclusion of the MRF-D’s deployment marks the 15th rotation, reads a Marine Corps news release.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/27/marine-rotational-force-concludes-deployment-to-the-outback",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Marine Rotational Force",
+      "Marine Corps"
+    ]
+  },
+  {
+    "id": "u-20261027-japan-s-2026-defense-white-paper",
+    "d": "2026-10-27",
+    "title": "Japan’s 2026 Defense White Paper",
+    "body": "The following is the full English translation of Japan’s 2026 Defense White Paper, released Oct. 26, 2026.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/27/japans-2026-defense-white-paper",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261027-craft-prospect-kicks-off-perseus-project-to-advanc",
+    "d": "2026-10-27",
+    "title": "Craft Prospect kicks off PERSEUS project to advance optical communications for space",
+    "body": "Craft Prospect is working with Fraunhofer Centre for Applied Photonics (Fraunhofer CAP) and Vector Photonics on a new project exploring the potential of next-generation laser technology for high-performance optical communications [ ] The post Craft Prospect…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Craft Prospect",
+      "Fraunhofer Centre for Applied Photonics",
+      "Fraunhofer CAP",
+      "Vector Photonics"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/craft-prospect-kicks-off-perseus-project-to-advance-optical-communications-for-space/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Craft Prospect",
+      "Fraunhofer Centre for Applied Photonics",
+      "Fraunhofer CAP",
+      "Vector Photonics"
+    ]
+  },
+  {
+    "id": "u-20261027-u-s-army-launches-project-griffin-to-automate-cybe",
+    "d": "2026-10-27",
+    "title": "U.S. Army launches Project Griffin to automate cyber defense",
+    "body": "The U.S. Army has picked Amazon Web Services and World Wide Technology to help build an autonomous cyber defense system that can find and stop network threats with little human involvement, choosing the two companies on Oct.",
+    "why": "State hackers are still inside critical networks, which keeps defensive and offensive cyber in demand.",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Amazon Web Services",
+      "World Wide Technology"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-launches-project-griffin-to-automate-cyber-defense/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "Amazon Web Services",
+      "World Wide Technology"
+    ]
+  },
+  {
+    "id": "u-20261027-two-russian-starlink-rival-satellites-set-to-fall-",
+    "d": "2026-10-27",
+    "title": "Two Russian Starlink rival satellites set to fall from orbit",
+    "body": "Two satellites from Russia’s Rassvet broadband constellation, the country’s answer to SpaceX’s Starlink, are expected to fall back into the atmosphere and burn up within the next day or two after failing to raise their orbits, Harvard-Smithsonian…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "adversary",
+      "capital"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "SpaceX / Starshield",
+      "Starlink",
+      "Harvard"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/two-russian-starlink-rival-satellites-set-to-fall-from-orbit/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "SpaceX",
+      "Starlink",
+      "Harvard"
+    ]
+  },
+  {
+    "id": "u-20261027-giant-metal-3d-printer-to-build-hypersonic-systems",
+    "d": "2026-10-27",
+    "title": "Giant metal 3D printer to build hypersonic systems in Indiana",
+    "body": "Kratos Defense Security Solutions has bought one of the largest metal 3D printers on the market, an AMCM M 8K additive manufacturing system, for its new hypersonic payload facility in Odon, Indiana, where the company prepares the experimental test vehicles it…",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "mfg"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Kratos"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/giant-metal-3d-printer-to-build-hypersonic-systems-in-indiana/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Kratos Defense Security Solutions"
+    ]
+  },
+  {
+    "id": "u-20261027-upgraded-russian-cruise-missile-crashes-in-ukraine",
+    "d": "2026-10-27",
+    "title": "Upgraded Russian cruise missile crashes in Ukraine",
+    "body": "Photos have emerged of Russia’s newest version of the Geran-5 light cruise missile, known as the Geran-5 K5-K and often described in the media as a jet-powered drone, lying in a field somewhere in Ukraine’s Odesa region after it came down during an attack,…",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "global",
+      "adversary",
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/upgraded-russian-cruise-missile-crashes-in-ukraine/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261027-knds-pitches-germany-s-new-boxer-rct30-as-a-drone-",
+    "d": "2026-10-27",
+    "title": "KNDS pitches Germany’s new Boxer RCT30 as a drone killer",
+    "body": "KNDS Deutschland is promoting its Boxer RCT30 wheeled infantry fighting vehicle as a weapon against drones, saying the 8 8 combat vehicle, which Germany and the Netherlands are buying in large numbers under the name Schakal, combines mobility, protection and…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global",
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "KNDS Deutschland"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/knds-pitches-germanys-new-boxer-rct30-as-a-drone-killer/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "KNDS Deutschland"
+    ]
+  },
+  {
+    "id": "u-20261027-u-s-uk-and-australia-test-saronic-drone-boats-toge",
+    "d": "2026-10-27",
+    "title": "U.S., UK and Australia test Saronic drone boats together",
+    "body": "Saronic Technologies’ Corsair drone boats, the same type the U.S. military used to strike an Iranian naval base in July, have operated alongside forces from the United States, the United Kingdom and Australia at Maritime Big Play Pacific, the AUKUS partners’…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea",
+      "global",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Saronic"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-uk-and-australia-test-saronic-drone-boats-together/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Saronic Technologies"
+    ]
+  },
+  {
+    "id": "u-20261027-benelli-shotgun-gets-israeli-computerized-anti-dro",
+    "d": "2026-10-27",
+    "title": "Benelli shotgun gets Israeli computerized anti-drone sight",
+    "body": "Israeli company SMARTSHOOTER has fitted its SMASH computerized fire control sight to a Benelli shotgun, taking a system best known for helping soldiers shoot down small drones with rifles and putting it on a weapon that fires spreads of pellets at close…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "SMARTSHOOTER"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/benelli-shotgun-gets-israeli-computerized-anti-drone-sight/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "SMARTSHOOTER"
+    ]
+  },
+  {
+    "id": "u-20261027-shotgun-armed-drone-gets-pentagon-green-light",
+    "d": "2026-10-27",
+    "title": "Shotgun-armed drone gets Pentagon green light",
+    "body": "An armed, reusable drone that fires 40 mm grenades and 12-gauge shotgun rounds and then flies back to be reloaded has been cleared for purchase and use across the U.S. military, after Skyborne Technologies’ Cerberus MI was added to the U.S.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Skyborne Technologies"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/shotgun-armed-drone-gets-pentagon-green-light/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Skyborne Technologies"
+    ]
+  },
+  {
+    "id": "u-20261027-german-troops-test-auterion-s-talon-drone-intercep",
+    "d": "2026-10-27",
+    "title": "German troops test Auterion’s Talon drone interceptor",
+    "body": "Auterion, the drone software company best known for the autonomy systems inside thousands of Ukrainian strike drones, has shown its Talon interceptor on a test range with Germany’s armed forces, the Bundeswehr, saying the system is built to take on both…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "missiledef",
+      "ai",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Auterion",
+      "Bundeswehr"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/german-troops-test-auterions-talon-drone-interceptor/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Auterion",
+      "Bundeswehr"
+    ]
+  },
+  {
+    "id": "u-20261027-aeon-unveils-140-000-square-foot-missile-plant",
+    "d": "2026-10-27",
+    "title": "Aeon unveils 140,000-square-foot missile plant",
+    "body": "Aeon Industrial, a Texas company that already makes low-cost drone fuzes in volume, has unveiled the Armory, a planned 140,000-square-foot (13,000-square-meter) factory for missile systems, interceptors, high-voltage fuzes, seekers and other critical…",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "air",
+      "mfg"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Aeon Industrial"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/aeon-unveils-140000-square-foot-missile-plant/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Aeon Industrial"
+    ]
+  },
+  {
     "id": "u-20261026-is-the-pentagon-s-demand-signal-for-drones-working",
     "d": "2026-10-26",
     "title": "Is the Pentagon’s demand signal for drones working? It depends on who you ask.",
@@ -547,6 +1096,560 @@
     "addedAt": "2026-10-26T16:42:03.537Z",
     "auto": true,
     "orgs": []
+  },
+  {
+    "id": "u-20261026-helsing-rolls-out-contra-air-defense-design-plus-t",
+    "d": "2026-10-26",
+    "title": "Helsing rolls out Contra air defense design, plus two new inteceptors",
+    "body": "The company claims the Contra system can track and engage “hundreds or thousands of drone and missile threats at the same time.”",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "air",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Helsing"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/helsing-rolls-out-contra-air-defense-design-plus-two-new-inteceptors/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261026-cyprus-to-acquire-new-offshore-patrol-vessel-with-",
+    "d": "2026-10-26",
+    "title": "Cyprus to acquire new offshore patrol vessel with ‘advanced’ naval systems from Israel",
+    "body": "The new patrol vessel will be built by Israel Shipyards and “support expanded patrol, surveillance, and search-and-rescue missions,” according to Israel’s Ministry of Defense.",
+    "why": "Where investors put money shows which parts of the industry they expect to win next.",
+    "sectors": [
+      "capital",
+      "global",
+      "sensing"
+    ],
+    "type": "M&A & IPO",
+    "companies": [
+      "Israel Shipyards"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/cyprus-to-acquire-new-offshore-patrol-vessel-with-advanced-naval-systems-from-israel/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Israel Shipyards",
+      "Ministry of Defense"
+    ]
+  },
+  {
+    "id": "u-20261026-pentagon-announces-first-us-submarine-joining-subm",
+    "d": "2026-10-26",
+    "title": "Pentagon announces first US submarine joining Submarine Rotational Force-West",
+    "body": "The Pentagon announced that the USS Colorado will be the first submarine to join Submarine Rotational Force-West in Australia.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Submarine Rotational Force",
+      "West"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/naval/2026/10/26/pentagon-announces-first-us-submarine-joining-submarine-rotational-force-west/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Submarine Rotational Force",
+      "West"
+    ]
+  },
+  {
+    "id": "u-20261026-last-ditch-meeting-in-iran-seeks-to-stave-off-a-re",
+    "d": "2026-10-26",
+    "title": "Last-Ditch Meeting In Iran Seeks To Stave-Off A Restart Of All-Out Fighting In The Region",
+    "body": "The meeting between Pakistan, Saudi Arabia, Turkey, and Iran took place as the U.S. and Israel are spinning-up for a new round of strikes.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/last-ditch-meeting-in-iran-seeks-to-stave-off-a-restart-of-all-out-fighting-in-the-region",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261026-90-days-no-help-fortress-america-s-goal-to-make-ba",
+    "d": "2026-10-26",
+    "title": "90 Days No Help: Fortress America’s Goal To Make Bases Resilient Bastions In A Crisis",
+    "body": "Cyber threats against critical infrastructure are exploding, with worries enemies could neuter U.S. military units before they even leave their garrisons.",
+    "why": "State hackers are still inside critical networks, which keeps defensive and offensive cyber in demand.",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Fortress America"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/nuclear/90-days-no-help-fortress-americas-goal-to-make-bases-resilient-bastions-in-a-crisis",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Fortress America"
+    ]
+  },
+  {
+    "id": "u-20261026-britain-s-final-plan-to-kill-argentina-s-super-ten",
+    "d": "2026-10-26",
+    "title": "Britain’s Final Plan To Kill Argentina’s Super Étendards Attack Jets",
+    "body": "Britain's last bid to destroy Argentina’s fleet threatening Exocet anti-ship missile-armed combat jets during the Falklands War. The post Britain’s Final Plan To Kill Argentina’s Super Étendards Attack Jets appeared first on TWZ .",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "sea",
+      "strike"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/britains-final-plan-to-kill-argentinas-super-etendards-attack-jets",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261026-british-type-31-frigate-variant-offered-to-the-u-s",
+    "d": "2026-10-26",
+    "title": "British Type 31 Frigate Variant Offered To The U.S. Navy",
+    "body": "Babcock is looking to pitch its Arrowhead 140 design for an American frigate requirement, potentially in partnership with a major U.S. shipbuilder. The post British Type 31 Frigate Variant Offered To The U.S. Navy appeared first on TWZ .",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/british-type-31-frigate-variant-offered-to-the-u-s-navy",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261026-air-force-launches-arrw-its-first-hypersonic-weapo",
+    "d": "2026-10-26",
+    "title": "Air Force Launches ARRW, Its First Hypersonic Weapon, into Production",
+    "body": "The Air Force awarded Lockheed Martin a $694 million contract for production of the Air-Launched Rapid Response Weapon last month, the service announced Oct. 26.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "primes"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Lockheed Martin"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/air-force-launches-arrw-its-first-hypersonic-weapon-into-production/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Air Force",
+      "Lockheed Martin"
+    ]
+  },
+  {
+    "id": "u-20261026-air-force-plans-1-billion-campus-for-testing-f-47-",
+    "d": "2026-10-26",
+    "title": "Air Force Plans $1 Billion Campus for Testing F-47 at Nellis",
+    "body": "The Air Force is taking the first steps to build a $1 billion campus including hangars, laboratories, maintenance and training facilities, and more to test the F-47 at Nellis Air Force Base, Nev.—and the service plans to finish construction by 2031 as it…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/air-force-billion-dollar-campus-testing-f-47-nellis/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261026-space-force-wants-cislunar-kit-ready-to-launch-by-",
+    "d": "2026-10-26",
+    "title": "Space Force Wants Cislunar Kit Ready to Launch by 2029",
+    "body": "For years now, Space Force officials have said the service is getting serious about defining its role and crafting an architecture for future cislunar capabilities.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/space-force-cislunar-kit-2029-launch/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Space Force"
+    ]
+  },
+  {
+    "id": "u-20261026-afrl-targets-new-hypersonic-engine-tech-prototypes",
+    "d": "2026-10-26",
+    "title": "AFRL Targets New Hypersonic Engine Tech Prototypes Within 4 Years",
+    "body": "The Air Force Research Laboratory wants industry to advance concepts for affordable hypersonic munition engines to prototype demonstrations within three to four years.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/afrl-targets-new-hypersonic-engine-tech-prototypes-within-4-years/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Air Force Research Laboratory"
+    ]
+  },
+  {
+    "id": "u-20261026-updated-u-s-navy-taps-attack-boat-for-2027-austral",
+    "d": "2026-10-26",
+    "title": "UPDATED: U.S. Navy Taps Attack Boat for 2027 Australian AUKUS Assignment",
+    "body": "This post has been updated to include that USS Colorado (SSN-788) arrived in Australia on Oct. 26. The Pentagon announced Monday the Virginia-class submarine that will be the lead nuclear attack boat in western Australia.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "global"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/26/u-s-navy-taps-attack-boat-for-2027-australian-aukus-assignment",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Navy",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261026-royal-navy-lacks-ships-capabilities-to-defend-high",
+    "d": "2026-10-26",
+    "title": "Royal Navy Lacks Ships, Capabilities to Defend High North from Russia, Says U.K. Committee Report",
+    "body": "The Royal Navy currently lacks the ships and capabilities needed to defend the High North from Russia, the bipartisan House of Commons Defense Committee warned on Thursday.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "adversary"
+    ],
+    "type": "Research",
+    "companies": [
+      "Ships"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/26/royal-navy-lacks-ships-capabilities-to-defend-high-north-from-russia-says-u-k-committee-report",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Royal Navy",
+      "Ships",
+      "U.K. Committee",
+      "House of Commons Defense Committee"
+    ]
+  },
+  {
+    "id": "u-20261026-usni-news-fleet-and-marine-tracker-oct-26-2026",
+    "d": "2026-10-26",
+    "title": "USNI News Fleet and Marine Tracker: Oct. 26, 2026",
+    "body": "These are the approximate positions of the U.S. Navy’s deployed carrier strike groups and amphibious ready groups throughout the world as of Oct. 26, 2026, based on Navy and public data.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/26/usni-news-fleet-and-marine-tracker-oct-26-2026",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "USNI News Fleet",
+      "U.S. Navy"
+    ]
+  },
+  {
+    "id": "u-20261026-flexell-space-establishes-french-subsidiary-to-str",
+    "d": "2026-10-26",
+    "title": "Flexell Space Establishes French Subsidiary to Strengthen European Presence",
+    "body": "– Paris-based FLEXELL SPACE FRANCE SAS creates a local business hub in Europe– New entity to support ongoing contract and volume-production discussions with European customers, from technical reviews to supply [ ] The post Flexell Space Establishes French…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "global"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Flexell Space",
+      "SAS"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/flexell-space-establishes-french-subsidiary-to-strengthen-european-presence/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Flexell Space",
+      "SAS"
+    ]
+  },
+  {
+    "id": "u-20261026-policy-proposal-would-require-firms-to-disclose-ho",
+    "d": "2026-10-26",
+    "title": "Policy proposal would require firms to disclose how they use AI to develop new models",
+    "body": "The framework from Americans for Responsible Innovation would give Washington a closer look at AI’s role in developing new models as Jay Clayton’s task force shapes the government’s relationship with developers.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Innovation"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/policy/2026/10/policy-proposal-would-require-firms-disclose-how-they-use-ai-develop-new-models/416833/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Innovation"
+    ]
+  },
+  {
+    "id": "u-20261026-cbp-requests-industry-input-on-secure-data-platfor",
+    "d": "2026-10-26",
+    "title": "CBP Requests Industry Input on Secure Data Platform Support for Border Patrol",
+    "body": "CBP is asking vendors how they would support a secure data platform for Border Patrol, with responses due Nov. 10. The post CBP Requests Industry Input on Secure Data Platform Support for Border Patrol first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "CBP",
+      "Border Patrol"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/cbp-border-patrol-data-platform-request-for-information",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "CBP",
+      "Border Patrol"
+    ]
+  },
+  {
+    "id": "u-20261026-pentagon-issues-contract-templates-to-enforce-unbi",
+    "d": "2026-10-26",
+    "title": "Pentagon Issues Contract Templates to Enforce Unbiased AI Rules",
+    "body": "Contracting officers can now require LLM vendors to disclose model cards, bias tests and system prompts. The post Pentagon Issues Contract Templates to Enforce Unbiased AI Rules first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/dow-unbiased-ai-procurement-guidance-llm-contracts-2",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261026-army-introduces-project-gatekeeper-to-test-commerc",
+    "d": "2026-10-26",
+    "title": "Army Introduces Project Gatekeeper to Test Commercial Software Security",
+    "body": "Project Gatekeeper aims to ease authorization reviews, flag actionable vulnerabilities and prepare software for military use. The post Army Introduces Project Gatekeeper to Test Commercial Software Security first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/army-project-gatekeeper-software-security-2",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261026-gsa-signs-onegov-deal-with-us-ai-for-intelligent-c",
+    "d": "2026-10-26",
+    "title": "GSA Signs OneGov Deal With (US)AI for Intelligent Computing Platform",
+    "body": "GSA has signed its first direct OneGov agreement with an 8(a) small business, (US)AI, offering discounts on the company’s AI platform. The post GSA Signs OneGov Deal With (US)AI for Intelligent Computing Platform first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "GSA",
+      "Intelligent Computing Platform"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/gsa-onegov-usai-intelligent-computing-platform",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "GSA",
+      "Intelligent Computing Platform"
+    ]
+  },
+  {
+    "id": "u-20261026-usda-nasa-sign-mou-to-apply-earth-observation-data",
+    "d": "2026-10-26",
+    "title": "USDA, NASA Sign MOU to Apply Earth Observation Data to Crop Statistics",
+    "body": "USDA and NASA signed an MOU to apply Earth observation data, geospatial analytics and AI to USDA crop acreage and yield estimates. The post USDA, NASA Sign MOU to Apply Earth Observation Data to Crop Statistics first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "USDA"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/usda-nasa-mou-earth-observation-crop-statistics",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "USDA",
+      "NASA"
+    ]
+  },
+  {
+    "id": "u-20261026-treasury-proposes-rule-to-update-outbound-investme",
+    "d": "2026-10-26",
+    "title": "Treasury Proposes Rule to Update Outbound Investment Security Program",
+    "body": "Treasury has proposed updates to its outbound investment program, adding biotech, hypersonics and supercomputing to covered sectors. The post Treasury Proposes Rule to Update Outbound Investment Security Program first appeared on Executive Gov .",
+    "why": "Biomanufacturing could replace parts of supply chains that depend on adversaries.",
+    "sectors": [
+      "bio"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Treasury"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/treasury-outbound-investment-rule-update-biotech-hypersonics",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Treasury"
+    ]
+  },
+  {
+    "id": "u-20261026-space-force-builds-commercial-sda-reserve-through-",
+    "d": "2026-10-26",
+    "title": "Space Force Builds Commercial SDA Reserve Through Six CASR Awards",
+    "body": "The Space Force has used the GSA-based ACCESS Contract to expand a reserve model first tested in a $1.1 million 2025 pilot effort. The post Space Force Builds Commercial SDA Reserve Through Six CASR Awards first appeared on Executive Gov .",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/ssc-casr-agreements-commercial-sda-surge",
+      "q": "news"
+    },
+    "addedAt": "2026-10-27T15:49:27.021Z",
+    "auto": true,
+    "orgs": [
+      "Space Force"
+    ]
   },
   {
     "id": "u-20261025-funding-force-structure-issues-could-hinder-hegset",

@@ -1,5 +1,131 @@
 [
  {
+  "id": "h-20261027-mortgage-delinquency-rate-rises-to-3-66-in-septemb",
+  "d": "2026-10-27",
+  "title": "Mortgage delinquency rate rises to 3.66% in September, ICE says",
+  "body": "ICE First Look report: Active foreclosure inventory rose 37% to hit its highest level since early 2019",
+  "topics": [
+   "rates",
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mortgage-delinquency-september-ice/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261027-inside-stylecraft-builders-playbook-for-laser-focu",
+  "d": "2026-10-27",
+  "title": "Inside Stylecraft Builders’ playbook for laser-focused local scale",
+  "body": "Stylecraft sold nearly 1,000 homes last year and grew revenue 17% by laser-focusing on smaller and mid-sized Texas markets",
+  "topics": [
+   "construction"
+  ],
+  "states": [
+   "TX"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/stylecraft-builders-playbook-scaling/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261027-open-real-estate-promises-broader-listing-access-a",
+  "d": "2026-10-27",
+  "title": "Open Real Estate promises broader listing access — and a more level playing field for brokers",
+  "body": "The project plans a database with UI and APIs, and is soliciting vendor proposals to build the platform",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/open-real-estate-launch/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261027-scott-cox-on-why-homebuilders-may-be-fighting-for-",
+  "d": "2026-10-27",
+  "title": "Scott Cox on why homebuilders may be fighting for fewer buyers",
+  "body": "Excerpt two of seven from 'Less Wrong, More Right' argues prices cannot offset missing buyers when demand contracts",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/builders-demand-risk-cox/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261027-new-home-sales-slip-slightly-in-september",
+  "d": "2026-10-27",
+  "title": "New Home Sales Slip Slightly in September",
+  "body": "New home sales retreated a bit from August’s performance (down 0.6% month over month) and came in behind last year’s level (down 5.3% year over year).",
+  "topics": [
+   "sales",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/new-home-sales-september-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261027-u-s-home-price-growth-accelerates-to-2-1-in-august",
+  "d": "2026-10-27",
+  "title": "U.S. Home Price Growth Accelerates to 2.1% in August",
+  "body": "The S P Cotality Case-Shiller Home Price Index showed national home price growth picking up further through July, with the U.S. National Index rising 2.1% year over year, but down in real terms when taking inflation into account.",
+  "topics": [
+   "prices"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/case-shiller-home-prices-august-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261027-new-york-city-rental-report-2026q3-squeezed-both-w",
+  "d": "2026-10-27",
+  "title": "New York City Rental Report 2026Q3: Squeezed Both Ways—NYC Renters Face Record High Rents and 7% Mortgage Rates",
+  "body": "In 2026Q3, the median asking rent in New York City registered at $3,785, an increase of $162 (4.5%) compared to a year ago. This marks the highest rent level recorded since our data series began in 2019Q2.",
+  "topics": [
+   "rates",
+   "rents"
+  ],
+  "states": [
+   "NY",
+   "PA"
+  ],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/nyc-q3-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261027-j-scott-the-house-of-cards-is-going-to-fall",
+  "d": "2026-10-27",
+  "title": "J Scott: The House of Cards Is Going to Fall",
+  "body": "This economy is…confusing. Inflation is still high, AI is disrupting the labor market, and consumer sentiment is nearing a 70-year floor. Meanwhile, the stock market keeps climbing, and unemployment remains [ ]",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/on-the-market-472",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261026-unlock-closes-433-1m-home-equity-agreement-securit",
   "d": "2026-10-26",
   "title": "Unlock closes $433.1M home equity agreement securitization",
@@ -158,6 +284,50 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/real-estate-1348",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261026-analysts-cast-fico-s-10-mortgage-pricing-as-defens",
+  "d": "2026-10-26",
+  "title": "Analysts cast FICO’s $10 mortgage pricing as defensive volume play",
+  "body": "Preferred Program locks in FICO pulls at $10 per score as industry shifts to multiscore framework",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/fico-preferred-program-analyst-reaction/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261026-rust-belt-city-eliminates-minimum-lot-sizes-to-jum",
+  "d": "2026-10-26",
+  "title": "Rust Belt city eliminates minimum lot sizes to jump-start revival",
+  "body": "Zoning rewrite allows homes on any lot meeting yard rules, hundreds of city held parcels now qualify",
+  "topics": [
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/akron-minimum-lot-sizes/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261026-turning-12k-in-rent-payments-into-a-1-3m-real-esta",
+  "d": "2026-10-26",
+  "title": "Turning $12K in Rent Payments Into a $1.3M Real Estate Portfolio",
+  "body": "So you ran the numbers and the cash flow shows negative? You don’t have to give up on rentals. With a few smarter assumptions, the right strategy, or the right [ ]",
+  "topics": [
+   "rents",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-788",
    "q": "news"
   }
  },
