@@ -1,5 +1,110 @@
 [
  {
+  "id": "h-20261028-northpointe-signs-definitive-agreement-to-sell-mor",
+  "d": "2026-10-28",
+  "title": "Northpointe signs definitive agreement to sell mortgage channels to CMG",
+  "body": "CMG will pay 0.15% on first-lien originations through Dec. 31, 2028, with closing expected next month",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/northpointe-sells-mortgage-channels/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261028-zillow-home-loans-launches-fha-down-payment-assist",
+  "d": "2026-10-28",
+  "title": "Zillow Home Loans launches FHA down payment assistance loan",
+  "body": "Second loan covers up to 3.5% and is forgiven after five years of on-time payments for owner-occupants",
+  "topics": [
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/zillow-fha-down-payment-loan/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261028-mortgage-applications-rebound-3-4-as-rates-decreas",
+  "d": "2026-10-28",
+  "title": "Mortgage applications rebound 3.4% as rates decrease to 7.37%",
+  "body": "Purchase applications rose 4% week over week, while the refinance index was 61% lower than 1 year ago",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mba-applications-rebound-3-4/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261028-ruling-california-cities-risk-a-price-to-pay-to-de",
+  "d": "2026-10-28",
+  "title": "Ruling: California cities risk a price to pay to delay housing permits",
+  "body": "Court said permit seekers are the intended beneficiaries of the 60-day ministerial duty",
+  "topics": [
+   "construction"
+  ],
+  "states": [
+   "CA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/california-adu-ruling-damages/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261028-cost-segregation-for-commercial-real-estate-how-to",
+  "d": "2026-10-28",
+  "title": "Cost Segregation for Commercial Real Estate: How to Pair It With the Strategies You Are Already Using",
+  "body": "If you have been investing in real estate for any length of time, you have probably heard about the “cost segregation for commercial real estate” that comes up in conversations [ ]",
+  "topics": [
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/cost-segregation-for-commercial-real-estate",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261028-the-new-fire-movement-that-includes-rentals",
+  "d": "2026-10-28",
+  "title": "The New FIRE Movement That Includes Rentals",
+  "body": "There’s a new FIRE movement—and this time, it includes real estate. You’ve probably heard of the FIRE movement before (financial independence, retire early). It’s a strategy that combines frugal living, [ ]",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1349",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261028-8-ways-to-use-your-home-equity-to-buy-a-rental-pro",
+  "d": "2026-10-28",
+  "title": "8 Ways to Use Your Home Equity to Buy a Rental Property in 2027",
+  "body": "Saving for a down payment can take years for some, but if your home is worth more than you owe on it, you might already have the money to buy [ ]",
+  "topics": [
+   "rents"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-789",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261027-mortgage-delinquency-rate-rises-to-3-66-in-septemb",
   "d": "2026-10-27",
   "title": "Mortgage delinquency rate rises to 3.66% in September, ICE says",
