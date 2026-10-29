@@ -1,5 +1,200 @@
 [
  {
+  "id": "h-20261029-radian-announces-leadership-changes-including-new-",
+  "d": "2026-10-29",
+  "title": "Radian announces leadership changes, including new CFO and CIO",
+  "body": "The changes span mortgage insurance and specialty insurance",
+  "topics": [
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/radian-leadership-cfo-cio/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261029-real-estate-s-biggest-problem-isn-t-the-appraisal-",
+  "d": "2026-10-29",
+  "title": "Real estate’s biggest problem isn’t the appraisal. It’s the wait.",
+  "body": "The industry keeps debating whether machines should value property. The expensive question is why anyone has to wait weeks for a first number",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/machine-valuations-cut-appraisal-delays/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261029-fico-weighs-subscription-model-for-mortgage-scores",
+  "d": "2026-10-29",
+  "title": "FICO weighs subscription model for mortgage scores in 2027",
+  "body": "New 2027 structure would sit next to FICO’s $10 Preferred Program",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/fico-pricing-mortgage-scores-2027/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261029-freddie-mac-s-q3-profit-declines-as-higher-project",
+  "d": "2026-10-29",
+  "title": "Freddie Mac’s Q3 profit declines as higher projected mortgage rates push credit-loss provisions",
+  "body": "Net income fell 16% from the previous quarter to $3.2 billion as a credit-loss benefit turned into a provision",
+  "topics": [
+   "rates",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/freddie-mac-q3-earnings/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261029-sandra-thompson-flags-mortgage-risk-in-fhfa-s-unif",
+  "d": "2026-10-29",
+  "title": "Sandra Thompson flags mortgage risk in FHFA’s unified score pricing",
+  "body": "Thompson said that changing the credit score framework is “no small task”",
+  "topics": [
+   "prices"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/thompson-questions-fhfa-credit-score/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261029-ten-strategies-builders-need-for-america-s-2030s-d",
+  "d": "2026-10-29",
+  "title": "Ten strategies builders need for America’s 2030s demographic cliff",
+  "body": "Slower household growth and aging demand could reshape land strategy, underwriting, and operating scale",
+  "topics": [
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/homebuilders-demographic-shift-2030/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261029-single-family-new-home-permits-could-fall-24-to-86",
+  "d": "2026-10-29",
+  "title": "Single-family new-home permits could fall 24% to 86% by 2035",
+  "body": "Scott Cox models 2025-to-2035 demand at 123,000 to 670,000 permits a year vs. about 880,000 now",
+  "topics": [
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/single-family-permits-demand-range/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261029-mortgage-rates-fall-8-basis-points-for-the-second-",
+  "d": "2026-10-29",
+  "title": "Mortgage Rates Fall 8 Basis Points for the Second Week in a Row",
+  "body": "The Freddie Mac 30-year mortgage rate dropped 8 basis points this week, from 7.32% to 7.24%, in conjunction with the 10-year Treasury yield, which averaged about 5.02% in the past week compared to 5.13% the week prior.",
+  "topics": [
+   "rates",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/freddie-mac-mortgage-rates-october-29-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261029-weekly-housing-trends-u-s-market-update-week-endin",
+  "d": "2026-10-29",
+  "title": "Weekly Housing Trends: U.S. Market Update (Week Ending Oct. 24, 2026)",
+  "body": "Get the latest U.S. housing market trends, including inventory shifts, listing activity, prices, and buyer-seller dynamics, with fresh weekly data and insights.",
+  "topics": [
+   "inventory",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/eekly-housing-trends-view-data-week-october-24-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261029-los-angeles-rental-report-2026q3-renters-catch-a-b",
+  "d": "2026-10-29",
+  "title": "Los Angeles Rental Report 2026Q3: Renters Catch a Break as New Supply Pushes Rents Lower; Buying Still Costs Nearly $5,000 More a Month",
+  "body": "In 2026Q3, the median asking rent in Los Angeles County registered at $2,554,—down $96, or 3.6%, from a year earlier.",
+  "topics": [
+   "rents",
+   "inventory"
+  ],
+  "states": [
+   "CA"
+  ],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/la-q3-2026-rent/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261029-luxury-cut-the-fall-2026-wall-street-journal-realt",
+  "d": "2026-10-29",
+  "title": "Luxury Cut: The Fall 2026 Wall Street Journal/Realtor.com Luxury Housing Market Ranking",
+  "body": "The Fall 2026 WSJ/realtor.com Luxury Housing Market Ranking highlights top markets poised for home price growth and rich lifestyle amenities.",
+  "topics": [
+   "prices"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/october-2026-wsj-rdc-luxury-housing-market-ranking/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261029-the-fall-2026-wall-street-journal-realtor-com-hous",
+  "d": "2026-10-29",
+  "title": "The Fall 2026 Wall Street Journal/Realtor.com Housing Market Ranking",
+  "body": "The fall 2026 ranking evaluates the 200 most populous U.S. metropolitan areas using a combination of housing market conditions and broader measures of economic health and livability.",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/october-2026-wsj-rdc-housing-market-ranking/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261029-pending-sales-just-fell-below-2008-levels",
+  "d": "2026-10-29",
+  "title": "Pending Sales Just Fell Below 2008 Levels",
+  "body": "Pending home sales just hit their lowest level on record since the NAR started tracking them in 2001—and they fell in all 50 of the country’s biggest metros. Winter hasn’t [ ]",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/on-the-market-473",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261028-northpointe-signs-definitive-agreement-to-sell-mor",
   "d": "2026-10-28",
   "title": "Northpointe signs definitive agreement to sell mortgage channels to CMG",
@@ -101,6 +296,22 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/rookie-789",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261028-do-turnkey-rentals-deliver-a-look-at-rent-to-retir",
+  "d": "2026-10-28",
+  "title": "Do Turnkey Rentals Deliver? A Look at Rent to Retirement’s Track Record",
+  "body": "Turnkey rentals are built on a simple promise: The provider delivers a rent-ready home, places a tenant, lines up property management, and gives the buyer a projection of what the [ ]",
+  "topics": [
+   "rents",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/do-turnkey-rentals-deliver-a-look-at-rent-to-retirements-track-record",
    "q": "news"
   }
  },
