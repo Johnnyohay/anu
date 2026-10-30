@@ -1,5 +1,105 @@
 [
  {
+  "id": "h-20261030-california-s-housing-push-braves-a-lion-s-den-of-l",
+  "d": "2026-10-30",
+  "title": "California’s housing push braves a lion’s den of local NIMBY tactics",
+  "body": "The 398-home plan includes 97 very-low-income units and sought streamlined approval on commercially zoned land",
+  "topics": [],
+  "states": [
+   "CA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/california-mountain-lion-housing/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261030-exp-realty-coming-soon-listings-to-appear-on-reals",
+  "d": "2026-10-30",
+  "title": "eXp Realty coming soon listings to appear on RealScout",
+  "body": "The companies did not provide a launch date, expanding eXp syndication beyond Realtor.com and Homes.com",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/exp-coming-soon-realscout/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261030-exclusive-dark-matter-acquires-house-numbers-agent",
+  "d": "2026-10-30",
+  "title": "Exclusive: Dark Matter acquires House Numbers’ agentic AI platform",
+  "body": "Jeff Levinsohn, the co-founder and CEO of House Numbers, joins Dark Matter as chief AI officer",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/exclusive-dark-matter-acquires-house-numbers-agentic-ai-platform/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261030-student-hack-a-house-trailblazers-focus-on-housing",
+  "d": "2026-10-30",
+  "title": "Student Hack-A-House trailblazers focus on housing’s bottlenecks",
+  "body": "64 university teams pitched 24-hour solutions spanning panelized production, permitting workflow, and manufactured home finance",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/student-hack-a-house-bottlenecks/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261030-ai-can-speed-housing-development-amid-crisis",
+  "d": "2026-10-30",
+  "title": "AI can speed housing development amid crisis",
+  "body": "Seattle reported intake review time cut by about 50%; Honolulu permit decisions averaged 32.5 days versus 73 days",
+  "topics": [],
+  "states": [
+   "WA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/ai-housing-permitting-productivity/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261030-is-the-housing-market-about-to-crash-what-the-data",
+  "d": "2026-10-30",
+  "title": "Is the Housing Market About to Crash? What the Data (Actually) Shows",
+  "body": "Is the housing market going to crash? Everywhere you turn, there seems to be another headline forecasting the next housing market meltdown. But what’s behind all the noise? Actual data? [ ]",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1350",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261030-first-time-landlord-how-to-find-great-tenants-on-y",
+  "d": "2026-10-30",
+  "title": "First-Time Landlord? How to Find Great Tenants on Your Own (Rookie Reply)",
+  "body": "Ready to rent out your property? Set up the right systems from day one, and you’ll attract better tenants, avoid costly rookie mistakes, and keep more cash flow in your [ ]",
+  "topics": [
+   "rents",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-790",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261029-radian-announces-leadership-changes-including-new-",
   "d": "2026-10-29",
   "title": "Radian announces leadership changes, including new CFO and CIO",
@@ -191,6 +291,32 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/on-the-market-473",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261029-rocket-posts-709m-profit-in-q3-despite-tougher-mor",
+  "d": "2026-10-29",
+  "title": "Rocket posts $709M profit in Q3 despite tougher mortgage market",
+  "body": "Rocket guided Q4 adjusted revenue to range of $2.1 billion to $2.3 billion while noting that refis could drop nearly 50% from Q3",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/rocket-q3-profit-tougher-market/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261029-why-howard-hanna-was-missing-from-open-real-estate",
+  "d": "2026-10-29",
+  "title": "Why Howard Hanna was missing from Open Real Estate launch list",
+  "body": "CEO Hoby Hanna says founders have contacted him, he wants clarity on governance, funding and end goals before committing",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/howard-hanna-open-real-estate/",
    "q": "news"
   }
  },
