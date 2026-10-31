@@ -1,5 +1,170 @@
 [
   {
+    "id": "u-20261031-surface-to-air-missiles-deployed-to-protect-trump-",
+    "d": "2026-10-31",
+    "title": "Surface-To-Air Missiles Deployed To Protect Trump’s Mar-a-Lago Estate",
+    "body": "AN/TWQ-1 Avengers fire FIM-92 Stinger missiles and have been joined by counter-drone fly-away sensor and jammer kits from U.S. Northern Command. The post Surface-To-Air Missiles Deployed To Protect Trump’s Mar-a-Lago Estate appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas",
+      "ew",
+      "sensing"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "U.S"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/land/avenger-assemble-surface-to-air-missiles-deployed-to-protect-trumps-mar-a-lago-estate",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "U.S",
+      "Northern Command"
+    ]
+  },
+  {
+    "id": "u-20261031-across-the-line",
+    "d": "2026-10-31",
+    "title": "Across the line",
+    "body": "This month’s Useful Fiction story explores how Army infantry, armor, and robotic systems might fight together.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/ideas/2026/10/across-line/416947/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261031-germany-and-netherlands-receive-first-caracal-air-",
+    "d": "2026-10-31",
+    "title": "Germany and Netherlands receive first Caracal air assault vehicles",
+    "body": "Germany and the Netherlands have taken delivery of their first Caracal air assault vehicles, light 4x4s built on the Mercedes-Benz G-Class for paratroopers and helicopter-borne infantry, under a joint program covering more than 1,500 vehicles, the Dutch…",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/germany-and-netherlands-receive-first-caracal-air-assault-vehicles/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261031-russia-loses-about-13-warplanes-in-a-month",
+    "d": "2026-10-31",
+    "title": "Russia loses about 13 warplanes in a month",
+    "body": "Russia’s military aviation has lost about a dozen aircraft in roughly five weeks, including at least seven Su-34 fighter-bombers destroyed on the ground by Ukrainian missiles and drones, a Tu-95MS strategic bomber and two Su-30SM fighters in crashes, and a…",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-loses-about-13-warplanes-in-a-month/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261031-roshel-has-sent-nearly-3-000-senator-vehicles-to-u",
+    "d": "2026-10-31",
+    "title": "Roshel has sent nearly 3,000 Senator vehicles to Ukraine",
+    "body": "Nearly 3,000 Senator armored vehicles built by Canadian manufacturer Roshel have now gone to Ukraine, the company said on social media as it placed one of its first-generation Senator MRAPs on permanent display at the Canadian War Museum in Ottawa.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "ground",
+      "mfg"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Roshel"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/roshel-has-sent-nearly-3000-senator-vehicles-to-ukraine/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "Roshel"
+    ]
+  },
+  {
+    "id": "u-20261031-patriot-sale-to-ukraine-approved-but-first-missile",
+    "d": "2026-10-31",
+    "title": "Patriot sale to Ukraine approved, but first missiles may be years away",
+    "body": "President Volodymyr Zelenskyy says the 500 Patriot PAC-3 MSE interceptors the United States cleared for sale to Ukraine on Oct. 30 will not help this winter, because deliveries may not begin for several years.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/patriot-sale-to-ukraine-approved-but-first-missiles-may-be-years-away/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261031-u-s-navy-orders-114-7m-power-upgrade-for-h-1-helic",
+    "d": "2026-10-31",
+    "title": "U.S. Navy orders $114.7M power upgrade for H-1 helicopters",
+    "body": "The U.S. Navy has ordered $114.7 million in structural and electrical upgrade hardware for the U.S. Marine Corps’ AH-1Z Viper attack and UH-1Y Venom utility helicopters, exercising an option on Bell Textron’s contract for the third phase of the program.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Bell Textron"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-navy-orders-114-7m-power-upgrade-for-h-1-helicopters/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Navy",
+      "U.S. Marine Corps",
+      "Bell Textron"
+    ]
+  },
+  {
     "id": "u-20261030-navy-flexes-new-acquisition-muscles-with-tote-s-26",
     "d": "2026-10-30",
     "title": "Navy flexes new acquisition muscles with TOTE’s $269M LSM award to Hanwha",
@@ -572,6 +737,474 @@
     "auto": true,
     "orgs": [
       "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261030-us-greenlights-500-patriot-missiles-for-ukraine-wi",
+    "d": "2026-10-30",
+    "title": "US greenlights 500 Patriot missiles for Ukraine, with $2.1 billion to be paid by allies",
+    "body": "The announcement comes amid heightened tensions between Kyiv and Washington, including purported delays in the transfer of interceptors.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/us-greenlights-500-patriot-missiles-for-ukraine-with-2-1-billion-to-be-paid-by-allies/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261030-pentagon-reveals-fy26-intelligence-budget-at-30-9-",
+    "d": "2026-10-30",
+    "title": "Pentagon reveals FY26 intelligence budget at $30.9 billion",
+    "body": "Meanwhile, the National Intelligence Program budget was revealed at $78.1 billion.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "National Intelligence Program"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/pentagon-reveals-fy26-intelligence-budget-at-30-9-billion/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "National Intelligence Program"
+    ]
+  },
+  {
+    "id": "u-20261030-new-uk-policy-requires-foreign-defense-contractors",
+    "d": "2026-10-30",
+    "title": "New UK policy requires foreign defense contractors to invest locally for all £50M+ deals",
+    "body": "The new policy is due to come into effect in April 2027 and make sure that “British workers and businesses still benefit,” from contracts inked with foreign firms, according to the UK.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/10/new-uk-policy-requires-foreign-defense-contractors-to-invest-locally-for-all-50m-deals/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261030-open-the-hives-why-france-is-turning-tank-gunners-",
+    "d": "2026-10-30",
+    "title": "‘Open the hives’ — Why France is turning tank gunners into FPV pilots",
+    "body": "Cpl. Igor started a new job this year, swapping the sights of a 105 mm gun on the French Army's AMX 10 RC reconnaissance vehicle for first-person view goggles and a handheld controller.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "ground",
+      "sensing"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/10/30/open-the-hives-why-france-is-turning-tank-gunners-into-fpv-pilots/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "French Army"
+    ]
+  },
+  {
+    "id": "u-20261030-stealthy-gj-21-drone-has-launched-and-recovered-fr",
+    "d": "2026-10-30",
+    "title": "Stealthy GJ-21 Drone Has Launched And Recovered From Type 076 Amphibious Assault Ship, China Claims",
+    "body": "Signs that the PLAN has been building up to this significant milestone in naval airpower have been growing for more than a year.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "PLAN"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/stealthy-gj-21-drone-has-launched-and-recovered-from-type-076-amphibious-assault-ship-china-claims",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "PLAN"
+    ]
+  },
+  {
+    "id": "u-20261030-highlights-from-north-korea-s-drone-a-palooza",
+    "d": "2026-10-30",
+    "title": "Highlights From North Korea’s Drone-A-Palooza",
+    "body": "Here’s what Pyongyang put on display as it showcased a growing arsenal of recon and attack drones, including a very aspirational stealthy UCAV concept. The post Highlights From North Korea’s Drone-A-Palooza appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "UCAV",
+      "TWZ"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/highlights-from-north-koreas-drone-a-palooza",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "UCAV",
+      "TWZ"
+    ]
+  },
+  {
+    "id": "u-20261030-iran-used-limpet-mine-placed-on-ship-s-hull-in-lat",
+    "d": "2026-10-30",
+    "title": "Iran Used Limpet Mine Placed On Ship’s Hull In Latest Strait Of Hormuz Attack: Report",
+    "body": "More air defenses, ships, troops, ammo and supplies are flowing into the Middle East as the clock ticks down to the potential start of a new air campaign against Iran.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "adversary"
+    ],
+    "type": "Research",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/iran-used-limpet-mine-placed-on-ships-hull-in-latest-strait-of-hormuz-attack-report",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261030-usaf-f-16s-back-on-alert-duty-in-aleutian-islands-",
+    "d": "2026-10-30",
+    "title": "USAF F-16s Back On Alert Duty In Aleutian Islands For First Time In Decades",
+    "body": "NORAD’s return to fighter alert ops on remote Shemya Island is yet another reminder of the eroding security environment in the Pacific and the Arctic. The post USAF F-16s Back On Alert Duty In Aleutian Islands For First Time In Decades appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "NORAD"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/usaf-f-16s-back-on-alert-duty-in-aleutian-islands-for-first-time-in-decades",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "NORAD"
+    ]
+  },
+  {
+    "id": "u-20261030-promotions-for-space-force-s-second-highest-enlist",
+    "d": "2026-10-30",
+    "title": "Promotions for Space Force’s Second-Highest Enlisted Rank Explode",
+    "body": "Promotions to the Space Force’s second highest enlisted grade, senior master sergeant, have surged to the highest level in the young service’s history, bolstering the senior NCO corps as officials plan to aggressively expand the force and especially the…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/promotions-space-force-senior-master-sergeant-2026/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "Space Force"
+    ]
+  },
+  {
+    "id": "u-20261030-russia-north-korea-test-missiles-in-the-western-pa",
+    "d": "2026-10-30",
+    "title": "Russia, North Korea Test Missiles in the Western Pacific",
+    "body": "Russia and North Korea carried out ballistic missile launches this week with Russia conducting a launch of a Submarine-Launched Ballistic Missile (SLBM) from the Western Pacific to Russia arctic region, according to a Russian Ministry of Defence (MOD) release…",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "sea",
+      "space",
+      "strike"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "of Defence",
+      "MOD"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/30/russia-north-korea-test-missiles-in-the-western-pacific",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "of Defence",
+      "MOD"
+    ]
+  },
+  {
+    "id": "u-20261030-usni-news-western-pacific-pulse-oct-30-2026",
+    "d": "2026-10-30",
+    "title": "USNI News Western Pacific Pulse: Oct. 30, 2026",
+    "body": "The following is a summary of major ship movements and exercises in the Western Pacific over the last week.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/10/30/usni-news-western-pacific-pulse-oct-30-2026",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "USNI News Western Pacific"
+    ]
+  },
+  {
+    "id": "u-20261030-esi-supplying-solar-array-components-to-missile-de",
+    "d": "2026-10-30",
+    "title": "ESI supplying solar array components to missile defense programs",
+    "body": "Oct. 30, 2026 – ESI Motion Inc. is proud to announce that it is supplying the Solar Array Drive Electronics (SADE) to Lockheed Martin for its work on the Space [ ] The post ESI supplying solar array components to missile defense programs appeared first on…",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "strike",
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Lockheed Martin",
+      "ESI Motion Inc",
+      "Solar Array Drive Electronics",
+      "SADE"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/esi-supplying-solar-array-components-to-missile-defense-programs/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "ESI Motion Inc",
+      "Solar Array Drive Electronics",
+      "SADE",
+      "Lockheed Martin"
+    ]
+  },
+  {
+    "id": "u-20261030-coast-guard-cutter-stratton-returns-home-after-len",
+    "d": "2026-10-30",
+    "title": "Coast Guard Cutter Stratton Returns Home After Lengthy Northern Patrol",
+    "body": "The crew of the Coast Guard cutter Stratton returned to their home port after a 103-day patrol in the Arctic and Bering Sea, where they worked to reinforce maritime safety, security and national sovereignty in one of the most demanding operating areas in the…",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4638140/coast-guard-cutter-stratton-returns-home-after-lengthy-northern-patrol/",
+      "q": "primary"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "Coast Guard"
+    ]
+  },
+  {
+    "id": "u-20261030-flex-l12-forest-monster-makes-autonomous-debut-wit",
+    "d": "2026-10-30",
+    "title": "FLEX L12 “forest monster” makes autonomous debut with 5-ton load",
+    "body": "Norwegian company UGV Defence has run its FLEX L12 heavy unmanned ground vehicle fully autonomously through a 1.7 km (1.1-mile) off-road course while carrying 5 metric tons (11,000 pounds) of cargo, in a demonstration for Nordic military officers at Camp…",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "UGV Defence"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/flex-l12-forest-monster-makes-autonomous-debut-with-5-ton-load/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "UGV Defence"
+    ]
+  },
+  {
+    "id": "u-20261030-u-s-clears-sale-of-500-patriot-pac-3-missiles-to-u",
+    "d": "2026-10-30",
+    "title": "U.S. clears sale of 500 Patriot PAC-3 missiles to Ukraine",
+    "body": "The U.S. State Department has approved a possible sale of 500 PAC-3 MSE interceptors to Ukraine for its Patriot air defense systems, a package worth an estimated $2.1 billion that will be paid for entirely by Ukraine’s allies and partners.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-clears-sale-of-500-patriot-pac-3-missiles-to-ukraine/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "U.S. State Department"
+    ]
+  },
+  {
+    "id": "u-20261030-korean-owned-philly-shipyard-lands-269-million-u-s",
+    "d": "2026-10-30",
+    "title": "Korean-owned Philly Shipyard lands $269 million U.S. Navy landing ship",
+    "body": "Hanwha Defense USA will build a Medium Landing Ship for the U.S. Navy and U.S. Marine Corps at its Philadelphia shipyard under a $269 million subcontract from TOTE Services, the company announced, giving the South Korean-owned group its first contract to…",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Philly Shipyard",
+      "Hanwha Defense USA",
+      "TOTE Services"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/korean-owned-philly-shipyard-lands-269-million-u-s-navy-landing-ship/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "Philly Shipyard",
+      "U.S. Navy",
+      "Hanwha Defense USA",
+      "U.S. Marine Corps",
+      "TOTE Services"
+    ]
+  },
+  {
+    "id": "u-20261030-ukraine-hits-russian-mi-8-during-raid-on-supply-li",
+    "d": "2026-10-30",
+    "title": "Ukraine hits Russian Mi-8 during raid on supply lines in Luhansk",
+    "body": "Ukraine’s Third Assault Brigade destroyed a Russian Mi-8 military helicopter in the Luhansk region with two Hornet one-way attack drones after waiting for it to land, the brigade said on social media on Oct. 30.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary",
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Third Assault Brigade"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/ukraine-hits-russian-mi-8-during-raid-on-supply-lines-in-luhansk/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "Third Assault Brigade"
+    ]
+  },
+  {
+    "id": "u-20261030-satellite-photos-confirm-ukraine-destroyed-two-rus",
+    "d": "2026-10-30",
+    "title": "Satellite photos confirm Ukraine destroyed two Russian Su-34s",
+    "body": "Satellite imagery shows the wreckage of two Su-34 fighter-bombers destroyed at Russia’s Marinovka air base in the Volgograd region, confirming Ukraine’s claim that its Neptune cruise missiles knocked out the jets on Oct. 29, open-source analysts said.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "global",
+      "adversary",
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/satellite-photos-confirm-ukraine-destroyed-two-russian-su-34s/",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261030-army-s-marc-andersen-outlines-strategic-capital-in",
+    "d": "2026-10-30",
+    "title": "Army’s Marc Andersen Outlines Strategic Capital Initiative Priorities",
+    "body": "Army Assistant Secretary Marc Andersen has outlined Strategic Capital Initiative priorities spanning computing, energy and minerals. The post Army’s Marc Andersen Outlines Strategic Capital Initiative Priorities first appeared on Executive Gov .",
+    "why": "Bases need their own power for AI, sensors and lasers, which creates a defense market for new energy tech.",
+    "sectors": [
+      "energy"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Strategic Capital Initiative"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/army-marc-andersen-strategic-capital-sci-priorities",
+      "q": "news"
+    },
+    "addedAt": "2026-10-31T15:26:09.958Z",
+    "auto": true,
+    "orgs": [
+      "Army",
+      "Strategic Capital Initiative"
     ]
   },
   {

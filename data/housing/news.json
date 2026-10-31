@@ -1,5 +1,20 @@
 [
  {
+  "id": "h-20261031-exclusive-crosscountry-mortgage-demands-payment-fr",
+  "d": "2026-10-31",
+  "title": "Exclusive: CrossCountry Mortgage demands payment from former LOs, invokes 2-year non-solicitation",
+  "body": "Documents show the company is demanding 75 bps for each refinanced loan on former customers",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/ccm-customer-poaching-former-loan-officers/",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261030-california-s-housing-push-braves-a-lion-s-den-of-l",
   "d": "2026-10-30",
   "title": "California’s housing push braves a lion’s den of local NIMBY tactics",
@@ -96,6 +111,93 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/rookie-790",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261030-q3-2026-earnings-for-publicly-traded-mortgage-real",
+  "d": "2026-10-30",
+  "title": "Q3 2026 earnings for publicly traded mortgage, real estate and homebuilder companies",
+  "body": "As earnings results wrap up for Q3 2026, here's a rundown of what's happened for major lenders, brokerages, homebuilders, listing portals and title firms.",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/q3-2026-earnings-mortgage-real-estate-homebuilding/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261030-first-horizon-nations-lending-and-planet-announce-",
+  "d": "2026-10-30",
+  "title": "First Horizon, Nations Lending and Planet announce leadership moves",
+  "body": "This week’s mortgage industry appointments include a new SVP of valuations, a president and COO restructure, plus a bank board addition",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/first-horizon-leadership-moves/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261030-new-home-sales-reinforce-last-month-s-rebound",
+  "d": "2026-10-30",
+  "title": "New Home Sales Reinforce Last Month's Rebound",
+  "body": "New home sales lost almost no ground in September, effectively reinforcing the healthy rebound seen in August's report. The Census Bureau's New Residential Construction report clocked sales at an annual pace of 676k, down only 0.6% month over month.",
+  "topics": [
+   "sales",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "Mortgage News Daily",
+   "u": "https://www.mortgagenewsdaily.com/news/10302026-new-home-sales",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261030-home-price-appreciation-edges-higher-in-august",
+  "d": "2026-10-30",
+  "title": "Home Price Appreciation Edges Higher in August",
+  "body": "Home price appreciation picked up again in August (as reported this week), but the improvement was minimal. The FHFA House Price Index rose 0.3% from July to August, bringing annual appreciation to 2.4% .",
+  "topics": [
+   "prices"
+  ],
+  "states": [],
+  "src": {
+   "t": "Mortgage News Daily",
+   "u": "https://www.mortgagenewsdaily.com/news/10302026-case-shiller-fhfa-home-prices-prices-apprecia",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261030-mortgage-demand-bounces-back-sort-of",
+  "d": "2026-10-30",
+  "title": "Mortgage Demand Bounces Back, Sort Of",
+  "body": "Mortgage applications finally rebounded as mortgage rates fell for a second straight week. The Mortgage Bankers Association (MBA) reported a 3.4% increase in total application volume for the week ending October 23.",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "Mortgage News Daily",
+   "u": "https://www.mortgagenewsdaily.com/news/10302026-mortgage-applications-mba",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261030-what-a-property-manager-really-costs-and-how-to-se",
+  "d": "2026-10-30",
+  "title": "What a Property Manager Really Costs (and How to Self-Manage for Less)",
+  "body": "This article is presented by Avail. Most property management pitches open with one number: 8%. Maybe 9%. 10% if they have a really nice logo to show off. It’s a [ ]",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/what-a-property-manager-really-costs-and-how-to-self-manage-for-less",
    "q": "news"
   }
  },
