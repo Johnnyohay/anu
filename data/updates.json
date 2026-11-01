@@ -1,5 +1,178 @@
 [
   {
+    "id": "u-20261101-uk-flies-protector-drone-on-first-home-operation-a",
+    "d": "2026-11-01",
+    "title": "UK flies Protector drone on first home operation against Russian frigate",
+    "body": "An RAF Protector RG1 remotely piloted aircraft has flown its first operational missions in UK airspace, giving the Royal Navy more than 10 hours of surveillance over the English Channel while warships tracked the Russian frigate Neustrashimy, the UK Ministry…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea",
+      "global",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/uk-flies-protector-drone-on-first-home-operation-against-russian-frigate/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-01T16:43:05.892Z",
+    "auto": true,
+    "orgs": [
+      "Royal Navy",
+      "UK Ministry"
+    ]
+  },
+  {
+    "id": "u-20261101-u-s-marine-corps-attack-helicopters-set-for-major-",
+    "d": "2026-11-01",
+    "title": "U.S. Marine Corps attack helicopters set for major upgrade",
+    "body": "The U.S. Marine Corps’ H-1 program office is using flight test data from the first two upgraded AH-1Z Viper and UH-1Y Venom helicopters to lock down the SPINE configuration, with modification of the first fleet aircraft set to begin in fiscal 2027.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-marine-corps-attack-helicopters-set-for-major-upgrade/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-01T16:43:05.892Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Marine Corps"
+    ]
+  },
+  {
+    "id": "u-20261101-u-s-army-s-hades-spy-plane-prototype-makes-first-f",
+    "d": "2026-11-01",
+    "title": "U.S. Army’s HADES spy plane prototype makes first flight",
+    "body": "The U.S. Army’s first HADES prototype, a Bombardier Global 6500 business jet modified by Sierra Nevada Corporation for long-range signals intelligence and deep sensing, made its first flight on Sept. 11, the service announced on Oct.",
+    "why": "Jamming and spectrum fights decide whether drones and radios work at all, so this quiet area keeps getting funded.",
+    "sectors": [
+      "ew"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Bombardier Global",
+      "Sierra Nevada Corporation"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-armys-hades-spy-plane-prototype-makes-first-flight/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-01T16:43:05.892Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "Bombardier Global",
+      "Sierra Nevada Corporation"
+    ]
+  },
+  {
+    "id": "u-20261101-u-s-marine-corps-wants-new-cargo-drones-that-fly-1",
+    "d": "2026-11-01",
+    "title": "U.S. Marine Corps wants new cargo drones that fly 100 pounds 40 miles out",
+    "body": "The U.S. Navy is inviting companies to bring cargo drones to Huntsville, Alabama, from Jan. 25 to Feb. 5, 2027, to compete for the U.S.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-marine-corps-wants-new-cargo-drones-that-fly-100-pounds-40-miles-out/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-01T16:43:05.892Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Marine Corps",
+      "U.S. Navy"
+    ]
+  },
+  {
+    "id": "u-20261101-greece-receives-second-fdi-frigate-hs-nearchos",
+    "d": "2026-11-01",
+    "title": "Greece receives second FDI frigate HS Nearchos",
+    "body": "Naval Group handed over HS Nearchos, the second of Greece’s new French-built defense and intervention frigates, to the Hellenic Navy at its shipyard in Lorient, France, on Oct. 30, ten months after Greece received the first ship of the class.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Naval Group"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/greece-receives-second-fdi-frigate-hs-nearchos/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-01T16:43:05.892Z",
+    "auto": true,
+    "orgs": [
+      "Naval Group",
+      "Hellenic Navy"
+    ]
+  },
+  {
+    "id": "u-20261101-nato-turns-5g-towers-into-sensors-in-baltic-battle",
+    "d": "2026-11-01",
+    "title": "NATO turns 5G towers into sensors in Baltic battlefield experiment",
+    "body": "NATO linked a Maven targeting system to a national military system in a matter of hours using agentic artificial intelligence and ran a cross-border counter-drone engagement during a two-week experiment in Latvia, the alliance’s top transformation commander…",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "ai",
+      "air",
+      "cuas"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/nato-turns-5g-towers-into-sensors-in-baltic-battlefield-experiment/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-01T16:43:05.892Z",
+    "auto": true,
+    "orgs": [
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261101-north-korea-tests-cluster-bomb-warhead-for-ballist",
+    "d": "2026-11-01",
+    "title": "North Korea tests cluster-bomb warhead for ballistic missiles",
+    "body": "North Korea tested a cluster-bomb warhead for its tactical ballistic missiles on Oct. 31 and said it will let its military units choose from four types of cluster warheads by the end of the year, state news agency KCNA reported on Nov. 1.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "KCNA"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/north-korea-tests-cluster-bomb-warhead-for-ballistic-missiles/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-01T16:43:05.892Z",
+    "auto": true,
+    "orgs": [
+      "KCNA"
+    ]
+  },
+  {
     "id": "u-20261031-surface-to-air-missiles-deployed-to-protect-trump-",
     "d": "2026-10-31",
     "title": "Surface-To-Air Missiles Deployed To Protect Trump’s Mar-a-Lago Estate",
