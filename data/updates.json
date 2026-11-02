@@ -1,5 +1,808 @@
 [
   {
+    "id": "u-20261102-industry-needs-more-consistent-demand-signal-to-sc",
+    "d": "2026-11-02",
+    "title": "Industry needs more consistent demand signal to scale UGV production: Autonomy consortium exec",
+    "body": "“I think [industry has] the challenge of understanding what the demand signal is, and then again where to put their dollars,” Warren Sponsler, the COO of NAMC, said in an interview.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "NAMC"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/industry-needs-more-consistent-demand-signal-to-scale-ugv-production-autonomy-consortium-exec/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "NAMC"
+    ]
+  },
+  {
+    "id": "u-20261102-the-fiscal-risks-of-bringing-us-troops-out-of-euro",
+    "d": "2026-11-02",
+    "title": "The fiscal risks of bringing US troops out of Europe",
+    "body": "Reducing America’s military footprint in Europe may seem fiscally prudent, but relocating troops and giving up overseas bases could leave US taxpayers with a much bigger bill.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/the-fiscal-risks-of-bringing-us-troops-out-of-europe/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261102-saab-unveils-new-speed-assault-boat-for-swedish-na",
+    "d": "2026-11-02",
+    "title": "Saab unveils new speed assault boat for Swedish Navy",
+    "body": "“The CB90CX is designed for uncrewed operations from the outset,” Anders Hellman, head of Saab’s business unit in Docksta, told Breaking Defense.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Saab"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/saab-unveils-new-speed-assault-boat-for-swedish-navy/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Saab",
+      "Breaking Defense"
+    ]
+  },
+  {
+    "id": "u-20261102-greece-inks-deal-for-kc-390-fleet",
+    "d": "2026-11-02",
+    "title": "Greece inks deal for KC-390 fleet",
+    "body": "The purchase, arranged via a government-to-government agreement between Greece and Portugal, covers three KC-390 aircraft with options for up to six manufactured by Brazilian planemaker Embraer.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Embraer"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/greece-inks-deal-for-kc-390-fleet/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Embraer"
+    ]
+  },
+  {
+    "id": "u-20261102-pacific-command-bolsters-network-defense-with-cybe",
+    "d": "2026-11-02",
+    "title": "Pacific Command bolsters network defense with Cyber Defense Forces Pacific",
+    "body": "The new concept has sent personnel from Cyber Defense Command at Fort Meade to the Pacific theater.",
+    "why": "State hackers are still inside critical networks, which keeps defensive and offensive cyber in demand.",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/pacific-command-bolsters-network-defense-with-cyber-defense-forces-pacific/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Pacific Command",
+      "Cyber Defense Forces Pacific",
+      "Cyber Defense Command"
+    ]
+  },
+  {
+    "id": "u-20261102-oshkosh-steps-into-large-uas-space-with-new-grid-a",
+    "d": "2026-11-02",
+    "title": "Oshkosh steps into large UAS space with new Grid Aero partnership",
+    "body": "The two companies plan to team up on “design for manufacturability, production planning, supply chain optimization, and ultimately building Lifter aircraft at scale.”",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "space",
+      "capital",
+      "mfg"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Oshkosh",
+      "UAS",
+      "Grid Aero"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/oshkosh-steps-into-larger-uas-space-with-new-grid-aero-partnership/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Oshkosh",
+      "UAS",
+      "Grid Aero"
+    ]
+  },
+  {
+    "id": "u-20261102-leonardo-drs-tapped-to-support-army-s-high-energy-",
+    "d": "2026-11-02",
+    "title": "Leonardo DRS tapped to support Army’s high-energy laser program",
+    "body": "The company will be helping prime contractor AeroVironment under the E-HEL program. The post Leonardo DRS tapped to support Army’s high-energy laser program appeared first on DefenseScoop .",
+    "why": "Bases need their own power for AI, sensors and lasers, which creates a defense market for new energy tech.",
+    "sectors": [
+      "energy"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "AeroVironment",
+      "Leonardo DRS"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/02/army-high-energy-laser-program-leonardo-drs-av/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Leonardo DRS",
+      "Army",
+      "AeroVironment",
+      "DefenseScoop"
+    ]
+  },
+  {
+    "id": "u-20261102-russia-is-giving-its-drones-bigger-antennas-to-bea",
+    "d": "2026-11-02",
+    "title": "Russia is giving its drones bigger antennas to beat Ukrainian jamming",
+    "body": "Kyiv now needs roughly twice as many jammers to stop each upgraded Shahed, intel officials and experts said.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "ew",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/02/russia-is-giving-its-drones-bigger-antennas-to-beat-ukrainian-jamming/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261102-us-approves-2-1-billion-patriot-missile-sale-to-uk",
+    "d": "2026-11-02",
+    "title": "US approves $2.1 billion Patriot missile sale to Ukraine",
+    "body": "The missiles — which are yet to be manufactured — are not expected to be delivered until a couple of years into the 2030s.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "strike",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/02/us-approves-2-1-billion-patriot-missile-sale-to-ukraine/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261102-tiny-ukrainian-receiver-intercepts-russian-drone-f",
+    "d": "2026-11-02",
+    "title": "Tiny Ukrainian receiver intercepts Russian drone feeds in real time",
+    "body": "A small new receiver can co-opt video from Russian unmanned systems, allowing Ukrainian drone operators to intercept enemy live feeds in real time, the device's makers said this month.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/11/02/tiny-ukrainian-receiver-intercepts-russian-drone-feeds-in-real-time/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261102-what-could-the-humvee-of-the-future-look-like",
+    "d": "2026-11-02",
+    "title": "What could the Humvee of the future look like?",
+    "body": "From vehicles to wearable drone detection, new soldier systems were on display at AUSA 2026. Check out a roundup of our social coverage.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/02/what-could-the-humvee-of-the-future-look-like/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261102-high-energy-lasers-drones-and-power-innovations-in",
+    "d": "2026-11-02",
+    "title": "High-energy lasers, drones and power: Innovations in defense tech Business of Defense – Part 1",
+    "body": "From industry stalwarts to small startups, defense tech creators are looking to provide solutions as conflict morphs on a monthly basis. See some of what they had to offer at AUSA 2026.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "energy"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/02/high-energy-lasers-drones-and-power-innovations-in-defense-tech-business-of-defense-part-1/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261102-oshkosh-partners-with-startup-to-build-military-dr",
+    "d": "2026-11-02",
+    "title": "Oshkosh partners with startup to build military drones",
+    "body": "Oshkosh Defense partnered with Grid Aero to scale production of the Lifter aircraft, marking the defense giant's first foray into aircraft manufacturing.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "mfg"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Oshkosh Defense",
+      "Aero"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/11/02/oshkosh-partners-with-startup-to-build-military-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Oshkosh Defense",
+      "Aero"
+    ]
+  },
+  {
+    "id": "u-20261102-big-deals-in-european-defense-and-american-fighter",
+    "d": "2026-11-02",
+    "title": "Big deals in European defense and American fighters Defense Dollars",
+    "body": "International weapons makers step forward with new interceptors and deals for armored vehicles, while an American company secures a fighter contract.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "air",
+      "ground"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/02/big-deals-in-european-defense-and-american-fighters-defense-dollars/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261102-australia-unveils-secretive-ghost-shark-underwater",
+    "d": "2026-11-02",
+    "title": "Australia unveils secretive Ghost Shark underwater drone payloads",
+    "body": "The Australian Navy recently lifted the veil on some payloads the service is fielding on its Ghost Shark extra-large autonomous underwater vehicles.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/naval/2026/11/02/australia-unveils-secretive-ghost-shark-underwater-drone-payloads/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Australian Navy"
+    ]
+  },
+  {
+    "id": "u-20261102-new-x-plane-to-be-announced-at-max-power-airshow-n",
+    "d": "2026-11-02",
+    "title": "New X-Plane To Be Announced At Max Power Airshow: NASA Administrator Isaacman",
+    "body": "NASA's boss also deflected a new question about the space agency's 'missing' SR-71 Blackbird. The post New X-Plane To Be Announced At Max Power Airshow: NASA Administrator Isaacman appeared first on TWZ .",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/new-x-plane-to-be-announced-at-max-power-airshow-nasa-administrator-isaacman",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "NASA"
+    ]
+  },
+  {
+    "id": "u-20261102-these-are-the-u-s-weapons-most-at-risk-in-the-loom",
+    "d": "2026-11-02",
+    "title": "These Are The U.S. Weapons Most At Risk In The Looming Rare Earths Supply Crisis",
+    "body": "Rare earths are critical in thousands of weapon systems, many of which are essential to national security, and China is the source for most of them. The post These Are The U.S.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/these-are-the-u-s-weapons-most-at-risk-in-the-looming-rare-earths-supply-crisis",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261102-key-midterm-election-races-to-watch-for-the-air-fo",
+    "d": "2026-11-02",
+    "title": "Key Midterm Election Races to Watch for the Air Force and Space Force",
+    "body": "Dozens of former Airmen are running for Congress in the 2026 midterms, with Election Day fast approaching on Nov. 3.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/key-midterm-election-races-air-force-space-force/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Air Force",
+      "Space Force",
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261102-china-s-new-drone-carrier-launches-recovers-first-",
+    "d": "2026-11-02",
+    "title": "China’s New Drone Carrier Launches, Recovers First Autonomous Combat Aircraft",
+    "body": "The Chinese Navy’s new Type 076 drone carrier launched and recovered a stealthy unmanned combat aerial vehicle for the first time last week in the service’s latest effort to bring the new vessel online.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Autonomous Combat"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/02/chinas-new-drone-carrier-launches-recovers-first-autonomous-combat-aircraft",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Autonomous Combat",
+      "Chinese Navy"
+    ]
+  },
+  {
+    "id": "u-20261102-enterprise-hulk-towed-from-newport-news-shipbuildi",
+    "d": "2026-11-02",
+    "title": "Enterprise Hulk Towed from Newport News Shipbuilding",
+    "body": "The hulk of former nuclear aircraft carrier USS Enterprise (CVN-65) was towed from a pier at Newport News Shipbuilding on Monday, almost 15 years after its final deployment, USNI News has learned.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Newport News Shipbuilding"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/02/enterprise-hulk-towed-from-newport-news-shipbuilding",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Newport News Shipbuilding",
+      "USNI News"
+    ]
+  },
+  {
+    "id": "u-20261102-marine-force-southeast-asia-will-maintain-continuo",
+    "d": "2026-11-02",
+    "title": "Marine Force-Southeast Asia Will Maintain Continuous Presence in the Philippines",
+    "body": "Marine Rotational Force-Southeast Asia is now on its second continuous rotation to the Philippines, the service announced last week. MRF-SEA held a rotation turnover on Oct. 26.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/02/marine-force-southeast-asia-will-maintain-continuous-presence-in-the-philippines",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Marine Force",
+      "Marine Rotational Force"
+    ]
+  },
+  {
+    "id": "u-20261102-how-to-expand-reliable-flexible-access-to-space",
+    "d": "2026-11-02",
+    "title": "How to Expand Reliable, Flexible Access to Space",
+    "body": "The space industry launched more rockets into orbit last year than ever before, yet satellite operators are confronting an unexpected problem: There still aren’t enough rides to go around.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/how-to-expand-reliable-flexible-access-to-space/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261102-uss-george-washington-sailors-vote-while-deployed",
+    "d": "2026-11-02",
+    "title": "USS George Washington Sailors Vote While Deployed",
+    "body": "Sailors aboard the aircraft carrier USS George Washington, currently deployed to the U.S. 5th Fleet area of operations in the Middle East, recently voted during a voting rodeo event held in the ship's library.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "George",
+      "Fleet"
+    ],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4639525/uss-george-washington-sailors-vote-while-deployed/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "George",
+      "Fleet"
+    ]
+  },
+  {
+    "id": "u-20261102-kazakhstan-receives-second-a400m-military-transpor",
+    "d": "2026-11-02",
+    "title": "Kazakhstan receives second A400M military transport aircraft",
+    "body": "Kazakhstan has taken delivery of its second Airbus A400M Atlas heavy military transport aircraft, completing a two-plane order the Central Asian country placed in 2021, the Kazakh Defense Ministry said on Nov. 2.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/kazakhstan-receives-second-a400m-military-transport-aircraft/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Defense Ministry"
+    ]
+  },
+  {
+    "id": "u-20261102-u-s-navy-chief-gets-first-look-at-blackbeard-hyper",
+    "d": "2026-11-02",
+    "title": "U.S. Navy chief gets first look at Blackbeard hypersonic missile",
+    "body": "The U.S. Navy’s top officer, Chief of Naval Operations Adm. Daryl Caudle, got a close look at Blackbeard, the new air-launched hypersonic strike missile that the Navy is preparing to arm its F/A-18E/F Super Hornets with, during a visit to Naval Air Station…",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Naval Operations"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-navy-chief-gets-first-look-at-blackbeard-hypersonic-missile/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Navy",
+      "Naval Operations"
+    ]
+  },
+  {
+    "id": "u-20261102-neros-gets-450m-pentagon-loan-to-cut-reliance-on-c",
+    "d": "2026-11-02",
+    "title": "Neros gets $450M Pentagon loan to cut reliance on Chinese drone parts",
+    "body": "The Pentagon’s Office of Strategic Capital has agreed to lend up to $450 million to Neros, the California maker of the Archer attack drone, to build drones and their key parts in the United States, the Department of War announced on Nov. 2.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Neros"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/neros-gets-450m-pentagon-loan-to-cut-reliance-on-chinese-drone-parts/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Neros",
+      "Pentagon",
+      "Office of Strategic Capital",
+      "Department of War"
+    ]
+  },
+  {
+    "id": "u-20261102-u-s-military-deploys-anti-drone-lasers-to-guard-tr",
+    "d": "2026-11-02",
+    "title": "U.S. military deploys anti-drone lasers to guard Trump’s Mar-a-Lago",
+    "body": "The U.S. military has deployed high-energy laser weapons around President Donald Trump’s Mar-a-Lago estate in Palm Beach, Florida, as part of a counter-drone shield set up at the request of the Secret Service, a military spokesperson told the directed-energy…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas",
+      "energy"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Secret Service"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-military-deploys-anti-drone-lasers-to-guard-trumps-mar-a-lago/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Secret Service"
+    ]
+  },
+  {
+    "id": "u-20261102-hydrosat-to-build-sovereign-thermal-satellites-in-",
+    "d": "2026-11-02",
+    "title": "Hydrosat to build sovereign thermal satellites in Europe for NATO",
+    "body": "Luxembourg-based satellite company Hydrosat is developing a high-resolution heat-sensing satellite capability called Nyktòs that governments can task to photograph specific targets day or night, the company announced on Nov.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "space"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Hydrosat"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/hydrosat-to-build-sovereign-thermal-satellites-in-europe-for-nato/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Hydrosat",
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261102-u-s-navy-receives-1-000th-evolved-seasparrow-block",
+    "d": "2026-11-02",
+    "title": "U.S. Navy receives 1,000th Evolved SeaSparrow Block 2 missile",
+    "body": "The U.S. Navy has taken delivery of the 1,000th Evolved SeaSparrow Missile Block 2, the ship-defense interceptor built for a 12-nation NATO consortium, after doubling the number delivered in just over a year.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "strike",
+      "missiledef",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-navy-receives-1000th-evolved-seasparrow-block-2-missile/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Navy",
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261102-u-s-army-tests-drone-on-3d-printed-jet-fuel-engine",
+    "d": "2026-11-02",
+    "title": "U.S. Army tests drone on 3D-printed jet-fuel engine",
+    "body": "The U.S. Army has flown a mid-sized drone powered by a 3D-printed rotary engine that runs on jet fuel, the Army Research Laboratory announced, wrapping up a multiyear research program aimed at giving future unmanned aircraft more range, power and endurance.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-tests-drone-on-3d-printed-jet-fuel-engine/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "Army Research Laboratory"
+    ]
+  },
+  {
+    "id": "u-20261102-leonardo-drs-joins-u-s-army-s-first-production-las",
+    "d": "2026-11-02",
+    "title": "Leonardo DRS joins U.S. Army’s first production laser weapon program",
+    "body": "Leonardo DRS will supply the power, cooling and vehicle integration hardware for the U.S. Army’s first production laser weapon, after AeroVironment picked the company as a subcontractor on the Enduring-High Energy Laser program, DRS announced on Nov. 2.",
+    "why": "Stopping cheap drones cheaply is the industry's most urgent problem and one of its fastest-growing markets.",
+    "sectors": [
+      "cuas",
+      "energy"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "AeroVironment",
+      "Leonardo DRS"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/leonardo-drs-joins-u-s-armys-first-production-laser-weapon-program/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "Leonardo DRS",
+      "U.S. Army",
+      "AeroVironment"
+    ]
+  },
+  {
+    "id": "u-20261102-north-defence-readies-new-ugv-for-nato-trials-in-s",
+    "d": "2026-11-02",
+    "title": "North Defence readies new UGV for NATO trials in Switzerland",
+    "body": "North Defence Group has shown new images of its unmanned ground vehicle, a compact electric or hybrid robot built to haul more than 1,000 kg (2,200 pounds) of gear for frontline troops, follow soldiers on its own and carry counter-drone weapons, as the…",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground",
+      "global",
+      "air",
+      "cuas"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "North Defence Group"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/north-defence-readies-new-ugv-for-nato-trials-in-switzerland/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": [
+      "NATO",
+      "North Defence Group"
+    ]
+  },
+  {
+    "id": "u-20261102-russia-halts-chemical-exports-after-ukraine-hits-i",
+    "d": "2026-11-02",
+    "title": "Russia halts chemical exports after Ukraine hits its rocket fuel plants",
+    "body": "Russia has banned exports of benzene, toluene, xylenes and phenol for three months, saying it needs to keep its own factories supplied with the industrial chemicals, the government announced on Nov. 2.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-halts-chemical-exports-after-ukraine-hits-its-rocket-fuel-plants/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-02T20:10:46.050Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
     "id": "u-20261101-uk-flies-protector-drone-on-first-home-operation-a",
     "d": "2026-11-01",
     "title": "UK flies Protector drone on first home operation against Russian frigate",
