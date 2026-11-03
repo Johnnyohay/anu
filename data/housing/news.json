@@ -1,5 +1,95 @@
 [
  {
+  "id": "h-20261103-the-concessions-field-problem-that-breaks-pay-for-",
+  "d": "2026-11-03",
+  "title": "The concessions field problem that breaks pay-for-listing data models",
+  "body": "When concessions can be answered without a numeric amount, contribution credits reward volume over evidence",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/reso-concessions-data/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261103-why-yellow-pad-math-still-beats-the-spreadsheet-in",
+  "d": "2026-11-03",
+  "title": "Why yellow pad math still beats the spreadsheet in builder deals",
+  "body": "Simple relationship checks can surface anomalies and opportunities before a model obscures what a deal depends on",
+  "topics": [
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/why-yellow-pad-math-still-beats-the-spreadsheet-in-builder-deals/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261103-only-people-with-skin-in-the-game-should-be-behind",
+  "d": "2026-11-03",
+  "title": "Only people with skin in the game should be behind AI mortgage tools",
+  "body": "Compliance rules and real follow-up workflows can break generic chatbots in production lending",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/ai-mortgage-tools-originators/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261103-costly-lessons-of-the-grenfell-tower-fire-for-land",
+  "d": "2026-11-03",
+  "title": "Costly lessons of the Grenfell Tower Fire for landlords and underwriters",
+  "body": "Economic damages of fatal fire surpass 4,000 times the cost of repairs saved",
+  "topics": [
+   "rents"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/grenfell-fire-landlord-liability/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261103-best-banking-platforms-for-real-estate-investors-i",
+  "d": "2026-11-03",
+  "title": "Best Banking Platforms for Real Estate Investors in 2027",
+  "body": "Managing rental properties across multiple LLCs, tracking income and expenses by property, and keeping security deposits organized requires more than a standard business checking account. Real estate investors need banking [ ]",
+  "topics": [
+   "rents",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/best-banking-platforms-for-real-estate-investors",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261103-fannie-mae-sharply-raises-2027-mortgage-rate-forec",
+  "d": "2026-11-03",
+  "title": "Fannie Mae Sharply Raises 2027 Mortgage Rate Forecast",
+  "body": "Is there any relief coming next year for mortgage rates? According to Fannie Mae’s new 2027 mortgage rate prediction…it’s not looking too good. Previous mortgage rate forecasts predicted 6.7% rates [ ]",
+  "topics": [
+   "rates",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/on-the-market-474",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261102-open-real-estate-gets-a-boost-from-independents-an",
   "d": "2026-11-02",
   "title": "Open Real Estate gets a boost from independents — and an opening from MLSs",

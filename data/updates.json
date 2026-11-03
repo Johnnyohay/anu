@@ -1,5 +1,480 @@
 [
   {
+    "id": "u-20261103-bae-systems-launches-new-sea-tridon-naval-gun-seri",
+    "d": "2026-11-03",
+    "title": "BAE Systems launches new Sea Tridon naval gun series",
+    "body": "These variants are designed to adapt to newer, unmanned threats, and also feature some new technology upgrades.",
+    "why": "The big incumbents are growing too. Watch where they partner with or buy startups rather than compete.",
+    "sectors": [
+      "primes"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "BAE Systems"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/bae-systems-launches-new-sea-tridon-naval-gun-series/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "BAE Systems"
+    ]
+  },
+  {
+    "id": "u-20261103-gambit-series-offers-a-scalable-path-for-collabora",
+    "d": "2026-11-03",
+    "title": "Gambit Series offers a scalable path for collaborative combat aircraft",
+    "body": "[Sponsored] Gambit represents a scalable solution designed to counter today’s threats and address tomorrow’s challenges.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/gambit-series-offers-a-scalable-path-for-collaborative-combat-aircraft/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261103-sweden-s-saab-launches-family-of-ai-agents-for-fut",
+    "d": "2026-11-03",
+    "title": "Sweden’s Saab launches family of AI agents for future aircraft projects",
+    "body": "Key to the autonomous project is Saab’s AI Fighter Jet Pilot Academy, designed to develop the agents and, in parallel, establish infrastructure necessary to “create, train and evaluate” them, says the firm.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "AI Fighter Jet Pilot Academy"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/swedens-saab-launches-family-of-ai-agents-for-future-aircraft-projects/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "AI Fighter Jet Pilot Academy"
+    ]
+  },
+  {
+    "id": "u-20261103-former-army-boss-dan-driscoll-joins-openai-as-seni",
+    "d": "2026-11-03",
+    "title": "Former Army boss Dan Driscoll joins OpenAI as senior counselor",
+    "body": "In his new role, Driscoll will “work with OpenAI teams and leaders across governments, industry, academia, and allied institutions to advance practical modernization initiatives that support the buildout of democratic AI,” the company said in a press release…",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Anthropic · OpenAI · Google · xAI"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/03/dan-driscoll-openai-strategic-counselor/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "Army",
+      "OpenAI"
+    ]
+  },
+  {
+    "id": "u-20261103-french-defense-minister-kicks-off-pact-with-indust",
+    "d": "2026-11-03",
+    "title": "French defense minister kicks off ‘pact’ with industry in rush to field naval drones",
+    "body": "The French government is kicking off a new “pact” with the defense industry aimed at fostering a national ecosystem of drone makers that can quickly make new equipment tailored to its navy’s requirements.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/03/french-defense-minister-kicks-off-pact-with-industry-in-rush-to-field-naval-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261103-on-nato-s-lake-nordic-allies-worry-about-escalatio",
+    "d": "2026-11-03",
+    "title": "On ‘NATO’s lake,’ Nordic allies worry about escalation with Russia",
+    "body": "Sweden, Finland, and their allies now face a challenge in countering Russian behavior without stoking tensions further.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/2026/11/03/on-natos-lake-nordic-allies-worry-about-escalation-with-russia/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261103-india-orders-next-gen-corvettes-for-5-7b-under-bro",
+    "d": "2026-11-03",
+    "title": "India orders next-gen corvettes for $5.7b under broad naval modernization push",
+    "body": "New Delhi is spending big money on new corvettes from domestic shipbuilders, carrier-capable fighters from France and submarines from Germany.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "sea"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/asia-pacific/2026/11/03/india-orders-next-gen-corvettes-for-5-7b-under-broad-naval-modernization-push/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261103-australia-preps-bluebottle-usv-for-submarine-hunti",
+    "d": "2026-11-03",
+    "title": "Australia preps Bluebottle USV for submarine-hunting role",
+    "body": "\"I want potential adversaries to understand that, when they see an Ocius Bluebottle USV, it’s a signal to get out of our ocean,” Minister for Defence Industry Pat Conroy said.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Bluebottle",
+      "Defence Industry"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/asia-pacific/2026/11/03/australia-preps-bluebottle-usv-for-submarine-hunting-role/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "Bluebottle",
+      "Defence Industry"
+    ]
+  },
+  {
+    "id": "u-20261103-airborne-laser-weapon-for-tactical-aircraft-being-",
+    "d": "2026-11-03",
+    "title": "Airborne Laser Weapon For Tactical Aircraft Being Developed By Germany",
+    "body": "The new initiative aims to eventually equip Luftwaffe combat aircraft with a laser capable of shooting down drones and missiles. The post Airborne Laser Weapon For Tactical Aircraft Being Developed By Germany appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Luftwaffe"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/airborne-laser-weapon-for-tactical-aircraft-being-developed-by-germany",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "Luftwaffe"
+    ]
+  },
+  {
+    "id": "u-20261103-a-nuclear-strike-on-iran-it-sounds-absurd-because-",
+    "d": "2026-11-03",
+    "title": "A Nuclear Strike On Iran? It Sounds Absurd Because It Is. Let’s Talk About It",
+    "body": "If this were entertained within the administration, it would face a far greater disaster than the Strait of Hormuz being closed. The post A Nuclear Strike On Iran? It Sounds Absurd Because It Is. Let’s Talk About It appeared first on TWZ .",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/nuclear/a-nuclear-strike-on-iran-it-sounds-absurd-because-it-is-lets-talk-about-it",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261103-simera-sense-and-spacemanic-to-collaborate-on-a-ne",
+    "d": "2026-11-03",
+    "title": "Simera Sense and Spacemanic to Collaborate on a New Complete Dual-Use Mission Solution",
+    "body": "Czech company Spacemanic and Belgian optical leader Simera Sense are teaming up to deliver a new dual-use satellite solution that can compete with bigger and heavier satellites.",
+    "why": "Where investors put money shows which parts of the industry they expect to win next.",
+    "sectors": [
+      "capital",
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Spacemanic",
+      "Simera Sense"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/simera-sense-and-spacemanic-to-collaborate-on-a-new-complete-dual-use-mission-solution/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "Spacemanic",
+      "Simera Sense"
+    ]
+  },
+  {
+    "id": "u-20261103-detumbler-airbus-passive-spin-stabilization-soluti",
+    "d": "2026-11-03",
+    "title": "DETUMBLER: Airbus’ Passive Spin Stabilization Solution",
+    "body": "The tumbling crisis: why dead satellites threaten orbit Every year, hundreds of satellites reach end-of-life, most are deorbited, but some fail abruptly.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/detumbler-airbus-passive-spin-stabilization-solution/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261103-raytheon-joins-darpa-picasso-program-for-photonic-",
+    "d": "2026-11-03",
+    "title": "Raytheon joins DARPA PICASSO program for photonic circuits",
+    "body": "Raytheon has won a phase one contract from the Defense Advanced Research Projects Agency to develop photonic circuits that process signals entirely with light, the company said on Nov. 3.",
+    "why": "The big incumbents are growing too. Watch where they partner with or buy startups rather than compete.",
+    "sectors": [
+      "primes"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Raytheon"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/raytheon-joins-darpa-picasso-program-for-photonic-circuits/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "Raytheon",
+      "DARPA PICASSO",
+      "Defense Advanced Research Projects Agency"
+    ]
+  },
+  {
+    "id": "u-20261103-russia-s-glide-bomb-use-falls-for-the-first-time-i",
+    "d": "2026-11-03",
+    "title": "Russia’s glide bomb use falls for the first time in months",
+    "body": "Russian forces dropped 8,016 guided aerial bombs on Ukrainian positions in October, an 11% fall from September’s record, the monitoring project Oko Gora said in a post summarizing the month.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russias-glide-bomb-use-falls-for-the-first-time-in-months/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261103-poland-moves-closer-to-building-ukraine-s-bohdana-",
+    "d": "2026-11-03",
+    "title": "Poland moves closer to building Ukraine’s Bohdana howitzer",
+    "body": "Two Polish defense companies have agreed to work together on the wheeled chassis for 155mm self-propelled howitzers that Poland plans to build under license from Ukraine.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/poland-moves-closer-to-building-ukraines-bohdana-howitzer/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261103-poland-sends-more-upgraded-rosomak-fighting-vehicl",
+    "d": "2026-11-03",
+    "title": "Poland sends more upgraded Rosomak fighting vehicles to training center",
+    "body": "Poland has delivered more Rosomak 8 8 armored vehicles armed with the ZSSW-30 unmanned turret and Spike anti-tank missiles to the Land Forces Training Ground Center in Poznań, where they will be used to train soldiers from mechanized units, the country’s…",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/poland-sends-more-upgraded-rosomak-fighting-vehicles-to-training-center/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "Land Forces Training"
+    ]
+  },
+  {
+    "id": "u-20261103-perseus-defense-tests-cheap-missile-against-drone",
+    "d": "2026-11-03",
+    "title": "Perseus Defense tests cheap missile against drone",
+    "body": "Counter-drone missile maker Perseus Defense has released video of one of its small, low-cost interceptors climbing into the sky and hitting a hovering multirotor drone, which the company’s chief executive described as the first time an “attritable” missile…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "strike",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Perseus Defense"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/perseus-defense-tests-cheap-missile-against-drone/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "Perseus Defense"
+    ]
+  },
+  {
+    "id": "u-20261103-lessons-from-ukraine-drive-german-plan-for-militar",
+    "d": "2026-11-03",
+    "title": "Lessons from Ukraine drive German plan for military hospital trains",
+    "body": "Siemens Mobility and Lufthansa Technik Defense plan to build a hospital train for the German armed forces and NATO allies that could carry more than 150 wounded or sick patients, including those needing intensive care, the two companies said on Nov. 3.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Siemens Mobility",
+      "Lufthansa Technik Defense"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/lessons-from-ukraine-drive-german-plan-for-military-hospital-trains/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "Siemens Mobility",
+      "Lufthansa Technik Defense",
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261103-japan-s-astroscale-and-germany-s-ohb-explore-in-or",
+    "d": "2026-11-03",
+    "title": "Japan’s Astroscale and Germany’s OHB explore in-orbit servicing work",
+    "body": "Japanese satellite-servicing company Astroscale and German space firm OHB have signed a memorandum of understanding to explore working together on technology to protect satellites and other infrastructure in orbit, with a focus on linking Astroscale’s British…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "global",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "OHB",
+      "Astroscale"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/japans-astroscale-and-germanys-ohb-explore-in-orbit-servicing-work/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "OHB",
+      "Astroscale"
+    ]
+  },
+  {
+    "id": "u-20261103-why-rain-is-a-problem-for-hypersonic-missiles-and-",
+    "d": "2026-11-03",
+    "title": "Why rain is a problem for hypersonic missiles, and how Auriga tests it",
+    "body": "Auriga Space, a California company building electromagnetic launch technology, wants to fix one of the slowest steps in developing American hypersonic weapons: testing their materials and parts on the ground.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Auriga Space"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/why-rain-is-a-problem-for-hypersonic-missiles-and-how-auriga-tests-it/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "Auriga Space"
+    ]
+  },
+  {
     "id": "u-20261102-industry-needs-more-consistent-demand-signal-to-sc",
     "d": "2026-11-02",
     "title": "Industry needs more consistent demand signal to scale UGV production: Autonomy consortium exec",
@@ -801,6 +1276,256 @@
     "addedAt": "2026-11-02T20:10:46.050Z",
     "auto": true,
     "orgs": []
+  },
+  {
+    "id": "u-20261102-counter-drone-laser-weapon-now-guarding-trump-s-ma",
+    "d": "2026-11-02",
+    "title": "Counter-Drone Laser Weapon Now Guarding Trump’s Mar-a-Lago Alongside SAMs",
+    "body": "Mar-a-Lago is the latest real-world deployment for the U.S. military's growing arsenal of LOCUST counter-drone lasers. The post Counter-Drone Laser Weapon Now Guarding Trump’s Mar-a-Lago Alongside SAMs appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/laser-weapon-now-guarding-trumps-mar-a-lago-estate",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261102-space-force-weighs-proliferated-cislunar-satellite",
+    "d": "2026-11-02",
+    "title": "Space Force Weighs Proliferated Cislunar Satellite Constellation",
+    "body": "The Space Force is considering launching up to five satellites to cislunar space as soon as 2029 to help lay the foundation for a future proliferated constellation between Earth and the moon.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/space-force-weighs-proliferated-cislunar-satellite-constellation/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "Space Force"
+    ]
+  },
+  {
+    "id": "u-20261102-usni-news-fleet-and-marine-tracker-nov-2-2026",
+    "d": "2026-11-02",
+    "title": "USNI News Fleet and Marine Tracker: Nov. 2, 2026",
+    "body": "These are the approximate positions of the U.S. Navy’s deployed carrier strike groups and amphibious ready groups throughout the world as of Nov. 2, 2026, based on Navy and public data.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/02/usni-news-fleet-and-marine-tracker-nov-2-2026",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "USNI News Fleet",
+      "U.S. Navy"
+    ]
+  },
+  {
+    "id": "u-20261102-industry-groups-want-cyber-threat-sharing-law-rene",
+    "d": "2026-11-02",
+    "title": "Industry groups want cyber threat-sharing law renewed through defense authorization bill",
+    "body": "Banks, utilities, and other industries are asking lawmakers to extend liability protections through 2035.",
+    "why": "State hackers are still inside critical networks, which keeps defensive and offensive cyber in demand.",
+    "sectors": [
+      "cyber",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/policy/2026/11/industry-groups-cyber-sharing-law/416993/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261102-officials-suspect-iran-of-cyberattacks-on-military",
+    "d": "2026-11-02",
+    "title": "Officials suspect Iran of cyberattacks on military base freezers",
+    "body": "Tehran is also suspected to have backed recent attacks on U.S. water-treatment equipment.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/threats/2026/11/officials-suspect-iran-series-cyberattacks-military-base-freezers/416992/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261102-dow-discloses-31b-fy26-topline-for-military-intell",
+    "d": "2026-11-02",
+    "title": "DOW Discloses $31B FY26 Topline for Military Intelligence Program",
+    "body": "DOW disclosed a $30.9 billion FY 2026 Military Intelligence Program budget, about $3 billion above the FY 2025 level. The post DOW Discloses $31B FY26 Topline for Military Intelligence Program first appeared on Executive Gov .",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Military Intelligence Program"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/dow-31b-fy26-military-intelligence-program-topline",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "Military Intelligence Program"
+    ]
+  },
+  {
+    "id": "u-20261102-fema-issues-rfi-to-modernize-cloud-based-supply-ch",
+    "d": "2026-11-02",
+    "title": "FEMA Issues RFI to Modernize Cloud-Based Supply Chain Management System",
+    "body": "FEMA is seeking contractors to support cybersecurity, inventory, transportation, warehouse management and financial reconciliation. The post FEMA Issues RFI to Modernize Cloud-Based Supply Chain Management System first appeared on Executive Gov .",
+    "why": "Being able to produce at scale has become a competitive edge in its own right; factories are now a venture category.",
+    "sectors": [
+      "mfg"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "FEMA"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/fema-rfi-supply-chain-management-system",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "FEMA"
+    ]
+  },
+  {
+    "id": "u-20261102-odni-seeks-industry-input-on-flow-commercial-data-",
+    "d": "2026-11-02",
+    "title": "ODNI Seeks Industry Input on FLOW Commercial Data Platform",
+    "body": "ODNI’s OESET is surveying industry on FLOW, a commercial data platform for sanctions, supply chain and financial intelligence analysis. The post ODNI Seeks Industry Input on FLOW Commercial Data Platform first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "mfg"
+    ],
+    "type": "Research",
+    "companies": [
+      "ODNI",
+      "OESET"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/odni-flow-market-survey-commercial-data-platform",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "ODNI",
+      "OESET"
+    ]
+  },
+  {
+    "id": "u-20261102-dow-s-dale-marks-details-off-grid-prototype-under-",
+    "d": "2026-11-02",
+    "title": "DOW’s Dale Marks Details Off-Grid Prototype Under Next Great American Base Initiative",
+    "body": "The prototype will pair microgrids, a small nuclear reactor and air-gapped networks to keep operating 30 days without outside power.",
+    "why": "Bases need their own power for AI, sensors and lasers, which creates a defense market for new energy tech.",
+    "sectors": [
+      "energy"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/next-great-american-base-fortress-america-dale-marks",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261102-army-conducts-maiden-flight-of-hades-prototype-1-a",
+    "d": "2026-11-02",
+    "title": "Army Conducts Maiden Flight of HADES Prototype 1 Aircraft",
+    "body": "The Army has flown its HADES Prototype 1 ISR aircraft with SNC, paving the way for mission system integration and flight tests. The post Army Conducts Maiden Flight of HADES Prototype 1 Aircraft first appeared on Executive Gov .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sensing"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/army-hades-prototype-1-maiden-flight",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261102-aetc-adopts-three-pillar-strategy-to-speed-up-comb",
+    "d": "2026-11-02",
+    "title": "AETC Adopts Three-Pillar Strategy to Speed Up Combat-Ready Airmen Training",
+    "body": "AETC's AI agents could capture flight data and pilot debriefings, giving instructor pilots more time to teach. The post AETC Adopts Three-Pillar Strategy to Speed Up Combat-Ready Airmen Training first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "AETC"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/aetc-strategy-combat-ready-airmen-training",
+      "q": "news"
+    },
+    "addedAt": "2026-11-03T17:40:30.823Z",
+    "auto": true,
+    "orgs": [
+      "AETC"
+    ]
   },
   {
     "id": "u-20261101-uk-flies-protector-drone-on-first-home-operation-a",
