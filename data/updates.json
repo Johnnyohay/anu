@@ -1,5 +1,673 @@
 [
   {
+    "id": "u-20261104-india-taps-two-domestic-shipbuilders-for-5-7b-corv",
+    "d": "2026-11-04",
+    "title": "India taps two domestic shipbuilders for $5.7B corvette program",
+    "body": "India awarded Garden Reach Shipbuilders Engineers and Goa Shipyard Limited contracts to build five and three corvettes, respectively, for the country’s navy.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "sea"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Garden Reach Shipbuilders Engineers",
+      "Goa Shipyard Limited"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/india-taps-two-domestic-shipbuilders-for-5-7b-corvette-program/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Garden Reach Shipbuilders Engineers",
+      "Goa Shipyard Limited"
+    ]
+  },
+  {
+    "id": "u-20261104-exclusive-house-china-committee-pushes-air-force-o",
+    "d": "2026-11-04",
+    "title": "EXCLUSIVE: House China committee pushes Air Force on think tank cuts",
+    "body": "“Under-resourcing” the China Aerospace Studies Institute (CASI) “could risk undermining the ability of military leaders and civilian policymakers to understand” Beijing’s aerospace strategy and military prowess, according to a letter addressed to Air Force…",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground",
+      "adversary"
+    ],
+    "type": "Research",
+    "companies": [
+      "CASI"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/house-china-committee-pushes-air-force-on-think-tank-cuts/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "House China",
+      "Air Force",
+      "China Aerospace Studies Institute",
+      "CASI"
+    ]
+  },
+  {
+    "id": "u-20261104-shield-ai-cofounder-teases-snowball-of-x-bat-fight",
+    "d": "2026-11-04",
+    "title": "Shield AI cofounder teases ‘snowball’ of X-BAT fighter drone announcements in Europe",
+    "body": "Ryan Tseng told Breaking Defense that the prospective deals and new industry pacts will be publicized when “we’re ready to announce them.”",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "air",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Shield AI"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/shield-ai-cofounder-teases-snowball-of-x-bat-fighter-drone-announcements-in-europe/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Shield AI",
+      "Breaking Defense"
+    ]
+  },
+  {
+    "id": "u-20261104-congress-s-defense-advocates-take-big-hit-in-2026-",
+    "d": "2026-11-04",
+    "title": "Congress’s defense advocates take big hit in 2026 midterm elections",
+    "body": "A “blue tsunami” of Democrat wins in the midterms has huge implications for the makeup of the congressional defense committees next year.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/congresss-defense-advocates-take-big-hit-in-2026-midterm-elections/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261104-uk-airshow-riat-permanently-relocates-from-fairfor",
+    "d": "2026-11-04",
+    "title": "UK airshow RIAT permanently relocates from Fairford",
+    "body": "The new location for the show going forward will be MOD Boscombe Down, roughly 90 minutes south of Fairford by car and equidistant from London",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/uk-airshow-riat-permanently-relocates-from-fairford/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261104-leonardo-fincanteri-revamp-joint-venture-aiming-to",
+    "d": "2026-11-04",
+    "title": "Leonardo, Fincanteri revamp joint venture, aiming to trim frigate build time by 18 months",
+    "body": "Fincantieri CEO Pierroberto Folgiero said his company’s joint venture with Leonardo, the Orrizonte Sistemi Navali, now aims to cut down frigate production time by 18 months.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Leonardo",
+      "Fincanteri",
+      "Fincantieri",
+      "Sistemi Navali"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/leonardo-fincanteri-revamp-joint-venture-aiming-to-trim-frigate-build-time-by-18-months/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Leonardo",
+      "Fincanteri",
+      "Fincantieri",
+      "Sistemi Navali"
+    ]
+  },
+  {
+    "id": "u-20261104-israel-weapons-industry-expands-into-southeast-asi",
+    "d": "2026-11-04",
+    "title": "Israel Weapons Industry expands into Southeast Asia with Thailand’s deployment of counter-drone system",
+    "body": "“We are seeing strong demand for our platforms and systems across the region,” the company said in response to questions about its growth strategy for southern Asia.”",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Israel Weapons Industry"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/israel-weapons-industry-expands-into-southeast-asia-with-thailands-deployment-of-counter-drone-system/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Israel Weapons Industry"
+    ]
+  },
+  {
+    "id": "u-20261104-the-pentagon-needs-more-ammo-for-the-iran-war-smal",
+    "d": "2026-11-04",
+    "title": "The Pentagon needs more ammo for the Iran war. Small communities are paying the price.",
+    "body": "From polluted waterways to repeated safety violations, the Army’s aging ammunition factories have left a troubling legacy, The War Horse reports.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "The War Horse"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/pentagon/2026/11/04/the-pentagon-needs-more-ammo-for-the-iran-war-small-communities-are-paying-the-price/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Army",
+      "The War Horse"
+    ]
+  },
+  {
+    "id": "u-20261104-saildrone-expands-its-european-market-reach-with-m",
+    "d": "2026-11-04",
+    "title": "Saildrone expands its European market reach with manufacturing partner in Norway",
+    "body": "CEO Tom Fidjeland told reporters at the Euronaval trade show here that taking on the work of churning out Surveyors was “technically not difficult,” with a first mold already being readied.",
+    "why": "Being able to produce at scale has become a competitive edge in its own right; factories are now a venture category.",
+    "sectors": [
+      "mfg",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Saildrone",
+      "Surveyors"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/04/saildrone-expands-its-european-market-reach-with-manufacturing-partner-in-norway/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Saildrone",
+      "Surveyors"
+    ]
+  },
+  {
+    "id": "u-20261104-france-tasks-naval-group-to-develop-large-oceangoi",
+    "d": "2026-11-04",
+    "title": "France tasks Naval Group to develop large oceangoing underwater drone",
+    "body": "France signed a contract with shipbuilder Naval Group to develop an operational demonstrator of a large-sized oceangoing underwater drone, with sea trials to start in 2028.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Naval Group"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/04/france-tasks-naval-group-to-develop-large-oceangoing-underwater-drone/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Naval Group"
+    ]
+  },
+  {
+    "id": "u-20261104-mbda-s-high-speed-strike-missile-to-have-range-far",
+    "d": "2026-11-04",
+    "title": "MBDA’s high-speed strike missile to have range ‘far’ exceeding Exocet",
+    "body": "Stratus RS, for rapid strike, is being developed for France and the United Kingdom, and MBDA is awaiting a development contract from France’s Directorate General for Armament.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike"
+    ],
+    "type": "Contract",
+    "companies": [
+      "MBDA",
+      "Directorate",
+      "Armament"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/04/mbda-high-speed-strike-missile-to-have-range-far-exceeding-exocet/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "MBDA",
+      "Directorate",
+      "Armament"
+    ]
+  },
+  {
+    "id": "u-20261104-the-beechcraft-m-346n-is-the-only-known-aircraft-l",
+    "d": "2026-11-04",
+    "title": "The Beechcraft M-346N Is The Only Known Aircraft Left In The Navy’s Jet Trainer Competition",
+    "body": "Sierra Nevada Corp decided not to bid to replace the Navy's T-45s with its Freedom Jet, one of two known contenders left in the running.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Sierra Nevada Corp"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/the-beechcraft-m-346n-is-the-only-known-aircraft-left-in-the-navys-jet-trainer-competition",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Navy",
+      "Sierra Nevada Corp"
+    ]
+  },
+  {
+    "id": "u-20261104-usaf-widens-lower-cost-cruise-missile-effort-to-al",
+    "d": "2026-11-04",
+    "title": "USAF Widens Lower-Cost Cruise Missile Effort To Also Include Glide Bombs",
+    "body": "A new 'spiral' to the Extended Range Attack Munition program includes calls for unpowered and powered designs. The post USAF Widens Lower-Cost Cruise Missile Effort To Also Include Glide Bombs appeared first on TWZ .",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "USAF"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/usaf-widens-lower-cost-cruise-missile-effort-to-also-include-glide-bombs",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "USAF"
+    ]
+  },
+  {
+    "id": "u-20261104-general-atomics-afrl-eye-next-steps-for-autonomous",
+    "d": "2026-11-04",
+    "title": "General Atomics, AFRL Eye Next Steps for Autonomous Drone Concepts",
+    "body": "General Atomics, the maker of one of the Air Force’s first Collaborative Combat Aircraft, has ambitious plans for its family of semi-autonomous drones beyond the FQ-42, including a flying-wing aircraft capable of carrying out both reconnaissance and strike…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sensing"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "General Atomics",
+      "AFRL"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/general-atomics-afrl-next-steps-autonomous-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "General Atomics",
+      "AFRL",
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261104-royal-navy-carriers-operate-in-the-high-north-medi",
+    "d": "2026-11-04",
+    "title": "Royal Navy Carriers Operate in the High North, Mediterranean",
+    "body": "Royal Navy aircraft carrier HMS Prince of Wales (R09) is conducting operations across the High North as HMS Queen Elizabeth (RO8) trains in the Mediterranean.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "HMS Prince of Wales",
+      "Queen"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/04/royal-navy-carriers-operate-in-the-high-north-mediterranean",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Royal Navy",
+      "HMS Prince of Wales",
+      "Queen"
+    ]
+  },
+  {
+    "id": "u-20261104-unraveling-the-pentagon-s-quantum-problem",
+    "d": "2026-11-04",
+    "title": "Unraveling the Pentagon’s quantum problem",
+    "body": "Defense agencies have just five years to comply with Executive Order 14412. The work starts with spreading awareness.",
+    "why": "Better sensors and navigation that works without GPS are prerequisites for everything autonomous.",
+    "sectors": [
+      "sensing",
+      "policy"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/technology/2026/11/unraveling-pentagons-quantum-problem/417029/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261104-baykar-turns-its-bayraktar-tb2-into-a-carrier-for-",
+    "d": "2026-11-04",
+    "title": "Baykar turns its Bayraktar TB2 into a carrier for FPV drones",
+    "body": "Turkish drone maker Baykar has turned its Bayraktar TB2 combat drone into a flying carrier for small FPV attack drones, firing two of them at ground targets in a test released on Nov. 4.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Baykar"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/baykar-turns-its-bayraktar-tb2-into-a-carrier-for-fpv-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Baykar"
+    ]
+  },
+  {
+    "id": "u-20261104-chinese-satellites-track-u-s-carrier-group-crossin",
+    "d": "2026-11-04",
+    "title": "Chinese satellites track U.S. carrier group crossing South China Sea",
+    "body": "Satellite imagery released by the Chinese commercial company MizarVision appears to show the USS Theodore Roosevelt (CVN 71) carrier strike group in the South China Sea on Nov. 4, as the carrier heads toward the Middle East.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "adversary",
+      "space"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "MizarVision",
+      "CVN"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/chinese-satellites-track-u-s-carrier-group-crossing-south-china-sea/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "MizarVision",
+      "CVN"
+    ]
+  },
+  {
+    "id": "u-20261104-norway-deploys-nasams-to-russian-border-to-spot-st",
+    "d": "2026-11-04",
+    "title": "Norway deploys NASAMS to Russian border to spot stray drones",
+    "body": "Norway’s air force has deployed NASAMS air defense sensors to Kirkenes, near the Russian border, to detect drones that drift off course into Norwegian airspace, the Norwegian Ministry of Defense said in a press release.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "adversary",
+      "missiledef"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/norway-deploys-nasams-to-russian-border-to-spot-stray-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Ministry of Defense"
+    ]
+  },
+  {
+    "id": "u-20261104-gps-jamming-hits-almost-all-of-nato-s-eastern-flan",
+    "d": "2026-11-04",
+    "title": "GPS jamming hits almost all of NATO’s eastern flank in one day",
+    "body": "Satellite navigation interference hit almost the entire length of NATO’s eastern border on Nov. 3, according to a map of aircraft data published by the Italian flight-tracking project ItaMilRadar.",
+    "why": "Jamming and spectrum fights decide whether drones and radios work at all, so this quiet area keeps getting funded.",
+    "sectors": [
+      "ew",
+      "global",
+      "air",
+      "space"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "ItaMilRadar"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/gps-jamming-hits-almost-all-of-natos-eastern-flank-in-one-day/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "NATO",
+      "ItaMilRadar"
+    ]
+  },
+  {
+    "id": "u-20261104-saronic-launches-second-marauder-autonomous-ship-i",
+    "d": "2026-11-04",
+    "title": "Saronic launches second Marauder autonomous ship in Louisiana",
+    "body": "Saronic has put a second Marauder autonomous ship in the water at its shipyard in Franklin, Louisiana, and the vessel is now running under its own power, company CEO Dino Mavrookas said in a post on Nov. 3.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Saronic"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/saronic-launches-second-marauder-autonomous-ship-in-louisiana/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Saronic"
+    ]
+  },
+  {
+    "id": "u-20261104-u-s-air-force-steps-up-c-17-airlift-to-israel-and-",
+    "d": "2026-11-04",
+    "title": "U.S. Air Force steps up C-17 airlift to Israel and Kuwait",
+    "body": "U.S. Air Force C-17 Globemaster III transports have flown at least 16 missions into Israel’s Ovda Air Base since mid-October, most of them from Fort Bliss, Texas, the home of the U.S.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-air-force-steps-up-c-17-airlift-to-israel-and-kuwait/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261104-france-orders-ucuv-uncrewed-combat-submarine",
+    "d": "2026-11-04",
+    "title": "France orders UCUV uncrewed combat submarine",
+    "body": "France has ordered production of a large uncrewed combat submarine demonstrator for its navy, with first sea trials planned for 2028. The French defense procurement agency DGA and the Defense Innovation Agency signed the contract with Naval Group on Nov.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Contract",
+    "companies": [
+      "DGA",
+      "Naval Group"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/france-orders-ucuv-uncrewed-combat-submarine/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "DGA",
+      "Defense Innovation Agency",
+      "Naval Group"
+    ]
+  },
+  {
+    "id": "u-20261104-u-s-army-trains-with-amp-hel-laser-on-texas-border",
+    "d": "2026-11-04",
+    "title": "U.S. Army trains with AMP-HEL laser on Texas border",
+    "body": "U.S. Army soldiers on the southern border are training on the Army Multi-Purpose High Energy Laser, a vehicle-mounted 20-kilowatt laser that has already shot down cartel-linked drones, according to photos released by the Department of War.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "energy"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-trains-with-amp-hel-laser-on-texas-border/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "Department of War"
+    ]
+  },
+  {
+    "id": "u-20261104-u-s-troops-test-upgraded-bumblebee-interceptor-on-",
+    "d": "2026-11-04",
+    "title": "U.S. troops test upgraded Bumblebee interceptor on southern border",
+    "body": "Joint Task Force-Southern Border has deployed the Bumblebee Version 2, an updated light interceptor drone that destroys hostile drones by ramming them, for testing near the U.S.-Mexico border, according to photos and captions released by the U.S. military.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "air",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Joint Task Force",
+      "Southern Border"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-troops-test-upgraded-bumblebee-interceptor-on-southern-border/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Joint Task Force",
+      "Southern Border"
+    ]
+  },
+  {
+    "id": "u-20261104-u-s-troops-test-anduril-s-heimdal-drone-sensor-on-",
+    "d": "2026-11-04",
+    "title": "U.S. troops test Anduril’s Heimdal drone sensor on southern border",
+    "body": "U.S. Army soldiers on the southern border have set up an Anduril-built Heimdal Mobile Trailer Kit, a towable counter-drone sensor system, for testing near Chaparral, New Mexico, according to photos and captions released by the U.S. military.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sensing",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Anduril"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-troops-test-andurils-heimdal-drone-sensor-on-southern-border/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
     "id": "u-20261103-bae-systems-launches-new-sea-tridon-naval-gun-seri",
     "d": "2026-11-03",
     "title": "BAE Systems launches new Sea Tridon naval gun series",
@@ -472,6 +1140,450 @@
     "auto": true,
     "orgs": [
       "Auriga Space"
+    ]
+  },
+  {
+    "id": "u-20261103-exclusive-snc-pulls-out-of-navy-s-trainer-jet-comp",
+    "d": "2026-11-03",
+    "title": "EXCLUSIVE: SNC pulls out of Navy’s trainer jet competition, leaving Textron likely winner",
+    "body": "The service is now planning to issue an award for the UJTS program between July and the end of September 2027.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Contract",
+    "companies": [
+      "SNC",
+      "Textron"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/snc-pulls-out-of-navy-trainer-jet-t45-ujts-leonardo-textron/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "SNC",
+      "Navy",
+      "Textron"
+    ]
+  },
+  {
+    "id": "u-20261103-thales-subsidiary-lands-us-navy-contract-for-remot",
+    "d": "2026-11-03",
+    "title": "Thales subsidiary lands US Navy contract for remote mine hunting modules",
+    "body": "The contract, awarded to Advanced Acoustic Concepts, is worth $53.9 million and also covers engineering support for the modules.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Thales",
+      "Advanced Acoustic Concepts"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/thales-subsidiary-lands-us-navy-contract-for-remote-mine-hunting-modules/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Thales",
+      "US Navy",
+      "Advanced Acoustic Concepts"
+    ]
+  },
+  {
+    "id": "u-20261103-ausa-2026-the-ground-truth-on-the-army-s-next-chap",
+    "d": "2026-11-03",
+    "title": "AUSA 2026: The ground truth on the Army’s next chapter",
+    "body": "From autonomous warfare and drone innovation to acquisition reform and defense industrial base challenges, Breaking Defense examines the key developments and strategic priorities shaping the US Army’s future at AUSA 2026.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "mfg",
+      "policy"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/ausa-2026-the-ground-truth-on-the-armys-next-chapter/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "AUSA",
+      "Breaking Defense",
+      "US Army"
+    ]
+  },
+  {
+    "id": "u-20261103-wingman-out-ravenstorm-in-airbus-changes-tact-to-m",
+    "d": "2026-11-03",
+    "title": "Wingman out, Ravenstorm in: Airbus changes tact to meet Germany’s accelerated operations timeline",
+    "body": "In place of the defunct aircraft, Airbus is prioritizing development of the U760 Ravenstorm that features a subsonic cruise speed and an internal weapons payload of 500kg.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Airbus"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/airbus-ends-wingman-drone-to-meet-germanys-accelerated-operations-timeline/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Airbus"
+    ]
+  },
+  {
+    "id": "u-20261103-us-air-force-asks-industry-for-new-cruise-missile-",
+    "d": "2026-11-03",
+    "title": "US Air Force asks industry for new cruise missile for Ukraine",
+    "body": "The U.S. Air Force is looking for contractors to mass produce the Extended Range Attack Munition for Ukraine.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/2026/11/03/us-air-force-asks-industry-for-new-cruise-missile-for-ukraine/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "US Air Force",
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261103-defense-contractors-to-demo-cargo-drones-for-us-ma",
+    "d": "2026-11-03",
+    "title": "Defense contractors to demo cargo drones for US Marine Corps",
+    "body": "An event early next year in Huntsville, Alabama, will allow contractors to display their solutions for a Marine battlefield cargo drone.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/11/03/defense-contractors-to-demo-cargo-drones-for-us-marine-corps/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "US Marine Corps"
+    ]
+  },
+  {
+    "id": "u-20261103-what-trump-s-drastic-reduction-of-u-s-military-aid",
+    "d": "2026-11-03",
+    "title": "What Trump’s Drastic Reduction Of U.S. Military Aid To Israel Could Mean",
+    "body": "Trump announced he was cutting off Israel's $4 billion in annual aid by the end of the year. The post What Trump’s Drastic Reduction Of U.S. Military Aid To Israel Could Mean appeared first on TWZ .",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "TWZ"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/what-trumps-drastic-reduction-of-u-s-military-aid-to-israel-could-mean",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "TWZ"
+    ]
+  },
+  {
+    "id": "u-20261103-this-is-naval-group-s-concept-for-a-stealthy-drone",
+    "d": "2026-11-03",
+    "title": "This Is Naval Group’s Concept For A Stealthy, Drone-Armed Future Destroyer",
+    "body": "The SCX26 concept pairs a stealthy, split-superstructure design with advanced weapons and extensive facilities for uncrewed systems. The post This Is Naval Group’s Concept For A Stealthy, Drone-Armed Future Destroyer appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "This Is Naval Group"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/this-is-naval-groups-concept-for-a-stealthy-drone-armed-future-destroyer",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "This Is Naval Group"
+    ]
+  },
+  {
+    "id": "u-20261103-prototype-x-bat-vtol-fighter-drone-unveiled",
+    "d": "2026-11-03",
+    "title": "Prototype X-BAT VTOL ‘Fighter’ Drone Unveiled",
+    "body": "We are finally getting our first look at Shield AI's extremely ambitious tail-sitting X-BAT multi-role combat drone. The post Prototype X-BAT VTOL ‘Fighter’ Drone Unveiled appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Shield AI"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/x-bat-vtol-fighter-drone-prototype-unveiled",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Shield AI"
+    ]
+  },
+  {
+    "id": "u-20261103-first-hh-60w-arrives-at-andrews-for-contingency-re",
+    "d": "2026-11-03",
+    "title": "First HH-60W Arrives at Andrews for Contingency Response, VIP Transport",
+    "body": "Like a new car from the dealership, an HH-60W helicopter touched down at Joint Base Andrews, Md., on Nov. 2 with paperwork, a set of keys, and that fresh-from-the-factory smell.",
+    "why": "Being able to produce at scale has become a competitive edge in its own right; factories are now a venture category.",
+    "sectors": [
+      "mfg"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "VIP Transport"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/first-hh-60w-arrives-andrews-contingency-response-vip-airlift/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "VIP Transport"
+    ]
+  },
+  {
+    "id": "u-20261103-us-conducts-airstrikes-on-iran-latest-in-series-of",
+    "d": "2026-11-03",
+    "title": "US Conducts Airstrikes on Iran, Latest in Series of Undisclosed Attacks",
+    "body": "The U.S. conducted limited airstrikes against Iran on Nov. 2, the latest in a series of attacks the U.S. military has undertaken in the past few weeks but not publicly disclosed. The strikes occurred just ahead of the U.S. midterm elections.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/us-conducts-airstrikes-iran-latest-series-undisclosed-attacks/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261103-first-flight-ii-san-antonio-class-amphib-completes",
+    "d": "2026-11-03",
+    "title": "First Flight II San Antonio-class Amphib Completes Builder’s Trials",
+    "body": "The first Flight II San Antonio-class amphibious transport dock completed builder’s sea trials over the weekend, Ingall’s Shipbuilding announced Tuesday.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/03/first-flight-ii-san-antonio-class-amphib-completes-builders-trials",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261103-u-k-forces-track-russian-warships-in-3-operations-",
+    "d": "2026-11-03",
+    "title": "U.K. Forces Track Russian Warships in 3 Operations Spanning 2 Weeks",
+    "body": "The Royal Navy and Royal Air Force tracked Russian ships operating near the U.K. over three operations spanning a two-week period last month, the services announced Monday.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/03/u-k-forces-track-russian-warships-in-3-operations-spanning-2-weeks",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "K. Forces",
+      "Royal Navy",
+      "Royal Air Force"
+    ]
+  },
+  {
+    "id": "u-20261103-pentagon-is-beginning-to-follow-ukraine-into-wider",
+    "d": "2026-11-03",
+    "title": "Pentagon is beginning to follow Ukraine into wider use of ground robots",
+    "body": "But many U.S. UGVs are more complicated than the attritable ones that Kyiv is buying.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/defense-systems/2026/11/pentagon-ukraine-ground-robots/417011/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261103-tobyhanna-army-depot-launches-campaign-plan-aligne",
+    "d": "2026-11-03",
+    "title": "Tobyhanna Army Depot Launches Campaign Plan Aligned With DOW Priorities",
+    "body": "Tobyhanna Army Depot has launched a campaign plan centered on workforce development, joint force readiness and advanced manufacturing. The post Tobyhanna Army Depot Launches Campaign Plan Aligned With DOW Priorities first appeared on Executive Gov .",
+    "why": "Being able to produce at scale has become a competitive edge in its own right; factories are now a venture category.",
+    "sectors": [
+      "mfg"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/tobyhanna-army-depot-campaign-plan-dow-priorities",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Tobyhanna Army Depot"
+    ]
+  },
+  {
+    "id": "u-20261103-space-systems-command-weighs-8-ai-projects-for-fig",
+    "d": "2026-11-03",
+    "title": "Space Systems Command Weighs 8 AI Projects for Fight Tonight Funding",
+    "body": "HII, Hughes Network Systems and Microsoft are among the industry partners developing AI capabilities for Space Force missions. The post Space Systems Command Weighs 8 AI Projects for Fight Tonight Funding first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "HII",
+      "Hughes Network Systems",
+      "Microsoft",
+      "Fight Tonight"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/ssc-ai-projects-fight-tonight-funding",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Space Systems Command",
+      "HII",
+      "Hughes Network Systems",
+      "Microsoft",
+      "Space Force",
+      "Fight Tonight"
+    ]
+  },
+  {
+    "id": "u-20261103-patient-ai-act-draft-seeks-discussion-on-payment-r",
+    "d": "2026-11-03",
+    "title": "PATIENT AI Act Draft Seeks Discussion on Payment Rules for Healthcare AI",
+    "body": "The Senate HELP Committee chairman seeks comments on a draft defining FDA and ONC roles and creating a payment pathway for AI tools. The post PATIENT AI Act Draft Seeks Discussion on Payment Rules for Healthcare AI first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "policy"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "FDA",
+      "ONC"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/senate-patient-ai-act-healthcare-ai-discussion-draft",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Senate HELP Committee",
+      "FDA",
+      "ONC"
+    ]
+  },
+  {
+    "id": "u-20261103-dow-offers-neros-up-to-450m-to-expand-domestic-dro",
+    "d": "2026-11-03",
+    "title": "DOW Offers Neros Up to $450M to Expand Domestic Drone Production",
+    "body": "Neros plans to manufacture propulsion motors, flight stacks, radios and thermal sensors at its Torrance, California, facility. The post DOW Offers Neros Up to $450M to Expand Domestic Drone Production first appeared on Executive Gov .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Neros"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/dow-neros-drone-production-expansion",
+      "q": "news"
+    },
+    "addedAt": "2026-11-04T17:54:35.045Z",
+    "auto": true,
+    "orgs": [
+      "Neros"
     ]
   },
   {

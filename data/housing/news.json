@@ -1,5 +1,97 @@
 [
  {
+  "id": "h-20261104-can-mls-portals-turn-listing-data-into-next-steps",
+  "d": "2026-11-04",
+  "title": "Can MLS portals turn listing data into next steps",
+  "body": "RESO conversations and MLS research suggest portals rarely connect CRM context to workflows in-session",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/crm-context-mls-portal/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261104-mortgage-applications-down-1-2-as-arm-share-rises",
+  "d": "2026-11-04",
+  "title": "Mortgage applications down 1.2% as ARM share rises",
+  "body": "ARM share rose to 11.4% while purchase applications fell 4% during the past week",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mortgage-applications-down-arm/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261104-housecanary-expands-google-listings-program-with-t",
+  "d": "2026-11-04",
+  "title": "HouseCanary expands Google Listings Program with three brokerages",
+  "body": "The additions include a 700-agent Florida brokerage and ENRG Realty’s 14-state network",
+  "topics": [
+   "inventory"
+  ],
+  "states": [
+   "FL"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/housecanary-expands-google-listings/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261104-beyond-the-credit-report-how-lenders-can-navigate-",
+  "d": "2026-11-04",
+  "title": "Beyond the credit report: How lenders can navigate the next era of mortgage credit",
+  "body": "Advantage Partners Solutions’ Patrick Tynan explains why new scoring options, rising costs and evolving credit requirements are changing how lenders approach mortgage credit strategy.",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/vantagescore-4-mortgage-credit-strategy/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261104-october-2026-monthly-housing-trends-buyers-and-sel",
+  "d": "2026-11-04",
+  "title": "October 2026 Monthly Housing Trends: Buyers and Sellers Hit Pause as Rates Surge",
+  "body": "Surging mortgage rates made buyers and sellers press pause in October. Contract signings fell 17% from a year ago, the weakest October on record, and new listings dropped 7.5%, while price cuts and delistings held steady.",
+  "topics": [
+   "rates",
+   "prices",
+   "inventory",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/october-2026-data/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261104-is-flipping-houses-still-worth-it-a-20-year-flippe",
+  "d": "2026-11-04",
+  "title": "Is Flipping Houses Still Worth It? A 20-Year Flipper Shares What’s Working",
+  "body": "Is flipping houses still worth it when the market slows down? The easy appreciation days may be over, but investors who underwrite their deals with discipline are still finding ways [ ]",
+  "topics": [
+   "prices",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-792",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261103-the-concessions-field-problem-that-breaks-pay-for-",
   "d": "2026-11-03",
   "title": "The concessions field problem that breaks pay-for-listing data models",
