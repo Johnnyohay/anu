@@ -42,7 +42,7 @@ export const browserApi: Api = {
       modes: Object.entries(MODES).map(([id, m]) => ({ id, label: m.label })),
       sources: Object.entries(SOURCES).map(([id, s]) => ({ id, label: s.label })),
       semantic: false,
-      engine: { engine: "github", model: "GitHub Models", label: "GitHub Models, answered on GitHub (free)", web: false },
+      engine: { engine: "github", model: "Groq", label: "Answered on GitHub (free)", web: false },
       checker: null,
       brief: getBrief(desk) as Meta["brief"],
       upcoming: upcomingEvents(desk, { days: 60 }) as Meta["upcoming"],

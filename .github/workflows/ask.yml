@@ -2,7 +2,8 @@ name: Ask ANU
 
 # Open an issue titled "Ask ANU: <question>" (the site's Ask button does this for you),
 # or comment on one to follow up. ANU answers in a comment within about a minute.
-# Free: runs on GitHub Actions and GitHub Models with the built-in token; nothing to pay or set up.
+# Free: runs on GitHub Actions with Groq (add a free GROQ_API_KEY secret from console.groq.com)
+# or, without a key, a small model started inside the job (slower, a few minutes per answer).
 on:
   issues:
     types: [opened]
@@ -12,7 +13,6 @@ on:
 permissions:
   contents: read
   issues: write
-  models: read
 
 concurrency:
   group: ask-anu-${{ github.event.issue.number }}
@@ -25,6 +25,9 @@ jobs:
       github.actor == github.repository_owner &&
       (github.event_name == 'issues' || !contains(github.event.comment.body, '<!-- anu-answer -->'))
     runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -32,14 +35,27 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - uses: actions/cache@v4
+        if: env.GROQ_API_KEY == ''
+        with:
+          path: ~/.ollama/models
+          key: ollama-qwen3.5:4b
+      - name: Start a free model in the job (no Groq key set)
+        if: env.GROQ_API_KEY == ''
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          sudo systemctl stop ollama 2>/dev/null || true   # run our own, with the cached model folder
+          (OLLAMA_MODELS=$HOME/.ollama/models ollama serve > /tmp/ollama.log 2>&1 &)
+          for _ in $(seq 1 30); do curl -s localhost:11434/api/tags >/dev/null && break; sleep 1; done
+          OLLAMA_MODELS=$HOME/.ollama/models ollama pull qwen3.5:4b
+          echo "OLLAMA_MODEL=qwen3.5:4b" >> "$GITHUB_ENV"
       - name: Collect the conversation so far
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh api "repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments" --paginate --jq '[.[] | {author: .user.login, body: .body}]' > thread.json
-      - name: Answer with GitHub Models
+      - name: Answer
         env:
-          GITHUB_TOKEN: ${{ github.token }}
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: THREAD="$(cat thread.json)" npx tsx src/answer-issue.ts
