@@ -1,5 +1,488 @@
 [
   {
+    "id": "u-20261105-saildrone-inks-agreement-with-norwegian-shipbuilde",
+    "d": "2026-11-05",
+    "title": "Saildrone inks agreement with Norwegian shipbuilder Umoe Mandal to produce USVs",
+    "body": "The agreement is the latest in a series of moves by Saildrone to expand into Europe.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Saildrone",
+      "Umoe Mandal"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/saildrone-inks-agreement-with-norwegian-shipbuilder-umoe-mandal-to-produce-usvs/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Saildrone",
+      "Umoe Mandal"
+    ]
+  },
+  {
+    "id": "u-20261105-fairbanks-morse-defense-in-talks-with-navy-about-s",
+    "d": "2026-11-05",
+    "title": "Fairbanks Morse Defense in talks with Navy about Seawolf-class submarine repairs",
+    "body": "Fairbanks Morse Defense is already conducting repairs on the Ohio- and Los Angeles-class submarines.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Fairbanks Morse Defense"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/fairbanks-morse-defense-in-talks-with-navy-about-seawolf-class-submarine-repairs/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Fairbanks Morse Defense",
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261105-shield-ai-acquires-radar-firm-echodyne-in-5-3b-dea",
+    "d": "2026-11-05",
+    "title": "Shield AI acquires radar firm Echodyne in $5.3B deal",
+    "body": "The deal, which is expected to close in early 2027, will give Shield an in-house counter-UAS offering",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "air",
+      "sensing",
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [
+      "Shield AI",
+      "Echodyne"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/shield-ai-acquires-radar-firm-echodyne-in-5-3b-deal/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Shield AI",
+      "Echodyne"
+    ]
+  },
+  {
+    "id": "u-20261105-eurofighter-eyes-sales-of-200-additional-aircraft",
+    "d": "2026-11-05",
+    "title": "Eurofighter eyes sales of 200 additional aircraft",
+    "body": "Potential new deals include second batch orders for Turkey and the Kingdom of Saudi Arabia, jointly amounting to 78 units, while closing an order from Austria would add a further 36 aircraft.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/eurofighter-eyes-sales-of-200-additional-aircraft/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261105-israeli-defense-company-says-this-trigger-is-progr",
+    "d": "2026-11-05",
+    "title": "Israeli defense company says this trigger is programmed to shoot drones",
+    "body": "The company says the Arbel electromechanical device will release a cadence of fire optimized for shooting down drones.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/news/2026/11/05/israeli-defense-company-says-this-trigger-is-programmed-to-shoot-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261105-mbda-plans-to-fly-fat-hypersonic-interceptor-demon",
+    "d": "2026-11-05",
+    "title": "MBDA plans to fly ‘fat’ hypersonic interceptor demonstrator before end-2029",
+    "body": "“So it’s a bit fat, but it’s a Formula 1. It’s hypersonic, truly hypersonic, not just Mach 5,\" MBDA executive Lionel Mazenq said of the envisioned Hydis interceptor missile for Europe.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "strike",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "MBDA"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/05/mbda-plans-to-fly-fat-hypersonic-interceptor-demonstrator-before-end-2029/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "MBDA"
+    ]
+  },
+  {
+    "id": "u-20261105-nasa-announces-x-70-fractal-experimental-aircraft-",
+    "d": "2026-11-05",
+    "title": "NASA Announces X-70 “Fractal” Experimental Aircraft (Updated)",
+    "body": "The X-70 will be able to test new flight control capabilities and will push the bounds of maneuverability. The post NASA Announces X-70 “Fractal” Experimental Aircraft (Updated) appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Experimental Aircraft"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/space/nasa-announces-x-70-fractal-experimental-aircraft",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "NASA",
+      "Experimental Aircraft"
+    ]
+  },
+  {
+    "id": "u-20261105-space-force-chief-eyes-growth-in-components-to-mee",
+    "d": "2026-11-05",
+    "title": "Space Force Chief Eyes Growth in Components to Meet Operational Demand",
+    "body": "The Space Force wants to increase the size of its components to better support combatant commands in the coming years, according to Chief of Space Operations Gen. Douglas Schiess.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Space Operations"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/space-force-chief-component-growth-operational-demand/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Space Force",
+      "Space Operations"
+    ]
+  },
+  {
+    "id": "u-20261105-pentagon-loans-150m-to-leolabs-to-build-ground-rad",
+    "d": "2026-11-05",
+    "title": "Pentagon Loans $150M to LeoLabs to Build Ground Radars",
+    "body": "The Pentagon’s Office of Strategic Capital announced a $150 million loan agreement to space intelligence company LeoLabs to expand its manufacturing capacity and add dozens of radars to its global network by 2030.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "mfg",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "LeoLabs"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/pentagon-loans-150m-to-leolabs-to-build-ground-radars/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "LeoLabs",
+      "Office of Strategic Capital"
+    ]
+  },
+  {
+    "id": "u-20261105-uss-stout-loses-power-during-port-visit-due-to-eng",
+    "d": "2026-11-05",
+    "title": "USS Stout Loses Power During Port Visit Due to ‘Engineering Casualty’",
+    "body": "A deployed destroyer recently lost power during a port visit to Italy, USNI News understands. USS Stout (DDG-55) was in port in Augusta Bay, Italy, for a scheduled port visit on Oct.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "USS Stout"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/05/uss-stout-loses-power-during-port-visit-due-to-engineering-casualty",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "USS Stout",
+      "USNI News"
+    ]
+  },
+  {
+    "id": "u-20261105-cork-takes-the-heat-so-draco-s-data-can-survive",
+    "d": "2026-11-05",
+    "title": "Cork Takes the Heat So DRACO’s Data Can Survive",
+    "body": "Mozelos, Portugal, September 2, 2026 – Amorim Cork Solutions is contributing its P50 cork-based thermal protection material to DRACO, a European Space Agency (ESA) mission designed to capture rare in-flight [ ] The post Cork Takes the Heat So DRACO’s Data Can…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Amorim Cork Solutions",
+      "Data"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/cork-takes-the-heat-so-dracos-data-can-survive/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Amorim Cork Solutions",
+      "European Space Agency",
+      "ESA",
+      "Data"
+    ]
+  },
+  {
+    "id": "u-20261105-building-a-highway-to-the-moon-and-back-with-winni",
+    "d": "2026-11-05",
+    "title": "Building a ‘highway to the moon and back’ with Winnie Lai",
+    "body": "In this episode, SpaceNews’ Mike Gruss speaks with Winnie Lai, CEO of Auriga Space.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Auriga Space"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/building-a-highway-to-the-moon-and-back-with-winnie-lai/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "SpaceNews",
+      "Auriga Space"
+    ]
+  },
+  {
+    "id": "u-20261105-general-atomics-joins-army-navy-hypersonic-glide-b",
+    "d": "2026-11-05",
+    "title": "General Atomics joins Army-Navy hypersonic glide body production",
+    "body": "General Atomics Electromagnetic Systems will build parts for the hypersonic glide body used by the U.S. Army’s Dark Eagle and the U.S.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "General Atomics"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/general-atomics-joins-army-navy-hypersonic-glide-body-production/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "General Atomics Electromagnetic Systems",
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261105-u-s-marine-corps-ch-53k-rescues-mh-60s-from-10-000",
+    "d": "2026-11-05",
+    "title": "U.S. Marine Corps CH-53K rescues MH-60S from 10,000 feet in California",
+    "body": "A U.S. Marine Corps CH-53K King Stallion heavy-lift helicopter has airlifted a U.S. Navy MH-60S Seahawk off a mountainside in California’s Sierra Nevada, recovering the stranded helicopter undamaged so it can fly again, the U.S. Navy said.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-marine-corps-ch-53k-rescues-mh-60s-from-10000-feet-in-california/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Marine Corps",
+      "U.S. Navy"
+    ]
+  },
+  {
+    "id": "u-20261105-u-s-army-creates-new-office-to-run-aerial-and-grou",
+    "d": "2026-11-05",
+    "title": "U.S. Army creates new office to run aerial and ground surveillance",
+    "body": "The U.S. Army has merged two of its sensor acquisition offices into a single organization responsible for everything from spy planes to perimeter sensors at bases, the service announced.",
+    "why": "Better sensors and navigation that works without GPS are prerequisites for everything autonomous.",
+    "sectors": [
+      "sensing",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-creates-new-office-to-run-aerial-and-ground-surveillance/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261105-slovenia-tests-asgard-anti-drone-turret-with-m134d",
+    "d": "2026-11-05",
+    "title": "Slovenia tests ASGARD anti-drone turret with M134D Gatling gun",
+    "body": "Slovenian company Valhalla Turrets has finished several days of live-fire testing of its ASGARD counter-drone turret armed with a Dillon Aero M134D 7.62 mm Gatling gun, firing thousands of rounds during the trials, the company said on social media.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Valhalla Turrets",
+      "Dillon Aero"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/slovenia-tests-asgard-anti-drone-turret-with-m134d-gatling-gun/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Valhalla Turrets",
+      "Dillon Aero"
+    ]
+  },
+  {
+    "id": "u-20261105-u-s-air-force-studies-new-tool-to-manage-battlefie",
+    "d": "2026-11-05",
+    "title": "U.S. Air Force studies new tool to manage battlefield spectrum",
+    "body": "The U.S. Air Force has started market research for a new electromagnetic battle management capability, the Department of the Air Force Multidomain Adaptive Management and Battle Space Awareness, or DAF-MAMBA, which it describes as part of the Advanced Battle…",
+    "why": "Jamming and spectrum fights decide whether drones and radios work at all, so this quiet area keeps getting funded.",
+    "sectors": [
+      "ew",
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Battle"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-air-force-studies-new-tool-to-manage-battlefield-spectrum/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Air Force",
+      "Department of the Air Force Multidomain",
+      "Battle"
+    ]
+  },
+  {
+    "id": "u-20261105-u-s-air-force-wants-1-000-more-eram-missiles-withi",
+    "d": "2026-11-05",
+    "title": "U.S. Air Force wants 1,000 more ERAM missiles within 15 months",
+    "body": "The U.S. Air Force is looking for companies that can build more than 1,000 Extended Range Attack Munitions, the low-cost air-launched cruise missile developed for Ukraine’s F-16s, with deliveries starting no later than three months after a contract is signed…",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "global"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-air-force-wants-1000-more-eram-missiles-within-15-months/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261105-boeing-to-upgrade-more-p-8a-submarine-hunters-for-",
+    "d": "2026-11-05",
+    "title": "Boeing to upgrade more P-8A submarine hunters for U.S. Navy and Australia",
+    "body": "The U.S. Navy has awarded Boeing a $119.7 million contract modification to buy nine more Increment 3 Block 2 retrofit kits for P-8A Poseidon maritime patrol aircraft, seven for the U.S.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "global",
+      "air",
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [
+      "Boeing"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/boeing-to-upgrade-more-p-8a-submarine-hunters-for-u-s-navy-and-australia/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Boeing"
+    ]
+  },
+  {
     "id": "u-20261104-india-taps-two-domestic-shipbuilders-for-5-7b-corv",
     "d": "2026-11-04",
     "title": "India taps two domestic shipbuilders for $5.7B corvette program",
@@ -666,6 +1149,433 @@
     "addedAt": "2026-11-04T17:54:35.045Z",
     "auto": true,
     "orgs": []
+  },
+  {
+    "id": "u-20261104-navy-unfairly-evaluated-saildrone-musv-proposal-co",
+    "d": "2026-11-04",
+    "title": "Navy unfairly evaluated Saildrone MUSV proposal, court finds",
+    "body": "The court found that the Navy “engaged in disparate treatment” toward Saildrone’s MUSV proposal, according to an opinion unsealed Wednesday.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Saildrone"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/navy-unfairly-evaluated-saildrone-musv-proposal-court-finds/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261104-what-now-budget-fight-hegseth-impeachment-on-deck-",
+    "d": "2026-11-04",
+    "title": "What now? Budget fight, Hegseth impeachment on deck for defense-focused lawmakers after midterms",
+    "body": "Republicans now have a small window to advance defense funding priorities before Democrats take control of Capitol Hill.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/what-now-budget-fight-hegseth-impeachment-on-deck-for-defense-focused-lawmakers-after-midterms/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261104-naval-group-unveils-new-drone-carrier-concept",
+    "d": "2026-11-04",
+    "title": "Naval Group unveils new drone carrier concept",
+    "body": "“The return of high-intensity conflict and the emergence of hybrid naval warfare require a new vision. Naval Group answers with a new concept ship: SCX 26,” the company stated.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Naval Group"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/naval-group-unveils-new-drone-carrier-concept/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Naval Group"
+    ]
+  },
+  {
+    "id": "u-20261104-tech-expert-embeds-prototyped-dozens-of-apps-along",
+    "d": "2026-11-04",
+    "title": "Tech expert ‘embeds’ prototyped dozens of apps alongside Transcom operators during Iran war",
+    "body": "U.S. Transportation Command's CDAO briefed DefenseScoop on some of those AI bot use cases in an exclusive interview. The post Tech expert ‘embeds’ prototyped dozens of apps alongside Transcom operators during Iran war appeared first on DefenseScoop .",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "ai"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Transcom"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/04/prototype-apps-transportation-command-operation-epic-fury/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Transcom",
+      "U.S. Transportation Command",
+      "CDAO",
+      "DefenseScoop"
+    ]
+  },
+  {
+    "id": "u-20261104-space-force-chief-intelligence-officials-making-su",
+    "d": "2026-11-04",
+    "title": "Space Force chief: Intelligence officials ‘making sure we get lessons learned’ from recent Russian satellite maneuvers near commercial sat",
+    "body": "Gen. Douglas Schiess suggested that the incident further highlighted the need for the Space Force to be able to defend U.S. assets.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/04/space-force-gen-schiess-russian-satellite-maneuvers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Space Force"
+    ]
+  },
+  {
+    "id": "u-20261104-amid-iran-conflict-non-hostile-deaths-of-2-us-airm",
+    "d": "2026-11-04",
+    "title": "Amid Iran conflict, ‘non-hostile’ deaths of 2 US airmen raise overseas toll",
+    "body": "Two U.S. airmen supporting operations against Iran died last week in \"non-hostile\" incidents, raising the death toll to 23 since the war began.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/news/pentagon-congress/2026/11/04/amid-iran-conflict-non-hostile-deaths-of-2-us-airmen-raise-overseas-toll-to-23/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261104-pakistan-joins-air-to-air-missile-club-with-succes",
+    "d": "2026-11-04",
+    "title": "Pakistan Joins Air-to-Air Missile Club With Successful Test Of Fa’az",
+    "body": "The test is a major step toward Pakistan’s homegrown air-to-air missile capability, despite already fielding advanced Chinese weapons. The post Pakistan Joins Air-to-Air Missile Club With Successful Test Of Fa’az appeared first on TWZ .",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Air-to-Air Missile Club"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/pakistan-joins-air-to-air-missile-club-with-successful-test-of-faaz",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Air-to-Air Missile Club"
+    ]
+  },
+  {
+    "id": "u-20261104-how-former-airmen-fared-in-the-2026-midterm-electi",
+    "d": "2026-11-04",
+    "title": "How Former Airmen Fared in the 2026 Midterm Elections",
+    "body": "Fourteen former Airmen were elected to Congress in the 2026 midterms, which overturned leadership for the next Congress.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/how-former-airmen-fared-2026-midterm-elections/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261104-shield-ai-moves-x-bat-drone-into-testing-after-rap",
+    "d": "2026-11-04",
+    "title": "Shield AI Moves X-BAT Drone into Testing After Rapid Prototype Construction",
+    "body": "Shield AI has finished building its first full-scale prototype X-BAT, a vertical takeoff-and-landing autonomous drone, and is now moving it into a new development and testing phase.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Shield AI"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/shield-ai-moves-x-bat-drone-into-testing-after-rapid-prototype-construction/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Shield AI"
+    ]
+  },
+  {
+    "id": "u-20261104-report-to-congress-on-the-federal-fleet-of-oceanog",
+    "d": "2026-11-04",
+    "title": "Report to Congress on the Federal Fleet of Oceanographic Research Vessels",
+    "body": "The following is the Oct. 28, 2026, Congressional Research Service report, The Federal Fleet of Oceanographic Research Vessels: Issues for Congress.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Congressional Research Service"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/04/report-to-congress-on-the-federal-fleet-of-oceanographic-research-vessels",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Congressional Research Service"
+    ]
+  },
+  {
+    "id": "u-20261104-marine-dies-during-training-event-in-japan",
+    "d": "2026-11-04",
+    "title": "Marine Dies During Training Event in Japan",
+    "body": "A Marine died Tuesday during a training event at Camp Schwab in Okinawa, Japan, 3rd Marine Division announced Wednesday. Few details were available about the Marine’s death.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/04/marine-dies-during-training-event-in-japan",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "3rd Marine Division"
+    ]
+  },
+  {
+    "id": "u-20261104-dem-lawmakers-vow-inquest-into-cisa-cuts-intel-pol",
+    "d": "2026-11-04",
+    "title": "Dem lawmakers vow inquest into CISA cuts, intel policy",
+    "body": "House Democrats will investigate the administration's cyberdefense cuts, while Senate Dems will control confirmation hearings for the officials who lead the nation’s security agencies.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "CISA"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/policy/2026/11/democrats-midterm-sweep-puts-cisa-cuts-intelligence-disputes-under-scrutiny/417058/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "CISA",
+      "House",
+      "Senate"
+    ]
+  },
+  {
+    "id": "u-20261104-cancellations-investigations-and-even-impeachment-",
+    "d": "2026-11-04",
+    "title": "Cancellations, investigations, and even impeachment could be ahead under Democratic Congress",
+    "body": "Efforts like Autonomous Warfare Command, the Golden Fleet, and more could crumble without funding.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Golden Fleet"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/policy/2026/11/impeachment-investigations-canceled-projects-democratic-congress/417053/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Congress",
+      "Autonomous Warfare Command",
+      "Golden Fleet"
+    ]
+  },
+  {
+    "id": "u-20261104-centcom-benefits-from-project-agincourt-drone-domi",
+    "d": "2026-11-04",
+    "title": "Centcom Benefits From Project Agincourt, Drone Dominance Efforts",
+    "body": "Frontline troops in the U.S. Central Command area of responsibility have received more than 25,000 unmanned aerial systems and counter-UAS so far this year to help them better execute their mission.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4641652/centcom-benefits-from-project-agincourt-drone-dominance-efforts/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Central Command"
+    ]
+  },
+  {
+    "id": "u-20261104-u-s-colombia-launch-joint-exercise-to-strengthen-r",
+    "d": "2026-11-04",
+    "title": "U.S., Colombia Launch Joint Exercise to Strengthen Readiness, Regional Security",
+    "body": "The U.S. and Colombian armies officially launched Exercise Southern Vanguard 2027 during a ceremony in Tolemaida, Colombia, bringing together approximately 800 military personnel to strengthen interoperability, readiness and bilateral security cooperation.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4641347/us-colombia-launch-joint-exercise-to-strengthen-readiness-regional-security/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261104-odni-discloses-78-1b-in-fy2026-intelligence-approp",
+    "d": "2026-11-04",
+    "title": "ODNI Discloses $78.1B in FY2026 Intelligence Appropriations",
+    "body": "ODNI’s FY 2026 National Intelligence Program appropriation came in $3.8 billion below the $81.9 billion requested for the year. The post ODNI Discloses $78.1B in FY2026 Intelligence Appropriations first appeared on Executive Gov .",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "ODNI"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/odni-fy2026-intelligence-appropriations",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "ODNI"
+    ]
+  },
+  {
+    "id": "u-20261104-uscis-opens-market-research-on-ai-driven-contact-c",
+    "d": "2026-11-04",
+    "title": "USCIS Opens Market Research on AI-Driven Contact Center Recompete",
+    "body": "USCIS has issued an RFI for ECX2, a cloud contact center recompete covering AI tools and about 15 million calls a year. The post USCIS Opens Market Research on AI-Driven Contact Center Recompete first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "USCIS"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/uscis-ai-enabled-contact-center-recompete-rfi",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "USCIS"
+    ]
+  },
+  {
+    "id": "u-20261104-emil-michael-directs-dow-board-study-on-software-d",
+    "d": "2026-11-04",
+    "title": "Emil Michael Directs DOW Board Study on Software Delivery, Commercial AI",
+    "body": "DOW R E Chief Emil Michael has directed an advisory board to study DOW's software delivery structure and commercial AI and cloud use. The post Emil Michael Directs DOW Board Study on Software Delivery, Commercial AI first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Research",
+    "companies": [
+      "Board"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/dow-emil-michael-software-delivery-ai-cloud-study",
+      "q": "news"
+    },
+    "addedAt": "2026-11-05T17:56:37.483Z",
+    "auto": true,
+    "orgs": [
+      "Board",
+      "DOW"
+    ]
   },
   {
     "id": "u-20261103-bae-systems-launches-new-sea-tridon-naval-gun-seri",

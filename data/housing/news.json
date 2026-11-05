@@ -1,5 +1,83 @@
 [
  {
+  "id": "h-20261105-homeownership-divides-widen-as-older-wealthier-buy",
+  "d": "2026-11-05",
+  "title": "Homeownership divides widen as older, wealthier buyers dominate 2026 market",
+  "body": "Median buyer age was 58 and owners typically held homes for 12 years before selling, the longest tenure recorded",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/buyers-aging-sellers-12-years/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261105-vantagescore-4-0-can-create-more-homebuyers-now-am",
+  "d": "2026-11-05",
+  "title": "VantageScore 4.0 can create more homebuyers. Now America needs more homes.",
+  "body": "FHFA approved VantageScore 4.0 in 2022, and GSE lenders gained broad access in September",
+  "topics": [
+   "prices",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/vantagescore-4-housing-supply/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261105-mortgage-rates-fall-for-a-third-straight-week",
+  "d": "2026-11-05",
+  "title": "Mortgage Rates Fall for a Third Straight Week",
+  "body": "The Freddie Mac 30-year fixed mortgage rate fell 6 basis points to 7.18% this week as bond yields eased.",
+  "topics": [
+   "rates",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/freddie-mac-mortgage-rates-november-5-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261105-weekly-housing-trends-u-s-market-update-week-endin",
+  "d": "2026-11-05",
+  "title": "Weekly Housing Trends: U.S. Market Update (Week Ending Oct. 31, 2026)",
+  "body": "Get the latest U.S. housing market trends, including inventory shifts, listing activity, prices, and buyer-seller dynamics, with fresh weekly data and insights.",
+  "topics": [
+   "inventory",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/eekly-housing-trends-view-data-week-october-31-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261105-50-of-recent-homebuyers-can-t-afford-their-mortgag",
+  "d": "2026-11-05",
+  "title": "50% of Recent Homebuyers Can’t Afford Their Mortgage",
+  "body": "50% of recent homebuyers can’t sustain their mortgage payments at these current rates. Wait…what? A new survey found that homeowners who purchased in the last two years are having a [ ]",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/on-the-market-475",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261104-can-mls-portals-turn-listing-data-into-next-steps",
   "d": "2026-11-04",
   "title": "Can MLS portals turn listing data into next steps",
@@ -88,6 +166,70 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/rookie-792",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261104-mortgage-policy-faces-tight-runway-in-split-washin",
+  "d": "2026-11-04",
+  "title": "Mortgage policy faces tight runway in split Washington",
+  "body": "Industry eyes tougher confirmations and a volatile rate outlook",
+  "topics": [
+   "rates",
+   "policy"
+  ],
+  "states": [
+   "WA",
+   "DC"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mortgage-agenda-narrows-divided-dc/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261104-zillow-pushes-preferred-agent-program-toward-100-o",
+  "d": "2026-11-04",
+  "title": "Zillow pushes Preferred agent program toward 100% of buyer connections",
+  "body": "Average monthly unique users fell to 215 million, revenue rose 7% to $724 million, and net loss widened to $158 million",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/zillow-traffic-ai-mode-q3/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261104-bright-turns-on-ocusell-integration-so-agents-ente",
+  "d": "2026-11-04",
+  "title": "Bright turns on Ocusell integration so agents enter listings once",
+  "body": "OneList validates data against MLS rules and pushes updates into Bright and other MLSs",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/bright-ocusell-onelist-integration/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261104-democrats-win-the-midterms-what-it-means-for-the-h",
+  "d": "2026-11-04",
+  "title": "Democrats Win the Midterms: What It Means for the Housing Market",
+  "body": "The much-anticipated 2026 midterm elections are now over, giving us a glimpse into how the next two years will play out in American politics. While Democrats and Republicans remain divided [ ]",
+  "topics": [
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1352",
    "q": "news"
   }
  },
