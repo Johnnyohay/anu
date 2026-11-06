@@ -1,5 +1,94 @@
 [
  {
+  "id": "h-20261106-agnt-says-housing-market-is-tough-but-not-broken-p",
+  "d": "2026-11-06",
+  "title": "AGNT says housing market is tough but not broken, points to ‘unmatched’ agent value",
+  "body": "Revenue rose to $1.4 billion, but net results swung to a $4.3 million loss",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/agnt-q3-2026-earnings/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261106-mortgage-firms-add-sales-leadership-and-expand-len",
+  "d": "2026-11-06",
+  "title": "Mortgage firms add sales leadership and expand lending teams",
+  "body": "Recent moves include a new national sales director at NEXA Lending, mortgage team additions at New American Funding, Better and Carter Bank, and a MISMO appointment for Down Payment Resource",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mortgage-industry-hires/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261106-here-s-how-the-midterms-could-reset-washington-s-h",
+  "d": "2026-11-06",
+  "title": "Here’s how the midterms could reset Washington’s housing agenda",
+  "body": "With affordability a top voter issue this election cycle, housing is potentially positioned as a major focus for the next Congress",
+  "topics": [
+   "policy"
+  ],
+  "states": [
+   "WA",
+   "DC"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/congress-housing-policy/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261106-compass-boosts-exclusive-listings-while-weighing-o",
+  "d": "2026-11-06",
+  "title": "Compass boosts exclusive listings while weighing Open Real Estate",
+  "body": "Reffkin says 63% of new launches use 3-phase marketing in locations without restrictions",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/compass-private-exclusives-open-real-estate/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261106-6-real-ways-to-get-a-6-mortgage-rate-in-2027",
+  "d": "2026-11-06",
+  "title": "6 (Real) Ways to Get a 6% Mortgage Rate in 2027",
+  "body": "Mortgage rates are at their highest in years, but that doesn’t mean your mortgage rate has to be. You don’t have to settle for a 7% or 8% rate on [ ]",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1353",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261106-buy-more-rentals-faster-with-dscr-loans-no-w-2-nee",
+  "d": "2026-11-06",
+  "title": "Buy More Rentals Faster With DSCR Loans (No W-2 Needed) (Rookie Reply)",
+  "body": "What if your first (or next) rental didn’t depend on your W-2, your free time, or cash sitting in the bank? Today we’re covering how to qualify for more deals, [ ]",
+  "topics": [
+   "rents"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-793",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261105-homeownership-divides-widen-as-older-wealthier-buy",
   "d": "2026-11-05",
   "title": "Homeownership divides widen as older, wealthier buyers dominate 2026 market",
@@ -74,6 +163,34 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/on-the-market-475",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261105-los-angeles-votes-all-in-on-housing-electing-yimby",
+  "d": "2026-11-05",
+  "title": "Los Angeles votes all-in on housing, electing YIMBY-backed Raman",
+  "body": "Bass becomes the 1st Los Angeles mayor in 2 decades to lose reelection, after AP called the race",
+  "topics": [],
+  "states": [
+   "CA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/raman-bass-la-mayor/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261105-realpro-select-helps-lift-realtor-com-revenue",
+  "d": "2026-11-05",
+  "title": "RealPRO Select helps lift Realtor.com revenue",
+  "body": "Move reported $160 million in quarterly revenue, its eighth straight quarter of segment growth",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/realtorcom-revenue-q1-2027/",
    "q": "news"
   }
  },

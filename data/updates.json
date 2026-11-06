@@ -1,5 +1,393 @@
 [
   {
+    "id": "u-20261106-cut-to-us-aid-would-impact-israeli-acquisition-tim",
+    "d": "2026-11-06",
+    "title": "Cut to US aid would impact Israeli acquisition timelines, spending: Analysts",
+    "body": "Israel is actively seeking more Apache helicopters, F-15 and F-35 fighter jets and munitions.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "strike",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/cut-to-us-aid-would-impact-israeli-acquisition-timelines-spending-analysts/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261106-the-navy-s-trainer-is-now-the-biggest-test-of-the-",
+    "d": "2026-11-06",
+    "title": "The Navy’s trainer is now the biggest test of the Pentagon’s acquisition reform efforts",
+    "body": "With the competition effectively reduced to one bidder, the Navy faces a choice between falling back on old acquisition habits and showing that its reforms can work under pressure, writes Robbin Laird.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/the-navys-trainer-is-now-the-biggest-test-of-the-pentagons-acquisition-reform-efforts/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Navy",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261106-key-space-force-satellites-can-t-talk-to-each-othe",
+    "d": "2026-11-06",
+    "title": "Key Space Force satellites can’t talk to each other, likely requiring $1B solution: Sources",
+    "body": "To translate between the SpaceX-built SDN Backbone and other Pentagon communications and missile tracking satellites, sources said the Space Force is eyeing 12 or 13 Space Exchange Point birds.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "SpaceX / Starshield",
+      "Space Exchange Point"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/key-space-force-satellites-cant-talk-to-each-other-likely-requiring-1b-solution-sources/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Space Force",
+      "Pentagon",
+      "Space Exchange Point"
+    ]
+  },
+  {
+    "id": "u-20261106-europe-nears-decision-on-competing-hypersonic-inte",
+    "d": "2026-11-06",
+    "title": "Europe nears decision on competing hypersonic interceptor programs",
+    "body": "The European Commission is expected to select one of two competing consortia by the end of November to advance development of a European interceptor targeting hypersonic and ballistic missile threats, with a system-level demonstrator targeted for 2030.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "strike",
+      "global"
+    ],
+    "type": "Contract",
+    "companies": [
+      "European Commission"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/europe-nears-decision-on-competing-hypersonic-interceptor-programs/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "European Commission"
+    ]
+  },
+  {
+    "id": "u-20261106-russia-using-own-version-of-starlink-for-military-",
+    "d": "2026-11-06",
+    "title": "Russia using own version of Starlink for military comms over Ukraine, Kyiv says",
+    "body": "Russia is already using its new Rassvet satellite network — billed as a homegrown version of Starlink — for military communications over Ukraine, according to Ukrainian military intelligence.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary",
+      "space"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Starlink"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/11/06/russia-using-own-version-of-starlink-for-military-comms-over-ukraine-kyiv-says/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Starlink"
+    ]
+  },
+  {
+    "id": "u-20261106-us-european-command-launches-vigilance-campaign-as",
+    "d": "2026-11-06",
+    "title": "US European Command launches vigilance campaign as hybrid threats mount",
+    "body": "U.S. European Command is calling on U.S. troops, family members, and civilian employees to stay alert for suspicious behavior and to cover their digital tracks while moving around Europe.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/news/2026/11/06/us-european-command-launches-vigilance-campaign-as-hybrid-threats-mount/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "US European Command",
+      "U.S. European Command"
+    ]
+  },
+  {
+    "id": "u-20261106-us-air-force-eyes-reviving-wwii-air-bases-in-the-p",
+    "d": "2026-11-06",
+    "title": "US Air Force eyes reviving WWII air bases in the Pacific",
+    "body": "The U.S. Air Force hopes to conduct more than 6,000 aircraft operations annually at airfields on three American islands in the northwest Pacific Ocean.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/asia-pacific/2026/11/06/us-air-force-eyes-reviving-wwii-air-bases-in-the-pacific/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "US Air Force",
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261106-denmark-lithuania-latest-baltic-navies-to-buy-bloc",
+    "d": "2026-11-06",
+    "title": "Denmark, Lithuania latest Baltic navies to buy ‘Blocker’ mines through Finnish scheme",
+    "body": "Denmark is the latest country to buy Finland’s “Blocker” naval mines, a day after Lithuania decided to go ahead with its own contract for the weapon.",
+    "why": "Where investors put money shows which parts of the industry they expect to win next.",
+    "sectors": [
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/06/denmark-lithuania-latest-baltic-navies-to-buy-blocker-mines-through-finnish-scheme/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261106-how-a-french-frigate-s-radical-bow-design-makes-fo",
+    "d": "2026-11-06",
+    "title": "How a French frigate’s radical bow design makes for smooth sailing",
+    "body": "The inverted bow on the new FDI frigates makes for better seakeeping, said the former French Navy captain who commanded the lead ship of the class during sea trials.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/06/how-a-french-frigates-radical-bow-design-makes-for-smooth-sailing/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261106-theodore-roosevelt-carrier-strike-group-pulls-into",
+    "d": "2026-11-06",
+    "title": "Theodore Roosevelt Carrier Strike Group Pulls Into Singapore",
+    "body": "The Theodore Roosevelt Carrier Strike Group pulled into Singapore on Friday for a port visit, USNI News understands.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Theodore Roosevelt Carrier Strike Group"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/06/theodore-roosevelt-carrier-strike-group-pulls-into-singapore",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Theodore Roosevelt Carrier Strike Group",
+      "USNI News"
+    ]
+  },
+  {
+    "id": "u-20261106-defense-business-brief-the-dib-vs-2027-s-democrat-",
+    "d": "2026-11-06",
+    "title": "Defense Business Brief: The DIB vs. 2027’s Democrat-led Congress",
+    "body": "Defense Business Brief: The DIB vs. 2027’s Democrat-led Congress",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Defense Unicorns"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/business/2026/11/defense-business-brief-dib-vs-2027s-democrat-led-congress/417089/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Congress",
+      "Defense"
+    ]
+  },
+  {
+    "id": "u-20261106-russia-unveils-new-anti-drone-gun-system",
+    "d": "2026-11-06",
+    "title": "Russia unveils new anti-drone gun system",
+    "body": "Russia’s state defense conglomerate Rostec has shown a mobile version of its Tsitadel anti-aircraft gun system, with the weapon and its sensors mounted on a truck chassis, the company said.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Rostec"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-unveils-new-anti-drone-gun-system/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Rostec"
+    ]
+  },
+  {
+    "id": "u-20261106-russia-shows-mi-28-helicopter-launching-low-cost-c",
+    "d": "2026-11-06",
+    "title": "Russia shows Mi-28 helicopter launching low-cost cruise missiles",
+    "body": "Russia’s Defense Ministry has released footage of a Mi-28NM attack helicopter firing a small, low-cost cruise missile during combat operations in Ukraine.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "strike",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-shows-mi-28-helicopter-launching-low-cost-cruise-missiles/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Defense Ministry"
+    ]
+  },
+  {
+    "id": "u-20261106-only-8-of-24-u-s-air-force-aircraft-fleets-meet-pa",
+    "d": "2026-11-06",
+    "title": "Only 8 of 24 U.S. Air Force aircraft fleets meet parts standards",
+    "body": "The U.S. Air Force is asking Congress for $4.25 billion in its fiscal 2027 budget to buy critical spare parts for its bombers, tankers, fighters and trainers, after its own figures showed that only eight of 24 measured aircraft fleets meet supply readiness…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "policy",
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/only-8-of-24-u-s-air-force-aircraft-fleets-meet-parts-standards/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Air Force",
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261106-u-s-army-s-chinook-spare-part-stuck-with-a-single-",
+    "d": "2026-11-06",
+    "title": "U.S. Army’s Chinook spare part stuck with a single supplier",
+    "body": "The Defense Logistics Agency plans to buy a hydraulic cylinder assembly for the U.S.",
+    "why": "Where investors put money shows which parts of the industry they expect to win next.",
+    "sectors": [
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-armys-chinook-spare-part-stuck-with-a-single-supplier/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "Defense Logistics Agency"
+    ]
+  },
+  {
+    "id": "u-20261106-u-s-navy-pays-11-3-million-to-map-the-undersea-sou",
+    "d": "2026-11-06",
+    "title": "U.S. Navy pays $11.3 million to map the undersea soundscape",
+    "body": "The U.S. Navy has exercised an $11.3 million option with Integer Technologies to keep developing software that maps the underwater soundscape for submarines and undersea drones, the U.S. Department of War announced on Nov. 5.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "ai",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Integer Technologies"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-navy-pays-11-3-million-to-map-the-undersea-soundscape/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Navy",
+      "Integer Technologies",
+      "U.S. Department of War"
+    ]
+  },
+  {
     "id": "u-20261105-saildrone-inks-agreement-with-norwegian-shipbuilde",
     "d": "2026-11-05",
     "title": "Saildrone inks agreement with Norwegian shipbuilder Umoe Mandal to produce USVs",
@@ -481,6 +869,640 @@
     "orgs": [
       "Boeing"
     ]
+  },
+  {
+    "id": "u-20261105-republicans-have-a-ticking-clock-what-can-they-get",
+    "d": "2026-11-05",
+    "title": "Republicans have a ticking clock. What can they get done on defense?",
+    "body": "Reconciliation, defense appropriations and the NDAA will all fight for attention as Congress considers the impeachment of Defense Secretary Pete Hegseth.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/republicans-have-a-ticking-clock-what-can-they-get-done-on-defense/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261105-ukraine-eyeing-new-spacex-starshield-deal-by-mid-2",
+    "d": "2026-11-05",
+    "title": "Ukraine eyeing new SpaceX Starshield deal by mid-2027, still no answers about October problems",
+    "body": "“I hope that the contract will be signed,” Ukraine’s Chargé d’Affaires Denys Sienik said, even as Kyiv considers potential alternatives to SpaceX.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "global"
+    ],
+    "type": "Contract",
+    "companies": [
+      "SpaceX / Starshield"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/ukraine-eyeing-new-spacex-starshield-deal-by-mid-2027-still-no-answers-about-october-problems/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "SpaceX Starshield"
+    ]
+  },
+  {
+    "id": "u-20261105-navy-s-new-innovation-unit-seen-as-key-pipeline-fo",
+    "d": "2026-11-05",
+    "title": "Navy’s new innovation unit seen as key pipeline for bringing private sector talent into the Reserve",
+    "body": "Ben Kohlmann, assistant secretary of the Navy for manpower and Reserve affairs, highlighted the effort at Datadog's Threat Response Forum, presented by FedScoop.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Reserve",
+      "Datadog",
+      "FedScoop"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/05/navy-innovation-unit-private-sector-technology-talent/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Navy",
+      "Reserve",
+      "Datadog",
+      "FedScoop"
+    ]
+  },
+  {
+    "id": "u-20261105-where-ai-is-and-isn-t-accelerating-military-missio",
+    "d": "2026-11-05",
+    "title": "Where AI is — and isn’t — accelerating military missions today",
+    "body": "Artificial intelligence has huge promise for the U.S. military services, but in some cases, early results haven’t lived up to the hype. The post Where AI is — and isn’t — accelerating military missions today appeared first on DefenseScoop .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/05/where-ai-is-and-isnt-accelerating-military-missions-today/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "DefenseScoop"
+    ]
+  },
+  {
+    "id": "u-20261105-shield-ai-to-acquire-radar-maker-echodyne-to-bust-",
+    "d": "2026-11-05",
+    "title": "Shield AI to acquire radar maker Echodyne to bust drones",
+    "body": "Shield AI's CEO said the purchase of Echodyne supports the company’s aim to branch into different areas of unmanned systems.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "air",
+      "sensing",
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [
+      "Shield AI",
+      "Echodyne"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/11/05/shield-ai-to-acquire-radar-maker-echodyne-to-bust-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Shield AI",
+      "Echodyne"
+    ]
+  },
+  {
+    "id": "u-20261105-popular-military-air-show-permanently-pulled-from-",
+    "d": "2026-11-05",
+    "title": "Popular military air show permanently pulled from RAF Fairford after suspected terror threat",
+    "body": "Over a month after a suspected Iranian plot on RAF Fairford, organizers of the world's largest military air show announced its permanent departure to MOD Boscombe Down.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/05/popular-military-air-show-permanently-pulled-from-raf-fairford-after-suspected-terror-threat/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261105-vector-introduces-ready-to-go-one-way-attack-drone",
+    "d": "2026-11-05",
+    "title": "Vector introduces ready-to-go one-way attack drone",
+    "body": "The company said the Warfighter’s Stack consists of the drone, an HV-ESAD to hold an explosive payload, and a remote control.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/11/05/vector-introduces-ready-to-go-one-way-attack-drone/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261105-how-general-dynamics-is-modernizing-military-commu",
+    "d": "2026-11-05",
+    "title": "How General Dynamics Is Modernizing Military Communications Security",
+    "body": "General Dynamics Mission Systems discusses high-speed encryption and adaptable security technology designed to protect military networks as cyber threats evolve",
+    "why": "The big incumbents are growing too. Watch where they partner with or buy startups rather than compete.",
+    "sectors": [
+      "primes",
+      "cyber"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "General Dynamics Mission Systems"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/05/how-general-dynamics-is-modernizing-military-communications-security/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "General Dynamics Mission Systems"
+    ]
+  },
+  {
+    "id": "u-20261105-a-guide-to-china-s-expanding-fleet-of-military-hel",
+    "d": "2026-11-05",
+    "title": "A Guide To China’s Expanding Fleet Of Military Helicopters",
+    "body": "China’s rotary fleet is evolving into a more capable, homegrown force, bringing new reach and flexibility to operations on land and at sea. The post A Guide To China’s Expanding Fleet Of Military Helicopters appeared first on TWZ .",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/chinas-military-helicopters-a-guide",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261105-this-is-the-army-s-new-malet-kit-that-turns-mortar",
+    "d": "2026-11-05",
+    "title": "This Is The Army’s New MALET Kit That Turns Mortars Into Drone-Dropped Weapons",
+    "body": "The clip-on kit is designed to give soldiers a convenient way to rapidly turn existing mortars into small bombs for drones. The post This Is The Army’s New MALET Kit That Turns Mortars Into Drone-Dropped Weapons appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/land/this-is-the-armys-new-malet-kit-that-turns-mortars-into-drone-dropped-weapons",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261105-we-now-know-why-sierra-nevada-corp-canned-its-navy",
+    "d": "2026-11-05",
+    "title": "We Now Know Why Sierra Nevada Corp Canned Its Navy Jet Trainer Bid",
+    "body": "SNC has provided a detailed explanation for why its clean-sheet Freedom Jet isn't competing to replace the Navy's T-45s. The post We Now Know Why Sierra Nevada Corp Canned Its Navy Jet Trainer Bid appeared first on TWZ .",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Sierra Nevada Corp",
+      "SNC",
+      "Freedom Jet",
+      "Its"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/we-now-know-why-sierra-nevada-corp-canned-its-navy-jet-trainer-bid",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Sierra Nevada Corp",
+      "SNC",
+      "Freedom Jet",
+      "Navy",
+      "Its"
+    ]
+  },
+  {
+    "id": "u-20261105-air-force-s-a-29-fleet-mothballed-at-edwards",
+    "d": "2026-11-05",
+    "title": "Air Force’s A-29 Fleet Mothballed at Edwards",
+    "body": "The Air Force’s trio of A-29 Super Tucano light attack aircraft are now considered officially retired and are being mothballed at Edwards Air Force Base, Calif., after briefly being used at the Air Force Test Pilot School.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/air-force-a-29-fleet-mothballed-at-edwards/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Air Force Test Pilot School"
+    ]
+  },
+  {
+    "id": "u-20261105-afrl-takes-steps-to-push-quantum-tech-to-the-field",
+    "d": "2026-11-05",
+    "title": "AFRL Takes Steps to Push Quantum Tech to the Field",
+    "body": "The Air Force Research Lab has awarded quantum computing firm IonQ a $7.5 million follow-on contract to bridge the gap between the lab and the field for the highly advanced technology.",
+    "why": "Better sensors and navigation that works without GPS are prerequisites for everything autonomous.",
+    "sectors": [
+      "sensing"
+    ],
+    "type": "Contract",
+    "companies": [
+      "IonQ"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/afrl-push-quantum-tech-to-the-field/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Air Force Research Lab",
+      "IonQ"
+    ]
+  },
+  {
+    "id": "u-20261105-north-korean-leader-inspects-new-warship-under-con",
+    "d": "2026-11-05",
+    "title": "North Korean Leader Inspects New Warship Under Construction at Nampho Shipyard",
+    "body": "North Korea leader Kim Jong Un inspected the ongoing construction of a new warship that is larger than the country’s 5,000-ton destroyers on Monday during a visit to North Korea’s Nampho Shipyard, state media reported Wednesday.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/05/north-korean-leader-inspects-new-warship-under-construction-at-nampho-shipyard",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261105-marines-identify-member-who-died-after-fast-rope-t",
+    "d": "2026-11-05",
+    "title": "Marines Identify Member Who Died After Fast-rope Training in Japan",
+    "body": "Lance Cpl. Devin Hernandez died this week after he was injured during fast-rope training in Japan, the 3rd Marine Division announced Thursday. Hernandez, 25, sustained injuries during training at Camp Schwab in Okinawa.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/05/marines-identify-member-who-died-after-fast-rope-training-in-japan",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Marines",
+      "3rd Marine Division"
+    ]
+  },
+  {
+    "id": "u-20261105-cesiumastro-secures-730-million-in-janus-henderson",
+    "d": "2026-11-05",
+    "title": "CesiumAstro Secures $730 Million in Janus Henderson-Led Series D at a Valuation Above $4.5 Billion; Unveils Synchronicity Satellite Constellation Following Fully Successful Element-1 Mission",
+    "body": "CesiumAstro Inc., a global leader in space and defense communications systems and satellites, today announced the closing of $730 million in Series D financing, valuing the company at more than [ ] The post CesiumAstro Secures $730 Million in Janus…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "energy",
+      "capital"
+    ],
+    "type": "Funding",
+    "companies": [
+      "CesiumAstro Inc"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/cesiumastro-secures-730-million-in-janus-henderson-led-series-d-at-a-valuation-above-4-5-billion-unveils-synchronicity-satellite-constellation-following-fully-successful-element-1-mission/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "CesiumAstro Inc"
+    ]
+  },
+  {
+    "id": "u-20261105-the-war-on-iran-is-stripping-the-western-pacific-o",
+    "d": "2026-11-05",
+    "title": "The war on Iran is stripping the western Pacific of US naval forces",
+    "body": "“It’s really a big problem. It’s a problem for credibility. It’s a problem for our allies in the Far East,” one expert said.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/threats/2026/11/war-iran-stripping-western-pacific-us-naval-forces/417079/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261105-hackers-are-targeting-refrigerators-worldwide-us-a",
+    "d": "2026-11-05",
+    "title": "Hackers are targeting refrigerators worldwide, US agencies warn",
+    "body": "The warning follows Nextgov/FCW reporting that officials suspect Iran-linked hackers were behind freezer failures at military commissaries.",
+    "why": "State hackers are still inside critical networks, which keeps defensive and offensive cyber in demand.",
+    "sectors": [
+      "cyber",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Nextgov/FCW"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/threats/2026/11/warn-refrigerator-hacks-attacks-military/417076/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Nextgov/FCW"
+    ]
+  },
+  {
+    "id": "u-20261105-it-s-easier-to-buy-new-amphibious-ships-than-fix-o",
+    "d": "2026-11-05",
+    "title": "It’s easier to buy new amphibious ships than fix old ones faster, say Navy, Marines",
+    "body": "With the average amphib sidelined more than half the time, the services have drawn up a plan to add 9 more instead.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/policy/2026/11/navy-marines-amphibious-ships-fix/417070/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261105-air-force-secret-service-strengthen-counter-drone-",
+    "d": "2026-11-05",
+    "title": "Air Force, Secret Service Strengthen Counter-Drone Readiness",
+    "body": "Joint Interagency Task Force 401 conducted counter-drone training with the Air Force's 6th Security Forces Squadron and U.S.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Secret Service"
+    ],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4642910/air-force-secret-service-strengthen-counter-drone-readiness/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Air Force",
+      "Secret Service",
+      "6th Security Forces Squadron"
+    ]
+  },
+  {
+    "id": "u-20261105-5-key-technologies-in-cisa-s-2030-strategy-to-prot",
+    "d": "2026-11-05",
+    "title": "5 Key Technologies in CISA’s 2030 Strategy to Protect Critical Infrastructure",
+    "body": "CISA’s 2030 strategy names AI, quantum computing and satellite communications as part of its plan to safeguard critical infrastructure. The post 5 Key Technologies in CISA’s 2030 Strategy to Protect Critical Infrastructure first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "space",
+      "sensing"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Key Technologies",
+      "CISA",
+      "Infrastructure"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/cisa-2030-strategy-ai-quantum-5g-6g-satcom",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Key Technologies",
+      "CISA",
+      "Infrastructure"
+    ]
+  },
+  {
+    "id": "u-20261105-rear-adm-jonathan-rucker-named-navy-pae-maritime",
+    "d": "2026-11-05",
+    "title": "Rear Adm. Jonathan Rucker Named Navy PAE Maritime",
+    "body": "Rucker will direct the Navy's surface ship portfolio, coordinating acquisition activities across the shipbuilding enterprise. The post Rear Adm. Jonathan Rucker Named Navy PAE Maritime first appeared on Executive Gov .",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/jonathan-rucker-navy-pae-maritime-appointment",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Navy PAE Maritime"
+    ]
+  },
+  {
+    "id": "u-20261105-dow-s-drpm-uxs-fielded-782m-in-drones-counter-uas-",
+    "d": "2026-11-05",
+    "title": "DOW’s DRPM-UxS Fielded $782M in Drones, Counter-UAS to CENTCOM",
+    "body": "DOW delivered 1,300 attack drones, 100 maritime vessels and 24,000 counter-drone systems to CENTCOM in 2026. The post DOW’s DRPM-UxS Fielded $782M in Drones, Counter-UAS to CENTCOM first appeared on Executive Gov .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas",
+      "sea"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Counter",
+      "UAS"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/dow-drpm-uxs-drones-counter-uas-centcom",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "Counter",
+      "UAS"
+    ]
+  },
+  {
+    "id": "u-20261105-at-t-leidos-nokia-federal-peraton-ibm-land-roles-i",
+    "d": "2026-11-05",
+    "title": "AT T, Leidos, Nokia Federal, Peraton, IBM Land Roles in FutureG ISAC Prototype Awards",
+    "body": "AT T, Leidos, Nokia Federal, Peraton and IBM are on teams building integrated sensing and communications prototypes for 6G networks.",
+    "why": "The big incumbents are growing too. Watch where they partner with or buy startups rather than compete.",
+    "sectors": [
+      "primes"
+    ],
+    "type": "Contract",
+    "companies": [
+      "AT T",
+      "Leidos",
+      "Nokia Federal",
+      "Peraton",
+      "IBM"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/dow-futureg-isac-rapid-prototype-awards",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "AT T",
+      "Leidos",
+      "Nokia Federal",
+      "Peraton",
+      "IBM"
+    ]
+  },
+  {
+    "id": "u-20261105-nsa-releases-joint-guidance-to-gauge-vendor-post-q",
+    "d": "2026-11-05",
+    "title": "NSA Releases Joint Guidance to Gauge Vendor Post-Quantum Readiness",
+    "body": "The joint guidance covers CBOMs, PQ/T hybrid modes, licensing and 2030 roadmaps for suppliers' quantum transition. The post NSA Releases Joint Guidance to Gauge Vendor Post-Quantum Readiness first appeared on Executive Gov .",
+    "why": "Better sensors and navigation that works without GPS are prerequisites for everything autonomous.",
+    "sectors": [
+      "sensing"
+    ],
+    "type": "Earnings",
+    "companies": [
+      "NSA"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/nsa-cisa-asd-post-quantum-cryptography-vendor-questions",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": [
+      "NSA"
+    ]
+  },
+  {
+    "id": "u-20261105-nist-report-identifies-ai-incident-response-gaps-p",
+    "d": "2026-11-05",
+    "title": "NIST Report Identifies AI Incident Response Gaps, Plans for New Cybersecurity Guidance",
+    "body": "NIST has outlined artificial intelligence incident response gaps, cybersecurity challenges and planned guidance updates. The post NIST Report Identifies AI Incident Response Gaps, Plans for New Cybersecurity Guidance first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Earnings",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/nist-ai-incident-response-cybersecurity-gaps",
+      "q": "news"
+    },
+    "addedAt": "2026-11-06T17:20:31.125Z",
+    "auto": true,
+    "orgs": []
   },
   {
     "id": "u-20261104-india-taps-two-domestic-shipbuilders-for-5-7b-corv",
