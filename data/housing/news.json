@@ -89,6 +89,127 @@
   }
  },
  {
+  "id": "h-20261106-why-didn-t-the-strong-jobs-report-send-mortgage-ra",
+  "d": "2026-11-06",
+  "title": "Why didn’t the strong jobs report send mortgage rates skyrocketing?",
+  "body": "Payrolls rose 165,000, construction softened slightly and residential construction employment remained a key cycle indicator",
+  "topics": [
+   "rates",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/jobs-report-mortgage-rates-flat/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261106-opendoor-says-it-s-behind-schedule-but-plans-to-ca",
+  "d": "2026-11-06",
+  "title": "Opendoor says it’s behind schedule but plans to catch up by 2027",
+  "body": "Adjusted net loss totaled $66 million, revenue rose 12% to $1.022 billion, and inventory increased to 7,596 homes",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/opendoor-q3-2026-losses/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261106-progress-residential-to-pay-49-8m-to-settle-ftc-st",
+  "d": "2026-11-06",
+  "title": "Progress Residential to pay $49.8M to settle FTC, state claims over rental practices",
+  "body": "Settlement with the FTC and four states requires clearer pricing disclosures",
+  "topics": [
+   "rents"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/progress-residential-ftc-settlement-49-8m/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261106-how-a-new-pulte-florida-agrihood-makes-conservatio",
+  "d": "2026-11-06",
+  "title": "How a new Pulte Florida agrihood makes conservation a buyer desire",
+  "body": "PulteGroup recently grand-opened The Grow, an \"agrihood\" community centered around a 9-acre working farm",
+  "topics": [
+   "sales"
+  ],
+  "states": [
+   "FL"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/how-a-new-pulte-florida-agrihood-makes-conservation-a-buyer-desire/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261106-massachusetts-ag-issues-rule-on-shared-appreciatio",
+  "d": "2026-11-06",
+  "title": "Massachusetts AG issues rule on shared appreciation mortgages, NCLC calls for broader protections",
+  "body": "NCLC welcomed SAM safeguards but warned that similar risks persist in home equity investments, which are not directly covered by the rule",
+  "topics": [
+   "prices"
+  ],
+  "states": [
+   "MA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mass-ag-rule-shared-appreciation-mortgages-home-equity-risks/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261106-nar-president-kevin-brown-warns-of-outside-forces-",
+  "d": "2026-11-06",
+  "title": "NAR President Kevin Brown warns of outside forces threatening real estate marketplace",
+  "body": "Brown compared current marketplace pressures to forces that preceded the 2008 housing crisis",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/nar-mls-listing-data-fight/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261106-blend-posts-smaller-q3-loss-warns-of-steeper-mortg",
+  "d": "2026-11-06",
+  "title": "Blend posts smaller Q3 loss, warns of steeper mortgage revenue drop ahead",
+  "body": "Blend reported GAAP operating loss of $2.6 million in Q3",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/blend-q3-earnings/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261106-nrmla-asks-congress-to-restore-hud-housing-counsel",
+  "d": "2026-11-06",
+  "title": "NRMLA asks Congress to restore HUD housing counseling funds",
+  "body": "NRMLA says HECM borrowers must get HUD-approved. third-party counseling before loans can legally close",
+  "topics": [
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/nrmla-restore-hud-funds/",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261105-homeownership-divides-widen-as-older-wealthier-buy",
   "d": "2026-11-05",
   "title": "Homeownership divides widen as older, wealthier buyers dominate 2026 market",

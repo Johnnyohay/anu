@@ -1,5 +1,227 @@
 [
   {
+    "id": "u-20261107-european-troops-set-to-train-in-poland-for-postwar",
+    "d": "2026-11-07",
+    "title": "European troops set to train in Poland for postwar Ukraine deployment",
+    "body": "Britain and France will lead 2,800 troops from 11 nations in a two-week exercise testing how to move, protect and supply a force to rebuild Ukraine’s military after the war ends.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/news/2026/11/07/european-troops-set-to-train-in-poland-for-postwar-ukraine-deployment/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261107-britain-launches-titania-military-satellite",
+    "d": "2026-11-07",
+    "title": "Britain launches Titania military satellite",
+    "body": "The United Kingdom has put a second military satellite into orbit. Titania, a small British-built spacecraft, launched last month and will be operated by UK Space Command, the Ministry of Defence said on November 7.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "global",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/britain-launches-titania-military-satellite/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "UK Space Command",
+      "Ministry of Defence"
+    ]
+  },
+  {
+    "id": "u-20261107-ukraine-hits-two-russian-iskander-launchers-in-bry",
+    "d": "2026-11-07",
+    "title": "Ukraine hits two Russian Iskander launchers in Bryansk region",
+    "body": "Ukraine’s armed forces have hit two Russian Iskander ballistic missile launchers and a Pantsir-S1 air defense system in Russia’s Bryansk region, the General Staff of the Armed Forces of Ukraine said on November 7.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary",
+      "missiledef",
+      "strike"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/ukraine-hits-two-russian-iskander-launchers-in-bryansk-region/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "General Staff of the Armed Forces of Ukraine"
+    ]
+  },
+  {
+    "id": "u-20261107-japan-finds-likely-cause-of-type-10-explosion-that",
+    "d": "2026-11-07",
+    "title": "Japan finds likely cause of Type 10 explosion that killed 3 soldiers",
+    "body": "Debris left inside the gun barrel of a Japanese Type 10 tank likely set off the April explosion that killed three soldiers during live-fire training in Oita Prefecture, the Mainichi Shimbun reported, citing Defense Ministry sources.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Mainichi Shimbun"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/japan-finds-likely-cause-of-type-10-explosion-that-killed-3-soldiers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "Mainichi Shimbun",
+      "Defense Ministry"
+    ]
+  },
+  {
+    "id": "u-20261107-uss-gridley-heads-for-2-year-overhaul-after-back-t",
+    "d": "2026-11-07",
+    "title": "USS Gridley heads for 2-year overhaul after back-to-back deployments",
+    "body": "The U.S. Navy has awarded Vigor Marine a $222.5 million contract to overhaul and modernize the destroyer USS Gridley (DDG 101), taking the warship out of service for about two years after nearly back-to-back deployments to the Middle East, the Indo-Pacific…",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Contract",
+    "companies": [
+      "USS Gridley"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/uss-gridley-heads-for-2-year-overhaul-after-back-to-back-deployments/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "USS Gridley",
+      "U.S. Navy",
+      "Marine"
+    ]
+  },
+  {
+    "id": "u-20261107-japan-to-get-new-factory-for-us-2-flying-boats-by-",
+    "d": "2026-11-07",
+    "title": "Japan to get new factory for US-2 flying boats by 2029",
+    "body": "Japanese aircraft maker ShinMaywa Industries will build a new factory on Kobe Airport Island to assemble the US-2 search-and-rescue flying boat it supplies to Japan’s Ministry of Defense, the company said at its latest earnings briefing.",
+    "why": "Being able to produce at scale has become a competitive edge in its own right; factories are now a venture category.",
+    "sectors": [
+      "mfg",
+      "global",
+      "air"
+    ],
+    "type": "Earnings",
+    "companies": [
+      "ShinMaywa Industries"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/japan-to-get-new-factory-for-us-2-flying-boats-by-2029/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "ShinMaywa Industries",
+      "Ministry of Defense"
+    ]
+  },
+  {
+    "id": "u-20261107-u-s-marine-corps-more-than-doubles-m27-rifle-contr",
+    "d": "2026-11-07",
+    "title": "U.S. Marine Corps more than doubles M27 rifle contract with Heckler Koch",
+    "body": "The U.S. Marine Corps has more than doubled the ceiling on its sole-source contract with Heckler Koch for M27 Infantry Automatic Rifles.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Heckler Koch"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-marine-corps-more-than-doubles-m27-rifle-contract-with-heckler-koch/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Marine Corps",
+      "Heckler Koch"
+    ]
+  },
+  {
+    "id": "u-20261107-indian-il-76-makes-record-high-altitude-landing-ne",
+    "d": "2026-11-07",
+    "title": "Indian Il-76 makes record high-altitude landing near China border",
+    "body": "The Indian Air Force has landed an Il-76MD heavy transport aircraft at Nyoma airbase in eastern Ladakh, about 4,150 meters (13,629 feet) above sea level.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/indian-il-76-makes-record-high-altitude-landing-near-china-border/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "Indian Air Force"
+    ]
+  },
+  {
+    "id": "u-20261107-u-s-army-expands-iowa-artillery-plant-built-for-wa",
+    "d": "2026-11-07",
+    "title": "U.S. Army expands Iowa artillery plant built for wartime surge",
+    "body": "The United States is putting more money into building artillery production that can surge in wartime, with the U.S. Army adding $105.8 million to MSM Group North America’s contract for a new 155mm shell loading complex at the Iowa Army Ammunition Plant.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike"
+    ],
+    "type": "Contract",
+    "companies": [
+      "MSM Group North America"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-expands-iowa-artillery-plant-built-for-wartime-surge/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "MSM Group North America"
+    ]
+  },
+  {
     "id": "u-20261106-cut-to-us-aid-would-impact-israeli-acquisition-tim",
     "d": "2026-11-06",
     "title": "Cut to US aid would impact Israeli acquisition timelines, spending: Analysts",
@@ -385,6 +607,434 @@
       "U.S. Navy",
       "Integer Technologies",
       "U.S. Department of War"
+    ]
+  },
+  {
+    "id": "u-20261106-dod-taps-viasat-to-field-operations-center-for-gol",
+    "d": "2026-11-06",
+    "title": "DoD taps Viasat to field operations ‘center’ for Golden Dome satellite data relay network",
+    "body": "The ID/IQ contract to “design, field and scale” the Mission Operation Center for the Space Data Network Backbone is worth a maximum of $450 million.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "missiledef",
+      "capital"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Viasat",
+      "ID/IQ",
+      "Mission Operation Center",
+      "Space Data Network"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/dod-taps-viasat-to-field-operations-center-for-golden-dome-satellite-data-relay-network/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "DoD",
+      "Viasat",
+      "ID/IQ",
+      "Mission Operation Center",
+      "Space Data Network"
+    ]
+  },
+  {
+    "id": "u-20261106-europe-s-airpower-future-is-taking-shape-but-not-a",
+    "d": "2026-11-06",
+    "title": "Europe’s airpower future is taking shape, but not as originally planned",
+    "body": "Germany’s next move, the fate of GCAP, and the rise of CCAs reshape Europe’s combat aircraft strategy.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "CCAs"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/europes-airpower-future-is-taking-shape-but-not-as-originally-planned/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "CCAs"
+    ]
+  },
+  {
+    "id": "u-20261106-pentagon-launching-mission-operations-center-for-s",
+    "d": "2026-11-06",
+    "title": "Pentagon launching mission operations center for Space Data Network to support Golden Dome and other modernization efforts",
+    "body": "Viasat received an initial task order valued at $115 million to design, field and scale the MOC.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "missiledef",
+      "capital"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Space Data Network",
+      "Viasat"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/06/pentagon-mission-operations-center-space-data-network/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Space Data Network",
+      "Viasat"
+    ]
+  },
+  {
+    "id": "u-20261106-director-of-gps-innovation-alliance-warns-of-risks",
+    "d": "2026-11-06",
+    "title": "Director of GPS Innovation Alliance warns of risks to civilians from military testing of jamming and spoofing technologies",
+    "body": "A fatal aircraft crash near a military test range is raising concerns about troops’ expanding jamming and spoofing pursuits.",
+    "why": "Jamming and spectrum fights decide whether drones and radios work at all, so this quiet area keeps getting funded.",
+    "sectors": [
+      "ew",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "GPS Innovation Alliance"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/06/gps-jamming-risks-to-civilians-from-military-testing/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "GPS Innovation Alliance"
+    ]
+  },
+  {
+    "id": "u-20261106-bce-consulting-outlines-the-critical-elements-of-l",
+    "d": "2026-11-06",
+    "title": "BCE Consulting outlines the critical elements of layered air defense architecture",
+    "body": "What does the future of layered air defense look like? BCE Consulting lays out what it will take to protect American forces.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "BCE Consulting"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/06/bce-consulting-outlines-the-critical-elements-of-layered-air-defense-architecture/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "BCE Consulting"
+    ]
+  },
+  {
+    "id": "u-20261106-uss-theodore-roosevelt-arrives-in-singapore-last-s",
+    "d": "2026-11-06",
+    "title": "USS Theodore Roosevelt Arrives In Singapore; Last Stop Before Third Strike Group Reaches The Middle East",
+    "body": "Where the aircraft carriers are as of November 6, 2026. The post USS Theodore Roosevelt Arrives In Singapore; Last Stop Before Third Strike Group Reaches The Middle East appeared first on TWZ .",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Theodore",
+      "Third Strike Group"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/uss-theodore-roosevelt-arrives-in-singapore-last-stop-before-third-strike-group-reaches-the-middle-east",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "Theodore",
+      "Third Strike Group"
+    ]
+  },
+  {
+    "id": "u-20261106-russian-mi-28-attack-helicopters-are-now-firing-cr",
+    "d": "2026-11-06",
+    "title": "Russian Mi-28 Attack Helicopters Are Now Firing Cruise Missiles",
+    "body": "New footage highlights Russia’s push to field lower-cost standoff weapons from unconventional platforms. The post Russian Mi-28 Attack Helicopters Are Now Firing Cruise Missiles appeared first on TWZ .",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/russian-mi-28-attack-helicopter-fires-cruise-missile",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261106-ukrainian-officials-f-16-super-effective-at-downin",
+    "d": "2026-11-06",
+    "title": "Ukrainian Officials: F-16 ‘Super Effective’ at Downing Russia Drones But Challenges Remain",
+    "body": "Ukraine’s fleet of F-16 fighters has played a vital role in protecting the country against Russian aerial attacks, including the jet-powered drones the Russians have used to try to overpower Ukrainian air defenses, senior Ukrainian officials said.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "adversary",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/ukrainie-f-16-super-effective-downing-russia-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261106-very-low-earth-orbit-how-the-space-force-is-explor",
+    "d": "2026-11-06",
+    "title": "Very Low-Earth Orbit: How the Space Force Is Exploring Ops at Lower Altitudes",
+    "body": "As commercial companies, universities, and research agencies develop new approaches to operating satellites at lower and lower altitudes, the Space Force is taking notice and considering how it might leverage those advances in both the near and long term.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/very-low-earth-orbit-space-force-exploring-ops-lower-altitudes/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "Space Force"
+    ]
+  },
+  {
+    "id": "u-20261106-the-future-of-french-fleet-close-in-defense",
+    "d": "2026-11-06",
+    "title": "The Future of French Fleet Close-in Defense",
+    "body": "TOULON, France — Behind the bridge wings of one of Europe’s most modern combat supply ships, a team of French sailors donned gloves and flash hoods.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/06/the-future-of-french-fleet-close-in-defense",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261106-usni-news-western-pacific-pulse-nov-6-2026",
+    "d": "2026-11-06",
+    "title": "USNI News Western Pacific Pulse: Nov. 6, 2026",
+    "body": "The following is a summary of major ship movements and exercises in the Western Pacific over the last week. In Singapore The Theodore Roosevelt Carrier Strike Group pulled into Singapore on Friday for a port visit.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Theodore Roosevelt Carrier Strike Group"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/06/usni-news-western-pacific-pulse-nov-6-2026",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "USNI News Western Pacific",
+      "Theodore Roosevelt Carrier Strike Group"
+    ]
+  },
+  {
+    "id": "u-20261106-permanent-serious-dialogue-needed-with-china-on-ai",
+    "d": "2026-11-06",
+    "title": "'Permanent, serious' dialogue needed with China on AI: tech-focused lawmaker",
+    "body": "“The Chinese Communist Party doesn’t want rogue AI agents hacking their systems and their water authorities any more than we do,” Rep. James Walkinshaw, D-Va., said Thursday.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "adversary",
+      "cyber"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Chinese Communist Party"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/policy/2026/11/ai-dialogue-china-congress/417105/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "Chinese Communist Party"
+    ]
+  },
+  {
+    "id": "u-20261106-defense-logistics-agency-adds-2-billion-in-critica",
+    "d": "2026-11-06",
+    "title": "Defense Logistics Agency Adds $2 Billion in Critical Material Support to National Defense Stockpile",
+    "body": "The Defense Logistics Agency strengthened domestic industrial capacity and supported national security priorities by committing $2 billion to acquire strategic and critical materials during fiscal year 2026.",
+    "why": "Where investors put money shows which parts of the industry they expect to win next.",
+    "sectors": [
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [
+      "National Defense Stockpile"
+    ],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4643775/defense-logistics-agency-adds-2-billion-in-critical-material-support-to-nationa/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "Defense Logistics Agency",
+      "National Defense Stockpile"
+    ]
+  },
+  {
+    "id": "u-20261106-acting-navy-secretary-visits-blount-island-observe",
+    "d": "2026-11-06",
+    "title": "Acting Navy Secretary Visits Blount Island, Observes How It Equips Marines Worldwide",
+    "body": "Acting Navy Secretary Hung Cao visited Blount Island, Fla., to see how its workforce and waterfront facilities prepare and position equipment for Marines worldwide.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4643614/acting-navy-secretary-visits-blount-island-observes-how-it-equips-marines-world/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "Navy",
+      "Marines Worldwide"
+    ]
+  },
+  {
+    "id": "u-20261106-army-forms-pm-atsr-to-unify-aerial-ground-sensor-a",
+    "d": "2026-11-06",
+    "title": "Army Forms PM ATSR to Unify Aerial, Ground Sensor Acquisitions",
+    "body": "The new office is under PAE C2/CC2, which consolidates identity, force protection and deep-sensing programs to speed fielding. The post Army Forms PM ATSR to Unify Aerial, Ground Sensor Acquisitions first appeared on Executive Gov .",
+    "why": "Better sensors and navigation that works without GPS are prerequisites for everything autonomous.",
+    "sectors": [
+      "sensing",
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "PM ATSR"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/army-pm-atsr-aerial-terrestrial-sensor-offices-merger",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "Army",
+      "PM ATSR"
+    ]
+  },
+  {
+    "id": "u-20261106-doj-stands-up-super-intelligence-task-force-to-cou",
+    "d": "2026-11-06",
+    "title": "DOJ Stands Up Super Intelligence Task Force to Counter AI Misuse",
+    "body": "The Justice Department folded its AI task force into the new body, which will coordinate with Jay Clayton’s Super Intelligence Force. The post DOJ Stands Up Super Intelligence Task Force to Counter AI Misuse first appeared on Executive Gov .",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Intelligence Task Force",
+      "Super Intelligence Force"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/doj-super-intelligence-task-force-ai-misuse",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "Intelligence Task Force",
+      "Justice Department",
+      "Super Intelligence Force"
+    ]
+  },
+  {
+    "id": "u-20261106-dow-commits-150m-conditional-loan-to-leolabs-to-sc",
+    "d": "2026-11-06",
+    "title": "DOW Commits $150M Conditional Loan to LeoLabs to Scale Space Radar Production",
+    "body": "Matched by private co-investment, the financing would fund two U.S. radar plants by 2028 and new sensors for LeoLabs' network by 2030. The post DOW Commits $150M Conditional Loan to LeoLabs to Scale Space Radar Production first appeared on Executive Gov .",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "sensing",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "LeoLabs",
+      "Space Radar"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/dow-leolabs-150m-conditional-loan-space-domain-awareness-radar",
+      "q": "news"
+    },
+    "addedAt": "2026-11-07T16:15:16.762Z",
+    "auto": true,
+    "orgs": [
+      "LeoLabs",
+      "Space Radar"
     ]
   },
   {
