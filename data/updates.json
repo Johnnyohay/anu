@@ -1,5 +1,145 @@
 [
   {
+    "id": "u-20261108-tough-choices-uncertainty-and-scrutiny-may-lay-ahe",
+    "d": "2026-11-08",
+    "title": "Tough choices, uncertainty, and scrutiny may lay ahead for defense contractors",
+    "body": "With a new Congress in 2027, companies could see more anti-corruption probes.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/business/2026/11/tough-choices-uncertainty-and-scrutiny-may-lay-ahead-defense-contractors/417116/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-08T16:35:50.966Z",
+    "auto": true,
+    "orgs": [
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261108-u-s-puts-2-billion-into-critical-materials-for-its",
+    "d": "2026-11-08",
+    "title": "U.S. puts $2 billion into critical materials for its defense stockpile",
+    "body": "The Defense Logistics Agency committed $2 billion during fiscal year 2026 to buy strategic and critical materials for the National Defense Stockpile, the U.S. government’s reserve of raw materials held for national emergencies, the agency said on November 6.",
+    "why": "Where investors put money shows which parts of the industry they expect to win next.",
+    "sectors": [
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [
+      "National Defense Stockpile"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-puts-2-billion-into-critical-materials-for-its-defense-stockpile/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-08T16:35:50.966Z",
+    "auto": true,
+    "orgs": [
+      "Defense Logistics Agency",
+      "National Defense Stockpile"
+    ]
+  },
+  {
+    "id": "u-20261108-massive-houthi-barrage-targets-saudi-cities-from-r",
+    "d": "2026-11-08",
+    "title": "Massive Houthi barrage targets Saudi cities from Riyadh to Dammam",
+    "body": "Yemen’s Houthis launched a large-scale missile and drone attack on Saudi Arabia on Sunday, targeting Riyadh, the oil-rich Eastern Province and the southern border region.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "air",
+      "strike"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/massive-houthi-barrage-targets-saudi-cities-from-riyadh-to-dammam/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-08T16:35:50.966Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261108-u-s-marine-corps-shows-cac2s-air-command-system",
+    "d": "2026-11-08",
+    "title": "U.S. Marine Corps shows CAC2S air command system",
+    "body": "The U.S. Marine Corps has shown off a smaller, lighter version of the system its aviation units use to control airspace and manage air operations, the Common Aviation Command and Control System, or CAC2S.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-marine-corps-shows-cac2s-air-command-system/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-08T16:35:50.966Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Marine Corps"
+    ]
+  },
+  {
+    "id": "u-20261108-hypersonica-raises-111-million-to-build-european-h",
+    "d": "2026-11-08",
+    "title": "Hypersonica raises $111 million to build European hypersonic missile",
+    "body": "Hypersonica, a British-German defense company developing hypersonic strike missiles, has raised €100 million ($111.5 million) in a Series B funding round, UK Defence Journal reported.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "capital",
+      "global"
+    ],
+    "type": "Funding",
+    "companies": [
+      "Hypersonica",
+      "UK Defence Journal"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/hypersonica-raises-111-million-to-build-european-hypersonic-missile/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-08T16:35:50.966Z",
+    "auto": true,
+    "orgs": [
+      "Hypersonica",
+      "UK Defence Journal"
+    ]
+  },
+  {
+    "id": "u-20261108-polish-uncrewed-ground-vehicles-put-through-field-",
+    "d": "2026-11-08",
+    "title": "Polish uncrewed ground vehicles put through field trials in Switzerland",
+    "body": "Poland’s Łukasiewicz–PIAP research institute has sent two of its uncrewed ground vehicles, the HUNTeR and the IBIS TRANSPORT, to ALPEX 2026, a European military experiment in Switzerland that tests how robots and drones can support troops in the field, the…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/polish-uncrewed-ground-vehicles-put-through-field-trials-in-switzerland/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-08T16:35:50.966Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
     "id": "u-20261107-european-troops-set-to-train-in-poland-for-postwar",
     "d": "2026-11-07",
     "title": "European troops set to train in Poland for postwar Ukraine deployment",
@@ -220,6 +360,28 @@
       "U.S. Army",
       "MSM Group North America"
     ]
+  },
+  {
+    "id": "u-20261107-russia-fires-north-korean-kn-23-missiles-at-ukrain",
+    "d": "2026-11-07",
+    "title": "Russia fires North Korean KN-23 missiles at Ukraine",
+    "body": "Russia used North Korean-made KN-23 ballistic missiles to strike a key energy facility in Ukraine overnight on November 7, Ukrainian President Volodymyr Zelenskyy said, citing preliminary data.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary",
+      "energy"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-fires-north-korean-kn-23-missiles-at-ukraine/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-08T16:35:50.966Z",
+    "auto": true,
+    "orgs": []
   },
   {
     "id": "u-20261106-cut-to-us-aid-would-impact-israeli-acquisition-tim",

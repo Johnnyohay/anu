@@ -1,5 +1,21 @@
 [
  {
+  "id": "h-20261107-mortgage-rates-fell-and-demand-steadied-as-invento",
+  "d": "2026-11-07",
+  "title": "Mortgage rates fell and demand steadied as inventory dipped",
+  "body": "Is the market changing or is it just seasonality?",
+  "topics": [
+   "rates",
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/rates-fall-demand-stabilizes/",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261106-agnt-says-housing-market-is-tough-but-not-broken-p",
   "d": "2026-11-06",
   "title": "AGNT says housing market is tough but not broken, points to ‘unmatched’ agent value",

@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-08",
+  "title": "Today's top defense-tech headlines",
+  "big": "7 new stories since the last brief. The busiest areas: allies & theaters and capital: vc, m&a & ipos.",
+  "stories": [
+    {
+      "tag": "Missiles, hypersonics & munitions",
+      "h": "Hypersonica raises $111 million to build European hypersonic missile",
+      "what": "Hypersonica, a British-German defense company developing hypersonic strike missiles, has raised €100 million ($111.5 million) in a Series B funding round, UK Defence Journal reported.",
+      "you": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+      "ref": "u-20261108-hypersonica-raises-111-million-to-build-european-h"
+    },
+    {
+      "tag": "Allies & theaters",
+      "h": "Russia fires North Korean KN-23 missiles at Ukraine",
+      "what": "Russia used North Korean-made KN-23 ballistic missiles to strike a key energy facility in Ukraine overnight on November 7, Ukrainian President Volodymyr Zelenskyy said, citing preliminary data.",
+      "you": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+      "ref": "u-20261107-russia-fires-north-korean-kn-23-missiles-at-ukrain"
+    },
+    {
+      "tag": "Capital: VC, M&A & IPOs",
+      "h": "U.S. puts $2 billion into critical materials for its defense stockpile",
+      "what": "The Defense Logistics Agency committed $2 billion during fiscal year 2026 to buy strategic and critical materials for the National Defense Stockpile, the U.S. government’s reserve of raw materials held for national emergencies, the agency said on November 6.",
+      "you": "Where investors put money shows which parts of the industry they expect to win next.",
+      "ref": "u-20261108-u-s-puts-2-billion-into-critical-materials-for-its"
+    },
+    {
+      "tag": "Adversaries: China, Russia, Iran",
+      "h": "Massive Houthi barrage targets Saudi cities from Riyadh to Dammam",
+      "what": "Yemen’s Houthis launched a large-scale missile and drone attack on Saudi Arabia on Sunday, targeting Riyadh, the oil-rich Eastern Province and the southern border region.",
+      "you": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+      "ref": "u-20261108-massive-houthi-barrage-targets-saudi-cities-from-r"
+    },
+    {
+      "tag": "Budget, policy & acquisition reform",
+      "h": "Tough choices, uncertainty, and scrutiny may lay ahead for defense contractors",
+      "what": "With a new Congress in 2027, companies could see more anti-corruption probes.",
+      "you": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+      "ref": "u-20261108-tough-choices-uncertainty-and-scrutiny-may-lay-ahe"
+    }
+  ],
+  "watch": {
+    "h": "China's rare-earth magnet export deadline",
+    "why": "November 10. Could squeeze drone, motor and munitions supply weeks before the DoD ban."
+  },
+  "idea": {
+    "h": "Tactical power and thermal systems for directed energy",
+    "why": "Batteries, power conditioning and cooling packs that let lasers and microwave weapons fire continuously on vehicles. Laser production has started (AeroVironment E-HEL) but fielding is slow (Iron Beam); power and cooling are the constraint."
+  },
+  "auto": true
+}
