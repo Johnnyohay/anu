@@ -15,13 +15,13 @@
 :root{
   --bg:#EEF0F3; --surface:#FFFFFF; --fg:#14171B; --muted:#5A626D; --line:#D6DAE0; --track:#E1E5EA;
   --band:#0D1015; --band-fg:#E9EDF2; --band-dim:#A3ACB8; --band-line:#262D38; --band-chip:#171C24;
-  --hot:#E2722F;
+  --hot:#E2722F; --good:#15803D; --bad:#B91C1C;
   --display:"Bricolage Grotesque",system-ui,sans-serif;
   --ui:"Archivo",system-ui,sans-serif;
   --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 @media (prefers-color-scheme:dark){:root{
-  --bg:#0F1216; --surface:#171B21; --fg:#E7EAEE; --muted:#9AA3AE; --line:#2A3038; --track:#262C34; --hot:#F08A4B; color-scheme:dark}}
+  --bg:#0F1216; --surface:#171B21; --fg:#E7EAEE; --muted:#9AA3AE; --line:#2A3038; --track:#262C34; --hot:#F08A4B; --good:#4ADE80; --bad:#F87171; color-scheme:dark}}
 
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15.5px;line-height:1.55}
@@ -85,6 +85,37 @@ main>*{min-width:0;width:100%}
 .links .src{color:var(--muted);font-weight:500}
 .links .ask{color:var(--hot)}
 .swipe{display:none;font-size:13px;color:var(--muted);margin-top:8px}
+
+/* This week in numbers */
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:4px;align-content:start}
+.kpi .lbl{font-family:var(--ui);font-size:12.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.kpi .val{font-family:var(--ui);font-size:34px;font-weight:700;font-stretch:88%;line-height:1.05;font-variant-numeric:tabular-nums}
+.kpi .sub{font-size:13.5px;color:var(--muted)}
+.delta{font-family:var(--ui);font-size:13px;font-weight:700;white-space:nowrap}
+.up{color:var(--good)}.down{color:var(--bad)}.flat{color:var(--muted)}
+.kpi .spark{display:flex;gap:3px;align-items:flex-end;height:26px;margin-top:6px}
+.kpi .spark i{flex:1;background:var(--track);border-radius:2px;min-height:2px}
+.kpi .spark i.now{background:var(--fg)}
+.kpi .spark-l{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted)}
+.trio{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:14px;align-items:start}
+.deals{list-style:none;margin:0;padding:0;display:grid}
+.deals li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:2px 14px;padding:11px 0;border-top:1px solid var(--line);align-items:baseline}
+.deals li:first-child{border-top:0;padding-top:0}
+.deals .amt{font-family:var(--ui);font-size:20px;font-weight:700;font-stretch:90%;font-variant-numeric:tabular-nums;grid-row:span 2}
+.deals a{font-weight:600;text-decoration:none;line-height:1.35}
+.deals a:hover{text-decoration:underline}
+.deals .m{font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
+.kind{font-family:var(--ui);font-weight:700;font-size:11px;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--line);border-radius:5px;padding:0 6px;color:var(--fg)}
+.cos{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.cos li a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;text-decoration:none;align-items:baseline}
+.cos li a:hover .nm{text-decoration:underline}
+.cos .nm{font-weight:600;font-size:14.5px}
+.cos .n{font-size:13px;color:var(--muted)}
+.cos .bar{grid-column:1/-1;height:6px;border-radius:3px;background:var(--track);overflow:hidden}
+.cos .bar i{display:block;height:100%;background:var(--fg);opacity:.75;border-radius:3px}
+.areas .d{font-family:var(--ui);font-weight:700;font-size:12px;margin-left:6px}
+.method{font-size:12.5px;color:var(--muted);margin:12px 0 0}
 
 /* Coming up + busiest areas */
 .duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:14px;align-items:start}
@@ -151,7 +182,8 @@ footer a{color:var(--muted)}
 .qs a:hover{border-color:var(--hot)}
 .srcbtn{display:inline-block;margin-top:4px;font-weight:600;font-size:14.5px;color:var(--fg)}
 
-@media (max-width:900px){.duo{grid-template-columns:1fr}.facts{grid-template-columns:1fr}}
+@media (max-width:900px){.duo,.trio{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:460px){.deals li{grid-template-columns:78px minmax(0,1fr)}.deals .amt{font-size:17px}.kpi .val{font-size:28px}}
 @media (max-width:700px){
   .deck{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:6px;margin-right:calc(-1*max(16px,env(safe-area-inset-right,0px)))}
   .card,.card.big{flex:0 0 87%;scroll-snap-align:start}
@@ -189,6 +221,26 @@ footer a{color:var(--muted)}
     <p class="swipe" id="swipe">Swipe sideways for the next stories →</p>
   </section>
 
+  <section class="wrap" aria-labelledby="nums">
+    <div class="sec-head">
+      <h2 id="nums">This week in numbers</h2>
+      <p id="nums-sub">The 7 days to this brief, compared with the 7 days before.</p>
+    </div>
+    <div class="kpis" id="kpis"></div>
+  </section>
+
+  <section class="wrap trio" aria-label="Deals and companies">
+    <div class="panel">
+      <div class="sec-head"><h2>Biggest deals this week</h2><p>Contracts, funding rounds, loans, acquisitions and arms sales announced with a dollar amount, largest first.</p></div>
+      <ul class="deals" id="deals"></ul>
+      <p class="method" id="deals-note"></p>
+    </div>
+    <div class="panel">
+      <div class="sec-head"><h2>Most-mentioned companies</h2><p>Companies named most often in this week's stories. Tap one to ask ANU about it.</p></div>
+      <ul class="cos" id="cos"></ul>
+    </div>
+  </section>
+
   <section class="wrap duo" aria-label="Coming up and busiest areas">
     <div class="panel">
       <div class="sec-head"><h2>Coming up</h2><p>Dates found in the news that could move the market.</p></div>
@@ -196,7 +248,7 @@ footer a{color:var(--muted)}
       <div class="idea" id="idea" hidden></div>
     </div>
     <div class="panel">
-      <div class="sec-head"><h2>Busiest areas this week</h2><p>How many stories ANU collected in each area over the 7 days to this brief. Areas marked “in today's brief” have a story above.</p></div>
+      <div class="sec-head"><h2>Busiest areas this week</h2><p>Stories ANU collected in each area over the 7 days to this brief, and the change from the week before. Areas marked “in today's brief” have a story above.</p></div>
       <ul class="areas" id="areas"></ul>
       <a class="more" href="desk.html#sectors" id="all-areas">See every area →</a>
     </div>
@@ -312,12 +364,77 @@ function render() {
       <h4>${esc(brief.idea.h)}</h4><p>${esc(brief.idea.why || "")}</p><a class="btn" href="${esc(askUrl(`Pressure-test this idea: ${brief.idea.h}. ${brief.idea.why || ""}`))}">Ask ANU if it holds up</a>`;
   }
 
+  // ---- this week in numbers (7 days to the brief vs the 7 days before)
+  const prev = S.updates.filter(u => { const d = day(u.d); return d <= t - 7 * DAY && d > t - 14 * DAY; });
+  const cp = count(prev);
+  const typeCount = (list, re) => list.filter(u => re.test(u.type || "")).length;
+  const delta = (now, before, unit = "") => {
+    const d = now - before;
+    if (!before && !now) return `<span class="delta flat">no change</span>`;
+    return `<span class="delta ${d > 0 ? "up" : d < 0 ? "down" : "flat"}">${d > 0 ? "▲ +" : d < 0 ? "▼ −" : "± "}${Math.abs(d)}${unit} vs last week</span>`;
+  };
+  // Deals: a headline that announces one, with a dollar amount. The same deal from two outlets
+  // (same amount within 3 days) is counted once.
+  const MONEY = /\$\s?(\d+(?:\.\d+)?)\s?(billion|million|bn|b|m)\b/i;
+  const DEAL = /\b(raises?|raised|secures?|secured|lands?|wins?|won|awards?|awarded|taps|orders?|ordered|acquires?|acquired|acquisition|buys?|bought|loans?|contract|deal|sale|approves?|commits?|invests?|investment|funding|offers?|puts|adds|pays|series [a-f])\b/i;
+  const dealsOf = list => {
+    const out = [];
+    for (const u of list) {
+      const typed = /Contract/.test(u.type || ""); // a summary's amount counts only for contract stories
+      const m = (DEAL.test(u.title) && MONEY.exec(u.title)) || (typed && MONEY.exec(u.body || ""));
+      if (!m) continue;
+      const usd = +m[1] * (/^b/i.test(m[2]) ? 1e9 : 1e6);
+      if (usd < 1e6) continue;
+      if (out.some(o => Math.abs(o.usd - usd) < 1 && Math.abs(day(o.u.d) - day(u.d)) <= 3 * DAY)) continue;
+      const tl = u.title.toLowerCase();
+      const kind = /\bloan/.test(tl) ? "Loan" : /acquir|acquisition|\bbuys?\b/.test(tl) ? "Acquisition" : /\bsale\b/.test(tl) ? "Arms sale"
+        : /rais|series|funding|invest|secur/.test(tl) || /Funding/.test(u.type || "") ? "Funding" : "Contract";
+      out.push({ u, usd, kind });
+    }
+    return out.sort((a, b) => b.usd - a.usd);
+  };
+  const dw = dealsOf(week), dp = dealsOf(prev);
+  const sum = l => l.reduce((a, d) => a + d.usd, 0);
+  const money = v => v >= 1e9 ? `$${(v / 1e9).toFixed(v >= 1e10 ? 0 : 1)}B` : `$${Math.round(v / 1e6)}M`;
+  const moneyDelta = (a, b) => { const d = a - b; return `<span class="delta ${d > 0 ? "up" : d < 0 ? "down" : "flat"}">${d > 0 ? "▲ +" : d < 0 ? "▼ −" : "± "}${money(Math.abs(d))} vs last week</span>`; };
+  // Daily story counts for the last 7 days, for the small bars under "stories collected".
+  const perDay = [...Array(7)].map((_, i) => { const d = new Date(t - (6 - i) * DAY).toISOString().slice(0, 10); return { d, n: S.updates.filter(u => u.d === d).length }; });
+  const maxDay = Math.max(1, ...perDay.map(x => x.n));
+  const nContracts = typeCount(week, /Contract/), pContracts = typeCount(prev, /Contract/);
+  const nFund = typeCount(week, /Funding|M&A/), pFund = typeCount(prev, /Funding|M&A/);
+  $("#kpis").innerHTML = `
+    <div class="kpi"><span class="lbl">Stories collected</span><span class="val">${week.length}</span>${delta(week.length, prev.length)}
+      <div class="spark" aria-label="Stories per day: ${perDay.map(x => x.n).join(", ")}">${perDay.map((x, i) => `<i class="${i === 6 ? "now" : ""}" style="height:${Math.max(8, x.n / maxDay * 100)}%" title="${x.d}: ${x.n}"></i>`).join("")}</div>
+      <div class="spark-l"><span>${esc(fmtDay(perDay[0].d, { weekday: "short" }))}</span><span>per day</span><span>${esc(fmtDay(perDay[6].d, { weekday: "short" }))}</span></div></div>
+    <div class="kpi"><span class="lbl">Money announced</span><span class="val">${money(sum(dw))}</span>${moneyDelta(sum(dw), sum(dp))}<span class="sub">across ${dw.length} deal${dw.length === 1 ? "" : "s"} with a dollar amount</span></div>
+    <div class="kpi"><span class="lbl">Contract stories</span><span class="val">${nContracts}</span>${delta(nContracts, pContracts)}<span class="sub">awards, orders and procurements</span></div>
+    <div class="kpi"><span class="lbl">Funding & acquisitions</span><span class="val">${nFund}</span>${delta(nFund, pFund)}<span class="sub">raises, mergers, IPOs and buyouts</span></div>`;
+
+  // ---- biggest deals
+  $("#deals").innerHTML = dw.slice(0, 6).map(({ u, usd, kind }) => {
+    const url = safeUrl(u.src?.u), area = (u.sectors || [])[0];
+    return `<li><span class="amt">${money(usd)}</span>
+      ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(u.title)}</a>` : `<span>${esc(u.title)}</span>`}
+      <span class="m"><span class="kind">${esc(kind)}</span>${area ? `<span>${esc(nameOf(area))}</span>` : ""}<span>${esc(u.src?.t || "")} · ${esc(fmtDay(u.d, { month: "short", day: "numeric" }))}</span></span></li>`;
+  }).join("") || `<li><span class="sub" style="color:var(--muted)">No deals with a dollar amount this week.</span></li>`;
+  $("#deals-note").textContent = dw.length ? `Counted from headlines that announce a deal; the same deal reported by two outlets is counted once. Dollar amounts only.` : "";
+
+  // ---- most-mentioned companies (from the stories' tagged names; places, units and programs left out)
+  const NOT_CO = /strike group|stockpile|network|program|office|agency|command|ministry|department|congress|parliament|party|army|navy|air force|marine|guard|forces|government|council|white house|pentagon|nato|united nations/i;
+  const known = new Set(S.companies.map(c => c.name.toLowerCase()));
+  const cc = new Map();
+  week.forEach(u => new Set(u.companies || []).forEach(n => { if (isName(n) && !NOT_CO.test(n)) cc.set(n, (cc.get(n) || 0) + 1); }));
+  const coRows = [...cc.entries()].sort((a, b) => b[1] - a[1] || known.has(b[0].toLowerCase()) - known.has(a[0].toLowerCase())).slice(0, 8);
+  const coMax = Math.max(1, ...coRows.map(r => r[1]));
+  $("#cos").innerHTML = coRows.map(([n, c]) => `<li><a href="${esc(askUrl(`What's the latest on ${n}?`))}"><span class="nm">${esc(n)}</span><span class="n">${c} ${c === 1 ? "story" : "stories"}</span><span class="bar" aria-hidden="true"><i style="width:${(c / coMax * 100).toFixed(0)}%"></i></span></a></li>`).join("")
+    || `<li class="sub">No companies tagged this week.</li>`;
+
   // ---- busiest areas
   const rows = [...c7.entries()].filter(([id]) => sectors.has(id)).sort((a, b) => b[1] - a[1]).slice(0, 11);
   const maxN = Math.max(1, ...rows.map(r => r[1]));
   $("#areas").innerHTML = rows.map(([id, n]) => {
     const tagged = inBrief.has(id);
-    return `<li style="${tagged ? `--fill:${colorOf(id)[0]}` : ""}"><span class="nm">${esc(nameOf(id))}${tagged ? `<span class="tagin">in today's brief</span>` : ""}</span><span class="n"><b>${n}</b> ${n === 1 ? "story" : "stories"}</span><span class="bar" aria-hidden="true"><i style="width:${(n / maxN * 100).toFixed(0)}%"></i></span></li>`;
+    return `<li style="${tagged ? `--fill:${colorOf(id)[0]}` : ""}"><span class="nm">${esc(nameOf(id))}${tagged ? `<span class="tagin">in today's brief</span>` : ""}</span><span class="n"><b>${n}</b> ${n === 1 ? "story" : "stories"}${(() => { const d = n - (cp.get(id) || 0); return `<span class="d ${d > 0 ? "up" : d < 0 ? "down" : "flat"}">${d > 0 ? "+" : d < 0 ? "−" : "±"}${Math.abs(d)}</span>`; })()}</span><span class="bar" aria-hidden="true"><i style="width:${(n / maxN * 100).toFixed(0)}%"></i></span></li>`;
   }).join("");
   $("#all-areas").textContent = `See all ${total} areas →`;
 
