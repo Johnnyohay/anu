@@ -278,7 +278,14 @@ export function App() {
                   {t.note && <p className={`note ${t.status}`}>{t.note}</p>}
                   {i === turns.length - 1 && t.status === "done" && t.answer && conversationId && (
                     <>
-                      <GrokButton conversationId={conversationId} />
+                      {meta.engine.engine === "claude" ? (
+                        <ClaudeButton conversationId={conversationId} label="Ask Claude (free)" primary />
+                      ) : (
+                        <>
+                          <GrokButton conversationId={conversationId} />
+                          <ClaudeButton conversationId={conversationId} label="Check with Claude (free)" />
+                        </>
+                      )}
                       {meta.checker && <CheckPanel check={t.check} checker={meta.checker} onVerify={() => void verifyLast()} />}
                     </>
                   )}
@@ -360,6 +367,41 @@ function GrokButton({ conversationId }: { conversationId: string }) {
           {prompt ? <button className="linkish" onClick={() => setState("idle")}>Select the prompt below and copy it</button> : "Try again."}
         </span>
       )}
+      {state === "error" && prompt && <textarea className="grok-prompt" readOnly value={prompt} onFocus={(e) => e.currentTarget.select()} />}
+    </div>
+  );
+}
+
+/**
+ * Opens claude.ai (free with a Claude account) with ANU's prompt filled in through ?q=.
+ * The prompt is also copied, so a long one that won't fit in the address bar can be pasted.
+ */
+function ClaudeButton({ conversationId, label, primary }: { conversationId: string; label: string; primary?: boolean }) {
+  const [state, setState] = useState<"idle" | "opened" | "paste" | "blocked" | "error">("idle");
+  const [prompt, setPrompt] = useState("");
+  async function go() {
+    // Open the tab first, inside the click, so pop-up blockers allow it.
+    const tab = window.open("about:blank", "_blank");
+    try {
+      const text = await api.grokPrompt(conversationId);
+      setPrompt(text);
+      const copied = await navigator.clipboard.writeText(text).then(() => true, () => false);
+      const fits = encodeURIComponent(text).length <= 7500;
+      const url = fits ? `https://claude.ai/new?q=${encodeURIComponent(text)}` : "https://claude.ai/new";
+      if (tab) { tab.opener = null; tab.location.href = url; }
+      setState(!tab ? "blocked" : fits ? "opened" : copied ? "paste" : "error");
+    } catch {
+      tab?.close();
+      setState("error");
+    }
+  }
+  return (
+    <div className="grok">
+      <button className={primary ? "btn" : "btn ghost verify"} onClick={() => void go()}>{label}</button>
+      {state === "opened" && <span className="note"> Opened in Claude with everything filled in. Press send there.</span>}
+      {state === "paste" && <span className="note"> Copied. In the Claude tab, paste (⌘V) and send.</span>}
+      {state === "blocked" && <span className="note"> Your browser blocked the tab. Open <a href="https://claude.ai/new" target="_blank" rel="noreferrer">claude.ai</a>, paste (⌘V) and send.</span>}
+      {state === "error" && <span className="note error"> Couldn't copy automatically. Select the prompt below, copy it and paste it into <a href="https://claude.ai/new" target="_blank" rel="noreferrer">claude.ai</a>.</span>}
       {state === "error" && prompt && <textarea className="grok-prompt" readOnly value={prompt} onFocus={(e) => e.currentTarget.select()} />}
     </div>
   );
