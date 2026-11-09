@@ -1,5 +1,586 @@
 [
   {
+    "id": "u-20261109-the-next-breakthrough-is-software-built-on-the-bat",
+    "d": "2026-11-09",
+    "title": "The next breakthrough is software built on the battlefield by agentic bots",
+    "body": "[Sponsored] Autonomous agents and mission-specific software promise faster responses to emerging threats.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/the-next-breakthrough-is-software-built-on-the-battlefield-by-agentic-bots/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261109-pentagon-can-t-track-thousands-of-f-35-parts-gao",
+    "d": "2026-11-09",
+    "title": "Pentagon can’t track thousands of F-35 parts: GAO",
+    "body": "The government watchdog found that more than 17,000 F-35 fighter jet parts worth an estimated $1.3 billion were missing from the program’s inventory system.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/pentagon-cant-track-thousands-of-f-35-parts-gao/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261109-korean-air-aerospace-pushes-forward-with-collabora",
+    "d": "2026-11-09",
+    "title": "Korean Air Aerospace pushes forward with Collaborative Combat Aircraft plans",
+    "body": "“We delivered our CCA platform last year and will having flight tests at the end of this year,” Director of International Business for KE-ASD Haneul Kim confirmed.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Korean Air Aerospace",
+      "International Business"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/korean-air-aerospace-pushes-forward-with-collaborative-combat-aircraft-plans/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "Korean Air Aerospace",
+      "International Business"
+    ]
+  },
+  {
+    "id": "u-20261109-army-fields-launched-effects-to-11-of-12-divisions",
+    "d": "2026-11-09",
+    "title": "Army fields launched effects to 11 of 12 divisions, with Griffon Aerospace delivering the majority",
+    "body": "In line with Defense Secretary Pete Hegseth’s 2025 Drone Dominance memo, the Army was directed to provide each headquarters division and multi-domain task force with launched effects.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Griffon Aerospace",
+      "Defense Unicorns"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/army-fields-launched-effects-to-11-of-12-divisions-with-griffon-aerospace-delivering-the-majority/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "Army",
+      "Griffon Aerospace",
+      "Defense"
+    ]
+  },
+  {
+    "id": "u-20261109-defense-industry-takes-aim-at-right-to-repair-as-n",
+    "d": "2026-11-09",
+    "title": "Defense industry takes aim at ‘right to repair’ as NDAA decision looms",
+    "body": "Proponents of “right to repair” say it will allow troops the ability to fix equipment in the field without needing to reach back out to a contractor, but industry is raising concerns about intellectual property.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "NDAA"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/defense-industry-takes-aim-at-right-to-repair-as-ndaa-decision-looms/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "NDAA"
+    ]
+  },
+  {
+    "id": "u-20261109-disa-shops-for-modernized-identity-prototype-to-su",
+    "d": "2026-11-09",
+    "title": "DISA shops for modernized identity prototype to support shift to zero-trust security",
+    "body": "An enterprise ICAM capability would serve as \"the critical first layer of the DoW’s Zero Trust (ZT) Cybersecurity Architecture,\" DISA said.",
+    "why": "State hackers are still inside critical networks, which keeps defensive and offensive cyber in demand.",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "DISA"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/09/disa-enterprise-icam-prototype-zero-trust/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "DISA",
+      "DoW"
+    ]
+  },
+  {
+    "id": "u-20261109-firm-bets-on-converted-fishing-trawlers-to-tackle-",
+    "d": "2026-11-09",
+    "title": "Firm bets on converted fishing trawlers to tackle Russian submarines in the Arctic",
+    "body": "The company’s Arctic Hunter idea involves an industry-standard 56-meter trawler design whose fish-processing innards are ripped out and replaced with autonomy features.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/09/firm-bets-on-converted-fishing-trawlers-to-tackle-russian-submarines-in-the-arctic/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261109-neros-to-expand-domestic-drone-production-with-450",
+    "d": "2026-11-09",
+    "title": "Neros to expand domestic drone production with $450M Pentagon loan",
+    "body": "The company is a frontrunner in a Defense Department competition to find the best quality, most affordable small drone for combat.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Neros"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/11/09/neros-to-expand-domestic-drone-production-with-450m-pentagon-loan/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Defense Department"
+    ]
+  },
+  {
+    "id": "u-20261109-drones-incoming-new-innovations-on-offer-in-uas-te",
+    "d": "2026-11-09",
+    "title": "Drones incoming! New innovations on offer in UAS tech Defense News Weekly Full Episode 11.10.26",
+    "body": "New drone innovations are highlighted in Part 2 of our Business of Defense series. Plus, a sneak peek into a new Smithsonian military aviation exhibit, and tips to avoid scams.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "of Defense",
+      "Smithsonian"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/09/drones-incoming-new-innovations-on-offer-in-uas-tech-defense-news-weekly-full-episode-11-10-26/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "Defense News Weekly",
+      "of Defense",
+      "Smithsonian"
+    ]
+  },
+  {
+    "id": "u-20261109-drones-that-see-sense-and-hunt-business-of-defense",
+    "d": "2026-11-09",
+    "title": "Drones that see, sense and hunt Business of Defense – Part 2",
+    "body": "Sig Sauer mounts its pistols to small drones in an effort to counter small unmanned threats, while other drone makers look to innovate battlefield capability.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Sig Sauer"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/09/drones-that-see-sense-and-hunt-business-of-defense-part-2/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "Sig Sauer"
+    ]
+  },
+  {
+    "id": "u-20261109-netting-to-shield-f-35s-at-tyndall-afb-from-drone-",
+    "d": "2026-11-09",
+    "title": "Netting To Shield F-35s At Tyndall AFB From Drone Attacks Eyed By USAF",
+    "body": "Tentative plans for anti-drone nets at Tyndall highlight a still heated debate within the USAF about investing in physical hardening.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "USAF"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/netting-to-shield-f-35s-at-tyndall-afb-from-drone-attacks-eyed-by-usaf",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "USAF"
+    ]
+  },
+  {
+    "id": "u-20261109-fishing-trawler-adapted-into-arctic-hunter-drone-s",
+    "d": "2026-11-09",
+    "title": "Fishing Trawler Adapted Into Arctic Hunter Drone Ship Aims To Scour For Russian Submarines",
+    "body": "The totally uncrewed Arctic Hunter with its 60-day endurance would give the Royal Navy persistent ears in the high north.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/fishing-trawler-adapted-into-arctic-hunter-drone-ship-aims-to-scour-for-russian-submarines",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "Royal Navy"
+    ]
+  },
+  {
+    "id": "u-20261109-lucas-drones-to-be-built-in-containerized-robotic-",
+    "d": "2026-11-09",
+    "title": "LUCAS Drones To Be Built In Containerized Robotic Micro Factories Designed To Be Forward Deployed",
+    "body": "Machina has been awarded a $9 million contract to prove it can build LUCAS drones with its robotic manufacturing system at remote locations.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "mfg"
+    ],
+    "type": "Contract",
+    "companies": [
+      "LUCAS",
+      "Machina"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/lucas-drones-to-be-built-in-containerized-robotic-micro-factories-designed-to-be-forward-deployed",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "LUCAS",
+      "Machina"
+    ]
+  },
+  {
+    "id": "u-20261109-air-force-leaders-c-17s-will-soon-be-armed-with-pa",
+    "d": "2026-11-09",
+    "title": "Air Force Leaders: C-17s Will Soon Be Armed with Pallets of Cruise Missiles",
+    "body": "After years of experiments and tests, senior Air Force leaders say they're on the verge of using C-17s and other cargo aircraft to launch cruise missiles via airdrop, touting the development as a way to bolster the combat fleet and a major shift in the…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/air-force-leaders-c-17s-air-drop-cruise-missiles/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261109-usni-news-fleet-and-marine-tracker-nov-9-2026",
+    "d": "2026-11-09",
+    "title": "USNI News Fleet and Marine Tracker: Nov. 9, 2026",
+    "body": "These are the approximate positions of the U.S. Navy’s deployed carrier strike groups and amphibious ready groups throughout the world as of Nov. 9, 2026, based on Navy and public data.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/09/usni-news-fleet-and-marine-tracker-nov-9-2026",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "USNI News",
+      "U.S. Navy"
+    ]
+  },
+  {
+    "id": "u-20261109-royal-navy-commissions-first-unmanned-surface-vehi",
+    "d": "2026-11-09",
+    "title": "Royal Navy Commissions First Unmanned Surface Vehicle Squadron",
+    "body": "The Royal Navy commissioned its first unmanned surface vessel squadron last week as it transforms into a hybrid fleet, the service announced Monday.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "First Unmanned Surface Vehicle Squadron"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/09/royal-navy-commissions-first-unmanned-surface-vehicle-squadron",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "Royal Navy",
+      "First Unmanned Surface Vehicle Squadron"
+    ]
+  },
+  {
+    "id": "u-20261109-ccia-report-highlights-satellite-connectivity-s-po",
+    "d": "2026-11-09",
+    "title": "CCIA Report Highlights Satellite Connectivity’s Potential to Expand Internet Access and Drive Economic Growth",
+    "body": "Washington — The Computer Communications Industry Association today released Connecting the World: Unlocking the Potential of Satellite Connectivity, a new report examining how satellite technology can expand internet access, [ ]",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space"
+    ],
+    "type": "Research",
+    "companies": [
+      "CCIA"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/ccia-report-highlights-satellite-connectivitys-potential-to-expand-internet-access-and-drive-economic-growth/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "CCIA",
+      "Computer Communications Industry Association"
+    ]
+  },
+  {
+    "id": "u-20261109-hegseth-mandates-military-education-reform",
+    "d": "2026-11-09",
+    "title": "Hegseth Mandates Military Education Reform",
+    "body": "Declaring that the fundamental duty of America's armed forces is to assure victory in war, Secretary of War Pete Hegseth said the nation's senior service colleges must have a curriculum that underpins that duty during a speech at the U.S. Naval War College.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Naval War College"
+    ],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4645001/hegseth-mandates-military-education-reform/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "Naval War College"
+    ]
+  },
+  {
+    "id": "u-20261109-mystery-u-s-army-vehicles-spotted-in-hawaii-are-fa",
+    "d": "2026-11-09",
+    "title": "Mystery U.S. Army vehicles spotted in Hawaii are fake tanks",
+    "body": "Unusual armored vehicles hidden under camouflage netting and tarps that turned up at a U.S. Army exercise in Hawaii have turned out to be mock enemy tanks used to play the opposing force.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/mystery-u-s-army-vehicles-spotted-in-hawaii-are-fake-tanks/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261109-u-s-army-ships-arctic-beowulf-vehicles-to-hawaii-f",
+    "d": "2026-11-09",
+    "title": "U.S. Army ships Arctic Beowulf vehicles to Hawaii for jungle training",
+    "body": "The U.S. Army has shipped its Arctic Beowulf all-terrain vehicles to Hawaii for a large training exercise in jungle and island terrain.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-ships-arctic-beowulf-vehicles-to-hawaii-for-jungle-training/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261109-u-s-air-force-to-arm-c-17-cargo-aircraft-with-crui",
+    "d": "2026-11-09",
+    "title": "U.S. Air Force to arm C-17 cargo aircraft with cruise missiles",
+    "body": "U.S. Air Force leaders say C-17 and C-130 cargo aircraft will soon launch cruise missiles dropped from their cargo holds on standard airdrop pallets, with the service planning to field the capability in 2027 under a program now known as Dragon Cart.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-air-force-to-arm-c-17-cargo-aircraft-with-cruise-missiles/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261109-u-s-army-tests-fd-1-drone-interceptor-over-the-bal",
+    "d": "2026-11-09",
+    "title": "U.S. Army tests FD-1 drone interceptor over the Baltic Sea",
+    "body": "U.S. Army air defense soldiers in Poland spent five days learning to fly FD-1 interceptor drones into incoming targets over the Baltic Sea, as the Army looks for cheaper ways to stop large waves of enemy drones.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "missiledef",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-tests-fd-1-drone-interceptor-over-the-baltic-sea/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261109-u-s-army-tests-fireant-ugvs-for-resupply-in-hawaii",
+    "d": "2026-11-09",
+    "title": "U.S. Army tests FireAnt UGVs for resupply in Hawaii",
+    "body": "U.S. Army soldiers from the 25th Division Sustainment Brigade drove Swarmbotics AI’s FireAnt small uncrewed ground vehicles through a long-distance movement test in Hawaii on November 8, as the Army trialed autonomous systems for moving supplies and wounded…",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "25th Division Sustainment Brigade",
+      "Swarmbotics AI"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-tests-fireant-ugvs-for-resupply-in-hawaii/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "25th Division Sustainment Brigade",
+      "Swarmbotics AI"
+    ]
+  },
+  {
+    "id": "u-20261109-ukraine-moves-to-create-its-own-space-force",
+    "d": "2026-11-09",
+    "title": "Ukraine moves to create its own Space Force",
+    "body": "Ukraine’s parliament has taken the first step toward creating a Space Force within the country’s armed forces. On November 9, the Verkhovna Rada approved in the first reading draft law No.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Verkhovna Rada"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/ukraine-moves-to-create-its-own-space-force/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-09T20:37:36.119Z",
+    "auto": true,
+    "orgs": [
+      "Space Force",
+      "Verkhovna Rada"
+    ]
+  },
+  {
     "id": "u-20261108-tough-choices-uncertainty-and-scrutiny-may-lay-ahe",
     "d": "2026-11-08",
     "title": "Tough choices, uncertainty, and scrutiny may lay ahead for defense contractors",

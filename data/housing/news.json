@@ -1,5 +1,133 @@
 [
  {
+  "id": "h-20261109-invitation-homes-hbi-team-up-to-train-vets-in-skil",
+  "d": "2026-11-09",
+  "title": "Invitation Homes, HBI team up to train vets in skilled trades",
+  "body": "The investment will fund hands-on training, industry credentials and job placement for transitioning service members and veterans",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/invitation-homes-hbi-partnership/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261109-pro-housing-coalition-presses-senate-on-baaja-perm",
+  "d": "2026-11-09",
+  "title": "Pro-housing coalition presses Senate on BAAJA permitting reforms",
+  "body": "The coalition argues that BAAJA’s reforms could significantly cut timelines and costs for federally assisted affordable housing",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/pro-housing-coalition-baaja-reforms/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261109-ryan-serhant-s-firm-aligns-with-american-real-esta",
+  "d": "2026-11-09",
+  "title": "Ryan Serhant’s firm aligns with American Real Estate Association to raise agent standards",
+  "body": "SERHANT. joins REMAX, Compass International Holdings and Douglas Elliman among the larger brokerage networks that have aligned with ARA",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/serhant-joins-american-real-estate-association-ara/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261109-brokerage-moves-new-affiliations-leadership-change",
+  "d": "2026-11-09",
+  "title": "Brokerage moves: New affiliations, leadership changes and AI tools reshape real estate",
+  "body": "Moves include 70-plus agents joining eXp in Tampa Bay and Real adding a 30-agent Iowa group with $1.2 billion history",
+  "topics": [],
+  "states": [
+   "IA",
+   "FL"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/compass-exp-real-teams-ai/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261109-ice-borrowers-reach-record-tappable-equity-as-cash",
+  "d": "2026-11-09",
+  "title": "ICE: Borrowers reach record tappable equity as cash-out refis drive runoff",
+  "body": "Mortgage holders had a record $17.5 trillion in home equity in Q3",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/ash-out-refi-home-equity/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261109-graceful-finance-s-anna-frankowska-pitches-home-re",
+  "d": "2026-11-09",
+  "title": "Graceful Finance’s Anna Frankowska pitches home reversions for seniors’ toolbox",
+  "body": "Product for homeowners 75+ offers a lump sum or recurring income while allowing them to stay in their homes for life",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/graceful-finance-home-reversion/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261109-video-november-9-2026-economic-and-housing-market-",
+  "d": "2026-11-09",
+  "title": "Video: November 9, 2026, Economic and Housing Market Outlook",
+  "body": "The November 9, 2026 Weekly Housing Outlook video gives you the info you need to know to navigate the housing market as a homebuyer, home seller, renter, or industry professional.",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/video-economic-and-housing-market-update-november-9-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261109-october-2026-luxury-housing-report-where-luxury-pr",
+  "d": "2026-11-09",
+  "title": "October 2026 Luxury Housing Report: Where Luxury Prices Are Rising the Fastest",
+  "body": "Luxury prices slipped again nationally in October, but not everywhere. Our latest Luxury Housing Report looks at the metros where the entry luxury price is climbing, from Naples (up 9.0%) to Charleston (up 4.7%), plus how quickly luxury homes are selling.",
+  "topics": [],
+  "states": [
+   "SC",
+   "FL"
+  ],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/october-2026-luxury/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261109-how-to-legally-pay-less-in-taxes-as-a-rookie-real-",
+  "d": "2026-11-09",
+  "title": "How to (Legally) Pay Less in Taxes as a Rookie Real Estate Investor",
+  "body": "Have you ever seen a “tax hack” online and wondered if it’s actually legal? Putting your logo on your car, renting your home to your business, or moving everything into [ ]",
+  "topics": [
+   "investing",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-794",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261107-mortgage-rates-fell-and-demand-steadied-as-invento",
   "d": "2026-11-07",
   "title": "Mortgage rates fell and demand steadied as inventory dipped",
