@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>ANU: your morning brief</title>
+<title>Morning brief</title>
 <meta name="description" content="A personal morning brief and teacher for the topics you follow: the stories that matter, why they matter, the key terms and the numbers.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -249,7 +249,7 @@ body.expert .teach{display:none!important}
 <header class="band gut">
   <div class="wrap">
     <div class="navrow">
-      <a class="brand" href="./"><b>AN<span>U</span></b><small id="tagline"></small></a>
+      <a class="brand" href="./"><b id="brandname"></b><small id="tagline"></small></a>
       <nav aria-label="Pages" id="nav"></nav>
     </div>
     <p class="date" id="date">Loading today's brief…</p>
@@ -285,12 +285,12 @@ body.expert .teach{display:none!important}
 
   <section class="wrap trio" aria-label="Deals and companies" data-kind="news" id="deals-wrap">
     <div class="panel">
-      <div class="sec-head"><h2>Biggest deals this week</h2><p id="deals-sub">Contracts, funding rounds, loans, acquisitions and arms sales announced with a dollar amount, largest first.</p></div>
+      <div class="sec-head"><h2>Biggest deals this week</h2><p id="deals-sub">Contracts, funding rounds, loans, acquisitions and sales announced with a dollar amount, largest first.</p></div>
       <ul class="deals" id="deals"></ul>
       <p class="method" id="deals-note"></p>
     </div>
     <div class="panel">
-      <div class="sec-head"><h2>Most-mentioned companies</h2><p>Companies named most often in this week's stories. Tap one to ask ANU about it.</p></div>
+      <div class="sec-head"><h2 id="cos-h">Most-mentioned companies</h2><p id="cos-p">Named most often in this week's stories. Tap one to ask about it.</p></div>
       <ul class="cos" id="cos"></ul>
     </div>
   </section>
@@ -312,7 +312,7 @@ body.expert .teach{display:none!important}
 
   <div id="detail" hidden></div>
 
-  <footer class="wrap" id="foot">Every morning ANU reads public news sources and picks the most important stories for the topics you follow, with the terms and numbers you need to understand them. Stories from aggregator sites are unconfirmed. For learning, not investment advice. <a href="docs.html">How it works</a></footer>
+  <footer class="wrap" id="foot">Every morning <span class="sitename">this site</span> reads public news sources and picks the most important stories for the topics you follow, with the terms and numbers you need to understand them. Stories from aggregator sites are unconfirmed. For learning, not investment advice. <a href="docs.html">How it works</a></footer>
 </main>
 
 <script src="desk.js"></script>
@@ -324,7 +324,8 @@ const askUrl = q => "app/?q=" + encodeURIComponent(q);
 const DAY = 864e5;
 const day = d => Date.parse(String(d).slice(0, 10) + "T12:00:00Z");
 const fmtDay = (d, o) => new Date(day(d)).toLocaleDateString("en-US", { timeZone: "UTC", ...o });
-const lc = s => s ? s.charAt(0).toLowerCase() + s.slice(1) : s;
+// Lowercase the first letter for use mid-sentence, unless the name is Title Case ("Trade Policy & Tariffs").
+const lc = s => !s ? s : /^[A-Z][a-z]*( (&|and|of|the|[a-z][\w-]*|[A-Z]{2,}[\w-]*|[\d$€£][\w.-]*))*[,:]?(\s|$)/.test(s) && !/\s[A-Z][a-z]/.test(s) ? s.charAt(0).toLowerCase() + s.slice(1) : s;
 // Feed footers ("The post … first appeared on …") are removed at collection; this also cleans older stories.
 const clean = t => String(t || "").replace(/\s*The post .{0,400}? (?:first )?appeared (?:first )?on .{1,120}$/i, "").trim();
 const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch {} } };
@@ -338,7 +339,9 @@ const COLORS = {
   capital:["#2F5E3A","#EDF7EF"], primes:["#3B3F46","#F0F1F3"], global:["#9A3B26","#FDF2EE"], adversary:["#4A1626","#FBEDF1"],
   housing:["#0F5B5E","#E8F6F6"],
 };
-const colorOf = id => COLORS[id] || ["#3B3F46", "#F0F1F3"];
+// Areas without a fixed color (other sites' themes) take one from this palette, in theme order.
+const PALETTE = [["#1F3A5F","#F3F6FA"],["#9A3B26","#FDF2EE"],["#2F4A3A","#EFF5F0"],["#C99332","#1E1608",1],["#3E3A6B","#F1F0FA"],["#1E5560","#EAF6F7"],["#6E2A2A","#FBEFEF"],["#4A5A2E","#F3F7EA"],["#4B2E5A","#F6EFFA"],["#8A5A1E","#FBF3E6"],["#28435A","#ECF3F9"],["#2E6A55","#EAF7F1"]];
+const colorOf = id => COLORS[id] || (S && S.sectors.findIndex(x => x.id === id) >= 0 ? PALETTE[S.sectors.findIndex(x => x.id === id) % PALETTE.length] : ["#3B3F46", "#F0F1F3"]);
 const TOPIC_DOTS = ["#E2722F", "#14B8A6", "#8B5CF6", "#EAB308", "#3B82F6"];
 // Words that are never a company name on their own (the tagger sometimes reads "Space Radar" as one).
 const GENERIC = new Set("space radar radars drone drones missile missiles defense defence air ground sea naval navy army force forces cyber laser lasers satellite satellites system systems production loan contract program office new the and of for to a us u.s. military".split(" "));
@@ -366,7 +369,9 @@ function navHTML(cfg) {
 function topicsFrom(cfg) {
   let t = (cfg.topics || []).slice();
   if (!t.length) {
-    t.push({ id: "main", label: cfg.topic?.domain ? cfg.topic.domain.replace(/^./, c => c.toUpperCase()) : (cfg.site?.name || "News"), kind: "news" });
+    // No topics set: name the news topic after the first phrase of the subject ("Retail strategy, …" → "Retail strategy").
+    const first = (cfg.topic?.domain || "").split(/,|;| and /)[0].trim();
+    t.push({ id: "main", label: first ? first.charAt(0).toUpperCase() + first.slice(1) : (cfg.site?.name || "News"), kind: "news" });
     if (H) t.push({ id: "housing", label: "Housing", kind: "housing" });
     if (SERIES?.series?.length) t.push({ id: "data", label: "Data", kind: "series" });
   }
@@ -433,6 +438,12 @@ function render() {
   // ---- band
   const site = CFG.site || {};
   $("#tagline").textContent = site.tagline || "Your morning brief";
+  const nm = site.name || "Brief";
+  $("#brandname").innerHTML = `${esc(nm.slice(0, -1))}<span>${esc(nm.slice(-1))}</span>`;
+  document.title = `${site.name || "Today"}: your morning brief`;
+  document.querySelectorAll(".sitename").forEach(el => el.textContent = site.name || "this site");
+  const vocab = CFG.topic?.vocab || {};
+  if (vocab.entities) $("#cos-h").textContent = /,/.test(vocab.entities) || vocab.entities.length > 24 ? "Most-mentioned names" : `Most-mentioned ${vocab.entities.toLowerCase()}`;
   $("#hello").textContent = `Good morning${site.owner ? `, ${site.owner}` : ""}. Here's what to learn today.`;
   const latest = brief === briefs[0];
   const genAt = S.generatedAt ? new Date(S.generatedAt).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/New_York" }) : "";
@@ -453,7 +464,7 @@ function render() {
   const next = [...S.catalysts].filter(c => day(c.d) >= t).sort((a, b) => a.d.localeCompare(b.d));
   const n1 = next[0], inDays = n1 ? Math.round((day(n1.d) - t) / DAY) : null;
   const facts = [];
-  if (newsT && ON.has(newsT.id)) facts.push(`<div class="fact"><b>${last2.length}</b><span><strong>new ${esc(lc(newsT.label))} stories</strong> in the last 2 days. ANU picked the ${cards.filter(c => c.kind === "news").length} that matter most.</span></div>`);
+  if (newsT && ON.has(newsT.id)) facts.push(`<div class="fact"><b>${last2.length}</b><span><strong>new ${esc(lc(newsT.label))} stories</strong> in the last 2 days. ${esc(site.name || "This brief")} picked the ${cards.filter(c => c.kind === "news").length} that matter most.</span></div>`);
   if (houseT && ON.has(houseT.id) && m?.rate30 != null) facts.push(`<div class="fact"><b>${m.rate30.toFixed(2)}%</b><span><strong>30-year mortgage rate</strong> (Freddie Mac, week of ${esc(fmtDay(m.week, { month: "short", day: "numeric" }))}).</span></div>`);
   if (newsT && ON.has(newsT.id) && n1) facts.push(`<div class="fact soon"><b>${inDays}</b><span><strong>${inDays === 1 ? "day" : "days"} until</strong> ${esc(n1.title)} (${esc(fmtDay(n1.d, { weekday: "short", month: "short", day: "numeric" }))}).</span></div>`);
   if (facts.length < 3 && houseT && ON.has(houseT.id) && nat?.rentYoY != null) facts.push(`<div class="fact"><b>${nat.rentYoY >= 0 ? "+" : ""}${nat.rentYoY}%</b><span><strong>typical US rent</strong> over the past year ($${Math.round(nat.rent).toLocaleString("en-US")} a month).</span></div>`);
@@ -473,7 +484,7 @@ function render() {
       <div><div class="eyebrow"><span>Lesson of the day</span><span>${Math.max(1, Math.round(words / 200))}-minute read</span><span class="tpill"><i></i>${esc(tp.label)}</span></div>
         <h2>${esc(L.g.term.charAt(0).toUpperCase() + L.g.term.slice(1))}${/^[A-Z0-9-]+$/.test(L.g.term) && L.g.aliases?.[0] ? ` <span style="font-weight:600;opacity:.7">(${esc(L.g.aliases[0].toLowerCase())})</span>` : ""}</h2><p>${esc(L.g.long)}</p></div>
       <aside>${L.c ? `<span><b>Why today:</b> it comes up in “${esc(L.c.h)}”.</span><button class="open" data-open="${cards.indexOf(L.c) + 1}" style="margin:0">Open that story →</button>` : `<span><b>From your glossary:</b> a term that comes up often in ${esc(lc(tp.label))}.</span>`}
-        <a href="${esc(askUrl(`Teach me more about ${L.g.term}, with examples from recent news.`))}">Ask ANU to go deeper →</a>
+        <a href="${esc(askUrl(`Teach me more about ${L.g.term}, with examples from recent news.`))}">Ask ${esc(CFG.site?.name || "")} to go deeper →</a>
         <span>Switch to Expert at the top to hide lessons and key terms.</span></aside></div>`;
   } else $("#lesson-wrap").hidden = true;
 
@@ -505,17 +516,20 @@ function render() {
   const groups = [];
   if (newsT) {
     const MONEY = /\$\s?(\d+(?:\.\d+)?)\s?(billion|million|bn|b|m)\b/i;
-    const DEAL = /\b(raises?|raised|secures?|secured|lands?|wins?|won|awards?|awarded|taps|orders?|ordered|acquires?|acquired|acquisition|buys?|bought|loans?|contract|deal|sale|approves?|commits?|invests?|investment|funding|offers?|puts|adds|pays|series [a-f])\b/i;
+    const DEAL = /\b(raises?|raised|secures?|secured|lands?|wins?|won|awards?|awarded|taps|orders?|ordered|acquires?|acquired|acquisition|buys?|bought|loans?|contract|deal|sale|approves?|commits?|invests?|investment|funding|offers?|series [a-f])\b/i;
+    // Money that isn't a deal: refunds, budgets, aid, losses, fines.
+    const NOT_DEAL = /\brefunds?|\btariffs?\b|budget|appropriation|\baid\b|deficit|\blosses?\b|\bfines?\b|penalt|lawsuit|settlement|stimulus/i;
     const dealsOf = list => {
       const out = [];
       for (const u of list) {
         const typed = /Contract/.test(u.type || ""); // a summary's amount counts only for contract stories
+        if (NOT_DEAL.test(u.title)) continue;
         const mm = (DEAL.test(u.title) && MONEY.exec(u.title)) || (typed && MONEY.exec(u.body || ""));
         if (!mm) continue;
         const usd = +mm[1] * (/^b/i.test(mm[2]) ? 1e9 : 1e6);
         if (usd < 1e6 || out.some(o => Math.abs(o.usd - usd) < 1 && Math.abs(day(o.u.d) - day(u.d)) <= 3 * DAY)) continue;
         const tl = u.title.toLowerCase();
-        const kind = /\bloan/.test(tl) ? "Loan" : /acquir|acquisition|\bbuys?\b/.test(tl) ? "Acquisition" : /\bsale\b/.test(tl) ? "Arms sale"
+        const kind = /\bloan/.test(tl) ? "Loan" : /acquir|acquisition|\bbuys?\b/.test(tl) ? "Acquisition" : /\bsale\b/.test(tl) ? "Sale"
           : /rais|series|funding|invest|secur/.test(tl) || /Funding/.test(u.type || "") ? "Funding" : "Contract";
         out.push({ u, usd, kind });
       }
@@ -528,14 +542,23 @@ function render() {
     const perDay = [...Array(7)].map((_, i) => { const d = new Date(t - (6 - i) * DAY).toISOString().slice(0, 10); return { d, n: S.updates.filter(u => u.d === d).length }; });
     const maxDay = Math.max(1, ...perDay.map(x => x.n));
     const tc = re => [week.filter(u => re.test(u.type || "")).length, prev.filter(u => re.test(u.type || "")).length];
-    const [nC, pC] = tc(/Contract/), [nF, pF] = tc(/Funding|M&A/);
+    // Two story-type tiles: contracts and funding when the site has those types, else its two most common types.
+    const typesWeek = [...new Set(week.map(u => u.type).filter(Boolean))];
+    const hasC = typesWeek.some(x => /contract|award/i.test(x)), hasF = typesWeek.some(x => /fund|m&a|ipo|invest|deal/i.test(x));
+    const defaultType = (S.pack?.types || []).at(-1) || "News";
+    const topTypes = [...new Map(week.map(u => [u.type, 0])).keys()].filter(x => x && x !== defaultType).map(x => [x, week.filter(u => u.type === x).length]).sort((a, b) => b[1] - a[1]).map(x => x[0]);
+    const esc2 = x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const reA = hasC ? /contract|award/i : new RegExp(`^${esc2(topTypes[0] || "~")}$`), reB = hasF ? /fund|m&a|ipo|invest|deal/i : new RegExp(`^${esc2(topTypes[1] || "~")}$`);
+    const labA = hasC ? ["Contract stories", "awards, orders and procurements"] : [`${topTypes[0] || "Top"} stories`, "the most common kind this week"];
+    const labB = hasF ? ["Funding & acquisitions", "raises, mergers, IPOs and buyouts"] : [`${topTypes[1] || "Other"} stories`, "the next most common kind"];
+    const [nC, pC] = tc(reA), [nF, pF] = tc(reB);
     groups.push(`<div class="numgroup" data-topic="${esc(newsT.id)}" style="--tc:${newsT.dot}"><h3><i></i>${esc(newsT.label)} <span>this week vs last week</span></h3><div class="kpis">
       <div class="kpi"><span class="lbl">Stories collected</span><span class="val">${week.length}</span>${delta(week.length, prev.length)}
         <div class="spark" aria-label="Stories per day: ${perDay.map(x => x.n).join(", ")}">${perDay.map((x, i) => `<i class="${i === 6 ? "now" : ""}" style="height:${Math.max(8, x.n / maxDay * 100)}%" title="${x.d}: ${x.n}"></i>`).join("")}</div>
         <div class="spark-l"><span>${esc(fmtDay(perDay[0].d, { weekday: "short" }))}</span><span>per day</span><span>${esc(fmtDay(perDay[6].d, { weekday: "short" }))}</span></div></div>
-      <div class="kpi"><span class="lbl">Money announced</span><span class="val">${money(sum(dw))}</span><span class="delta ${md > 0 ? "up" : md < 0 ? "down" : "flat"}">${md > 0 ? "▲ +" : md < 0 ? "▼ −" : "± "}${money(Math.abs(md))} vs last week</span><span class="sub">across ${dw.length} deal${dw.length === 1 ? "" : "s"} with a dollar amount</span></div>
-      <div class="kpi"><span class="lbl">Contract stories</span><span class="val">${nC}</span>${delta(nC, pC)}<span class="sub">awards, orders and procurements</span></div>
-      <div class="kpi"><span class="lbl">Funding & acquisitions</span><span class="val">${nF}</span>${delta(nF, pF)}<span class="sub">raises, mergers, IPOs and buyouts</span></div></div></div>`);
+      <div class="kpi"><span class="lbl">Money announced</span>${dw.length ? `<span class="val">${money(sum(dw))}</span><span class="delta ${md > 0 ? "up" : md < 0 ? "down" : "flat"}">${md > 0 ? "▲ +" : md < 0 ? "▼ −" : "± "}${money(Math.abs(md))} vs last week</span><span class="sub">across ${dw.length} deal${dw.length === 1 ? "" : "s"} with a dollar amount</span>` : `<span class="val">None</span><span class="sub">no deals with a dollar amount this week</span>`}</div>
+      <div class="kpi"><span class="lbl">${esc(labA[0])}</span><span class="val">${nC}</span>${delta(nC, pC)}<span class="sub">${esc(labA[1])}</span></div>
+      <div class="kpi"><span class="lbl">${esc(labB[0])}</span><span class="val">${nF}</span>${delta(nF, pF)}<span class="sub">${esc(labB[1])}</span></div></div></div>`);
     $("#deals").innerHTML = dw.slice(0, 6).map(({ u, usd, kind }) => {
       const url = safeUrl(u.src?.u), area = (u.sectors || [])[0];
       return `<li><span class="amt">${money(usd)}</span>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(u.title)}</a>` : `<span>${esc(u.title)}</span>`}
@@ -587,7 +610,8 @@ function render() {
     $("#idea").innerHTML = `<div class="sec-head" style="margin-bottom:0"><h2>One idea from the news</h2><p>A business opening suggested by this week's stories.</p></div>
       <h4>${esc(brief.idea.h)}</h4><p>${esc(brief.idea.why || "")}</p><a class="btn" href="${esc(askUrl(`Pressure-test this idea: ${brief.idea.h}. ${brief.idea.why || ""}`))}">Ask if it holds up</a>`;
   }
-  if (newsT) $("#areas-h").textContent = `Busiest ${lc(newsT.label)} areas this week`;
+  const themesWord = vocab.themes && !/,/.test(vocab.themes) && vocab.themes.length <= 24 ? vocab.themes.toLowerCase() : "areas";
+  $("#areas-h").textContent = `Busiest ${themesWord} this week`;
   const rows = [...c7.entries()].filter(([id]) => sectors.has(id)).sort((a, b) => b[1] - a[1]).slice(0, 11);
   const maxN = Math.max(1, ...rows.map(r => r[1]));
   $("#areas").innerHTML = rows.map(([id, n]) => {
@@ -710,10 +734,10 @@ addEventListener("hashchange", fromHash);
 
 (async () => {
   const get = f => fetch(`api/v1/${f}`, { cache: "no-cache" }).then(r => r.ok ? r.json() : null).catch(() => null);
-  try { CFG = await ANU.config(); $("#nav").innerHTML = navHTML(CFG); } catch {}
+  try { CFG = await (window.DESK || window.ANU).config(); $("#nav").innerHTML = navHTML(CFG); } catch {}
   // Data series are only fetched when a topic uses them (or no topics are set and the site may have them).
   const wantsSeries = !(CFG.topics || []).length ? (CFG.desks || []).some(d => d.id === "data") : CFG.topics.some(x => x.kind === "series");
-  const wantsHousing = !(CFG.topics || []).length || CFG.topics.some(x => x.kind === "housing");
+  const wantsHousing = !(CFG.topics || []).length ? (CFG.desks || []).some(d => /housing/.test(d.page)) : CFG.topics.some(x => x.kind === "housing");
   const none = Promise.resolve(null);
   const [all, hs, hn, gl, se] = await Promise.all([get("all.json"), wantsHousing ? get("housing-summary.json") : none, wantsHousing ? get("housing-news.json") : none, get("glossary.json"), wantsSeries ? get("series.json") : none]);
   if (!all) {
