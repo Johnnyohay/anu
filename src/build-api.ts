@@ -1,4 +1,5 @@
-import { writeFile, mkdir } from "node:fs/promises";
+import { writeFile, mkdir, readFile } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { loadDesk, type Desk } from "./store.ts";
@@ -33,7 +34,20 @@ export async function buildApi(desk: Desk): Promise<void> {
   if (desk.housing) {
     await put("housing.json", desk.housing.market);
     await put("housing-news.json", desk.housing.news);
+    // A small summary for the brief page, so it doesn't load the full 1 MB market file.
+    const m = desk.housing.market as unknown as {
+      asOf?: Record<string, string>;
+      mortgage?: { rate30?: number; rate15?: number; week?: string; rate30YearAgo?: number; history?: [string, number][] };
+      national?: Record<string, number>;
+    };
+    await put("housing-summary.json", {
+      asOf: m.asOf ?? {},
+      mortgage: m.mortgage ? { ...m.mortgage, history: (m.mortgage.history ?? []).slice(-53) } : null,
+      national: m.national ?? null,
+    });
   }
+  // Key terms and lessons for the brief (data/glossary.json): one-line definitions, longer lessons.
+  if (existsSync("data/glossary.json")) await put("glossary.json", JSON.parse(await readFile("data/glossary.json", "utf8")));
   if (desk.videos) await put("videos.json", desk.videos);
 
   // Settings from config/*.yaml that the pages read (tabs, flags, defaults, custom attributes, requests).

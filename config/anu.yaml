@@ -10,7 +10,7 @@
 site:
   name: ANU
   owner: Johnny
-  tagline: Your personal helper for defense tech and US housing
+  tagline: Your personal teacher for defense tech and US housing
 
 # The tabs in the top switcher, in this order. enabled: false hides a tab.
 desks:
@@ -20,6 +20,12 @@ desks:
   - { id: videos, label: Videos, page: videos.html, enabled: true }
   - { id: docs, label: Docs, page: docs.html, enabled: true }
   - { id: housing, label: Housing, page: housing.html, enabled: true }
+
+# The subjects ANU teaches you. The brief mixes their stories, labeled by topic, and shows
+# numbers for each. kind: news (the defense desk), housing (the housing desk), series (data).
+topics:
+  - { id: defense, label: Defense tech, kind: news }
+  - { id: housing, label: US housing, kind: housing }
 
 # Feature flags: true shows a feature, false hides it.
 flags:
