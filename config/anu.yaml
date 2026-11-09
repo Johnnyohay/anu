@@ -10,7 +10,7 @@
 site:
   name: ANU
   owner: Johnny
-  tagline: Your personal teacher for defense tech and US housing
+  tagline: Defense tech and US housing
 
 # The tabs in the top switcher, in this order. enabled: false hides a tab.
 desks:
