@@ -4,7 +4,8 @@
 window.ANU = (() => {
   const FALLBACK = {
     desks: [
-      { id: "defense", label: "Defense", page: "./", enabled: true },
+      { id: "brief", label: "Today's brief", page: "./", enabled: true },
+      { id: "stories", label: "All stories", page: "desk.html#updates", enabled: true },
       { id: "housing", label: "Housing", page: "housing.html", enabled: true },
       { id: "videos", label: "Watch", page: "videos.html", enabled: true },
       { id: "docs", label: "Docs", page: "docs.html", enabled: true },

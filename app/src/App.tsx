@@ -77,7 +77,10 @@ export function App() {
   const [days, setDays] = useState(0);
   const [effort, setEffort] = useState<Effort>("medium");
   const [sources, setSources] = useState("papers");
-  const [question, setQuestion] = useState("");
+  // A link from the brief can carry a question (app/?q=…): it is filled in, not sent.
+  const [question, setQuestion] = useState(() => {
+    try { return new URLSearchParams(window.location.search).get("q") ?? ""; } catch { return ""; }
+  });
   const [turns, setTurns] = useState<Turn[]>([]);
   const [conversationId, setConversationId] = useState<string | null>(null);
   const [sectorDetail, setSectorDetail] = useState<SectorDetail | null>(null);

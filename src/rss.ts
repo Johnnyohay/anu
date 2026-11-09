@@ -19,6 +19,9 @@ export const strip = (s: unknown) =>
     .replace(/\s+/g, " ")
     .trim();
 
+// WordPress feeds end every item with "The post <title> first appeared on <site>." Drop it.
+export const dropFeedFooter = (s: string) => s.replace(/\s*The post .{0,400}? (?:first )?appeared (?:first )?on .{1,120}$/i, "").trim();
+
 export const firstSentences = (s: string, max = 260) => {
   if (s.length <= max) return s;
   const cut = s.slice(0, max);
@@ -45,7 +48,7 @@ export async function fetchFeed(name: string, url: string): Promise<FeedItem[]> 
       if (!title || !/^https?:\/\//.test(link) || !when || isNaN(+when)) return [];
       const body = it.description ?? it.summary ?? it["content:encoded"] ?? it.content;
       const text = typeof body === "object" ? (body as Record<string, unknown>)?.["#text"] : body;
-      return [{ title, link: link.trim(), date: when.toISOString().slice(0, 10), summary: firstSentences(strip(text)), raw: it }];
+      return [{ title, link: link.trim(), date: when.toISOString().slice(0, 10), summary: firstSentences(dropFeedFooter(strip(text))), raw: it }];
     });
   } catch (err) {
     console.warn(`Skipped ${name}: ${(err as Error).message}`);

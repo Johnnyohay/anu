@@ -14,10 +14,12 @@ site:
 
 # The tabs in the top switcher, in this order. enabled: false hides a tab.
 desks:
-  - { id: defense, label: Defense, page: "./", enabled: true }
-  - { id: housing, label: Housing, page: housing.html, enabled: true }
-  - { id: videos, label: Watch, page: videos.html, enabled: true }
+  - { id: brief, label: "Today's brief", page: "./", enabled: true }
+  - { id: stories, label: All stories, page: "desk.html#updates", enabled: true }
+  - { id: areas, label: By area, page: "desk.html#sectors", enabled: true }
+  - { id: videos, label: Videos, page: videos.html, enabled: true }
   - { id: docs, label: Docs, page: docs.html, enabled: true }
+  - { id: housing, label: Housing, page: housing.html, enabled: true }
 
 # Feature flags: true shows a feature, false hides it.
 flags:
