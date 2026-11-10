@@ -1,5 +1,74 @@
 [
  {
+  "id": "h-20261110-3-ai-agents-value-a-home-similarly-could-they-be-w",
+  "d": "2026-11-10",
+  "title": "3 AI agents value a home similarly, could they be wrong?",
+  "body": "Similar estimates can reflect shared market assumptions, not independent validation of comparable sales",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/ai-home-value-estimates-wrong/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261110-enter-once-distribute-everywhere-can-open-real-est",
+  "d": "2026-11-10",
+  "title": "Enter once, distribute everywhere: Can Open Real Estate deliver?",
+  "body": "Ocusell and other vendors say MLS specific fields, compliance and duplicate licensing costs could slow adoption",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/open-real-estate-mls-vendor-questions/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261110-ai-is-already-in-real-estate-and-its-next-opportun",
+  "d": "2026-11-10",
+  "title": "AI is already in real estate, and its next opportunity is connection",
+  "body": "Surveys show 82% of agents and nearly 90% of title pros use AI, the gap is pulling file status into view",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/ai-real-estate-connection/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261110-va-loans-in-a-high-rate-market-lower-down-payments",
+  "d": "2026-11-10",
+  "title": "VA Loans in a High-Rate Market: Lower Down Payments, Lower Costs",
+  "body": "In recognition of Veterans Day, Realtor.com® has undertaken a research initiative to highlight the benefits of VA mortgage loans for military households and the industry professionals who support them.",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/va-loans-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261110-the-best-and-worst-real-estate-investing-advice-fo",
+  "d": "2026-11-10",
+  "title": "The Best (and Worst) Real Estate Investing Advice for 2027",
+  "body": "There’s no shortage of real estate investing advice floating around online. The problem? Not all of it is sound—some of it is downright bad. So, where is the housing market [ ]",
+  "topics": [
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/on-the-market-476",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261109-invitation-homes-hbi-team-up-to-train-vets-in-skil",
   "d": "2026-11-09",
   "title": "Invitation Homes, HBI team up to train vets in skilled trades",
@@ -124,6 +193,37 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/rookie-794",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261109-california-voters-reject-measure-to-shred-environm",
+  "d": "2026-11-09",
+  "title": "California voters reject measure to shred environmental red tape",
+  "body": "Opponents argued the measure could also fast-track data centers and major infrastructure, not just housing",
+  "topics": [],
+  "states": [
+   "CA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/california-ceqa-prop-45-rejected/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261109-he-replaced-his-65-000-salary-with-rental-cash-flo",
+  "d": "2026-11-09",
+  "title": "He Replaced His $65,000 Salary with Rental Cash Flow (Starting with $2,500!)",
+  "body": "Before real estate, Matt Krueger was making just $35,000 a year. He and his wife were barely getting by, and with a baby on the way, Matt needed to figure [ ]",
+  "topics": [
+   "rents",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1354",
    "q": "news"
   }
  },

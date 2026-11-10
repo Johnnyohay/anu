@@ -1,5 +1,668 @@
 [
   {
+    "id": "u-20261110-why-britain-needs-a-maritime-first-defense-strateg",
+    "d": "2026-11-10",
+    "title": "Why Britain needs a maritime-first defense strategy",
+    "body": "As Germany and Poland build up their armies, Britain should look to its historic strengths at sea to secure its future role in European defense.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/why-britain-needs-a-maritime-first-defense-strategy/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261110-a-pentagon-impeachment-showdown-plus-defense-fundi",
+    "d": "2026-11-10",
+    "title": "A Pentagon impeachment showdown, plus defense funding in limbo",
+    "body": "Hegseth could face a high-profile impeachment battle as Congress struggles to settle major defense spending decisions before the new year.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/a-pentagon-impeachment-showdown-plus-defense-funding-in-limbo/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261110-hegseth-vows-to-fight-impeachment-spectacle",
+    "d": "2026-11-10",
+    "title": "Hegseth vows to fight impeachment ‘spectacle’",
+    "body": "“What one disgruntled and defeated congressman is attempting is not oversight, and it’s not accountability. It’s a political spectacle, a personal manifesto driven by ego and resentment,” Hegseth told reporters at the Pentagon this morning.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/hegseth-vows-to-fight-impeachment-spectacle/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261110-hegseth-says-impeachment-filing-against-him-is-sab",
+    "d": "2026-11-10",
+    "title": "Hegseth says impeachment filing against him is ‘sabotage’ and political ‘farce’",
+    "body": "The Secretary of Defense defended his record in his first press conference since May, and said attacks on him disrespect troops, and are a preamble for trying service members for war crimes.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Defense Unicorns"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/10/hegseth-says-impeachment-filing-against-him-is-sabotage-and-political-farce/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Defense"
+    ]
+  },
+  {
+    "id": "u-20261110-pentagon-can-t-track-millions-of-f-35-spare-parts-",
+    "d": "2026-11-10",
+    "title": "Pentagon can’t track millions of F-35 spare parts, watchdog finds",
+    "body": "The GAO reported that while the DoD's F-35 program \"is the costliest in its history,\" the department \"struggles to account\" for its parts.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/pentagon/2026/11/10/pentagon-cant-track-millions-of-f-35-spare-parts-watchdog-finds/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "GAO",
+      "DoD"
+    ]
+  },
+  {
+    "id": "u-20261110-report-russian-ships-are-pumping-tanks-mraps-and-r",
+    "d": "2026-11-10",
+    "title": "Report: Russian ships are pumping tanks, MRAPs and rocket launchers into Africa",
+    "body": "Russian cargo ships have carried military equipment including tanks, armored vehicles and rocket launchers to African ports serving as gateways to Moscow’s forces on the continent, according to a new investigation.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "space",
+      "adversary",
+      "ground"
+    ],
+    "type": "Research",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/mideast-africa/2026/11/10/report-russian-ships-are-pumping-tanks-mraps-and-rocket-launchers-into-africa/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261110-hegseth-denounces-farce-impeachment-in-first-brief",
+    "d": "2026-11-10",
+    "title": "Hegseth denounces ‘farce’ impeachment in first briefing since May",
+    "body": "Hegseth argued the impeachment articles brought forth Monday were a politically motivated \"farce\" directed at service members.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/pentagon/2026/11/10/hegseth-denounces-farce-impeachment-in-first-briefing-since-may/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261110-britain-says-its-bases-are-safe-after-us-refueling",
+    "d": "2026-11-10",
+    "title": "Britain says its bases are safe after US refueling planes evacuated",
+    "body": "Commercially available flight tracking data showed at least 10 Boeing KC-135R Stratotanker refueling planes left the Royal Air Force base in Mildenhall, eastern England, on Monday.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/10/britain-says-its-bases-are-safe-after-us-refueling-planes-evacuated/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Royal Air Force"
+    ]
+  },
+  {
+    "id": "u-20261110-france-orders-military-earth-observation-satellite",
+    "d": "2026-11-10",
+    "title": "France orders military Earth-observation satellites for more than €1.5 billion",
+    "body": "France ordered two military Earth-observation satellites from Airbus and Thales Alenia Space for more than €1.5 billion (US$1.7 billion).",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Airbus",
+      "Thales Alenia Space"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/10/france-orders-military-earth-observation-satellites-for-more-than-e1-5-billion/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Airbus",
+      "Thales Alenia Space"
+    ]
+  },
+  {
+    "id": "u-20261110-mq-58-valkyrie-drones-now-cost-6m-8m-each",
+    "d": "2026-11-10",
+    "title": "MQ-58 Valkyrie Drones Now Cost $6M-$8M Each",
+    "body": "Kratos still sees Valkyrie's relative affordability as key to staying ahead of a growing field of competing Collaborative Combat Aircraft (CCA) drone designs.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Kratos",
+      "Valkyrie",
+      "Collaborative Combat Aircraft",
+      "CCA"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/mq-58-valkyrie-drones-now-cost-6m-8m-each",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Valkyrie",
+      "Collaborative Combat Aircraft",
+      "CCA"
+    ]
+  },
+  {
+    "id": "u-20261110-space-force-taps-viasat-for-450m-ops-center-to-har",
+    "d": "2026-11-10",
+    "title": "Space Force Taps Viasat for $450M Ops Center to Harmonize Data Network",
+    "body": "Space Systems Command recently awarded Viasat a contract with a $450 million ceiling to design and field a mission operations center for the command’s burgeoning Space Data Network.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Ops Center",
+      "Space Data Network"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/space-force-viasat-450m-ops-center-data-network/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Space Force Taps Viasat",
+      "Ops Center",
+      "Space Systems Command",
+      "Space Data Network"
+    ]
+  },
+  {
+    "id": "u-20261110-u-k-to-develop-north-atlantic-network-of-drones-ai",
+    "d": "2026-11-10",
+    "title": "U.K. to Develop North Atlantic Network of Drones, AI Systems to Find Russian Subs",
+    "body": "The U.K. will invest $120 million on a network of drones, sensors and AI systems for the Royal Navy to counter Russian submarines in the North Atlantic, the Ministry of Defense announced Tuesday.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "air",
+      "adversary",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "North Atlantic Network of Drones",
+      "AI Systems"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/10/u-k-to-develop-north-atlantic-network-of-drones-ai-systems-to-find-russian-subs",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "North Atlantic Network of Drones",
+      "AI Systems",
+      "Royal Navy",
+      "Ministry of Defense"
+    ]
+  },
+  {
+    "id": "u-20261110-gao-report-on-the-defense-department-s-f-35-progra",
+    "d": "2026-11-10",
+    "title": "GAO Report on the Defense Department’s F-35 Program",
+    "body": "The following is the Nov. 9, 2026, Government Accountability Office report, F-35 Program: DOD Needs to Strengthen Oversight of Tens of Billions of Dollars in Parts.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Research",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/10/gao-report-on-the-defense-departments-f-35-program",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Defense Department",
+      "Government Accountability Office",
+      "DOD"
+    ]
+  },
+  {
+    "id": "u-20261110-kratos-and-seagate-space-partner-to-advance-mobile",
+    "d": "2026-11-10",
+    "title": "Kratos and Seagate Space Partner to Advance Mobile Offshore Launch Capabilities for National Security Missions",
+    "body": "SAN DIEGO, CA, November 10, 2026 – Kratos Defense Security Solutions, Inc., a technology company in defense, national security, and global markets, today announced a long-term agreement with Seagate [ ]",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Kratos",
+      "Seagate Space Partner",
+      "National Security Missions"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/kratos-and-seagate-space-partner-to-advance-mobile-offshore-launch-capabilities-for-national-security-missions/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Seagate Space Partner",
+      "National Security Missions",
+      "Kratos Defense Security Solutions, Inc"
+    ]
+  },
+  {
+    "id": "u-20261110-escapade-on-its-way-to-mars-after-earth-flybys",
+    "d": "2026-11-10",
+    "title": "ESCAPADE on its way to Mars after Earth flybys",
+    "body": "Two NASA smallsats are headed toward Mars after completing flybys of Earth nearly a year after their launch.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "ESCAPADE"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/escapade-on-its-way-to-mars-after-earth-flybys/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "ESCAPADE",
+      "NASA"
+    ]
+  },
+  {
+    "id": "u-20261110-hegseth-denounces-impeachment-charges-in-rare-pres",
+    "d": "2026-11-10",
+    "title": "Hegseth denounces impeachment charges in rare press briefing",
+    "body": "The defense secretary called his potential removal an attack on his “success.”",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/threats/2026/11/hegseth-returns-pentagon-briefing-room-defend-himself-against-impeachment-charges/417148/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261110-hegseth-impeachment-over-policy-disagreement-sends",
+    "d": "2026-11-10",
+    "title": "Hegseth: Impeachment Over Policy Disagreement Sends Wrong Signal to Adversaries",
+    "body": "Secretary of War Pete Hegseth, facing the threat of impeachment, detailed a record of successful operations on his watch during a press briefing at the Pentagon.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4645996/hegseth-impeachment-over-policy-disagreement-sends-wrong-signal-to-adversaries/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261110-dream-chaser-spaceplane-gets-landing-approval-ahea",
+    "d": "2026-11-10",
+    "title": "Dream Chaser spaceplane gets landing approval ahead of first flight",
+    "body": "The Federal Aviation Administration has licensed Sierra Space to bring its Dream Chaser spaceplane back from orbit and land it on the runway at Vandenberg Space Force Base in California, clearing one of the last regulatory steps before the long-delayed…",
+    "why": "Where investors put money shows which parts of the industry they expect to win next.",
+    "sectors": [
+      "capital",
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Chaser",
+      "Sierra Space"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/dream-chaser-spaceplane-gets-landing-approval-ahead-of-first-flight/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Chaser",
+      "Federal Aviation Administration",
+      "Sierra Space"
+    ]
+  },
+  {
+    "id": "u-20261110-f-35-parts-tracking-failures-threaten-jet-readines",
+    "d": "2026-11-10",
+    "title": "F-35 parts tracking failures threaten jet readiness, GAO warns",
+    "body": "The U.S. Department of War cannot reliably track the roughly 26 million F-35 spare parts it owns, worth about $31 billion and stored at more than 700 government and contractor facilities around the world, the Government Accountability Office said in a report…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Research",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/f-35-parts-tracking-failures-threaten-jet-readiness-gao-warns/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "GAO",
+      "U.S. Department of War",
+      "Government Accountability Office"
+    ]
+  },
+  {
+    "id": "u-20261110-overland-ai-turns-nascar-team-s-6-6-military-vehic",
+    "d": "2026-11-10",
+    "title": "Overland AI turns NASCAR team’s 6 6 military vehicle into a robot",
+    "body": "Overland AI has released footage of a six-wheeled vehicle built by Richard Childress Racing’s manufacturing arm driving itself across rough ground while carrying a heavy load, the latest attempt by the Seattle company to show that its self-driving software…",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "mfg"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Overland AI",
+      "NASCAR",
+      "Richard"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/overland-ai-turns-nascar-teams-6x6-military-vehicle-into-a-robot/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Overland AI",
+      "NASCAR",
+      "Richard"
+    ]
+  },
+  {
+    "id": "u-20261110-secretive-u-s-drone-maker-aevex-lands-400m-drone-c",
+    "d": "2026-11-10",
+    "title": "Secretive U.S. drone maker AEVEX lands $400M drone contract",
+    "body": "U.S. drone maker AEVEX has won an indefinite-delivery, indefinite-quantity contract worth up to nearly $400 million to supply unmanned aircraft systems to an unnamed U.S. customer, the company said on November 10.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/secretive-u-s-drone-maker-aevex-lands-400m-drone-contract/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261110-diehl-and-nammo-open-155mm-shell-production-in-bav",
+    "d": "2026-11-10",
+    "title": "Diehl and Nammo open 155mm shell production in Bavaria",
+    "body": "German defense group Diehl has opened a new production line for 155mm artillery shell bodies at Röthenbach an der Pegnitz in Bavaria, built with help from Norwegian ammunition maker Nammo.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "mfg"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Diehl",
+      "Nammo"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/diehl-and-nammo-open-155mm-shell-production-in-bavaria/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Diehl",
+      "Nammo"
+    ]
+  },
+  {
+    "id": "u-20261110-u-s-space-force-and-iceye-book-rocket-lab-s-unflow",
+    "d": "2026-11-10",
+    "title": "U.S. Space Force and ICEYE book Rocket Lab’s unflown Neutron rocket",
+    "body": "Rocket Lab has signed more than $515 million in launch contracts for its new Neutron rocket in a single quarter, and has raised the rocket’s base price to $70 million per launch, up from $55 million, the company said on November 9.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Contract",
+    "companies": [
+      "ICEYE",
+      "Rocket Lab"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-space-force-and-iceye-book-rocket-labs-unflown-neutron-rocket/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Space Force",
+      "ICEYE",
+      "Rocket Lab"
+    ]
+  },
+  {
+    "id": "u-20261110-russia-claims-first-agm-188-missile-intercept-then",
+    "d": "2026-11-10",
+    "title": "Russia claims first AGM-188 missile intercept, then deletes statement",
+    "body": "Russia’s Defense Ministry has for the first time claimed that its air defenses shot down AGM-188A Rusty Dagger cruise missiles, the U.S.-made weapons better known as ERAM, or Extended Range Attack Munition.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-claims-first-agm-188-missile-intercept-then-deletes-statement/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Defense Ministry"
+    ]
+  },
+  {
+    "id": "u-20261110-u-s-special-forces-want-a-helmet-display-with-dron",
+    "d": "2026-11-10",
+    "title": "U.S. special forces want a helmet display with drone control",
+    "body": "U.S. Special Operations Command is looking for companies that can build a helmet-mounted display that lets special operators fly first-person-view drones and see battlefield data without taking their eyes off their surroundings.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "U.S"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-special-forces-want-a-helmet-display-with-drone-control/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "U.S",
+      "Special Operations Command"
+    ]
+  },
+  {
+    "id": "u-20261110-pentagon-wants-satellites-to-use-the-atmosphere-to",
+    "d": "2026-11-10",
+    "title": "Pentagon wants satellites to use the atmosphere to change orbits",
+    "body": "The Pentagon’s research and development arm, the Defense Advanced Research Projects Agency (DARPA), is preparing a program called Anzio to develop technology that would let spacecraft use Earth’s upper atmosphere, rather than rocket fuel, to make large…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/pentagon-wants-satellites-to-use-the-atmosphere-to-change-orbits/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Defense Advanced Research Projects Agency"
+    ]
+  },
+  {
+    "id": "u-20261110-japan-develops-its-own-ugvs-up-to-10-tons-for-its-",
+    "d": "2026-11-10",
+    "title": "Japan develops its own UGVs, up to 10 tons, for its military",
+    "body": "Japan’s defense procurement agency is building its own uncrewed ground vehicles in three weight classes, ranging from under 1 ton to as much as 10 tons, a display at the agency’s technology symposium shows.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/japan-develops-its-own-ugvs-up-to-10-tons-for-its-military/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
     "id": "u-20261109-the-next-breakthrough-is-software-built-on-the-bat",
     "d": "2026-11-09",
     "title": "The next breakthrough is software built on the battlefield by agentic bots",
@@ -578,6 +1241,317 @@
     "orgs": [
       "Space Force",
       "Verkhovna Rada"
+    ]
+  },
+  {
+    "id": "u-20261109-agencies-agree-to-counter-unauthorized-drones-with",
+    "d": "2026-11-09",
+    "title": "Agencies agree to counter unauthorized drones without compromising civilian safety, under new MOU",
+    "body": "The new memo comes as the government scurries to respond to a recent surge in unauthorized drone incursions over sensitive American sites.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/09/agencies-agree-to-counter-unauthorized-drones-without-compromising-civilian-safety-under-new-mou/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261109-security-levels-at-u-s-bases-in-england-raised-wit",
+    "d": "2026-11-09",
+    "title": "Security Levels At U.S. Bases In England Raised Without Explanation (Updated)",
+    "body": "Aviation spotters had noticed unusual aircraft activity at RAF Mildenhall, which prompted our inquiries to the USAF.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "USAF"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/security-levels-at-u-s-bases-in-england-raised-without-explanation",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "USAF"
+    ]
+  },
+  {
+    "id": "u-20261109-new-report-more-than-1-million-f-35-spare-parts-re",
+    "d": "2026-11-09",
+    "title": "New Report: More Than 1 Million F-35 Spare Parts Remain Missing",
+    "body": "The F-35 Joint Program Office is struggling to keep track of billions of dollars worth of spare parts for the fifth-generation fighter, government auditors said in a new report—and it still can’t find $85 million in parts that have been lost for years.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Research",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/new-report-1-million-f-35-spare-parts-remain-missing/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Joint Program Office"
+    ]
+  },
+  {
+    "id": "u-20261109-after-midterms-congress-returns-to-reckon-with-def",
+    "d": "2026-11-09",
+    "title": "After Midterms, Congress Returns to Reckon with Defense Funding, NDAA",
+    "body": "Following a historic win for Democrats in the midterm elections, Congress returned to Washington, D.C., Nov. 9. Between now and Jan.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Defense Funding",
+      "NDAA"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/after-midterms-congress-reckon-defense-funding-ndaa/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Congress",
+      "Defense Funding",
+      "NDAA"
+    ]
+  },
+  {
+    "id": "u-20261109-in-first-two-ccas-fly-air-combat-maneuvers-using-a",
+    "d": "2026-11-09",
+    "title": "In First, Two CCAs Fly Air Combat Maneuvers Using Autonomy Software",
+    "body": "Two of the Air Force’s semi-autonomous drones flew air combat maneuvers coordinated by an “AI pilot,” or mission autonomy software, in a test Oct. 26, a first for the Air Force’s Collaborative Combat Aircraft program.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/cca-drones-fly-air-combat-maneuvers-autonomy-software/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261109-ss-united-states-towed-from-mobile-berth-ahead-of-",
+    "d": "2026-11-09",
+    "title": "SS United States Towed from Mobile Berth Ahead of Sinking",
+    "body": "The hulk of the ocean liner and secret troop transport SS United States was towed from its berth in Mobile, Ala., ahead of its sinking to become an artificial reef off the coast of Florida, according to ship spotters.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/09/ss-united-states-towed-from-mobile-berth-ahead-of-sinking",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261109-hegseth-calls-for-sweeping-military-education-chan",
+    "d": "2026-11-09",
+    "title": "Hegseth Calls for Sweeping Military Education Changes in Naval War College Address",
+    "body": "Defense Secretary Pete Hegseth announced sweeping education directives supporting his effort to de-civilianize military higher education and align it with warfighting priorities on Monday at the Naval War College.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Naval War College"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/09/hegseth-calls-for-sweeping-military-education-changes-in-naval-war-college-address",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Naval War College"
+    ]
+  },
+  {
+    "id": "u-20261109-navy-command-builds-on-training-partnership-during",
+    "d": "2026-11-09",
+    "title": "Navy Command Builds on Training Partnership During South Korean Visit",
+    "body": "U.S. Navy Rear Adm. Greg Huffman met with South Korean navy leaders and delivered remarks aboard the ROKS Hansando during the ship's first port call at Naval Air Station Pensacola, Fla.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4645097/navy-command-builds-on-training-partnership-during-south-korean-visit/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Navy Command",
+      "U.S. Navy"
+    ]
+  },
+  {
+    "id": "u-20261109-cbp-seeks-industry-input-on-drone-as-first-respond",
+    "d": "2026-11-09",
+    "title": "CBP Seeks Industry Input on Drone-as-First-Responder Systems for Border Patrol Operations",
+    "body": "CBP is seeking industry input on drone-as-a-first-responder systems that could help Border Patrol monitor activity along U.S. borders.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "CBP",
+      "Border Patrol Operations"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/cbp-rfi-drone-first-responder-suas-dock-systems",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "CBP",
+      "Border Patrol Operations"
+    ]
+  },
+  {
+    "id": "u-20261109-brig-gen-robert-schreiner-assumes-nro-deputy-direc",
+    "d": "2026-11-09",
+    "title": "Brig. Gen. Robert Schreiner Assumes NRO Deputy Director Role",
+    "body": "Brig. Gen. Robert Schreiner has assumed duties as NRO deputy director and Space Force Element commander, succeeding Christopher Povak.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "NRO"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/robert-schreiner-nro-deputy-director-appointment",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "NRO",
+      "Space Force Element"
+    ]
+  },
+  {
+    "id": "u-20261109-bethany-messick-cms-fraud-prevention-efforts-yield",
+    "d": "2026-11-09",
+    "title": "Bethany Messick: CMS Fraud Prevention Efforts Yield $42B in Annual Savings",
+    "body": "CMS’ Bethany Messick has reported $42 billion in annual fraud prevention savings driven by over 300 analytics models and AI tools.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Bethany Messick"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/cms-messick-fraud-prevention-42b-annual-savings-ai",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Bethany Messick"
+    ]
+  },
+  {
+    "id": "u-20261109-cbp-sees-40-faster-legacy-code-modernization-as-co",
+    "d": "2026-11-09",
+    "title": "CBP Sees 40% Faster Legacy Code Modernization as Commerce Taps USAi for Data Cleanup",
+    "body": "CBP's ACE modernization includes retiring an 1980s-era mainframe and updating software originally projected to take five to seven years",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Contract",
+    "companies": [
+      "CBP"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/cbp-commerce-ai-it-modernization-efforts",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "CBP"
+    ]
+  },
+  {
+    "id": "u-20261109-dla-commits-2b-to-critical-materials-for-national-",
+    "d": "2026-11-09",
+    "title": "DLA Commits $2B to Critical Materials for National Defense Stockpile",
+    "body": "The FY 2026 DLA critical mineral buys provide signals for U.S. producers, recyclers and processors to reduce foreign supply risk.",
+    "why": "Whoever controls materials such as rare-earth magnets controls what can be built; supply-chain tools and substitutes are in demand.",
+    "sectors": [
+      "minerals"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Critical Materials",
+      "National Defense Stockpile",
+      "DLA"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/dla-2b-national-defense-stockpile-critical-materials-fy2026",
+      "q": "news"
+    },
+    "addedAt": "2026-11-10T17:38:11.488Z",
+    "auto": true,
+    "orgs": [
+      "Critical Materials",
+      "National Defense Stockpile",
+      "DLA"
     ]
   },
   {
