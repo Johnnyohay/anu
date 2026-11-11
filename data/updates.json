@@ -1,5 +1,452 @@
 [
   {
+    "id": "u-20261111-nato-taps-ukraine-as-red-team-in-drills-to-trigger",
+    "d": "2026-11-11",
+    "title": "NATO taps Ukraine as red-team in drills to ‘trigger an adaptation cycle’",
+    "body": "“What we’ve done so far, we took some experience from Ukraine, for example, where we hid some Ukrainian forces and Ukrainian-made USVs, and made them the red team against the blue force of NATO,” Adm. Pierre Vander told Breaking Defense.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/nato-taps-ukraine-as-red-team-in-drills-to-trigger-an-adaptation-cycle/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "NATO",
+      "Breaking Defense"
+    ]
+  },
+  {
+    "id": "u-20261111-ukraine-firm-fire-point-hopes-for-extension-of-sta",
+    "d": "2026-11-11",
+    "title": "Ukraine firm Fire Point hopes for extension of Starshield coverage beyond Ukraine’s borders",
+    "body": "“If we had the possibility to expand Starshield licenses, not just on the temporarily occupied territories, but also a little bit further, like 200 to 300 kilometers, [that] could dramatically impact how Ukraine fights [Russia’s] ballistic attacks on…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "SpaceX / Starshield",
+      "Fire Point"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/ukraine-firm-fire-point-hopes-for-extension-of-starshield-coverage-beyond-ukraines-borders/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Fire Point"
+    ]
+  },
+  {
+    "id": "u-20261111-when-networks-are-contested-paring-down-the-data-m",
+    "d": "2026-11-11",
+    "title": "When networks are contested, paring down the data may mean better logistics at the edge",
+    "body": "AI and software can improve logistics, but only if they work with limited bandwidth.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/when-networks-are-contested-paring-down-the-data-may-mean-better-logistics-at-the-edge/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261111-israel-s-rafael-unveils-new-larger-cruise-missile-",
+    "d": "2026-11-11",
+    "title": "Israel’s Rafael unveils new, larger cruise missile dubbed Super Ice",
+    "body": "Super Ice is comparable in size to the US-made Tomahawk missile.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Rafael"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/israels-rafael-unveils-new-larger-cruise-missile-dubbed-super-ice/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Rafael"
+    ]
+  },
+  {
+    "id": "u-20261111-romanian-servers-targeted-by-russian-hackers-to-sc",
+    "d": "2026-11-11",
+    "title": "Romanian servers targeted by Russian hackers to scoop up emails about NATO, EU",
+    "body": "Hackers linked to Russia's FSB quietly compromised a Romanian government organization’s servers to collect emails related to NATO and the EU in December 2025, a Slovak cybersecurity firm has revealed.",
+    "why": "State hackers are still inside critical networks, which keeps defensive and offensive cyber in demand.",
+    "sectors": [
+      "cyber",
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "FSB"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/11/romanian-servers-targeted-by-russian-hackers-to-scoop-up-emails-about-nato-eu/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "NATO",
+      "FSB"
+    ]
+  },
+  {
+    "id": "u-20261111-vr-goggles-get-dual-use-for-suicide-prevention-cou",
+    "d": "2026-11-11",
+    "title": "VR Goggles Get Dual Use for Suicide Prevention, Counter-drone Training",
+    "body": "CAMP PENDLETON, Calif. — The global proliferation of cheap, small unmanned aerial systems that threaten troops has military services racing to incorporate counter-drone training as a top combat readiness priority.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/11/vr-goggles-get-dual-use-for-suicide-prevention-counter-drone-training",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261111-report-to-congress-on-strategic-stability-of-the-g",
+    "d": "2026-11-11",
+    "title": "Report to Congress on Strategic Stability of the Golden Dome",
+    "body": "The following is the Nov. 4, 2026, Congressional Research Service report, Golden Dome: Potential Strategic Stability Considerations for Congress.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Congressional Research Service"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/11/report-to-congress-on-strategic-stability-of-the-golden-dome",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Congressional Research Service"
+    ]
+  },
+  {
+    "id": "u-20261111-moog-marks-25-years-since-espa-design-milestone-in",
+    "d": "2026-11-11",
+    "title": "Moog Marks 25 Years Since ESPA Design Milestone: Innovating Space Rideshare",
+    "body": "East Aurora, N.Y. — Moog Inc. (NYSE: MOG.A and MOG.B) marks 25 years since the Evolved Secondary Payload Adapter (ESPA) ring completed its Critical Design Review in 2001. The pioneering [ ]",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "ESPA",
+      "Moog Inc"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/moog-marks-25-years-since-espa-design-milestone-innovating-space-rideshare/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "ESPA",
+      "Moog Inc"
+    ]
+  },
+  {
+    "id": "u-20261111-horizon-microtechnologies-targets-constellation-sc",
+    "d": "2026-11-11",
+    "title": "Horizon Microtechnologies Targets Constellation-Scale Production As Esa Phi-Lab Selection Strengthens Industrialisation Push",
+    "body": "(Karlsruhe, Germany, September 29th 2026) Horizon Microtechnologies is accelerating industrialisation of its metallised polymer micro-additive manufacturing platform through IP-MASS, a two-year scale-up project supported by €500,000 and reinforced by…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "mfg",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Horizon Microtechnologies"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/horizon-microtechnologies-targets-constellation-scale-production-as-esa-phi-lab-selection-strengthens-industrialisation-push/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Horizon Microtechnologies"
+    ]
+  },
+  {
+    "id": "u-20261111-russia-may-have-shot-down-three-of-its-own-helicop",
+    "d": "2026-11-11",
+    "title": "Russia may have shot down three of its own helicopters",
+    "body": "Fighterbomber, a Russian Telegram channel close to the country’s Aerospace Forces, posted a plain black square Wednesday morning. Underneath, channel owner Ilya Tumanov wrote that defending St.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-may-have-shot-down-three-of-its-own-helicopters/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Aerospace Forces"
+    ]
+  },
+  {
+    "id": "u-20261111-u-k-minister-drives-missile-armed-stark-drone-boat",
+    "d": "2026-11-11",
+    "title": "U.K. minister drives missile-armed STARK drone boat in Oslo",
+    "body": "British Defence Minister Luke Pollard took the controls of STARK’s Vanta 12, a 12-meter (39-foot) uncrewed boat armed with Sea Venom anti-ship missiles, during a demonstration in Oslo this week, according to a company release sent to The Defence Blog.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "strike",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Stark",
+      "The Defence Blog"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-k-minister-drives-missile-armed-stark-drone-boat-in-oslo/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "STARK",
+      "The Defence Blog"
+    ]
+  },
+  {
+    "id": "u-20261111-raytheon-s-deepstrike-jr3-clears-third-test-in-rac",
+    "d": "2026-11-11",
+    "title": "Raytheon’s DeepStrike JR3 clears third test in race with Lockheed",
+    "body": "Raytheon fired several of its DeepStrike JR3 training rockets at Yuma Proving Ground, Arizona, in what the company called a “third successful flight test” for the U.S. Army. JR3 is short for Joint Reduced Range Rocket.",
+    "why": "The big incumbents are growing too. Watch where they partner with or buy startups rather than compete.",
+    "sectors": [
+      "primes",
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Raytheon",
+      "Lockheed Martin"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/raytheons-deepstrike-jr3-clears-third-test-in-race-with-lockheed/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Raytheon",
+      "Lockheed"
+    ]
+  },
+  {
+    "id": "u-20261111-lockheed-s-gmlrs-line-is-now-turning-out-nearly-14",
+    "d": "2026-11-11",
+    "title": "Lockheed’s GMLRS line is now turning out nearly 14,000 rockets a year",
+    "body": "Lockheed Martin’s plant in Camden, Arkansas, has turned out its 100,000th GMLRS rocket, the guided round fired from HIMARS and M270 launchers, and the company says it’s now making “nearly 14,000 rockets per year.” Lockheed held a ceremony at the plant Tuesday…",
+    "why": "The big incumbents are growing too. Watch where they partner with or buy startups rather than compete.",
+    "sectors": [
+      "primes",
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Lockheed Martin"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/lockheeds-gmlrs-line-is-now-turning-out-nearly-14000-rockets-a-year/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Lockheed Martin"
+    ]
+  },
+  {
+    "id": "u-20261111-u-s-air-force-upgrades-test-gear-that-checks-f-16-",
+    "d": "2026-11-11",
+    "title": "U.S. Air Force upgrades test gear that checks F-16 radar",
+    "body": "A micro-crack, trapped moisture or a coat of paint that’s too thick in an F-16’s nose cone “will act like a dirty lens” on the fighter’s radar, and only one shop in the U.S. Air Force tests for that: a radio frequency shop at Hill Air Force Base, Utah.",
+    "why": "Better sensors and navigation that works without GPS are prerequisites for everything autonomous.",
+    "sectors": [
+      "sensing",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-air-force-upgrades-test-gear-that-checks-f-16-radar/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261111-acv-30-passes-cargo-hold-test-aboard-usns-dahl",
+    "d": "2026-11-11",
+    "title": "ACV-30 passes cargo-hold test aboard USNS Dahl",
+    "body": "The cannon-armed ACV-30 can be carried aboard the Marine Corps’ maritime prepositioning ships, Blount Island Command says, after Marines ran a yellow tape measure along one inside the cargo hold of USNS Dahl (T-AKR 312) on Nov. 4.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/acv-30-passes-cargo-hold-test-aboard-usns-dahl/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Marine Corps",
+      "Island Command"
+    ]
+  },
+  {
+    "id": "u-20261111-u-s-army-flies-himars-to-kauai-in-rapid-strike-dri",
+    "d": "2026-11-11",
+    "title": "U.S. Army flies HIMARS to Kauai in rapid strike drill",
+    "body": "U.S. Air Force C-17s flew 25th Infantry Division HIMARS launchers to Kauai during the Joint Pacific Multinational Readiness Center’s Rotation 27-01, where crews rolled them off on the airfield and went straight into a fire mission.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Joint Pacific Multinational Readiness Center"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-flies-himars-to-kauai-in-rapid-strike-drill/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "U.S. Air Force",
+      "Joint Pacific Multinational Readiness Center"
+    ]
+  },
+  {
+    "id": "u-20261111-u-s-air-force-buys-gear-for-droneshield-counter-dr",
+    "d": "2026-11-11",
+    "title": "U.S. Air Force buys gear for DroneShield counter-drone kits in Texas",
+    "body": "The U.S. Air Force wants to buy equipment for DroneShield’s Immediate Response Kits, a portable counter-drone system, at Joint Base San Antonio in Texas.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas",
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [
+      "DroneShield"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-air-force-buys-gear-for-droneshield-counter-drone-kits-in-texas/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Air Force",
+      "DroneShield"
+    ]
+  },
+  {
+    "id": "u-20261111-u-s-space-force-plans-next-missile-warning-satelli",
+    "d": "2026-11-11",
+    "title": "U.S. Space Force plans next missile-warning satellites in medium orbit",
+    "body": "Companies interested in building the next U.S. Space Force missile warning satellites in medium Earth orbit have until Dec. 1 to answer a Space Systems Command request for information on Epochs 3 and 4. The deadline was originally Oct. 31, and a Nov.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "strike",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-space-force-plans-next-missile-warning-satellites-in-medium-orbit/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Space Force",
+      "Space Systems Command"
+    ]
+  },
+  {
     "id": "u-20261110-why-britain-needs-a-maritime-first-defense-strateg",
     "d": "2026-11-10",
     "title": "Why Britain needs a maritime-first defense strategy",
@@ -661,6 +1108,645 @@
     "addedAt": "2026-11-10T17:38:11.488Z",
     "auto": true,
     "orgs": []
+  },
+  {
+    "id": "u-20261110-house-opts-to-stall-hegseth-impeachment-vote-sendi",
+    "d": "2026-11-10",
+    "title": "House opts to stall Hegseth impeachment vote, sending resolution to Judiciary Committee",
+    "body": "A 211-204 House vote sent Rep. Thomas Massie’s impeachment resolution to the Judiciary Committee, effectively killing the effort for now and leaving any attempt to revive it to the next Congress.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/house-opts-to-stall-hegseth-impeachment-vote-sending-resolution-to-judiciary-committee/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "House",
+      "Judiciary Committee",
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261110-allen-control-systems-launches-new-division-to-dev",
+    "d": "2026-11-10",
+    "title": "Allen Control Systems launches new division to develop counter-drone lasers",
+    "body": "The announcement comes amid the Pentagon’s growing interest in laser weapons, which use concentrated beams of energy to heat and destroy targets.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas",
+      "energy"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Allen Control Systems"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/allen-control-systems-launches-new-division-to-develop-counter-drone-lasers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Allen Control Systems",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261110-remote-mine-hunters-silently-trawl-the-waters-as-m",
+    "d": "2026-11-10",
+    "title": "Remote mine hunters silently trawl the waters as minesweepers go by the wayside",
+    "body": "Autonomous capabilities give the Navy a way to clear mines without putting sailors in harm’s way.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/remote-mine-hunters-silently-trawl-the-waters-as-minesweepers-go-by-the-wayside/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261110-france-awards-1-7-billion-contract-to-airbus-thale",
+    "d": "2026-11-10",
+    "title": "France awards $1.7 billion contract to Airbus-Thales team for new military satellites",
+    "body": "The IRIS orbiters will replace three current satellites in use, known as the Optical Space Component, with better technology to deliver clearer images and faster access to captured imagery.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Airbus",
+      "Thales",
+      "IRIS",
+      "Optical Space Component"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/france-awards-1-7-billion-contract-to-airbus-thales-team-for-new-military-satellites/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Airbus",
+      "Thales",
+      "IRIS",
+      "Optical Space Component"
+    ]
+  },
+  {
+    "id": "u-20261110-uk-satellite-decision-looms-as-political-fight-hea",
+    "d": "2026-11-10",
+    "title": "UK satellite decision looms as political fight heats up",
+    "body": "A potential Lockheed Martin win in the UK’s £2.4 billion Skynet satellite competition is fueling a political debate over domestic manufacturing, British jobs and the country’s defense industrial ties.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "global",
+      "mfg",
+      "primes"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Lockheed Martin",
+      "Skynet"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/uk-satellite-decision-looms-as-political-fight-heats-up/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Lockheed Martin",
+      "Skynet"
+    ]
+  },
+  {
+    "id": "u-20261110-hegseth-issues-corrected-copy-of-recently-unveiled",
+    "d": "2026-11-10",
+    "title": "Hegseth issues ‘corrected copy’ of recently unveiled counter-drone guidance",
+    "body": "The memo is aimed at reforming the DOD's historically lengthy approval processes for buying and fielding weapons that can take out drones.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas",
+      "policy"
+    ],
+    "type": "Earnings",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/10/hegseth-issues-corrected-copy-of-recently-unveiled-counter-drone-guidance/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "DOD"
+    ]
+  },
+  {
+    "id": "u-20261110-why-the-harness-matters-far-more-than-the-model-fo",
+    "d": "2026-11-10",
+    "title": "Why the harness matters far more than the model for super intelligence success",
+    "body": "A defense AI leader explains why defense and intelligence executives must look beyond commercial AI tools and focus on data structure, orchestration harnesses, and operational context to achieve reliable outcomes.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/10/defense-ai-orchestration-harness/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261110-air-force-wants-ai-for-cislunar-space-vehicles",
+    "d": "2026-11-10",
+    "title": "Air Force wants AI for cislunar space vehicles",
+    "body": "The service is asking industry for ready-made software concepts that will shape future cislunar system requirements.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/10/air-force-wants-ai-for-cislunar-space-vehicles/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261110-house-republicans-sidestep-effort-to-impeach-hegse",
+    "d": "2026-11-10",
+    "title": "House Republicans sidestep effort to impeach Hegseth",
+    "body": "In a 211 to 204 vote, House Republicans sent proposed impeachment articles against Hegseth to the Judiciary Committee, quashing the effort.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/congress/2026/11/10/house-republicans-sidestep-effort-to-impeach-hegseth/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "House",
+      "Judiciary Committee"
+    ]
+  },
+  {
+    "id": "u-20261110-us-soldier-arrested-in-uk-for-suspected-espionage-",
+    "d": "2026-11-10",
+    "title": "US soldier arrested in UK for suspected ‘espionage’ for Russia",
+    "body": "A senior U.S. soldier was arrested in Britain on suspicion of assisting Russian ​intelligence, British police said on Tuesday.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/10/us-soldier-arrested-in-uk-for-suspected-espionage-for-russia/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261110-most-americans-want-new-democratic-congress-to-end",
+    "d": "2026-11-10",
+    "title": "Most Americans want new Democratic Congress to end Trump’s Iran war, poll finds",
+    "body": "A new Reuters/Ipsos poll found that 71% of Americans want Congress to pass legislation ending the conflict with Iran.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy",
+      "adversary"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/mideast-africa/2026/11/10/most-americans-want-new-democratic-congress-to-end-trumps-iran-war-poll-finds/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Congress",
+      "Reuters/Ipsos"
+    ]
+  },
+  {
+    "id": "u-20261110-ukraine-urges-us-to-speed-up-interceptor-deliverie",
+    "d": "2026-11-10",
+    "title": "Ukraine urges US to speed up interceptor deliveries as Russia targets power grid",
+    "body": "Ukraine's foreign minister urged Secretary of State Marco Rubio to accelerate deliveries of interceptors as Russia attempts to break Ukranian morale ahead of its winter months.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "energy",
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/10/ukraine-urges-us-to-speed-up-interceptor-deliveries-as-russia-targets-power-grid/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261110-first-ever-collaborative-combat-aircraft-fly-in-fo",
+    "d": "2026-11-10",
+    "title": "First-ever Collaborative Combat Aircraft fly in formation, demonstrate air combat maneuvers",
+    "body": "For the first time, Shield’s Hivemind enabled CCAs to fly in a “multi-ship” formation and execute beyond-visual-range counter-air tactics.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Combat Aircraft",
+      "Shield AI"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/11/10/first-ever-collaborative-combat-aircraft-fly-in-formation-demonstrate-air-combat-maneuvers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Combat Aircraft",
+      "Shield"
+    ]
+  },
+  {
+    "id": "u-20261110-army-wants-new-palletized-short-range-air-defenses",
+    "d": "2026-11-10",
+    "title": "Army Wants New Palletized Short-Range Air Defenses In Service By The End Of 2029",
+    "body": "Army sees new short-range air defense 'sleds' providing critical new flexibility and capacity, especially against drone swarms.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "missiledef"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/land/army-wants-new-palletized-short-range-air-defenses-in-service-by-the-end-of-2029",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261110-usaf-aircraft-continue-to-reposition-away-from-raf",
+    "d": "2026-11-10",
+    "title": "USAF Aircraft Continue To Reposition Away From RAF Mildenhall Amid Reports Of Iranian Threats",
+    "body": "At least 12 KC-135s and three CV-22s have evacuated the base in England over the past two days amid an increase in security protocols.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "USAF Aircraft"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/usaf-aircraft-continue-to-reposition-away-from-raf-mildenhall-amid-reports-of-iranian-threats",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "USAF Aircraft"
+    ]
+  },
+  {
+    "id": "u-20261110-china-lifts-the-veil-on-its-gj-11-mysterious-drago",
+    "d": "2026-11-10",
+    "title": "China Lifts The Veil On Its GJ-11 Mysterious Dragon Stealth UCAV",
+    "body": "Beijing openly showcases the GJ-11 flying-wing combat drone and its strike and manned-unmanned teaming capabilities.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/china-lifts-the-veil-on-the-gj-11-mysterious-dragon-stealth-ucav",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261110-aim-174b-long-range-missile-packed-with-glide-muni",
+    "d": "2026-11-10",
+    "title": "AIM-174B Long-Range Missile Packed With Glide Munitions Teased, New Details Shared",
+    "body": "Designed first to extend the reach of 155mm howitzers, Vektrex glide munitions could have a new future tucked inside the noses of missiles.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/aim-174b-long-range-missile-packed-with-glide-munitions-teased-new-details-shared",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261110-with-1-5-trillion-defense-bill-unlikely-congress-w",
+    "d": "2026-11-10",
+    "title": "With $1.5 Trillion Defense Bill Unlikely, Congress Weighs Options",
+    "body": "As Congress gets back to business after the midterm elections, uncertainty swirls over the state of government funding that runs out Dec. 11, especially for the Pentagon.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Options"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/congress-pentagons-defense-budget-drills-think-tanks/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Congress",
+      "Options",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261110-pentagon-warns-troops-to-be-careful-on-prediction-",
+    "d": "2026-11-10",
+    "title": "Pentagon Warns Troops to Be Careful on Prediction Markets—but Enforcement Is Tricky",
+    "body": "A recent Pentagon memo barring troops from placing bets on prediction markets using classified or sensitive information is a necessary step toward clamping down on such activity in the ranks, but experts tell Air Space Forces Magazine that enforcement will…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/hegseth-pentagon-prediction-markets-ban-enforcement/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Air Space Forces Magazine"
+    ]
+  },
+  {
+    "id": "u-20261110-saildrone-blue-water-autonomy-ruling-adds-restrict",
+    "d": "2026-11-10",
+    "title": "Saildrone, Blue Water Autonomy Ruling Adds Restrictions to OTA Funding Model",
+    "body": "PARIS — An acquisition tool that the Pentagon has recently favored now comes with more strings attached following a late October ruling from a federal judge on a Navy drone boat program.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Blue Water Autonomy",
+      "Saildrone"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/10/saildrone-blue-water-autonomy-ruling-adds-restrictions-to-ota-funding-model",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Blue Water Autonomy",
+      "Pentagon",
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261110-uss-nimitz-trains-new-returning-naval-aviators",
+    "d": "2026-11-10",
+    "title": "USS Nimitz Trains New, Returning Naval Aviators",
+    "body": "The aircraft carrier USS Nimitz completed its first east coast training underway in support of carrier qualifications for both new and experienced naval aviators.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "USS Nimitz"
+    ],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4646092/uss-nimitz-trains-new-returning-naval-aviators/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "USS Nimitz"
+    ]
+  },
+  {
+    "id": "u-20261110-hegseth-polish-counterpart-announce-intent-to-boos",
+    "d": "2026-11-10",
+    "title": "Hegseth, Polish Counterpart Announce Intent to Boost Military Cooperation",
+    "body": "Secretary of War Pete Hegseth hosted Władysław Kosiniak-Kamysz, Poland's deputy prime minister and defense minister, during a bilateral engagement at the Pentagon.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy",
+      "global"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Boost Military Cooperation"
+    ],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4646088/hegseth-polish-counterpart-announce-intent-to-boost-military-cooperation/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Boost Military Cooperation",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261110-pete-hegseth-directs-reforms-to-professional-milit",
+    "d": "2026-11-10",
+    "title": "Pete Hegseth Directs Reforms to Professional Military Education",
+    "body": "The directive introduces new academic assessments, faculty standards and operational experience requirements for military educators.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/pete-hegseth-reform-military-education",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261110-army-devcom-armaments-center-advances-plug-and-pla",
+    "d": "2026-11-10",
+    "title": "Army DEVCOM Armaments Center Advances Plug-and-Play Drone Lethality",
+    "body": "The Army’s DEVCOM Armaments Center has been working with industry to advance plug-and-play drone lethality through modular interfaces.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "DEVCOM Armaments"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/army-devcom-armaments-center-plug-and-play-drone-lethality",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Army",
+      "DEVCOM Armaments"
+    ]
+  },
+  {
+    "id": "u-20261110-donrco-pilots-project-roundtable-to-centralize-nav",
+    "d": "2026-11-10",
+    "title": "DONRCO Pilots Project Roundtable to Centralize Navy Industry Engagement",
+    "body": "Project Roundtable lets vendors log capability updates and receive early demand signals as the Navy begins an internal beta test.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/project-roundtable-navy-industry-engagement-pilot-govsignals",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261110-faa-announces-five-department-mou-to-coordinate-co",
+    "d": "2026-11-10",
+    "title": "FAA Announces Five-Department MOU to Coordinate Counter-Drone Operations",
+    "body": "DOT, DOW, DHS, DOE and DOJ have agreed to a joint process for testing and fielding counter-UAS tools.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "FAA",
+      "Five",
+      "Operations",
+      "DHS",
+      "DOE",
+      "DOJ"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/counter-drone-mou-dow-dhs-doe-doj-dot",
+      "q": "news"
+    },
+    "addedAt": "2026-11-11T17:49:39.480Z",
+    "auto": true,
+    "orgs": [
+      "FAA",
+      "Five",
+      "Operations",
+      "DHS",
+      "DOE",
+      "DOJ"
+    ]
   },
   {
     "id": "u-20261109-the-next-breakthrough-is-software-built-on-the-bat",

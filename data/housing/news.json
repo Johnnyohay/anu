@@ -1,5 +1,121 @@
 [
  {
+  "id": "h-20261111-housing-demand-shows-signs-of-stabilizing-does-you",
+  "d": "2026-11-11",
+  "title": "Housing demand shows signs of stabilizing. Does your market?",
+  "body": "New pending listings rose 20% in one Florida metro area, but neighboring cities tell different stories. Here's how to spot the signals that matter in your market.",
+  "topics": [
+   "inventory"
+  ],
+  "states": [
+   "FL"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/is-your-houisng-market-stabilizing/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261111-a-veterans-day-reflection-for-building-leaders-and",
+  "d": "2026-11-11",
+  "title": "A Veterans Day reflection for building leaders and the work ahead",
+  "body": "We highlight two Texas families promised mortgage-free homes and frame affordability progress as an industry leadership test",
+  "topics": [],
+  "states": [
+   "TX"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/veterans-day-housing-leadership/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261111-homebuilders-and-their-partners-team-up-to-salute-",
+  "d": "2026-11-11",
+  "title": "Homebuilders and their partners team up to salute our veterans",
+  "body": "Veterans Day initiatives include discounts for military families, mortgage-free home donations and workforce development",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/homebuilders-celebrate-veterans-day/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261111-winning-in-a-buyer-s-market",
+  "d": "2026-11-11",
+  "title": "Winning in a buyer’s market",
+  "body": "Three practical strategies agents and lenders can use to help hesitant homebuyers capitalize on today's shifting conditions",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/winning-in-a-buyers-market/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261111-reverse-mortgage-leaders-on-alleviating-sales-and-",
+  "d": "2026-11-11",
+  "title": "Reverse mortgage leaders on alleviating sales and referral pain points",
+  "body": "Industry veterans Dan Hultquist, John Luddy and Scott Harmes were joined by financial adviser Ryan Ponsford in a NRMLA panel discussion",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/nrmla-reverse-mortgage-strategies-2026/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261111-higharc-eci-launch-marksystems-integration-for-big",
+  "d": "2026-11-11",
+  "title": "Higharc, ECI launch MarkSystems integration for big builders",
+  "body": "Integration ties 3D design, option pricing and ERP workflows to cut production builders' manual entry and errors",
+  "topics": [
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/higharc-eci-marksystems-integration/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261111-high-housing-costs-keep-homeowners-locked-in",
+  "d": "2026-11-11",
+  "title": "High Housing Costs Keep Homeowners Locked-In",
+  "body": "Today’s typical mortgage holder pays roughly $1,300 in principal and interest a month. To buy in today’s market, it would require roughly $1,100 more a month, or an 85.3% increase in mortgage payments.",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/locked-in-homeowners-nov-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261111-ramit-sethi-i-rent-spend-what-i-want-and-still-got",
+  "d": "2026-11-11",
+  "title": "Ramit Sethi: I Rent, Spend What I Want, and Still Got Rich.",
+  "body": "Ramit Sethi did everything the financial “experts” said not to: he rented instead of buying, upgraded to new, expensive cars, spent plenty on luxury vacations, and still made millions in [ ]",
+  "topics": [
+   "rents"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1355",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261110-3-ai-agents-value-a-home-similarly-could-they-be-w",
   "d": "2026-11-10",
   "title": "3 AI agents value a home similarly, could they be wrong?",
@@ -65,6 +181,22 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/on-the-market-476",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261110-mamdani-gives-nonprofits-first-dibs-on-buying-apar",
+  "d": "2026-11-10",
+  "title": "Mamdani gives nonprofits first dibs on buying apartment buildings",
+  "body": "Mamdani says COPA can deter predatory investors, while rent freeze and 2019 rent law lawsuits continue",
+  "topics": [
+   "rents",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mamdani-nonprofits-first-dibs/",
    "q": "news"
   }
  },
@@ -557,6 +689,22 @@
    "t": "HousingWire",
    "u": "https://www.housingwire.com/articles/realtorcom-revenue-q1-2027/",
    "q": "news"
+  }
+ },
+ {
+  "id": "h-20261105-weekly-housing-trends-u-s-market-update-week-endin",
+  "d": "2026-11-05",
+  "title": "Weekly Housing Trends: U.S. Market Update (Week Ending Oct. 31, 2026)",
+  "body": "Get the latest U.S. housing market trends, including inventory shifts, listing activity, prices, and buyer-seller dynamics, with fresh weekly data and insights.",
+  "topics": [
+   "inventory",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/weekly-housing-trends-view-data-week-october-31-2026/",
+   "q": "research"
   }
  },
  {
