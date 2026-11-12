@@ -1,5 +1,484 @@
 [
   {
+    "id": "u-20261112-instead-of-stockpiling-small-attack-drones-army-lo",
+    "d": "2026-11-12",
+    "title": "Instead of stockpiling small attack drones, Army looking to simply buy new ones",
+    "body": "“It’s literally fly it as close as you can between those two fence posts because you might have to hit a high value target that way.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/instead-of-stockpiling-small-attack-drones-army-looking-to-simply-buy-new-ones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261112-cry-drone-and-let-slip-the-fruit-flies-of-war",
+    "d": "2026-11-12",
+    "title": "Cry ‘drone,’ and let slip the fruit flies of war",
+    "body": "The US military should focus on building drones that evolve so quickly an adversary’s defenses become obsolete before they can be deployed, two Air Force officers argue.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/cry-drone-and-let-slip-the-fruit-flies-of-war/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261112-nato-nations-have-a-missile-crisis-how-did-it-happ",
+    "d": "2026-11-12",
+    "title": "NATO nations have a missile crisis. How did it happen, and can it be fixed?",
+    "body": "Breaking Defense kicks off a new video roundtable series about the future of missiles and missile defense.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "global",
+      "missiledef"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/nato-nations-have-a-missile-crisis-how-did-it-happen-and-can-it-be-fixed/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "NATO",
+      "Breaking Defense"
+    ]
+  },
+  {
+    "id": "u-20261112-rethinking-the-pipeline-for-critical-defense-elect",
+    "d": "2026-11-12",
+    "title": "Rethinking the pipeline for critical defense electronics",
+    "body": "[Sponsored] Closing the gap for space systems, EW and counter-UAS production.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "space",
+      "cuas",
+      "ew"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/rethinking-the-pipeline-for-critical-defense-electronics/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261112-germany-poland-tap-satim-to-analyze-military-satel",
+    "d": "2026-11-12",
+    "title": "Germany, Poland tap SATIM to analyze military satellite imagery",
+    "body": "SATIM, a Polish maker of AI-based analysis tools for synthetic aperture radar (SAR) imagery, has obtained a contract from Poland’s military to supply software for the automated analysis of satellite imagery.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "global",
+      "ai",
+      "sensing"
+    ],
+    "type": "Contract",
+    "companies": [
+      "SATIM"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/12/germany-poland-tap-satim-to-analyze-military-satellite-imagery/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "SATIM"
+    ]
+  },
+  {
+    "id": "u-20261112-3-iranian-backed-men-indicted-in-attempted-plot-on",
+    "d": "2026-11-12",
+    "title": "3 Iranian-backed men indicted in attempted plot on RAF Fairford",
+    "body": "Three men, with one working from jail, allegedly conspired to commit around 20 terrorist attacks across the U.S. and Europe, including the plot on RAF Fairford, on behalf of Iran-aligned terrorist networks.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/12/3-iranian-backed-men-indicted-in-attempted-plot-on-raf-fairford/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261112-finland-says-it-detects-strike-on-russian-warship-",
+    "d": "2026-11-12",
+    "title": "Finland says it detects strike on Russian warship in Baltic Sea",
+    "body": "Finland's military said on Thursday its forces had detected \"a strike\" on a Russian warship in the Baltic Sea a day earlier, but that the security situation in the area remained stable.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/12/finland-says-it-detects-strike-on-russian-warship-in-baltic-sea/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261112-guard-appears-to-rebuke-hegseth-s-delegation-at-to",
+    "d": "2026-11-12",
+    "title": "Guard appears to rebuke Hegseth’s delegation at Tomb of the Unknown Soldier",
+    "body": "The U.S. Army sentinel moved toward the group and, from a distance, shouted toward them: \"All visitors will maintain an atmosphere of silence and respect at all times.\"",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/news/pentagon-congress/2026/11/11/guard-appears-to-rebuke-hegseths-delegation-at-tomb-of-the-unknown-soldier/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261112-new-facilities-to-pump-out-upgraded-f-a-18e-f-supe",
+    "d": "2026-11-12",
+    "title": "New Facilities To Pump Out Upgraded F/A-18E/F Super Hornets Eyed By Navy",
+    "body": "The Navy is looking to bolster capacity to make major modifications to F/A-18E/Fs and EA-18Gs amid shifting production priorities.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/new-facilities-to-pump-out-upgraded-f-a-18e-f-super-hornets-eyed-by-navy",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261112-wolfe-pledges-more-manpower-for-maintenance-amid-c",
+    "d": "2026-11-12",
+    "title": "Wolfe Pledges More Manpower for Maintenance amid Career Field Overhaul",
+    "body": "Chief Master Sergeant of the Air Force David R. Wolfe recently pledged “a plus-up in manpower” for the maintainer ranks, as the service prepares to launch a major overhaul of its maintenance career field next year.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/wolfe-air-force-maintenance-manpower-career-field-overhaul/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261112-breaking-uss-south-dakota-command-triad-relieved-a",
+    "d": "2026-11-12",
+    "title": "BREAKING: USS South Dakota Command Triad Relieved After October Grounding, Congressman Says",
+    "body": "USS South Dakota (SSN-790) command triad was removed last month following a grounding incident, according to a statement from a member of Congress. The submarine’s commanding officer, executive officer and chief of the boat were relieved from command on Oct.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/12/breaking-uss-south-dakota-command-triad-relieved-after-october-grounding-congressman-says",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261112-italian-livet-turret-with-eight-shotguns-demonstra",
+    "d": "2026-11-12",
+    "title": "Italian LIVET turret with eight shotguns demonstrated in Denmark",
+    "body": "An Italian counter-drone turret that carries eight Benelli shotguns has been put through a live-fire demonstration for the Danish Armed Forces, according to Dualee, one of the companies behind it.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Danish"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/italian-livet-turret-with-eight-shotguns-demonstrated-in-denmark/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Danish",
+      "Forces"
+    ]
+  },
+  {
+    "id": "u-20261112-uk-company-tests-its-unmanned-supply-vehicle-in-sw",
+    "d": "2026-11-12",
+    "title": "UK company tests its unmanned supply vehicle in Switzerland",
+    "body": "A new unmanned ground vehicle from North Defence Group, built to haul up to 1,500 kg (3,300 pounds) of supplies for frontline troops, has been put to work at a European military exercise in Switzerland, according to the company.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "North Defence Group"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/uk-company-tests-its-unmanned-supply-vehicle-in-switzerland/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "North Defence Group"
+    ]
+  },
+  {
+    "id": "u-20261112-ukrainian-himera-radios-tested-by-troops-in-portug",
+    "d": "2026-11-12",
+    "title": "Ukrainian HIMERA radios tested by troops in Portugal",
+    "body": "A Ukrainian handheld radio built for a war full of jamming has gone through two weeks of trials with troops in Portugal. Its maker, HIMERA, says two of its relay stations held a steady link about 11 km (7 miles) apart.",
+    "why": "Jamming and spectrum fights decide whether drones and radios work at all, so this quiet area keeps getting funded.",
+    "sectors": [
+      "ew"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "HIMERA"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/ukrainian-himera-radios-tested-by-troops-in-portugal/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "HIMERA"
+    ]
+  },
+  {
+    "id": "u-20261112-quantum-systems-shows-its-california-assembly-line",
+    "d": "2026-11-12",
+    "title": "Quantum Systems shows its California assembly line",
+    "body": "Two weeks after showing its Reliant drone loaded with mortar rounds and grenades, Quantum Systems has shown the aircraft on its production line in Southern California. Dave Sharpin, chief executive of Quantum-Systems Inc., the U.S.",
+    "why": "Better sensors and navigation that works without GPS are prerequisites for everything autonomous.",
+    "sectors": [
+      "sensing",
+      "air",
+      "mfg"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Quantum Systems"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/quantum-systems-shows-its-california-assembly-line/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Quantum Systems",
+      "Quantum-Systems Inc"
+    ]
+  },
+  {
+    "id": "u-20261112-ukraine-s-second-ada-class-corvette-in-final-stage",
+    "d": "2026-11-12",
+    "title": "Ukraine’s second Ada-class corvette in final stages",
+    "body": "Ukraine’s second Turkish-built warship, the corvette Hetman Ivan Vyhovskyi, is close to completion in Istanbul and is preparing to put to sea for the first time, Kyrylo Budanov, head of Ukraine’s Presidential Office, said on Thursday.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/ukraines-second-ada-class-corvette-in-final-stages/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Presidential Office"
+    ]
+  },
+  {
+    "id": "u-20261112-u-s-army-drones-to-hunt-mines-and-fpv-threats-befo",
+    "d": "2026-11-12",
+    "title": "U.S. Army drones to hunt mines and FPV threats before Abrams tanks arrive",
+    "body": "The U.S. Army has awarded Safe Pro Group a $2.5 million contract to run the Florida company’s explosive-detection software aboard Anduril’s Ghost-X drones to help protect Abrams tanks, according to a company release.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "ground",
+      "ai"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Anduril",
+      "Safe Pro Group"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-drones-to-hunt-mines-and-fpv-threats-before-abrams-tanks-arrive/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "Safe Pro Group"
+    ]
+  },
+  {
+    "id": "u-20261112-middle-east-buyer-orders-405-million-in-u-s-made-l",
+    "d": "2026-11-12",
+    "title": "Middle East buyer orders $405 million in U.S.-made LOCUST lasers",
+    "body": "AeroVironment has won a $405 million order for its LOCUST X3 anti-drone lasers from an unnamed customer in the Middle East, the Virginia-based company said Wednesday.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Contract",
+    "companies": [
+      "AeroVironment"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/middle-east-buyer-orders-405-million-in-u-s-made-locust-lasers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "AeroVironment"
+    ]
+  },
+  {
+    "id": "u-20261112-aevex-lifts-2026-forecast-to-840-million-after-dro",
+    "d": "2026-11-12",
+    "title": "AEVEX lifts 2026 forecast to $840 million after drone-boat deal",
+    "body": "AEVEX Corp. raised its 2026 revenue forecast by about $120 million at the midpoint on Wednesday, its first report since buying drone-boat maker BlackSea Technologies, as sales from its core drone business more than made up for shrinking Ukraine-related work.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "Research",
+    "companies": [
+      "AEVEX Corp",
+      "BlackSea Technologies"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/aevex-lifts-2026-forecast-to-840-million-after-drone-boat-deal/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "AEVEX Corp",
+      "BlackSea Technologies"
+    ]
+  },
+  {
+    "id": "u-20261112-elbit-wins-260-million-puls-rocket-artillery-deal-",
+    "d": "2026-11-12",
+    "title": "Elbit wins $260 million PULS rocket artillery deal from NATO",
+    "body": "Israeli defense company Elbit Systems has won a contract worth about $260 million to supply PULS rocket artillery launchers and munitions to an unnamed NATO country in Europe, the company said Thursday.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "strike",
+      "global"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Elbit Systems"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/elbit-wins-260-million-puls-rocket-artillery-deal-from-nato/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "NATO",
+      "Elbit Systems"
+    ]
+  },
+  {
     "id": "u-20261111-nato-taps-ukraine-as-red-team-in-drills-to-trigger",
     "d": "2026-11-11",
     "title": "NATO taps Ukraine as red-team in drills to ‘trigger an adaptation cycle’",
@@ -444,6 +923,340 @@
     "orgs": [
       "U.S. Space Force",
       "Space Systems Command"
+    ]
+  },
+  {
+    "id": "u-20261111-dod-pushes-out-3-loans-totaling-450m-to-bolster-us",
+    "d": "2026-11-11",
+    "title": "DoD pushes out 3 loans totaling $450M to bolster US space companies",
+    "body": "One industry source told Breaking Defense that the reason for the spate of new loan announcements is that the Pentagon “needed to finalize loans by the end of the fiscal year.”",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/dod-pushes-out-3-loans-totally-450m-to-bolster-us-space-companies/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "DoD",
+      "Breaking Defense",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261111-poland-says-pentagon-supports-permanent-us-base-wi",
+    "d": "2026-11-11",
+    "title": "Poland says Pentagon supports permanent US base, with decision expected in December",
+    "body": "Warsaw has identified four potential locations for a base that could accommodate 5,000 US troops and their families, and is offering to spend up to $4.4 billion on supporting infrastructure.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/poland-says-pentagon-supports-permanent-us-base-with-decision-expected-in-december/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261111-eu-sets-out-3-4b-defense-budget-for-2027-boosts-uk",
+    "d": "2026-11-11",
+    "title": "EU sets out $3.4B defense budget for 2027, boosts Ukraine spending",
+    "body": "The new fiscal uplift comes in the wake of Ukraine President Volodymyr Zelenskyy telling European leaders last month that “we need at least €70 billion more from you.”",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy",
+      "global"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/eu-sets-out-3-4b-defense-budget-for-2027-boosts-ukraine-spending/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261111-the-army-s-coming-c2-challenge-is-fighting-across-",
+    "d": "2026-11-11",
+    "title": "The Army’s coming C2 challenge is fighting across thousands of miles",
+    "body": "Breaking down stovepipes, managing data and enabling better decision making are key components of the Army’s NGC2 plan.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/the-armys-coming-c2-challenge-is-fighting-across-thousands-of-miles/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261111-ukraine-regretting-white-house-brokered-temporary-",
+    "d": "2026-11-11",
+    "title": "Ukraine Regretting White House-Brokered Temporary Ceasefire In Strategic Riverside Town Of Oleshky",
+    "body": "Ukrainian officials are expressing concern that a renewed Russian military presence in Oleshky will result in new waves of attacks across the Dnipro River.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/ukraine-regretting-white-house-brokered-temporary-ceasefire-in-strategic-riverside-town-of-oleshky",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261111-plans-to-fly-talon-blue-cca-drone-from-british-car",
+    "d": "2026-11-11",
+    "title": "Plans To Fly Talon Blue CCA Drone From British Carrier Confirmed By Northrop Grumman",
+    "body": "The Royal Navy wants to infuse drone capabilities into its air wings and Talon Blue would be far more advanced than anything that has flown off the carriers yet.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea",
+      "primes"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Northrop Grumman"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/plans-to-fly-talon-blue-cca-drone-from-british-carrier-confirmed-by-northrop-grumman",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Northrop Grumman",
+      "Royal Navy"
+    ]
+  },
+  {
+    "id": "u-20261111-f-35s-train-in-india-for-red-flag-of-the-east",
+    "d": "2026-11-11",
+    "title": "F-35s Train In India For “Red Flag Of The East”",
+    "body": "Seven foreign air forces trained alongside the Indian Air Force, as American F-35s took part in their first exercise in India.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/f-35s-train-in-india-for-red-flag-of-the-east",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Indian Air Force"
+    ]
+  },
+  {
+    "id": "u-20261111-keep-us-troops-in-nato-s-kfor",
+    "d": "2026-11-11",
+    "title": "Keep US troops in NATO’s KFOR",
+    "body": "Pulling them out would save almost nothing while handing Moscow a cheap strategic win.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/ideas/2026/11/keep-us-troops-natos-kfor/417171/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261111-cisa-outlines-internal-plan-to-swiftly-address-cyb",
+    "d": "2026-11-11",
+    "title": "CISA outlines internal plan to swiftly address cyber, infrastructure threats",
+    "body": "Guidance to agency staff outlines what senior officials need to know about major risks, national preparedness and CISA’s ability to respond, using terminology familiar in military and intelligence planning.",
+    "why": "State hackers are still inside critical networks, which keeps defensive and offensive cyber in demand.",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "Earnings",
+    "companies": [
+      "CISA"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/policy/2026/11/cisa-outlines-internal-plan-swiftly-address-cyber-infrastructure-threats/417172/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "CISA"
+    ]
+  },
+  {
+    "id": "u-20261111-arthur-miller-nominated-for-navy-financial-managem",
+    "d": "2026-11-11",
+    "title": "Arthur Miller Nominated for Navy Financial Management Comptroller Post",
+    "body": "Arthur Miller's nomination joins a series of Navy leadership picks submitted to the Senate by the Trump administration.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/arthur-miller-nominated-navy-financial-management-comptroller",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Navy Financial Management Comptroller Post",
+      "Senate"
+    ]
+  },
+  {
+    "id": "u-20261111-senate-appropriators-release-173-2b-fy-2027-milita",
+    "d": "2026-11-11",
+    "title": "Senate Appropriators Release $173.2B FY 2027 Military Construction-VA Bill",
+    "body": "The Senate Appropriations Committee has released a $173.2 billion FY 2027 bill funding VA medical care and military construction.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/senate-fy-2027-milcon-va-appropriations-bill",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Senate Appropriations Committee"
+    ]
+  },
+  {
+    "id": "u-20261111-doe-taps-ai-technologies-to-address-critical-infra",
+    "d": "2026-11-11",
+    "title": "DOE Taps AI Technologies to Address Critical Infrastructure Cyber Threats",
+    "body": "DOE's AI-FORTS program is developing AI-powered cybersecurity tools to help protect U.S. energy infrastructure from cyberattacks.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "cyber",
+      "energy"
+    ],
+    "type": "Contract",
+    "companies": [
+      "DOE"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/doe-ai-forts-ai-cybersecurity-critical-infrastructure",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "DOE"
+    ]
+  },
+  {
+    "id": "u-20261111-rocket-lab-secures-150m-dow-conditional-loan-to-bo",
+    "d": "2026-11-11",
+    "title": "Rocket Lab Secures $150M DOW Conditional Loan to Boost Neutron Rocket Use",
+    "body": "The financing targets new recovery vessels, expanded engine production and quicker turnaround after each launch.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Rocket Lab",
+      "Neutron Rocket Use"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/rocket-lab-150m-osc-conditional-loan-neutron-launch-dow",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Rocket Lab",
+      "Neutron Rocket Use"
+    ]
+  },
+  {
+    "id": "u-20261111-space-force-ut-austin-open-bmc3i-tap-lab-texas-for",
+    "d": "2026-11-11",
+    "title": "Space Force, UT Austin Open BMC3I TAP Lab Texas for Early-Stage Space Domain Awareness Software",
+    "body": "BMC3I TAP Lab Texas will be led by astrodynamicist Moriba Jah and operate within UT Austin's Cockrell School of Engineering.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "UT Austin Open",
+      "Cockrell School of Engineering"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/space-force-ut-austin-mnc3i-lab-texas",
+      "q": "news"
+    },
+    "addedAt": "2026-11-12T18:04:44.989Z",
+    "auto": true,
+    "orgs": [
+      "Space Force",
+      "UT Austin Open",
+      "Cockrell School of Engineering"
     ]
   },
   {

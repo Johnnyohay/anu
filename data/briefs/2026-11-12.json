@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-12",
+  "title": "Today's top defense-tech headlines",
+  "big": "34 new stories since the last brief. The busiest areas: allies & theaters and drones & air autonomy.",
+  "stories": [
+    {
+      "tag": "Space",
+      "h": "Elbit wins $260 million PULS rocket artillery deal from NATO",
+      "what": "Israeli defense company Elbit Systems has won a contract worth about $260 million to supply PULS rocket artillery launchers and munitions to an unnamed NATO country in Europe, the company said Thursday.",
+      "you": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+      "ref": "u-20261112-elbit-wins-260-million-puls-rocket-artillery-deal-"
+    },
+    {
+      "tag": "Drones & air autonomy",
+      "h": "Plans To Fly Talon Blue CCA Drone From British Carrier Confirmed By Northrop Grumman",
+      "what": "The Royal Navy wants to infuse drone capabilities into its air wings and Talon Blue would be far more advanced than anything that has flown off the carriers yet.",
+      "you": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+      "ref": "u-20261111-plans-to-fly-talon-blue-cca-drone-from-british-car"
+    },
+    {
+      "tag": "Budget, policy & acquisition reform",
+      "h": "EU sets out $3.4B defense budget for 2027, boosts Ukraine spending",
+      "what": "The new fiscal uplift comes in the wake of Ukraine President Volodymyr Zelenskyy telling European leaders last month that “we need at least €70 billion more from you.”",
+      "you": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+      "ref": "u-20261111-eu-sets-out-3-4b-defense-budget-for-2027-boosts-uk"
+    },
+    {
+      "tag": "AI, software & command and control",
+      "h": "Space Force, UT Austin Open BMC3I TAP Lab Texas for Early-Stage Space Domain Awareness Software",
+      "what": "BMC3I TAP Lab Texas will be led by astrodynamicist Moriba Jah and operate within UT Austin's Cockrell School of Engineering.",
+      "you": "Software that decides what to look at and what to hit is where the most value is moving.",
+      "ref": "u-20261111-space-force-ut-austin-open-bmc3i-tap-lab-texas-for"
+    },
+    {
+      "tag": "Missiles, hypersonics & munitions",
+      "h": "NATO nations have a missile crisis. How did it happen, and can it be fixed?",
+      "what": "Breaking Defense kicks off a new video roundtable series about the future of missiles and missile defense.",
+      "you": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+      "ref": "u-20261112-nato-nations-have-a-missile-crisis-how-did-it-happ"
+    }
+  ],
+  "watch": {
+    "h": "Stopgap funding expires: FY27 appropriations or another CR",
+    "why": "December 11. Decides whether DAWG's $54.6B and Golden Dome's growth become real money."
+  },
+  "idea": {
+    "h": "Counter-drone detection for critical infrastructure",
+    "why": "Sensor fusion and attribution software (RF, radar, acoustic, camera) for bases, data centers, stadiums, prisons and utilities. $14.4B FY27 counter-UAS line plus the base-defense pilot. Commercial sites legally can only detect and report drones, so software is what they buy."
+  },
+  "auto": true
+}

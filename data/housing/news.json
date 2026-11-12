@@ -1,5 +1,178 @@
 [
  {
+  "id": "h-20261112-mls-roundup-ai-fraud-prevention-and-data-sharing-t",
+  "d": "2026-11-12",
+  "title": "MLS roundup: AI, fraud prevention and data sharing take center stage",
+  "body": "Updates span 1,600-subscriber fraud monitoring in Montana and AI property research for 15,000 agents in South Texas",
+  "topics": [],
+  "states": [
+   "MT",
+   "TX"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mls-tech-ai-fraud-partnerships/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261112-unlock-expands-home-equity-agreements-to-georgia",
+  "d": "2026-11-12",
+  "title": "Unlock expands home equity agreements to Georgia",
+  "body": "Unlock says 25,000 homeowners have used its HEA product",
+  "topics": [],
+  "states": [
+   "GA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/unlock-expands-hea-georgia/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261112-existing-home-sales-hit-a-new-low-as-rates-stay-hi",
+  "d": "2026-11-12",
+  "title": "Existing home sales hit a new low as rates stay high",
+  "body": "Inventory rose to 1.59 million, while the median price increased 0.4% to $416,700",
+  "topics": [
+   "rates",
+   "inventory",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/existing-home-sales-october-375m/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261112-mortgage-applications-rise-6-2-as-rates-fall-to-7-",
+  "d": "2026-11-12",
+  "title": "Mortgage applications rise 6.2% as rates fall to 7.21%",
+  "body": "Refinances rose 5% during the week but stayed 57% below year-ago levels",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mba-mortgage-applications-6-2/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261112-inside-san-diego-s-push-to-double-new-homebuilding",
+  "d": "2026-11-12",
+  "title": "Inside San Diego’s push to double new homebuilding and tame rents",
+  "body": "Mayor Todd Gloria has turned housing into the core mission of his administration",
+  "topics": [
+   "rents"
+  ],
+  "states": [
+   "CA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/san-diego-mayor-todd-gloria-housing-permits-production/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261112-ai-can-sort-the-data-but-builders-still-need-judgm",
+  "d": "2026-11-12",
+  "title": "AI can sort the data, but builders still need judgment to price and sell homes",
+  "body": "A model home flooring change became a top upgrade, highlighting why buyer intent still needs human validation",
+  "topics": [
+   "sales",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/ai-judgment-new-home-sales/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261112-take-care-of-america-s-veterans-act-advances-with-",
+  "d": "2026-11-12",
+  "title": "Take Care of America’s Veterans Act advances with VA mortgage fee hikes",
+  "body": "The IRRRL funding fee would almost triple to 1.42% under bill passed by the House",
+  "topics": [
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/house-bill-veterans-act-va-refi-fees/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261112-freddie-mac-rates-dip-again-this-week-but-sticky-i",
+  "d": "2026-11-12",
+  "title": "Freddie Mac rates dip again this week, but sticky inflation could erase the relief",
+  "body": "The Freddie Mac 30-year mortgage rate declined 7 basis points to 7.11% this week, its fourth straight weekly decline.",
+  "topics": [
+   "rates",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/freddie-mac-mortgage-rates-november-12-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261112-existing-home-sales-hit-16-year-low",
+  "d": "2026-11-12",
+  "title": "Existing Home Sales Hit 16-year Low",
+  "body": "Existing home sales set an unwelcome record in October, dropping to 3.75M, their lowest since August 2010 (3.68M).",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/existing-home-sales-october-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261112-weekly-housing-trends-u-s-market-update-week-endin",
+  "d": "2026-11-12",
+  "title": "Weekly Housing Trends: U.S. Market Update (Week Ending Nov. 7, 2026)",
+  "body": "Get the latest U.S. housing market trends, including inventory shifts, listing activity, prices, and buyer-seller dynamics, with fresh weekly data and insights.",
+  "topics": [
+   "inventory",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/weekly-housing-trends-view-data-week-november-7-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261112-buffett-s-berkshire-hathaway-bets-600m-on-housing",
+  "d": "2026-11-12",
+  "title": "Buffett’s Berkshire Hathaway Bets $600M on Housing",
+  "body": "Berkshire Hathaway, legendary investor Warren Buffett’s holding company, just made a nearly $600M bet on the housing market, all while real estate sentiment hits its lowest levels in over a [ ]",
+  "topics": [
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/on-the-market-477",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261111-housing-demand-shows-signs-of-stabilizing-does-you",
   "d": "2026-11-11",
   "title": "Housing demand shows signs of stabilizing. Does your market?",
@@ -112,6 +285,23 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/real-estate-1355",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261111-how-to-buy-your-next-rental-with-seller-financing-",
+  "d": "2026-11-11",
+  "title": "How to Buy Your Next Rental With Seller Financing (No Bank Needed)",
+  "body": "You could buy your next rental without a bank on terms you help write. That’s the power of seller financing, and it often opens up when high rates leave sellers [ ]",
+  "topics": [
+   "rates",
+   "rents",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-795",
    "q": "news"
   }
  },
