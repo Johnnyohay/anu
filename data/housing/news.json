@@ -1,5 +1,107 @@
 [
  {
+  "id": "h-20261113-builder-credit-conditions-tighten-for-19th-straigh",
+  "d": "2026-11-13",
+  "title": "Builder credit conditions tighten for 19th straight quarter",
+  "body": "NAHB: AD&C lending remains restrictive despite mixed rate movements; construction-to-perm loans grow",
+  "topics": [
+   "rates",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/ad-c-credit-conditions-tighten-third-quarter-2026/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261113-mortgage-industry-expects-cfpb-servicing-rule-to-n",
+  "d": "2026-11-13",
+  "title": "Mortgage industry expects CFPB servicing rule to narrow",
+  "body": "Legal experts anticipate targeted changes to Regulation X rather than a full rewrite",
+  "topics": [
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/cfpb-revised-mortgage-servicing-loss-mitigation/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261113-zillow-s-preview-program-changes-who-sees-listings",
+  "d": "2026-11-13",
+  "title": "Zillow’s Preview program changes who sees listings first, here’s why it matters",
+  "body": "More than 400 brokerages joined the March 2026 program, and Zillow cites 235 million monthly unique users",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/zillow-preview-antitrust-home-sales/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261113-why-compass-is-pulling-its-leaders-from-realtor-as",
+  "d": "2026-11-13",
+  "title": "Why Compass is pulling its leaders from Realtor associations — and what it means for the industry",
+  "body": "Analysts cite conflict concerns as Compass litigates against MLS and association-owned entities",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/compass-realtor-boards-mls-lawsuits/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261113-8-real-estate-brokerage-moves-and-tech-launches-to",
+  "d": "2026-11-13",
+  "title": "8 real estate brokerage moves and tech launches to know this week",
+  "body": "Moves include agent team moves, new market entries and new AI and compliance tools across multiple metros",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/brokerage-tech-roundup-nov-2026/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261113-october-2026-hottest-housing-markets",
+  "d": "2026-11-13",
+  "title": "October 2026 Hottest Housing Markets",
+  "body": "Hartford-West Hartford-East Hartford, Conn. claimed the top spot in October for the first time since a summer run on top from May - July 2026.",
+  "topics": [],
+  "states": [
+   "CT"
+  ],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/october-2026-hottest-housing-markets/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261113-you-ll-have-your-3-best-investing-markets-after-th",
+  "d": "2026-11-13",
+  "title": "You’ll Have Your 3 Best Investing Markets After This Episode",
+  "body": "By the end of this episode, you’ll have (at least) three real estate markets you can invest in. How do we know? We chose our real estate investing markets the [ ]",
+  "topics": [
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1356",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261112-mls-roundup-ai-fraud-prevention-and-data-sharing-t",
   "d": "2026-11-12",
   "title": "MLS roundup: AI, fraud prevention and data sharing take center stage",
@@ -169,6 +271,21 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/on-the-market-477",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261112-california-cities-get-firm-notice-follow-new-housi",
+  "d": "2026-11-12",
+  "title": "California cities get firm notice: follow new housing laws, or else",
+  "body": "The warnings are designed to build a paper trail if officials deny or downsize projects that meet state rules",
+  "topics": [],
+  "states": [
+   "CA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/calhdf-pre-vote-letters/",
    "q": "news"
   }
  },

@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-13",
+  "title": "Today's top defense-tech headlines",
+  "big": "49 new stories since the last brief. The busiest areas: drones & air autonomy and allies & theaters.",
+  "stories": [
+    {
+      "tag": "AI, software & command and control",
+      "h": "Anduril, Booz Allen, Peerless Secure Space Force EW C2 System Prototype Agreements",
+      "what": "One vendor will be selected to build the operational Space Electromagnetic Warfare Operating Location system.",
+      "you": "Software that decides what to look at and what to hit is where the most value is moving.",
+      "ref": "u-20261112-anduril-booz-allen-peerless-secure-space-force-ew-"
+    },
+    {
+      "tag": "Drones & air autonomy",
+      "h": "Royal Navy to Trial Northrop Grumman Test Aircraft on Carrier in 2027",
+      "what": "The Royal Navy will trial Northrop Grumman’s Talon IQ autonomous testbed demonstrator off a Queen Elizabeth-class carrier next year, the First Sea Lord announced Tuesday.",
+      "you": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+      "ref": "u-20261112-royal-navy-to-trial-northrop-grumman-test-aircraft"
+    },
+    {
+      "tag": "Space",
+      "h": "SDA explores integration of SpaceX laser communication terminals with missile tracking sats",
+      "what": "An SDA spokesperson told Breaking Defense that the new study is a first step, and thus there are a number of potential hardware and software integration pathways for consideration.",
+      "you": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+      "ref": "u-20261112-sda-explores-integration-of-spacex-laser-communica"
+    },
+    {
+      "tag": "Missiles, hypersonics & munitions",
+      "h": "Ursa Major gets $11M to keep building its Draper missile engine",
+      "what": "The U.S. Air Force is putting another $10.9 million into Draper, a liquid-fueled rocket engine that Colorado-based Ursa Major is building for hypersonic missiles, the company said Thursday.",
+      "you": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+      "ref": "u-20261113-ursa-major-gets-11m-to-keep-building-its-draper-mi"
+    },
+    {
+      "tag": "Sensing, ISR & quantum",
+      "h": "Japan buys upgraded Link 16 terminals for its E-767 radar planes",
+      "what": "Japan’s E-767 airborne warning and control aircraft will get new Link 16 datalink terminals under a $14.9 million contract modification the U.S. Air Force awarded to Georgia Tech Applied Research Corp., the U.S. Department of War announced on Nov. 12.",
+      "you": "Better sensors and navigation that works without GPS are prerequisites for everything autonomous.",
+      "ref": "u-20261113-japan-buys-upgraded-link-16-terminals-for-its-e-76"
+    }
+  ],
+  "watch": {
+    "h": "Stopgap funding expires: FY27 appropriations or another CR",
+    "why": "December 11. Decides whether DAWG's $54.6B and Golden Dome's growth become real money."
+  },
+  "idea": {
+    "h": "Synthetic data and test & evaluation for autonomy",
+    "why": "Simulation and synthetic sensor data to train and certify autonomy when GPS is denied and radios are jammed. New autonomy policy (the June 2026 memo, CSIS definitions) means systems need verification evidence, and the new command gets test powers."
+  },
+  "auto": true
+}
