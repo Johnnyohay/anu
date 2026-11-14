@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-14",
+  "title": "Today's top defense-tech headlines",
+  "big": "25 new stories since the last brief. The busiest areas: drones & air autonomy and maritime & undersea autonomy.",
+  "stories": [
+    {
+      "tag": "Sensing, ISR & quantum",
+      "h": "F-16 radar upgrade contract passes $2 billion with new Northrop award",
+      "what": "Northrop Grumman won another $79.6 million from the U.S. Air Force for the radar going into its F-16 fleet, pushing a contract that started at $244 million in 2017 past the $2 billion mark. The award, announced Nov. 13 by the U.S.",
+      "you": "Better sensors and navigation that works without GPS are prerequisites for everything autonomous.",
+      "ref": "u-20261114-f-16-radar-upgrade-contract-passes-2-billion-with-"
+    },
+    {
+      "tag": "Space",
+      "h": "Senate appropriators resuscitate Commerce space tracking program",
+      "what": "The Commerce Department effort was launched nearly a decade ago due to Defense Department concerns about the increasing drain on its space monitoring resources as commercial space traffic continues to skyrocket.",
+      "you": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+      "ref": "u-20261113-senate-appropriators-resuscitate-commerce-space-tr"
+    },
+    {
+      "tag": "Drones & air autonomy",
+      "h": "U.S. Army adds a second drone to its battalion reconnaissance buy",
+      "what": "The U.S. Army awarded Kraus Hamdani Aerospace a $14.9 million contract “to procure Battalion Reconnaissance Unmanned Aircraft Systems,” according to a U.S.",
+      "you": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+      "ref": "u-20261114-u-s-army-adds-a-second-drone-to-its-battalion-reco"
+    },
+    {
+      "tag": "Maritime & undersea autonomy",
+      "h": "U.S. Navy switches next Growler jammer batch to extended-range version",
+      "what": "Raytheon will build the newest production batch of the U.S. Navy’s Next Generation Jammer Mid-Band pods in an extended-frequency version under a $42.1 million contract change the U.S. Department of War announced on Nov. 13.",
+      "you": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+      "ref": "u-20261114-u-s-navy-switches-next-growler-jammer-batch-to-ext"
+    },
+    {
+      "tag": "Missile defense & Golden Dome",
+      "h": "Japan’s new air defense system spotted near Tokyo",
+      "what": "A military truck with no unit markings, seen on a highway outside Tokyo this week, may be the first public sighting of Japan’s new short-range air defense missile system, according to Japanese military enthusiasts on social media.",
+      "you": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+      "ref": "u-20261113-japan-s-new-air-defense-system-spotted-near-tokyo"
+    }
+  ],
+  "watch": {
+    "h": "Stopgap funding expires: FY27 appropriations or another CR",
+    "why": "December 11. Decides whether DAWG's $54.6B and Golden Dome's growth become real money."
+  },
+  "idea": {
+    "h": "Bill-of-materials compliance and magnet sourcing",
+    "why": "Maps every part to its country of origin, flags NDAA, Blue UAS and the 2027 magnet ban, and finds compliant suppliers. The 1 Jan 2027 magnet ban and China's 10 Nov deadline hit hundreds of hardware vendors at once."
+  },
+  "auto": true
+}

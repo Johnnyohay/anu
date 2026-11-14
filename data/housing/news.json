@@ -102,6 +102,102 @@
   }
  },
  {
+  "id": "h-20261113-apartment-rents-diverge-san-francisco-rises-the-su",
+  "d": "2026-11-13",
+  "title": "Apartment rents diverge: San Francisco rises, the Sun Belt falls",
+  "body": "Northern California took the top 3 growth spots, and San Antonio posted the steepest decline among the 50 largest markets",
+  "topics": [
+   "rents"
+  ],
+  "states": [
+   "CA",
+   "TX"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/apartment-rents-diverge-2026/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261113-movement-mortgage-seeks-to-recoup-1-2m-from-former",
+  "d": "2026-11-13",
+  "title": "Movement Mortgage seeks to recoup $1.2M from former LOs",
+  "body": "Arbitrator backs lender on signing bonus payback tied to 3-year terms",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/movement-mortgage-1-2m-bonus-clawback/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261113-stubborn-input-inflation-pressures-builders-despit",
+  "d": "2026-11-13",
+  "title": "Stubborn input inflation pressures builders despite energy pullback",
+  "body": "Residential construction input prices climb 10.4% year over year",
+  "topics": [
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/residential-construction-input-inflation-october-nahb/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261113-why-midwest-buyer-demand-is-holding-up-in-the-face",
+  "d": "2026-11-13",
+  "title": "Why Midwest buyer demand is holding up in the face of higher mortgage rates",
+  "body": "Several Midwest metros are keeping pending sales aligned with new listings, led by Columbus and Cincinnati",
+  "topics": [
+   "rates",
+   "inventory",
+   "sales"
+  ],
+  "states": [
+   "OH"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/midwest-buyer-demand-pending-sales/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261113-existing-home-sales-sink-to-lowest-level-since-201",
+  "d": "2026-11-13",
+  "title": "Existing-Home Sales Sink to Lowest Level Since 2010",
+  "body": "Existing-home sales had another rough month, and just hit their lowest level since August 2010. Mortgage rates are largely to blame.",
+  "topics": [
+   "rates",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Mortgage News Daily",
+   "u": "https://www.mortgagenewsdaily.com/news/11132026-existing-home-sales-nar-inventory-prices-appr",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261113-decent-bounce-in-mortgage-demand-thanks-to-last-we",
+  "d": "2026-11-13",
+  "title": "Decent Bounce in Mortgage Demand Thanks to Last Week's Lower Rates",
+  "body": "Mortgage applications bounced back in the latest week, with both purchase and refinance activity moving higher. The Mortgage Bankers Association (MBA) reported a 6.2% increase in total application volume for the week ending November 6, 2026.",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "Mortgage News Daily",
+   "u": "https://www.mortgagenewsdaily.com/news/11132026-mortgage-applications-mba",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261112-mls-roundup-ai-fraud-prevention-and-data-sharing-t",
   "d": "2026-11-12",
   "title": "MLS roundup: AI, fraud prevention and data sharing take center stage",

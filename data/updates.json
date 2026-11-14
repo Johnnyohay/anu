@@ -1,5 +1,131 @@
 [
   {
+    "id": "u-20261114-destroyer-returns-from-11-month-deployment",
+    "d": "2026-11-14",
+    "title": "Destroyer returns from 11-month-deployment",
+    "body": "The Michael Murphy left Hawaii last December. Navy officials say this will be the norm for some time.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/threats/2026/11/destroyer-returns-11-month-deployment/417231/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261114-pentagon-s-moon-orbit-satellite-plan-calls-for-2-0",
+    "d": "2026-11-14",
+    "title": "Pentagon’s Moon-orbit satellite plan calls for 2,000 kg secret payloads",
+    "body": "The Department of the Air Force wants up to five spacecraft that can each carry a government payload of as much as 2,000 kg (4,400 pounds) into the space between Earth and the Moon, with the first launch in late 2029, according to a request for information…",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/pentagons-moon-orbit-satellite-plan-calls-for-2000-kg-secret-payloads/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Department of the Air Force"
+    ]
+  },
+  {
+    "id": "u-20261114-f-16-radar-upgrade-contract-passes-2-billion-with-",
+    "d": "2026-11-14",
+    "title": "F-16 radar upgrade contract passes $2 billion with new Northrop award",
+    "body": "Northrop Grumman won another $79.6 million from the U.S. Air Force for the radar going into its F-16 fleet, pushing a contract that started at $244 million in 2017 past the $2 billion mark. The award, announced Nov. 13 by the U.S.",
+    "why": "Better sensors and navigation that works without GPS are prerequisites for everything autonomous.",
+    "sectors": [
+      "sensing",
+      "primes"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Northrop Grumman"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/f-16-radar-upgrade-contract-passes-2-billion-with-new-northrop-award/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "Northrop Grumman",
+      "S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261114-u-s-army-adds-a-second-drone-to-its-battalion-reco",
+    "d": "2026-11-14",
+    "title": "U.S. Army adds a second drone to its battalion reconnaissance buy",
+    "body": "The U.S. Army awarded Kraus Hamdani Aerospace a $14.9 million contract “to procure Battalion Reconnaissance Unmanned Aircraft Systems,” according to a U.S.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sensing"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Battalion Reconnaissance Unmanned Aircraft Systems"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-adds-a-second-drone-to-its-battalion-reconnaissance-buy/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "Battalion Reconnaissance Unmanned Aircraft Systems"
+    ]
+  },
+  {
+    "id": "u-20261114-u-s-navy-switches-next-growler-jammer-batch-to-ext",
+    "d": "2026-11-14",
+    "title": "U.S. Navy switches next Growler jammer batch to extended-range version",
+    "body": "Raytheon will build the newest production batch of the U.S. Navy’s Next Generation Jammer Mid-Band pods in an extended-frequency version under a $42.1 million contract change the U.S. Department of War announced on Nov. 13.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "ew",
+      "primes"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Raytheon"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-navy-switches-next-growler-jammer-batch-to-extended-range-version/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Navy",
+      "Raytheon",
+      "U.S. Department of War"
+    ]
+  },
+  {
     "id": "u-20261113-pentagon-rebrands-principle-ai-shop-as-super-intel",
     "d": "2026-11-13",
     "title": "Pentagon rebrands principle AI shop as ‘Super Intelligence Office’",
@@ -498,6 +624,501 @@
     "addedAt": "2026-11-13T17:36:55.762Z",
     "auto": true,
     "orgs": []
+  },
+  {
+    "id": "u-20261113-securing-the-asia-pacific-digital-battlespace-tech",
+    "d": "2026-11-13",
+    "title": "Securing the Asia-Pacific digital battlespace: TechNet Indo-Pacific 2026",
+    "body": "From electronic warfare threats to coalition data sharing, discover how US and allied forces are strengthening the digital battlespace across the Indo-Pacific.",
+    "why": "Jamming and spectrum fights decide whether drones and radios work at all, so this quiet area keeps getting funded.",
+    "sectors": [
+      "ew"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "TechNet Indo"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/securing-the-asia-pacific-digital-battlespace-technet-indo-pacific-2026/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "TechNet Indo"
+    ]
+  },
+  {
+    "id": "u-20261113-senate-appropriators-resuscitate-commerce-space-tr",
+    "d": "2026-11-13",
+    "title": "Senate appropriators resuscitate Commerce space tracking program",
+    "body": "The Commerce Department effort was launched nearly a decade ago due to Defense Department concerns about the increasing drain on its space monitoring resources as commercial space traffic continues to skyrocket.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "policy",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/senate-appropriators-resuscitate-commerce-space-tracking-program/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "Senate",
+      "Commerce Department",
+      "Defense Department"
+    ]
+  },
+  {
+    "id": "u-20261113-submarine-maintenance-delays-saw-significant-impro",
+    "d": "2026-11-13",
+    "title": "Submarine maintenance delays saw ‘significant’ improvements in FY26, sub czar says",
+    "body": "Vice Adm. Rob Gaucher, the direct reporting portfolio manager for submarines, said that the Navy faced roughly 780 days of maintenance delay for subs in FY26.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/submarine-maintenance-delays-saw-significant-improvements-in-fy26-sub-czar-says/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261113-air-force-validates-b-21-raider-weapons-release-af",
+    "d": "2026-11-13",
+    "title": "Air Force validates B-21 Raider weapons release after test",
+    "body": "The stealth bomber demonstrated weapons release in flight last week, building on digital twin simulations.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/13/air-force-b-21-raider-weapons-release-test/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261113-inside-msi-s-next-generation-of-counter-drone-defe",
+    "d": "2026-11-13",
+    "title": "Inside MSI’s Next Generation of Counter-Drone Defense",
+    "body": "MSI discusses its EAGLS air defense platform, development of EAGLS X and new approaches to modular, cost-effective counter-drone capabilities.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas",
+      "missiledef"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "MSI"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/13/inside-msis-next-generation-of-counter-drone-defense/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "MSI"
+    ]
+  },
+  {
+    "id": "u-20261113-us-air-force-adopts-new-force-design-focusing-on-s",
+    "d": "2026-11-13",
+    "title": "US Air Force adopts new Force Design focusing on sensors and autonomy",
+    "body": "The Air Force's new Force Design 2026 outlines a shift toward artificial intelligence, autonomy and integrated sensors to counter emerging threats.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/air/2026/11/13/us-air-force-adopts-new-force-design-focusing-on-sensors-and-autonomy/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "US Air Force"
+    ]
+  },
+  {
+    "id": "u-20261113-drones-incoming-new-innovations-on-offer-in-uas-te",
+    "d": "2026-11-13",
+    "title": "Drones incoming! New innovations on offer in UAS tech Defense News Weekly Full Episode 11.10.26",
+    "body": "New drone innovations are highlighted in Part 2 of our Business of Defense series. Plus, a sneak peek into a new Smithsonian military aviation exhibit, and tips to avoid scams.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "of Defense",
+      "Smithsonian"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/13/drones-incoming-new-innovations-on-offer-in-uas-tech-defense-news-weekly-full-episode-11-10-26/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "Defense News Weekly",
+      "of Defense",
+      "Smithsonian"
+    ]
+  },
+  {
+    "id": "u-20261113-suspected-drones-over-raf-lakenheath-just-triggere",
+    "d": "2026-11-13",
+    "title": "Suspected Drones Over RAF Lakenheath Just Triggered Security Response: U.S. Air Force (Updated)",
+    "body": "The scare comes after some USAF aircraft were evacuated from England and the threat level at bases has been raised.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "USAF"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/suspected-drones-over-raf-lakenheath-just-triggered-security-response-u-s-air-force",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Air Force",
+      "USAF"
+    ]
+  },
+  {
+    "id": "u-20261113-beretta-s-new-counter-drone-system-packs-eight-ben",
+    "d": "2026-11-13",
+    "title": "Beretta’s New Counter-Drone System Packs Eight Benelli M4 Shotguns Onto A Remote Turret",
+    "body": "The Italian-developed LIVET counter-drone system combines Benelli shotguns, airburst ammo, AI-assisted target tracking, and remote operation.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas",
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/land/berettas-new-counter-drone-system-packs-eight-benelli-m4-shotguns-onto-a-remote-turret",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261113-destroyer-that-has-been-deployed-longer-than-any-s",
+    "d": "2026-11-13",
+    "title": "Destroyer That Has Been Deployed Longer Than Any Since WWII Returns Home",
+    "body": "USS Spruance and USS Michael Murphy remained in the Middle East after the USS Abraham Lincoln left, resulting in historic deployments.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "USS"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/destroyer-that-has-been-deployed-longer-than-any-since-wwii-returns-home",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "USS"
+    ]
+  },
+  {
+    "id": "u-20261113-b-21-raider-conducts-first-weapons-release-test",
+    "d": "2026-11-13",
+    "title": "B-21 Raider Conducts First Weapons Release Test",
+    "body": "The B-21 Raider conducted a weapons release test for the first time, the Air Force and manufacturer Northrop Grumman said Nov. 13.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "mfg",
+      "primes"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Northrop Grumman"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/b-21-raider-first-weapons-release-test/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "Air Force",
+      "Northrop Grumman"
+    ]
+  },
+  {
+    "id": "u-20261113-consolidating-code-usaf-seeks-software-integrator-",
+    "d": "2026-11-13",
+    "title": "Consolidating Code: USAF Seeks Software Integrator for KC-46 Tankers",
+    "body": "The Air Force Life Cycle Management Center wants a contractor to serve as integrator for all the software sustainment of current and future upgrades to the growing KC-46 Pegasus tanker fleet.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "USAF"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/usaf-seeks-software-integrator-kc-46-tankers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "USAF",
+      "Air Force Life Cycle Management Center"
+    ]
+  },
+  {
+    "id": "u-20261113-peacoat-evicted-from-navy-seabags-after-a-century-",
+    "d": "2026-11-13",
+    "title": "Peacoat Evicted from Navy Seabags After a Century at Sea",
+    "body": "The traditional Navy peacoat will be no more. A new Navy uniform policy released on Friday removes the peacoat, acrylic V-neck sweater and dinner dress white jacket from a sailor’s seabag beginning on Oct. 1, 2027.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/13/peacoat-evicted-from-navy-sea-bags-after-a-century-at-sea",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261113-usni-news-western-pacific-pulse-nov-13-2026",
+    "d": "2026-11-13",
+    "title": "USNI News Western Pacific Pulse: Nov. 13, 2026",
+    "body": "The following is a summary of major ship movements and exercises in the Western Pacific over the last week. In Singapore The Theodore Roosevelt Carrier Strike Group departed on Sunday from Singapore.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Theodore Roosevelt Carrier Strike Group"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/13/usni-news-western-pacific-pulse-nov-13-2026",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "USNI News Western Pacific",
+      "Theodore Roosevelt Carrier Strike Group"
+    ]
+  },
+  {
+    "id": "u-20261113-commercial-space-federation-welcomes-cesiumastro-a",
+    "d": "2026-11-13",
+    "title": "Commercial Space Federation Welcomes CesiumAstro as a New Associate Member",
+    "body": "November 13, 2026— Washington, D.C.—The Commercial Space Federation (CSF) is pleased to welcome CesiumAstro as its newest Associate Member. A global leader in advanced connectivity solutions for the space and [ ]",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Commercial Space Federation",
+      "CesiumAstro",
+      "CSF"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/commercial-space-federation-welcomes-cesiumastro-as-a-new-associate-member/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "Commercial Space Federation",
+      "CesiumAstro",
+      "CSF"
+    ]
+  },
+  {
+    "id": "u-20261113-naval-academy-honors-marine-aviators-with-harrier-",
+    "d": "2026-11-13",
+    "title": "Naval Academy Honors Marine Aviators With Harrier Display",
+    "body": "The U.S. Naval Academy and the Marine Corps dedicated a retired AV-8B Harrier II as a permanent display at Navy-Marine Corps Memorial Stadium in Annapolis, Md., The display honors more than a century of Naval Academy graduates who served as Marine aviators.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "U.S. Naval Academy"
+    ],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4648058/naval-academy-honors-marine-aviators-with-harrier-display/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Naval Academy",
+      "Marine Corps"
+    ]
+  },
+  {
+    "id": "u-20261113-japan-s-new-air-defense-system-spotted-near-tokyo",
+    "d": "2026-11-13",
+    "title": "Japan’s new air defense system spotted near Tokyo",
+    "body": "A military truck with no unit markings, seen on a highway outside Tokyo this week, may be the first public sighting of Japan’s new short-range air defense missile system, according to Japanese military enthusiasts on social media.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "global",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/japans-new-air-defense-system-spotted-near-tokyo/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261113-brig-gen-matt-ross-jiatf-401-taps-ic-for-counter-d",
+    "d": "2026-11-13",
+    "title": "Brig. Gen. Matt Ross: JIATF-401 Taps IC for Counter-Drone Threat Assessments",
+    "body": "Brig. Gen. Matt Ross discussed JIATF-401's work with the intelligence community on counter-drone threat assessments.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/jiatf-401-matt-ross-intelligence-community-drone-threats",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261113-hud-ocio-reorganization-to-establish-data-and-ai-d",
+    "d": "2026-11-13",
+    "title": "HUD OCIO Reorganization to Establish Data and AI Division",
+    "body": "The Department of Housing and Urban Development is planning an OCIO overhaul and a new data and artificial intelligence division.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "OCIO",
+      "Data",
+      "AI Division",
+      "Urban Development"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/hud-ocio-data-ai-division-reorganization",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "OCIO",
+      "Data",
+      "AI Division",
+      "Department of Housing",
+      "Urban Development"
+    ]
+  },
+  {
+    "id": "u-20261113-space-systems-command-seeks-white-papers-for-space",
+    "d": "2026-11-13",
+    "title": "Space Systems Command Seeks White Papers for Space Data Network Industry Consortium",
+    "body": "AAC has invited U.S.-owned firms to tackle LEO mesh integration as associate members under a $0-value OTA.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Space Data Network Industry Consortium",
+      "AAC"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/ssc-space-data-network-industry-consortium-sources-sought-notice",
+      "q": "news"
+    },
+    "addedAt": "2026-11-14T16:29:46.466Z",
+    "auto": true,
+    "orgs": [
+      "Space Systems Command",
+      "Space Data Network Industry Consortium",
+      "AAC"
+    ]
   },
   {
     "id": "u-20261112-instead-of-stockpiling-small-attack-drones-army-lo",
