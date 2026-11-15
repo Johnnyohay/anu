@@ -1,5 +1,20 @@
 [
  {
+  "id": "h-20261115-the-seasonal-decline-in-housing-inventory-is-in-fu",
+  "d": "2026-11-15",
+  "title": "The seasonal decline in housing inventory is in full force",
+  "body": "Inventory fell to 895,988, down 6,752 week to week, while new listings were 53,162 vs 56,569 last year.",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/inventory-seasonal-decline-rates/",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261113-builder-credit-conditions-tighten-for-19th-straigh",
   "d": "2026-11-13",
   "title": "Builder credit conditions tighten for 19th straight quarter",

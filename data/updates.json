@@ -1,5 +1,130 @@
 [
   {
+    "id": "u-20261115-the-civilian-office-overseeing-special-operations-",
+    "d": "2026-11-15",
+    "title": "The civilian office overseeing special operations forces could get $45 million budget, 100 staffers",
+    "body": "Hegseth’s proposed changes hinge on getting support from Congress.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/policy/2026/11/civilian-office-overseeing-special-operations-forces-could-get-45-million-budget-100-staffers/417234/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-15T16:55:28.543Z",
+    "auto": true,
+    "orgs": [
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261115-uk-spy-planes-stepped-up-kaliningrad-flights-after",
+    "d": "2026-11-15",
+    "title": "UK spy planes stepped up Kaliningrad flights after Putin’s nuclear warning",
+    "body": "Britain’s RC-135W Rivet Joint spy planes flew 17 missions in October to watch Russian military activity, repeatedly circling Russia’s Kaliningrad exclave, according to defense reporter Tom Cotterill.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Joint"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/uk-spy-planes-stepped-up-kaliningrad-flights-after-putins-nuclear-warning/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-15T16:55:28.543Z",
+    "auto": true,
+    "orgs": [
+      "Joint"
+    ]
+  },
+  {
+    "id": "u-20261115-germany-plans-16-new-a400m-airlifters-a-lifeline-f",
+    "d": "2026-11-15",
+    "title": "Germany plans 16 new A400M airlifters, a lifeline for the program",
+    "body": "Germany plans to buy 16 more Airbus A400M military transport aircraft, the German Defense Ministry said Friday, giving Airbus new work for a production line that has been running short of orders.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "air",
+      "mfg",
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [
+      "Airbus"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/germany-plans-16-new-a400m-airlifters-a-lifeline-for-the-program/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-15T16:55:28.543Z",
+    "auto": true,
+    "orgs": [
+      "Defense Ministry",
+      "Airbus"
+    ]
+  },
+  {
+    "id": "u-20261115-u-s-air-force-f-15ex-jets-arrive-to-stay-at-japan-",
+    "d": "2026-11-15",
+    "title": "U.S. Air Force F-15EX jets arrive to stay at Japan’s Kadena Air Base",
+    "body": "Two F-15EX Eagle II fighters assigned to the 67th Fighter Squadron landed at Kadena Air Base on Okinawa on Sunday, the first of the new jets to be permanently based at the Japanese installation, according to the U.S. Air Force’s 18th Wing.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Fighter Squadron"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-air-force-f-15ex-jets-arrive-to-stay-at-japans-kadena-air-base/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-15T16:55:28.543Z",
+    "auto": true,
+    "orgs": [
+      "S. Air Force",
+      "Fighter Squadron"
+    ]
+  },
+  {
+    "id": "u-20261115-german-leopard-tank-in-ukraine-survived-45-drone-s",
+    "d": "2026-11-15",
+    "title": "German Leopard tank in Ukraine survived 45 drone strikes",
+    "body": "A Ukrainian Leopard tank took 45 hits from FPV drones during Operation Vivaldi and is still operational, its brigade commander told military analyst Rob Lee. Lee, a senior fellow at the Foreign Policy Research Institute and a former U.S.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "ground",
+      "global"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/german-leopard-tank-in-ukraine-survived-45-drone-strikes/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-15T16:55:28.543Z",
+    "auto": true,
+    "orgs": [
+      "Foreign Policy Research Institute"
+    ]
+  },
+  {
     "id": "u-20261114-destroyer-returns-from-11-month-deployment",
     "d": "2026-11-14",
     "title": "Destroyer returns from 11-month-deployment",
