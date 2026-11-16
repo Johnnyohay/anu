@@ -2,8 +2,8 @@ name: Daily brief
 
 on:
   schedule:
-    # 10:00 UTC = 6:00 New York time in summer (EDT), 5:00 in winter (EST).
-    - cron: "0 10 * * *"
+    # 14:00 UTC = 9:00 New York time in winter (EST), 10:00 in summer (EDT).
+    - cron: "0 14 * * *"
   workflow_dispatch:
   push:
     branches: [main]

@@ -42,7 +42,7 @@ Free lookups: `npm run kb -- housing`, `metros --sort grossYield --largest 100`,
 3. **Brief**: if there's no brief for today yet, it picks the five strongest stories across different sectors (deals, contracts and policy first), adds a plain-language "why it matters" for each sector, the next date on the calendar, and an idea to build.
 4. **Publish** (`src/build-api.ts`): writes `public/api/v1/`, commits `data/`, and deploys `public/` to GitHub Pages.
 
-Runs daily at 10:00 UTC (6:00 New York time in summer, 5:00 in winter). Run it by hand with `gh workflow run "Daily brief"`.
+Runs daily at 14:00 UTC (9:00 New York time in winter, 10:00 in summer). Run it by hand with `gh workflow run "Daily brief"`.
 
 ## API
 
