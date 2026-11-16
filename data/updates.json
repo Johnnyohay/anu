@@ -1,5 +1,398 @@
 [
   {
+    "id": "u-20261116-navy-eyes-operational-employment-of-key-uuv-progra",
+    "d": "2026-11-16",
+    "title": "Navy eyes ‘operational employment’ of key UUV programs, admiral says",
+    "body": "The Navy is expected to receive its third Orca prototype vessel “soon,” according to a service official.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/navy-eyes-operational-employment-of-key-uuv-programs-admiral-says/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261116-estonian-drone-company-targeted-in-sabotage-attemp",
+    "d": "2026-11-16",
+    "title": "Estonian drone company targeted in sabotage attempt as part of ‘Russia’s hybrid war against Europe’: Prime Minister Michal",
+    "body": "Estonian Prime Minister Kristen Michal said in a statement on X that the attack was “GRU-ordered,” an abbreviation for the Russian military intelligence agency.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/estonian-drone-company-targeted-in-sabotage-attempt-as-part-of-russias-hybrid-war-against-europe-prime-minister-michal/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261116-italy-backs-rapid-german-membership-path-into-gcap",
+    "d": "2026-11-16",
+    "title": "Italy backs rapid German membership path into GCAP fighter program",
+    "body": "Italy has strongly denied a press report suggesting it opposes granting Germany partner status on the GCAP fighter program, claiming instead it fully backs German membership.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "Research",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/16/italy-backs-rapid-german-membership-path-into-gcap-fighter-program/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261116-marine-corps-doubles-extends-contract-for-m27-rifl",
+    "d": "2026-11-16",
+    "title": "Marine Corps doubles, extends contract for M27 rifles",
+    "body": "The service began replacing its infantry’s squad weapons with the M27 IAR in 2028 and will continue through 2028.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/2026/11/16/marine-corps-doubles-extends-contract-for-m27-rifles/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": [
+      "Marine Corps"
+    ]
+  },
+  {
+    "id": "u-20261116-new-tools-for-troops-to-gun-down-drones-defense-ne",
+    "d": "2026-11-16",
+    "title": "New tools for troops to gun down drones Defense News Weekly Full Episode 11.17.26",
+    "body": "The visceral threat of cheap drones delivering pinpoint, guided anti-personnel munitions continues to spawn new protection systems. Plus, an interview with a Medal of Honor recipient.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/16/new-tools-for-troops-to-gun-down-drones-defense-news-weekly-full-episode-11-17-26/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": [
+      "Defense News Weekly"
+    ]
+  },
+  {
+    "id": "u-20261116-drone-meet-bullet-companies-develop-new-counter-ua",
+    "d": "2026-11-16",
+    "title": "Drone, meet bullet — companies develop new counter UAS capability Business of Defense – Part 3",
+    "body": "Developers turn to advancing tech to help troops shoot down incoming small drone threats. Or what about a truck-mounted laser to do the job?",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/16/drone-meet-bullet-companies-develop-new-counter-uas-capability-business-of-defense-part-3/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261116-estonia-to-close-border-with-russia-after-arson-at",
+    "d": "2026-11-16",
+    "title": "Estonia to close border with Russia after arson attack on local drone maker",
+    "body": "Estonia plans to close its road border crossings with Russia in response to an attempted arson attack against Estonian defense company Threod Systems.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Threod Systems"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/16/estonia-to-close-border-with-russia-after-arson-attack-on-local-drone-maker/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": [
+      "Threod Systems"
+    ]
+  },
+  {
+    "id": "u-20261116-china-upgrades-its-vt-4-export-tank-with-a-drone-k",
+    "d": "2026-11-16",
+    "title": "China upgrades its VT-4 export tank with a drone-killing gun",
+    "body": "A new version of China’s VT-4 export tank has been spotted with a 30 mm remote-controlled cannon and a small radar on its roof, apparently built to shoot down drones, ahead of its expected debut at the Zhuhai airshow.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "ground",
+      "adversary",
+      "sensing"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/china-upgrades-its-vt-4-export-tank-with-a-drone-killing-gun/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261116-10-000-swiss-sniper-rounds-smuggled-into-russia",
+    "d": "2026-11-16",
+    "title": "10,000 Swiss sniper rounds smuggled into Russia",
+    "body": "At least 110,000 rounds of Swiss sniper ammunition reached Russia after its full-scale invasion of Ukraine, smuggled through Slovenia and Kyrgyzstan despite a Swiss export ban, the Swiss newspaper NZZ am Sonntag reported.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "NZZ am Sonntag"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/10000-swiss-sniper-rounds-smuggled-into-russia/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": [
+      "NZZ am Sonntag"
+    ]
+  },
+  {
+    "id": "u-20261116-germany-s-trophy-equipped-leopard-2a7a1-gets-a-hom",
+    "d": "2026-11-16",
+    "title": "Germany’s Trophy-equipped Leopard 2A7A1 gets a homemade drone cage",
+    "body": "German soldiers in Lithuania are cutting steel mesh with angle grinders and bolting it, panel by panel, onto the turret of a Leopard 2 tank to build a homemade cage against drones, the German Army showed in photos posted this week.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global",
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/germanys-trophy-equipped-leopard-2a7a1-gets-a-homemade-drone-cage/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261116-russia-reports-its-biggest-ukrainian-drone-attack-",
+    "d": "2026-11-16",
+    "title": "Russia reports its biggest Ukrainian drone attack of the war",
+    "body": "Russia says its air defenses shot down 2,049 Ukrainian drones, four Flamingo cruise missiles and seven guided bombs in a single day, a figure that would make it one of the largest Ukrainian long-range attacks of the war.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-reports-its-biggest-ukrainian-drone-attack-of-the-war/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261116-chinese-anti-tank-missile-spotted-in-morocco",
+    "d": "2026-11-16",
+    "title": "Chinese anti-tank missile spotted in Morocco",
+    "body": "Officer cadets at Morocco’s Royal Military Academy fired a Chinese HJ-9A anti-tank missile from an American-made Humvee during a graduation shooting exercise this month, according to images shared by Chinese military commentator Dianbo.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground",
+      "strike",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Royal Military Academy"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/chinese-anti-tank-missile-spotted-in-morocco/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": [
+      "Royal Military Academy"
+    ]
+  },
+  {
+    "id": "u-20261116-otokar-to-build-new-4-4-armored-vehicle-for-turkis",
+    "d": "2026-11-16",
+    "title": "Otokar to build new 4 4 armored vehicle for Turkish army",
+    "body": "Turkish vehicle maker Otokar will develop a new 4 4 tactical wheeled armored vehicle for the Turkish Armed Forces and plans to deliver the vehicles by the end of 2028, the company said Monday.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Otokar"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/otokar-to-build-new-4x4-armored-vehicle-for-turkish-army/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": [
+      "Otokar",
+      "Turkish Armed Forces"
+    ]
+  },
+  {
+    "id": "u-20261116-turkish-dragon-electromagnetic-weapon-fries-51-dro",
+    "d": "2026-11-16",
+    "title": "Turkish “dragon” electromagnetic weapon fries 51 drones in seconds",
+    "body": "Turkish defense company ASELSAN says its EJDERHA electromagnetic weapon knocked out 51 drones launched at the same time, all within seconds, without firing a single missile or round. ASELSAN announced the result on Sunday and called it a world record.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "ASELSAN"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/turkish-dragon-electromagnetic-weapon-fries-51-drones-in-seconds/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": [
+      "ASELSAN"
+    ]
+  },
+  {
+    "id": "u-20261116-u-s-army-swaps-analog-gauges-for-garmin-g1000-in-h",
+    "d": "2026-11-16",
+    "title": "U.S. Army swaps analog gauges for Garmin G1000 in Huron fleet",
+    "body": "A U.S. Army C-12 Huron became the 1,000th King Air-family aircraft to get Garmin’s G1000 glass cockpit retrofit, the service said in a release this week.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-swaps-analog-gauges-for-garmin-g1000-in-huron-fleet/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261116-u-s-air-force-debuts-t-19a-kestrel-aircraft",
+    "d": "2026-11-16",
+    "title": "U.S. Air Force debuts T-19A Kestrel aircraft",
+    "body": "Four T-19A Kestrel aerobatic planes flew over the U.S. Air Force Academy’s noon meal formation in Colorado on Nov. 12, the first public appearance of the service’s newest aircraft, according to an Air Force release.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-air-force-debuts-t-19a-kestrel-aircraft/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": [
+      "S. Air Force Academy"
+    ]
+  },
+  {
+    "id": "u-20261116-u-s-army-flies-himars-2-000-miles-to-fire-live-roc",
+    "d": "2026-11-16",
+    "title": "U.S. Army flies HIMARS 2,000 miles to fire live rockets at Kwajalein",
+    "body": "U.S. Army rocket launchers from Hawaii fired live rockets at Kwajalein Atoll in the Marshall Islands on Nov. 13, after U.S. Air Force C-17s flew them in for a strike-and-leave drill, the 25th Infantry Division said in a release.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground",
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "25th Infantry Division"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-flies-himars-2000-miles-to-fire-live-rockets-at-kwajalein/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "Air Force",
+      "25th Infantry Division"
+    ]
+  },
+  {
     "id": "u-20261115-the-civilian-office-overseeing-special-operations-",
     "d": "2026-11-15",
     "title": "The civilian office overseeing special operations forces could get $45 million budget, 100 staffers",
@@ -123,6 +516,69 @@
     "orgs": [
       "Foreign Policy Research Institute"
     ]
+  },
+  {
+    "id": "u-20261115-davidson-window-admiral-hopes-he-was-wrong-on-chin",
+    "d": "2026-11-15",
+    "title": "‘Davidson Window’ Admiral Hopes He Was Wrong On China’s Ability To Take Taiwan By 2027",
+    "body": "The time frame Adm. Philip Davidson famously declared China could be ready to invade Taiwan is about to arrive.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/davidson-window-admiral-hopes-he-was-wrong-on-chinas-ability-to-take-taiwan-by-2027",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261115-air-force-maps-path-for-connectivity-upgrades-to-t",
+    "d": "2026-11-15",
+    "title": "Air Force Maps Path for Connectivity Upgrades to Tanker and Airlift Fleets",
+    "body": "The Air Force now has a plan to enhance communications and data sharing for every aerial refueler and cargo aircraft in its fleet—addressing a longstanding issue that gained renewed attention during Operation Epic Fury.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/air-force-maps-path-connectivity-upgrades-mobility-fleet/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": [
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261115-the-military-needs-strategic-thinkers-not-just-ope",
+    "d": "2026-11-15",
+    "title": "The military needs strategic thinkers, not just operators",
+    "body": "Secretary Hegseth's \"reforms\" miss the purpose of military education: learning to deter conflict and translate military power into enduring political advantage.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/ideas/2026/11/military-strategic-thinkers-hegseth-education/417238/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-16T15:02:26.188Z",
+    "auto": true,
+    "orgs": []
   },
   {
     "id": "u-20261114-destroyer-returns-from-11-month-deployment",

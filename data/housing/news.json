@@ -1,5 +1,66 @@
 [
  {
+  "id": "h-20261116-video-november-16-2026-economic-and-housing-market",
+  "d": "2026-11-16",
+  "title": "Video: November 16, 2026, Economic and Housing Market Outlook",
+  "body": "The November 16, 2026 Weekly Housing Outlook video gives you the info you need to know to navigate the housing market as a homebuyer, home seller, renter, or industry professional.",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/video-economic-and-housing-market-update-november-16-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261116-who-owns-outright-mortgage-status-lock-in-and-seni",
+  "d": "2026-11-16",
+  "title": "Who Owns Outright? Mortgage Status, Lock-In and Senior Homeownership",
+  "body": "With mortgage rates back above 7% and potential Federal Funds rate hikes in 2027, the lock-in effect is likely to tighten the market again. Owners with low-rate loans are reluctant to give up their rate, which keeps homes off the market.",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/mortgage-status-acs-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261116-she-started-with-4-000-just-4-years-later-she-has-",
+  "d": "2026-11-16",
+  "title": "She Started with $4,000: Just 4 Years Later, She Has 80 Rental Units",
+  "body": "It takes most real estate investors several years or even decades to replace their income with rental properties. Cindy West didn’t have that kind of time. She knew what she [ ]",
+  "topics": [
+   "rents",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1357",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261116-they-lived-paycheck-to-paycheck-now-they-own-6-ren",
+  "d": "2026-11-16",
+  "title": "They Lived Paycheck to Paycheck. Now They Own 6+ Rental Units!",
+  "body": "What would you risk to give your family a better future? When you’re living paycheck to paycheck, buying a first rental property can feel completely out of reach, until the [ ]",
+  "topics": [
+   "rents"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-797",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261115-the-seasonal-decline-in-housing-inventory-is-in-fu",
   "d": "2026-11-15",
   "title": "The seasonal decline in housing inventory is in full force",
@@ -209,6 +270,22 @@
   "src": {
    "t": "Mortgage News Daily",
    "u": "https://www.mortgagenewsdaily.com/news/11132026-mortgage-applications-mba",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261113-why-one-better-rental-beats-several-cheap-ones-roo",
+  "d": "2026-11-13",
+  "title": "Why One Better Rental Beats Several Cheap Ones (Rookie Reply)",
+  "body": "Is a cheap rental really the safest way to start, or does it just trade one risk for another? Plenty of new investors are asking the same question, especially when [ ]",
+  "topics": [
+   "rents",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-796",
    "q": "news"
   }
  },
