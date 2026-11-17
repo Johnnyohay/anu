@@ -1,5 +1,122 @@
 [
  {
+  "id": "h-20261117-fitch-warns-of-growing-balance-sheet-strain-at-top",
+  "d": "2026-11-17",
+  "title": "Fitch warns of growing balance-sheet strain at top nonbank mortgage firms",
+  "body": "Rising leverage and MSR concentration drive negative outlooks",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/fitch-nonbank-mortgage-ratings-outlook/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261117-homebuilder-confidence-sinks-to-a-14-year-low-as-b",
+  "d": "2026-11-17",
+  "title": "Homebuilder confidence sinks to a 14-year low as buyers hibernate",
+  "body": "NAHB says 68% of builders used incentives in November, as builders face thinner margins and affordability constrained buyers",
+  "topics": [
+   "sales",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/homebuilder-confidence-november-2026/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261117-how-reverse-mortgage-los-can-help-borrowers-to-sel",
+  "d": "2026-11-17",
+  "title": "How reverse mortgage LOs can help borrowers to self-service",
+  "body": "At NRMLA Annual, Celink said it plans to launch ReverseLink within weeks, while Onity is building infrastructure for digital draw requests",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/reverse-mortgage-self-service-tools/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261117-renting-as-a-financial-strategy-what-real-estate-a",
+  "d": "2026-11-17",
+  "title": "Renting as a financial strategy, what real estate agents should know",
+  "body": "Entrata leader Virginia Love says renters prioritize savings, debt payoff, and flexibility amid higher ownership costs",
+  "topics": [],
+  "states": [
+   "VA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/renting-financial-strategy-agents/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261117-mortgage-rates-jump-to-7-58-as-inflation-lifts-bon",
+  "d": "2026-11-17",
+  "title": "Mortgage rates jump to 7.58% as inflation lifts bond yields",
+  "body": "In the wake of October inflation gains, 30-year jumbo loans jumped to 7.87% and odds of a Fed hike in December hit 93%",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mortgage-rates-jump-758/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261117-mamdani-s-nyc-public-housing-rebuild-plan-skirts-d",
+  "d": "2026-11-17",
+  "title": "Mamdani’s NYC public housing rebuild plan skirts DSA rebuke",
+  "body": "The plan, which opponents call 'privatization,' replaces 2,056 apartments with about 3,500 new mixed-income units, with rent capped at 30% of income",
+  "topics": [
+   "rents"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mamdani-dsa-public-housing/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261117-new-construction-insights-builders-hold-steady-on-",
+  "d": "2026-11-17",
+  "title": "New-Construction Insights: Builders Hold Steady on Price, but Offer Savings via Reduced Rates",
+  "body": "The average new construction buyer pays $258 per month less on interest in the first year of homeownership than the median existing home buyer due to reduced mortgage rates, assuming a $400,000 home purchase with 10% down.",
+  "topics": [
+   "rates",
+   "sales",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/new-construction-insights-2026q3/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261117-are-equity-millionaires-stopping-the-housing-marke",
+  "d": "2026-11-17",
+  "title": "Are “Equity Millionaires” Stopping the Housing Market from Sinking?",
+  "body": "Almost 2.5 million borrowers have at least $1,000,000 in home equity—that’s a new record. At the same time, over a million homeowners are underwater. The housing market is splintering even [ ]",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/on-the-market-478",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261116-video-november-16-2026-economic-and-housing-market",
   "d": "2026-11-16",
   "title": "Video: November 16, 2026, Economic and Housing Market Outlook",
@@ -57,6 +174,38 @@
   "src": {
    "t": "BiggerPockets",
    "u": "https://www.biggerpockets.com/blog/rookie-797",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261116-why-transparency-matters-more-than-ever-in-real-es",
+  "d": "2026-11-16",
+  "title": "Why Transparency Matters More Than Ever in Real Estate Financing",
+  "body": "This article is presented by Dominion Financial. Every December, a bunch of very smart people publish their housing forecasts for the year ahead, and every December, I read them all. [ ]",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/why-transparency-matters-more-than-ever-in-real-estate-financing",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261116-airdna-s-top-cash-on-cash-short-term-rental-market",
+  "d": "2026-11-16",
+  "title": "AirDNA’s Top Cash-on-Cash Short-Term Rental Markets for 2026",
+  "body": "Harrisburg/Hershey, Pennsylvania, has the best short-term rental cash-on-cash return in AirDNA’s newest data: 14.5%. Broken Bow, Oklahoma (cabin capital of the South, hot tub capital of the world, probably) comes [ ]",
+  "topics": [
+   "rents",
+   "investing"
+  ],
+  "states": [
+   "OK",
+   "PA"
+  ],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/top-cash-on-cash-short-term-rental-markets",
    "q": "news"
   }
  },

@@ -1,5 +1,916 @@
 [
   {
+    "id": "u-20261117-iceye-makes-2b-bid-for-italian-rocket-firm-avio",
+    "d": "2026-11-17",
+    "title": "ICEYE makes $2B bid for Italian rocket firm Avio",
+    "body": "The proposed deal comes at a time when many in Europe have grown increasingly concerned about the reliance on the US for space launch and military space capabilities.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "ICEYE",
+      "Avio"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/iceye-makes-2b-bid-for-italian-rocket-firm-avio/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "ICEYE",
+      "Avio"
+    ]
+  },
+  {
+    "id": "u-20261117-army-kicks-off-manufacturing-rodeo-with-focus-on-s",
+    "d": "2026-11-17",
+    "title": "Army kicks off ‘manufacturing rodeo’ with focus on small drones",
+    "body": "The completed drones will compete at the Army’s third Drone Dominance Gauntlet event in March where the systems will face “complex” obstacle courses, heavy electronic jamming and “live target arrays.”",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "mfg",
+      "ew"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/army-kicks-off-manufacturing-rodeo-with-focus-on-small-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261117-biodata-ai-and-the-future-of-command-getting-it-ri",
+    "d": "2026-11-17",
+    "title": "Biodata, AI and the future of command: Getting it right",
+    "body": "Fitness trackers and AI diagnostics are here to stay. They can provide valuable data for operational planning — if security and privacy are handled properly.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/biodata-ai-and-the-future-of-command-getting-it-right/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-russia-reportedly-wants-finland-to-leave-nato-as-p",
+    "d": "2026-11-17",
+    "title": "Russia reportedly wants Finland to leave NATO as part of Ukraine deal. History, geography explain why.",
+    "body": "Finland’s historical experience with Russia, shaped by centuries of territorial disputes, war and changing borders, is fundamentally different from that of other nations, for instance, Sweden, which joined NATO only a year after Helsinki did.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/russia-reportedly-wants-finland-to-leave-nato-as-part-of-ukraine-deal-history-geography-explain-why/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261117-nato-kicks-off-11-nation-starlift-satellite-launch",
+    "d": "2026-11-17",
+    "title": "NATO kicks off 11-nation Starlift satellite launch program",
+    "body": "Notably, four countries that were original participants of the space effort were left out of today’s announcement — France, Hungary, Luxembourg and the United States.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "global",
+      "capital"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/nato-kicks-off-11-nation-starlift-satellite-launch-program/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261117-senate-docs-reveal-new-b94-nuclear-bomb-but-what-i",
+    "d": "2026-11-17",
+    "title": "Senate docs reveal new B94 nuclear bomb. But what is it?",
+    "body": "Experts believe the B94 will eventually be a penetrating replacement for the B83.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/senate-docs-reveal-new-b94-nuclear-bomb-but-what-is-it/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Senate"
+    ]
+  },
+  {
+    "id": "u-20261117-friend-or-foe-becomes-the-question-as-skies-fill-w",
+    "d": "2026-11-17",
+    "title": "Friend or foe becomes the question as skies fill with potential adversaries",
+    "body": "[Sponsored] Quickly and accurately identifying friendly forces requires IFF attuned to drones.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/friend-or-foe-becomes-the-question-as-skies-fill-with-potential-adversaries/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-senate-appropriators-unveil-1-1t-pentagon-spending",
+    "d": "2026-11-17",
+    "title": "Senate appropriators unveil $1.1T Pentagon spending bill, folding in reconciliation priorities",
+    "body": "Nearly $69 billion in money sought by the White House through reconciliation will be rolled into the base budget under the Senate appropriator’s plan.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/senate-appropriators-unveil-1-1t-pentagon-spending-bill-folding-in-reconciliation-priorities/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Senate",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261117-pentagon-elevates-ai-as-a-fundamental-requirement-",
+    "d": "2026-11-17",
+    "title": "Pentagon elevates AI as a ‘fundamental requirement’ for cybersecurity staff training",
+    "body": "A senior Defense Department official shared new details about these plans and cybersecurity workforce recruitment at FedTalks on Tuesday.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "FedTalks"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/17/pentagon-ai-requirement-cybersecurity-training/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Defense Department",
+      "FedTalks"
+    ]
+  },
+  {
+    "id": "u-20261117-space-industrial-base-stretched-thin-amid-low-orbi",
+    "d": "2026-11-17",
+    "title": "Space industrial base stretched thin amid low-orbit satellite constellation shift, GAO says",
+    "body": "A new report recommends the Defense Department set up enterprise-wide management of its space acquisition industrial base.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "mfg",
+      "capital"
+    ],
+    "type": "Research",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/17/space-industrial-base-stretched-thin-gao-report/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "GAO",
+      "Defense Department"
+    ]
+  },
+  {
+    "id": "u-20261117-major-changes-to-pentagon-s-financial-auditing-str",
+    "d": "2026-11-17",
+    "title": "Major changes to Pentagon’s financial auditing strategy hinge on War Data Platform",
+    "body": "Senior officials previewed the Defense Department’s latest Agency Financial Report ahead of its public release.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Research",
+    "companies": [
+      "War"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/16/pentagon-financial-auditing-strategy-war-data-platform/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "War",
+      "Defense Department"
+    ]
+  },
+  {
+    "id": "u-20261117-watch-a-large-aerial-drone-evacuate-a-wounded-ukra",
+    "d": "2026-11-17",
+    "title": "Watch a large aerial drone evacuate a wounded Ukrainian soldier from the front line",
+    "body": "Ukraine is expanding its use of large drones for battlefield medical evacuations. Watch as a Ukrainian team uses an aerial drone to transport a wounded soldier from a forward position to a field hospital.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/17/watch-a-large-aerial-drone-evacuate-a-wounded-ukrainian-soldier-from-the-front-line/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-finland-s-iceye-bids-2-billion-for-italian-rocket-",
+    "d": "2026-11-17",
+    "title": "Finland’s Iceye bids €2 billion for Italian rocket maker Avio",
+    "body": "Finnish satellite operator Iceye made a €2 billion ($2.2 billion) cash offer for Italian rocket maker Avio on Tuesday, with the goal of creating an integrated European space and defense group.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Iceye",
+      "Avio"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/17/finlands-iceye-bids-e2-billion-for-italian-rocket-maker-avio/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Iceye",
+      "Avio"
+    ]
+  },
+  {
+    "id": "u-20261117-new-pact-positions-the-philippines-as-a-defense-hu",
+    "d": "2026-11-17",
+    "title": "New pact positions the Philippines as a defense hub for Australian troops",
+    "body": "Top officials from Australia and the Philippines have inked a defense pact to accelerate military coordination, paving the way for rotational troop deployment and Australian investments in Philippine military infrastructure.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/asia-pacific/2026/11/17/new-pact-positions-the-philippines-as-a-defense-hub-for-australian-troops/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-french-troops-operating-in-non-combat-roles-in-ukr",
+    "d": "2026-11-17",
+    "title": "French troops operating in non-combat roles in Ukraine, broadcaster RFI reports",
+    "body": "The troops are part of a structure called Volia, after a Ukrainian word that can be translated as “will” or “freedom,” the French state-owned international news radio said on Monday.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "RFI"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/17/french-troops-operating-in-non-combat-roles-in-ukraine-broadcaster-rfi-reports/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "RFI"
+    ]
+  },
+  {
+    "id": "u-20261117-these-are-the-weapons-ukraine-used-to-drop-the-ker",
+    "d": "2026-11-17",
+    "title": "These Are The Weapons Ukraine Used To Drop The Kerch Bridge",
+    "body": "Ukraine brought an eclectic arsenal of homegrown and foreign drones and missiles to bear in its campaign to sever Russia’s critical logistics link to Crimea.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "air",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/these-are-the-weapons-ukraine-used-to-drop-the-kerch-bridge",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-what-we-know-about-ukraine-s-strikes-that-cut-russ",
+    "d": "2026-11-17",
+    "title": "What We Know About Ukraine’s Strikes That Cut Russia’s Kerch Bridge (Updated)",
+    "body": "New details are emerging about Ukrainian drone and missile strikes that destroyed a key section of the bridge over the Kerch Strait.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary",
+      "air",
+      "strike"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/what-we-know-about-ukraines-strikes-that-cut-russias-kerch-bridge-road-vehicle-span",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-russia-s-kerch-bridge-road-vehicle-span-has-been-d",
+    "d": "2026-11-17",
+    "title": "Russia’s Kerch Bridge Road Vehicle Span Has Been Destroyed By Ukraine",
+    "body": "Imagery that has come after sun-up has confirmed that Ukraine has finally succeeded in dropping a major section of the Kerch Strait Bridge.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/kerch-bridge-struck-for-the-second-time-in-less-than-24-hours-russia",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-russia-s-prized-kerch-bridge-struck-in-ukrainian-d",
+    "d": "2026-11-17",
+    "title": "Russia’s Prized Kerch Bridge Struck In Ukrainian Drone Onslaught (Updated)",
+    "body": "The strategic crossing that connects occupied Crimea to Russia was left with a damaged arch over one of the road spans.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/russias-prized-kerch-bridge-struck-in-ukrainian-drone-onslaught",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-first-f-15exs-arrive-at-kadena-air-base-in-japan-2",
+    "d": "2026-11-17",
+    "title": "First F-15EXs Arrive At Kadena Air Base In Japan, 25 Now Delivered To The USAF",
+    "body": "The arrival of combat-coded F-15EXs in Japan is the first permanent deployment of the USAF's newest fighter outside the United States.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "USAF"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/first-f-15exs-arrive-in-okinawa-25-now-delivered-to-the-usaf",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "USAF"
+    ]
+  },
+  {
+    "id": "u-20261117-us-fighters-strike-iranian-missile-site-after-base",
+    "d": "2026-11-17",
+    "title": "US Fighters Strike Iranian Missile Site After Base in Bahrain Targeted",
+    "body": "U.S. fighter jets struck an Iranian missile launch site operated by Iran’s Islamic Revolutionary Guard Corps Nov. 17 in “self-defense,” a U.S. military official told Air Space Forces Magazine.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "adversary",
+      "air",
+      "space"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/us-fighters-strike-iranian-missile-site/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Islamic Revolutionary Guard Corps",
+      "Air Space Forces Magazine"
+    ]
+  },
+  {
+    "id": "u-20261117-suspected-russian-aircraft-violated-japan-s-airspa",
+    "d": "2026-11-17",
+    "title": "Suspected Russian Aircraft Violated Japan’s Airspace, Says Defense Minister",
+    "body": "Suspected Russian aircraft violated Japanese territorial airspace twice on Thursdays, prompting fighter aircraft to be scrambled in response, Japan’s Defense Minister announced Tuesday. Between 4:07 and 4:10 a.m.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global",
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/17/suspected-russian-aircraft-violated-japans-airspace-says-defense-minister",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-opening-remarks-from-acting-navy-secretary-hung-ca",
+    "d": "2026-11-17",
+    "title": "Opening Remarks from Acting Navy Secretary Hung Cao’s Confirmation Hearing",
+    "body": "The following is Acting Secretary of the Navy Hung Cao’s opening remarks, provided to the U.S. Senate Committee on Armed Services during Cao’s confirmation hearing on Nov. 17, 2026.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/17/opening-remarks-from-acting-navy-secretary-hung-caos-confirmation-hearing",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Navy",
+      "Committee on Armed Services"
+    ]
+  },
+  {
+    "id": "u-20261117-how-ai-is-pushing-satellites-to-evolve",
+    "d": "2026-11-17",
+    "title": "How AI is pushing satellites to evolve",
+    "body": "During the first day of Space Tech Expo Europe, SpaceNews’ Mike Gruss sits down with Pieter van Duijn, the chief technology officer of Loft Orbital. They discuss the growing level [ ]",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "space",
+      "capital",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Loft Orbital"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/how-ai-is-pushing-satellites-to-evolve/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "SpaceNews",
+      "Loft Orbital"
+    ]
+  },
+  {
+    "id": "u-20261117-cosmo-bee-to-flight-test-honeybee-hall-thruster-wi",
+    "d": "2026-11-17",
+    "title": "Cosmo Bee to flight-test Honeybee Hall thruster with D-Orbit in 2027",
+    "body": "Daejeon, Republic of Korea – October 14, 2026: South Korean space electric propulsion startup Cosmo Bee plans to conduct an in-orbit flight test of its 10 mN-class Honeybee Hall thruster [ ]",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Cosmo Bee"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/cosmo-bee-to-flight-test-honeybee-hall-thruster-with-d-orbit-in-2027/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Cosmo Bee"
+    ]
+  },
+  {
+    "id": "u-20261117-classified-nsa-communications-network-down-people-",
+    "d": "2026-11-17",
+    "title": "Classified NSA communications network down, people familiar say",
+    "body": "There aren’t any immediate signs that the outage on NSANet is related to a cyberattack, and it may be linked to a series of software upgrades on the network.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "NSANet"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/threats/2026/11/classified-nsa-communications-network-down-people-familiar-say/417278/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "NSANet"
+    ]
+  },
+  {
+    "id": "u-20261117-america-s-corps-of-cadets-will-build-patriotic-hon",
+    "d": "2026-11-17",
+    "title": "America's Corps of Cadets Will Build Patriotic, Honorable Leaders of Character",
+    "body": "America's Corps of Cadets, an initiative Secretary of War Pete Hegseth outlined in his State of the Force address, aims to be a living laboratory of leadership, producing patriotic, honorable leaders of character for the nation.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Corps of Cadets",
+      "State of the Force"
+    ],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4649570/americas-corps-of-cadets-will-build-patriotic-honorable-leaders-of-character/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Corps of Cadets",
+      "State of the Force"
+    ]
+  },
+  {
+    "id": "u-20261117-german-army-tested-ukraine-s-delta-battle-system",
+    "d": "2026-11-17",
+    "title": "German army tested Ukraine’s DELTA battle system",
+    "body": "Germany’s armed forces have tested DELTA, the Ukrainian battlefield management system that ties together drones, sensors and units across the front, and now want to try it inside the Bundeswehr, Defense Minister Boris Pistorius said Tuesday.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Bundeswehr"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/german-army-tested-ukraines-delta-battle-system/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Bundeswehr"
+    ]
+  },
+  {
+    "id": "u-20261117-b-1-bomber-gets-closer-to-carrying-more-weapons",
+    "d": "2026-11-17",
+    "title": "B-1 bomber gets closer to carrying more weapons",
+    "body": "Boeing’s new weapons pylon for the U.S. Air Force’s B-1B Lancer bomber has cleared its critical design review, a step that brings the aircraft “closer to greater external carriage capability,” the company said in a post on X.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Boeing"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/b-1-bomber-gets-closer-to-carrying-more-weapons/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Boeing",
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261117-sweden-and-uk-team-up-to-arm-ukrianian-gripen-jets",
+    "d": "2026-11-17",
+    "title": "Sweden and UK team up to arm Ukrianian Gripen jets",
+    "body": "Sweden, Britain and Ukraine have agreed to work together on missiles, bombs and spare parts for Ukraine’s future Gripen fighter fleet, the Swedish government said Tuesday, as Kyiv prepares to take its first Swedish jets.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/sweden-and-uk-team-up-to-arm-ukrianian-gripen-jets/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-britain-germany-rush-air-defense-to-ukraine-ahead-",
+    "d": "2026-11-17",
+    "title": "Britain, Germany rush air defense to Ukraine ahead of winter",
+    "body": "Britain and Germany pledged new air defense support for Ukraine on Tuesday, including more than 1,000 British short-range missiles and a German-Norwegian deal for Patriot interceptors, as Russia steps up its winter strikes on Ukrainian cities and power…",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/britain-germany-rush-air-defense-to-ukraine-ahead-of-winter/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-russian-bombers-trigger-alerts-in-japan-taiwan-and",
+    "d": "2026-11-17",
+    "title": "Russian bombers trigger alerts in Japan, Taiwan and South Korea",
+    "body": "Russian strategic bombers set off air defense alerts across East Asia overnight, crossing into Japanese airspace and skirting Taiwan as two Tu-95MS flew from Russia’s Far East to Vietnam. Five Tu-95MS bombers took off from Ukrainka Air Base on Nov.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary",
+      "missiledef"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russian-bombers-trigger-alerts-in-japan-taiwan-and-south-korea/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-russian-military-plane-crashes-in-siberia-all-aboa",
+    "d": "2026-11-17",
+    "title": "Russian military plane crashes in Siberia, all aboard reported dead",
+    "body": "A military An-12 transport plane crashed near the village of Yagunovo in Russia’s Kemerovo region on Tuesday, and everyone on board was killed, Russian broadcaster REN TV reported. REN TV said there may have been 13 people aboard.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "REN TV"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russian-military-plane-crashes-in-siberia-all-aboard-reported-dead/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "REN TV"
+    ]
+  },
+  {
+    "id": "u-20261117-drones-have-hit-15-ships-in-nato-s-black-sea-water",
+    "d": "2026-11-17",
+    "title": "Drones have hit 15 ships in NATO’s Black Sea waters since October",
+    "body": "Russian drones have now struck 15 merchant ships in the Black Sea off NATO members Romania and Bulgaria since Oct. 5, according to a tally by The Defence Blog, after a gas tanker went down off the Bulgarian coast on Tuesday.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea",
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "The Defence Blog"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/drones-have-hit-15-ships-in-natos-black-sea-waters-since-october/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "NATO",
+      "The Defence Blog"
+    ]
+  },
+  {
+    "id": "u-20261117-u-s-air-force-seeks-iridium-for-f-16-backup-power",
+    "d": "2026-11-17",
+    "title": "U.S. Air Force seeks iridium for F-16 backup power",
+    "body": "The U.S. Air Force wants to buy 65 iridium catalysts for the F-16 Fighting Falcon. The catalyst is a small part that lets the fighter’s emergency power system run on hydrazine if the engine quits.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-air-force-seeks-iridium-for-f-16-backup-power/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261117-israeli-firm-offers-drone-strike-kit-for-utility-h",
+    "d": "2026-11-17",
+    "title": "Israeli firm offers drone strike kit for utility helicopters",
+    "body": "Israeli loitering munition maker Uvision wants to put its HERO-120 on ordinary utility helicopters, giving transport aircraft a way to launch precision strikes from a safe distance, the company said in a release Tuesday.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "space",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Uvision"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/israeli-firm-offers-drone-strike-kit-for-utility-helicopters/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Uvision"
+    ]
+  },
+  {
+    "id": "u-20261117-dow-advances-seven-laser-teams-to-phase-ii-counter",
+    "d": "2026-11-17",
+    "title": "DOW Advances Seven Laser Teams to Phase II Counter-Drone Shoot-Off",
+    "body": "JIATF 401 has picked Lockheed Martin, Kord, AeroVironment and four others for mid-December live-fire drone trials.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "cuas",
+      "primes"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "AeroVironment",
+      "Lockheed Martin"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/directed-energy-counter-uas",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Lockheed Martin",
+      "AeroVironment"
+    ]
+  },
+  {
+    "id": "u-20261117-army-intelligence-unit-tests-acoustic-sensor-netwo",
+    "d": "2026-11-17",
+    "title": "Army Intelligence Unit Tests Acoustic Sensor Network to Detect Small Drones",
+    "body": "The Army's 532nd Military Intelligence Battalion evaluated Project MANOWAR, an acoustic sensor network for detecting small drones.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sensing"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Intelligence Battalion"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/army-project-manowar-drone-tests-532nd-mi-battalion",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Army Intelligence Unit",
+      "Intelligence Battalion"
+    ]
+  },
+  {
     "id": "u-20261116-navy-eyes-operational-employment-of-key-uuv-progra",
     "d": "2026-11-16",
     "title": "Navy eyes ‘operational employment’ of key UUV programs, admiral says",
@@ -391,6 +1302,535 @@
       "Air Force",
       "25th Infantry Division"
     ]
+  },
+  {
+    "id": "u-20261116-vulcan-failure-deepens-concerns-over-us-military-l",
+    "d": "2026-11-16",
+    "title": "Vulcan failure deepens concerns over US military launch capacity",
+    "body": "The failed launch could further delay the rocket’s return to national security missions as the Space Force works to expand its launch options.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/vulcan-failure-deepens-concerns-over-us-military-launch-capacity/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Space Force"
+    ]
+  },
+  {
+    "id": "u-20261116-leolabs-acquires-fisheye-to-bolster-its-missile-de",
+    "d": "2026-11-16",
+    "title": "LeoLabs acquires FishEye to bolster its missile defense chops",
+    "body": "“As a wholly owned subsidiary of LeoLabs, FishEye will strengthen our ability to accelerate delivery of our next-generation radars optimized for missile warning and tracking, such as Scout-X,” a LeoLabs spokesperson told Breaking Defense.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "strike",
+      "capital"
+    ],
+    "type": "M&A & IPO",
+    "companies": [
+      "LeoLabs",
+      "FishEye"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/leolabs-acquires-fisheye-to-bolster-its-missile-defense-chops/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "LeoLabs",
+      "FishEye",
+      "Breaking Defense"
+    ]
+  },
+  {
+    "id": "u-20261116-as-exquisite-radars-become-targets-smaller-tactica",
+    "d": "2026-11-16",
+    "title": "As exquisite radars become targets, smaller tactical sensors take on a bigger role",
+    "body": "[Sponsored] Record demand for radars is accelerating investment in manufacturing capacity and a distributed supply chain.",
+    "why": "Being able to produce at scale has become a competitive edge in its own right; factories are now a venture category.",
+    "sectors": [
+      "mfg"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/as-exquisite-radars-become-targets-smaller-tactical-sensors-take-on-a-bigger-role/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261116-pentagon-ids-companies-and-systems-that-will-parti",
+    "d": "2026-11-16",
+    "title": "Pentagon IDs companies and systems that will participate in high-energy laser ‘shoot-off’ with eye toward quick purchase orders",
+    "body": "The counter-drone initiative is being overseen by Joint Interagency Task Force 401.",
+    "why": "Bases need their own power for AI, sensors and lasers, which creates a defense market for new energy tech.",
+    "sectors": [
+      "energy",
+      "air",
+      "cuas"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Joint Interagency Task Force 401"
+    ],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/16/counter-drone-high-energy-laser-shoot-off/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Joint Interagency Task Force 401"
+    ]
+  },
+  {
+    "id": "u-20261116-u-s-army-now-wants-concrete-bunkers-for-troops-in-",
+    "d": "2026-11-16",
+    "title": "U.S. Army Now Wants Concrete Bunkers For Troops In Israel, Saudi Arabia And Lebanon",
+    "body": "The Army wants to replace modified shipping containers with concrete bunkers in the latest sign that the Pentagon is finally taking hardening more seriously.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/u-s-army-now-wants-concrete-bunkers-for-troops-in-israel-saudi-arabia-and-lebanon",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261116-new-bow-sonar-dome-for-heavily-damaged-submarine-u",
+    "d": "2026-11-16",
+    "title": "New Bow Sonar Dome For Heavily Damaged Submarine USS Connecticut Seen For The First Time (Updated)",
+    "body": "USS Connecticut has been undergoing major repairs since losing its bow after an underwater collision in 2021.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Connecticut"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/new-bow-sonar-dome-for-heavily-damaged-submarine-uss-connecticut-seen-for-the-first-time",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Connecticut"
+    ]
+  },
+  {
+    "id": "u-20261116-air-force-gets-to-work-on-training-point-defense-a",
+    "d": "2026-11-16",
+    "title": "Air Force Gets to Work on Training Point Defense Airmen",
+    "body": "The Air Force will soon identify the skill training needed to prepare future point defense Airmen to repulse enemy drone attacks at home and abroad, Air Education and Training Command Boss Lt. Gen. Clark J. Quinn said Nov. 16.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Air Education"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/air-force-to-id-training-for-point-defense-specialty-code-next-year/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Air Force",
+      "Air Education",
+      "Training Command"
+    ]
+  },
+  {
+    "id": "u-20261116-kadena-gets-first-permanent-f-15ex-in-boost-to-usa",
+    "d": "2026-11-16",
+    "title": "Kadena Gets First Permanent F-15EX in Boost to USAF’s Pacific Airpower",
+    "body": "A new Eagle is in the nest on Okinawa, Japan—the 18th Wing at Kadena Air Base received its first permanently stationed F-15EX Eagle II on Nov. 15. The first aircraft’s arrival comes four years after the U.S.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "USAF",
+      "Pacific Airpower",
+      "18th"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/kadena-first-permanent-f-15ex-arrives/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "USAF",
+      "Pacific Airpower",
+      "18th"
+    ]
+  },
+  {
+    "id": "u-20261116-uss-theodore-roosevelt-now-in-the-middle-east-linc",
+    "d": "2026-11-16",
+    "title": "USS Theodore Roosevelt Now in the Middle East, Lincoln’s Last Escorts Finally Home",
+    "body": "A third U.S. aircraft carrier and its escorts are now in the Middle East. USS Theodore Roosevelt (CVN-71) chopped into U.S. 5th Fleet on Sunday. The arrival of the Theodore Roosevelt Carrier Strike Group makes three U.S.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Theodore Roosevelt",
+      "5th Fleet",
+      "Roosevelt Carrier Strike Group"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/16/uss-theodore-roosevelt-now-in-the-middle-east-lincolns-last-escorts-finally-home",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Theodore Roosevelt",
+      "5th Fleet",
+      "Roosevelt Carrier Strike Group"
+    ]
+  },
+  {
+    "id": "u-20261116-usni-news-fleet-and-marine-tracker-nov-16-2026",
+    "d": "2026-11-16",
+    "title": "USNI News Fleet and Marine Tracker: Nov. 16, 2026",
+    "body": "These are the approximate positions of the U.S. Navy’s deployed carrier strike groups and amphibious ready groups throughout the world as of Nov. 16, 2026, based on Navy and public data.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/16/usni-news-fleet-and-marine-tracker-nov-16-2026",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "USNI News Fleet",
+      "U.S. Navy"
+    ]
+  },
+  {
+    "id": "u-20261116-navy-weapons-division-to-make-tomahawk-components-",
+    "d": "2026-11-16",
+    "title": "Navy Weapons Division to Make Tomahawk Components in 2027",
+    "body": "The Naval Air Warfare Center Weapons Division will begin making a component for Tomahawk cruise missile warheads in June of 2027 when a new explosive and propellant mixer comes online, the division announced last week.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Naval Air Warfare Center Weapons Division"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/16/navy-weapons-division-to-make-tomahawk-components-in-2027",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Navy Weapons Division",
+      "Naval Air Warfare Center Weapons Division"
+    ]
+  },
+  {
+    "id": "u-20261116-spacenukes-opens-los-alamos-manufacture-and-materi",
+    "d": "2026-11-16",
+    "title": "SpaceNukes Opens Los Alamos Manufacture and Materials Facility to Build Its Next-Generation Space Reactor",
+    "body": "LOS ALAMOS, N.M., Nov. 16, 2026 — Space Nuclear Power Corp. (SpaceNukes) opened its Manufacture and Materials Development Facility at 150 Central Park Square in Los Alamos on Nov. 13. [ ]",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "energy",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "SpaceNukes",
+      "Manufacture",
+      "Materials Facility",
+      "LOS ALAMOS",
+      "Space Nuclear Power Corp",
+      "and Materials Development Facility"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/spacenukes-opens-los-alamos-manufacture-and-materials-facility-to-build-its-next-generation-space-reactor/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "SpaceNukes",
+      "Manufacture",
+      "Materials Facility",
+      "LOS ALAMOS",
+      "Space Nuclear Power Corp",
+      "and Materials Development Facility"
+    ]
+  },
+  {
+    "id": "u-20261116-air-force-bets-on-hybrid-electric-aircraft-for-tra",
+    "d": "2026-11-16",
+    "title": "Air Force bets on hybrid-electric aircraft for transport",
+    "body": "Electra Defense’s nine-seat aircraft builds on existing development and aims to take on special operations missions.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Electra Defense"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/business/2026/11/air-force-bets-hybrid-electric-aircraft-transport/417268/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Air Force",
+      "Electra Defense"
+    ]
+  },
+  {
+    "id": "u-20261116-the-secret-terms-of-trump-s-venezuelan-oil-deal",
+    "d": "2026-11-16",
+    "title": "The secret terms of Trump’s Venezuelan oil deal",
+    "body": "Signed in August by Marco Rubio and Pete Hegseth, the agreement sets up a small group of people to govern and profit from it.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/policy/2026/11/secret-terms-trumps-venezuelan-oil-deal/417246/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261116-nsa-warns-about-potential-malware-hijacking-cac-en",
+    "d": "2026-11-16",
+    "title": "NSA Warns About Potential Malware Hijacking CAC-Enabled Computers",
+    "body": "There is a new threat from malware that targets personal computers when users have their common access cards installed in a card reader connected to the computer, according to a National Security Agency official.",
+    "why": "State hackers are still inside critical networks, which keeps defensive and offensive cyber in demand.",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "NSA"
+    ],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4649563/nsa-warns-about-potential-malware-hijacking-cac-enabled-computers/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "NSA",
+      "National Security Agency"
+    ]
+  },
+  {
+    "id": "u-20261116-kadena-air-base-receives-first-permanently-assigne",
+    "d": "2026-11-16",
+    "title": "Kadena Air Base Receives First Permanently Assigned F-15EX Eagle II Aircraft",
+    "body": "The first permanently assigned Air Force F-15EX Eagle II fighter aircraft arrived at Kadena Air Base, Japan, marking a major milestone in the 18th Wing’s fighter modernization.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "18th Wing"
+    ],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4649054/kadena-air-base-receives-first-permanently-assigned-f-15ex-eagle-ii-aircraft/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Air Force",
+      "18th Wing"
+    ]
+  },
+  {
+    "id": "u-20261116-army-infantry-division-validates-deep-strike-capab",
+    "d": "2026-11-16",
+    "title": "Army Infantry Division Validates Deep Strike Capabilities",
+    "body": "The Army's 25th Infantry Division executed High Mobility Artillery Rocket System rapid infiltration missions during a recent exercise in the Pacific.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground",
+      "space",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "25th Infantry Division"
+    ],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4649039/army-infantry-division-validates-deep-strike-capabilities/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Army Infantry Division",
+      "25th Infantry Division"
+    ]
+  },
+  {
+    "id": "u-20261116-why-the-pentagon-wants-to-spend-2b-in-fy27-to-deve",
+    "d": "2026-11-16",
+    "title": "Why the Pentagon Wants to Spend $2B in FY27 to Develop Directed Energy Weapons",
+    "body": "The Pentagon is pouring $2 billion into the development of directed energy weapons that can counter drone swarms and other threats.",
+    "why": "Stopping cheap drones cheaply is the industry's most urgent problem and one of its fastest-growing markets.",
+    "sectors": [
+      "cuas",
+      "energy",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/pentagon-directed-energy-lasers-golden-dome",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261116-dow-cdao-rebrands-as-super-intelligence-office-wit",
+    "d": "2026-11-16",
+    "title": "DOW CDAO Rebrands as Super Intelligence Office With New Website, Logo Social Channels",
+    "body": "The Pentagon office will adopt a new website, logo and social media identities as its digital transition unfolds over the coming weeks.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/cdao-rebrands-super-intelligence-office-dow",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "DOW CDAO",
+      "Super Intelligence Office",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261116-office-of-space-commerce-selects-4-companies-for-s",
+    "d": "2026-11-16",
+    "title": "Office of Space Commerce Selects 4 Companies for Space Commerce Certification Pilot",
+    "body": "The Office of Space Commerce chose four firms for its Space Commerce Certification pilot and will rework the application with them.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/office-of-space-commerce-certification-pilot-participants",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": [
+      "Office of Space Commerce"
+    ]
+  },
+  {
+    "id": "u-20261116-gao-calls-for-tighter-f-35-parts-loss-monitoring-a",
+    "d": "2026-11-16",
+    "title": "GAO Calls for Tighter F-35 Parts Loss Monitoring, APO Training",
+    "body": "The watchdog flagged $85 million in unresolved losses and called for trained property officers.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/gao-dow-f-35-parts-accountability-recommendations",
+      "q": "news"
+    },
+    "addedAt": "2026-11-17T21:59:21.491Z",
+    "auto": true,
+    "orgs": []
   },
   {
     "id": "u-20261115-the-civilian-office-overseeing-special-operations-",
