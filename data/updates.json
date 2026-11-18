@@ -1,5 +1,587 @@
 [
   {
+    "id": "u-20261118-britain-has-the-frigate-the-us-needs-and-americans",
+    "d": "2026-11-18",
+    "title": "Britain has the frigate the US needs, and Americans should build it: UK minister",
+    "body": "In a new op-ed, Britain’s Minister for Defence Readiness and Industry makes the case that the US should procure a UK frigate design and produce it in America.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Defence Readiness",
+      "Industry"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/britain-has-the-frigate-the-us-needs-and-americans-should-build-it-uk-minister/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Defence Readiness",
+      "Industry"
+    ]
+  },
+  {
+    "id": "u-20261118-from-mine-to-magnet-what-defense-buyers-need-to-ve",
+    "d": "2026-11-18",
+    "title": "From mine to magnet: What defense buyers need to verify before 2027",
+    "body": "[Sponsored] January’s expanded magnet-sourcing restrictions will require defense contractors to trace each finished magnet back to its raw materials and document how and where it was produced.",
+    "why": "Whoever controls materials such as rare-earth magnets controls what can be built; supply-chain tools and substitutes are in demand.",
+    "sectors": [
+      "minerals"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/from-mine-to-magnet-what-defense-buyers-need-to-verify-before-2027/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261118-eu-proposes-45-billion-ukraine-loan-to-be-repaid-a",
+    "d": "2026-11-18",
+    "title": "EU proposes €45 billion Ukraine loan, to be repaid after Russia pays reparations",
+    "body": "The European Commission on Wednesday proposed a new €45 billion ($49.5 billion) loan to Ukraine to help fill a funding gap of €70 billion for next year as Kyiv continues its fight against Russia's 2022 invasion.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "European Commission"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/18/eu-proposes-e45-billion-ukraine-loan-to-be-repaid-after-russia-pays-reparations/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "European Commission"
+    ]
+  },
+  {
+    "id": "u-20261118-acting-navy-secretary-hung-cao-faces-transparency-",
+    "d": "2026-11-18",
+    "title": "Acting Navy Secretary Hung Cao faces transparency questions in Senate confirmation hearing",
+    "body": "Hung Cao, the acting Navy secretary, fielded questions about his handling of updates to Congress and got into a verbal scuffle about suicide “mitigations” during his Senate confirmation hearing.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/17/acting-navy-secretary-hung-cao-faces-transparency-questions-in-senate-confirmation-hearing/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Navy",
+      "Senate",
+      "Congress"
+    ]
+  },
+  {
+    "id": "u-20261118-this-is-what-submarine-hms-vengeance-looks-like-af",
+    "d": "2026-11-18",
+    "title": "This Is What Submarine HMS Vengeance Looks Like After Its Record-Setting Nuclear Deterrence Patrol",
+    "body": "The Trident missile-armed submarine returned to port in Scotland after around 217 days submerged.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/this-is-what-submarine-hms-vengeance-looks-like-after-its-record-setting-nuclear-deterrance-patrol",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261118-senate-appropriators-constrain-usaf-s-fighter-plan",
+    "d": "2026-11-18",
+    "title": "Senate Appropriators Constrain USAF’s Fighter Plans",
+    "body": "The Senate Appropriations Committee takes a hard line with Air Force programs in its planned defense bill, refusing to back multiyear procurement for the F-35A and F-15EX, among other programs, and funding fewer fighter jets, advanced semi-autonomous drones,…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "USAF"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/senate-appropriators-constrain-usaf-fighter-plans/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "USAF",
+      "Senate Appropriations Committee",
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261118-senate-backs-bigger-space-force-but-trims-pentagon",
+    "d": "2026-11-18",
+    "title": "Senate Backs Bigger Space Force, but Trims Pentagon Plans",
+    "body": "The Senate Appropriations Committee approved a plan to raise investment in the Space Force by 73 percent over 2026—but its bid falls well short of the Pentagon's request. Under the plan, the Space Force would get $54.7 billion—up from $31.6 billion this year.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "policy",
+      "capital"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/senate-backs-bigger-space-force-but-trims-pentagon-plans/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Senate Appropriations Committee",
+      "Space Force",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261118-report-to-congress-on-the-defense-innovation-ecosy",
+    "d": "2026-11-18",
+    "title": "Report to Congress on the Defense Innovation Ecosystem",
+    "body": "The following is the Nov. 16, 2026, Congressional Research Service report, the Defense Innovation Ecosystem. From the Report Providing for the national defense is a central concern of Congress. Technological advantage has long contributed to decisive U.S.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Congressional Research Service"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/18/report-to-congress-on-the-defense-innovation-ecosystem",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Congressional Research Service"
+    ]
+  },
+  {
+    "id": "u-20261118-origami-and-solar-arrays",
+    "d": "2026-11-18",
+    "title": "Origami and solar arrays",
+    "body": "In this episode of SpaceMinds, SpaceNews’ Mike Gruss talks with Thomas Sinn, the CEO of Dcubed, at Space Tech Expo Europe. They discuss the company’s new $30 million funding round, [ ]",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "global"
+    ],
+    "type": "Funding",
+    "companies": [
+      "Dcubed",
+      "Space Tech Expo Europe"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/origami-and-solar-arrays/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "SpaceNews",
+      "Dcubed",
+      "Space Tech Expo Europe"
+    ]
+  },
+  {
+    "id": "u-20261118-major-ai-platforms-generated-viable-plans-for-terr",
+    "d": "2026-11-18",
+    "title": "Major AI platforms generated viable plans for terrorist attacks, GAO finds",
+    "body": "Safety guardrails on ChatGPT, Claude, Gemini, and Grok failed to prevent federal investigators from developing detailed plans.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/threats/2026/11/major-ai-platforms-generated-viable-plans-terrorist-attacks-gao-finds/417308/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "GAO"
+    ]
+  },
+  {
+    "id": "u-20261118-senate-grills-acting-navy-secretary-on-iran-war-co",
+    "d": "2026-11-18",
+    "title": "Senate grills acting Navy secretary on Iran war costs, extended deployments",
+    "body": "Democrats in particular bristled at Hung Cao’s characterization of unsuccessful suicide attempts as “mitigations.”",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "policy",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/defense-systems/2026/11/senate-grills-acting-navy-secretary-iran-war-costs-extended-deployments/417307/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Senate",
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261118-nato-aims-to-spur-space-industry-help-militaries-b",
+    "d": "2026-11-18",
+    "title": "NATO aims to spur space industry, help militaries by joining data marketplace",
+    "body": "Easing the sale and sharing of information should increase launch tempo and ward off threats, officials said.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/threats/2026/11/nato-aims-spur-space-industry-help-militaries-new-data-marketplace/417283/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261118-openai-gives-nato-access-to-most-advanced-cybersec",
+    "d": "2026-11-18",
+    "title": "OpenAI gives NATO access to most advanced cybersecurity AI",
+    "body": "NATO operators this month built and deployed AI agents in an exercise, with help from OpenAI.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [
+      "Anthropic · OpenAI · Google · xAI"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/technology/2026/11/openai-gives-nato-access-most-advanced-cybersecurity-ai/417296/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "OpenAI",
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261118-national-guard-airlift-wing-begins-operation-deep-",
+    "d": "2026-11-18",
+    "title": "National Guard Airlift Wing Begins Operation Deep Freeze Support",
+    "body": "The New York Air National Guard's 109th Airlift Wing deployed 75 airmen and five ski-equipped aircraft to support Antarctic research during Operation Deep Freeze.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "109th Airlift Wing"
+    ],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4652259/national-guard-airlift-wing-begins-operation-deep-freeze-support/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "National Guard Airlift Wing",
+      "New York Air National Guard",
+      "109th Airlift Wing"
+    ]
+  },
+  {
+    "id": "u-20261118-iran-attacks-kuwait-and-bahrain-overnight-with-dro",
+    "d": "2026-11-18",
+    "title": "Iran attacks Kuwait and Bahrain overnight with drones",
+    "body": "Iran fired drones at a U.S. air base in Kuwait and launched several attacks on Bahrain overnight, widening its strikes on its Gulf neighbors a day after American forces hit a missile site on Iranian territory.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "adversary",
+      "strike"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/iran-attacks-kuwait-and-bahrain-overnight-with-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261118-pakistan-test-fires-fatah-3-supersonic-cruise-miss",
+    "d": "2026-11-18",
+    "title": "Pakistan test-fires Fatah-3 supersonic cruise missile",
+    "body": "Pakistan’s army test-fired its Fatah-3 supersonic cruise missile on Wednesday, the military said, the third launch of a new Fatah-series weapon in about six weeks. The Inter-Services Public Relations, the military’s media wing, announced the launch on Nov.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Inter-Services Public Relations"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/pakistan-test-fires-fatah-3-supersonic-cruise-missile/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Inter-Services Public Relations"
+    ]
+  },
+  {
+    "id": "u-20261118-lockheed-says-its-valkyrie-laser-downs-cruise-miss",
+    "d": "2026-11-18",
+    "title": "Lockheed says its Valkyrie laser downs cruise missile",
+    "body": "A Lockheed Martin high-energy laser has destroyed a surrogate cruise missile target for the first time, a company executive said, months after the U.S. Army said it no longer planned to put the same weapon into service.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike",
+      "primes",
+      "energy"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Lockheed Martin"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/lockheed-says-its-valkyrie-laser-downs-cruise-missile/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Lockheed Martin",
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261118-u-s-marines-and-army-show-interest-in-northrop-s-3",
+    "d": "2026-11-18",
+    "title": "U.S. Marines and Army show interest in Northrop’s 30mm gun truck",
+    "body": "The U.S. Marine Corps and the U.S. Army have both fired Northrop Grumman’s 30mm Bushmaster guns from pickup trucks against aerial targets in recent weeks. On Tuesday the company said a version of the system shot down multiple drones in a live-fire exercise.",
+    "why": "The big incumbents are growing too. Watch where they partner with or buy startups rather than compete.",
+    "sectors": [
+      "primes",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Northrop Grumman"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-marines-and-army-show-interest-in-northrops-30mm-gun-truck/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Marines",
+      "U.S. Marine Corps",
+      "U.S. Army",
+      "Northrop Grumman"
+    ]
+  },
+  {
+    "id": "u-20261118-german-military-shuts-gates-to-chinese-cars-over-s",
+    "d": "2026-11-18",
+    "title": "German military shuts gates to Chinese cars over spy fears",
+    "body": "Soldiers driving some Chinese-made cars from BYD, Nio and Geely are being stopped at the gates of sensitive German military sites and told to park outside and walk in, over concerns about what the vehicles’ cameras and sensors could record.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "BYD"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/german-military-shuts-gates-to-chinese-cars-over-spy-fears/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "BYD"
+    ]
+  },
+  {
+    "id": "u-20261118-tiny-albania-gets-green-light-to-buy-two-himars-la",
+    "d": "2026-11-18",
+    "title": "Tiny Albania gets green light to buy two HIMARS launchers",
+    "body": "Albania, which has one of NATO’s smallest militaries, is set to get its first long-range rocket artillery after the U.S. State Department approved a $210 million sale of two M142 HIMARS launchers and their guided rockets.",
+    "why": "Where investors put money shows which parts of the industry they expect to win next.",
+    "sectors": [
+      "capital",
+      "space",
+      "strike",
+      "global"
+    ],
+    "type": "M&A & IPO",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/tiny-albania-gets-green-light-to-buy-two-himars-launchers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "NATO",
+      "U.S. State Department"
+    ]
+  },
+  {
+    "id": "u-20261118-new-krab-howitzer-battery-joins-poland-s-black-div",
+    "d": "2026-11-18",
+    "title": "New Krab howitzer battery joins Poland’s Black Division",
+    "body": "“More crustaceans are invading the Black Division!” Poland’s Armament Agency wrote on Wednesday, announcing that another battery of Krab self-propelled howitzers is being accepted for the Polish Army’s 11th Armored Cavalry Division.",
+    "why": "Bases need their own power for AI, sensors and lasers, which creates a defense market for new energy tech.",
+    "sectors": [
+      "energy",
+      "global",
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Black Division",
+      "11th Armored Cavalry"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/new-krab-howitzer-battery-joins-polands-black-division/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Black Division",
+      "Armament Agency",
+      "Polish Army",
+      "11th Armored Cavalry"
+    ]
+  },
+  {
+    "id": "u-20261118-lockheed-gets-93m-to-help-military-mechanics-fix-f",
+    "d": "2026-11-18",
+    "title": "Lockheed gets $93M to help military mechanics fix F-35s faster",
+    "body": "The U.S. Navy is paying Lockheed Martin $93.2 million to help military repair shops fix more F-35 parts themselves. The money buys new test equipment, software updates and extra capacity to repair the jet’s ejection seats.",
+    "why": "The big incumbents are growing too. Watch where they partner with or buy startups rather than compete.",
+    "sectors": [
+      "primes",
+      "ai",
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Lockheed Martin"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/lockheed-gets-93m-to-help-military-mechanics-fix-f-35s-faster/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Navy",
+      "Lockheed Martin"
+    ]
+  },
+  {
+    "id": "u-20261118-austrian-firm-schiebel-tests-s-100-as-drone-carrie",
+    "d": "2026-11-18",
+    "title": "Austrian firm Schiebel tests S-100 as drone carrier",
+    "body": "Austrian drone maker Schiebel dropped a small drone from its CAMCOPTER S-100 unmanned helicopter in mid-flight, then flew the smaller aircraft through a radio link relayed by the S-100, the company said in a release on Wednesday.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Schiebel"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/austrian-firm-schiebel-tests-s-100-as-drone-carrier/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Schiebel"
+    ]
+  },
+  {
     "id": "u-20261117-iceye-makes-2b-bid-for-italian-rocket-firm-avio",
     "d": "2026-11-17",
     "title": "ICEYE makes $2B bid for Italian rocket firm Avio",
@@ -908,6 +1490,273 @@
     "orgs": [
       "Army Intelligence Unit",
       "Intelligence Battalion"
+    ]
+  },
+  {
+    "id": "u-20261117-lawmakers-challenge-trump-s-push-to-bring-steam-ca",
+    "d": "2026-11-17",
+    "title": "Lawmakers challenge Trump’s push to bring steam catapults back to Ford-class carriers",
+    "body": "The bipartisan pushback came during Acting Navy Secretary Hung Cao’s confirmation hearing, where senators questioned the cost and capability trade-offs of returning future Ford-class carriers to steam-powered catapults.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy",
+      "sea"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/lawmakers-challenge-trumps-push-to-bring-steam-catapults-back-to-ford-class/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261117-hanwha-transforms-ship-into-floating-multi-rocket-",
+    "d": "2026-11-17",
+    "title": "Hanwha transforms ship into floating multi-rocket launcher",
+    "body": "South Korean defense giant Hanwha said it successfully launched missiles from a palletizable multi-pod launcher system at sea.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Hanwha"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/11/17/hanwha-transforms-ship-into-floating-multi-rocket-launcher/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Hanwha"
+    ]
+  },
+  {
+    "id": "u-20261117-russian-tu-95-bombers-arrive-in-vietnam-after-flur",
+    "d": "2026-11-17",
+    "title": "Russian Tu-95 Bombers Arrive In Vietnam After Flurry Of Northeast Asia Air Alerts",
+    "body": "Russian aircraft violated Japanese airspace and approached Taiwan before two Tu-95s and two Il-76s touched down in Da Nang.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "air",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/russian-bombers-arrive-in-vietnam-after-flurry-of-northeast-asia-air-alerts",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-trump-s-demand-for-steam-catapults-on-new-carriers",
+    "d": "2026-11-17",
+    "title": "Trump’s Demand For Steam Catapults On New Carriers Is A “Non-Starter”: Senate Armed Forces Chair",
+    "body": "Opposition is growing to Trump's call to abandon electromagnetic catapults on future Ford class carriers, which would be costly and risky.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Ford"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/trumps-demand-for-steam-catapults-on-new-carriers-is-a-non-starter-senate-armed-forces-chair",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Senate Armed Forces",
+      "Ford"
+    ]
+  },
+  {
+    "id": "u-20261117-first-f-15ex-at-kadena-signals-end-in-sight-for-fi",
+    "d": "2026-11-17",
+    "title": "First F-15EX at Kadena Signals End in Sight for Fighter Rotations: ‘Can’t Happen Fast Enough’",
+    "body": "The arrival of the first permanently stationed F-15EX Eagle II at Kadena Air Base this week doesn’t just give the strategically vital base an advanced new fighter; it also signals a small step toward relieving pressure on the Air Force to keep rotating…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/first-f-15ex-kadena-end-in-sight-fighter-rotations/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261117-reverting-ford-class-carriers-to-steam-is-non-star",
+    "d": "2026-11-17",
+    "title": "Reverting Ford-class Carriers to Steam is ‘Non-Starter,’ Says SASC Chair Wicker",
+    "body": "WASHINGTON — The chair of the Senate Armed Services Committee told Navy Secretary nominee Hung Cao that the White House’s plan to go back to steam catapults on the Ford-class aircraft carriers is a “non-starter.” Following a defense of President Donald…",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "sea",
+      "policy"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "SASC"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/17/reverting-ford-class-carriers-to-steam-is-non-starter-says-sasc-chair-wicker",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "SASC",
+      "Senate Armed Services Committee",
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261117-senate-panel-releases-1-1t-fy-2027-defense-spendin",
+    "d": "2026-11-17",
+    "title": "Senate Panel Releases $1.1T FY 2027 Defense Spending Bill",
+    "body": "The Senate Appropriations Committee released a nearly $1.1 trillion FY 2027 defense bill funding munitions, drones and Golden Dome.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy",
+      "air",
+      "missiledef",
+      "strike"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/senate-1-trillion-fy-2027-defense-appropriations-bill",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Senate Appropriations Committee"
+    ]
+  },
+  {
+    "id": "u-20261117-hegseth-hands-special-operations-acquisition-overs",
+    "d": "2026-11-17",
+    "title": "Hegseth Hands Special Operations Acquisition Oversight to New Office of Strategic Services",
+    "body": "A Nov. 2 memo shifts $45 million a year and 100 billets to the OSS and ranks it alongside the military department secretaries.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "OSS"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/pete-hegseth-special-operations-acquisition-authority",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "Office of Strategic Services",
+      "OSS"
+    ]
+  },
+  {
+    "id": "u-20261117-nga-requests-contractor-support-for-software-procu",
+    "d": "2026-11-17",
+    "title": "NGA Requests Contractor Support for Software Procurement System Modernization",
+    "body": "NGA is considering Flexera changes, container-based deployment and a license shelf function as part of its SRW technical roadmap.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "NGA"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/nga-rfi-software-procurement-system-modernization",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "NGA"
+    ]
+  },
+  {
+    "id": "u-20261117-dow-commerce-launch-survey-on-additive-manufacturi",
+    "d": "2026-11-17",
+    "title": "DOW, Commerce Launch Survey on Additive Manufacturing Barriers",
+    "body": "The Defense Production Act survey examines capital spending, software integration, equipment use and material supply chains.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "mfg",
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/dow-commerce-dept-additive-manufacturing-barriers-survey",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261117-doe-seeks-industry-input-on-cryogenic-quantum-hpc-",
+    "d": "2026-11-17",
+    "title": "DOE Seeks Industry Input on Cryogenic, Quantum-HPC Testbed Plans",
+    "body": "DOE's Office of Science has asked users and vendors to detail cooling needs, qubit integration, software and cost estimates.",
+    "why": "Better sensors and navigation that works without GPS are prerequisites for everything autonomous.",
+    "sectors": [
+      "sensing",
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "DOE"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/doe-rfi-cryogenic-quantum-hpc-testbed",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T18:17:00.820Z",
+    "auto": true,
+    "orgs": [
+      "DOE",
+      "Office of Science"
     ]
   },
   {

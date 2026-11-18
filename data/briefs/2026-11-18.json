@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-18",
+  "title": "Today's top defense-tech headlines",
+  "big": "34 new stories since the last brief. The busiest areas: budget, policy & acquisition reform and drones & air autonomy.",
+  "stories": [
+    {
+      "tag": "Space",
+      "h": "Senate Backs Bigger Space Force, but Trims Pentagon Plans",
+      "what": "The Senate Appropriations Committee approved a plan to raise investment in the Space Force by 73 percent over 2026—but its bid falls well short of the Pentagon's request. Under the plan, the Space Force would get $54.7 billion—up from $31.6 billion this year.",
+      "you": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+      "ref": "u-20261118-senate-backs-bigger-space-force-but-trims-pentagon"
+    },
+    {
+      "tag": "Maritime & undersea autonomy",
+      "h": "Senate grills acting Navy secretary on Iran war costs, extended deployments",
+      "what": "Democrats in particular bristled at Hung Cao’s characterization of unsuccessful suicide attempts as “mitigations.”",
+      "you": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+      "ref": "u-20261118-senate-grills-acting-navy-secretary-on-iran-war-co"
+    },
+    {
+      "tag": "AI, software & command and control",
+      "h": "OpenAI gives NATO access to most advanced cybersecurity AI",
+      "what": "NATO operators this month built and deployed AI agents in an exercise, with help from OpenAI.",
+      "you": "Software that decides what to look at and what to hit is where the most value is moving.",
+      "ref": "u-20261118-openai-gives-nato-access-to-most-advanced-cybersec"
+    },
+    {
+      "tag": "Missiles, hypersonics & munitions",
+      "h": "Lockheed says its Valkyrie laser downs cruise missile",
+      "what": "A Lockheed Martin high-energy laser has destroyed a surrogate cruise missile target for the first time, a company executive said, months after the U.S. Army said it no longer planned to put the same weapon into service.",
+      "you": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+      "ref": "u-20261118-lockheed-says-its-valkyrie-laser-downs-cruise-miss"
+    },
+    {
+      "tag": "Incumbent primes",
+      "h": "Lockheed gets $93M to help military mechanics fix F-35s faster",
+      "what": "The U.S. Navy is paying Lockheed Martin $93.2 million to help military repair shops fix more F-35 parts themselves. The money buys new test equipment, software updates and extra capacity to repair the jet’s ejection seats.",
+      "you": "The big incumbents are growing too. Watch where they partner with or buy startups rather than compete.",
+      "ref": "u-20261118-lockheed-gets-93m-to-help-military-mechanics-fix-f"
+    }
+  ],
+  "watch": {
+    "h": "Stopgap funding expires: FY27 appropriations or another CR",
+    "why": "December 11. Decides whether DAWG's $54.6B and Golden Dome's growth become real money."
+  },
+  "idea": {
+    "h": "Low-cost interceptor drone",
+    "why": "An autonomous interceptor under $5k for Shahed-class and FPV drones. Ukraine proved the concept, and Japan, the Gulf and US bases are buying. The cost-exchange crisis is acute."
+  },
+  "auto": true
+}

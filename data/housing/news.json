@@ -1,5 +1,142 @@
 [
  {
+  "id": "h-20261118-another-record-low-for-pending-home-sales-nar-inde",
+  "d": "2026-11-18",
+  "title": "Another record low for pending home sales, NAR index drops to 63",
+  "body": "Index fell 4.7% month over month and 16.7% year over year, West down 20.3% annually",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/pending-home-sales-record-low-2/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261118-why-buyers-may-get-more-from-seller-concessions-th",
+  "d": "2026-11-18",
+  "title": "Why buyers may get more from seller concessions than a price cut",
+  "body": "Pending sales fell 7.3% in September, and Redfin shows them down 16.4% year over year into early November",
+  "topics": [
+   "prices",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/seller-concessions-vs-price-cut/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261118-mba-mortgage-applications-fall-5-as-rates-rise-to-",
+  "d": "2026-11-18",
+  "title": "MBA: Mortgage applications fall 5% as rates rise to 7.35%",
+  "body": "Purchase and refinance demand were 18% and 54% lower than a year ago, respectively",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mba-mortgage-applications-fall-735/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261118-yimby-groups-bare-claws-in-lawsuit-over-la-bid-to-",
+  "d": "2026-11-18",
+  "title": "YIMBY groups bare claws in lawsuit over LA bid to stop housing project",
+  "body": "Petition seeks approval of 398 homes at Woodland Hills Country Club under AB 2011 after an Aug. 20 denial",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/imby-lawsuit-la-housing/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261118-homeward-cash-offer-product-launches-nationwide-fo",
+  "d": "2026-11-18",
+  "title": "Homeward cash-offer product launches nationwide for agents",
+  "body": "Agents can offer a cash close in as little as 14 days, with resale upside returned to the seller",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/homeward-cash-offer-48-states/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261118-pending-home-sales-fall-in-october-as-rates-hit-20",
+  "d": "2026-11-18",
+  "title": "Pending Home Sales Fall in October As Rates Hit 2026 Peak",
+  "body": "Pending home sales dropped 4.7% month-over-month and 16.7% year-over-year in October, reaching the lowest level in the data’s history.",
+  "topics": [
+   "rates",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/pending-home-sales-october-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261118-october-2026-rental-report-rents-rise-annually-for",
+  "d": "2026-11-18",
+  "title": "October 2026 Rental Report: Rents Rise Annually for the First Time Since June 2023",
+  "body": "In October 2026, the median asking rent rose 0.1% year over year, the first annual increase since June 2023.",
+  "topics": [
+   "rents"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/october-2026-rent/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261118-6-side-hustles-rookies-use-to-buy-their-first-rent",
+  "d": "2026-11-18",
+  "title": "6 Side Hustles Rookies Use to Buy Their First Rental Property",
+  "body": "Want to buy your first rental property, but your paycheck just isn’t stretching far enough to save for a down payment? You’re not alone! Not having enough cash is one [ ]",
+  "topics": [
+   "rents"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-798",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261118-please-don-t-bet-on-a-refinance",
+  "d": "2026-11-18",
+  "title": "(Please) Don’t Bet on a Refinance",
+  "body": "If you’re hoping, praying that mortgage rates fall so you can refinance your rental…you need to hear this. We’re bringing on one of the rental property investing legends, Michael Zuber [ ]",
+  "topics": [
+   "rates",
+   "rents",
+   "investing"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1358",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261117-fitch-warns-of-growing-balance-sheet-strain-at-top",
   "d": "2026-11-17",
   "title": "Fitch warns of growing balance-sheet strain at top nonbank mortgage firms",
