@@ -582,6 +582,257 @@
     ]
   },
   {
+    "id": "u-20261118-navy-taps-one-star-admiral-to-advance-hypersonic-w",
+    "d": "2026-11-18",
+    "title": "Navy taps one-star admiral to advance hypersonic weapons, SLCM-N integration at Crane",
+    "body": "Rear Adm. Patrick Finney is the first person to lead the new program management office based out of Naval Weapons Station Crane in Indiana.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "strike"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/navy-taps-one-star-admiral-to-advance-hypersonic-weapons-slcm-n-integration-at-crane/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T21:40:44.463Z",
+    "auto": true,
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261118-us-navy-used-expired-munitions-during-iran-war-cao",
+    "d": "2026-11-18",
+    "title": "US Navy used expired munitions during Iran war, Cao says",
+    "body": "Acting Navy Secretary told lawmakers during a Senate confirmation hearing that the service is recoding expired munitions and firing them off.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "strike",
+      "adversary",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/newsletters/daily-news-roundup/2026/11/18/us-navy-used-expired-munitions-during-iran-war-cao-says/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T21:40:44.463Z",
+    "auto": true,
+    "orgs": [
+      "US Navy",
+      "Senate"
+    ]
+  },
+  {
+    "id": "u-20261118-flying-stripped-down-f-15-silver-eagles-to-their-l",
+    "d": "2026-11-18",
+    "title": "Flying Stripped-Down F-15 “Silver Eagles” To Their Limits",
+    "body": "F-15s in 'rocket ship' configuration get put through the ringer during flight test sorties right after they emerge from deep maintenance.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "space"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/flying-stripped-down-f-15-silver-eagles-to-their-limits",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T21:40:44.463Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261118-u-s-air-force-s-containerized-surface-to-air-missi",
+    "d": "2026-11-18",
+    "title": "U.S. Air Force’s Containerized Surface-To-Air Missile Program Comes Into Sharper Focus",
+    "body": "The Counter-Air Missile Program is targeting lower-cost designs, and could also be a path to a new air-to-air missile.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/land/u-s-air-forces-containerized-surface-to-air-missile-program-comes-into-sharper-focus",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T21:40:44.463Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261118-hegseth-makes-surprise-visit-to-venezuela-to-stren",
+    "d": "2026-11-18",
+    "title": "Hegseth Makes Surprise Visit to Venezuela to Strengthen Military Ties",
+    "body": "Secretary of Defense Pete Hegseth made a surprise trip to Venezuela to sign a agreement that reestablish military ties between the two countries.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Defense Unicorns"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/hegseth-makes-surprise-visit-venezuela-to-strengthen-military-ties/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T21:40:44.463Z",
+    "auto": true,
+    "orgs": [
+      "Defense"
+    ]
+  },
+  {
+    "id": "u-20261118-air-force-fires-minuteman-iii-icbm-in-test-launch",
+    "d": "2026-11-18",
+    "title": "Air Force Fires Minuteman III ICBM in Test Launch",
+    "body": "Air Force Global Strike Command launched an unarmed Minuteman III intercontinental ballistic missile from Vandenberg Space Force Base, Calif., late Nov. 17, its first such test in six months.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "strike",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/air-force-global-strike-test-launch-minuteman-icbm/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T21:40:44.463Z",
+    "auto": true,
+    "orgs": [
+      "Air Force Global Strike Command"
+    ]
+  },
+  {
+    "id": "u-20261118-feds-irish-national-vandalized-c-130-so-thoroughly",
+    "d": "2026-11-18",
+    "title": "Feds: Irish National Vandalized C-130 So Thoroughly It Was ‘Effectively Destroyed’",
+    "body": "Federal prosecutors have charged an Irish man with methodically vandalizing a U.S. Air Force C-130H so extensively that the $60 million transport aircraft is effectively totaled.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Irish National"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/feds-irish-national-vandalized-c-130-so-thoroughly-it-was-effectively-destroyed/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T21:40:44.463Z",
+    "auto": true,
+    "orgs": [
+      "Irish National",
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261118-carrier-uss-george-washington-leaves-middle-east-a",
+    "d": "2026-11-18",
+    "title": "Carrier USS George Washington Leaves Middle East After Three Months",
+    "body": "USS George Washington (CVN-73) left the Middle East after being on station for three months, a U.S. Pacific Fleet spokesperson confirmed Wednesday to USNI News. George Washington is now in U.S. 7th Fleet.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Pacific Fleet",
+      "7th"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/18/carrier-uss-george-washington-leaves-middle-east-after-three-months",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T21:40:44.463Z",
+    "auto": true,
+    "orgs": [
+      "Pacific Fleet",
+      "USNI News",
+      "7th"
+    ]
+  },
+  {
+    "id": "u-20261118-u-k-carrier-strike-group-concludes-6-month-operati",
+    "d": "2026-11-18",
+    "title": "U.K. Carrier Strike Group Concludes 6-month Operation Firecrest Deployment",
+    "body": "Royal Navy aircraft carrier HMS Prince of Wales (R09) returned Monday to its homeport of Portsmouth, concluding the U.K. Carrier Strike Group’s two-phase Operation Firecrest deployment.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "U.K",
+      "Carrier Strike Group",
+      "HMS Prince of Wales"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/18/u-k-carrier-strike-group-concludes-6-month-operation-firecrest-deployment",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T21:40:44.463Z",
+    "auto": true,
+    "orgs": [
+      "U.K",
+      "Carrier Strike Group",
+      "Royal Navy",
+      "HMS Prince of Wales"
+    ]
+  },
+  {
+    "id": "u-20261118-all-points-logistics-announces-partnership-with-ex",
+    "d": "2026-11-18",
+    "title": "All Points Logistics Announces Partnership with Expeditors for Space Prep Logistics Center at Kennedy Space Center",
+    "body": "MERRITT ISLAND, FL, November 18, 2026 — All Points Logistics has announced a partnership with Expeditors International of Washington, Inc. (NYSE: EXPD) to serve as the exclusive logistics provider for [ ]",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "All Points Logistics",
+      "Prep Logistics",
+      "Expeditors International of Washington, Inc"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/all-points-logistics-announces-partnership-with-expeditors-for-space-prep-logistics-center-at-kennedy-space-center/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-18T21:40:44.463Z",
+    "auto": true,
+    "orgs": [
+      "All Points Logistics",
+      "Prep Logistics",
+      "Expeditors International of Washington, Inc"
+    ]
+  },
+  {
     "id": "u-20261117-iceye-makes-2b-bid-for-italian-rocket-firm-avio",
     "d": "2026-11-17",
     "title": "ICEYE makes $2B bid for Italian rocket firm Avio",
