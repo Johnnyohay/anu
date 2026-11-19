@@ -10,6 +10,7 @@
     "allowImportingTsExtensions": true
   },
   "include": [
-    "src"
+    "src",
+    "test"
   ]
 }

@@ -419,7 +419,7 @@ function renderToday(){
         ${s.tag?`<div class="tag">${esc(s.tag)}</div>`:""}
         <h4>${esc(s.h)}</h4>
         <p>${esc(s.what)}</p>
-        <div class="you"><b>Why it matters to you:</b> ${esc(s.you)}</div>
+        ${s.you ? `<div class="you"><b>Why it matters to you:</b> ${esc(s.you)}</div>` : ""}
         ${s.ref?`<button class="more" data-open-update="${esc(s.ref)}">Details and source →</button>`:""}
       </div>`).join("")}
     </section>
