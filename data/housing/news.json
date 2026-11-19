@@ -76,6 +76,146 @@
   }
  },
  {
+  "id": "h-20261119-rate-s-jesse-allen-reverse-mortgage-lenders-should",
+  "d": "2026-11-19",
+  "title": "Rate’s Jesse Allen: Reverse mortgage lenders should plan for the ‘down case,’ not FHA relief",
+  "body": "NRMLA board member and Rate leader says proprietary products, reverse for purchase financing and responsible equity release are where growth lies heading into 2027",
+  "topics": [
+   "rates",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/allen-reverse-mortgage-expand-products/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261119-new-ceo-at-villa-eyes-manufactured-housing-adu-opp",
+  "d": "2026-11-19",
+  "title": "New CEO at Villa eyes manufactured housing, ADU opportunity",
+  "body": "David Messenger will steer Villa into larger manufactured home communities, tapping finished, entitled land to limit entitlement risk",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/villas-new-ceo-growth-strategy/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261119-housing-groups-urge-fhfa-to-delay-condo-reserve-ru",
+  "d": "2026-11-19",
+  "title": "Housing groups urge FHFA to delay condo reserve rule until 2028",
+  "body": "Coalition wants Fannie and Freddie rule shift to be pushed to 2028 as reserves rise from 10% to 15%",
+  "topics": [
+   "prices",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/fhfa-condo-reserve-rule-delay/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261119-why-compass-wants-the-mls-antitrust-dispute-out-of",
+  "d": "2026-11-19",
+  "title": "Why Compass wants the MLS antitrust dispute out of New York",
+  "body": "Plaintiffs argue a single ruling on listing submission rules could bind Compass and reduce inconsistent outcomes across 11 districts",
+  "topics": [
+   "inventory"
+  ],
+  "states": [
+   "NY",
+   "PA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/compass-mls-antitrust-venue-fight/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261119-mortgage-delinquencies-rise-to-4-42-in-q3-2026",
+  "d": "2026-11-19",
+  "title": "Mortgage delinquencies rise to 4.42% in Q3 2026",
+  "body": "Foreclosure starts rose to 0.21%, while loans in foreclosure increased to 0.71%",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mortgage-delinquencies-q3-2026/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261119-zoning-reform-is-remaking-parking-lots-into-a-hous",
+  "d": "2026-11-19",
+  "title": "Zoning reform is remaking parking lots into a housing paradise",
+  "body": "Commercial parking makes up a 26% median share of downtown land in large U.S. cities, creating infill capacity",
+  "topics": [
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/parking-lot-redevelopment-zoning/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261119-rates-jump-again-as-inflation-and-war-worries-pers",
+  "d": "2026-11-19",
+  "title": "Rates Jump Again as Inflation and War Worries Persist",
+  "body": "The Freddie Mac 30-year mortgage rate jumped 17 basis points to 7.28% this week, reversing four weeks of declines that had brought rates down to 7.11%, as the 10-year Treasury yield climbed back toward 5%.",
+  "topics": [
+   "rates",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/freddie-mac-mortgage-rates-november-19-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261119-anthropic-ipo-vs-u-s-housing-wealth",
+  "d": "2026-11-19",
+  "title": "Anthropic IPO vs. U.S. Housing Wealth",
+  "body": "Anthropic’s roughly $1.5 trillion IPO could buy every home currently for sale in the U.S., about 1.18 million listings worth $816 billion, and still have around $678 billion left over.",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/anthropic-ipo-housing-wealth/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261119-i-was-underpricing-my-houston-rentals-by-2-460-yea",
+  "d": "2026-11-19",
+  "title": "I Was Underpricing My Houston Rentals by $2,460/Year—A $20 Report Caught It",
+  "body": "I own three new-construction rentals in the Houston area. The tenants are good, and until recently my pricing method was one I’d be embarrassed to explain at a BiggerPockets meetup: [ ]",
+  "topics": [
+   "rents",
+   "construction"
+  ],
+  "states": [
+   "TX"
+  ],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/i-was-underpricing-my-houston-rentals-by-2460-year-a-20-report-caught-it",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261118-another-record-low-for-pending-home-sales-nar-inde",
   "d": "2026-11-18",
   "title": "Another record low for pending home sales, NAR index drops to 63",
