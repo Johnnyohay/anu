@@ -1,5 +1,363 @@
 [
   {
+    "id": "u-20261119-cyclokinetics-wins-86-3-million-pentagon-contract-",
+    "d": "2026-11-19",
+    "title": "Cyclokinetics wins $86.3 million Pentagon contract for alternative fuels",
+    "body": "The Utah-based startup is pioneering new “drop-in” propellants that can substitute prevailing forms of energy.",
+    "why": "Bases need their own power for AI, sensors and lasers, which creates a defense market for new energy tech.",
+    "sectors": [
+      "energy"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Cyclokinetics"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/cyclokinetics-wins-86-3-million-pentagon-contract-for-alternative-fuels/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Cyclokinetics",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261119-training-for-any-scenario-anywhere-in-the-world-st",
+    "d": "2026-11-19",
+    "title": "Training for any scenario, anywhere in the world, starting with the Pacific in Guam",
+    "body": "[Sponsored] AI and new training techniques are turning actual operational networks into training environments for joint forces.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/training-for-any-scenario-anywhere-in-the-world-starting-with-the-pacific-in-guam/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261119-ukraine-plans-to-double-drone-supplies-triple-deep",
+    "d": "2026-11-19",
+    "title": "Ukraine plans to double drone supplies, triple deep strikes",
+    "body": "Ukraine is forging ahead with its long-range strike campaign with support from European partners, despite Washington’s request to prioritize front-line defense and associated midrange strikes instead.",
+    "why": "Drones are becoming the military's default purchase, so volume, price and reliability decide who wins.",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/19/ukraine-plans-to-double-drone-supplies-triple-deep-strikes/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261119-mbda-and-german-startup-atmos-team-up-to-study-spa",
+    "d": "2026-11-19",
+    "title": "MBDA and German startup Atmos team up to study space-based strike weapons",
+    "body": "Pan-European missile maker MBDA and German startup Atmos Space Cargo are teaming up to study deploying deep-strike weapons from Earth orbit using reentry vehicles.",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "strike",
+      "global"
+    ],
+    "type": "Research",
+    "companies": [
+      "MBDA",
+      "Atmos Space Cargo"
+    ],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/19/mbda-and-german-startup-atmos-team-up-to-study-space-based-strike-weapons/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "MBDA",
+      "Atmos Space Cargo"
+    ]
+  },
+  {
+    "id": "u-20261119-japanese-nuclear-submarines-are-a-bad-idea-for-eas",
+    "d": "2026-11-19",
+    "title": "Japanese nuclear submarines are a bad idea for East China Sea security — for now",
+    "body": "Washington must rein in Tokyo’s ambitions for nuclear submarines, even as it encourages Japan to further develop defensive capabilities, writes analyst Lyle Goldstein.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/opinion/2026/11/19/japanese-nuclear-submarines-are-a-bad-idea-for-east-china-sea-security-for-now/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261119-ukraine-strikes-kerch-bridge-once-again-crimea-gov",
+    "d": "2026-11-19",
+    "title": "Ukraine Strikes Kerch Bridge Once Again: Crimea Governor",
+    "body": "This is the third attack in three days with the previous one successfully dropping the road vehicle span of the bridge, but the rail span was still left.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/ukraine-strikes-kerch-bridge-once-again-crimea-governor",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261119-defense-business-brief-vantor-s-raptor-hadrian-s-f",
+    "d": "2026-11-19",
+    "title": "Defense Business Brief: Vantor’s Raptor; Hadrian’s foundry, and more",
+    "body": "Defense Business Brief: Vantor’s Raptor; Hadrian’s foundry, and more",
+    "why": "Being able to produce at scale has become a competitive edge in its own right; factories are now a venture category.",
+    "sectors": [
+      "mfg"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Hadrian",
+      "Defense Unicorns"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/business/2026/11/defense-business-brief-vantors-raptor-hadrians-foundry-and-more/417327/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Defense"
+    ]
+  },
+  {
+    "id": "u-20261119-appropriators-slash-trump-s-17b-golden-dome-reques",
+    "d": "2026-11-19",
+    "title": "Appropriators slash Trump’s $17B Golden Dome request in draft bill",
+    "body": "GOP-led committee says reliance on reconciliation “threatens” the missile defense program’s success.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "strike"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Golden Dome"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/policy/2026/11/appropriators-slash-trumps-17b-golden-dome-request-draft-bill/417326/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Golden Dome"
+    ]
+  },
+  {
+    "id": "u-20261119-patriot-battery-in-korea-certifies-on-army-s-new-n",
+    "d": "2026-11-19",
+    "title": "Patriot battery in Korea certifies on Army’s new network",
+    "body": "Delta Battery, 6th Battalion, 52nd Air Defense Artillery Regiment, is the first operational Patriot battery in the U.S. Army to certify on the Integrated Air and Missile Defense Battle Command System, or IBCS, Eighth Army said Nov. 18.",
+    "why": "Missile defense is one of the biggest budget lines this decade, and its software and sensors are open to newcomers.",
+    "sectors": [
+      "missiledef",
+      "energy",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Delta Battery",
+      "Air Defense Artillery Regiment"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/patriot-battery-in-korea-certifies-on-armys-new-network/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Delta Battery",
+      "Air Defense Artillery Regiment",
+      "Eighth Army"
+    ]
+  },
+  {
+    "id": "u-20261119-kazakhstan-receives-new-chinese-made-y-9e-transpor",
+    "d": "2026-11-19",
+    "title": "Kazakhstan receives new Chinese-made Y-9E transport plane",
+    "body": "A Chinese-built Y-9E military transport plane has landed in Almaty and joined Kazakhstan’s armed forces, the Kazakh Defense Ministry said. “Y-9E military transport aircraft arrives in Kazakhstan,” the ministry wrote on X.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary",
+      "air"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/kazakhstan-receives-new-chinese-made-y-9e-transport-plane/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Defense Ministry"
+    ]
+  },
+  {
+    "id": "u-20261119-netherlands-takes-first-step-to-join-patria-6-6-pr",
+    "d": "2026-11-19",
+    "title": "Netherlands takes first step to join Patria 6 6 program",
+    "body": "The Netherlands has taken the first formal step toward joining a European armored vehicle program that has already ordered nearly 2,000 of Finland’s Patria 6 6 troop carriers, the company said on Thursday.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Patria"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/netherlands-takes-first-step-to-join-patria-6x6-program/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Patria"
+    ]
+  },
+  {
+    "id": "u-20261119-estonia-says-it-just-launched-its-biggest-warship",
+    "d": "2026-11-19",
+    "title": "Estonia says it just launched its biggest warship",
+    "body": "A 45-meter (148-foot) ship that can partly operate on its own has been launched in Estonia, and the country’s Defense Ministry says it’s the largest warship ever built there.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/estonia-says-it-just-launched-its-biggest-warship/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Defense Ministry"
+    ]
+  },
+  {
+    "id": "u-20261119-japan-scrambles-jets-to-intercept-russian-tu-95-bo",
+    "d": "2026-11-19",
+    "title": "Japan scrambles jets to intercept Russian Tu-95 bombers",
+    "body": "Two Russian Tu-95 bombers flew north between Taiwan and Japan’s westernmost island on Thursday, then crossed into the Sea of Japan after two Tu-142 patrol planes came south to meet them over the East China Sea, Japan’s Ministry of Defense said.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/japan-scrambles-jets-to-intercept-russian-tu-95-bombers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Ministry of Defense"
+    ]
+  },
+  {
+    "id": "u-20261119-south-korean-firm-wants-to-sell-romania-unmanned-a",
+    "d": "2026-11-19",
+    "title": "South Korean firm wants to sell Romania unmanned army vehicles",
+    "body": "A South Korean unmanned ground vehicle crept through mountain forest in Romania last month, spotting hidden soldiers and vehicles with its cameras and streaming the video to a Romanian command post, Hanwha Aerospace Romania said Thursday.",
+    "why": "Ground robots are moving from demos to real orders, starting with logistics and dangerous jobs.",
+    "sectors": [
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Hanwha Aerospace Romania"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/south-korean-firm-wants-to-sell-romania-unmanned-army-vehicles/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Hanwha Aerospace Romania"
+    ]
+  },
+  {
+    "id": "u-20261119-general-dynamics-wins-bigger-deal-to-support-u-s-a",
+    "d": "2026-11-19",
+    "title": "General Dynamics wins bigger deal to support U.S. Army Strykers",
+    "body": "The U.S. Army has awarded General Dynamics Land Systems a contract worth up to $332.5 million to keep its Stryker armored vehicles running and to get new ones into soldiers’ hands.",
+    "why": "The big incumbents are growing too. Watch where they partner with or buy startups rather than compete.",
+    "sectors": [
+      "primes",
+      "ground"
+    ],
+    "type": "Contract",
+    "companies": [
+      "General Dynamics Land Systems"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/general-dynamics-wins-bigger-deal-to-support-u-s-army-strykers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Army Strykers",
+      "General Dynamics Land Systems"
+    ]
+  },
+  {
     "id": "u-20261118-britain-has-the-frigate-the-us-needs-and-americans",
     "d": "2026-11-18",
     "title": "Britain has the frigate the US needs, and Americans should build it: UK minister",
@@ -830,6 +1188,369 @@
       "All Points Logistics",
       "Prep Logistics",
       "Expeditors International of Washington, Inc"
+    ]
+  },
+  {
+    "id": "u-20261118-350-billion-reconciliation-bill-not-going-to-happe",
+    "d": "2026-11-18",
+    "title": "$350 billion reconciliation bill ‘not going to happen’: HASC chair",
+    "body": "“If a reconciliation bill is still possible, it’s going to have to be skinnied down to deal with … the hole in the defense budget that Venezuela and Iran have created,” said Rep. Mike Rogers.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy",
+      "adversary"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/350-billion-reconciliation-bill-not-going-to-happen-hasc-chair/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261118-a-1-1-trillion-pentagon-budget-plan-sets-up-a-figh",
+    "d": "2026-11-18",
+    "title": "A $1.1 trillion Pentagon budget plan sets up a fight on Capitol Hill",
+    "body": "Senate appropriators are prioritizing Golden Dome, drones and munitions, but other military programs could pay the price.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy",
+      "air",
+      "missiledef",
+      "strike"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/a-1-1-trillion-pentagon-budget-sets-up-a-fight-on-capitol-hill/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon",
+      "Senate"
+    ]
+  },
+  {
+    "id": "u-20261118-navy-to-test-new-software-platform-for-project-rou",
+    "d": "2026-11-18",
+    "title": "Navy to test new software platform for Project Roundtable",
+    "body": "“The initial testing phase of our internal prototyping is managed in continuous, accelerated sprints,” a U.S. Navy spokesperson told DefenseScoop.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "sea"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/18/navy-software-platform-project-roundtable/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Navy",
+      "DefenseScoop"
+    ]
+  },
+  {
+    "id": "u-20261118-us-surges-power-projection-to-westernmost-island-c",
+    "d": "2026-11-18",
+    "title": "US surges power projection to westernmost island chain as Russia, China loom",
+    "body": "The U.S. Air Force is expanding its training on America's westernmost islands, where it can project power and monitor adversaries across the Pacific and the Arctic.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/the-americas/2026/11/18/us-surges-power-projection-to-westernmost-island-chain-as-russia-china-loom/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261118-tehran-widens-attacks-on-gulf-nations-after-latest",
+    "d": "2026-11-18",
+    "title": "Tehran Widens Attacks On Gulf Nations After Latest U.S. Strike On Iranian Island",
+    "body": "The resumed Iranian attacks on Gulf states hosting American forces and ongoing reactive strikes by the U.S. are taking place amid a stalemate in peace talks.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/tehran-widens-attacks-on-gulf-nations-after-latest-u-s-strike-on-iranian-island",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261118-europe-is-exploring-orbital-deep-strike-weapons",
+    "d": "2026-11-18",
+    "title": "Europe Is Exploring Orbital Deep Strike Weapons",
+    "body": "Launching precision strikes from orbital platforms would have huge advantages, but it would also come at a very high cost.",
+    "why": "Allies' wars and budgets are the testing ground and a big second market for new defense tech.",
+    "sectors": [
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/space/europe-is-exploring-orbital-deep-strike-weapons",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261118-holy-s-that-s-tehran-b-2-pilots-tell-the-story-of-",
+    "d": "2026-11-18",
+    "title": "‘Holy S—, That’s Tehran!’: B-2 Pilots Tell the Story of Operation Midnight Hammer",
+    "body": "For the first time ever, the B-2 pilots who flew Operation Midnight Hammer, the mission that leveled Iran’s nuclear program, spoke about the months of preparation beforehand and the 37-hour flight that unfolded in utmost secrecy.",
+    "why": "What China, Russia and Iran field sets the requirements the Pentagon buys against.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/inside-operation-midnight-hammer-b-2-pilots/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": []
+  },
+  {
+    "id": "u-20261118-senate-appropriators-cut-20b-from-navy-shipbuildin",
+    "d": "2026-11-18",
+    "title": "Senate Appropriators Cut $20B from Navy Shipbuilding Request",
+    "body": "Lawmakers are pushing back on the Navy’s shipbuilding plans by cutting funding for several high-profile programs and reducing the shipbuilding budget by nearly $20 billion.",
+    "why": "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/18/senate-appropriators-cut-20b-from-navy-shipbuilding-request",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Senate",
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261118-flexell-space-and-alatyr-sign-mou-to-explore-solar",
+    "d": "2026-11-18",
+    "title": "Flexell Space and ALATYR Sign MoU to Explore Solar Power Solutions for Orbital Data Centers",
+    "body": "– Collaboration to assess next-generation ultralight solar cells for space-based computing infrastructure – Partnership brings together Korean space energy technology and French orbital infrastructure expertise Bremen, Germany – Flexell Space, [ ]",
+    "why": "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.",
+    "sectors": [
+      "space",
+      "capital",
+      "energy",
+      "global"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Flexell Space",
+      "ALATYR",
+      "Solar Power Solutions",
+      "Orbital Data Centers"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/flexell-space-and-alatyr-sign-mou-to-explore-solar-power-solutions-for-orbital-data-centers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Flexell Space",
+      "ALATYR",
+      "Solar Power Solutions",
+      "Orbital Data Centers"
+    ]
+  },
+  {
+    "id": "u-20261118-where-do-the-pentagon-s-6-critical-technology-area",
+    "d": "2026-11-18",
+    "title": "Where Do the Pentagon’s 6 Critical Technology Areas Stand One Year Later?",
+    "body": "A year after Emil Michael cut the Pentagon’s tech priorities to six, here’s what AI, lasers, quantum and hypersonics have delivered.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "sensing"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/pentagon-critical-tech-areas-emil-michael-ai-quantum-hypersonics",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261118-dot-faa-seek-50-1b-from-congress-to-build-new-air-",
+    "d": "2026-11-18",
+    "title": "DOT, FAA Seek $50.1B From Congress to Build New Air Traffic Control System",
+    "body": "Duffy, Bedford and Vought asked appropriators for $50.1 billion to build control centers, towers and a digital architecture.",
+    "why": "Budget and policy moves decide which programs get real money and when; they're the earliest signal of demand.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "FAA",
+      "Duffy",
+      "Bedford and"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/dot-faa-air-traffic-control-funding-request-congress",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "FAA",
+      "Congress",
+      "Duffy",
+      "Bedford and"
+    ]
+  },
+  {
+    "id": "u-20261118-air-force-materiel-command-issues-data-strategy-im",
+    "d": "2026-11-18",
+    "title": "Air Force Materiel Command Issues Data Strategy Implementation Plan",
+    "body": "Air Force Materiel Command has released a data and AI strategy and a four-phase plan covering data, tools and workforce training.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/afmc-data-ai-strategy-implementation-plan",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "Air Force Materiel Command"
+    ]
+  },
+  {
+    "id": "u-20261118-mda-seeks-ai-tools-to-modernize-legacy-missile-def",
+    "d": "2026-11-18",
+    "title": "MDA Seeks AI Tools to Modernize Legacy Missile Defense Software",
+    "body": "MDA's software office is targeting Ada, C and older C++ for automated refactoring in the NOBLE-based MASM effort.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai",
+      "missiledef",
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "MDA",
+      "AI Tools",
+      "Missile Defense Software"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/mda-machine-aided-software-modernization",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "MDA",
+      "AI Tools",
+      "Missile Defense Software"
+    ]
+  },
+  {
+    "id": "u-20261118-cms-outlines-federal-strategy-to-accelerate-ai-ado",
+    "d": "2026-11-18",
+    "title": "CMS Outlines Federal Strategy to Accelerate AI Adoption in Healthcare",
+    "body": "CMS has unveiled a roadmap to advance clinical AI, strengthen healthcare data infrastructure and expand AI-enabled care.",
+    "why": "Software that decides what to look at and what to hit is where the most value is moving.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "CMS"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/cms-clinical-artificial-intelligence-roadmap-2",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "CMS"
+    ]
+  },
+  {
+    "id": "u-20261118-state-department-readies-itar-general-license-50-d",
+    "d": "2026-11-18",
+    "title": "State Department Readies ITAR General License, 50-Day Reviews After Reform Sprint",
+    "body": "Eight Federal Register notices from the State- and Commerce-led sprint are out, along with plans to narrow the U.S. Munitions List.",
+    "why": "Weapons stockpiles are short, so anyone who can make missiles and rocket motors faster and cheaper has buyers.",
+    "sectors": [
+      "strike"
+    ],
+    "type": "Tech milestone",
+    "companies": [
+      "Federal Register"
+    ],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/state-department-itar-reform-arms-export-policy",
+      "q": "news"
+    },
+    "addedAt": "2026-11-19T14:03:22.196Z",
+    "auto": true,
+    "orgs": [
+      "State Department",
+      "Federal Register"
     ]
   },
   {

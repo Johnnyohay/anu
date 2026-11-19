@@ -1,5 +1,81 @@
 [
  {
+  "id": "h-20261119-japanese-owned-builders-are-cutting-u-s-outlooks-w",
+  "d": "2026-11-19",
+  "title": "Japanese-owned builders are cutting U.S. outlooks: what’s next?",
+  "body": "Daiwa House and Sumitomo Forestry lowered 2026 expectations as margins sit near 6% to 7%",
+  "topics": [
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/japanese-builders-us-forecasts-synergies/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261119-seller-impersonation-fraud-is-no-longer-a-niche-ti",
+  "d": "2026-11-19",
+  "title": "Seller impersonation fraud is no longer a niche title problem",
+  "body": "New survey data shows attempts rose from 28% to 59% in 2 years, with layered detection and curative work key",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/seller-impersonation-fraud-title/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261119-the-housing-cliff-is-here",
+  "d": "2026-11-19",
+  "title": "The housing cliff is here.",
+  "body": "MBA apps fell 42% YoY, pending home sales hit a record low while GSE and FHA capital levels rose",
+  "topics": [
+   "rates",
+   "sales",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/housing-cliff-mortgage-locks/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261119-weekly-housing-trends-u-s-market-update-week-endin",
+  "d": "2026-11-19",
+  "title": "Weekly Housing Trends: U.S. Market Update (Week Ending Nov. 14, 2026)",
+  "body": "Get the latest U.S. housing market trends, including inventory shifts, listing activity, prices, and buyer-seller dynamics, with fresh weekly data and insights.",
+  "topics": [
+   "inventory",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/weekly-housing-trends-view-data-week-november-14-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261119-if-the-stock-market-crashes-what-happens-to-real-e",
+  "d": "2026-11-19",
+  "title": "If the Stock Market Crashes, What Happens to Real Estate?",
+  "body": "The stock market just had its worst month in years. The S P 500 is down 5% since its recent high, the Nasdaq is down 11%, and the AI bubble still [ ]",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/on-the-market-479",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261118-another-record-low-for-pending-home-sales-nar-inde",
   "d": "2026-11-18",
   "title": "Another record low for pending home sales, NAR index drops to 63",
@@ -174,6 +250,22 @@
   "src": {
    "t": "HousingWire",
    "u": "https://www.housingwire.com/articles/mortgage-industry-aging-in-place/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261118-why-housing-construction-is-sliding-back-toward-co",
+  "d": "2026-11-18",
+  "title": "Why housing construction is sliding back toward COVID-era lows",
+  "body": "October permits fell to a 1,295,000 annual rate, down 7.4% from September and 8.7% from 2025.",
+  "topics": [
+   "rates",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/housing-permits-covid-lows/",
    "q": "news"
   }
  },
