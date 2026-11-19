@@ -9,6 +9,7 @@
     "daily:claude": "tsx src/daily.ts",
     "build:api": "tsx src/build-api.ts",
     "typecheck": "tsc --noEmit && tsc --noEmit -p app",
+    "test": "node --import tsx --test test/*.ts",
     "kb": "tsx src/kb-cli.ts",
     "ask": "tsx src/agent.ts",
     "app": "vite build && tsx src/server.ts",

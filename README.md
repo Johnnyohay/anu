@@ -2,7 +2,7 @@
 
 My personal helper for several things, each on its own tab:
 
-- **Defense:** learning about and keeping up with the defense-technology industry. Every morning a GitHub Action collects the latest articles from 14 defense news sources, sorts them into 20 sectors and writes a short headline brief.
+- **Defense:** learning about and keeping up with the defense-technology industry. Every morning a GitHub Action collects the latest articles from 12 defense news sources, sorts them into 20 sectors and writes a short headline brief.
 - **Housing:** where to buy a US home to rent out. A map of about 900 metros with home values, rents, rental yield, cash flow at today's mortgage rate, trends, Zillow's forecast and the latest housing news.
 - **Watch:** new Shorts and videos on defense and housing from YouTube channels I follow, in a grid or a swipe-through reel mode.
 - **Docs:** the architecture and everything I can change after cloning, read live from the YAML config.
@@ -37,9 +37,9 @@ Both run in the daily Action after the defense collector; if a source is down, t
 Free lookups: `npm run kb -- housing`, `metros --sort grossYield --largest 100`, `metro "Cleveland"`, `housing-news rents --state FL`, `videos drones --shorts 1`. Ask ANU has matching tools and two new modes (Housing: where to buy, Something to watch).
 ## How the daily update works (`npm run collect`)
 
-1. **Collect** (`src/collect.ts`): reads RSS feeds from Breaking Defense, DefenseScoop, Defense News, The War Zone, Air & Space Forces, USNI News, SpaceNews, C4ISRNET, GovConWire, Defense One, the Department of War, CSIS, Defence Blog and ExecutiveGov, keeping articles from the last 3 days.
-2. **Sort**: keyword rules tag each article with sectors (AI, drones, space, missile defense, counter-drone, minerals, policy…) and a type (contract, funding, policy, deal…). Personnel moves and other noise are dropped; duplicates are removed by URL.
-3. **Brief**: if there's no brief for today yet, it picks the five strongest stories across different sectors (deals, contracts and policy first), adds a plain-language "why it matters" for each sector, the next date on the calendar, and an idea to build.
+1. **Collect** (`src/collect.ts`): reads RSS feeds from Breaking Defense, DefenseScoop, Defense News, The War Zone, Air & Space Forces, USNI News, SpaceNews, GovConWire, Defense One, the Department of War, Defence Blog and ExecutiveGov, keeping articles from the last 3 days. C4ISRNET is skipped because those headlines already arrive via Defense News. CSIS's RSS file is a 2016 archive, so it is skipped too. GovConWire is read through its Feedburner URL because the site's own feed returns 403.
+2. **Sort**: scored keyword rules tag each article with sectors (AI, drones, space, missile defense, counter-drone, minerals, policy…) and a type (contract, funding, policy, deal…). A type is left off when the headline doesn't support one. Personnel moves and other noise are dropped; duplicates are removed by URL and headline.
+3. **Brief**: if there's no brief for today yet, it picks the five strongest stories across different sectors (deals, contracts and policy first), writes a "why it matters" from that story's actor, program and figure (or leaves it off when the sector match is weak), titles the brief from the lead story, adds the next date on the calendar, and an idea to build. Each run records per-feed item counts in `data/feed-health.json` and flags a feed that has been empty, stale, or only a duplicate for several days.
 4. **Publish** (`src/build-api.ts`): writes `public/api/v1/`, commits `data/`, and deploys `public/` to GitHub Pages.
 
 Runs daily at 14:00 UTC (9:00 New York time in winter, 10:00 in summer). Run it by hand with `gh workflow run "Daily brief"`.

@@ -1,31 +1,32 @@
 import type { Desk } from "./store.ts";
 import type { Update } from "./schema.ts";
 import { tagOrganizations } from "./hf.ts";
+import { junkMention, matchCompanies, nameParts, resolveName } from "./names.ts";
 
-const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+const inDirectory = (name: string, names: string[]) =>
+  names.some((n) => n === name || nameParts(n).includes(name));
 
 /**
  * Fills `companies` (and `orgs`, every organization mentioned) on updates using the
- * Hugging Face NER model. Names that match the company directory use the directory's
- * spelling, so the agent and the site can link them. Mutates the updates in place and
- * returns how many gained at least one company.
+ * Hugging Face NER model. Directory hits keep the directory's spelling, and a
+ * compound entry ("Anthropic · OpenAI · Google · xAI") contributes only the member
+ * that appears. Title fragments and generic nouns are dropped. Mutates the updates
+ * in place and returns how many gained at least one company.
  */
 export async function tagCompanies(desk: Desk, updates: Update[]): Promise<number> {
-  const directory = desk.companies.map((c) => {
-    const name = String(c.name);
-    return { name, aliases: name.split(/ · | \/ /).map(norm).filter((a) => a.length > 2) };
-  });
-  const canonical = (org: string) => {
-    const n = norm(org);
-    return directory.find((d) => d.aliases.some((a) => n === a || n.startsWith(a + " ") || a.startsWith(n + " ")))?.name ?? org;
-  };
-
+  const names = desk.companies.map((c) => String(c.name));
   const tags = await tagOrganizations(updates.map((u) => `${u.title}. ${u.body}`));
   let gained = 0;
   updates.forEach((u, i) => {
     const before = u.companies.length;
-    u.orgs = tags[i].orgs;
-    u.companies = [...new Set([...u.companies, ...tags[i].companies.map(canonical)])];
+    const text = `${u.title}. ${u.body}`;
+    const fromNer = tags[i].companies
+      .map((org) => resolveName(org, text, names))
+      .filter((s): s is string => !!s);
+    u.orgs = tags[i].orgs.filter((org) => !junkMention(org, text));
+    u.companies = [...new Set([...matchCompanies(text, names), ...u.companies, ...fromNer])].filter(
+      (name) => !junkMention(name, text) && (inDirectory(name, names) || fromNer.includes(name)),
+    );
     if (!before && u.companies.length) gained++;
   });
   return gained;
