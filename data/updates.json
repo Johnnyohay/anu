@@ -248,6 +248,529 @@
     ]
   },
   {
+    "id": "u-20261120-this-counter-uas-system-senses-deep-inside-neighbo",
+    "d": "2026-11-20",
+    "title": "This counter-UAS system senses deep inside neighboring borders to detect and defeat drones",
+    "body": "[Sponsored] Long-range detection capabilities extend decision time for counter-UAS actions.",
+    "why": "",
+    "sectors": [
+      "cuas",
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/this-counter-uas-system-senses-deep-inside-neighboring-borders-to-detect-and-defeat-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "UAS"
+    ]
+  },
+  {
+    "id": "u-20261120-navy-s-shipbuilding-plan-would-require-massive-hik",
+    "d": "2026-11-20",
+    "title": "Navy’s shipbuilding plan would require massive hike in annual appropriations: CBO",
+    "body": "The Navy’s shipbuilding plan released in May would average out to an annual cost of roughly $53.8 billion in shipbuilding appropriations — a 41 percent increase from the last five years, the Congressional Budget Office found.",
+    "why": "Navy set this account 41% higher, to $53.8 billion. The number that matters is what survives conference, not the request.",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/navys-shipbuilding-plan-would-require-massive-hike-in-annual-appropriations-cbo/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Navy",
+      "Congressional Budget Office"
+    ]
+  },
+  {
+    "id": "u-20261120-autonomy-firm-auterion-to-launch-joint-venture-wit",
+    "d": "2026-11-20",
+    "title": "Autonomy firm Auterion to launch joint venture with Ukrainian drone maker Skyfall",
+    "body": "The new venture, called Skyfall X Auterion, will produce Skyfall drones with Auterion software in Germany, “outside the range of air strikes,” Auterion said.",
+    "why": "",
+    "sectors": [
+      "air",
+      "space"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/autonomy-firm-auterion-to-launch-joint-venture-with-ukrainian-drone-maker-skyfall/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Auterion",
+      "Skyfall"
+    ]
+  },
+  {
+    "id": "u-20261120-sweden-s-nordic-air-defence-launches-k200-drone-in",
+    "d": "2026-11-20",
+    "title": "Sweden’s Nordic Air Defence launches K200 drone interceptor, pushes toward Ukraine tests",
+    "body": "The Swedish firm said that the counter-drone solution, a successor to the Kreuger 100XR, is designed to intercept jet-powered types, including the Russian Geran-3a.",
+    "why": "",
+    "sectors": [
+      "missiledef",
+      "air",
+      "cuas",
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/swedens-nordic-air-defence-launches-k200-drone-interceptor-pushes-toward-ukraine-tests/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Nordic Air Defence"
+    ]
+  },
+  {
+    "id": "u-20261120-pentagon-cio-davies-tapped-as-acting-national-cybe",
+    "d": "2026-11-20",
+    "title": "Pentagon CIO Davies tapped as acting National Cyber Director",
+    "body": "Kirsten Davies is taking over the role for Sean Cairncross at the White House.",
+    "why": "",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/pentagon-cio-davies-tapped-as-acting-national-cyber-director/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261120-gao-calls-for-broad-munitions-plan-better-data-man",
+    "d": "2026-11-20",
+    "title": "GAO calls for broad munitions plan, better data management from Pentagon",
+    "body": "The Defense Department’s lack of long-term munitions foresight and spotty tracking of inventory data may hamper its ability to revive key munitions shortages amplified by the Iran war, a congressional watchdog report says.",
+    "why": "",
+    "sectors": [
+      "strike"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/20/gao-pentagon-munitions-plan-data-management/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "GAO",
+      "Pentagon",
+      "Defense Department"
+    ]
+  },
+  {
+    "id": "u-20261120-trump-taps-pentagon-cio-davies-to-be-national-cybe",
+    "d": "2026-11-20",
+    "title": "Trump taps Pentagon CIO Davies to be national cyber director",
+    "body": "Davies will replace Sean Cairncross in the role.",
+    "why": "",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://cyberscoop.com/sean-cairncross-out-national-cyber-director/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Pentagon CIO"
+    ]
+  },
+  {
+    "id": "u-20261120-trump-xi-agreed-that-military-ai-decisions-should-",
+    "d": "2026-11-20",
+    "title": "Trump, Xi agreed that military AI decisions should involve humans, Bessent says",
+    "body": "President Donald Trump and Chinese President Xi Jinping agreed humans should always be involved in military decisions that use artificial intelligence technologies, even as the two countries compete for AI supremacy , Treasury Secretary Scott Bessent said on…",
+    "why": "",
+    "sectors": [
+      "ai"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/asia-pacific/2026/11/20/trump-xi-agreed-that-military-ai-decisions-should-involve-humans-bessent-says/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Treasury"
+    ]
+  },
+  {
+    "id": "u-20261120-german-attack-drones-pass-live-fire-tests-with-fir",
+    "d": "2026-11-20",
+    "title": "German attack drones pass live-fire tests, with first deliveries planned this year",
+    "body": "GLASGOW, Scotland — Two German one-way attack drone variants passed live-fire trials this month, clearing a step toward initial deliveries and troop training before the end of the year, Germany’s military procurement office said.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/20/german-attack-drones-pass-live-fire-tests-with-first-deliveries-planned-this-year/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261120-oddball-cfl-120-karpat-medium-tank-with-a-big-gun-",
+    "d": "2026-11-20",
+    "title": "Oddball CFL-120 Karpat Medium Tank With A Big Gun Faces A Battlefield Increasingly Hostile To Armor",
+    "body": "An intriguing new Slovak-Turkish medium tank, the CFL-120 Karpat is designed to appeal to militaries unable to afford or field heavier main battle tanks (MBTs) or have requirements for something lighter and more nimble.",
+    "why": "",
+    "sectors": [
+      "ground"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/land/oddball-cfl-120-karpat-medium-tank-with-a-big-120mm-gun-faces-a-battlefield-increasingly-hostile-to-armor",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261120-navy-cca-plans-will-not-wait-for-f-a-xx-next-gener",
+    "d": "2026-11-20",
+    "title": "Navy CCA Plans Will Not Wait For F/A-XX Next Generation Fighter",
+    "body": "One of the key roles envisioned for the U.S. Navy’s next-generation F/A-XX carrier-based fighter is serving as an airborne controller for advanced unmanned aircraft.",
+    "why": "",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/navy-cca-plans-will-not-wait-for-f-a-xx-next-generation-fighter",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Navy CCA",
+      "U.S. Navy"
+    ]
+  },
+  {
+    "id": "u-20261120-mysterious-mq-25-stingray-like-chinese-drone-emerg",
+    "d": "2026-11-20",
+    "title": "Mysterious MQ-25 Stingray-Like Chinese Drone Emerges At Little-Known Flight Test Center",
+    "body": "Satellite imagery has revealed an unusual uncrewed aircraft at Pucheng, China, with a configuration that bears very strong similarities to Boeing’s carrier-based MQ-25 Stingray .",
+    "why": "",
+    "sectors": [
+      "air",
+      "space",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/mysterious-mq-25-stingray-like-chinese-drone-emerges-at-little-known-flight-test-center",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Boeing"
+    ]
+  },
+  {
+    "id": "u-20261120-gao-oversight-better-tracking-needed-to-fix-muniti",
+    "d": "2026-11-20",
+    "title": "GAO: Oversight, Better Tracking Needed to Fix Munitions Shortage",
+    "body": "Burning through munitions to s upport wars in Ukraine and Iran, Pentagon officials have made deals with foreign partners and adapted to emerging threats in an effort to ramp up U.S. munitions production and build up stockpiles.",
+    "why": "",
+    "sectors": [
+      "strike"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/gao-oversight-better-tracking-needed-to-fix-munitions-shortage/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261120-navy-s-shipbuilding-plan-would-exceed-budget-estim",
+    "d": "2026-11-20",
+    "title": "Navy’s Shipbuilding Plan Would Exceed Budget Estimates by Hundreds of Billions, CBO Finds",
+    "body": "Destroyers under construction at Ingalls Shipbuilding on Aug. 7, 2026. USNI News photo",
+    "why": "",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/20/navys-shipbuilding-plan-would-exceed-budget-estimates-by-hundreds-of-billions-cbo-finds",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Navy",
+      "USNI News"
+    ]
+  },
+  {
+    "id": "u-20261120-pearl-harbor-hero-doris-miller-will-stay-namesake-",
+    "d": "2026-11-20",
+    "title": "Pearl Harbor Hero Doris Miller Will Stay Namesake of CVN-81",
+    "body": "The future aircraft carrier CVN-81 will keep its name of USS Doris Miller , USNI News has learned.",
+    "why": "",
+    "sectors": [
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/20/pearl-harbor-hero-doris-miller-will-stay-namesake-of-cvn-81",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "USNI News"
+    ]
+  },
+  {
+    "id": "u-20261120-usni-news-western-pacific-pulse-nov-20-2026",
+    "d": "2026-11-20",
+    "title": "USNI News Western Pacific Pulse: Nov. 20, 2026",
+    "body": "The following is a summary of major ship movements and exercises in the Western Pacific over the last week.",
+    "why": "",
+    "sectors": [
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/20/usni-news-western-pacific-pulse-nov-20-2026",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "USNI News Western Pacific"
+    ]
+  },
+  {
+    "id": "u-20261120-cbo-analysis-of-the-navy-s-fiscal-year-2027-shipbu",
+    "d": "2026-11-20",
+    "title": "CBO Analysis of the Navy’s Fiscal Year 2027 Shipbuilding Plan",
+    "body": "The following is the Congressional Budget Office’s Analysis of the Navy’s Fiscal Year 2027 Shipbuilding Plan, released Nov. 19, 2026.",
+    "why": "",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/20/cbo-analysis-of-the-navys-fiscal-year-2027-shipbuilding-plan",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Navy",
+      "Congressional Budget Office"
+    ]
+  },
+  {
+    "id": "u-20261120-u-s-philippine-marines-set-up-surveillance-radar-i",
+    "d": "2026-11-20",
+    "title": "U.S., Philippine Marines Set Up Surveillance Radar in Palawan",
+    "body": "U.S. Marines with Marine Rotational Force-Southeast Asia, I Marine Expeditionary Force, and Philippine marines with 3rd Marine Brigade, Philippine Marine Corps, set up the Ground Based Maritime Systems-Light radar as part of fire support rehearsals during…",
+    "why": "",
+    "sectors": [
+      "sensing",
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/20/u-s-philippine-marines-set-up-surveillance-radar-in-palawan",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Philippine Marines",
+      "Marine Rotational Force",
+      "I Marine Expeditionary Force",
+      "Philippine Marine Corps"
+    ]
+  },
+  {
+    "id": "u-20261120-hegseth-wraps-central-south-american-trip-by-deliv",
+    "d": "2026-11-20",
+    "title": "Hegseth Wraps Central, South American Trip by Delivering Anti-Cartel Message",
+    "body": "Following his milestone visit to Venezuela, Secretary of War Pete Hegseth continued to deliver the War Department's strong message against cartel and narco-terrorist networks with visits to Colombia, Ecuador and Honduras.",
+    "why": "",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4656132/hegseth-wraps-central-south-american-trip-by-delivering-anti-cartel-message/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261120-swedish-k200-interceptor-heads-to-ukraine-to-hunt-",
+    "d": "2026-11-20",
+    "title": "Swedish K200 interceptor heads to Ukraine to hunt Russian drones",
+    "body": "A Swedish company has unveiled a new interceptor drone built to chase down Russia’s jet-powered Geran-3 attack drones, and it is already heading to Ukraine for testing. Stockholm-based Nordic Air Defence announced the K200 on Nov.",
+    "why": "",
+    "sectors": [
+      "missiledef",
+      "air",
+      "cuas",
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/swedish-k200-interceptor-heads-to-ukraine-to-hunt-russian-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Nordic Air Defence"
+    ]
+  },
+  {
+    "id": "u-20261120-turkish-designed-nomad-vehicles-to-be-made-in-uk-f",
+    "d": "2026-11-20",
+    "title": "Turkish-designed Nomad vehicles to be made in UK for Estonia",
+    "body": "Estonia is buying more Nomad armored vehicles for its military, and for the first time they will be built in Britain instead of Turkey, Estonia’s Defense Ministry said on Friday.",
+    "why": "",
+    "sectors": [
+      "global",
+      "ground"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/turkish-designed-nomad-vehicles-to-be-made-in-uk-for-estonia/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Defense Ministry"
+    ]
+  },
+  {
+    "id": "u-20261120-ukrainian-expert-buy-turkish-k-z-lelma-drones-not-",
+    "d": "2026-11-20",
+    "title": "Ukrainian expert: buy Turkish Kızılelma drones, not L-39NG jets",
+    "body": "Ukraine would do better buying Turkey’s Bayraktar Kızılelma unmanned fighter than Czech-made L-39NG jets, according to Taras Chmut, who heads Come Back Alive, one of Ukraine’s largest charities supplying the military.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/ukrainian-expert-buy-turkish-kizilelma-drones-not-l-39ng-jets/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261120-nato-troops-rehearse-a-river-assault-on-the-easter",
+    "d": "2026-11-20",
+    "title": "NATO troops rehearse a river assault on the eastern flank",
+    "body": "Troops from eight NATO countries, including Lithuania, staged a combat river crossing in Lithuania as part of the Freedom Shield 26-II exercise, the Lithuanian Defense Ministry said. The ministry announced the crossing on Friday.",
+    "why": "",
+    "sectors": [
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/nato-troops-rehearse-a-river-assault-on-the-eastern-flank/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "NATO",
+      "Defense Ministry"
+    ]
+  },
+  {
+    "id": "u-20261120-utah-startup-unveils-long-range-bombard-attack-dro",
+    "d": "2026-11-20",
+    "title": "Utah startup unveils long-range BOMBARD attack drone",
+    "body": "Utah drone maker Vector has unveiled BOMBARD, a ground-launched one-way attack drone powered by a pulse jet that it says can fly up to 1,100 km (680 miles) and carry a 50 kg (110-pound) payload, the company said in a release on Thursday.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/utah-startup-unveils-long-range-bombard-attack-drone/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T21:39:26.529Z",
+    "orgs": [
+      "Vector"
+    ]
+  },
+  {
     "id": "u-20261119-cyclokinetics-wins-86-3-million-pentagon-contract-",
     "d": "2026-11-19",
     "title": "Cyclokinetics wins $86.3 million Pentagon contract for alternative fuels",
