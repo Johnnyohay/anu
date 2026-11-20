@@ -1,5 +1,253 @@
 [
   {
+    "id": "u-20261120-australia-receives-first-2-of-13-additional-seahaw",
+    "d": "2026-11-20",
+    "title": "Australia receives first 2 of 13 additional Seahawk helicopters",
+    "body": "The deliveries will expand the Royal Australian Navy’s MH-60R fleet to 36 aircraft by early 2028 as part of a broader effort to modernize Australia’s naval aviation capabilities.",
+    "why": "",
+    "sectors": [
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/australia-receives-first-2-of-13-additional-seahawk-helicopters/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "Royal Australian Navy"
+    ]
+  },
+  {
+    "id": "u-20261120-dutch-defense-industry-plan-targets-40-growth-15-b",
+    "d": "2026-11-20",
+    "title": "Dutch defense-industry plan targets 40% growth, €15 billion revenue by 2030",
+    "body": "PARIS — The Netherlands presented a defense-industrial plan with a target to grow its defense technological and industrial base by 40% by 2030, with local defense industry revenue reaching around €15 billion ($16.5 billion).",
+    "why": "",
+    "sectors": [
+      "mfg"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/20/dutch-defense-industry-plan-targets-40-growth-e15-billion-revenue-by-2030/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261120-4-open-dow-r-d-contract-opportunities-albatross-ua",
+    "d": "2026-11-20",
+    "title": "4 Open DOW R D Contract Opportunities: Albatross UAS, Intrinsic Market Resilience More",
+    "body": "Check out these active Pentagon R D opportunities in technologies like UAS flight controls and intrinsic market resilience.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "GovConWire",
+      "u": "https://www.govconwire.com/articles/darpa-defense-research-development-rd-uas-flexoelectric-albatross",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261120-pentagon-cio-kirsten-davies-named-acting-national-",
+    "d": "2026-11-20",
+    "title": "Pentagon CIO Kirsten Davies Named Acting National Cyber Director",
+    "body": "DOW CIO Kirsten Davies has been selected as acting national cyber director, succeeding Sean Cairncross in the White House cyber role.",
+    "why": "",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "GovConWire",
+      "u": "https://www.govconwire.com/articles/kirsten-davies-named-acting-national-cyber-director",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261120-navy-awards-28-spots-on-7-1b-sewip-contract",
+    "d": "2026-11-20",
+    "title": "Navy Awards 28 Spots on $7.1B SEWIP Contract",
+    "body": "The Navy has awarded 28 companies a potential $7.13 billion contract for Surface Electronic Warfare Improvement Program upgrades.",
+    "why": "",
+    "sectors": [
+      "ew",
+      "sea"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "GovConWire",
+      "u": "https://www.govconwire.com/articles/navy-sewip-fos-idiq-contract-award-28-companies",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "Navy",
+      "Electronic"
+    ]
+  },
+  {
+    "id": "u-20261120-navy-will-likely-fly-ccas-sooner-than-f-a-xx-white",
+    "d": "2026-11-20",
+    "title": "Navy will likely fly CCAs sooner than F/A-XX, White House nom says",
+    "body": "The Navy wants to fly its own collaborative combat aircraft as soon as it can, with existing aircraft—instead of waiting for its next-generation fighter to be delivered, the White House pick for Navy undersecretary told lawmakers Thursday.",
+    "why": "",
+    "sectors": [
+      "air",
+      "sea",
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/defense-systems/2026/11/navy-will-likely-fly-ccas-sooner-f-xx-white-house-nom-says/417365/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261120-white-house-fires-cyber-director-in-wake-of-outage",
+    "d": "2026-11-20",
+    "title": "White House fires cyber director in wake of outages, sources say",
+    "body": "White House National Cyber Director Sean Cairncross has been fired, according to a White House official and two people familiar with the matter, creating another leadership opening in the Trump administration’s cybersecurity team.",
+    "why": "",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/policy/2026/11/pentagon-cio-replaces-white-house-cyber-director-sean-cairncross-major-shakeup/417359/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "Cyber"
+    ]
+  },
+  {
+    "id": "u-20261120-bae-taps-leonardo-drs-for-next-gen-thaad-seeker-se",
+    "d": "2026-11-20",
+    "title": "BAE taps Leonardo DRS for next-gen THAAD seeker sensor",
+    "body": "Leonardo DRS will develop a next-generation infrared sensor for the THAAD missile defense interceptor under a contract from BAE Systems, the company said in a release on Thursday.",
+    "why": "Leonardo DRS just put THAAD in play. Treat the announcement as intent until a contract or an appropriation follows.",
+    "sectors": [
+      "missiledef",
+      "sensing",
+      "strike",
+      "primes"
+    ],
+    "type": "",
+    "companies": [
+      "Leonardo DRS",
+      "BAE Systems"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/bae-taps-leonardo-drs-for-next-gen-thaad-seeker-sensor/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "Leonardo DRS",
+      "BAE Systems"
+    ]
+  },
+  {
+    "id": "u-20261120-louisiana-air-guard-swaps-airstrike-unit-for-cyber",
+    "d": "2026-11-20",
+    "title": "Louisiana Air Guard swaps airstrike unit for cyber squadron",
+    "body": "The Louisiana Air National Guard has turned its 122d Air Support Operations Squadron, a unit that called in airstrikes for ground troops, into a cyber defense squadron, the Louisiana National Guard said this week.",
+    "why": "",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/louisiana-air-guard-swaps-airstrike-unit-for-cyber-squadron/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "Louisiana Air Guard",
+      "Louisiana National Guard"
+    ]
+  },
+  {
+    "id": "u-20261120-u-s-army-tests-saronic-drone-boats-to-guard-ammo-p",
+    "d": "2026-11-20",
+    "title": "U.S. Army tests Saronic drone boats to guard ammo ports",
+    "body": "The U.S. Army has tested Saronic’s Corsair uncrewed surface vessel (USV) as robotic patrol craft at its two main ammunition shipping ports, after the terminals asked for help with staff shortages and patrol boats that kept breaking down, the service said this…",
+    "why": "",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "",
+    "companies": [
+      "Saronic"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-tests-saronic-drone-boats-to-guard-ammo-ports/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261120-bae-opens-uk-s-first-fully-automated-artillery-she",
+    "d": "2026-11-20",
+    "title": "BAE opens UK’s first fully automated artillery shell plant",
+    "body": "BAE Systems has opened a new explosive filling plant at Glascoed in South Wales that it says will raise its capacity to make 155mm artillery shells sixteen-fold, the company said in a release on Friday.",
+    "why": "",
+    "sectors": [
+      "strike",
+      "global",
+      "primes"
+    ],
+    "type": "",
+    "companies": [
+      "BAE Systems"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/bae-opens-uks-first-fully-automated-artillery-shell-plant/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "BAE Systems"
+    ]
+  },
+  {
     "id": "u-20261119-cyclokinetics-wins-86-3-million-pentagon-contract-",
     "d": "2026-11-19",
     "title": "Cyclokinetics wins $86.3 million Pentagon contract for alternative fuels",
@@ -1173,6 +1421,143 @@
     "orgs": [
       "GAO",
       "Space Force"
+    ]
+  },
+  {
+    "id": "u-20261119-regent-squire-wing-in-ground-effect-drone-to-patro",
+    "d": "2026-11-19",
+    "title": "Regent Squire Wing-In-Ground Effect Drone To Patrol Middle East Waters",
+    "body": "Regent has reached a deal to sell an unspecified number of its autonomous Squire Seagliders to a U.S. government customer, Regent CEO Billy Thalheimer announced on X .",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/regent-squire-wing-in-ground-effect-drone-to-patrol-middle-east-waters",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "Regent"
+    ]
+  },
+  {
+    "id": "u-20261119-dow-ig-flags-fraud-audit-and-industrial-base-risks",
+    "d": "2026-11-19",
+    "title": "DOW IG Flags Fraud, Audit and Industrial Base Risks in FY 2027 Challenges Report",
+    "body": "The watchdog has flagged munitions shortfalls, open cyber recommendations and audit gaps as DOW seeks $1.5 trillion for FY 2027.",
+    "why": "",
+    "sectors": [
+      "mfg",
+      "strike",
+      "cyber"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/dow-ig-fy-2027-top-management-performance-challenges",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "DOW"
+    ]
+  },
+  {
+    "id": "u-20261119-osc-issues-rfi-for-space-policy-advisory-research-",
+    "d": "2026-11-19",
+    "title": "OSC Issues RFI for Space Policy Advisory Research Services",
+    "body": "NOAA’s Office of Space Commerce has issued an RFI on a planned BPA for space policy research, data, consultation and advisory support.",
+    "why": "",
+    "sectors": [
+      "space"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/noaa-rfi-space-commerce-office-space-policy-advisory",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "OSC",
+      "Space Policy Advisory Research Services",
+      "NOAA",
+      "Office of Space Commerce"
+    ]
+  },
+  {
+    "id": "u-20261119-house-republicans-introduce-four-bills-for-dhs-cis",
+    "d": "2026-11-19",
+    "title": "House Republicans Introduce Four Bills for DHS, CISA to Address AI Cyberthreats",
+    "body": "The four House bills would give CISA the tools to investigate cyber incidents, oversee AI agents and recruit AI specialists.",
+    "why": "",
+    "sectors": [
+      "ai",
+      "cyber"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/house-republicans-bills-ai-cyberthreats-cisa-dhs",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "House",
+      "DHS",
+      "CISA"
+    ]
+  },
+  {
+    "id": "u-20261119-fbi-leads-federal-team-protecting-quantum-research",
+    "d": "2026-11-19",
+    "title": "FBI Leads Federal Team Protecting Quantum Research From Foreign Threats",
+    "body": "An FBI-led team is partnering with agencies and companies to defend quantum research from spying and hacking, an FBI official said.",
+    "why": "",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/fbi-quantum-counterintelligence-protection-team-quantum-research",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "FBI",
+      "Federal Team Protecting"
+    ]
+  },
+  {
+    "id": "u-20261119-army-s-commercial-range-access-effort-draws-more-t",
+    "d": "2026-11-19",
+    "title": "Army’s Commercial Range Access Effort Draws More Than 120 Companies",
+    "body": "Participating companies are testing drones, counter-drone tools, missile interceptors and long-range strike technologies, among others.",
+    "why": "",
+    "sectors": [
+      "cuas",
+      "strike",
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/army-commercial-range-access-effort-draws-more-than-120-companies",
+      "q": "news"
+    },
+    "addedAt": "2026-11-20T14:10:35.598Z",
+    "orgs": [
+      "Army"
     ]
   },
   {

@@ -1,22 +1,17 @@
 {
-  "updatedAt": "2026-11-19T21:56:29.701Z",
+  "updatedAt": "2026-11-20T14:10:35.598Z",
   "feeds": {
-    "DefenseScoop": {
-      "url": "https://defensescoop.com/feed/",
-      "runs": [
-        {
-          "date": "2026-11-19",
-          "fetched": 10,
-          "inWindow": 7,
-          "added": 1,
-          "duplicates": 5,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
     "Breaking Defense": {
       "url": "https://breakingdefense.com/feed/",
       "runs": [
+        {
+          "date": "2026-11-20",
+          "fetched": 15,
+          "inWindow": 15,
+          "added": 1,
+          "duplicates": 9,
+          "newest": "2026-11-20"
+        },
         {
           "date": "2026-11-19",
           "fetched": 15,
@@ -27,106 +22,23 @@
         }
       ]
     },
-    "SpaceNews": {
-      "url": "https://spacenews.com/feed/",
+    "DefenseScoop": {
+      "url": "https://defensescoop.com/feed/",
       "runs": [
         {
-          "date": "2026-11-19",
-          "fetched": 16,
-          "inWindow": 8,
-          "added": 2,
-          "duplicates": 6,
+          "date": "2026-11-20",
+          "fetched": 10,
+          "inWindow": 7,
+          "added": 0,
+          "duplicates": 5,
           "newest": "2026-11-19"
-        }
-      ]
-    },
-    "Defense News": {
-      "url": "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml",
-      "runs": [
+        },
         {
           "date": "2026-11-19",
           "fetched": 10,
-          "inWindow": 10,
-          "added": 5,
-          "duplicates": 3,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
-    "Air & Space Forces": {
-      "url": "https://www.airandspaceforces.com/feed/",
-      "runs": [
-        {
-          "date": "2026-11-19",
-          "fetched": 9,
-          "inWindow": 9,
+          "inWindow": 7,
           "added": 1,
-          "duplicates": 4,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
-    "U.S. Department of War": {
-      "url": "https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945&max=10",
-      "runs": [
-        {
-          "date": "2026-11-19",
-          "fetched": 10,
-          "inWindow": 10,
-          "added": 2,
-          "duplicates": 3,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
-    "USNI News": {
-      "url": "https://news.usni.org/feed",
-      "runs": [
-        {
-          "date": "2026-11-19",
-          "fetched": 30,
-          "inWindow": 15,
-          "added": 4,
-          "duplicates": 10,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
-    "Defense One": {
-      "url": "https://www.defenseone.com/rss/all/",
-      "runs": [
-        {
-          "date": "2026-11-19",
-          "fetched": 22,
-          "inWindow": 12,
-          "added": 1,
-          "duplicates": 7,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
-    "ExecutiveGov": {
-      "url": "https://www.executivegov.com/feed/",
-      "runs": [
-        {
-          "date": "2026-11-19",
-          "fetched": 10,
-          "inWindow": 10,
-          "added": 1,
-          "duplicates": 6,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
-    "GovConWire": {
-      "url": "https://feeds.feedburner.com/govconwire",
-      "runs": [
-        {
-          "date": "2026-11-19",
-          "fetched": 10,
-          "inWindow": 10,
-          "added": 6,
-          "duplicates": 0,
+          "duplicates": 5,
           "newest": "2026-11-19"
         }
       ]
@@ -134,6 +46,14 @@
     "The War Zone": {
       "url": "https://www.twz.com/feed",
       "runs": [
+        {
+          "date": "2026-11-20",
+          "fetched": 40,
+          "inWindow": 17,
+          "added": 1,
+          "duplicates": 14,
+          "newest": "2026-11-20"
+        },
         {
           "date": "2026-11-19",
           "fetched": 41,
@@ -144,9 +64,185 @@
         }
       ]
     },
+    "USNI News": {
+      "url": "https://news.usni.org/feed",
+      "runs": [
+        {
+          "date": "2026-11-20",
+          "fetched": 30,
+          "inWindow": 11,
+          "added": 0,
+          "duplicates": 11,
+          "newest": "2026-11-19"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 30,
+          "inWindow": 15,
+          "added": 4,
+          "duplicates": 10,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
+    "SpaceNews": {
+      "url": "https://spacenews.com/feed/",
+      "runs": [
+        {
+          "date": "2026-11-20",
+          "fetched": 16,
+          "inWindow": 7,
+          "added": 0,
+          "duplicates": 7,
+          "newest": "2026-11-19"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 16,
+          "inWindow": 8,
+          "added": 2,
+          "duplicates": 6,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
+    "Air & Space Forces": {
+      "url": "https://www.airandspaceforces.com/feed/",
+      "runs": [
+        {
+          "date": "2026-11-20",
+          "fetched": 9,
+          "inWindow": 9,
+          "added": 0,
+          "duplicates": 5,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 9,
+          "inWindow": 9,
+          "added": 1,
+          "duplicates": 4,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
+    "Defense News": {
+      "url": "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml",
+      "runs": [
+        {
+          "date": "2026-11-20",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 1,
+          "duplicates": 7,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 5,
+          "duplicates": 3,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
+    "Defense One": {
+      "url": "https://www.defenseone.com/rss/all/",
+      "runs": [
+        {
+          "date": "2026-11-20",
+          "fetched": 23,
+          "inWindow": 13,
+          "added": 2,
+          "duplicates": 7,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 22,
+          "inWindow": 12,
+          "added": 1,
+          "duplicates": 7,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
+    "GovConWire": {
+      "url": "https://feeds.feedburner.com/govconwire",
+      "runs": [
+        {
+          "date": "2026-11-20",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 3,
+          "duplicates": 2,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 6,
+          "duplicates": 0,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
+    "ExecutiveGov": {
+      "url": "https://www.executivegov.com/feed/",
+      "runs": [
+        {
+          "date": "2026-11-20",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 5,
+          "duplicates": 2,
+          "newest": "2026-11-19"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 1,
+          "duplicates": 6,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
+    "U.S. Department of War": {
+      "url": "https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945&max=10",
+      "runs": [
+        {
+          "date": "2026-11-20",
+          "fetched": 10,
+          "inWindow": 9,
+          "added": 0,
+          "duplicates": 3,
+          "newest": "2026-11-19"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 2,
+          "duplicates": 3,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
     "Defence Blog": {
       "url": "https://defence-blog.com/feed/",
       "runs": [
+        {
+          "date": "2026-11-20",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 4,
+          "duplicates": 6,
+          "newest": "2026-11-20"
+        },
         {
           "date": "2026-11-19",
           "fetched": 10,
