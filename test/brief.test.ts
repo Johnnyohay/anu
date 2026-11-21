@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { briefTitle, classify, storyWhy } from "../src/classify.ts";
+import { briefSummary, isListicle, pickTop, sameEvent, storyScore } from "../src/brief.ts";
 import { summaryFromFields } from "../src/rss.ts";
 import { extraCompany, junkMention, matchCompanies, resolveName } from "../src/names.ts";
 import { updateFeedHealth, type FeedHealth, type FeedObservation } from "../src/feed-health.ts";
@@ -80,10 +81,11 @@ describe("types and why lines", () => {
     assert.equal(c.type, "Contract");
     assert.notEqual(c.type, "M&A & IPO");
     assert.ok(!c.sectors.some((s) => s.id === "capital"));
-    const line = why(c.sectors[0] ? "Tiny Albania gets green light to buy two HIMARS launchers" : "", "The U.S. State Department approved a $210 million sale of two M142 HIMARS launchers and their guided rockets.");
+    const line = why("Tiny Albania gets green light to buy two HIMARS launchers", "The U.S. State Department approved a $210 million sale of two M142 HIMARS launchers and their guided rockets.");
     assert.match(line, /HIMARS/);
-    assert.match(line, /not a merger/);
+    assert.match(line, /\$210 million/);
     assert.doesNotMatch(line, /investors put money/i);
+    assert.doesNotMatch(line, /just put|count it as demand|treat the announcement as intent/i);
   });
 
   it("does not type a NATO software story as a conflict, and does not default the rest to a tech milestone", () => {
@@ -119,8 +121,9 @@ describe("types and why lines", () => {
       ["Lockheed Martin"],
     );
     assert.match(laser, /Valkyrie/);
-    assert.match(laser, /field/);
+    assert.match(laser, /cruise-missile|destroyed/i);
     assert.notEqual(laser, GENERIC_STRIKE);
+    assert.doesNotMatch(laser, /count it as demand|just put .+ in play/i);
   });
 
   it("says what the Navy hearing is about, not that the Navy wants unmanned boats", () => {
@@ -132,20 +135,114 @@ describe("types and why lines", () => {
     assert.notEqual(line, GENERIC_SEA);
   });
 
-  it("omits the line when the sector match is only a passing mention in the body", () => {
+  it("still writes a line when the sector match is only a passing mention", () => {
     const title = "Office picnic scheduled for Friday";
     const body = "A colleague mentioned the satellite photo in the newsletter.";
     const c = classify(title, body);
     assert.equal(c.sectors[0]?.id, "space");
     assert.ok(c.sectors[0].titleScore < 4);
-    assert.equal(storyWhy(title, body, c.sectors[0], c.type, []), "");
-    assert.notEqual(storyWhy(title, body, c.sectors[0], c.type, []), GENERIC_SPACE);
+    const line = storyWhy(title, body, c.sectors[0], c.type, []);
+    assert.ok(line.length > 0);
+    assert.notEqual(line, GENERIC_SPACE);
+    assert.match(line, /satellite photo|picnic/i);
   });
 
   it("does not use the old ground-robot line on the Morocco missile", () => {
     const line = why("Chinese anti-tank missile spotted in Morocco", "Officer cadets fired a Chinese HJ-9A anti-tank missile from a Humvee.");
     assert.notEqual(line, GENERIC_GROUND);
     assert.match(line, /anti-tank/i);
+  });
+});
+
+const STOCK = /just put .+ in play|count it as demand|treat the announcement as intent|treat it as intent until|in front of a buyer/i;
+
+describe("published brief stories", () => {
+  const stories: [string, string, string[]][] = [
+    ["Lockheed gets $72.6M to speed up delayed F-35 Block 4 upgrade", "The U.S. Navy has added $72.6 million in scope to a Lockheed Martin F-35 development contract to accelerate the development of F-35 Lightning II Block 4 capabilities.", ["Lockheed Martin"]],
+    ["Under $200,000 per missile: U.S. Army’s target for Stinger successor", "The U.S. Army is looking for a third contender to replace the Stinger missile. On Nov. 20, it asked industry for a ready-made alternate interceptor under its Next Generation Short Range Interceptor program, with a live-fire shootout planned for mid-2027.", []],
+    ["Hegseth memo limits U.S.-Canada defense ties, report says", "Secretary of War Pete Hegseth has ordered new limits on how the U.S. military works with Canada, in a classified memo circulated last week.", []],
+    ["Europeans, with Ukraine’s help, brace for more Russian attacks", "IZMIR, Turkey— Vladimir Putin would love to end the war, but European NATO members and Ukrainians are working to make sure Russia’s invasion of Ukraine doesn’t end on Moscow’s terms.", []],
+    ["Putin’s National Guard division near Moscow gets heavy armor", "Russia’s National Guard, a force that answers directly to Vladimir Putin, has handed tanks to its best-known division outside Moscow.", []],
+    ["BAE taps Leonardo DRS for next-gen THAAD seeker sensor", "Leonardo DRS will develop a next-generation infrared sensor for the THAAD missile defense interceptor under a contract from BAE Systems, the company said in a release on Thursday.", ["Leonardo DRS"]],
+    ["Navy Awards 28 Spots on $7.1B SEWIP Contract", "The Navy has awarded 28 companies a potential $7.13 billion contract for Surface Electronic Warfare Improvement Program upgrades.", []],
+    ["BAE opens UK’s first fully automated artillery shell plant", "BAE Systems has opened a new explosive filling plant at Glascoed that it says will raise its capacity to make 155mm artillery shells sixteen-fold.", ["BAE Systems"]],
+    ["Louisiana Air Guard swaps airstrike unit for cyber squadron", "The Louisiana Air National Guard has turned its 122d Air Support Operations Squadron, a unit that called in airstrikes for ground troops, into a cyber defense squadron.", []],
+  ];
+
+  it("gives every one of those stories a non-empty line that is not a canned closer", () => {
+    for (const [title, body, companies] of stories) {
+      const c = classify(title, body);
+      const line = storyWhy(title, body, c.sectors[0], c.type, companies);
+      assert.ok(line.trim().length > 20, title);
+      assert.doesNotMatch(line, STOCK, title);
+      assert.doesNotMatch(line, /how the U\.$/);
+    }
+  });
+
+  it("keeps the dollar amount and the program in the lines that have them", () => {
+    const lockheed = why(stories[0][0], stories[0][1], stories[0][2]);
+    assert.match(lockheed, /\$72\.6 million/);
+    assert.match(lockheed, /F-35 Block 4/);
+    assert.match(lockheed, /Navy/);
+    const stinger = why(stories[1][0], stories[1][1]);
+    assert.match(stinger, /under \$200,000/);
+    assert.match(stinger, /Stinger/);
+    assert.match(stinger, /mid-2027/);
+    const sewip = why(stories[6][0], stories[6][1]);
+    assert.match(sewip, /\$7\.13 billion/);
+    assert.match(sewip, /28 companies/);
+    assert.match(sewip, /SEWIP/);
+    const hegseth = why(stories[2][0], stories[2][1]);
+    assert.match(hegseth, /Canada/);
+    assert.doesNotMatch(hegseth, /how the U\.$/);
+  });
+});
+
+describe("ranking and the summary line", () => {
+  it("ranks a contract roundup below a real award so it stays out of the top five", () => {
+    const promo = {
+      title: "4 Open DOW R D Contract Opportunities: Albatross UAS, Intrinsic Market Resilience More",
+      body: "Check out these active Pentagon R D opportunities in technologies like UAS flight controls.",
+      sectors: ["air"],
+      d: "2026-11-20",
+    };
+    const real = [
+      ["Navy Awards 28 Spots on $7.1B SEWIP Contract", "The Navy awarded 28 companies a $7.13 billion SEWIP contract.", "ew"],
+      ["BAE opens UK’s first fully automated artillery shell plant", "BAE opened a 155mm shell plant.", "strike"],
+      ["Hegseth memo limits U.S.-Canada defense ties", "Hegseth ordered limits on Canada.", "policy"],
+      ["Putin’s National Guard division near Moscow gets heavy armor", "The National Guard got tanks.", "adversary"],
+      ["Europeans brace for more Russian attacks", "NATO members are preparing for more attacks.", "global"],
+    ] as const;
+    const items = [
+      { ...promo, score: storyScore({ type: "Contract", title: promo.title, body: promo.body, titleScore: 6 }) },
+      ...real.map(([title, body, sector]) => ({ title, body, sectors: [sector], d: "2026-11-20", score: storyScore({ type: "Contract", title, body, titleScore: 6, companies: ["BAE Systems"] }) })),
+    ];
+    assert.ok(isListicle(promo.title, promo.body));
+    assert.ok(items[0].score < items[1].score);
+    const top = pickTop(items);
+    assert.equal(top.length, 5);
+    assert.ok(!top.some((s) => isListicle(s.title)));
+  });
+
+  it("lets one Senate appropriations bill take a single slot", () => {
+    const items = [
+      { title: "Senate Appropriators Cut $20B from Navy Shipbuilding Request", body: "Lawmakers cut the shipbuilding request.", sectors: ["sea"], score: 9, d: "2026-11-18" },
+      { title: "A $1.1 trillion Pentagon budget plan sets up a fight on Capitol Hill", body: "Senate appropriators are prioritizing Golden Dome, drones and munitions.", sectors: ["policy"], score: 8, d: "2026-11-18" },
+      { title: "Appropriators slash Trump’s $17B Golden Dome request in draft bill", body: "The committee cut the missile defense request.", sectors: ["missiledef"], score: 8, d: "2026-11-19" },
+      { title: "Ukraine plans to double drone supplies, triple deep strikes", body: "Ukraine is expanding long-range strike with European partners.", sectors: ["air"], score: 6, d: "2026-11-19" },
+    ];
+    assert.ok(sameEvent(items[0], items[1]));
+    assert.ok(sameEvent(items[0], items[2]));
+    const top = pickTop(items);
+    assert.equal(top.filter((s) => /appropriat/i.test(`${s.title} ${s.body}`)).length, 1);
+    assert.ok(top.some((s) => /drone/i.test(s.title)));
+  });
+
+  it("names the top stories without a doubled colon", () => {
+    const line = briefSummary(13, ["adversary", "adversary", "cyber"], ["air", "air", "strike"]);
+    assert.equal(line, "13 new stories. Most came from China, Russia and Iran and cyber; the top five are mostly about drones and missiles and munitions.");
+    assert.doesNotMatch(line, /areas:/);
+    assert.doesNotMatch(line, /adversaries:/i);
   });
 });
 

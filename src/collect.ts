@@ -15,6 +15,7 @@ import { loadDesk, saveDaily, slug } from "./store.ts";
 import { buildApi } from "./build-api.ts";
 import { tagCompanies } from "./companies.ts";
 import { briefTitle, classify, storyWhy } from "./classify.ts";
+import { briefSummary, pickTop, storyScore } from "./brief.ts";
 import { flaggedFeeds, updateFeedHealth, type FeedHealth, type FeedObservation } from "./feed-health.ts";
 import { matchCompanies } from "./names.ts";
 import type { Brief, Update } from "./schema.ts";
@@ -36,10 +37,6 @@ const FEEDS: { name: string; url: string; tier: Tier }[] = [
 ];
 
 const NOISE = /\b(names?|appoints?|appointed|hires|joins as|promoted|to lead|steps down|retires|VP|vice president|chief (executive|operating|financial|technology) officer|admiral|one-star|two-star|webinar|podcast|week in review|newsletter|photos?:)\b/i;
-
-const TYPE_WEIGHT: Record<string, number> = {
-  Contract: 3, Funding: 3, "Policy & budget": 3, "M&A & IPO": 3, Earnings: 2, "Tech milestone": 2, "Conflict & allies": 2, Research: 1,
-};
 
 const HEALTH_PATH = "data/feed-health.json";
 
@@ -118,7 +115,10 @@ for (let i = 0; i < fresh.length; i++) {
   const u = fresh[i];
   const again = classify(u.title, u.body);
   u.why = storyWhy(u.title, u.body, again.sectors[0], u.type, u.companies);
-  added[i].score = (TYPE_WEIGHT[u.type] ?? 1) + u.companies.length * 2 + (again.sectors[0]?.titleScore >= 4 ? 2 : 0) + (/\$\d/.test(u.title) ? 2 : 0) + (added[i].src?.q === "primary" ? 1 : 0);
+  added[i].score = storyScore({
+    type: u.type, companies: u.companies, title: u.title, body: u.body,
+    titleScore: again.sectors[0]?.titleScore ?? 0, primary: added[i].src?.q === "primary",
+  });
   added[i].why = u.why;
   added[i].companies = u.companies;
 }
@@ -142,26 +142,15 @@ for (const row of counts.values()) {
 // Free brief: only when nothing (e.g. a Claude-written brief) exists for today yet.
 let brief: Brief | null = null;
 if (!desk.briefs.some((b) => b.date === today) && added.length) {
-  const picked: typeof added = [];
-  const usedSectors = new Set<string>();
-  for (const u of [...added].sort((a, b) => b.score - a.score || b.d.localeCompare(a.d))) {
-    const lead = u.sectors[0];
-    if (usedSectors.has(lead) && picked.length < added.length - 1) continue; // spread across sectors
-    picked.push(u);
-    usedSectors.add(lead);
-    if (picked.length === 5) break;
-  }
+  const picked = pickTop(added);
   const sectorName = (id: string) => desk.sectors.find((s) => s.id === id)?.name ?? id;
-  const sectorCounts = new Map<string, number>();
-  added.forEach((u) => u.sectors.forEach((s) => sectorCounts.set(s, (sectorCounts.get(s) ?? 0) + 1)));
-  const busiest = [...sectorCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 2).map(([s]) => sectorName(s).toLowerCase());
   const next = desk.catalysts.filter((c) => c.d >= today).sort((a, b) => a.d.localeCompare(b.d))[0];
   const idea = desk.ideas.length ? desk.ideas[Math.floor(Date.parse(today) / 864e5) % desk.ideas.length] : null;
   const lead = picked[0];
   brief = {
     date: today,
     title: briefTitle(lead.title, lead.body),
-    big: `${added.length} new stories since the last brief. The busiest areas: ${busiest.join(" and ")}.`,
+    big: briefSummary(added.length, added.map((u) => u.sectors[0]), picked.map((u) => u.sectors[0])),
     stories: picked.map((u) => ({ tag: sectorName(u.sectors[0]), h: u.title, what: u.body, you: u.why, ref: u.id })),
     watch: next ? { h: next.title, why: `${next.approx ? "Around " : ""}${new Date(next.d + "T12:00:00Z").toLocaleDateString("en-US", { month: "long", day: "numeric", timeZone: "UTC" })}. ${next.why}` } : { h: "Nothing scheduled", why: "" },
     idea: idea ? { h: String(idea.t), why: `${idea.what} ${idea.why}` } : { h: "", why: "" },
