@@ -142,7 +142,7 @@ const PROGRAMS = [
   "Space Force", "Golden Dome", "rocket artillery", "cruise missile", "high-energy laser",
   "HIMARS", "PULS", "F-35", "F-47", "B-21", "Valkyrie", "Patriot", "THAAD", "Iron Dome",
   "Tomahawk", "JASSM", "LRASM", "Starshield", "Stryker", "Minuteman", "Drone Dominance",
-  "counter-drone", "Replicator", "anti-tank missile",
+  "counter-drone", "Replicator", "anti-tank missile", "Block 4", "Stinger", "SEWIP", "155mm",
 ];
 
 const ACTORS = ["Senate", "Congress", "Pentagon", "White House", "NATO", "Army", "Navy", "Air Force", "Space Force", "Marines", "Hegseth"];
@@ -167,78 +167,130 @@ function findActor(title: string): string | undefined {
   return out.join(" ") || undefined;
 }
 
-function findProgram(title: string): string | undefined {
-  return PROGRAMS
-    .map((p) => ({ p, at: title.toLowerCase().indexOf(p.toLowerCase()) }))
-    .filter((h) => h.at >= 0)
-    .sort((a, b) => a.at - b.at || b.p.length - a.p.length)[0]?.p;
+function findMoney(text: string): string | undefined {
+  const spelled = /\$\s?(\d+(?:\.\d+)?)\s?(billion|million)\b/i.exec(text);
+  if (spelled) return `$${spelled[1]} ${spelled[2].toLowerCase()}`;
+  const under = /\bunder\s+\$\s?(\d{1,3}(?:,\d{3})+|\d+(?:\.\d+)?)/i.exec(text);
+  if (under) return `under $${under[1]}`;
+  const short = /\$\s?(\d+(?:\.\d+)?)\s?(bn|m|b)\b/i.exec(text);
+  if (short) return `$${short[1]} ${/^b/i.test(short[2]) ? "billion" : "million"}`;
+  const commas = /\$\s?(\d{1,3}(?:,\d{3})+)/.exec(text);
+  if (commas) return `$${commas[1]}`;
+  return undefined;
 }
 
-function moneyOf(text: string): string | undefined {
-  const m = /\$\s?(\d+(?:\.\d+)?)\s?(billion|million|bn|m)\b/i.exec(text);
+function programsIn(text: string): string[] {
+  const lower = text.toLowerCase();
+  return PROGRAMS.filter((p) => lower.includes(p.toLowerCase()))
+    .sort((a, b) => lower.indexOf(a.toLowerCase()) - lower.indexOf(b.toLowerCase()) || b.length - a.length);
+}
+
+function programName(text: string): string | undefined {
+  const found = programsIn(text);
+  if (found.includes("F-35") && found.includes("Block 4")) return "F-35 Block 4";
+  return found[0];
+}
+
+const SERVICES = ["U.S. Navy", "U.S. Army", "Air Force", "Space Force", "Navy", "Army", "Senate", "Congress", "Pentagon", "Hegseth"];
+
+function serviceOf(text: string): string | undefined {
+  return SERVICES.find((s) => new RegExp(`\\b${s.replace(".", "\\.")}\\b`, "i").test(text));
+}
+
+function sentencesOf(text: string): string[] {
+  const cleaned = text
+    .replace(/^[A-Z][A-Za-z .]+,\s+[A-Z][a-z]+\s*[—–-]\s*/, "")
+    .replace(/,?\s*the company said\b[^.]*/gi, "")
+    .replace(/,?\s*according to\b[^.]*/gi, "")
+    .replace(/,?\s*officials familiar\b[^.]*/gi, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  return cleaned
+    .replace(/\b(U\.S|Nov|Mr|Mrs|Dr|Gen|Lt|Col|St)\./g, "$1\u0000")
+    .split(/(?<=[.!?])\s+/)
+    .map((s) => s.replace(/\u0000/g, ".").trim())
+    .filter((s) => s.length > 30);
+}
+
+function named(s?: string): string | undefined {
+  if (!s) return;
+  if (/^(Hegseth|Senate|Congress|Pentagon)$/i.test(s)) return s;
+  if (/^The\b/i.test(s)) return s;
+  if (/^(U\.S\. )?(Navy|Army|Air Force|Space Force)$/i.test(s)) return `The ${s}`;
+  return s;
+}
+
+function purposeOf(text: string): string | undefined {
+  const m = text.match(/\bto (accelerate|speed up|replace|develop|upgrade)([^.”"]{6,100})/i);
   if (!m) return;
-  const unit = /^b/i.test(m[2]) ? "billion" : "million";
-  return `$${m[1]} ${unit}`;
+  return `to ${m[1].toLowerCase()}${m[2]}`.replace(/\s+/g, " ").replace(/[,;]\s*$/, "").trim();
+}
+
+function clip(s: string, max = 220): string {
+  let t = s.replace(/\s+/g, " ").trim();
+  if (t.length <= max) return /[.!?]$/.test(t) ? t : `${t}.`;
+  const cut = t.slice(0, max);
+  const end = Math.max(cut.lastIndexOf(", "), cut.lastIndexOf("; "), cut.lastIndexOf(". "));
+  t = (end > 60 ? cut.slice(0, end) : cut.replace(/\s+\S*$/, "")).replace(/[,;:]\s*$/, "").trim();
+  return /[.!?]$/.test(t) ? t : `${t}.`;
 }
 
 /**
- * One sentence a deployment strategist would actually say about this story.
- * Empty when the lead sector is only a weak or body-only match, or when the
- * story has no actor, program, or figure to hang a conclusion on.
+ * One sentence drawn from this story's own actor, figure, and program.
+ * A weak sector score used to return "" and a matched template used to append
+ * the same closer to every deal. Both are gone: the line is this story's facts,
+ * and the lede itself is the fallback so the result is never empty.
  */
-export function storyWhy(title: string, body: string, lead: SectorHit | undefined, type: string, companies: string[]): string {
-  if (!lead || lead.titleScore < 4) return "";
-  const blob = `${title}. ${body}`;
-  const money = moneyOf(blob);
+export function storyWhy(title: string, body: string, _lead?: SectorHit, _type?: string, companies: string[] = []): string {
+  const blob = `${title}. ${body}`.replace(/\s+/g, " ").trim();
+  const money = findMoney(blob);
   const pct = /\b(\d{1,3}(?:\.\d+)?)\s*percent\b/i.exec(blob)?.[1];
-  const program = findProgram(title);
-  const who = companies[0] || findActor(title);
-  const up = /rais|bigger|increase|boost|up from|higher/i.test(blob);
+  const program = programName(blob);
+  const company = companies[0];
+  const service = serviceOf(blob);
+  const who = company || service || findActor(title);
+  const purpose = purposeOf(blob);
+  const when = /\bmid-\d{4}\b|\bby (?:early |late )?\d{4}\b/i.exec(blob)?.[0];
+  const firms = /\b(\d{1,3}) companies\b/i.exec(blob)?.[1];
+  const fold = /\b([a-z]+-fold|\d+-fold)\b/i.exec(blob)?.[1];
 
-  if ((type === "Policy & budget" || lead.id === "policy") && (pct || money) && (program || who)) {
-    const subject = program || "this account";
-    const mark = pct && money ? `${pct}% ${up ? "higher" : "revised"}, to ${money}` : pct ? `${pct}% ${up ? "higher" : "revised"}` : money!;
-    return `${who || "Appropriators"} set ${subject} ${mark}. The number that matters is what survives conference, not the request.`;
+  let line = "";
+  const payer = named(service);
+  if (payer && company && money && program && /under/i.test(money) === false && /speed up|accelerat|delay/i.test(blob)) {
+    line = `${payer} is paying ${company} ${money} to pull the delayed ${program} upgrade forward.`;
+  } else if (payer && company && money && program) {
+    line = `${payer} is paying ${company} ${money} for ${program}${purpose ? `, ${purpose}` : ""}.`;
+  } else if (money && /under/i.test(money) && program) {
+    line = `${payer || named(who) || "The buyer"} priced a ${program} replacement at ${money}${/per missile/i.test(blob) ? " per missile" : ""}${when ? `, with a live-fire shootout ${when}` : ""}.`;
+  } else if (pct && program && money) {
+    const from = /\$\s?(\d+(?:\.\d+)?)\s?(billion|million)\b/gi;
+    const amounts = [...blob.matchAll(from)].map((m) => `$${m[1]} ${m[2].toLowerCase()}`);
+    const prior = amounts[1];
+    line = `${payer || named(who) || "Appropriators"} set ${program} ${pct}% higher, at ${amounts[0] || money}${prior ? ` from ${prior}` : ""}.`;
+  } else if (/\b(limits?|restrict\w*|ordered new limits)\b/i.test(blob) && who) {
+    const on = blob
+      .replace(/\b(U\.S|Nov|Mr|St)\./g, "$1\u0000")
+      .match(/\blimits\s+on\s+(.+?)(?:,|\.\s|$)/i)?.[1]
+      ?.replace(/\u0000/g, ".")
+      .trim();
+    line = `${named(who) || who} ordered limits on ${on || "the relationship in this story"}.`;
+  } else if (firms && money) {
+    line = `${payer || named(who) || "The buyer"} put ${firms} companies on a ${money} vehicle${program ? ` for ${program}` : ""}.`;
+  } else if (fold && (company || who)) {
+    line = `${company || who} opened a plant it says will raise ${program || "shell"} output ${fold}.`;
+  } else if (/green light to buy|foreign military sale|state department approved/i.test(blob) && (program || money)) {
+    line = `${service || "The State Department"} approved ${money ? `a ${money} sale` : "a sale"}${program ? ` of ${program}` : ""}${who && who !== service ? ` for ${who}` : ""}.`;
+  } else if (company && program && /laser|destroyed|downs/i.test(blob)) {
+    const target = /cruise missile/i.test(blob) ? "a cruise-missile target" : "a target";
+    line = `${company}'s ${program} ${/destroyed|downs/i.test(blob) ? `destroyed ${target}` : "was demonstrated"}${/first time/i.test(blob) ? " for the first time" : ""}.`;
   }
-  const onTopic = /\b(?:on|over)\s+([^,.]{8,80})/i.exec(title)?.[1]?.trim();
-  if ((type === "Policy & budget" || lead.id === "policy") && who && onTopic) {
-    return `${who} is pressing on ${onTopic}. Until a figure is in the bill, this is oversight, not a budget.`;
+
+  if (!line) {
+    const sents = sentencesOf(body || title);
+    line = sents[1] && /\$|\d{4}|program|contract|shootout|plant|squadron/i.test(sents[1]) ? sents[1] : (sents[0] || title);
   }
-  if (/green light to buy|foreign military sale|cleared to buy/i.test(title) && (program || money)) {
-    return `${who || "The buyer"} got export approval${program ? ` for ${program}` : ""}${money ? ` (${money})` : ""}. This is a government sale, not a merger — watch whether the munitions are in the package.`;
-  }
-  if (type === "Contract" && (money || program) && (who || program)) {
-    const seller = who || program;
-    const what = program && who ? ` for ${program}` : "";
-    return `${seller} ${money ? `books ${money}` : "books a contract"}${what}. Count it as demand, and watch whether the next order is a follow-on or a one-off.`;
-  }
-  if (lead.id === "cuas" && /laser|microwave|directed energy|counter-?drone|interceptor drone/i.test(blob)) {
-    const weapon = program || (/laser/i.test(blob) ? "laser" : "counter-drone system");
-    return `${who ? `${who} showed ${weapon}` : weapon} can make the shot. It counts when a service pays to field it, not when the demo works.`;
-  }
-  if (type === "Funding" && who && money) {
-    return `${who} raised ${money}. The test is whether that money becomes a program of record before the next round.`;
-  }
-  if (type === "M&A & IPO" && who) {
-    return `${who}${money ? ` (${money})` : ""} is consolidation${program ? ` around ${program}` : ""}. Watch what the buyer keeps and what gets sold off.`;
-  }
-  if (lead.id === "strike" && program && !money) {
-    return who
-      ? `${who} showing up with ${program} is a sighting, not an order. Watch who buys the next batch.`
-      : `${program} is a sighting or a test, not an order. Watch who buys the next batch.`;
-  }
-  if (who && program && program.toLowerCase() !== who.toLowerCase()) {
-    return `${who} just put ${program} in play${money ? ` (${money})` : ""}. Treat the announcement as intent until a contract or an appropriation follows.`;
-  }
-  const object = title.match(/\baccess to\s+((?:most |the )?[A-Za-z][^.]{6,70})$/i)?.[1]?.trim();
-  if (who && object && object.toLowerCase() !== who.toLowerCase()) {
-    const thing = object.replace(/^(?:most |advanced |new )+/i, "").trim();
-    return `${who} just put ${thing} in front of a buyer. Treat it as intent until a contract or an appropriation follows.`;
-  }
-  if (program && (money || pct)) {
-    return `${program} at ${money || `${pct}%`} is the tell. Track whether the money is appropriated, not just briefed.`;
-  }
-  return "";
+  const out = clip(line);
+  return out || title.trim() || "This story has no further detail.";
 }
 
 const SMALL = new Set("a an the and but or nor of to for in on by with from at as into over after before than its their his her about amid during while against across per via backs bigger trims says gets wins won new more most will would could should has have had are was were is be been not its".split(" "));
