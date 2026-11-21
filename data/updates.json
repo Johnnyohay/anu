@@ -247,6 +247,53 @@
     "orgs": []
   },
   {
+    "id": "u-20261121-despite-hegseth-memo-canada-hasn-t-seen-changes-to",
+    "d": "2026-11-21",
+    "title": "Despite Hegseth memo, Canada hasn’t seen changes to defense relationship with US, says DefMin",
+    "body": "Chief Pentagon Spokesman Sean Parnell told Breaking Defense the department is “taking steps to ensure its engagements with Canada advance tangible US defense objectives and ultimately support a reinvigorated defense relationship.”",
+    "why": "",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/canada-hasnt-seen-changes-to-defense-relationship-with-us-says-mcguinty/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T20:19:58.340Z",
+    "orgs": [
+      "Pentagon",
+      "Breaking Defense"
+    ]
+  },
+  {
+    "id": "u-20261121-senate-gearing-up-to-investigate-ukraine-s-access-",
+    "d": "2026-11-21",
+    "title": "Senate gearing up to investigate Ukraine’s access to Starshield",
+    "body": "“What the hell is happening? Why is this being done? What are the consequences and the costs? And what does it say about our reliability in the future?” Sen. Chris Coons asked.",
+    "why": "",
+    "sectors": [
+      "space",
+      "policy",
+      "global"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Starshield"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/senate-gearing-up-to-investigate-ukraines-access-to-starshield/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T20:19:58.340Z",
+    "orgs": [
+      "Senate"
+    ]
+  },
+  {
     "id": "u-20261120-australia-receives-first-2-of-13-additional-seahaw",
     "d": "2026-11-20",
     "title": "Australia receives first 2 of 13 additional Seahawk helicopters",
