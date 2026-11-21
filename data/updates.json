@@ -1,5 +1,252 @@
 [
   {
+    "id": "u-20261121-the-military-lacks-an-overarching-plan-to-improve-",
+    "d": "2026-11-21",
+    "title": "The military lacks an ‘overarching plan’ to improve munition stockpiles—partly because it’s no one’s job",
+    "body": "The Defense Department has no “overarching plan” to identify, achieve, or measure its progress toward long-term munition production goals, according to a Government Accountability Office study released on Thursday, which said the military was too reactive to…",
+    "why": "",
+    "sectors": [
+      "strike"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/threats/2026/11/military-lacks-munitions-plan/417390/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T14:11:12.280Z",
+    "orgs": [
+      "Defense Department",
+      "Government Accountability Office"
+    ]
+  },
+  {
+    "id": "u-20261121-europeans-with-ukraine-s-help-brace-for-more-russi",
+    "d": "2026-11-21",
+    "title": "Europeans, with Ukraine’s help, brace for more Russian attacks",
+    "body": "IZMIR, Turkey— Vladimir Putin would “love to end the war,” as Donald Trump asserted on Friday, but European NATO members and Ukrainians are working to make sure Russia’s invasion of Ukraine doesn’t end on Moscow’s terms.",
+    "why": "",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/threats/2026/11/europeans-ukraines-help-brace-more-russian-attacks/417389/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T14:11:12.280Z",
+    "orgs": [
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261121-under-200-000-per-missile-u-s-army-s-target-for-st",
+    "d": "2026-11-21",
+    "title": "Under $200,000 per missile: U.S. Army’s target for Stinger successor",
+    "body": "The U.S. Army is looking for a third contender to replace the Stinger missile. On Nov. 20, it asked industry for a ready-made “alternate interceptor” under its Next Generation Short Range Interceptor program, with a live-fire shootout planned for mid-2027.",
+    "why": "",
+    "sectors": [
+      "strike",
+      "missiledef"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/under-200000-per-missile-u-s-armys-target-for-stinger-successor/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T14:11:12.280Z",
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261121-putin-s-national-guard-division-near-moscow-gets-h",
+    "d": "2026-11-21",
+    "title": "Putin’s National Guard division near Moscow gets heavy armor",
+    "body": "Russia’s National Guard, a force that answers directly to Vladimir Putin, has handed tanks to its best-known division outside Moscow.",
+    "why": "",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/putins-national-guard-division-near-moscow-gets-heavy-armor/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T14:11:12.280Z",
+    "orgs": [
+      "National Guard"
+    ]
+  },
+  {
+    "id": "u-20261121-lockheed-gets-72-6m-to-speed-up-delayed-f-35-block",
+    "d": "2026-11-21",
+    "title": "Lockheed gets $72.6M to speed up delayed F-35 Block 4 upgrade",
+    "body": "The U.S. Navy has added $72.6 million in scope to a Lockheed Martin F-35 development contract to “accelerate the development of F-35 Lightning II Block 4 capabilities,” according to a Department of War contract announcement.",
+    "why": "Lockheed Martin books $72.6 million for F-35. Count it as demand, and watch whether the next order is a follow-on or a one-off.",
+    "sectors": [
+      "air",
+      "primes"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Lockheed Martin"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/lockheed-gets-72-6m-to-speed-up-delayed-f-35-block-4-upgrade/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T14:11:12.280Z",
+    "orgs": [
+      "Lockheed",
+      "U.S. Navy",
+      "Department of War"
+    ]
+  },
+  {
+    "id": "u-20261121-u-s-army-backs-new-way-to-make-long-range-artiller",
+    "d": "2026-11-21",
+    "title": "U.S. Army backs new way to make long-range artillery shell motors",
+    "body": "The U.S. Army has awarded Firehawk Aerospace a $14.5 million contract to mature base bleed propulsion made from thermoplastic propellant, the technology that helps 155 mm artillery shells fly farther, according to a Department of War contract announcement.",
+    "why": "",
+    "sectors": [
+      "strike"
+    ],
+    "type": "",
+    "companies": [
+      "Firehawk Aerospace"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-backs-new-way-to-make-long-range-artillery-shell-motors/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T14:11:12.280Z",
+    "orgs": [
+      "U.S. Army",
+      "Firehawk Aerospace",
+      "Department of War"
+    ]
+  },
+  {
+    "id": "u-20261121-ukraine-s-drone-links-ran-on-a-best-effort-subscri",
+    "d": "2026-11-21",
+    "title": "Ukraine’s drone links ran on a ‘best effort’ subscription",
+    "body": "The federal contract line paying for Ukraine’s SpaceX satellite terminals has a plain title: “Best Effort Subscription Terminals – Ukraine.” An X account tracking the dispute says those five words explain why no one in Washington would take ownership when the…",
+    "why": "",
+    "sectors": [
+      "air",
+      "space",
+      "global"
+    ],
+    "type": "",
+    "companies": [
+      "SpaceX",
+      "Best Effort Subscription"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/ukraines-drone-links-ran-on-a-best-effort-subscription/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T14:11:12.280Z",
+    "orgs": [
+      "SpaceX",
+      "Best Effort Subscription"
+    ]
+  },
+  {
+    "id": "u-20261121-russia-says-drones-hit-kaliningrad-bound-ship-in-g",
+    "d": "2026-11-21",
+    "title": "Russia says drones hit Kaliningrad-bound ship in Gulf of Finland",
+    "body": "A Russian cargo ship bound for Kaliningrad caught fire in the Gulf of Finland on Saturday morning, and a Russian regional governor said it had been hit by two drones.",
+    "why": "",
+    "sectors": [
+      "air",
+      "sea",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-says-drones-hit-kaliningrad-bound-ship-in-gulf-of-finland/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T14:11:12.280Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261121-hegseth-memo-limits-u-s-canada-defense-ties-report",
+    "d": "2026-11-21",
+    "title": "Hegseth memo limits U.S.-Canada defense ties, report says",
+    "body": "Secretary of War Pete Hegseth has ordered new limits on how the U.S. military works with Canada, in a classified memo circulated last week, officials familiar with the directive said, according to a report published Friday.",
+    "why": "",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/hegseth-memo-limits-u-s-canada-defense-ties-report-says/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T14:11:12.280Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261121-france-confirms-it-is-working-with-ukraine-on-samp",
+    "d": "2026-11-21",
+    "title": "France confirms it is working with Ukraine on SAMP/T NG",
+    "body": "France is working directly with Ukraine on the SAMP/T NG, the newest version of the French-Italian air defense system, a senior French defense official said, describing it as one of only two Western systems able to stop Russia’s ballistic missiles.",
+    "why": "",
+    "sectors": [
+      "missiledef",
+      "strike",
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/france-confirms-it-is-working-with-ukraine-on-samp-t-ng/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T14:11:12.280Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261121-chinese-bomber-s-turn-near-manila-sparks-missile-s",
+    "d": "2026-11-21",
+    "title": "Chinese bomber’s turn near Manila sparks missile speculation",
+    "body": "A Chinese H-6 bomber briefly showed up on a public flight-tracking map over the South China Sea, flying a loop between Scarborough Shoal and the Philippine capital, Manila.",
+    "why": "",
+    "sectors": [
+      "strike",
+      "air",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/chinese-bombers-turn-near-manila-sparks-missile-speculation/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T14:11:12.280Z",
+    "orgs": []
+  },
+  {
     "id": "u-20261120-australia-receives-first-2-of-13-additional-seahaw",
     "d": "2026-11-20",
     "title": "Australia receives first 2 of 13 additional Seahawk helicopters",
@@ -768,6 +1015,52 @@
     "addedAt": "2026-11-20T21:39:26.529Z",
     "orgs": [
       "Vector"
+    ]
+  },
+  {
+    "id": "u-20261120-there-is-more-to-air-force-one-s-long-flight-from-",
+    "d": "2026-11-20",
+    "title": "There Is More To Air Force One’s Long Flight From China Than Just Breaking Records",
+    "body": "Just back from his trip to Shenzhen, where he met with leaders from China and Russia , President Donald Trump boasted about the U.S. Air Force’s new VC-25B Bridge aircraft that took him home.",
+    "why": "",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/there-is-more-to-air-force-ones-long-flight-from-china-than-just-breaking-records",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T14:11:12.280Z",
+    "orgs": [
+      "Air Force One",
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261120-llnl-auburn-university-forge-long-term-national-en",
+    "d": "2026-11-20",
+    "title": "LLNL, Auburn University Forge Long-Term National, Energy Security Partnership",
+    "body": "LLNL and Auburn University are partnering on cyber, infrastructure protection, advanced manufacturing, agriculture and defense research",
+    "why": "",
+    "sectors": [
+      "cyber",
+      "mfg"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/llnl-auburn-university-national-energy-security-partnership",
+      "q": "news"
+    },
+    "addedAt": "2026-11-21T14:11:12.280Z",
+    "orgs": [
+      "LLNL",
+      "Energy Security Partnership",
+      "Auburn University"
     ]
   },
   {

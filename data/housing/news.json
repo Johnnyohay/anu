@@ -200,6 +200,53 @@
   }
  },
  {
+  "id": "h-20261120-why-aren-t-mortgage-rates-lower-after-massive-stoc",
+  "d": "2026-11-20",
+  "title": "Why aren’t mortgage rates lower after massive stock sell-off?",
+  "body": "The Fed is still staying very hawkish, even with lower energy prices",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/10-year-yield-mortgage-rates-fed/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261120-homebuilders-30b-buying-spree-has-cooled-now-it-s-",
+  "d": "2026-11-20",
+  "title": "Homebuilders’ $30B buying spree has cooled; now it’s all execution",
+  "body": "Mega buyers face weaker demand, higher incentives, and tougher choices on centralization versus local autonomy",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/homebuilding-consolidation-integration/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261120-howard-hanna-sued-over-395-real-estate-transaction",
+  "d": "2026-11-20",
+  "title": "Howard Hanna sued over $395 real estate transaction fee",
+  "body": "Pennsylvania buyer alleges the fee was added at closing in 2021 and the case seeks class action status and an injunction",
+  "topics": [
+   "sales"
+  ],
+  "states": [
+   "PA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/howard-hanna-transaction-fee-lawsuit/",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261119-japanese-owned-builders-are-cutting-u-s-outlooks-w",
   "d": "2026-11-19",
   "title": "Japanese-owned builders are cutting U.S. outlooks: what’s next?",
