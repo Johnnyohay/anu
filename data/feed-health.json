@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T14:06:36.192Z",
+  "updatedAt": "2026-11-22T20:31:34.464Z",
   "feeds": {
     "DefenseScoop": {
       "url": "https://defensescoop.com/feed/",
@@ -80,7 +80,7 @@
       "runs": [
         {
           "date": "2026-11-22",
-          "fetched": 38,
+          "fetched": 36,
           "inWindow": 11,
           "added": 0,
           "duplicates": 8,
@@ -108,6 +108,43 @@
           "inWindow": 18,
           "added": 3,
           "duplicates": 14,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
+    "SpaceNews": {
+      "url": "https://spacenews.com/feed/",
+      "runs": [
+        {
+          "date": "2026-11-22",
+          "fetched": 16,
+          "inWindow": 2,
+          "added": 0,
+          "duplicates": 2,
+          "newest": "2026-11-19"
+        },
+        {
+          "date": "2026-11-21",
+          "fetched": 16,
+          "inWindow": 5,
+          "added": 0,
+          "duplicates": 5,
+          "newest": "2026-11-19"
+        },
+        {
+          "date": "2026-11-20",
+          "fetched": 16,
+          "inWindow": 7,
+          "added": 0,
+          "duplicates": 7,
+          "newest": "2026-11-19"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 16,
+          "inWindow": 8,
+          "added": 2,
+          "duplicates": 6,
           "newest": "2026-11-19"
         }
       ]
@@ -149,39 +186,76 @@
         }
       ]
     },
-    "SpaceNews": {
-      "url": "https://spacenews.com/feed/",
+    "Air & Space Forces": {
+      "url": "https://www.airandspaceforces.com/feed/",
       "runs": [
         {
           "date": "2026-11-22",
-          "fetched": 16,
-          "inWindow": 2,
+          "fetched": 9,
+          "inWindow": 6,
           "added": 0,
           "duplicates": 2,
-          "newest": "2026-11-19"
+          "newest": "2026-11-21"
         },
         {
           "date": "2026-11-21",
-          "fetched": 16,
-          "inWindow": 5,
+          "fetched": 9,
+          "inWindow": 9,
           "added": 0,
-          "duplicates": 5,
-          "newest": "2026-11-19"
+          "duplicates": 4,
+          "newest": "2026-11-21"
         },
         {
           "date": "2026-11-20",
-          "fetched": 16,
-          "inWindow": 7,
-          "added": 0,
-          "duplicates": 7,
-          "newest": "2026-11-19"
+          "fetched": 9,
+          "inWindow": 9,
+          "added": 1,
+          "duplicates": 4,
+          "newest": "2026-11-20"
         },
         {
           "date": "2026-11-19",
-          "fetched": 16,
-          "inWindow": 8,
-          "added": 2,
-          "duplicates": 6,
+          "fetched": 9,
+          "inWindow": 9,
+          "added": 1,
+          "duplicates": 4,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
+    "Defense One": {
+      "url": "https://www.defenseone.com/rss/all/",
+      "runs": [
+        {
+          "date": "2026-11-22",
+          "fetched": 23,
+          "inWindow": 11,
+          "added": 0,
+          "duplicates": 8,
+          "newest": "2026-11-21"
+        },
+        {
+          "date": "2026-11-21",
+          "fetched": 23,
+          "inWindow": 15,
+          "added": 0,
+          "duplicates": 11,
+          "newest": "2026-11-21"
+        },
+        {
+          "date": "2026-11-20",
+          "fetched": 22,
+          "inWindow": 14,
+          "added": 0,
+          "duplicates": 9,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 22,
+          "inWindow": 12,
+          "added": 1,
+          "duplicates": 7,
           "newest": "2026-11-19"
         }
       ]
@@ -256,80 +330,6 @@
           "inWindow": 10,
           "added": 5,
           "duplicates": 3,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
-    "Air & Space Forces": {
-      "url": "https://www.airandspaceforces.com/feed/",
-      "runs": [
-        {
-          "date": "2026-11-22",
-          "fetched": 9,
-          "inWindow": 6,
-          "added": 0,
-          "duplicates": 2,
-          "newest": "2026-11-21"
-        },
-        {
-          "date": "2026-11-21",
-          "fetched": 9,
-          "inWindow": 9,
-          "added": 0,
-          "duplicates": 4,
-          "newest": "2026-11-21"
-        },
-        {
-          "date": "2026-11-20",
-          "fetched": 9,
-          "inWindow": 9,
-          "added": 1,
-          "duplicates": 4,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-19",
-          "fetched": 9,
-          "inWindow": 9,
-          "added": 1,
-          "duplicates": 4,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
-    "Defense One": {
-      "url": "https://www.defenseone.com/rss/all/",
-      "runs": [
-        {
-          "date": "2026-11-22",
-          "fetched": 23,
-          "inWindow": 11,
-          "added": 1,
-          "duplicates": 7,
-          "newest": "2026-11-21"
-        },
-        {
-          "date": "2026-11-21",
-          "fetched": 23,
-          "inWindow": 15,
-          "added": 0,
-          "duplicates": 11,
-          "newest": "2026-11-21"
-        },
-        {
-          "date": "2026-11-20",
-          "fetched": 22,
-          "inWindow": 14,
-          "added": 0,
-          "duplicates": 9,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-19",
-          "fetched": 22,
-          "inWindow": 12,
-          "added": 1,
-          "duplicates": 7,
           "newest": "2026-11-19"
         }
       ]
@@ -415,8 +415,8 @@
           "date": "2026-11-22",
           "fetched": 10,
           "inWindow": 10,
-          "added": 6,
-          "duplicates": 0,
+          "added": 1,
+          "duplicates": 5,
           "newest": "2026-11-22"
         },
         {
