@@ -1,5 +1,133 @@
 [
   {
+    "id": "u-20261122-russian-corvette-reportedly-destroyed-in-blast-at-",
+    "d": "2026-11-22",
+    "title": "Russian corvette reportedly destroyed in blast at Libyan port",
+    "body": "A Russian Navy missile corvette caught fire after a large explosion in the Libyan port of Benghazi and is “almost certainly destroyed,” according to a report by naval analyst H I Sutton published Sunday.",
+    "why": "A Russian Navy missile corvette caught fire after a large explosion in the Libyan port of Benghazi and is “almost certainly destroyed,”.",
+    "sectors": [
+      "strike",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russian-corvette-reportedly-destroyed-in-blast-at-libyan-port/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-22T14:06:36.192Z",
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261122-ukrainian-mirage-2000-shoots-down-russian-jet-dron",
+    "d": "2026-11-22",
+    "title": "Ukrainian Mirage 2000 shoots down Russian jet drone with gun",
+    "body": "A French-supplied Mirage 2000 fighter shot down a Russian jet-powered attack drone with its built-in cannon, according to footage released by Ukraine’s Air Force. The Air Force published the video with a short caption.",
+    "why": "A French-supplied Mirage 2000 fighter shot down a Russian jet-powered attack drone with its built-in cannon.",
+    "sectors": [
+      "air",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/ukrainian-mirage-2000-shoots-down-russian-jet-drone-with-gun/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-22T14:06:36.192Z",
+    "orgs": [
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261122-maker-of-combat-proven-ukraine-drone-courts-us-spe",
+    "d": "2026-11-22",
+    "title": "Maker of combat-proven Ukraine drone courts US special forces",
+    "body": "The company behind the Nightmare FPV, a kamikaze drone that has flown by the thousands in Ukraine, set up a booth at Fort Bragg’s Modern Warfare Week this month.",
+    "why": "The company behind the Nightmare FPV, a kamikaze drone that has flown by the thousands in Ukraine, set up a booth at Fort Bragg’s Modern Warfare Week this month.",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/maker-of-combat-proven-ukraine-drone-courts-us-special-forces/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-22T14:06:36.192Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261122-dropship-autonomous-cargo-aircraft-heads-for-seria",
+    "d": "2026-11-22",
+    "title": "DropShip autonomous cargo aircraft heads for serial production",
+    "body": "Pyka’s DropShip autonomous cargo aircraft is moving toward serial production. The California company says a second airframe has rolled off the line, seven months after the first one flew. DropShip is “charging toward serial production,” Pyka said this week.",
+    "why": "Pyka’s DropShip autonomous cargo aircraft is moving toward serial production.",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/dropship-autonomous-cargo-aircraft-heads-for-serial-production/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-22T14:06:36.192Z",
+    "orgs": [
+      "DropShip",
+      "Pyka"
+    ]
+  },
+  {
+    "id": "u-20261122-u-s-army-tests-commercial-shotgun-shells-to-stop-d",
+    "d": "2026-11-22",
+    "title": "U.S. Army tests commercial shotgun shells to stop drones",
+    "body": "U.S. Army soldiers at Fort Benning, Georgia, fired four kinds of 12-gauge shotgun ammunition at small target drones to see which loads could bring them down, the service said this week. The live-fire assessment ran Sept. 21-22 at Bryant Range.",
+    "why": "U.S. Army soldiers at Fort Benning, Georgia, fired four kinds of 12-gauge shotgun ammunition at small target drones to see which loads could bring them down, the service said this week.",
+    "sectors": [
+      "air",
+      "strike"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-tests-commercial-shotgun-shells-to-stop-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-22T14:06:36.192Z",
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261122-u-s-soldiers-turn-small-drones-into-bombers-in-tra",
+    "d": "2026-11-22",
+    "title": "U.S. soldiers turn small drones into bombers in training",
+    "body": "Soldiers from the U.S. Army’s 101st Airborne Division dropped smoke and explosive munitions from drones during live-fire training at Fort Campbell, Kentucky, using a new universal release kit and an experimental drone munition, the service said this week.",
+    "why": "Soldiers from the U.S. Army’s 101st Airborne Division dropped smoke and explosive munitions from drones during live-fire training at Fort Campbell, Kentucky.",
+    "sectors": [
+      "air",
+      "strike"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-soldiers-turn-small-drones-into-bombers-in-training/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-22T14:06:36.192Z",
+    "orgs": []
+  },
+  {
     "id": "u-20261121-the-military-lacks-an-overarching-plan-to-improve-",
     "d": "2026-11-21",
     "title": "The military lacks an ‘overarching plan’ to improve munition stockpiles—partly because it’s no one’s job",
@@ -291,6 +419,28 @@
     "addedAt": "2026-11-21T20:19:58.340Z",
     "orgs": [
       "Senate"
+    ]
+  },
+  {
+    "id": "u-20261121-canada-joins-nato-innovation-fund-promises-busines",
+    "d": "2026-11-21",
+    "title": "Canada joins NATO innovation fund, promises ‘business as usual’ with US",
+    "body": "HALIFAX, Nova Scotia —Hours after news broke that the United States would limit defense cooperation with Canada, the Canadian government announced plans to pour 100 million Canadian dollars into a NATO defense-innovation fund.",
+    "why": "NATO ordered limits on the relationship in this story.",
+    "sectors": [
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/policy/2026/11/canada-joins-nato-innovation-fund-promises-business-usual-us/417391/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-22T14:06:36.192Z",
+    "orgs": [
+      "NATO",
+      "HALIFAX"
     ]
   },
   {
