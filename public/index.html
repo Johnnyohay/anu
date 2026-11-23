@@ -335,6 +335,12 @@ body.expert .teach{display:none!important}
     </div>
   </section>
 
+  <section class="wrap" aria-labelledby="clips-h" id="clips-wrap" hidden>
+    <div class="sec-head"><h2 id="clips-h">Watch with today's stories</h2><p id="clips-p">Only clips that share a program, system, or place with a story above.</p></div>
+    <div id="clips"></div>
+  </section>
+  <p class="wrap method" id="feed-flags" hidden></p>
+
   <section class="wrap" aria-label="Earlier briefs"><div class="archive" id="archive"></div></section>
 
   <div id="detail" hidden></div>
@@ -663,6 +669,18 @@ function render() {
     return `<li style="${tagged ? `--fill:${colorOf(id)[0]}` : ""}"><span class="nm">${esc(nameOf(id))}${tagged ? `<span class="tagin">in today's brief</span>` : ""}</span><span class="n"><b>${n}</b> ${n === 1 ? "story" : "stories"}<span class="d ${d > 0 ? "up" : d < 0 ? "down" : "flat"}">${d > 0 ? "+" : d < 0 ? "−" : "±"}${Math.abs(d)}</span></span><span class="bar" aria-hidden="true"><i style="width:${(n / maxN * 100).toFixed(0)}%"></i></span></li>`;
   }).join("");
   $("#all-areas").textContent = `See all ${S.sectors.length} areas →`;
+
+  const clips = brief.clips || [];
+  const clipsWrap = $("#clips-wrap");
+  if (clips.length) {
+    clipsWrap.hidden = false;
+    $("#clips").innerHTML = clips.map(c => `<p><a href="https://www.youtube.com/watch?v=${encodeURIComponent(c.id || "")}" target="_blank" rel="noopener">${esc(c.title)}</a> <span class="dim">${esc((c.because || []).join(", "))}</span></p>`).join("");
+  } else clipsWrap.hidden = true;
+  const flags = (S.meta && S.meta.feedHealth && S.meta.feedHealth.flags) || [];
+  const stale = flags.filter(f => /stale/i.test(f.flag || ""));
+  const flagEl = $("#feed-flags");
+  if (stale.length) { flagEl.hidden = false; flagEl.textContent = "Stale feeds: " + stale.map(f => `${f.name} (${f.flag})`).join("; "); }
+  else flagEl.hidden = true;
 
   $("#archive").innerHTML = `<span>Earlier briefs:</span>` + briefs.slice(0, 6).map((b, i) =>
     `<a href="${i === 0 ? "./" : `?d=${esc(b.date)}`}"${b === brief ? ' aria-current="page"' : ""}>${i === 0 ? "Latest" : esc(fmtDay(b.date, { weekday: "short", month: "short", day: "numeric" }))}</a>`).join("")

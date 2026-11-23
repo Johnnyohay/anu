@@ -66,7 +66,10 @@ export interface FeedReport { items: FeedItem[]; error?: string }
 /** Fetches one RSS or Atom feed. On failure logs, returns no items, and keeps the error for feed health. */
 export async function fetchFeedReport(name: string, url: string): Promise<FeedReport> {
   try {
-    const res = await fetch(url, { headers: { "user-agent": "Mozilla/5.0 (anu news collector)" }, signal: AbortSignal.timeout(20000) });
+    const res = await fetch(url, {
+      headers: { "user-agent": "Mozilla/5.0 (anu news collector)", "cache-control": "no-cache", pragma: "no-cache" },
+      signal: AbortSignal.timeout(20000),
+    });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const xml = parser.parse(await res.text());
     const items = xml?.rss?.channel?.item ?? xml?.feed?.entry ?? [];
@@ -97,4 +100,32 @@ export async function fetchFeedReport(name: string, url: string): Promise<FeedRe
 /** Fetches one RSS or Atom feed; on any failure logs and returns nothing so one bad feed never stops a run. */
 export async function fetchFeed(name: string, url: string): Promise<FeedItem[]> {
   return (await fetchFeedReport(name, url)).items;
+}
+
+/**
+ * WordPress JSON, for sites whose RSS lags the homepage. SpaceNews' RSS was stuck
+ * on 19 Nov 2026 while the site itself was publishing on the 22nd and 23rd.
+ */
+export async function fetchWpPosts(name: string, url: string): Promise<FeedReport> {
+  try {
+    const res = await fetch(url, {
+      headers: { "user-agent": "Mozilla/5.0 (anu news collector)", "cache-control": "no-cache" },
+      signal: AbortSignal.timeout(20000),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const posts = (await res.json()) as { date?: string; link?: string; title?: { rendered?: string }; excerpt?: { rendered?: string } }[];
+    const items: FeedItem[] = [];
+    for (const p of posts) {
+      const when = p.date ? new Date(p.date) : null;
+      const title = strip(p.title?.rendered);
+      const link = p.link ?? "";
+      if (!title || !when || isNaN(+when) || !/^https?:\/\//.test(link)) continue;
+      items.push({ title, link, date: when.toISOString().slice(0, 10), summary: firstSentences(strip(p.excerpt?.rendered)), raw: p as unknown as Record<string, unknown> });
+    }
+    return { items };
+  } catch (err) {
+    const message = (err as Error).message;
+    console.warn(`Skipped ${name}: ${message}`);
+    return { items: [], error: message };
+  }
 }

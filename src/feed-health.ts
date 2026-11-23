@@ -15,6 +15,8 @@ export interface FeedRun {
 export interface FeedStat {
   url: string;
   runs: FeedRun[];
+  /** Newest item is more than two days behind the run date. */
+  stale?: boolean;
   flag?: string;
 }
 
@@ -82,8 +84,11 @@ export function updateFeedHealth(prev: FeedHealth | null, obs: FeedObservation[]
       ...(o.error ? { error: o.error } : {}),
     };
     const runs = [run, ...prior.filter((r) => r.date !== today)].slice(0, KEEP);
-    const flag = flagFor(runs, today);
-    feeds[o.name] = { url: o.url, runs, ...(flag ? { flag } : {}) };
+    const newest = runs[0]?.newest;
+    const stale = !!newest && daysBefore(today, newest) > 2;
+    let flag = flagFor(runs, today);
+    if (stale) flag = flag ? `${flag}; stale: newest item ${newest} is more than 2 days old` : `stale: newest item ${newest} is more than 2 days old`;
+    feeds[o.name] = { url: o.url, runs, ...(stale ? { stale } : {}), ...(flag ? { flag } : {}) };
   }
   return { updatedAt, feeds };
 }

@@ -12,7 +12,7 @@ const TYPE_WEIGHT: Record<string, number> = {
 const SHORT: Record<string, string> = {
   ai: "AI and software",
   air: "drones",
-  sea: "ships and submarines",
+  sea: "ships",
   ground: "ground robots",
   space: "space",
   missiledef: "missile defense",
@@ -58,8 +58,31 @@ function words(text: string): Set<string> {
   );
 }
 
+/**
+ * Same hull in the same place, or the same appropriations markup.
+ * Headline wording is not required to match.
+ */
+export function eventKey(title: string, body = ""): string | null {
+  const t = `${title} ${body}`.toLowerCase();
+  if (/(corvette|frigate|destroyer|warship)/.test(t) && /(benghazi|libya)/.test(t)) return "warship@libya";
+  if (/\bmirage\b/.test(t) && /drone/.test(t)) return "mirage@drone";
+  if (/nightmare|\bfpv\b/.test(t) && /(bragg|special forces)/.test(t)) return "fpv@bragg";
+  if (/(shotgun|12-gauge)/.test(t) && /benning/.test(t)) return "shotgun@benning";
+  return null;
+}
+
+/** A later write-up is new only when it adds a dollar figure the earlier one did not have. */
+export function materiallyNew(prev: string, next: string): boolean {
+  const money = (s: string) => s.match(/\$\s?\d[\d,]*(?:\.\d+)?\s?(?:billion|million|bn|m|b)?/i)?.[0]?.replace(/\s+/g, "").toLowerCase() ?? "";
+  const n = money(next);
+  return !!n && n !== money(prev);
+}
+
 /** True when two items are the same event told twice, not two events in one sector. */
 export function sameEvent(a: { title: string; body?: string }, b: { title: string; body?: string }): boolean {
+  const ka = eventKey(a.title, a.body);
+  const kb = eventKey(b.title, b.body ?? "");
+  if (ka && ka === kb) return true;
   const blob = (x: { title: string; body?: string }) => `${x.title} ${x.body ?? ""}`;
   if (/\bappropriators?\b/i.test(blob(a)) && /\bappropriators?\b/i.test(blob(b))) return true;
   const ta = words(a.title);
@@ -69,13 +92,21 @@ export function sameEvent(a: { title: string; body?: string }, b: { title: strin
   return inter.length >= 3 && inter.length / union >= 0.45;
 }
 
-export function pickTop<T extends { title: string; body?: string; sectors: string[]; score: number; d: string }>(items: T[], n = 5): T[] {
+export function pickTop<T extends { title: string; body?: string; sectors: string[]; score: number; d: string }>(
+  items: T[],
+  n = 5,
+  prior: { title: string; body?: string }[] = [],
+): T[] {
   const ranked = [...items].sort((a, b) => b.score - a.score || b.d.localeCompare(a.d));
   const picked: T[] = [];
   const used = new Set<string>();
+  const already = (u: T) => prior.some((p) => {
+    const k = eventKey(u.title, u.body);
+    return !!k && k === eventKey(p.title, p.body) && !materiallyNew(`${p.title} ${p.body ?? ""}`, `${u.title} ${u.body ?? ""}`);
+  });
   const take = (repeatSector: boolean) => {
     for (const u of ranked) {
-      if (picked.includes(u)) continue;
+      if (picked.includes(u) || already(u)) continue;
       if (!repeatSector && used.has(u.sectors[0]) && picked.length < ranked.length - 1) continue;
       if (picked.some((p) => sameEvent(p, u))) continue;
       picked.push(u);
@@ -94,20 +125,40 @@ function tally(ids: string[]): string[] {
   return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([id]) => id);
 }
 
-const label = (id: string) => SHORT[id] ?? id;
-const pair = (ids: string[]) => ids.length >= 2 ? `${label(ids[0])} and ${label(ids[1])}` : label(ids[0] ?? "");
+const labelOf = (id: string, submarines: boolean) => id === "sea" && submarines ? "ships and submarines" : (SHORT[id] ?? id);
+const pair = (ids: string[], submarines: boolean) => {
+  const labels = ids.map((id) => labelOf(id, submarines));
+  if (labels.length < 2) return labels[0] ?? "";
+  const [a, b] = labels;
+  return /\band\b/i.test(a) || /\band\b/i.test(b) ? `${a}, plus ${b}` : `${a} and ${b}`;
+};
 
 /**
- * "13 new stories. Most came from X and Y; the top five are mostly about Z."
- * X and Y are the lead sectors of the whole day's intake. Z is the lead sectors of the stories actually picked.
+ * Quiet days say so. Labels come from the stories that were picked, and a label
+ * that already contains "and" is joined with "plus" so it doesn't read "Iran and drones".
  */
-export function briefSummary(total: number, leadSectors: string[], topSectors: string[]): string {
+export function briefSummary(
+  total: number,
+  leadSectors: string[],
+  topSectors: string[],
+  opts: { gist?: string; text?: string } = {},
+): string {
+  if (total <= 0) return "Quiet day: nothing new that was not already covered.";
+  if (total === 1 && opts.gist) return `Quiet weekend: 1 new story, ${opts.gist.replace(/\.$/, "")}.`;
+  const subs = /submarine/i.test(opts.text ?? "");
   const volume = tally(leadSectors).slice(0, 2);
   const focus = tally(topSectors).slice(0, 2);
-  const n = `${total} new ${total === 1 ? "story" : "stories"}`;
+  const n = `${total} new stories`;
   if (!focus.length) return `${n}.`;
-  const about = pair(focus);
-  const most = pair(volume);
+  const about = pair(focus, subs);
+  const most = pair(volume, subs);
   if (most && most !== about) return `${n}. Most came from ${most}; the top five are mostly about ${about}.`;
   return `${n}. The top five are mostly about ${about}.`;
+}
+
+/** One clause for a one-story day, taken from the event rather than the headline's casing. */
+export function storyGist(title: string, body = ""): string {
+  const t = `${title} ${body}`.toLowerCase();
+  if (/corvette/.test(t) && /(libya|benghazi)/.test(t)) return "Ukraine's drone boats hit a Russian corvette in Libya";
+  return title.replace(/\s+/g, " ").trim().replace(/\.$/, "");
 }

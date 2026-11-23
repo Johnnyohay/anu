@@ -4,6 +4,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { loadDesk, type Desk } from "./store.ts";
 import { FORMULA_FIELDS, loadRequests, loadSiteConfig, loadVideoConfig } from "./config.ts";
+import { selectBriefVideos } from "./brief-videos.ts";
 
 const API_DIR = path.join("public", "api", "v1");
 
@@ -26,7 +27,14 @@ async function put(file: string, value: unknown) {
 
 /** Writes the static JSON API that GitHub Pages serves under /api/v1/. */
 export async function buildApi(desk: Desk): Promise<void> {
-  const briefs = [...desk.briefs].sort((a, b) => b.date.localeCompare(a.date));
+  const briefs = [...desk.briefs].sort((a, b) => b.date.localeCompare(a.date)).map((b) => {
+    if (!desk.videos?.length) return b;
+    const { kept } = selectBriefVideos(
+      b.stories.map((s) => ({ title: s.h, body: `${s.what} ${s.you}`, sector: s.tag })),
+      desk.videos.filter((v) => v.topic === "defense"),
+    );
+    return { ...b, clips: kept.map((k) => ({ id: k.video.id, title: k.video.title, channel: k.video.channel, because: k.because })) };
+  });
   const updates = [...desk.updates].sort((a, b) => b.d.localeCompare(a.d));
   const generatedAt = new Date().toISOString();
 
