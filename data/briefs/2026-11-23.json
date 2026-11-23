@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-23",
+  "title": "Ukraine’s Campaign against Russian Naval Assets Far Beyond the Black Sea Enters a new Phase",
+  "big": "1 new story. The top five are mostly about ships and submarines.",
+  "stories": [
+    {
+      "tag": "Maritime & undersea autonomy",
+      "h": "Ukraine’s Campaign Against Russian Naval Assets Far Beyond The Black Sea Enters A New Phase",
+      "what": "A Russian Navy corvette burned and capsized after being struck by Ukrainian uncrewed service vessels (USVs) while docked in Benghazi, Libya. In addition, a Russian cargo ship was struck by Ukrainian USVs while operating off Benghazi in the Mediterranean.",
+      "you": "A Russian Navy corvette burned and capsized after being struck by Ukrainian uncrewed service vessels (USVs) while docked in Benghazi, Libya.",
+      "ref": "u-20261122-ukraine-s-campaign-against-russian-naval-assets-fa"
+    }
+  ],
+  "watch": {
+    "h": "Stopgap funding expires: FY27 appropriations or another CR",
+    "why": "December 11. Decides whether DAWG's $54.6B and Golden Dome's growth become real money."
+  },
+  "idea": {
+    "h": "Counter-drone detection for critical infrastructure",
+    "why": "Sensor fusion and attribution software (RF, radar, acoustic, camera) for bases, data centers, stadiums, prisons and utilities. $14.4B FY27 counter-UAS line plus the base-defense pilot. Commercial sites legally can only detect and report drones, so software is what they buy."
+  },
+  "auto": true
+}

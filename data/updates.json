@@ -150,6 +150,29 @@
     "orgs": []
   },
   {
+    "id": "u-20261122-ukraine-s-campaign-against-russian-naval-assets-fa",
+    "d": "2026-11-22",
+    "title": "Ukraine’s Campaign Against Russian Naval Assets Far Beyond The Black Sea Enters A New Phase",
+    "body": "A Russian Navy corvette burned and capsized after being struck by Ukrainian uncrewed service vessels (USVs) while docked in Benghazi, Libya. In addition, a Russian cargo ship was struck by Ukrainian USVs while operating off Benghazi in the Mediterranean.",
+    "why": "A Russian Navy corvette burned and capsized after being struck by Ukrainian uncrewed service vessels (USVs) while docked in Benghazi, Libya.",
+    "sectors": [
+      "sea",
+      "global",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/ukraines-campaign-against-russian-naval-assets-far-beyond-the-black-sea-enters-a-new-phase",
+      "q": "news"
+    },
+    "addedAt": "2026-11-23T04:22:03.537Z",
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
     "id": "u-20261121-the-military-lacks-an-overarching-plan-to-improve-",
     "d": "2026-11-21",
     "title": "The military lacks an ‘overarching plan’ to improve munition stockpiles—partly because it’s no one’s job",
