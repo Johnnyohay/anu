@@ -72,5 +72,18 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
+      # GitHub's Pages API sometimes fails to find the just-uploaded artifact ("Fetching artifact metadata
+      # failed"); the brief is already committed, so wait and retry the deploy instead of failing the day.
       - id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.deployment.outcome == 'failure'
+        run: sleep 60
+      - id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.deployment.outcome == 'failure' && steps.deployment_retry.outcome == 'failure'
+        run: sleep 180
+      - if: steps.deployment.outcome == 'failure' && steps.deployment_retry.outcome == 'failure'
         uses: actions/deploy-pages@v4
