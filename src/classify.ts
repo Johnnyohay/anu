@@ -5,6 +5,8 @@
  */
 import { bounded } from "./text.ts";
 
+export { storyWhy } from "./why.ts";
+
 const w = bounded;
 
 export interface SectorHit {
@@ -32,7 +34,7 @@ const SPECS: Spec[] = [
     rule(w("aircraft"), 2, 1),
   ]},
   { id: "sea", priority: 56, rules: [
-    rule(w("submarine|USV|UUV|unmanned surface|undersea|frigate|destroyer|carrier|shipbuilding|shipyard|Saronic"), 6, 3),
+    rule(w("corvette|warship|naval base|uncrewed surface|submarine|USV|UUV|unmanned surface|undersea|frigate|destroyer|carrier|shipbuilding|shipyard|Saronic"), 8, 4),
     rule(w("ships?|maritime"), 4, 2),
     rule(w("Navy"), 2, 1),
   ]},
@@ -138,173 +140,19 @@ export function classify(title: string, body: string): { sectors: SectorHit[]; t
   return { sectors, type };
 }
 
-const PROGRAMS = [
-  "Space Force", "Golden Dome", "rocket artillery", "cruise missile", "high-energy laser",
-  "HIMARS", "PULS", "F-35", "F-47", "B-21", "Valkyrie", "Patriot", "THAAD", "Iron Dome",
-  "Tomahawk", "JASSM", "LRASM", "Starshield", "Stryker", "Minuteman", "Drone Dominance",
-  "counter-drone", "Replicator", "anti-tank missile", "Block 4", "Stinger", "SEWIP", "155mm",
-];
-
-const ACTORS = ["Senate", "Congress", "Pentagon", "White House", "NATO", "Army", "Navy", "Air Force", "Space Force", "Marines", "Hegseth"];
-const STOP = new Set("the a an how why what watch after inside new tiny us u.s. as in on for to and".split(" "));
-const VERB = new Set("backs says gets wins won buys announces reports plans seeks faces grills makes shows begins fires tests gives gave offers offer taps selects awards approved cleared books".split(" "));
-
-function findActor(title: string): string | undefined {
-  for (const a of ACTORS) if (w(a).test(title)) return a;
-  const words = title.replace(/[“”"']/g, "").split(/\s+/);
-  const out: string[] = [];
-  for (const word of words) {
-    const core = word.replace(/[^A-Za-z0-9'’.-]/g, "");
-    if (!core || STOP.has(core.toLowerCase())) {
-      if (out.length) break;
-      continue;
-    }
-    if (VERB.has(core.toLowerCase())) break;
-    if (!/^[\p{Lu}\d]/u.test(core)) break;
-    out.push(core);
-    if (out.length === 3) break;
-  }
-  return out.join(" ") || undefined;
-}
-
-function findMoney(text: string): string | undefined {
-  const spelled = /\$\s?(\d+(?:\.\d+)?)\s?(billion|million)\b/i.exec(text);
-  if (spelled) return `$${spelled[1]} ${spelled[2].toLowerCase()}`;
-  const under = /\bunder\s+\$\s?(\d{1,3}(?:,\d{3})+|\d+(?:\.\d+)?)/i.exec(text);
-  if (under) return `under $${under[1]}`;
-  const short = /\$\s?(\d+(?:\.\d+)?)\s?(bn|m|b)\b/i.exec(text);
-  if (short) return `$${short[1]} ${/^b/i.test(short[2]) ? "billion" : "million"}`;
-  const commas = /\$\s?(\d{1,3}(?:,\d{3})+)/.exec(text);
-  if (commas) return `$${commas[1]}`;
-  return undefined;
-}
-
-function programsIn(text: string): string[] {
-  const lower = text.toLowerCase();
-  return PROGRAMS.filter((p) => lower.includes(p.toLowerCase()))
-    .sort((a, b) => lower.indexOf(a.toLowerCase()) - lower.indexOf(b.toLowerCase()) || b.length - a.length);
-}
-
-function programName(text: string): string | undefined {
-  const found = programsIn(text);
-  if (found.includes("F-35") && found.includes("Block 4")) return "F-35 Block 4";
-  return found[0];
-}
-
-const SERVICES = ["U.S. Navy", "U.S. Army", "Air Force", "Space Force", "Navy", "Army", "Senate", "Congress", "Pentagon", "Hegseth"];
-
-function serviceOf(text: string): string | undefined {
-  return SERVICES.find((s) => new RegExp(`\\b${s.replace(".", "\\.")}\\b`, "i").test(text));
-}
-
-function sentencesOf(text: string): string[] {
-  const cleaned = text
-    .replace(/^[A-Z][A-Za-z .]+,\s+[A-Z][a-z]+\s*[—–-]\s*/, "")
-    .replace(/,?\s*the company said\b[^.]*/gi, "")
-    .replace(/,?\s*according to\b[^.]*/gi, "")
-    .replace(/,?\s*officials familiar\b[^.]*/gi, "")
-    .replace(/\s+/g, " ")
-    .trim();
-  return cleaned
-    .replace(/\b(U\.S|Nov|Mr|Mrs|Dr|Gen|Lt|Col|St)\./g, "$1\u0000")
-    .split(/(?<=[.!?])\s+/)
-    .map((s) => s.replace(/\u0000/g, ".").trim())
-    .filter((s) => s.length > 30);
-}
-
-function named(s?: string): string | undefined {
-  if (!s) return;
-  if (/^(Hegseth|Senate|Congress|Pentagon)$/i.test(s)) return s;
-  if (/^The\b/i.test(s)) return s;
-  if (/^(U\.S\. )?(Navy|Army|Air Force|Space Force)$/i.test(s)) return `The ${s}`;
-  return s;
-}
-
-function purposeOf(text: string): string | undefined {
-  const m = text.match(/\bto (accelerate|speed up|replace|develop|upgrade)([^.”"]{6,100})/i);
-  if (!m) return;
-  return `to ${m[1].toLowerCase()}${m[2]}`.replace(/\s+/g, " ").replace(/[,;]\s*$/, "").trim();
-}
-
-function clip(s: string, max = 220): string {
-  let t = s.replace(/\s+/g, " ").trim();
-  if (t.length <= max) return /[.!?]$/.test(t) ? t : `${t}.`;
-  const cut = t.slice(0, max);
-  const end = Math.max(cut.lastIndexOf(", "), cut.lastIndexOf("; "), cut.lastIndexOf(". "));
-  t = (end > 60 ? cut.slice(0, end) : cut.replace(/\s+\S*$/, "")).replace(/[,;:]\s*$/, "").trim();
-  return /[.!?]$/.test(t) ? t : `${t}.`;
-}
-
-/**
- * One sentence drawn from this story's own actor, figure, and program.
- * A weak sector score used to return "" and a matched template used to append
- * the same closer to every deal. Both are gone: the line is this story's facts,
- * and the lede itself is the fallback so the result is never empty.
- */
-export function storyWhy(title: string, body: string, _lead?: SectorHit, _type?: string, companies: string[] = []): string {
-  const blob = `${title}. ${body}`.replace(/\s+/g, " ").trim();
-  const money = findMoney(blob);
-  const pct = /\b(\d{1,3}(?:\.\d+)?)\s*percent\b/i.exec(blob)?.[1];
-  const program = programName(blob);
-  const company = companies[0];
-  const service = serviceOf(blob);
-  const who = company || service || findActor(title);
-  const purpose = purposeOf(blob);
-  const when = /\bmid-\d{4}\b|\bby (?:early |late )?\d{4}\b/i.exec(blob)?.[0];
-  const firms = /\b(\d{1,3}) companies\b/i.exec(blob)?.[1];
-  const fold = /\b([a-z]+-fold|\d+-fold)\b/i.exec(blob)?.[1];
-
-  let line = "";
-  const payer = named(service);
-  if (payer && company && money && program && /under/i.test(money) === false && /speed up|accelerat|delay/i.test(blob)) {
-    line = `${payer} is paying ${company} ${money} to pull the delayed ${program} upgrade forward.`;
-  } else if (payer && company && money && program) {
-    line = `${payer} is paying ${company} ${money} for ${program}${purpose ? `, ${purpose}` : ""}.`;
-  } else if (money && /under/i.test(money) && program) {
-    line = `${payer || named(who) || "The buyer"} priced a ${program} replacement at ${money}${/per missile/i.test(blob) ? " per missile" : ""}${when ? `, with a live-fire shootout ${when}` : ""}.`;
-  } else if (pct && program && money) {
-    const from = /\$\s?(\d+(?:\.\d+)?)\s?(billion|million)\b/gi;
-    const amounts = [...blob.matchAll(from)].map((m) => `$${m[1]} ${m[2].toLowerCase()}`);
-    const prior = amounts[1];
-    line = `${payer || named(who) || "Appropriators"} set ${program} ${pct}% higher, at ${amounts[0] || money}${prior ? ` from ${prior}` : ""}.`;
-  } else if (/\b(limits?|restrict\w*|ordered new limits)\b/i.test(blob) && who) {
-    const on = blob
-      .replace(/\b(U\.S|Nov|Mr|St)\./g, "$1\u0000")
-      .match(/\blimits\s+on\s+(.+?)(?:,|\.\s|$)/i)?.[1]
-      ?.replace(/\u0000/g, ".")
-      .trim();
-    line = `${named(who) || who} ordered limits on ${on || "the relationship in this story"}.`;
-  } else if (firms && money) {
-    line = `${payer || named(who) || "The buyer"} put ${firms} companies on a ${money} vehicle${program ? ` for ${program}` : ""}.`;
-  } else if (fold && (company || who)) {
-    line = `${company || who} opened a plant it says will raise ${program || "shell"} output ${fold}.`;
-  } else if (/green light to buy|foreign military sale|state department approved/i.test(blob) && (program || money)) {
-    line = `${service || "The State Department"} approved ${money ? `a ${money} sale` : "a sale"}${program ? ` of ${program}` : ""}${who && who !== service ? ` for ${who}` : ""}.`;
-  } else if (company && program && /laser|destroyed|downs/i.test(blob)) {
-    const target = /cruise missile/i.test(blob) ? "a cruise-missile target" : "a target";
-    line = `${company}'s ${program} ${/destroyed|downs/i.test(blob) ? `destroyed ${target}` : "was demonstrated"}${/first time/i.test(blob) ? " for the first time" : ""}.`;
-  }
-
-  if (!line) {
-    const sents = sentencesOf(body || title);
-    line = sents[1] && /\$|\d{4}|program|contract|shootout|plant|squadron/i.test(sents[1]) ? sents[1] : (sents[0] || title);
-  }
-  const out = clip(line);
-  return out || title.trim() || "This story has no further detail.";
-}
-
-const SMALL = new Set("a an the and but or nor of to for in on by with from at as into over after before than its their his her about amid during while against across per via backs bigger trims says gets wins won new more most will would could should has have had are was were is be been not its".split(" "));
+const PROPER = new Set("ukraine ukrainian russia russian libya libyan canada china iran nato benghazi moscow pentagon hegseth lockheed army navy mirage valkyrie pyka nightmare bragg benning mediterranean black".split(" "));
 
 function sentenceCase(input: string): string {
   let seen = false;
   return input.replace(/[A-Za-z0-9][A-Za-z0-9'’%./-]*/g, (word) => {
     const first = !seen;
     seen = true;
-    if (/\d/.test(word) || (word.length >= 2 && word === word.toUpperCase() && /[A-Z]/.test(word))) return word;
+    const stem = word.replace(/'s$/i, "").replace(/[^A-Za-z0-9]/g, "");
+    if (/\d/.test(word) || (stem.length >= 2 && stem === stem.toUpperCase() && /[A-Z]/.test(stem))) return word;
+    if (PROPER.has(stem.toLowerCase())) return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     const lower = word.toLowerCase();
-    if (!first && SMALL.has(lower)) return lower;
     if (first) return lower.charAt(0).toUpperCase() + lower.slice(1);
-    return word;
+    return lower;
   });
 }
 
@@ -316,7 +164,7 @@ export function briefTitle(title: string, body: string): string {
   t = t.replace(/,\s+but\b.*$/i, "").trim();
   const pct = /\b(\d{1,3}(?:\.\d+)?)\s*percent\b/i.exec(`${body} ${title}`)?.[1];
   if (pct && !t.includes("%") && !t.includes(pct)) t = t.replace(/\bbigger\b/i, `a ${pct}% bigger`);
-  t = sentenceCase(t);
+  t = sentenceCase(t).replace(/\bspace force\b/gi, "Space Force").replace(/\bblack sea\b/gi, "Black Sea").replace(/\bair force\b/gi, "Air Force");
   if (t.length > 92) t = t.slice(0, 89).replace(/\s+\S*$/, "").trim() + "…";
   return t;
 }

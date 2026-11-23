@@ -1,7 +1,9 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { briefTitle, classify, storyWhy } from "../src/classify.ts";
-import { briefSummary, isListicle, pickTop, sameEvent, storyScore } from "../src/brief.ts";
+import { cleanCopy, limitActor, tokenOverlap } from "../src/why.ts";
+import { briefSummary, eventKey, isListicle, materiallyNew, pickTop, sameEvent, storyGist, storyScore } from "../src/brief.ts";
+import { selectBriefVideos } from "../src/brief-videos.ts";
 import { summaryFromFields } from "../src/rss.ts";
 import { extraCompany, junkMention, matchCompanies, resolveName } from "../src/names.ts";
 import { updateFeedHealth, type FeedHealth, type FeedObservation } from "../src/feed-health.ts";
@@ -131,7 +133,7 @@ describe("types and why lines", () => {
       "Senate grills acting Navy secretary on Iran war costs, extended deployments",
       "The White House’s pick to lead the Navy didn’t have clear answers Tuesday when lawmakers pressed him about ballooning Iran war costs.",
     );
-    assert.match(line, /Iran war costs/);
+    assert.match(line, /Iran war/);
     assert.notEqual(line, GENERIC_SEA);
   });
 
@@ -144,7 +146,7 @@ describe("types and why lines", () => {
     const line = storyWhy(title, body, c.sectors[0], c.type, []);
     assert.ok(line.length > 0);
     assert.notEqual(line, GENERIC_SPACE);
-    assert.match(line, /satellite photo|picnic/i);
+    assert.ok(tokenOverlap(line, body) <= 0.6);
   });
 
   it("does not use the old ground-robot line on the Morocco missile", () => {
@@ -240,7 +242,7 @@ describe("ranking and the summary line", () => {
 
   it("names the top stories without a doubled colon", () => {
     const line = briefSummary(13, ["adversary", "adversary", "cyber"], ["air", "air", "strike"]);
-    assert.equal(line, "13 new stories. Most came from China, Russia and Iran and cyber; the top five are mostly about drones and missiles and munitions.");
+    assert.equal(line, "13 new stories. Most came from China, Russia and Iran, plus cyber; the top five are mostly about drones, plus missiles and munitions.");
     assert.doesNotMatch(line, /areas:/);
     assert.doesNotMatch(line, /adversaries:/i);
   });
@@ -357,5 +359,94 @@ describe("feed health", () => {
     );
     assert.equal(health.feeds.GovConWire.flag, undefined);
     assert.equal(health.feeds.CSIS, undefined);
+  });
+
+  it("badges a feed whose newest item is more than two days behind", () => {
+    const health = updateFeedHealth(null, [obs({ newest: "2026-11-19", fetched: 16, inWindow: 0, added: 0 })], "2026-11-23", "2026-11-23T14:00:00.000Z");
+    assert.equal(health.feeds.GovConWire.stale, true);
+    assert.match(health.feeds.GovConWire.flag ?? "", /more than 2 days old/);
+  });
+});
+
+describe("so-what lines", () => {
+  const canadaTitle = "Canada joins NATO innovation fund, promises 'business as usual' with US";
+  const canadaBody = "HALIFAX, Nova Scotia —Hours after news broke that the United States would limit defense cooperation with Canada, the Canadian government announced plans to pour 100 million Canadian dollars into a NATO defense-innovation fund.";
+
+  it("names the United States, not NATO, as the actor limiting Canada", () => {
+    assert.equal(limitActor(canadaBody), "The United States");
+    const line = why(canadaTitle, canadaBody);
+    assert.match(line, /United States/);
+    assert.match(line, /Canada/);
+    assert.doesNotMatch(line, /NATO ordered/);
+    assert.ok(tokenOverlap(line, canadaBody) <= 0.6);
+  });
+
+  it("writes a deployment so-what for the Libyan corvette, not a copy of the lede", () => {
+    const title = "Ukraine’s Campaign Against Russian Naval Assets Far Beyond The Black Sea Enters A New Phase";
+    const body = "A Russian Navy corvette burned and capsized after being struck by Ukrainian uncrewed service vessels (USVs) while docked in Benghazi, Libya.";
+    const line = why(title, body);
+    assert.match(line, /port force-protection|counter-USV/);
+    assert.match(line, /Libya|Mediterranean/);
+    assert.ok(tokenOverlap(line, body) <= 0.6);
+    assert.doesNotMatch(line, /uncrewed service/);
+  });
+
+  it("strips a dangling quote and comma", () => {
+    assert.equal(cleanCopy("is “almost certainly destroyed,”."), "is almost certainly destroyed.");
+  });
+
+  it("corrects USV to uncrewed surface vessel", () => {
+    assert.match(cleanCopy("struck by Ukrainian uncrewed service vessels (USVs)"), /uncrewed surface vessels/);
+  });
+
+  it("files a missile corvette in a Libyan port under maritime, not munitions", () => {
+    const c = classify(
+      "Russian corvette reportedly destroyed in blast at Libyan port",
+      "A Russian Navy missile corvette caught fire after a large explosion in the Libyan port of Benghazi.",
+    );
+    assert.equal(c.sectors[0].id, "sea");
+  });
+
+  it("does not republish the Libyan corvette on the next day", () => {
+    const first = { title: "Russian corvette reportedly destroyed in blast at Libyan port", body: "A Russian Navy missile corvette caught fire in Benghazi.", sectors: ["sea"], score: 5, d: "2026-11-22" };
+    const again = { title: "Ukraine’s campaign against Russian naval assets enters a new phase", body: "A corvette was struck by Ukrainian USVs in Benghazi, Libya.", sectors: ["sea"], score: 9, d: "2026-11-23" };
+    assert.equal(eventKey(first.title, first.body), eventKey(again.title, again.body));
+    assert.equal(materiallyNew(`${first.title} ${first.body}`, `${again.title} ${again.body}`), false);
+    const top = pickTop([again], 5, [first]);
+    assert.equal(top.length, 0);
+  });
+
+  it("sentence-cases a mixed headline", () => {
+    const title = briefTitle("Ukraine’s Campaign against Russian Naval Assets Far Beyond the Black Sea Enters a new Phase", "A corvette burned in Libya.");
+    assert.match(title, /enters a new phase/);
+    assert.doesNotMatch(title, /Phase/);
+  });
+
+  it("describes a one-story day without inventing submarines", () => {
+    const line = briefSummary(1, ["sea"], ["sea"], { gist: storyGist("Ukraine corvette", "USV struck a corvette in Libya"), text: "corvette Libya" });
+    assert.match(line, /^Quiet weekend: 1 new story, Ukraine's drone boats hit a Russian corvette in Libya\./);
+    assert.doesNotMatch(line, /submarine/);
+  });
+});
+
+describe("brief videos", () => {
+  const stories = [
+    { title: "Ukrainian Mirage 2000 shoots down Russian jet drone with gun", body: "A Mirage 2000 shot down a jet drone over Ukraine.", sector: "air" },
+    { title: "Russian corvette destroyed in Benghazi", body: "Ukrainian USVs hit a corvette in Libya.", sector: "sea" },
+  ];
+  const videos = [
+    { id: "1", title: "Pentagon defense budget and military weapons update", desc: "A weekly look at the defense industry.", topic: "defense" },
+    { id: "2", title: "Is this housing market the next Austin", desc: "Home prices and inventory.", topic: "housing" },
+    { id: "3", title: "Mirage 2000 gun kill on a jet drone", desc: "Ukraine shows a Mirage using its cannon.", topic: "defense" },
+    { id: "4", title: "The Battle of the Bridges, Crimea", desc: "Russia's strike campaign against Ukrainian bridges.", topic: "defense" },
+  ];
+
+  it("keeps a clip that shares a system and drops generic defense and off-topic clips", () => {
+    const { kept, rejected } = selectBriefVideos(stories, videos);
+    assert.deepEqual(kept.map((k) => k.video.id), ["3"]);
+    const byId = Object.fromEntries(rejected.map((r) => [r.video.id, r.reason]));
+    assert.match(byId["1"], /no shared/);
+    assert.match(byId["2"], /not a defense/);
+    assert.match(byId["4"], /no shared/);
   });
 });

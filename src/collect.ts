@@ -10,25 +10,27 @@
  * GovConWire's own /feed/ returns 403; Feedburner still serves the same items.
  */
 import { readFile, writeFile } from "node:fs/promises";
-import { fetchFeedReport } from "./rss.ts";
+import { fetchFeedReport, fetchWpPosts } from "./rss.ts";
 import { loadDesk, saveDaily, slug } from "./store.ts";
 import { buildApi } from "./build-api.ts";
 import { tagCompanies } from "./companies.ts";
 import { briefTitle, classify, storyWhy } from "./classify.ts";
-import { briefSummary, pickTop, storyScore } from "./brief.ts";
+import { briefSummary, pickTop, storyGist, storyScore } from "./brief.ts";
+import { cleanCopy, polishWhys } from "./why.ts";
 import { flaggedFeeds, updateFeedHealth, type FeedHealth, type FeedObservation } from "./feed-health.ts";
 import { matchCompanies } from "./names.ts";
 import type { Brief, Update } from "./schema.ts";
 
 type Tier = "primary" | "news" | "research" | "aggregator";
-const FEEDS: { name: string; url: string; tier: Tier }[] = [
+const FEEDS: { name: string; url: string; tier: Tier; wp?: boolean }[] = [
   { name: "Breaking Defense", url: "https://breakingdefense.com/feed/", tier: "news" },
   { name: "DefenseScoop", url: "https://defensescoop.com/feed/", tier: "news" },
   { name: "Defense News", url: "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml", tier: "news" },
   { name: "The War Zone", url: "https://www.twz.com/feed", tier: "news" },
   { name: "Air & Space Forces", url: "https://www.airandspaceforces.com/feed/", tier: "news" },
   { name: "USNI News", url: "https://news.usni.org/feed", tier: "news" },
-  { name: "SpaceNews", url: "https://spacenews.com/feed/", tier: "news" },
+  // The RSS file lags the site by days. The WordPress JSON is current.
+  { name: "SpaceNews", url: "https://spacenews.com/wp-json/wp/v2/posts?per_page=15&_fields=date,link,title,excerpt", tier: "news", wp: true },
   { name: "GovConWire", url: "https://feeds.feedburner.com/govconwire", tier: "news" },
   { name: "Defense One", url: "https://www.defenseone.com/rss/all/", tier: "news" },
   { name: "U.S. Department of War", url: "https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945&max=10", tier: "primary" },
@@ -51,7 +53,7 @@ const directory = desk.companies.map((c) => String(c.name));
 const counts = new Map<string, FeedObservation>();
 
 const batches = await Promise.all(FEEDS.map(async (feed) => {
-  const report = await fetchFeedReport(feed.name, feed.url);
+  const report = feed.wp ? await fetchWpPosts(feed.name, feed.url) : await fetchFeedReport(feed.name, feed.url);
   const newest = report.items.reduce((m, i) => (i.date > m ? i.date : m), "");
   counts.set(feed.name, {
     name: feed.name,
@@ -97,7 +99,7 @@ for (const a of articles) {
   const titleScore = sectors[0].titleScore;
   row.added++;
   added.push({
-    id, d: a.date, title: a.title, body: a.summary || a.title, why: "",
+    id, d: a.date, title: a.title, body: cleanCopy(a.summary || a.title), why: "",
     sectors: sectors.map((s) => s.id) as Update["sectors"], type: type as Update["type"], companies,
     src: { t: a.source.name, u: a.link, q: a.source.tier }, addedAt,
     score: 0, titleScore,
@@ -114,6 +116,7 @@ try {
 for (let i = 0; i < fresh.length; i++) {
   const u = fresh[i];
   const again = classify(u.title, u.body);
+  u.body = cleanCopy(u.body);
   u.why = storyWhy(u.title, u.body, again.sectors[0], u.type, u.companies);
   added[i].score = storyScore({
     type: u.type, companies: u.companies, title: u.title, body: u.body,
@@ -121,6 +124,14 @@ for (let i = 0; i < fresh.length; i++) {
   });
   added[i].why = u.why;
   added[i].companies = u.companies;
+}
+const whyPack = fresh.map((u) => ({ id: u.id, title: u.title, body: u.body, why: u.why, sector: u.sectors[0] }));
+await polishWhys(whyPack);
+for (const row of whyPack) {
+  const live = fresh.find((u) => u.id === row.id);
+  const ranked = added.find((u) => u.id === row.id);
+  if (live) live.why = row.why;
+  if (ranked) ranked.why = row.why;
 }
 desk.updates.push(...fresh);
 console.log(`Added ${added.length} new updates.`);
@@ -142,21 +153,27 @@ for (const row of counts.values()) {
 // Free brief: only when nothing (e.g. a Claude-written brief) exists for today yet.
 let brief: Brief | null = null;
 if (!desk.briefs.some((b) => b.date === today) && added.length) {
-  const picked = pickTop(added);
+  const prior = desk.updates.filter((u) => u.d < today && u.d >= new Date(Date.parse(today) - 3 * 864e5).toISOString().slice(0, 10));
+  const picked = pickTop(added, 5, prior);
   const sectorName = (id: string) => desk.sectors.find((s) => s.id === id)?.name ?? id;
   const next = desk.catalysts.filter((c) => c.d >= today).sort((a, b) => a.d.localeCompare(b.d))[0];
   const idea = desk.ideas.length ? desk.ideas[Math.floor(Date.parse(today) / 864e5) % desk.ideas.length] : null;
   const lead = picked[0];
-  brief = {
+  if (!lead) {
+    console.log("Every new story repeats an event from the last three days. No brief.");
+  } else brief = {
     date: today,
     title: briefTitle(lead.title, lead.body),
-    big: briefSummary(added.length, added.map((u) => u.sectors[0]), picked.map((u) => u.sectors[0])),
+    big: briefSummary(picked.length, added.map((u) => u.sectors[0]), picked.map((u) => u.sectors[0]), {
+      gist: picked.length === 1 ? storyGist(picked[0].title, picked[0].body) : undefined,
+      text: picked.map((u) => `${u.title} ${u.body}`).join(" "),
+    }),
     stories: picked.map((u) => ({ tag: sectorName(u.sectors[0]), h: u.title, what: u.body, you: u.why, ref: u.id })),
     watch: next ? { h: next.title, why: `${next.approx ? "Around " : ""}${new Date(next.d + "T12:00:00Z").toLocaleDateString("en-US", { month: "long", day: "numeric", timeZone: "UTC" })}. ${next.why}` } : { h: "Nothing scheduled", why: "" },
     idea: idea ? { h: String(idea.t), why: `${idea.what} ${idea.why}` } : { h: "", why: "" },
     auto: true,
   } as Brief & { auto: boolean };
-  desk.briefs.push(brief);
+  if (brief) desk.briefs.push(brief);
 }
 
 desk.meta = { ...desk.meta, collectedAt: addedAt, feedHealth: { checkedAt: addedAt, flags } };

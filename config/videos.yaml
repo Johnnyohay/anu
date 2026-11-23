@@ -29,4 +29,4 @@ channels:
 # Keywords that decide which videos from a mixed channel are kept, per topic (regular expressions).
 match:
   housing: '\b(housing|home ?(prices?|buyers?|sales|values?|builders?)|mortgages?|rents?|rental|landlords?|real estate|realtors?|apartments?)\b'
-  defense: '\b(defen[cs]e|Pentagon|military|missiles?|drones?|Anduril|Palantir|Lockheed|Raytheon|RTX|Northrop|NATO|Army|Navy|Air Force|Space Force|weapons?)\b'
+  defense: '\b(Anduril|Palantir|Lockheed|Raytheon|RTX|Northrop|missile|drone|USV|UAS|hypersonic|counter-drone|Space Force|Golden Dome|HIMARS|F-35)\b'
