@@ -74,7 +74,7 @@ const MAX_WAITS = 4;
 
 export async function chat(
   p: Provider,
-  body: { messages: ChatMsg[]; tools?: ToolDef[]; json?: boolean; temperature?: number; reasoningEffort?: "low" | "medium" | "high" },
+  body: { messages: ChatMsg[]; tools?: ToolDef[]; json?: boolean; temperature?: number; reasoningEffort?: "none" | "low" | "medium" | "high" },
   opts: { signal?: AbortSignal; onWait?: (seconds: number) => void } = {},
 ): Promise<{ content: string; toolCalls: ToolCall[]; finishReason: string }> {
   for (let attempt = 0; ; attempt++) {
@@ -87,7 +87,11 @@ export async function chat(
         messages: body.messages,
         ...(body.tools?.length ? { tools: body.tools, tool_choice: "auto" } : {}),
         ...(body.json ? { response_format: { type: "json_object" } } : {}),
-        ...(body.reasoningEffort && p.id === "groq" && p.model.startsWith("openai/gpt-oss") ? { reasoning_effort: body.reasoningEffort } : {}),
+        // Groq's gpt-oss models take a reasoning level. Qwen on Ollama thinks by default and
+        // can spend a whole timeout before any answer; "none" turns that off for the so-what pass.
+        ...(body.reasoningEffort && (p.id === "ollama" || (p.id === "groq" && p.model.startsWith("openai/gpt-oss")))
+          ? { reasoning_effort: body.reasoningEffort }
+          : {}),
         temperature: body.temperature ?? 0.2,
       }),
     });
