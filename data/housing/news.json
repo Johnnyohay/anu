@@ -1,5 +1,216 @@
 [
  {
+  "id": "h-20261123-georgia-builders-give-affordable-housing-an-essent",
+  "d": "2026-11-23",
+  "title": "Georgia builders give affordable housing an essential new identity",
+  "body": "Builders cite permit delays, infrastructure rules, and final plat holdups as price drivers",
+  "topics": [
+   "construction"
+  ],
+  "states": [
+   "GA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/georgia-essential-homes-rebrand/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261123-raleigh-s-housing-reforms-helped-ease-rents-pew-st",
+  "d": "2026-11-23",
+  "title": "Raleigh’s housing reforms helped ease rents, Pew study finds",
+  "body": "Pew estimates Raleigh's inflation adjusted rents fell 15% from 2022 to 2025 amid a building boom",
+  "topics": [
+   "rents"
+  ],
+  "states": [
+   "NC"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/raleigh-zoning-reforms-rents/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261123-cost-cutting-is-not-cost-reduction-builders-and-tr",
+  "d": "2026-11-23",
+  "title": "Cost cutting is not cost reduction; builders and trades face a test",
+  "body": "Strategem models $12,919 in tariff costs per new home, as input cost indexes rose 10.4% year over year",
+  "topics": [
+   "construction",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/homebuilder-cost-cuts-trade-partners/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261123-fha-s-reverse-mortgage-book-faces-headwinds-from-h",
+  "d": "2026-11-23",
+  "title": "FHA’s reverse mortgage book faces headwinds from home prices, fewer payoffs",
+  "body": "HECM endorsements dropped 14% to roughly 24,000 loans with $12.81 billion in maximum claim amounts in FY 2026",
+  "topics": [
+   "prices",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/fha-2026-annual-report-hecm-hmbs-capital-risks/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261123-mortgage-headlines-aren-t-as-big-a-concern-as-your",
+  "d": "2026-11-23",
+  "title": "Mortgage headlines aren’t as big a concern as your cost per closing",
+  "body": "At current rates, the same payment covers about $357,000 vs. $400,000 in February, cutting buyer power about 11%",
+  "topics": [
+   "rates",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/ate-fears-cost-closing/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261123-human-review-remains-paramount-for-ai-mortgage-und",
+  "d": "2026-11-23",
+  "title": "Human review remains paramount for AI mortgage underwriting",
+  "body": "Executives said lenders should deploy AI in stages and compare results to human reviews",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/ai-underwriting-review/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261123-washington-state-regulator-issues-temporary-stop-o",
+  "d": "2026-11-23",
+  "title": "Washington state regulator issues temporary stop on new business for Directors Mortgage",
+  "body": "Directors Mortgage must pause new originations in Washington amid records dispute, payment issues",
+  "topics": [
+   "policy"
+  ],
+  "states": [
+   "WA",
+   "DC"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/washington-dfi-directors-mortgage/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261123-new-york-governor-signs-new-rules-for-private-list",
+  "d": "2026-11-23",
+  "title": "New York Governor signs new rules for private listings into law, Compass praises it",
+  "body": "Listings must be publicly marketed unless sellers sign an opt-out disclosure, with enforcement up to $5,000 fines",
+  "topics": [
+   "inventory",
+   "sales"
+  ],
+  "states": [
+   "NY",
+   "PA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/new-york-private-listing-law/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261123-non-qm-lending-grows-as-buyers-change-financing-st",
+  "d": "2026-11-23",
+  "title": "Non-QM lending grows as buyers change financing strategies",
+  "body": "Cotality found 69% cut lifestyle spending, and 65% later changed financing to keep homeownership in reach",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/non-qm-lending-grows-as-buyers-change-financing-strategies/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261123-video-november-23-2026-economic-and-housing-market",
+  "d": "2026-11-23",
+  "title": "Video: November 23, 2026, Economic and Housing Market Outlook",
+  "body": "The November 23, 2026 Weekly Housing Outlook video gives you the info you need to know to navigate the housing market as a homebuyer, home seller, renter, or industry professional.",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/video-economic-and-housing-market-update-november-23-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261123-top-schools-low-prices-positive-cash-flow-is-this-",
+  "d": "2026-11-23",
+  "title": "Top Schools, Low Prices, Positive Cash Flow: Is This One of America’s Best Rental Market?",
+  "body": "Memphis isn’t just on investors’ radar; it’s leading the country. According to Realtor.com’s 2026 Investor Report, the Memphis metro area had the highest investor buyer share of any of the [ ]",
+  "topics": [
+   "rents",
+   "sales",
+   "investing"
+  ],
+  "states": [
+   "TN"
+  ],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/top-schools-low-prices-positive-cash-flow-is-this-one-of-americas-best-rental-market",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261123-8-rental-units-were-all-she-needed-to-quit-corpora",
+  "d": "2026-11-23",
+  "title": "8 Rental Units Were All She Needed to Quit Corporate America (in 2 Years)",
+  "body": "Nadiyah Malbon didn’t grow up with money, so she did what most “successful” people do: go to college, get a degree, and climb the corporate ladder. But after 23 years [ ]",
+  "topics": [
+   "rents"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/real-estate-1360",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261123-1-paid-off-rental-vs-3-rentals-with-mortgages-whic",
+  "d": "2026-11-23",
+  "title": "1 Paid-Off Rental vs. 3 Rentals with Mortgages: Which One Wins?(Rookie Reply)",
+  "body": "Should you pay off your mortgage early or buy more rental properties? The first option gives you peace of mind, while the other allows you to build wealth much faster. [ ]",
+  "topics": [
+   "rents"
+  ],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/rookie-800",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261121-will-the-ai-stock-sell-off-give-us-sub-7-mortgage-",
   "d": "2026-11-21",
   "title": "Will the AI stock sell-off give us sub-7% mortgage rates before the holidays?",

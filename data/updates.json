@@ -1,5 +1,908 @@
 [
   {
+    "id": "u-20261123-colombia-races-for-counter-drone-tech-as-militant-",
+    "d": "2026-11-23",
+    "title": "Colombia races for counter-drone tech as militant groups embrace drones as frontline weapons",
+    "body": "As knowledge of drone tactics proliferates faster than governments can deploy countermeasures, it seems likely we will begin to see them crop up in more countries in the region, one analyst told Breaking Defense.",
+    "why": "The watch item is a counter-drone shot cheap enough to issue to every unit.",
+    "sectors": [
+      "cuas",
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/colombia-races-for-counter-drone-tech-as-militant-groups-embrace-drones-as-frontline-weapons/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Breaking Defense"
+    ]
+  },
+  {
+    "id": "u-20261123-congress-is-out-of-time-to-decide-on-reconciliatio",
+    "d": "2026-11-23",
+    "title": "Congress is ‘out of time’ to decide on reconciliation, needs to settle topline spending: Sen. Coons",
+    "body": "If we could get to a bipartisan topline, we could spend the time from Thanksgiving to the end of the year getting a lot of this finished, said Sen. Chris Coons, the top democrat on the Senate Appropriations defense subcommittee.",
+    "why": "The watch item is whether the memo turns into a restriction on contracts.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/congress-is-out-of-time-to-decide-on-reconciliation-needs-to-settle-topline-spending-sen-coons/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Congress",
+      "Senate"
+    ]
+  },
+  {
+    "id": "u-20261123-umbra-iceye-tout-higher-resolution-radar-imaging-w",
+    "d": "2026-11-23",
+    "title": "Umbra, ICEYE tout higher-resolution radar imaging with new satellites",
+    "body": "Both companies are now offering resolutions significantly lower than the previous industry standard of around 25 centimeters, allowing customers to see smaller ground targets with higher fidelity.",
+    "why": "The watch item is whether a buyer funds a follow-on.",
+    "sectors": [
+      "sensing"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/umbra-iceye-tout-higher-resolution-radar-imaging-with-new-satellites/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Umbra",
+      "ICEYE"
+    ]
+  },
+  {
+    "id": "u-20261123-beijing-s-takeaway-from-the-midterms-will-to-fight",
+    "d": "2026-11-23",
+    "title": "Beijing’s takeaway from the midterms: Will to fight and AI skepticism",
+    "body": "The 2026 midterms exposed vulnerabilities in American attitudes toward war, economic hardship and AI that Beijing could leverage in a future conflict.",
+    "why": "The watch item is whether the software becomes the system of record.",
+    "sectors": [
+      "ai",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/beijings-takeaway-from-the-midterms-will-to-fight-and-ai-skepticism/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-yes-no-maybe-the-countries-that-can-or-can-t-deliv",
+    "d": "2026-11-23",
+    "title": "Yes, no, maybe? The countries that can (or can’t) deliver Ukraine’s 40 requested F-16s",
+    "body": "Forty F-16s is a legitimate request, and there is an urgency, but it is an ambitious, big number and definitely not easy to get them in Ukraine, especially in a short period of time, analyst Federico Borsari told Breaking Defense.",
+    "why": "The watch item is which ally actually places the order.",
+    "sectors": [
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/yes-no-maybe-the-countries-that-can-or-cant-deliver-ukraines-40-requested-f-16s/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Breaking Defense"
+    ]
+  },
+  {
+    "id": "u-20261123-marine-corps-moving-new-chatbot-prototyped-at-rece",
+    "d": "2026-11-23",
+    "title": "Marine Corps moving new chatbot prototyped at recent hackathon into full production",
+    "body": "The Marine Corps hosted a sprint hackathon in California late last month, where dozens of military officials across nine teams competed to develop and refine artificial intelligence products that could quickly be released into the service for broader….",
+    "why": "The watch item is whether the software becomes the system of record.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/23/marine-corps-chatbot-hackathon-full-production/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Marine Corps"
+    ]
+  },
+  {
+    "id": "u-20261123-disa-boss-highlights-need-for-training-standardiza",
+    "d": "2026-11-23",
+    "title": "DISA boss highlights need for training, standardization to prepare for new era of ZT and AI-enabled cyber warfare",
+    "body": "The U.S. military must ensure it has the right training and architectures in place to operate effectively in an era of zero trust and AI-enabled cyber operations, the head of the Defense Information Systems Agency and Department of Defense Cyber Defense….",
+    "why": "The watch item is who gets the defensive contract after the intrusion.",
+    "sectors": [
+      "cyber"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/23/ai-cyber-warfare-zero-trust-lt-gen-stanton/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "DISA",
+      "Defense Information Systems Agency",
+      "Department of Defense Cyber Defense…"
+    ]
+  },
+  {
+    "id": "u-20261123-a-race-for-lifesaving-battlefield-drones-defense-n",
+    "d": "2026-11-23",
+    "title": "A race for lifesaving battlefield drones Defense News Weekly Full Episode 11.24.26",
+    "body": "While Ukrainian innovators pioneer frontline aerial drone evacuation, DARPA develops AI-assisted robots to find and assess injured troops and civilians. The race to save lives is on.",
+    "why": "The watch item is which airframe or weapon gets a production order after the demo.",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/23/a-race-for-lifesaving-battlefield-drones-defense-news-weekly-full-episode-11-24-26/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Defense News",
+      "DARPA"
+    ]
+  },
+  {
+    "id": "u-20261123-ukraine-strikes-russian-warship-and-cargo-vessel-w",
+    "d": "2026-11-23",
+    "title": "Ukraine strikes Russian warship and cargo vessel with naval drones in Libya",
+    "body": "Ukrainian president Volodymyr Zelenskyy said seven naval drones were used in the attack, which sank the Russian corvette Merkury.",
+    "why": "A Russian corvette lost at Benghazi puts Moscow's Libyan naval base in range of small boats. The buy that follows is port force-protection and counter-USV sensing, not another anti-ship missile.",
+    "sectors": [
+      "sea",
+      "air",
+      "global",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/23/ukraine-strikes-russian-warship-and-cargo-vessel-with-naval-drones-in-libya/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-china-s-fourth-aircraft-carrier-bigger-than-others",
+    "d": "2026-11-23",
+    "title": "China’s fourth aircraft carrier, bigger than others and nuclear-powered, nears completion",
+    "body": "NEW TAIPEI CITY, Taiwan — China's fourth aircraft carrier, a gigantic vessel known so far as just Type 004, will come out as early as next year bigger than its predecessors and with nuclear power that can launch planes faster than usual in case of any….",
+    "why": "The watch item is port force-protection and counter-USV sensing.",
+    "sectors": [
+      "sea",
+      "energy",
+      "adversary",
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/asia-pacific/2026/11/23/chinas-fourth-aircraft-carrier-bigger-than-others-and-nuclear-powered-nears-completion/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-acting-navy-secretary-hung-cao-heads-to-the-hill-a",
+    "d": "2026-11-23",
+    "title": "Acting Navy Secretary Hung Cao heads to the Hill and the Pentagon fails an audit Headlines",
+    "body": "The acting secretary of the Navy faced tough questions from Senators during his confirmation hearing, while the Pentagon must target fraud following an internal report.",
+    "why": "The watch item is whether the memo turns into a restriction on contracts.",
+    "sectors": [
+      "policy",
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/23/acting-navy-secretary-hung-cao-heads-to-the-hill-and-the-pentagon-fails-an-audit-headlines/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261123-darpa-tests-drones-to-find-and-assess-injured-vict",
+    "d": "2026-11-23",
+    "title": "DARPA tests drones to find and assess injured victims at the Triage Challenge",
+    "body": "In the wake of a mass casualty event, DARPA hopes to send in drones to find, assess and start coordinating care for victims. Who won this year's Triage Challenge?",
+    "why": "The watch item is which airframe or weapon gets a production order after the demo.",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/23/darpa-tests-drones-to-find-and-assess-injured-victims-at-the-triage-challenge/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "DARPA"
+    ]
+  },
+  {
+    "id": "u-20261123-two-major-veterans-bills-pass-the-house-moaa-headl",
+    "d": "2026-11-23",
+    "title": "Two major veterans bills pass the House MOAA Headlines",
+    "body": "Congress took up the Taking Care of America's Veterans Act and the Major Richard Star Act, passing both pieces of legislation to the Senate, where their futures will be decided soon.",
+    "why": "The watch item is whether the memo turns into a restriction on contracts.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/23/two-major-veterans-bills-pass-the-house-moaa-headlines/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "House",
+      "MOAA",
+      "Congress",
+      "Senate"
+    ]
+  },
+  {
+    "id": "u-20261123-ukraine-confirms-it-sank-russian-corvette-in-libya",
+    "d": "2026-11-23",
+    "title": "Ukraine confirms it sank Russian corvette in Libyan port",
+    "body": "GLASGOW, Scotland — Ukraine was behind the explosive sinking of the Russian corvette Merkury in the Libyan port of Benghazi over the weekend, President Volodymyr Zelenskyy said, and the country's military released accompanying videos.",
+    "why": "A Russian corvette lost at Benghazi puts Moscow's Libyan naval base in range of small boats. The buy that follows is port force-protection and counter-USV sensing, not another anti-ship missile.",
+    "sectors": [
+      "sea",
+      "global",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/mideast-africa/2026/11/23/ukraine-confirms-it-sank-russian-corvette-in-libyan-port/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-did-ukraine-use-a-mothership-to-launch-its-sea-dro",
+    "d": "2026-11-23",
+    "title": "Did Ukraine Use A Mothership To Launch Its Sea Drone Attack On Russian Ships in Benghazi?",
+    "body": "The uncrewed surface vessels (USVs) that attacked a Russian Navy corvette and a cargo ship on Sunday were launched from a mothership at sea, the Security Service of Ukraine (SBU) claimed on Monday .",
+    "why": "Ukraine can now hit Russian ships 1,000+ miles from the Black Sea, so Russia's Mediterranean basing in Libya is exposed. Expect demand for port force-protection and counter-USV sensing.",
+    "sectors": [
+      "sea",
+      "air",
+      "global",
+      "adversary"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/did-ukraine-use-a-mothership-to-launch-its-sea-drone-attack-on-russian-ships-in-benghazi",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Security Service of Ukraine",
+      "SBU"
+    ]
+  },
+  {
+    "id": "u-20261123-marines-want-naval-strike-missiles-with-double-the",
+    "d": "2026-11-23",
+    "title": "Marines Want Naval Strike Missiles With Double The Range",
+    "body": "The U.S. Marine Corps is looking at ways to at least double the range of its ground-launched Naval Strike Missile (NSM) anti-ship cruise missiles.",
+    "why": "The watch item is who can deliver the munition in volume.",
+    "sectors": [
+      "strike"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/sea/marines-want-naval-strike-missiles-with-double-the-range",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "U.S. Marine Corps"
+    ]
+  },
+  {
+    "id": "u-20261123-china-s-naval-developments-set-for-the-spotlight-a",
+    "d": "2026-11-23",
+    "title": "China’s Naval Developments Set For The Spotlight At Zhuhai Airshow",
+    "body": "China's People's Liberation Army Navy (PLAN) says it's preparing a major presence at the upcoming 16th China International Aviation & Aerospace Exhibition in Zhuhai, with warships, carrier-based aircraft, advanced weapons systems, and uncrewed platforms set….",
+    "why": "The watch item is what the other side fields next, because that sets the requirement.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "",
+    "companies": [
+      "Aviation & Aerospace"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/chinas-naval-developments-set-for-the-spotlight-at-zhuhai-airshow",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "People's Liberation Army Navy",
+      "PLAN",
+      "Aviation & Aerospace"
+    ]
+  },
+  {
+    "id": "u-20261123-3-launches-in-2-weeks-space-data-network-backbone-",
+    "d": "2026-11-23",
+    "title": "3 Launches in 2 Weeks: Space Data Network ‘Backbone’ Takes Shape",
+    "body": "The backbone of the Space Force's new Space Data Network is coming on line as dozens of new communications satellites are on pace to provide an initial, regional capability by year end.",
+    "why": "The watch item is which orbit and which bus get the next order.",
+    "sectors": [
+      "space"
+    ],
+    "type": "",
+    "companies": [
+      "Space Data Network"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/space-force-data-network-backbone-takes-shape/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Space Data Network",
+      "Space Force"
+    ]
+  },
+  {
+    "id": "u-20261123-f-35-demo-team-returns-to-luke-ahead-of-2027-seaso",
+    "d": "2026-11-23",
+    "title": "F-35 Demo Team Returns to Luke Ahead of 2027 Season",
+    "body": "The Air Force's F-35A Lightning II Demonstration Team is returning to Luke Air Force Base in Arizona after a seven-year absence.",
+    "why": "F-35 changes what gets bought. The watch item is which airframe or weapon gets a production order after the demo.",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/f-35-demo-team-returns-to-luke-2027-season/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261123-usni-news-fleet-and-marine-tracker-nov-23-2026",
+    "d": "2026-11-23",
+    "title": "USNI News Fleet and Marine Tracker: Nov. 23, 2026",
+    "body": "These are the approximate positions of the U.S. Navy's deployed carrier strike groups and amphibious ready groups throughout the world as of Nov. 23, 2026, based on Navy and public data.",
+    "why": "The watch item is port force-protection and counter-USV sensing.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/23/usni-news-fleet-and-marine-tracker-nov-23-2026",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "USNI News Fleet",
+      "U.S. Navy"
+    ]
+  },
+  {
+    "id": "u-20261123-recon-marines-join-finnish-naval-exercise-baltic-n",
+    "d": "2026-11-23",
+    "title": "Recon Marines Join Finnish Naval Exercise, Baltic NATO Naval Drills",
+    "body": "U.S. Marines with Force Reconnaissance Company, 2d Reconnaissance Battalion, 2d Marine Division, conduct boat operations during NATO Enhanced Vigilance Activity Baltic Sentry off the coast of southern Finland, Nov. 7, 2026. US Marine Corps photo.",
+    "why": "The watch item is which ally actually places the order.",
+    "sectors": [
+      "global",
+      "sensing"
+    ],
+    "type": "",
+    "companies": [
+      "Force Reconnaissance Company"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/23/recon-marines-join-finnish-naval-exercise-baltic-nato-naval-drills",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "U.S. Marines",
+      "Force Reconnaissance Company",
+      "2d Marine Division",
+      "US Marine Corps"
+    ]
+  },
+  {
+    "id": "u-20261123-u-s-commits-2b-defense-loan-for-philippine-militar",
+    "d": "2026-11-23",
+    "title": "U.S. Commits $2B Defense Loan for Philippine Military, Luzon Strait Development",
+    "body": "Philippine marines assigned to 4th Marine Brigade, and U.S. Marines assigned to 3rd Littoral Combat Team, 3rd Marine Littoral Regiment, 3rd Marine Division, participate in a cumulative training event for maritime key terrain security operations during….",
+    "why": "The watch item is port force-protection and counter-USV sensing.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "",
+    "companies": [
+      "Luzon Strait Development"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/23/u-s-commits-2b-defense-loan-for-philippine-military-luzon-strait-development",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Philippine Military",
+      "Luzon Strait Development"
+    ]
+  },
+  {
+    "id": "u-20261123-ford-takes-stake-in-revolution-space",
+    "d": "2026-11-23",
+    "title": "Ford takes stake in Revolution Space",
+    "body": "Automaker to bring manufacturing expertise to Boston space company expanding from electric propulsion to complete spacecraft.",
+    "why": "The watch item is which orbit and which bus get the next order.",
+    "sectors": [
+      "space",
+      "mfg"
+    ],
+    "type": "",
+    "companies": [
+      "Revolution Space"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/ford-takes-stake-in-revolution-space/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Ford",
+      "Revolution Space"
+    ]
+  },
+  {
+    "id": "u-20261123-umbra-unveils-new-family-of-sar-satellites",
+    "d": "2026-11-23",
+    "title": "Umbra unveils new family of SAR satellites",
+    "body": "WASHINGTON — Space technology company Umbra unveiled a new line of synthetic aperture radar (SAR) satellites that the company says will bring improved accuracy and an expanded capability set.",
+    "why": "The watch item is whether a buyer funds a follow-on.",
+    "sectors": [
+      "sensing",
+      "space"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/umbra-unveils-new-family-of-sar-satellites/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Umbra",
+      "WASHINGTON"
+    ]
+  },
+  {
+    "id": "u-20261123-space-beyond-orders-hardware-for-10-more-memorial-",
+    "d": "2026-11-23",
+    "title": "Space Beyond orders hardware for 10 more memorial cubesat missions",
+    "body": "Space Beyond has ordered enough hardware for 10 follow-on cubesats after growing sales for the Florida startup's first memorial spacecraft, slated to carry cremated remains into orbit in October 2027.",
+    "why": "The watch item is which orbit and which bus get the next order.",
+    "sectors": [
+      "space"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Space Beyond"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/space-beyond-orders-hardware-for-10-more-memorial-cubesat-missions/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Space Beyond"
+    ]
+  },
+  {
+    "id": "u-20261123-upgrading-cellular-networks-with-space-support",
+    "d": "2026-11-23",
+    "title": "Upgrading cellular networks with space support",
+    "body": "Using satellites to connect smartphones beyond the reach of cell towers is not the only way the space industry can help cellular operators plug coverage gaps.",
+    "why": "The watch item is which orbit and which bus get the next order.",
+    "sectors": [
+      "space"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/upgrading-cellular-networks-with-space-support/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-thruster-glitch-clouds-bepicolombo-arrival-at-merc",
+    "d": "2026-11-23",
+    "title": "Thruster glitch clouds BepiColombo arrival at Mercury",
+    "body": "A joint European-Japanese mission has entered orbit around Mercury after an eight-year journey, despite a premature shutdown of its thrusters.",
+    "why": "The watch item is which orbit and which bus get the next order.",
+    "sectors": [
+      "space"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/thruster-glitch-clouds-bepicolombo-arrival-at-mercury/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-with-the-proliferation-of-european-satellites-we-n",
+    "d": "2026-11-23",
+    "title": "With the proliferation of European satellites, we need a new approach to space-based surveillance",
+    "body": "European space companies are expanding rapidly. They are attracting substantial investment, developing new satellite services and competing for contracts once reserved for large aerospace groups.",
+    "why": "The watch item is which orbit and which bus get the next order.",
+    "sectors": [
+      "space",
+      "sensing",
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/with-the-proliferation-of-european-satellites-we-need-a-new-approach-to-space-based-surveillance/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-fehrm-s-lance-scott-to-discuss-transitioning-ai-pi",
+    "d": "2026-11-23",
+    "title": "FEHRM’s Lance Scott to Discuss Transitioning AI Pilots Into Operations at the 2026 Healthcare Summit",
+    "body": "The FEHRM chief technology officer will participate in a fireside chat at the 2026 Healthcare Summit on Dec. 3, a GovCon forum.",
+    "why": "The watch item is whether the software becomes the system of record.",
+    "sectors": [
+      "ai"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "GovConWire",
+      "u": "https://www.govconwire.com/articles/lance-scott-fehrm-electronic-health-records-healthcare-ai-data-cyber",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "FEHRM"
+    ]
+  },
+  {
+    "id": "u-20261123-lockheed-martin-secures-1-5b-modification-for-trid",
+    "d": "2026-11-23",
+    "title": "Lockheed Martin Secures $1.5B Modification for Trident II D5 Missile Production, Fleet Support",
+    "body": "The sole-source contract calls for work in Utah, Florida, Colorado and other sites running through 2031.",
+    "why": "The watch item is who can deliver the munition in volume.",
+    "sectors": [
+      "strike",
+      "primes"
+    ],
+    "type": "",
+    "companies": [
+      "Lockheed Martin"
+    ],
+    "src": {
+      "t": "GovConWire",
+      "u": "https://www.govconwire.com/articles/lockheed-martin-navy-1-5b-trident-ii-d5-missile-production",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Lockheed Martin"
+    ]
+  },
+  {
+    "id": "u-20261123-trump-s-contractor-gag-order-is-an-affront-to-cong",
+    "d": "2026-11-23",
+    "title": "Trump’s contractor gag order is an affront to Congressional oversight",
+    "body": "On Friday night, the White House published a new executive order designed to stymie government contractors' cooperation with the surge in congressional oversight expected to begin once Democrats assume control of Congress in January.",
+    "why": "The watch item is whether the memo turns into a restriction on contracts.",
+    "sectors": [
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/ideas/2026/11/trumps-contractor-order-affront-congress-oversight/417410/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Congressional"
+    ]
+  },
+  {
+    "id": "u-20261123-navy-family-takes-oath-of-enlistment-together",
+    "d": "2026-11-23",
+    "title": "Navy Family Takes Oath of Enlistment Together",
+    "body": "A Long Island family took the Navy's oath of enlistment together aboard the USS San Antonio in New York City as Rachal and Cole Sweetser reenlisted and their son, Vito Steimaitis, took the oath for the first time.",
+    "why": "The watch item is port force-protection and counter-USV sensing.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4658236/navy-family-takes-oath-of-enlistment-together/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261123-russian-convoy-idles-off-tunisia-after-sea-drones-",
+    "d": "2026-11-23",
+    "title": "Russian convoy idles off Tunisia after sea drones hit Benghazi",
+    "body": "Three Russian cargo ships escorted by one of Moscow's newest frigates have been crawling along the coast of Tunisia for days, according to an open-source ship tracker. Two days ago, Ukraine said it sank a Russian corvette in Libya.",
+    "why": "A Russian corvette lost at Benghazi puts Moscow's Libyan naval base in range of small boats. The buy that follows is port force-protection and counter-USV sensing, not another anti-ship missile.",
+    "sectors": [
+      "air",
+      "sea",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russian-convoy-idles-off-tunisia-after-sea-drones-hit-benghazi/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-new-spys-interceptor-shot-down-russia-s-geran-5-cr",
+    "d": "2026-11-23",
+    "title": "New SPYS interceptor shot down Russia’s Geran-5 cruise missile",
+    "body": "A Ukrainian-built interceptor drone has destroyed a Geran-5 K5-K, a weapon widely reported as Russia's newest jet-powered attack drone but classed by Ukrainian intelligence as a small cruise missile.",
+    "why": "The watch item is who can deliver the munition in volume.",
+    "sectors": [
+      "strike",
+      "missiledef",
+      "cuas",
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/new-spys-interceptor-shot-down-russias-geran-5-cruise-missile/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-u-s-army-ampv-gets-self-driving-prototype-renk-say",
+    "d": "2026-11-23",
+    "title": "U.S. Army AMPV gets self-driving prototype, RENK says",
+    "body": "A driverless version of the U.S. Army's Armored Multi-Purpose Vehicle, or AMPV, is due for its first demonstration in February 2027. The part that lets it drive itself is an upgrade to the transmission it already uses, according to supplier RENK America.",
+    "why": "The watch item is whether a buyer funds a follow-on.",
+    "sectors": [
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-ampv-gets-self-driving-prototype-renk-says/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261123-israeli-firm-says-its-new-spy-drone-broke-range-re",
+    "d": "2026-11-23",
+    "title": "Israeli firm says its new spy drone broke range record",
+    "body": "A backpack-sized Israeli spy drone flew 16 km (10 miles) out and back on a single flight without any external antennas, its maker said Monday. The company called it a new all-time range record.",
+    "why": "The watch item is which airframe or weapon gets a production order after the demo.",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/israeli-firm-says-its-new-spy-drone-broke-range-record/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-israel-aerospace-industries-profit-jumps-37-as-bac",
+    "d": "2026-11-23",
+    "title": "Israel Aerospace Industries profit jumps 37% as backlog hits $35.6 billion",
+    "body": "Israel Aerospace Industries reported a record $35.6 billion order backlog on Monday and urged the government to settle a Defense Ministry debt that the state-owned company put at billions of shekels. The maker of the Arrow missile-defense system said net….",
+    "why": "The watch item is which ally actually places the order.",
+    "sectors": [
+      "global"
+    ],
+    "type": "",
+    "companies": [
+      "Israel Aerospace Industries"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/israel-aerospace-industries-profit-jumps-37-as-backlog-hits-35-6-billion/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Israel Aerospace Industries",
+      "Defense Ministry"
+    ]
+  },
+  {
+    "id": "u-20261123-powerus-turns-existing-boats-into-crewless-drone-l",
+    "d": "2026-11-23",
+    "title": "Powerus turns existing boats into crewless drone launchers",
+    "body": "U.S. drone maker Powerus is offering to turn boats that militaries already own into crewless drone carriers. Its maritime conversion, called Blue Sky Horizon, adds launch rails on the bow for long-range drones.",
+    "why": "The watch item is which airframe or weapon gets a production order after the demo.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/powerus-turns-existing-boats-into-crewless-drone-launchers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Powerus",
+      "Sky"
+    ]
+  },
+  {
+    "id": "u-20261123-u-s-navy-clears-german-lar-8000-combat-diving-rebr",
+    "d": "2026-11-23",
+    "title": "U.S. Navy clears German LAR 8000 combat diving rebreather",
+    "body": "An oxygen rebreather built to let combat divers swim without trailing bubbles has passed a U.S. Navy safety review, its maker said Monday.",
+    "why": "The watch item is port force-protection and counter-USV sensing.",
+    "sectors": [
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-navy-clears-german-lar-8000-combat-diving-rebreather/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "U.S. Navy"
+    ]
+  },
+  {
+    "id": "u-20261123-russia-rebuilds-key-military-base-60-km-from-finla",
+    "d": "2026-11-23",
+    "title": "Russia rebuilds key military base 60 km from Finland",
+    "body": "Russia has torn down two mess halls, two barracks and more than a dozen vehicle and maintenance halls at its most important army base near Finland, and new construction has started in their place.",
+    "why": "The watch item is what the other side fields next, because that sets the requirement.",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-rebuilds-key-military-base-60-km-from-finland/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-turkish-naval-gun-system-shoots-down-jet-drone-in-",
+    "d": "2026-11-23",
+    "title": "Turkish naval gun system shoots down jet drone in live-fire test",
+    "body": "A Turkish twin-cannon ship defense system shot down a fast jet-powered drone off Türkiye's northern coast, and its operator only had to press one button. ASELSAN released video of the test on Monday.",
+    "why": "A fighter gun, not a missile, killed a jet-powered drone. Air forces will buy cannon cueing and ammunition for that shot, because the missile is the expensive side of the trade.",
+    "sectors": [
+      "air",
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/turkish-naval-gun-system-shoots-down-jet-drone-in-live-fire-test/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "ASELSAN"
+    ]
+  },
+  {
     "id": "u-20261122-russian-corvette-reportedly-destroyed-in-blast-at-",
     "d": "2026-11-22",
     "title": "Russian corvette reportedly destroyed in blast at Libyan port",
@@ -170,6 +1073,30 @@
     "addedAt": "2026-11-23T04:22:03.537Z",
     "orgs": [
       "Navy"
+    ]
+  },
+  {
+    "id": "u-20261122-space-force-speeds-satellite-network-launches",
+    "d": "2026-11-22",
+    "title": "Space Force speeds satellite network launches",
+    "body": "Three launches in two weeks advance SpaceX-built Space Data Network Backbone network amid concerns over procurement competition.",
+    "why": "The watch item is which orbit and which bus get the next order.",
+    "sectors": [
+      "space"
+    ],
+    "type": "",
+    "companies": [
+      "Space Data Network Backbone"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/space-force-speeds-satellite-network-launches/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Space Force",
+      "Space Data Network Backbone"
     ]
   },
   {
@@ -487,6 +1414,26 @@
       "NATO",
       "HALIFAX"
     ]
+  },
+  {
+    "id": "u-20261121-europe-s-space-community-makes-the-case-for-a-huma",
+    "d": "2026-11-21",
+    "title": "Europe’s space community makes the case for a human spaceflight program",
+    "body": "European government officials and companies are building the case for Europe to invest in a human spaceflight capability ahead of a key meeting next month.",
+    "why": "The watch item is which orbit and which bus get the next order.",
+    "sectors": [
+      "space",
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/europes-space-community-makes-the-case-for-a-human-spaceflight-program/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
   },
   {
     "id": "u-20261120-australia-receives-first-2-of-13-additional-seahaw",
