@@ -41,13 +41,39 @@ export function isListicle(title: string, body = ""): boolean {
   return /\b(roundup|what you need to know|check out these|week in review|sponsored|list of)\b/i.test(text);
 }
 
+/** Ceremonies, promo, and show episodes are not brief stories. */
+export function isFiller(title: string, body = ""): boolean {
+  const text = `${title} ${body}`;
+  if (/\b(oath of enlistment|demo team returns|full episode|week in review)\b/i.test(text)) return true;
+  if (/\bMOAA\b/.test(title) || /\bheadlines$/i.test(title.trim())) return true;
+  if (/\bveterans bills\b/i.test(title)) return true;
+  return false;
+}
+
+/** Commercial space (memorial flights, cremated remains) is not a defense lead. */
+export function isConsumerSpace(title: string, body = ""): boolean {
+  const text = `${title} ${body}`;
+  if (/space force|missile|military satellite|\bSDA\b/i.test(text)) return false;
+  return /cremated|memorial spacecraft|memorial cubesat|ashes\b|space burial|space tourism/i.test(text);
+}
+
 export function storyScore(u: { type?: string; companies?: string[]; title: string; body?: string; titleScore?: number; primary?: boolean }): number {
-  const base = (TYPE_WEIGHT[u.type || ""] ?? 1)
+  const text = `${u.title} ${u.body ?? ""}`;
+  let base = (TYPE_WEIGHT[u.type || ""] ?? 1)
     + (u.companies?.length ?? 0) * 2
     + ((u.titleScore ?? 0) >= 4 ? 2 : 0)
     + (/\$\d/.test(u.title) ? 2 : 0)
     + (u.primary ? 1 : 0);
-  return base + (isListicle(u.title, u.body ?? "") ? -20 : 0);
+  if (isListicle(u.title, u.body ?? "")) base -= 20;
+  if (isFiller(u.title, u.body ?? "")) base -= 40;
+  if (isConsumerSpace(u.title, u.body ?? "")) base -= 30;
+  if (/\bnasa\b/i.test(text) && /noaa|weather service|sounder/i.test(text) && !/space force|missile|pentagon|department of war/i.test(text)) base -= 18;
+  if (/\bspac\b|nyse debut/i.test(text)) base -= 12;
+  if (/(private equity|to acquire)/i.test(text) && /satellite/i.test(text) && !/military|missile|space force|department of war/i.test(text)) base -= 10;
+  if (/(sank|sinks|sunk|shot down|destroyed)/i.test(text) && /(corvette|warship|missile|drone|carrier|interceptor)/i.test(text)) base += 14;
+  if (/nuclear/i.test(text) && /carrier/i.test(text)) base += 10;
+  if (/\$\d/.test(text) && /(contract|loan|award|sole-source|modification|backlog)/i.test(text)) base += 4;
+  return base;
 }
 
 const STOP = new Set("the a an of to for and or in on with from its their this that has have after over into than then says said will would about new more most first next than".split(" "));
@@ -62,12 +88,22 @@ function words(text: string): Set<string> {
  * Same hull in the same place, or the same appropriations markup.
  * Headline wording is not required to match.
  */
+/** Strip show-episode furniture so two airings of the same segment compare equal. */
+export function coreTitle(title: string): string {
+  return title.replace(/\b(defense news weekly|full episode|moaa headlines|headlines)\b.*$/i, "").replace(/\s+/g, " ").trim();
+}
+
 export function eventKey(title: string, body = ""): string | null {
   const t = `${title} ${body}`.toLowerCase();
-  if (/(corvette|frigate|destroyer|warship)/.test(t) && /(benghazi|libya)/.test(t)) return "warship@libya";
+  const naval = /(corvette|frigate|destroyer|warship|cargo vessel|naval drone|sea drone|mothership|convoy)/.test(t);
+  const libya = /(benghazi|libya|tunis)/.test(t);
+  if (naval && libya) return "warship@libya";
+  if (libya && /(sank|sunk|struck|strike)/.test(t) && /(ship|vessel|corvette|naval|convoy|drone)/.test(t)) return "warship@libya";
   if (/\bmirage\b/.test(t) && /drone/.test(t)) return "mirage@drone";
   if (/nightmare|\bfpv\b/.test(t) && /(bragg|special forces)/.test(t)) return "fpv@bragg";
   if (/(shotgun|12-gauge)/.test(t) && /benning/.test(t)) return "shotgun@benning";
+  const episode = coreTitle(title).toLowerCase();
+  if (episode && episode.length > 12 && /gun down drones/.test(episode)) return `episode:${episode}`;
   return null;
 }
 
@@ -78,18 +114,57 @@ export function materiallyNew(prev: string, next: string): boolean {
   return !!n && n !== money(prev);
 }
 
-/** True when two items are the same event told twice, not two events in one sector. */
-export function sameEvent(a: { title: string; body?: string }, b: { title: string; body?: string }): boolean {
-  const ka = eventKey(a.title, a.body);
-  const kb = eventKey(b.title, b.body ?? "");
-  if (ka && ka === kb) return true;
-  const blob = (x: { title: string; body?: string }) => `${x.title} ${x.body ?? ""}`;
-  if (/\bappropriators?\b/i.test(blob(a)) && /\bappropriators?\b/i.test(blob(b))) return true;
-  const ta = words(a.title);
-  const tb = words(b.title);
+function titleAlike(a: string, b: string): boolean {
+  const ta = words(coreTitle(a));
+  const tb = words(coreTitle(b));
   const inter = [...ta].filter((t) => tb.has(t));
   const union = new Set([...ta, ...tb]).size || 1;
   return inter.length >= 3 && inter.length / union >= 0.45;
+}
+
+/**
+ * Same event across feeds, by a shared event key or by the headline itself.
+ * Appropriations bills are not collapsed here; `sameEvent` does that inside one day.
+ */
+export function sameStory(a: { title: string; body?: string }, b: { title: string; body?: string }): boolean {
+  const ka = eventKey(a.title, a.body);
+  const kb = eventKey(b.title, b.body ?? "");
+  if (ka && ka === kb) return true;
+  return titleAlike(a.title, b.title);
+}
+
+/** True when two items are the same event told twice, not two events in one sector. */
+export function sameEvent(a: { title: string; body?: string }, b: { title: string; body?: string }): boolean {
+  if (sameStory(a, b)) return true;
+  const blob = (x: { title: string; body?: string }) => `${x.title} ${x.body ?? ""}`;
+  if (/\bappropriators?\b/i.test(blob(a)) && /\bappropriators?\b/i.test(blob(b))) return true;
+  return false;
+}
+
+export interface DedupeDrop<T> { item: T; because: string }
+
+/** Keep the highest-scored write-up of each event. Recent days count as already told. */
+export function dedupeEvents<T extends { title: string; body?: string; score: number }>(
+  items: T[],
+  prior: { title: string; body?: string; d?: string }[] = [],
+): { kept: T[]; dropped: DedupeDrop<T>[] } {
+  const ranked = [...items].sort((a, b) => b.score - a.score);
+  const kept: T[] = [];
+  const dropped: DedupeDrop<T>[] = [];
+  for (const item of ranked) {
+    const earlier = prior.find((p) => sameStory(p, item) && !materiallyNew(`${p.title} ${p.body ?? ""}`, `${item.title} ${item.body ?? ""}`));
+    if (earlier) {
+      dropped.push({ item, because: earlier.d ? `already covered on ${earlier.d}` : "already covered" });
+      continue;
+    }
+    const twin = kept.find((p) => sameStory(p, item));
+    if (twin) {
+      dropped.push({ item, because: `same event as “${twin.title}”` });
+      continue;
+    }
+    kept.push(item);
+  }
+  return { kept, dropped };
 }
 
 export function pickTop<T extends { title: string; body?: string; sectors: string[]; score: number; d: string }>(
@@ -100,10 +175,7 @@ export function pickTop<T extends { title: string; body?: string; sectors: strin
   const ranked = [...items].sort((a, b) => b.score - a.score || b.d.localeCompare(a.d));
   const picked: T[] = [];
   const used = new Set<string>();
-  const already = (u: T) => prior.some((p) => {
-    const k = eventKey(u.title, u.body);
-    return !!k && k === eventKey(p.title, p.body) && !materiallyNew(`${p.title} ${p.body ?? ""}`, `${u.title} ${u.body ?? ""}`);
-  });
+  const already = (u: T) => prior.some((p) => sameStory(p, u) && !materiallyNew(`${p.title} ${p.body ?? ""}`, `${u.title} ${u.body ?? ""}`));
   const take = (repeatSector: boolean) => {
     for (const u of ranked) {
       if (picked.includes(u) || already(u)) continue;
@@ -119,10 +191,12 @@ export function pickTop<T extends { title: string; body?: string; sectors: strin
   return picked;
 }
 
-function tally(ids: string[]): string[] {
+function tally(ids: string[]): { id: string; n: number }[] {
   const counts = new Map<string, number>();
   for (const id of ids) counts.set(id, (counts.get(id) ?? 0) + 1);
-  return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([id]) => id);
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([id, n]) => ({ id, n }));
 }
 
 const labelOf = (id: string, submarines: boolean) => id === "sea" && submarines ? "ships and submarines" : (SHORT[id] ?? id);
@@ -146,14 +220,35 @@ export function briefSummary(
   if (total <= 0) return "Quiet day: nothing new that was not already covered.";
   if (total === 1 && opts.gist) return `Quiet weekend: 1 new story, ${opts.gist.replace(/\.$/, "")}.`;
   const subs = /submarine/i.test(opts.text ?? "");
-  const volume = tally(leadSectors).slice(0, 2);
-  const focus = tally(topSectors).slice(0, 2);
-  const n = `${total} new stories`;
+  const volume = tally(leadSectors);
+  const focus = tally(topSectors);
+  const n = `${total} new ${total === 1 ? "story" : "stories"}`;
   if (!focus.length) return `${n}.`;
-  const about = pair(focus, subs);
-  const most = pair(volume, subs);
-  if (most && most !== about) return `${n}. Most came from ${most}; the top five are mostly about ${about}.`;
-  return `${n}. The top five are mostly about ${about}.`;
+  const focusIds = (focus[0]?.n ?? 0) >= 2 ? focus.slice(0, 2).map((row) => row.id) : [];
+  const about = focusIds.length ? pair(focusIds, subs) : focus.map((row) => labelOf(row.id, subs)).join(", ");
+  const mostly = focus[0] && focus[0].n >= 2 && focus[0].n > (focus[1]?.n ?? 0) ? "mostly " : "";
+  const volTop = volume[0];
+  const volShare = volTop && leadSectors.length ? volTop.n / leadSectors.length : 0;
+  let from = "";
+  if (volTop && volTop.n >= 2 && volShare >= 0.5) {
+    const ids = volume.slice(0, 2).map((row) => row.id);
+    from = `Most came from ${pair(ids, subs)}`;
+  } else if (volTop && volTop.n >= 2) {
+    from = `The new stories are led by ${labelOf(volTop.id, subs)}`;
+  }
+  const top = `the top five are ${mostly}about ${about}`;
+  if (from) return `${n}. ${from}; ${top}.`;
+  return `${n}. ${top.charAt(0).toUpperCase()}${top.slice(1)}.`;
+}
+
+/** One sentence on the last two weeks, dated by the collect run, so the October picture is not the only pulse. */
+export function weekLine(updates: { d: string; sectors?: string[]; title: string }[], today: string): string {
+  const start = new Date(Date.parse(today) - 14 * 864e5).toISOString().slice(0, 10);
+  const recent = updates.filter((u) => u.d >= start && u.d <= today);
+  if (!recent.length) return `No stories filed between ${start} and ${today}.`;
+  const leaders = tally(recent.map((u) => u.sectors?.[0] || "").filter(Boolean)).slice(0, 3);
+  const led = leaders.map((row) => `${labelOf(row.id, false)} (${row.n})`).join(", ");
+  return `${recent.length} stories since ${start}, led by ${led}.`;
 }
 
 /** One clause for a one-story day, taken from the event rather than the headline's casing. */

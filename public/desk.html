@@ -242,7 +242,7 @@ nav.desks a.ask{background:var(--accent);color:var(--accent-ink);border-color:va
 <!-- PULSE -->
 <section class="panel" data-panel="pulse" hidden>
   <div class="meta-row" id="meta-row" style="margin-top:0"><span>Loading…</span></div>
-  <div class="thesis"><p id="headline">Loading…</p></div>
+  <div class="thesis"><p id="headline">Loading…</p><p class="status" id="picture-asof"></p></div>
   <div>
     <div class="head-row" style="margin-bottom:12px"><h3>Forces moving the industry</h3><span class="status">Tap a sector chip to open its brief</span></div>
     <div class="grid g4" id="forces"></div>
@@ -439,6 +439,12 @@ function recentCount(secId,days=60){const cut=new Date(today()-days*864e5);retur
 function renderPulse(){
   const m=S.meta||{};
   $("#headline").textContent=m.headline||"";
+  const picture=$("#picture-asof");
+  if(picture){
+    const written=m.asOf?`These forces were written ${m.asOf}. They are not refreshed by the daily collector.` : "";
+    const week=m.week?`This week (${m.weekAsOf||"latest collect"}): ${m.week}` : "";
+    picture.textContent=[written, week].filter(Boolean).join(" ");
+  }
   $("#forces").innerHTML=(m.forces||[]).map(f=>`<div class="box force"><h4>${esc(f.t)}</h4><p>${esc(f.b)}</p><div class="chips">${(f.s||[]).map(secChip).join("")}</div></div>`).join("");
   $("#heat").innerHTML=S.sectors.map(s=>{const n=recentCount(s.id);return `<button class="tile" data-sector="${esc(s.id)}"><span class="nm">${esc(s.name)}</span><span class="row"><span class="pips" title="Momentum ${s.heat}/5">${[1,2,3,4,5].map(i=>`<span class="pip ${i<=s.heat?"on":""}"></span>`).join("")}</span><span class="cnt"><b>${n}</b> recent</span></span></button>`;}).join("");
   $("#pulse-latest").innerHTML=[...S.updates].sort(byDateDesc).slice(0,6).map(u=>itemHTML(u,true)).join("")||`<p class="status">No updates yet.</p>`;

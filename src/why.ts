@@ -34,27 +34,10 @@ export function cleanCopy(text: string): string {
     .replace(/[,"'\s]+$/g, "")
     .replace(/\s+/g, " ")
     .trim();
-  if (s && !/[.!?]$/.test(s)) s += ".";
+  s = s.replace(/(?:…|\.{3,})+\.?$/g, "…");
+  if (s && !/[.!?…]$/.test(s)) s += ".";
   return s;
 }
-
-const WATCH: Record<string, string> = {
-  air: "which airframe or weapon gets a production order after the demo",
-  sea: "port force-protection and counter-USV sensing",
-  cuas: "a counter-drone shot cheap enough to issue to every unit",
-  strike: "who can deliver the munition in volume",
-  missiledef: "which interceptor and which sensor get the production buy",
-  global: "which ally actually places the order",
-  policy: "whether the memo turns into a restriction on contracts",
-  adversary: "what the other side fields next, because that sets the requirement",
-  space: "which orbit and which bus get the next order",
-  cyber: "who gets the defensive contract after the intrusion",
-  ew: "which jammer or sensor gets onto the ship",
-  ai: "whether the software becomes the system of record",
-  primes: "where the prime subcontracts instead of building it",
-  mfg: "which factory can actually raise output",
-  capital: "whether the round turns into a program of record",
-};
 
 function blobOf(title: string, body: string): string {
   return cleanCopy(`${title}. ${body}`).toLowerCase();
@@ -68,16 +51,137 @@ export function limitActor(text: string): string | undefined {
   return m[1].replace(/^the /i, "");
 }
 
-function namedThing(title: string, body: string): string | undefined {
-  const text = `${title} ${body}`;
-  const hit = text.match(/\b(Mirage 2000|Nightmare FPV|Fort Bragg|Fort Benning|Benghazi|Libya|Canada|Stinger|SEWIP|THAAD|F-35|DropShip|Pyka|corvette)\b/i);
-  return hit?.[1];
+/** A dollar figure as written, with billion shortened to B so lines stay comparable. */
+function moneyPhrase(text: string): string | undefined {
+  const m = text.match(/\$\s?(\d[\d,]*(?:\.\d+)?)\s*(billion|million|bn|m|b)\b/i);
+  if (!m) return;
+  const n = m[1].replace(/,/g, "");
+  const unit = m[2].toLowerCase();
+  if (unit === "billion" || unit === "bn" || unit === "b") return `$${n}B`;
+  return `$${n} million`;
 }
 
-function sectorLine(sector: string | undefined, title: string, body: string): string {
-  const thing = namedThing(title, body);
-  const watch = WATCH[sector || ""] || "whether a buyer funds a follow-on";
-  return cleanCopy(`${thing ? `${thing} changes what gets bought. ` : ""}The watch item is ${watch}.`);
+function programOf(text: string): string | undefined {
+  const m = text.match(/\b(Trident II D5|Geran-\d+|SPYS|Type 004|Golden Dome|DAWG|F-35 Block 4|F-35|Luzon Strait|Arrow|SEWIP|HIMARS|Stinger|PULS|THAAD|Valkyrie|AMPV|MH-47Gs?)\b/i);
+  return m?.[1];
+}
+
+function allMoney(text: string): string[] {
+  return [...text.matchAll(/\$\s?(\d[\d,]*(?:\.\d+)?)\s*(billion|million|bn|m|b)\b/gi)].map((m) => {
+    const n = m[1].replace(/,/g, "");
+    const unit = m[2].toLowerCase();
+    return unit === "billion" || unit === "bn" || unit === "b" ? `$${n}B` : `$${n} million`;
+  });
+}
+
+/** Drop a NER fragment that is just the headline's first words plus a verb. */
+function firm(title: string, companies: string[]): string | undefined {
+  const bad = /\b(reports|says|said|orders|lands|wins|closes|acquires|journal|development)\b/i;
+  const good = companies.find((c) => !bad.test(c));
+  if (good) return good;
+  return title.match(/\b([A-Z][A-Za-z0-9&'.-]+)\b/)?.[1];
+}
+
+function actor(text: string, companies: string[], title: string): string {
+  const t = text.toLowerCase();
+  if (/special operations command|\bsocom\b/.test(t)) return "SOCOM";
+  if (/\bnasa\b/.test(t)) return "NASA";
+  if (/air force/.test(t)) return "The Air Force";
+  if (/pentagon|department of war/.test(t)) return "The Pentagon";
+  if (/\bnavy\b/.test(t)) return "The Navy";
+  if (/\barmy\b/.test(t)) return "The Army";
+  return firm(title, companies) || "The buyer";
+}
+
+/**
+ * A line built only from facts that are actually in the story: buyer, program,
+ * dollar amount, deadline, and what changes. No sector stock phrase.
+ */
+function factLine(title: string, body: string, companies: string[], ctx?: WhyContext): string {
+  const text = `${title}. ${body}`;
+  const t = text.toLowerCase();
+  const money = moneyPhrase(text);
+  const program = programOf(text);
+  const who = actor(text, companies, title);
+
+  if (/\b(topline|reconciliation)\b/.test(t) || (/\bappropriations?\b/.test(t) && /\b(cr|continuing resolution|stopgap)\b/.test(t))) {
+    const when = ctx?.deadline;
+    const stakes = (ctx?.stakes ?? []).filter((s) => s);
+    const like = stakes.length ? ` like ${stakes.join(" and ")}` : "";
+    if (when) return `If there's no topline by ${when}, another CR freezes new starts${like}.`;
+    return "Without a topline, another continuing resolution freezes new starts.";
+  }
+  if (/sole-source/.test(t) && /lockheed/.test(t) && /20\d{2}/.test(t)) {
+    const year = text.match(/through\s+(20\d{2})/i)?.[1] ?? text.match(/\b(20\d{2})\b/)?.[1];
+    return `Sole-source work through ${year} locks in Lockheed's strategic-missile backlog.`;
+  }
+  if (/\bloan\b/.test(t) && /philippine/.test(t)) {
+    const place = /luzon strait/i.test(text) ? "Luzon Strait sites" : "the sites in the loan";
+    return `Financing for ${place} sets up US-built buys for the Philippine military.`;
+  }
+  if (/backlog/.test(t) && /israel/.test(t) && money && /missile/.test(t)) {
+    return `A ${money} backlog shows Israeli missile defense is now a mainstream export.`;
+  }
+  if (/(shot down|downs|destroyed)/.test(t) && /interceptor/.test(t)) {
+    const weapon = text.match(/Geran-\d+/i)?.[0] ?? "that target";
+    const who = /ukrain/.test(t) ? "Ukraine" : "The unit that fired";
+    return `${who} downing a ${weapon} with an interceptor makes that round a combat reference. The next buy is more of the round that worked.`;
+  }
+  if (/china/.test(t) && /carrier/.test(t) && /nuclear/.test(t)) {
+    return "A nuclear carrier lets China launch aircraft faster than its earlier hulls. The buy that follows is the air wing and the escorts.";
+  }
+  if (/\b(acquires|acquired|acquisition of|to acquire)\b/.test(t)) {
+    const name = firm(title, companies) || "A company";
+    const target = text.match(/\b(?:acquires|acquired|acquire)\s+(?:[\w']+\s+){0,4}([A-Z][\w&'-]+)/)?.[1];
+    return target
+      ? `${name}'s purchase of ${target} changes who owns that tool. It is an ownership change, not a new program of record.`
+      : `${name} bought a tool defense customers already use. The change is who owns it, not a new program.`;
+  }
+  if (/in talks/.test(t) && /drone/.test(t)) {
+    const plants = [/\bgeneral motors\b|\bgm\b/.test(t) ? "GM" : "", /\bford\b/.test(t) ? "Ford" : ""].filter(Boolean);
+    const names = plants.length ? plants.join(" and ") : "commercial plants";
+    return `The Pentagon is asking ${names} to mass-produce military drones. The change is a car plant becoming a drone line.`;
+  }
+  if (/posted in error|has not yet done so/.test(t) && money && /contract/.test(t)) {
+    return `${who} says the ${money} contract was posted in error and is not awarded. There is no buy until it is reposted.`;
+  }
+  if (/backlog/.test(t) && allMoney(text).length >= 2) {
+    const [revenue, backlog] = allMoney(text);
+    const parts = [/\bnavy\b/.test(t) ? "the Navy" : "", /\barmy\b/.test(t) ? "the Army" : "", /\bnga\b/.test(t) ? "NGA" : ""].filter(Boolean);
+    const list = parts.length <= 1 ? parts[0] ?? "" : `${parts.slice(0, -1).join(", ")} and ${parts.at(-1)}`;
+    const name = firm(title, companies) || "The company";
+    return `${name} reported ${revenue} of revenue and a ${backlog} backlog${list ? `, including work for ${list}` : ""}. That is the order book, not a new program.`;
+  }
+  if (money && program && /(contract|award|modification|orders|order)\b/.test(t)) {
+    const through = text.match(/\bthrough\s+((?:[A-Z][a-z]+|\d{4})(?:\s+\d{4})?)/);
+    return `${who} is spending ${money} on ${program}${through ? ` through ${through[1]}` : ""}. That is a funded order.`;
+  }
+  if (money && /(contract|award|modification|orders)\b/.test(t)) {
+    const through = text.match(/\bthrough\s+((?:[A-Z][a-z]+|\d{4})(?:\s+\d{4})?)/);
+    return `${who} is spending ${money}${through ? ` through ${through[1]}` : ""} on a signed award. That is a funded order.`;
+  }
+  if (program) {
+    return `${program} is the program this story moves. What changes is whether a service funds the next lot.`;
+  }
+  return "";
+}
+
+/** When the story has no buyer, dollar, or deadline, say so instead of borrowing a sector line. */
+function honestThin(title: string, body: string): string {
+  const text = `${title} ${body}`;
+  if (/cremated|memorial (spacecraft|cubesat)|ashes/i.test(text)) {
+    return "A commercial memorial flight is not a defense space order. No service is the buyer.";
+  }
+  const name = title.replace(/\s+/g, " ").trim().replace(/[.:]$/, "");
+  const short = name.length > 72 ? name.slice(0, 69).replace(/\s+\S*$/, "") : name;
+  return `${short} names the event. It does not name a buyer, a dollar figure, or a deadline.`;
+}
+
+export interface WhyContext {
+  /** Next budget deadline, e.g. "Dec 11", used only when the story is about the topline. */
+  deadline?: string;
+  /** Programs the deadline actually puts at stake, from the calendar, not invented. */
+  stakes?: string[];
 }
 
 function patternLine(title: string, body: string): string {
@@ -146,18 +250,57 @@ function patternLine(title: string, body: string): string {
   return "";
 }
 
+const FORBIDDEN = [
+  { word: /\bmemo\b/i, inStory: /\bmemo\b/i },
+  { word: /which orbit|which bus/i, inStory: /\b(orbit|bus)\b/i },
+  { word: /munition in volume/i, inStory: /\bvolume\b/i },
+];
+
+function allowed(line: string, story: string): boolean {
+  return FORBIDDEN.every((f) => !f.word.test(line) || f.inStory.test(story));
+}
+
 /**
- * Consequence for a buyer or builder. Never the lede, and never a near-copy of it.
- * `lead` is only used for the sector watch fallback.
+ * Consequence for a buyer or builder, from this story's own facts.
+ * A sector watch line is never used: a concept that is not in the story is rejected.
  */
-export function storyWhy(title: string, body: string, lead?: { id?: string }, _type?: string, _companies: string[] = []): string {
+export function storyWhy(
+  title: string,
+  body: string,
+  _lead?: { id?: string },
+  _type?: string,
+  companies: string[] = [],
+  ctx?: WhyContext,
+): string {
   const what = cleanCopy(body || title);
+  const story = `${title}. ${body}`;
   const specific = patternLine(title, body);
-  const fallback = sectorLine(lead?.id, title, body);
-  const line = specific && tokenOverlap(specific, what) <= 0.6 ? specific : fallback;
-  const out = cleanCopy(line);
-  if (out && tokenOverlap(out, what) <= 0.6) return out;
-  return cleanCopy(`The watch item is ${WATCH[lead?.id || ""] || "whether a buyer funds a follow-on"}.`);
+  const built = (specific && tokenOverlap(specific, what) <= 0.6 ? specific : "") || factLine(title, body, companies, ctx);
+  const out = cleanCopy(built);
+  if (out && tokenOverlap(out, what) <= 0.6 && allowed(out, story) && !/the watch item is/i.test(out)) return out;
+  const thin = cleanCopy(honestThin(title, body));
+  if (thin && tokenOverlap(thin, what) <= 0.6 && allowed(thin, story)) return thin;
+  return "The story does not name a buyer, a dollar figure, or a deadline.";
+}
+
+function normLine(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+/** No two stories in one brief keep the same so-what. A repeat gains the other story's name. */
+export function uniqueWhys<T extends { title: string; why: string }>(items: T[]): void {
+  const seen = new Map<string, number>();
+  for (const item of items) {
+    const key = normLine(item.why);
+    const n = seen.get(key) ?? 0;
+    if (n > 0) {
+      const name = item.title.replace(/\s+/g, " ").trim();
+      const short = name.length > 80 ? name.slice(0, 77).replace(/\s+\S*$/, "") : name;
+      item.why = cleanCopy(`${item.why.replace(/\.$/, "")}. This one is ${short}`);
+    }
+    seen.set(normLine(item.why), (seen.get(normLine(item.why)) ?? 0) + 1);
+    seen.set(key, n + 1);
+  }
 }
 
 /**

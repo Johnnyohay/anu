@@ -1,10 +1,10 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { briefTitle, classify, storyWhy } from "../src/classify.ts";
-import { cleanCopy, limitActor, tokenOverlap } from "../src/why.ts";
-import { briefSummary, eventKey, isListicle, materiallyNew, pickTop, sameEvent, storyGist, storyScore } from "../src/brief.ts";
+import { cleanCopy, limitActor, storyWhy as storyWhyWith, tokenOverlap, uniqueWhys } from "../src/why.ts";
+import { briefSummary, dedupeEvents, eventKey, isFiller, isListicle, materiallyNew, pickTop, sameEvent, sameStory, storyGist, storyScore } from "../src/brief.ts";
 import { selectBriefVideos } from "../src/brief-videos.ts";
-import { summaryFromFields } from "../src/rss.ts";
+import { isCaption, isRawQuote, summaryFromFields } from "../src/rss.ts";
 import { extraCompany, junkMention, matchCompanies, resolveName } from "../src/names.ts";
 import { updateFeedHealth, type FeedHealth, type FeedObservation } from "../src/feed-health.ts";
 
@@ -448,5 +448,201 @@ describe("brief videos", () => {
     assert.match(byId["1"], /no shared/);
     assert.match(byId["2"], /not a defense/);
     assert.match(byId["4"], /no shared/);
+  });
+});
+
+describe("Nov 24 brief quality", () => {
+  const ctx = { deadline: "Dec 11", stakes: ["DAWG", "Golden Dome"] };
+  const memorial = {
+    title: "Space Beyond orders hardware for 10 more memorial cubesat missions",
+    body: "Space Beyond has ordered enough hardware for 10 follow-on cubesats after growing sales for the Florida startup's first memorial spacecraft, slated to carry cremated remains into orbit in October 2027.",
+  };
+  const corvette = {
+    title: "Ukraine confirms it sank Russian corvette in Libyan port",
+    body: "Ukraine confirmed it sank a Russian corvette in the Libyan port of Benghazi with naval drones.",
+  };
+  const carrier = {
+    title: "China’s fourth aircraft carrier, bigger than others and nuclear-powered, nears completion",
+    body: "China's fourth aircraft carrier, known as Type 004, will be bigger than its predecessors and nuclear powered.",
+  };
+  const geran = {
+    title: "New SPYS interceptor shot down Russia’s Geran-5 cruise missile",
+    body: "A Ukrainian-built interceptor drone has destroyed a Geran-5, classed by Ukrainian intelligence as a small cruise missile.",
+  };
+
+  it("ranks a nuclear carrier ahead of a NASA weather contract and a SPAC", () => {
+    const carrierScore = storyScore({ title: carrier.title, body: carrier.body, titleScore: 6 });
+    const nasa = storyScore({
+      type: "Contract",
+      companies: ["Northrop Grumman"],
+      title: "Northrop Grumman Lands $291M NASA Contract for NOAA NEON Microwave Sounders",
+      body: "The contract runs through April 2042 and covers instruments for National Weather Service forecasts.",
+      titleScore: 6,
+    });
+    const spac = storyScore({
+      type: "M&A & IPO",
+      companies: ["Quantum Space", "Inflection Point"],
+      title: "Quantum Space Closes SPAC Merger With Inflection Point Ahead of NYSE Debut",
+      body: "Quantum Space is set to begin trading on NYSE as QSPC.",
+      titleScore: 6,
+    });
+    assert.ok(carrierScore > nasa);
+    assert.ok(carrierScore > spac);
+    assert.ok(carrierScore > storyScore({ title: memorial.title, body: memorial.body, titleScore: 6 }));
+  });
+
+  it("names the buyer on a helicopter order, an erroneous contract, a backlog, and a drone-plant talk", () => {
+    const heli = why(
+      "U.S. Special Operations Command orders more MH-47Gs",
+      "Boeing has received a $197.3 million order modification to buy more MH-47G special operations helicopters for U.S. Special Operations Command.",
+    );
+    assert.match(heli, /SOCOM/);
+    assert.match(heli, /\$197\.3 million/);
+    assert.match(heli, /MH-47G/);
+    assert.match(heli, /funded order/);
+    const err = why(
+      "$16 billion propulsion mega-contract posted in error, Air Force says",
+      "The Air Force is planning to award the $16.1 billion contract, but has not yet done so.",
+    );
+    assert.match(err, /Air Force/);
+    assert.match(err, /not awarded/);
+    const book = why(
+      "Amentum Reports $13.8B in FY2026 Revenue, $48.3B Backlog",
+      "Amentum secured $15 billion in net bookings, including major NGA, Navy, Army and international nuclear program awards.",
+      ["Amentum Reports"],
+    );
+    assert.match(book, /^Amentum reported/);
+    assert.match(book, /\$48\.3B backlog/);
+    assert.doesNotMatch(book, /Amentum Reports/);
+    const drones = why(
+      "Pentagon in talks with GM and Ford to help build drones",
+      "The Pentagon is in talks with General Motors, Ford and other manufacturers about helping mass-produce military drones.",
+    );
+    assert.match(drones, /Pentagon/);
+    assert.match(drones, /GM and Ford/);
+    assert.doesNotMatch(drones, /does not name a buyer/);
+    const buy = why(
+      "BlackSky acquires data firm EpochGeo",
+      "BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis.",
+    );
+    assert.match(buy, /EpochGeo/);
+    assert.doesNotMatch(buy, /does not name a buyer/);
+    assert.ok(tokenOverlap(buy, "BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis.") <= 0.6);
+  });
+
+  it("ranks a sinking, a nuclear carrier, and an interceptor kill ahead of a memorial cubesat", () => {
+    const score = (s: { title: string; body: string }) => storyScore({ title: s.title, body: s.body, type: "Conflict & allies", titleScore: 6 });
+    assert.ok(score(corvette) > score(memorial));
+    assert.ok(score(carrier) > score(memorial));
+    assert.ok(score(geran) > score(memorial));
+    assert.ok(score(corvette) > score(carrier));
+  });
+
+  it("keeps Space Beyond capitalized in a mixed-case headline", () => {
+    const title = briefTitle(memorial.title, memorial.body);
+    assert.match(title, /Space Beyond/);
+    assert.doesNotMatch(title, /Space beyond/);
+  });
+
+  it("writes the Coons, Trident, Philippines, and IAI lines from facts in those stories", () => {
+    const coons = storyWhyWith(
+      "Congress is out of time to decide on reconciliation, needs to settle topline spending: Sen. Coons",
+      "If we could get to a bipartisan topline, we could spend the time from Thanksgiving to the end of the year getting a lot of this finished, said Sen. Chris Coons.",
+      undefined, "", [], ctx,
+    );
+    assert.match(coons, /Dec 11/);
+    assert.match(coons, /DAWG/);
+    assert.match(coons, /Golden Dome/);
+    assert.doesNotMatch(coons, /memo/i);
+    const trident = why(
+      "Lockheed Martin Secures $1.5B Modification for Trident II D5 Missile Production, Fleet Support",
+      "The sole-source contract calls for work in Utah, Florida, Colorado and other sites running through 2031.",
+    );
+    assert.match(trident, /Sole-source work through 2031/);
+    assert.match(trident, /Lockheed/);
+    assert.doesNotMatch(trident, /watch item/i);
+    const loan = why(
+      "U.S. Commits $2B Defense Loan for Philippine Military, Luzon Strait Development",
+      "The United States committed a $2 billion defense loan for Philippine military construction along the Luzon Strait.",
+    );
+    assert.match(loan, /Luzon Strait/);
+    assert.match(loan, /Philippine military/);
+    const iai = why(
+      "Israel Aerospace Industries profit jumps 37% as backlog hits $35.6 billion",
+      "Israel Aerospace Industries reported a record $35.6 billion order backlog. The maker of the Arrow missile-defense system said net profit jumped.",
+    );
+    assert.match(iai, /\$35\.6B/);
+    assert.match(iai, /mainstream export/);
+  });
+
+  it("does not repeat one so-what across stories", () => {
+    const items = [
+      { title: "Umbra unveils a new radar satellite", why: "The story names an event. It does not name a buyer, a dollar figure, or a deadline." },
+      { title: "A second radar satellite story", why: "The story names an event. It does not name a buyer, a dollar figure, or a deadline." },
+    ];
+    uniqueWhys(items);
+    assert.notEqual(items[0].why, items[1].why);
+  });
+
+  it("files the Philippine defense loan under allies, not maritime, even when the caption says maritime", () => {
+    const c = classify(
+      "U.S. Commits $2B Defense Loan for Philippine Military, Luzon Strait Development",
+      "Philippine marines assigned to 4th Marine Brigade participate in a training event for maritime key terrain security operations during KAMANDAG.",
+    );
+    assert.equal(c.sectors[0].id, "global");
+    assert.notEqual(c.sectors[0].id, "sea");
+  });
+
+  it("skips a photo caption and a raw quote, and does not leave a doubled ellipsis", () => {
+    const caption = "Philippine marines assigned to 4th Marine Brigade, and U.S. Marines assigned to 3rd Littoral Combat Team, participate in a cumulative training event for maritime key terrain security operations during KAMANDAG.";
+    const quote = "If we could get to a bipartisan topline, we could spend the time from Thanksgiving to the end of the year getting a lot of this finished, said Sen. Chris Coons, the top democrat on the Senate Appropriations defense subcommittee.";
+    const news = "The United States committed a $2 billion defense loan for Philippine military construction along the Luzon Strait, the Pentagon said on Monday.";
+    assert.equal(isCaption(caption), true);
+    assert.equal(isRawQuote(quote), true);
+    const summary = summaryFromFields(quote, `<p>${caption}</p><p>${quote}</p><p>${news}</p>`);
+    assert.match(summary, /\$2 billion defense loan/);
+    assert.doesNotMatch(summary, /assigned to/);
+    assert.equal(cleanCopy("operations during…."), "operations during…");
+  });
+
+  it("counts every new story and does not call a five-way tie mostly allies", () => {
+    const line = briefSummary(43, ["space", "space", "sea", "strike"], ["space", "strike", "policy", "sea", "global"]);
+    assert.match(line, /^43 new stories/);
+    assert.doesNotMatch(line, /mostly about allies/);
+  });
+
+  it("blocks ceremonies, show episodes, and a repeated drone-tools segment", () => {
+    assert.equal(isFiller("Navy Family Takes Oath of Enlistment Together"), true);
+    assert.equal(isFiller("F-35 Demo Team Returns to Luke Ahead of 2027 Season"), true);
+    assert.equal(isFiller("A race for lifesaving battlefield drones Defense News Weekly Full Episode 11.24.26"), true);
+    assert.equal(isFiller("Two major veterans bills pass the House MOAA Headlines"), true);
+    const a = { title: "New tools for troops to gun down drones Defense News Weekly Full Episode 11.17.26", body: "A weekly segment." };
+    const b = { title: "New tools for troops to gun down drones Defense News Weekly Full Episode 11.19.26", body: "The same weekly segment." };
+    assert.equal(sameStory(a, b), true);
+  });
+
+  it("keeps one Benghazi write-up and drops the rest of the same strike", () => {
+    const items = [
+      { ...corvette, score: 20 },
+      { title: "Ukraine strikes Russian warship and cargo vessel with naval drones in Libya", body: "Naval drones hit a Russian warship in Libya.", score: 12 },
+      { title: "Did Ukraine Use A Mothership To Launch Its Sea Drone Attack On Russian Ships in Benghazi?", body: "A mothership may have launched the Benghazi sea drone attack.", score: 9 },
+      { title: "Russian convoy idles off Tunisia after sea drones hit Benghazi", body: "A Russian convoy waited off Tunisia after the Benghazi strike.", score: 8 },
+    ];
+    const { kept, dropped } = dedupeEvents(items, []);
+    assert.equal(kept.length, 1);
+    assert.equal(kept[0].title, corvette.title);
+    assert.equal(dropped.length, 3);
+    assert.equal(eventKey(items[3].title, items[3].body), "warship@libya");
+  });
+
+  it("keeps a cybersecurity advisory and an Army installations story instead of dropping them", () => {
+    const cyber = classify("NSA Issues Cybersecurity Advisory on AI-Generated Attacks Against Siemens PLCs", "The NSA urged programmable logic controller operators to patch systems.");
+    assert.equal(cyber.sectors[0].id, "cyber");
+    const army = classify(
+      "New guide lays out how Army installations can coordinate with local agencies before disaster strikes",
+      "The Army relies on local fuel, water and electricity to keep its installations going.",
+    );
+    assert.ok(army.sectors.length > 0);
+    assert.notEqual(army.sectors[0].id, "");
   });
 });

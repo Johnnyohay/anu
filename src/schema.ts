@@ -71,4 +71,6 @@ export interface Brief {
   stories: { tag: string; h: string; what: string; you: string; ref: string }[];
   watch: { h: string; why: string };
   idea: { h: string; why: string };
+  /** Clips that share a program, system, or place with a story. The homepage reads this. */
+  clips?: { id?: string; title: string; channel?: string; because: string[] }[];
 }

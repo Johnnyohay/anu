@@ -677,9 +677,8 @@ function render() {
     $("#clips").innerHTML = clips.map(c => `<p><a href="https://www.youtube.com/watch?v=${encodeURIComponent(c.id || "")}" target="_blank" rel="noopener">${esc(c.title)}</a> <span class="dim">${esc((c.because || []).join(", "))}</span></p>`).join("");
   } else clipsWrap.hidden = true;
   const flags = (S.meta && S.meta.feedHealth && S.meta.feedHealth.flags) || [];
-  const stale = flags.filter(f => /stale/i.test(f.flag || ""));
   const flagEl = $("#feed-flags");
-  if (stale.length) { flagEl.hidden = false; flagEl.textContent = "Stale feeds: " + stale.map(f => `${f.name} (${f.flag})`).join("; "); }
+  if (flags.length) { flagEl.hidden = false; flagEl.textContent = "Feed health: " + flags.map(f => `${f.name} (${f.flag})`).join("; "); }
   else flagEl.hidden = true;
 
   $("#archive").innerHTML = `<span>Earlier briefs:</span>` + briefs.slice(0, 6).map((b, i) =>

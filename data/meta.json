@@ -69,9 +69,11 @@
       ]
     }
   ],
-  "collectedAt": "2026-11-24T01:25:56.539Z",
+  "collectedAt": "2026-11-24T16:53:17.111Z",
   "feedHealth": {
-    "checkedAt": "2026-11-24T01:25:56.539Z",
+    "checkedAt": "2026-11-24T16:53:17.111Z",
     "flags": []
-  }
+  },
+  "week": "498 stories since 2026-11-10, led by drones (117), space (64), budget and policy (53).",
+  "weekAsOf": "2026-11-24"
 }
