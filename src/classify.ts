@@ -86,13 +86,16 @@ const SPECS: Spec[] = [
     rule(w("biomanufactur\\w*|biodefen[cs]e|pathogen|biotech|bioindustrial|biological weapon"), 6, 3),
   ]},
   { id: "policy", priority: 40, rules: [
-    rule(w("NDAA|appropriations|continuing resolution|acquisition reform|executive order|House Armed Services|Hegseth|confirmation|Army|Pentagon|Department of War|\\bDOW\\b|Defense Innovation Unit|\\bDIU\\b"), 5, 3),
+    rule(w("NDAA|appropriations|continuing resolution|acquisition reform|executive order|House Armed Services|Hegseth|confirmation"), 5, 3),
     rule(w("Senate|Congress|lawmakers|budget|grills"), 5, 2),
+    // A bare service name is a weak signal. It must not outrank a real budget or program match.
+    rule(w("Pentagon|Department of War|\\bDOW\\b|Defense Innovation Unit|\\bDIU\\b|Army"), 2, 1),
   ]},
   { id: "capital", priority: 30, rules: [
     rule(w("funding round|Series [A-H]|IPO|SPAC|venture capital"), 6, 3),
     rule(/raises?\s+\$\d|raised\s+\$\d/i, 6, 3),
     rule(w("valuation|acquires|acquisition of|merger"), 4, 2),
+    rule(w("backlog|revenue|net bookings"), 4, 2),
   ]},
   { id: "primes", priority: 20, rules: [
     rule(w("Lockheed|Raytheon|RTX|Northrop|General Dynamics|L3Harris|Boeing Defense|BAE Systems|Huntington Ingalls|Leidos|SAIC"), 3, 2),

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { briefTitle, classify, storyWhy } from "../src/classify.ts";
-import { cleanCopy, isStockHedge, limitActor, restatesSummaryNumbers, storyWhy as storyWhyWith, tokenOverlap, uniqueWhys } from "../src/why.ts";
+import { cleanCopy, isStockHedge, limitActor, restatesSummaryNumbers, storyWhy as storyWhyWith, tokenOverlap, ungroundedTerms, uniqueWhys } from "../src/why.ts";
 import { briefSummary, dedupeEvents, eventKey, isFiller, isListicle, materiallyNew, pickTop, sameEvent, sameStory, storyGist, storyScore } from "../src/brief.ts";
 import { selectBriefVideos } from "../src/brief-videos.ts";
 import { isCaption, isRawQuote, summaryFromFields } from "../src/rss.ts";
@@ -496,7 +496,7 @@ describe("Nov 24 brief quality", () => {
       "U.S. Special Operations Command orders more MH-47Gs",
       "Boeing has received a $197.3 million order modification to buy more MH-47G special operations helicopters for U.S. Special Operations Command.",
     );
-    assert.match(heli, /SOCOM/);
+    assert.match(heli, /Special Operations Command/);
     assert.match(heli, /MH-47G/);
     assert.doesNotMatch(heli, /funded order/);
     assert.equal(restatesSummaryNumbers(heli, "Boeing has received a $197.3 million order modification to buy more MH-47G special operations helicopters."), false);
@@ -512,9 +512,9 @@ describe("Nov 24 brief quality", () => {
       "Amentum secured $15 billion in net bookings, including major NGA, Navy, Army and international nuclear program awards.",
       ["Amentum Reports"],
     );
-    assert.match(book, /positions Amentum to win the next awards/);
-    assert.match(book, /NGA/);
-    assert.match(book, /Navy/);
+    assert.match(book, /backlog/);
+    assert.match(book, /Amentum/);
+    assert.match(book, /Navy|Army|NGA/);
     assert.doesNotMatch(book, /\$13\.8B|\$48\.3B|order book/);
     assert.equal(restatesSummaryNumbers(book, "Amentum Reports $13.8B in FY2026 Revenue, $48.3B Backlog"), false);
     const drones = why(
@@ -528,10 +528,37 @@ describe("Nov 24 brief quality", () => {
       "BlackSky acquires data firm EpochGeo",
       "BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis.",
     );
-    assert.match(buy, /analysis, not just imagery/);
-    assert.doesNotMatch(buy, /ownership change|not a new program|does not name a buyer/);
+    assert.match(buy, /analysis/);
+    assert.doesNotMatch(buy, /imagery|ownership change|not a new program|does not name a buyer/);
+    assert.deepEqual(ungroundedTerms(buy, "BlackSky acquires data firm EpochGeo. BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis."), []);
     assert.equal(isStockHedge(buy), false);
     assert.ok(tokenOverlap(buy, "BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis.") <= 0.6);
+  });
+
+  it("does not reuse a canned line when the story only shares a broad keyword", () => {
+    const battalion = why("A battalion delayed a weather exercise", "The battalion waited out the weather before the road march.");
+    assert.doesNotMatch(battalion, /Odin|brigade|2042|propulsion|nuclear weapon/i);
+    assert.deepEqual(ungroundedTerms(battalion, "A battalion delayed a weather exercise. The battalion waited out the weather before the road march."), []);
+    const weather = why(
+      "NOAA weather contract posted in error",
+      "A weather instrument contract was posted in error and has not yet been awarded.",
+    );
+    assert.doesNotMatch(weather, /propulsion|engine|2042|Northrop/i);
+    assert.match(weather, /error|awarded/i);
+    const nuclear = why(
+      "Firm launches a nuclear-powered communications satellite",
+      "The satellite uses nuclear power for its radio.",
+    );
+    assert.doesNotMatch(nuclear, /weapon|orbit a nuclear|warning/i);
+    assert.deepEqual(ungroundedTerms(nuclear, "Firm launches a nuclear-powered communications satellite. The satellite uses nuclear power for its radio."), []);
+  });
+
+  it("does not file an earnings backlog under budget just because the Army is a customer", () => {
+    const c = classify(
+      "Amentum Reports $13.8B in FY2026 Revenue, $48.3B Backlog",
+      "Amentum secured $15 billion in net bookings, including major NGA, Navy, Army and international nuclear program awards.",
+    );
+    assert.notEqual(c.sectors[0]?.id, "policy");
   });
 
   it("does not restate summary dollars or close with a stock hedge", () => {
@@ -572,10 +599,9 @@ describe("Nov 24 brief quality", () => {
       "If we could get to a bipartisan topline, we could spend the time from Thanksgiving to the end of the year getting a lot of this finished, said Sen. Chris Coons.",
       undefined, "", [], ctx,
     );
-    assert.match(coons, /Dec 11/);
-    assert.match(coons, /DAWG/);
-    assert.match(coons, /Golden Dome/);
-    assert.doesNotMatch(coons, /memo/i);
+    assert.match(coons, /topline/);
+    assert.doesNotMatch(coons, /memo|DAWG|Golden Dome|Dec 11/i);
+    assert.deepEqual(ungroundedTerms(coons, "Congress is out of time to decide on reconciliation, needs to settle topline spending. If we could get to a bipartisan topline."), []);
     const trident = why(
       "Lockheed Martin Secures $1.5B Modification for Trident II D5 Missile Production, Fleet Support",
       "The sole-source contract calls for work in Utah, Florida, Colorado and other sites running through 2031.",
@@ -593,8 +619,10 @@ describe("Nov 24 brief quality", () => {
       "Israel Aerospace Industries profit jumps 37% as backlog hits $35.6 billion",
       "Israel Aerospace Industries reported a record $35.6 billion order backlog. The maker of the Arrow missile-defense system said net profit jumped.",
     );
-    assert.match(iai, /\$35\.6B/);
-    assert.match(iai, /mainstream export/);
+    assert.match(iai, /backlog/);
+    assert.match(iai, /missile/);
+    assert.doesNotMatch(iai, /mainstream export/);
+    assert.deepEqual(ungroundedTerms(iai, "Israel Aerospace Industries profit jumps as backlog hits $35.6 billion. The maker of the Arrow missile-defense system said net profit jumped."), []);
   });
 
   it("does not repeat one so-what across stories", () => {

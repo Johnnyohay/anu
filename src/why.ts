@@ -61,11 +61,6 @@ function moneyPhrase(text: string): string | undefined {
   return `$${n} million`;
 }
 
-function programOf(text: string): string | undefined {
-  const m = text.match(/\b(Trident II D5|Geran-\d+|SPYS|Type 004|Golden Dome|DAWG|F-35 Block 4|F-35|Luzon Strait|Arrow|SEWIP|HIMARS|Stinger|PULS|THAAD|Valkyrie|AMPV|MH-47Gs?)\b/i);
-  return m?.[1];
-}
-
 /** Drop a NER fragment that is just the headline's first words plus a verb. */
 function firm(title: string, companies: string[]): string | undefined {
   const bad = /\b(reports|says|said|orders|lands|wins|closes|acquires|journal|development)\b/i;
@@ -96,7 +91,8 @@ export function restatesSummaryNumbers(line: string, summary: string): boolean {
 
 function actor(text: string, companies: string[], title: string): string {
   const t = text.toLowerCase();
-  if (/special operations command|\bsocom\b/.test(t)) return "SOCOM";
+  if (/\bsocom\b/.test(t)) return "SOCOM";
+  if (/special operations command/.test(t)) return "Special Operations Command";
   if (/\bnasa\b/.test(t)) return "NASA";
   if (/air force/.test(t)) return "The Air Force";
   if (/pentagon|department of war/.test(t)) return "The Pentagon";
@@ -105,162 +101,137 @@ function actor(text: string, companies: string[], title: string): string {
   return firm(title, companies) || "The buyer";
 }
 
+const GLUE = new Set(
+  "the a an of to for and or in on with from its their this that has have after over into than then says said will would about new more most first next was were been being who what when just only not now can may also them they your per under lot lots buy buys buyer buyers buying sell selling sold win winning award awards order orders ordered contract contracts posted error awarded hold holds holding keep keeps adding added another until before shows show shown make makes made let lets offer offers want wants already change changes gain gains market markets customer customers follow service services adopt adopts adopting work line lines unit units system systems program programs field fielding sets yet named story competition incumbent unseat rival rivals frozen starts without through keeps moved party depends respond ordering talks manufacturers build would about says positions".split(" "),
+);
+
+/** Content words in a line that do not appear in the story. Template glue is allowed. */
+export function ungroundedTerms(line: string, story: string): string[] {
+  const words = story.toLowerCase().replace(/[^a-z0-9+-]+/g, " ").split(/\s+/).filter(Boolean);
+  const known = new Set(words);
+  for (const w of words) {
+    known.add(w.replace(/s$/, ""));
+    for (const part of w.split("-")) if (part.length > 2) known.add(part);
+  }
+  const bad: string[] = [];
+  for (const raw of line.toLowerCase().replace(/[^a-z0-9+-]+/g, " ").split(/\s+/)) {
+    const w = raw.replace(/^\$/, "");
+    if (!w || w.length <= 3 || GLUE.has(w) || GLUE.has(w.replace(/s$/, ""))) continue;
+    if (known.has(w) || known.has(w.replace(/s$/, "")) || known.has(`${w}s`)) continue;
+    if (/^\d/.test(w) && story.toLowerCase().includes(w.replace(/b$/, ""))) continue;
+    bad.push(w);
+  }
+  return bad;
+}
+
+function present(text: string, word: string): boolean {
+  return new RegExp(`\\b${word}\\b`, "i").test(text);
+}
+
+function namedBuyers(text: string): string[] {
+  const t = text.toLowerCase();
+  return [present(t, "navy") ? "the Navy" : "", present(t, "army") ? "the Army" : "", present(t, "nga") ? "NGA" : "", /nuclear/.test(t) ? "nuclear" : ""].filter(Boolean);
+}
+
+function joinList(parts: string[]): string {
+  if (parts.length <= 1) return parts[0] ?? "";
+  return `${parts.slice(0, -1).join(", ")} and ${parts.at(-1)}`;
+}
+
+/** A program token copied from the story, not from a fixed list of headlines. */
+function extractProgram(title: string, body: string): string | undefined {
+  const text = `${title} ${body}`;
+  const patterns = [
+    /\b(Trident(?: II)?(?: D5)?)\b/,
+    /\b([A-Z]{1,6}-\d+[A-Z0-9]*)\b/,
+    /\b([A-Z][a-z]+-\d+)\b/,
+    /\b([A-Z]{2,}(?:-[A-Z0-9]+)+)\b/,
+    /\b(Type \d+)\b/,
+  ];
+  for (const re of patterns) {
+    const hit = text.match(re)?.[1];
+    if (hit && hit.length > 2) return hit;
+  }
+  return undefined;
+}
+
 /**
- * A line built only from facts that are actually in the story: buyer, program,
- * dollar amount, deadline, and what changes. No sector stock phrase.
+ * One consequence sentence. Every slot is a span copied from the story.
+ * Drafts that name something the story does not say are dropped.
  */
-function factLine(title: string, body: string, companies: string[], ctx?: WhyContext): string {
+function composeWhy(title: string, body: string, companies: string[]): string {
   const text = `${title}. ${body}`;
   const t = text.toLowerCase();
-  const money = moneyPhrase(text);
-  const program = programOf(text);
   const who = actor(text, companies, title);
+  const program = extractProgram(title, body);
+  const money = moneyPhrase(text);
+  const year = text.match(/\b(20\d{2})\b/)?.[1];
+  const drafts: string[] = [];
 
-  if (/\b(topline|reconciliation)\b/.test(t) || (/\bappropriations?\b/.test(t) && /\b(cr|continuing resolution|stopgap)\b/.test(t))) {
-    const when = ctx?.deadline;
-    const stakes = (ctx?.stakes ?? []).filter((s) => s);
-    const like = stakes.length ? ` like ${stakes.join(" and ")}` : "";
-    if (when) return `If there's no topline by ${when}, another CR freezes new starts${like}.`;
-    return "Without a topline, another continuing resolution freezes new starts.";
-  }
-  if (/sole-source/.test(t) && /lockheed/.test(t) && /20\d{2}/.test(t)) {
-    const year = text.match(/through\s+(20\d{2})/i)?.[1] ?? text.match(/\b(20\d{2})\b/)?.[1];
-    return `Sole-source work through ${year} locks in Lockheed's strategic-missile backlog.`;
-  }
-  if (/\bloan\b/.test(t) && /philippine/.test(t)) {
-    const place = /luzon strait/i.test(text) ? "Luzon Strait sites" : "the sites in the loan";
-    return `Financing for ${place} sets up US-built buys for the Philippine military.`;
-  }
-  if (/backlog/.test(t) && /israel/.test(t) && money && /missile/.test(t)) {
-    return `A ${money} backlog shows Israeli missile defense is now a mainstream export.`;
-  }
-  if (/(shot down|downs|destroyed)/.test(t) && /interceptor/.test(t)) {
-    const weapon = text.match(/Geran-\d+/i)?.[0] ?? "that target";
-    const who = /ukrain/.test(t) ? "Ukraine" : "The unit that fired";
-    return `${who} downing a ${weapon} with an interceptor makes that round a combat reference. The next buy is more of the round that worked.`;
-  }
-  if (/china/.test(t) && /carrier/.test(t) && /nuclear/.test(t)) {
-    return "A nuclear carrier lets China launch aircraft faster than its earlier hulls. The buy that follows is the air wing and the escorts.";
-  }
-  if (/\b(acquires|acquired|acquisition of|to acquire)\b/.test(t) || (/\bto buy\b/.test(t) && /\b(business|firm|stake|arm|subsidiary)\b/.test(t))) {
-    return acquireGain(title, text, companies);
-  }
-  if (/in talks/.test(t) && /drone/.test(t)) {
-    const plants = [/\bgeneral motors\b|\bgm\b/.test(t) ? "GM" : "", /\bford\b/.test(t) ? "Ford" : ""].filter(Boolean);
-    const names = plants.length ? plants.join(" and ") : "commercial plants";
-    return `The Pentagon is asking ${names} to mass-produce military drones. The change is a car plant becoming a drone line.`;
-  }
-  if (/posted in error|has not yet done so/.test(t) && /contract/.test(t)) {
-    return `${who} says the propulsion contract was posted in error and is not awarded. Engine makers have no award until it is reposted.`;
+  if (/posted in error|has not yet/.test(t) && /contract|award/.test(t)) {
+    drafts.push(`${who} says ${program ? program + " " : ""}was posted in error and is not awarded yet.`);
   }
   if (/backlog/.test(t)) {
-    const parts = [/\bnavy\b/.test(t) ? "the Navy" : "", /\barmy\b/.test(t) ? "the Army" : "", /\bnga\b/.test(t) ? "NGA" : "", /nuclear/.test(t) ? "nuclear programs" : ""].filter(Boolean);
-    const list = parts.length <= 1 ? parts[0] ?? "" : `${parts.slice(0, -1).join(", ")} and ${parts.at(-1)}`;
-    const name = firm(title, companies) || "The company";
-    return list
-      ? `The backlog positions ${name} to win the next awards from ${list}. That is the market already buying.`
-      : `The backlog makes ${name} the incumbent, so a rival has to unseat them to win the next lot.`;
-  }
-  if (money && program && /(contract|award|modification|orders|order)\b/.test(t)) {
-    return heldLine(who, program, text);
-  }
-  if (money && /(contract|award|modification|orders)\b/.test(t)) {
     const name = firm(title, companies) || who;
-    return `${name} holds the award, so a rival has to unseat an incumbent to get the next one.`;
+    const buyers = namedBuyers(text);
+    if (buyers.length) drafts.push(`The backlog positions ${name} to win the next awards from ${joinList(buyers)}.`);
+    if (money && /missile/.test(t)) drafts.push(`A ${money} backlog shows ${name} missile work.`);
+    if (money) drafts.push(`A ${money} backlog makes ${name} the incumbent on the next competition.`);
   }
-  if (program) return gainLine(title, body, companies);
+  if (/\b(acquires|acquired|acquisition|to acquire)\b/.test(t) || (/\bto buy\b/.test(t) && /\b(business|firm|stake|arm|subsidiary)\b/.test(t))) {
+    const target = text.match(/\b(?:acquires|acquired|acquire|buy)\s+(?:[\w']+\s+){0,4}([A-Z][\w&'-]+)/)?.[1]?.replace(/['’.]+$/g, "");
+    if (/factory|ownership/.test(t)) drafts.push(`${who} now has the factory under American ownership.`);
+    const offer = /analysis/.test(t) ? "analysis" : /fusion/.test(t) ? "fusion" : /geospatial/.test(t) ? "geospatial data" : target;
+    if (offer && /customer/.test(t)) drafts.push(`${who} can now sell ${offer} to customers.`);
+    if (offer) drafts.push(`${who} can now sell ${offer}.`);
+    if (target) drafts.push(`${who} buying ${target} is the change.`);
+  }
+  if (/in talks/.test(t)) {
+    const names = [/\bgeneral motors\b|\bgm\b/.test(t) ? "GM" : "", /\bford\b/.test(t) ? "Ford" : ""].filter(Boolean);
+    if (names.length && /drone/.test(t)) drafts.push(`${who} is in talks with ${names.join(" and ")} to mass-produce drones.`);
+    else drafts.push(`${who} is in talks with ${names.length ? names.join(" and ") : "the other party"}.`);
+  }
+  if (/(shot down|downs)/.test(t) && program && /interceptor/.test(t)) {
+    drafts.push(`${who} interceptor shot down ${program}.`);
+  } else if (/(shot down|downs)/.test(t) && program) {
+    drafts.push(`${who} shot down ${program}.`);
+  } else if (/(shot down|downs)/.test(t) && /drone/.test(t)) {
+    drafts.push(`${who} shot down a drone.`);
+  }
+  if (/sole-source/.test(t) && year && who) {
+    drafts.push(`Sole-source work through ${year} keeps ${who} on this program.`);
+  }
+  if (/\bloan\b/.test(t)) {
+    const place = text.match(/\b(Luzon Strait)\b/i)?.[1];
+    if (place && /philippine/.test(t) && /military/.test(t)) drafts.push(`The loan for ${place} sets up buys for the Philippine military.`);
+    else if (place && /military/.test(t)) drafts.push(`The loan for ${place} sets up buys for the military.`);
+    else drafts.push(`The loan sets up the buys in the story.`);
+  }
+  if (/nuclear/.test(t) && /carrier/.test(t) && /launch/.test(t) && /planes|aircraft/.test(t) && /faster/.test(t)) {
+    const what = /planes/.test(t) ? "planes" : "aircraft";
+    drafts.push(`A nuclear carrier can launch ${what} faster.`);
+  } else if (/nuclear/.test(t) && /carrier/.test(t)) {
+    drafts.push(`A nuclear carrier is what changed for ${who}.`);
+  }
+  if (/topline|reconciliation/.test(t)) {
+    drafts.push(year ? `Without a topline by ${year}, new starts are frozen.` : `Without a topline, new starts are frozen.`);
+  }
+  if (money && program) drafts.push(`${who} has ${money} on ${program}. A rival has to unseat that incumbent to win the next lot.`);
+  if (program) drafts.push(`${program} is what moved. ${who} is who would buy the next one.`);
+  if (who && who !== "The buyer") drafts.push(`${who} is the party in the story. A buyer has to adopt it.`);
+
+  for (const draft of drafts) {
+    if (!ungroundedTerms(draft, text).length && !isStockHedge(draft)) return draft;
+  }
   return "";
 }
 
-function heldLine(who: string, program: string, text: string): string {
-  const t = text.toLowerCase();
-  if (/mh-47|helicopter/.test(t)) return "SOCOM is adding more MH-47Gs, so Boeing's special-operations helicopter line stays open for the next unit.";
-  if (/noaa|weather|sounder/.test(t)) return "Northrop keeps the weather-sounder work through 2042, so the next NOAA instrument stays with that team.";
-  if (/through\s+20\d{2}|through\s+[a-z]+\s+20\d{2}/i.test(text)) {
-    const year = text.match(/through\s+((?:[A-Z][a-z]+\s+)?20\d{2})/)?.[1] ?? "the end of the contract";
-    return `${who} keeps ${program} through ${year}, so the follow-on stays with the incumbent.`;
-  }
-  return `${who} is adding more ${program}. The gain is another lot of a system already in service.`;
+function factLine(title: string, body: string, companies: string[], _ctx?: WhyContext): string {
+  return composeWhy(title, body, companies);
 }
 
-function acquireGain(title: string, text: string, companies: string[]): string {
-  const t = text.toLowerCase();
-  const name = firm(title, companies) || "The buyer";
-  if (/analysis|data fusion|imagery|geospatial/.test(t)) {
-    return `${name} can now sell analysis, not just imagery, to the defense customers who already buy the pictures.`;
-  }
-  if (/oneweb|broadband|factory|american ownership/.test(t)) {
-    return `${name} now owns the satellite factory. The customers are whoever already flies that constellation.`;
-  }
-  if (/autonomous aircraft|drone/.test(t)) {
-    return `${name} is pointing that business at autonomous aircraft as the drone market grows. The gain is factory capacity.`;
-  }
-  if (/manufactur/.test(t) && /spacecraft|space/.test(t)) {
-    return `${name} would build the spacecraft, not only invest in them. The space company gets a manufacturer.`;
-  }
-  const target = text.match(/\b(?:acquires|acquired|acquire|buy)\s+(?:[\w']+\s+){0,4}([A-Z][\w&'-]+)/)?.[1];
-  return target
-    ? `${name} can sell what ${target} already makes to ${name}'s existing customers.`
-    : `${name} can sell the acquired product to the customers it already has.`;
-}
-
-/** What the buyer can do after the story, using only words that are in it. */
-function gainLine(title: string, body: string, companies: string[]): string {
-  const text = `${title}. ${body}`;
-  const t = text.toLowerCase();
-  const name = firm(title, companies);
-  if (/cremated|memorial spacecraft|memorial cubesat|ashes/.test(t)) return "A commercial memorial flight is not a defense space order. No service is the buyer.";
-  if (/f-35/.test(t) && /gripen|core fighter|canada/.test(t)) return "Canada choosing the F-35 as its core fighter, and not the Gripen, locks the fleet. The next buy is weapons and sustainment for that jet.";
-  if (/golden dome/.test(t) && /stopgap|exemption|anomal/.test(t)) return "Exempting Golden Dome lets that program keep spending while the rest of the stopgap waits.";
-  if (/electronic warfare|jam/.test(t) && /frigate/.test(t)) return "Those frigates get a jammer fit. Elbit is now on the hull, and the next ship in the class is the follow-on.";
-  if (/camm/.test(t)) return "Poland and the UK will develop CAMM-MR together. The next contract is the production missile, not another agreement.";
-  if (/lynx/.test(t) && /ukrain/.test(t)) return "Ukrainian crews are now fielding the Lynx. That combat use is what the next export customer will ask about.";
-  if (/sv-98|sniper rifle/.test(t)) return "Kalashnikov closed a rifle contract for troops already in Ukraine. The next order is more of the same rifle.";
-  if (/f-15/.test(t) && /ukrain/.test(t)) return "The Eagles are in storage. Ukraine gets them only if the United States releases the airframes.";
-  if (/f-16/.test(t) && /ukrain/.test(t)) return "Ukraine asked for F-16s. The constraint is which air forces can actually hand jets over.";
-  if (/odin|battle planning|battalion/.test(t)) return "Brigade software does not fit a battalion. Odin matters if the Army adopts it below brigade.";
-  if (/transformation in contact|campaign plan/.test(t)) return "The Army is replacing bottom-up experiments with top-down guidance. Program offices have to match the new plan.";
-  if (/undersecretary of the navy|toti/.test(t)) return "If confirmed, Toti would run the Navy's civilian leadership, and ship programs would answer to that office.";
-  if (/fiscal 2027|spending debate/.test(t)) return "Contractors are waiting on a fiscal 2027 budget. New starts do not begin until Congress agrees on the number.";
-  if (/carrier/.test(t) && /shipbuilding/.test(t)) return "A presidential ask for more carriers happens only if the yards can build them. The Navy may revise that plan.";
-  if (/auto suppliers|toyota|arms buildup/.test(t)) return "A car-parts plant is being pulled into weapons work. Japan's buildup needs those factories.";
-  if (/nuclear/.test(t) && /satellite/.test(t)) return "A nuclear weapon in orbit would make satellite warning and defense the requirement.";
-  if (/phased-array|two-way link/.test(t)) return "The antenna can task a GEO satellite, not only listen. The product is that terminal.";
-  if (/\bsocs\b|cyberattack/.test(t)) return "The buyer is the security operations center that has to answer automated attacks.";
-  if (/chatbot|hackathon/.test(t)) return "The Marine Corps is taking a hackathon prototype into production. The winning team is now the supplier.";
-  if (/naval strike missile/.test(t)) return "The Marines want a longer Naval Strike Missile. The buy is the extended-range round, not a new launcher.";
-  if (/25 centimeters|higher-resolution|synthetic aperture|sar satellite/.test(t)) return "Customers can see smaller targets. The companies are selling the sharper picture.";
-  if (/counter-drone/.test(t) && /colombia|militant/.test(t)) return "Militant drones make the Colombian military a counter-drone buyer.";
-  if (/guidebook|critical infrastructure/.test(t)) return "Bases depend on private utilities. The guide is what the Army will use to defend that infrastructure.";
-  if (/contractors/.test(t) && /congress|gag|privileged|oversight/.test(t)) return "Contractors must clear answers with the White House. They lose a direct channel to Congress.";
-  if (/space data network|backbone/.test(t)) return "The Space Force is filling a communications backbone. The supplier who can launch on that cadence gets the next satellites.";
-  if (/finland|baltic/.test(t) && /marine|recon/.test(t)) return "US reconnaissance Marines are drilling with a Baltic navy. The gain is a shared tactic, not a US ship.";
-  if (/revolution space|spacecraft/.test(t) && /ford|manufactur/.test(t)) return "Ford's factories would build the spacecraft, not only fund them. The space company gets a manufacturer.";
-  if (/amazon leo|ariane/.test(t)) return "This is a commercial broadband launch, not a defense constellation.";
-  if (/progress/.test(t) && /secrecy|iss/.test(t)) return "The unusual secrecy is the point. The question is what cargo needed help staying quiet.";
-  if (/su-57|felon/.test(t)) return "A pro-war source says the jet could leave the war unnoticed. Export buyers should not treat it as a fighting fleet.";
-  if (/robot scout|kenya|targeting network/.test(t)) return "The robot cut the time from spotting a target to a strike. The British Army is the buyer if the trial becomes a unit.";
-  if (/spac\b|nyse/.test(t)) return "A stock listing gives the company public shares. It does not place a defense order.";
-  if (/zhuhai|airshow/.test(t)) return "China is showing hulls and weapons for export. The buyers are the foreign navies at the show.";
-  if (/cell tower|smartphone|cellular/.test(t)) return "Satellite fill-in for cell coverage is a commercial network product, not a military constellation.";
-  if (/healthcare summit|fireside/.test(t)) return "This is a conference appearance. No buyer is placing an order there.";
-  if (/fleet and marine tracker|carrier strike groups/.test(t)) return "This is a map of where ships already are, not an order to send more.";
-  if (/bepicolombo|mercury/.test(t)) return "A science probe had a thruster fault. That is not a defense propulsion buy.";
-  if (/space-based surveillance|european satellite/.test(t)) return "More European satellites need someone to fuse the pictures. That surveillance layer is the product.";
-  if (/midterms|beijing/.test(t) && /ai|will to fight/.test(t)) return "Beijing is reading US willingness to fight and to fund AI. That reading is what they plan against.";
-  if (/zero trust|disa/.test(t)) return "The buy DISA is pointing at is training and architecture for zero trust, not another cyber tool.";
-  if (/triage|mass casualty/.test(t)) return "A service buy of casualty drones follows only if the challenge winner works in the field.";
-  if (/classification management|declassify/.test(t)) return "The department wants software that classifies millions of documents. That workflow is the product.";
-  if (/human spaceflight/.test(t)) return "This is a case for funding a crew vehicle, not a contract. The meeting next month is when it becomes money.";
-  if (/memorandum of understanding|dual-use/.test(t)) return "Four firms agreed to team on a mission. No service has ordered it, so the gain is a team that can bid.";
-  if (/energy grid|energy infrastructure/.test(t)) return "Utilities are the buyer of a defense against AI attacks on the power grid.";
-  if (name) return `${name} is the party a buyer would call. A follow-on happens only if a service adopts what they just showed.`;
-  return "A service adopts this only if it changes what they can field.";
-}
-
-/** When the story has no buyer, dollar, or deadline, say what would have to change, not a stock closer. */
 function honestThin(title: string, body: string): string {
-  return gainLine(title, body, []);
+  return composeWhy(title, body, []);
 }
 
 export interface WhyContext {
@@ -278,7 +249,7 @@ function patternLine(title: string, body: string): string {
   if (/(corvette|warship)/.test(t) && /(libya|benghazi)/.test(t)) {
     return "A Russian corvette lost at Benghazi puts Moscow's Libyan naval base in range of small boats. The buy that follows is port force-protection and counter-USV sensing, not another anti-ship missile.";
   }
-  if (/(mirage|cannon|built-in gun|\bgun\b)/.test(t) && /drone/.test(t) && /(gun|cannon)/.test(t)) {
+  if (/mirage/.test(t) && /drone/.test(t) && /(gun|cannon)/.test(t)) {
     return "A fighter gun, not a missile, killed a jet-powered drone. Air forces will buy cannon cueing and ammunition for that shot, because the missile is the expensive side of the trade.";
   }
   if (/(nightmare|fpv|kamikaze)/.test(t) && /(special forces|fort bragg|socom)/.test(t)) {
@@ -361,18 +332,18 @@ export function storyWhy(
   const what = cleanCopy(body || title);
   const story = `${title}. ${body}`;
   const specific = patternLine(title, body);
-  const candidates = [
-    specific && tokenOverlap(specific, what) <= 0.6 ? specific : "",
-    factLine(title, body, companies, ctx),
-    gainLine(title, body, companies),
+  const candidates: { line: string; grounded: boolean }[] = [
+    { line: specific && tokenOverlap(specific, what) <= 0.6 ? specific : "", grounded: false },
+    { line: factLine(title, body, companies, ctx), grounded: true },
   ];
   for (const candidate of candidates) {
-    const out = cleanCopy(candidate);
+    const out = cleanCopy(candidate.line);
     if (!out || tokenOverlap(out, what) > 0.6 || !allowed(out, story)) continue;
     if (/the watch item is/i.test(out) || isStockHedge(out) || restatesSummaryNumbers(out, what)) continue;
+    if (candidate.grounded && ungroundedTerms(out, story).length) continue;
     return out;
   }
-  return "A service adopts this only if it changes what they can field.";
+  return "A buyer has to adopt it.";
 }
 
 function normLine(s: string): string {
