@@ -1,59 +1,6 @@
 {
-  "updatedAt": "2026-11-24T17:14:46.017Z",
+  "updatedAt": "2026-11-24T23:21:03.529Z",
   "feeds": {
-    "DefenseScoop": {
-      "url": "https://defensescoop.com/feed/",
-      "runs": [
-        {
-          "date": "2026-11-24",
-          "fetched": 10,
-          "inWindow": 2,
-          "added": 0,
-          "duplicates": 2,
-          "newest": "2026-11-23"
-        },
-        {
-          "date": "2026-11-23",
-          "fetched": 10,
-          "inWindow": 3,
-          "added": 0,
-          "duplicates": 2,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-22",
-          "fetched": 10,
-          "inWindow": 6,
-          "added": 0,
-          "duplicates": 3,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-21",
-          "fetched": 10,
-          "inWindow": 7,
-          "added": 0,
-          "duplicates": 4,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-20",
-          "fetched": 10,
-          "inWindow": 9,
-          "added": 2,
-          "duplicates": 5,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-19",
-          "fetched": 10,
-          "inWindow": 7,
-          "added": 1,
-          "duplicates": 5,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
     "Breaking Defense": {
       "url": "https://breakingdefense.com/feed/",
       "runs": [
@@ -61,8 +8,8 @@
           "date": "2026-11-24",
           "fetched": 15,
           "inWindow": 15,
-          "added": 0,
-          "duplicates": 13,
+          "added": 3,
+          "duplicates": 10,
           "newest": "2026-11-24"
         },
         {
@@ -107,16 +54,69 @@
         }
       ]
     },
+    "DefenseScoop": {
+      "url": "https://defensescoop.com/feed/",
+      "runs": [
+        {
+          "date": "2026-11-24",
+          "fetched": 10,
+          "inWindow": 4,
+          "added": 2,
+          "duplicates": 2,
+          "newest": "2026-11-24"
+        },
+        {
+          "date": "2026-11-23",
+          "fetched": 10,
+          "inWindow": 3,
+          "added": 0,
+          "duplicates": 2,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-22",
+          "fetched": 10,
+          "inWindow": 6,
+          "added": 0,
+          "duplicates": 3,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-21",
+          "fetched": 10,
+          "inWindow": 7,
+          "added": 0,
+          "duplicates": 4,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-20",
+          "fetched": 10,
+          "inWindow": 9,
+          "added": 2,
+          "duplicates": 5,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 10,
+          "inWindow": 7,
+          "added": 1,
+          "duplicates": 5,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
     "The War Zone": {
       "url": "https://www.twz.com/feed",
       "runs": [
         {
           "date": "2026-11-24",
-          "fetched": 31,
-          "inWindow": 5,
-          "added": 1,
+          "fetched": 36,
+          "inWindow": 10,
+          "added": 6,
           "duplicates": 3,
-          "newest": "2026-11-23"
+          "newest": "2026-11-24"
         },
         {
           "date": "2026-11-23",
@@ -166,8 +166,8 @@
         {
           "date": "2026-11-24",
           "fetched": 30,
-          "inWindow": 4,
-          "added": 0,
+          "inWindow": 7,
+          "added": 3,
           "duplicates": 4,
           "newest": "2026-11-24"
         },
@@ -219,8 +219,8 @@
         {
           "date": "2026-11-24",
           "fetched": 9,
-          "inWindow": 5,
-          "added": 0,
+          "inWindow": 8,
+          "added": 4,
           "duplicates": 1,
           "newest": "2026-11-24"
         },
@@ -264,62 +264,7 @@
           "duplicates": 4,
           "newest": "2026-11-19"
         }
-      ],
-      "flag": "fresh items were dropped by the filter for 4 straight runs"
-    },
-    "Defense One": {
-      "url": "https://www.defenseone.com/rss/all/",
-      "runs": [
-        {
-          "date": "2026-11-24",
-          "fetched": 23,
-          "inWindow": 5,
-          "added": 0,
-          "duplicates": 5,
-          "newest": "2026-11-23"
-        },
-        {
-          "date": "2026-11-23",
-          "fetched": 23,
-          "inWindow": 6,
-          "added": 0,
-          "duplicates": 5,
-          "newest": "2026-11-21"
-        },
-        {
-          "date": "2026-11-22",
-          "fetched": 23,
-          "inWindow": 11,
-          "added": 0,
-          "duplicates": 8,
-          "newest": "2026-11-21"
-        },
-        {
-          "date": "2026-11-21",
-          "fetched": 23,
-          "inWindow": 15,
-          "added": 0,
-          "duplicates": 11,
-          "newest": "2026-11-21"
-        },
-        {
-          "date": "2026-11-20",
-          "fetched": 22,
-          "inWindow": 14,
-          "added": 0,
-          "duplicates": 9,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-19",
-          "fetched": 22,
-          "inWindow": 12,
-          "added": 1,
-          "duplicates": 7,
-          "newest": "2026-11-19"
-        }
-      ],
-      "flag": "every in-window item duplicated another feed for 5 straight runs"
+      ]
     },
     "Defense News": {
       "url": "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml",
@@ -328,7 +273,7 @@
           "date": "2026-11-24",
           "fetched": 10,
           "inWindow": 10,
-          "added": 2,
+          "added": 3,
           "duplicates": 4,
           "newest": "2026-11-24"
         },
@@ -486,10 +431,10 @@
         {
           "date": "2026-11-24",
           "fetched": 10,
-          "inWindow": 3,
-          "added": 0,
+          "inWindow": 5,
+          "added": 2,
           "duplicates": 1,
-          "newest": "2026-11-23"
+          "newest": "2026-11-24"
         },
         {
           "date": "2026-11-23",
@@ -531,8 +476,60 @@
           "duplicates": 3,
           "newest": "2026-11-19"
         }
-      ],
-      "flag": "fresh items were dropped by the filter for 4 straight runs"
+      ]
+    },
+    "Defense One": {
+      "url": "https://www.defenseone.com/rss/all/",
+      "runs": [
+        {
+          "date": "2026-11-24",
+          "fetched": 23,
+          "inWindow": 6,
+          "added": 1,
+          "duplicates": 5,
+          "newest": "2026-11-24"
+        },
+        {
+          "date": "2026-11-23",
+          "fetched": 23,
+          "inWindow": 6,
+          "added": 0,
+          "duplicates": 5,
+          "newest": "2026-11-21"
+        },
+        {
+          "date": "2026-11-22",
+          "fetched": 23,
+          "inWindow": 11,
+          "added": 0,
+          "duplicates": 8,
+          "newest": "2026-11-21"
+        },
+        {
+          "date": "2026-11-21",
+          "fetched": 23,
+          "inWindow": 15,
+          "added": 0,
+          "duplicates": 11,
+          "newest": "2026-11-21"
+        },
+        {
+          "date": "2026-11-20",
+          "fetched": 22,
+          "inWindow": 14,
+          "added": 0,
+          "duplicates": 9,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 22,
+          "inWindow": 12,
+          "added": 1,
+          "duplicates": 7,
+          "newest": "2026-11-19"
+        }
+      ]
     },
     "Defence Blog": {
       "url": "https://defence-blog.com/feed/",

@@ -1,5 +1,140 @@
 [
  {
+  "id": "h-20261124-as-cities-act-to-shred-housing-s-red-tape-boston-h",
+  "d": "2026-11-24",
+  "title": "As cities act to shred housing’s red-tape, Boston homes in on parking",
+  "body": "Boulder set a 90-day deadline, Allentown tied tax breaks to 20% affordability, and Boston is weighing citywide reform",
+  "topics": [
+   "policy"
+  ],
+  "states": [
+   "MA",
+   "PA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/local-housing-reforms-parking/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261124-what-will-social-security-look-like-in-2027-and-be",
+  "d": "2026-11-24",
+  "title": "What will Social Security look like in 2027 and beyond?",
+  "body": "Various factors, including Medicare premium increases, will determine how much of the COLA retirees actually keep, with direct implications for housing affordability and borrowing capacity",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/social-security-3-6-cola-insolvency-debt-risks-senior-housing/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261124-mortgage-rates-whiplash-is-in-full-effect-with-jum",
+  "d": "2026-11-24",
+  "title": "Mortgage rates whiplash is in full effect, with jumbo loans shedding 25 bps this week",
+  "body": "Interest rate traders are pricing a 96% chance of a Fed hike in December, keeping pressure on borrowing costs heading into 2027",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mortgage-rates-seesaw-753/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261124-why-16-mlss-want-a-united-front-against-compass-in",
+  "d": "2026-11-24",
+  "title": "Why 16 MLSs want a united front against Compass in the battle over private listings",
+  "body": "A JPML request would coordinate 16 federal suits and add 2 SDNY declaratory judgment actions filed by 9 MLSs",
+  "topics": [
+   "inventory"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mls-seek-compass-case-consolidation/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261124-your-real-estate-listing-is-stuck-and-a-price-drop",
+  "d": "2026-11-24",
+  "title": "Your real estate listing is stuck and a price drop will not fix it",
+  "body": "When repairs are unstarted, conventional eligibility can vanish and even all cash buyers may walk after reviewing HOA reserves",
+  "topics": [
+   "inventory",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/stuck-condo-building-repairs/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261124-lower-mortgage-rates-could-bring-buyers-back-what-",
+  "d": "2026-11-24",
+  "title": "Lower mortgage rates could bring buyers back. What market will they return to?",
+  "body": "Inventory, asking prices and seller pricing adjustments are creating very different conditions for buyers across major housing markets",
+  "topics": [
+   "rates",
+   "inventory",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/lower-mortgage-rates-local-housing-market-conditions/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261124-mortgage-application-payments-reveal-slight-homebu",
+  "d": "2026-11-24",
+  "title": "Mortgage application payments reveal slight homebuyer affordability gain in October",
+  "body": "Median purchase payment rose to $2,236, but the median loan amount fell $8,598 from September",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mba-papi-october-affordability/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261124-home-price-growth-held-steady-in-september",
+  "d": "2026-11-24",
+  "title": "Home Price Growth Held Steady in September",
+  "body": "The S P Cotality Case-Shiller Home Price Index showed national home price growth picking up further through September, with the U.S. National Index rising 2.1% year over year, but down in real terms when taking inflation into account.",
+  "topics": [
+   "prices"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/case-shiller-home-prices-september-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261124-it-s-time-we-re-all-selling-our-houses",
+  "d": "2026-11-24",
+  "title": "It’s Time: We’re All Selling Our Houses.",
+  "body": "That’s it, it’s finally time. We’re selling our houses. This isn’t a joke; every single one of us on the panel is selling our homes to do something better with [ ]",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "BiggerPockets",
+   "u": "https://www.biggerpockets.com/blog/on-the-market-480",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261123-georgia-builders-give-affordable-housing-an-essent",
   "d": "2026-11-23",
   "title": "Georgia builders give affordable housing an essential new identity",

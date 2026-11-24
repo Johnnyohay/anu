@@ -656,6 +656,495 @@
     ]
   },
   {
+    "id": "u-20261124-air-force-signs-48-7m-deal-for-weather-data-from-b",
+    "d": "2026-11-24",
+    "title": "Air Force Signs $48.7M Deal for Weather Data from ‘Balloons with Brains’",
+    "body": "The Air Force recently signed a contract worth nearly $50 million to beef up its weather data collection through a company that has found a way to quickly and cheaply launch thousands of lighter-than-air, autonomous, long-duration weather balloons.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/air-force-deal-weather-data-autonomous-balloons/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "Air Force",
+      "‘Balloons"
+    ]
+  },
+  {
+    "id": "u-20261124-first-all-guardian-squadron-graduates-officer-trai",
+    "d": "2026-11-24",
+    "title": "First All-Guardian Squadron Graduates Officer Training School, Enters Space Force",
+    "body": "The first Officer Training School squadron comprised entirely of new Space Force officer candidates graduated Nov. 20, minting 36 new Guardians for the Space Force.",
+    "why": "",
+    "sectors": [
+      "space"
+    ],
+    "type": "",
+    "companies": [
+      "First All-Guardian",
+      "Officer Training School"
+    ],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/space-forces-first-all-guardian-class-graduates-officer-training-school/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "First All-Guardian",
+      "Officer Training School",
+      "Space Force"
+    ]
+  },
+  {
+    "id": "u-20261124-space-systems-command-eyes-mid-2028-for-gps-sustai",
+    "d": "2026-11-24",
+    "title": "Space Systems Command eyes mid-2028 for GPS sustainment upgrade contract",
+    "body": "The Space Force has marked mid-2028 as the planned award window for next-generation GPS sustainment services under a five-year contract as it susses out potential capabilities with a new survey to industry.",
+    "why": "",
+    "sectors": [
+      "space"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/24/space-systems-command-gps-sustainment-upgrade-contract/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "Space Systems Command",
+      "Space Force"
+    ]
+  },
+  {
+    "id": "u-20261124-turkish-kizilelma-fighter-drone-declared-operation",
+    "d": "2026-11-24",
+    "title": "Turkish Kizilelma Fighter Drone Declared Operational",
+    "body": "Turkish drone manufacturer Baykar says it has made aviation history, announcing that the first three of its Bayraktar Kizilelma uncrewed combat aircraft have entered the inventory of the Turkish security forces following the completion of acceptance testing.",
+    "why": "",
+    "sectors": [
+      "air",
+      "mfg"
+    ],
+    "type": "",
+    "companies": [
+      "Bayraktar Kizilelma"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/turkish-kizilelma-fighter-drone-declared-operational",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "Baykar",
+      "Bayraktar Kizilelma"
+    ]
+  },
+  {
+    "id": "u-20261124-program-looks-to-build-shipbuilding-defense-manufa",
+    "d": "2026-11-24",
+    "title": "Program looks to build shipbuilding, defense manufacturing capability in Hawaii",
+    "body": "HONOLULU— A Pentagon-funded workforce-development program at Honolulu Community College is aiming to forge the next generation of Hawaii manufacturing industry leaders—and grow the defense industrial base in the Pacific.",
+    "why": "",
+    "sectors": [
+      "sea",
+      "mfg"
+    ],
+    "type": "",
+    "companies": [
+      "Honolulu Community College"
+    ],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/business/2026/11/program-looks-build-shipbuilding-defense-manufacturing-capability-hawaii/417440/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "Honolulu Community College"
+    ]
+  },
+  {
+    "id": "u-20261124-uk-s-mi5-warns-local-defense-firms-of-russian-sabo",
+    "d": "2026-11-24",
+    "title": "UK’s MI5 warns local defense firms of Russian sabotage risk",
+    "body": "The alert urges industry to respond immediately and reduce opportunities for hostile actors to identify your organisation or people as targets, conduct hostile reconnaissance, and attack people, sites or operations.",
+    "why": "",
+    "sectors": [
+      "global",
+      "adversary",
+      "sensing"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/uks-mi5-warns-local-defense-firms-of-russian-sabotage-risk/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "MI5"
+    ]
+  },
+  {
+    "id": "u-20261124-the-army-has-told-us-how-it-fights-we-can-t-do-tha",
+    "d": "2026-11-24",
+    "title": "The Army has told us how it fights. We can’t do that in an analog tank.",
+    "body": "Decades of upgrades have pushed the Abrams tank to its limits. A generational redesign is the only way forward, a former three-star general argues.",
+    "why": "",
+    "sectors": [
+      "ground",
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/the-army-has-told-us-how-it-fights-we-cant-do-that-in-an-analog-tank/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "Army"
+    ]
+  },
+  {
+    "id": "u-20261124-investment-firm-cerberus-to-buy-space-business-of-",
+    "d": "2026-11-24",
+    "title": "Investment firm Cerberus to buy space business of US Airbus arm",
+    "body": "Airbus intends for its US subsidiary to double down on production of autonomous aircraft as the market for drones continues to expand, the company said.",
+    "why": "",
+    "sectors": [
+      "space",
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/investment-firm-cerberus-to-buy-space-business-of-us-airbus-arm/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "Cerberus",
+      "Airbus"
+    ]
+  },
+  {
+    "id": "u-20261124-questions-about-dod-s-frontier-ai-organization-lin",
+    "d": "2026-11-24",
+    "title": "Questions about DOD’s frontier AI organization linger after Trump-ordered rebrand and website redesign",
+    "body": "Questions are swirling about recent reforms to the office that leads the Defense Department's enterprise artificial intelligence deployments after a public rebrand and subsequent redesign that removed basic details about the team's current priorities and…",
+    "why": "",
+    "sectors": [
+      "ai"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/24/trump-ai-rebrand-pentagon-super-intelligence-office-sio/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "DOD",
+      "Defense Department"
+    ]
+  },
+  {
+    "id": "u-20261124-a-new-competition-space-us-coast-guard-takes-icebr",
+    "d": "2026-11-24",
+    "title": "‘A new competition space’: US Coast Guard takes icebreaker on maiden voyage to the Arctic",
+    "body": "The U.S. Coast Guard's first new icebreaker in nearly three decades returned from a maiden voyage to the Arctic this month, having demonstrated a spectrum of military operations that open up future possibilities for the service in the increasingly dynamic…",
+    "why": "",
+    "sectors": [
+      "space"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/naval/2026/11/24/a-new-competition-space-us-coast-guard-takes-icebreaker-on-maiden-voyage-to-the-arctic/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "US Coast Guard",
+      "U.S. Coast Guard"
+    ]
+  },
+  {
+    "id": "u-20261124-lynx-kf41-fighting-vehicles-newly-arrived-in-ukrai",
+    "d": "2026-11-24",
+    "title": "Lynx KF41 Fighting Vehicles, Newly Arrived In Ukraine, Will Take On Counter-Drone Mission",
+    "body": "Ukraine has finally received its first batch of Lynx KF41 Infantry Fighting Vehicles from Germany.",
+    "why": "",
+    "sectors": [
+      "cuas",
+      "global",
+      "ground"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/land/lynx-kf41-fighting-vehicles-newly-arrived-in-ukraine-will-take-on-counter-drone-mission",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-fireant-mini-uncrewed-ground-vehicles-deploy-drone",
+    "d": "2026-11-24",
+    "title": "FireAnt Mini Uncrewed Ground Vehicles Deploy Drone Detection Sensors In U.S. Army Test",
+    "body": "A FireAnt uncrewed ground vehicle (UGV) was used to deploy small sensors capable of detecting hostile drones on the ground during a recent U.S. Army test exercise.",
+    "why": "",
+    "sectors": [
+      "air",
+      "ground",
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/land/fireant-mini-uncrewed-ground-vehicles-deploy-drone-detection-sensors-in-u-s-army-test",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261124-sweden-s-gripens-are-doing-big-things-with-a-tiny-",
+    "d": "2026-11-24",
+    "title": "Sweden’s Gripens Are Doing Big Things With A Tiny Footprint In Poland",
+    "body": "Russian cruise missiles enter Polish airspace during a major attack on Ukraine . NATO fighters scramble . Two Swedish Gripens join Polish F-16s in the response, tracking airborne threats over Poland.",
+    "why": "",
+    "sectors": [
+      "global",
+      "strike"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/swedens-tiny-gripen-fighter-detachment-takes-on-a-big-nato-role",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261124-philippine-forces-train-to-secure-luzon-strait-wit",
+    "d": "2026-11-24",
+    "title": "Philippine Forces Train to Secure Luzon Strait with Warships, BrahMos Missiles",
+    "body": "MANILA, Philippines — Philippine forces are practicing how to secure the Luzon Strait through the deployment of warships and a BrahMos missile battery for maritime strike operations this month.",
+    "why": "",
+    "sectors": [
+      "strike",
+      "global",
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/24/philippine-forces-train-to-secure-luzon-strait-with-warships-brahmos-missiles",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "Philippine Forces",
+      "MANILA"
+    ]
+  },
+  {
+    "id": "u-20261124-corps-of-engineers-navigates-historic-archaeologic",
+    "d": "2026-11-24",
+    "title": "Corps of Engineers Navigates Historic Archaeological Discoveries in Hungary",
+    "body": "The U.S. Army Corps of Engineers, Europe District, began construction to increase the capacity of Kecskemét Air Base in Hungary, only to stumble upon archaeological sites across the footprint of the planned construction project.",
+    "why": "",
+    "sectors": [
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4659247/corps-of-engineers-navigates-historic-archaeological-discoveries-in-hungary/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "U.S. Army Corps of Engineers"
+    ]
+  },
+  {
+    "id": "u-20261124-kearsarge-conducts-surface-warfare-advanced-tactic",
+    "d": "2026-11-24",
+    "title": "Kearsarge Conducts Surface Warfare Advanced Tactical Training",
+    "body": "The amphibious assault ship USS Kearsarge participated in surface warfare advanced tactical training, designed to increase force interoperability and combat capability by providing multiship, multiplatform and multiwarfare area training to surface units.",
+    "why": "",
+    "sectors": [
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4659197/kearsarge-conducts-surface-warfare-advanced-tactical-training/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-ford-in-talks-with-the-pentagon-to-supply-military",
+    "d": "2026-11-24",
+    "title": "Ford in talks with the Pentagon to supply military vehicles",
+    "body": "Ford said on Tuesday it has held talks with the Pentagon about supplying military vehicles and other defense products to the U.S. military, as legacy automakers seek a share of fast-rising defense spending amid tough competition in the auto sector.",
+    "why": "",
+    "sectors": [
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/pentagon/2026/11/24/ford-in-talks-with-the-pentagon-to-supply-military-vehicles/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "Ford",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261124-seoul-scrambles-f-15ks-as-russian-warplanes-come-w",
+    "d": "2026-11-24",
+    "title": "Seoul Scrambles F-15Ks As Russian Warplanes Come Within Seconds Of Crossing Into South Korean Airspace",
+    "body": "Russian military aircraft came exceptionally close to South Korean sovereign airspace on November 24, prompting an emergency response from Seoul and a formal diplomatic protest to Moscow.",
+    "why": "",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/seoul-scrambles-f-15ks-as-russian-warplanes-come-within-seconds-of-crossing-into-south-korean-airspace",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-wilsbach-s-message-to-airmen-after-one-year-as-csa",
+    "d": "2026-11-24",
+    "title": "Wilsbach’s Message to Airmen After One Year as CSAF: ‘Readiness Is Fundamental’",
+    "body": "In a Nov. 23 letter to Airmen marking his first year as Air Force Chief of Staff, Gen. Kenneth S. Wilsbach reemphasized his focus on improving readiness, modernizing aircraft and other systems, and upholding high standards.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/wilsbach-message-to-airmen-one-year-csaf-readiness/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "CSAF",
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261124-airman-s-spicy-chicken-dish-wins-national-competit",
+    "d": "2026-11-24",
+    "title": "Airman’s Spicy Chicken Dish Wins National Competition—and It’s Coming Soon to Some Bases",
+    "body": "An Airman stationed at Travis Air Force Base who grew up learning to cook in Jamaica recently took first place in the 3rd Annual U.S. Airmen Culinary Competition 2026.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/airman-spicy-chicken-dish-wins-national-culinary-competition/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-ford-class-redesign-battleship-funds-on-white-hous",
+    "d": "2026-11-24",
+    "title": "Ford-class Redesign, Battleship Funds on White House List for CR Anomaly Funding",
+    "body": "The Trump administration wants Congress to fund several major shipbuilding programs, including the Trump-class battleship, in the next patchwork spending bill that keeps the government funded, according to a document obtained by USNI News.",
+    "why": "",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/24/ford-class-redesign-battleship-funds-on-white-house-list-for-cr-anomaly-funding",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "Congress",
+      "USNI News"
+    ]
+  },
+  {
+    "id": "u-20261124-amphibs-uss-makin-island-uss-john-p-murtha-depart-",
+    "d": "2026-11-24",
+    "title": "Amphibs USS Makin Island, USS John P. Murtha Depart Singapore",
+    "body": "Wasp-class amphibious assault ship USS Makin Island (LHD-8) pulls in to Commander, Fleet Activities, Yokosuka, Japan, Oct. 26, 2026. US Navy photo.",
+    "why": "",
+    "sectors": [
+      "sea",
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/24/amphibs-uss-makin-island-uss-john-p-murtha-depart-singapore",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "Fleet",
+      "US Navy"
+    ]
+  },
+  {
     "id": "u-20261123-china-s-fourth-aircraft-carrier-bigger-than-others",
     "d": "2026-11-23",
     "title": "China’s fourth aircraft carrier, bigger than others and nuclear-powered, nears completion",
