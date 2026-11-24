@@ -419,7 +419,7 @@ function renderToday(){
         ${s.tag?`<div class="tag">${esc(s.tag)}</div>`:""}
         <h4>${esc(s.h)}</h4>
         <p>${esc(s.what)}</p>
-        ${s.you ? `<div class="you"><b>Why it matters to you:</b> ${esc(s.you)}</div>` : ""}
+        ${s.you && String(s.you).trim() ? `<div class="you"><b>Why it matters to you:</b> ${esc(s.you)}</div>` : ""}
         ${s.ref?`<button class="more" data-open-update="${esc(s.ref)}">Details and source →</button>`:""}
       </div>`).join("")}
     </section>
@@ -457,7 +457,7 @@ let uType="all";
 function itemHTML(u,compact){
   return `<div class="item" id="item-${esc(u.id)}"><div class="dtg">${dtg(u.d,u.dApprox)}</div><details class="ud"><summary>
     <h4>${u.isNew?`<span class="chip new-pill" style="margin-right:6px">NEW</span>`:""}${esc(u.title)}</h4>
-    ${u.why?`<div class="why">${esc(u.why)}</div>`:""}<span class="open-hint">Details and source ▸</span></summary>
+    ${u.why && String(u.why).trim()?`<div class="why">${esc(u.why)}</div>`:""}<span class="open-hint">Details and source ▸</span></summary>
     <p class="body" style="margin-top:8px">${esc(u.body)}</p>
     <div class="chips">${u.type?`<span class="chip type">${esc(u.type)}</span>`:""}${(u.sectors||[]).map(secChip).join("")}${(u.companies||[]).map(c=>`<button class="chip" data-company="${esc(c)}">${esc(c)}</button>`).join("")}${srcChip(u.src)}</div>
   </details></div>`;

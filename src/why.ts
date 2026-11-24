@@ -61,21 +61,36 @@ function moneyPhrase(text: string): string | undefined {
   return `$${n} million`;
 }
 
-/** Drop a NER fragment that is just the headline's first words plus a verb. */
+const NOT_ACTOR = new Set(
+  "yes no new how from with top opening private investment equity firm the company reports says said orders lands wins closes acquires launches takes joins sets gives wants upgrading thruster european israeli turkish russian chinese american ukrainian german french british colombian polish japanese korean indian canadian philippine finnish libyan white despite after before over into about their house".split(" "),
+);
+
+/** A company or institution from the headline, not a leading adjective, verb, or fragment of "White House". */
 function firm(title: string, companies: string[]): string | undefined {
+  if (/\bwhite house\b/i.test(title)) return "the White House";
   const bad = /\b(reports|says|said|orders|lands|wins|closes|acquires|journal|development)\b/i;
-  const generic = /^(private|investment|equity|firm|the|company|how|from|with|new|top)$/i;
-  const good = companies.find((c) => !bad.test(c) && !generic.test(c));
+  const good = companies.find((c) => !bad.test(c) && !NOT_ACTOR.has(c.toLowerCase()));
   if (good) return good;
-  const words = title.match(/\b[A-Z][A-Za-z0-9&'.-]+\b/g) ?? [];
-  return words.find((w) => !generic.test(w));
+  const phrase = title.match(/\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,2})\b/);
+  if (phrase && !phrase[1].split(" ").some((w) => NOT_ACTOR.has(w.toLowerCase()) || bad.test(w))) return phrase[1];
+  const words = title.match(/\b[A-Z][A-Za-z0-9&'.-]{2,}\b/g) ?? [];
+  return words.find((w) => !NOT_ACTOR.has(w.toLowerCase()) && !bad.test(w));
 }
 
-const STOCK_HEDGE = /that is a funded order|not a new program of record|ownership change|the order book, not|names the event|does not name a buyer|this story moves|whether a service funds the next lot/i;
+const STOCK_HEDGE = /that is a funded order|not a new program of record|ownership change|the order book, not|names the event|does not name a buyer|this story moves|whether a service funds the next lot|is the party in the story|a buyer has to adopt|this one is /i;
 
 /** A canned closer that avoids saying what the buyer gains. */
 export function isStockHedge(line: string): boolean {
   return STOCK_HEDGE.test(line);
+}
+
+/** Reject a sentence with no subject, or "says was" with the object missing. */
+export function grammarProblem(line: string): string {
+  const s = line.trim();
+  if (!s) return "";
+  if (/\bsays was\b/i.test(s)) return "missing object";
+  if (!/^(?:The |A |An )?[A-Z0-9$]/.test(s)) return "no subject";
+  return "";
 }
 
 /** The line's job is the dollar figure already in the summary, not a consequence. */
@@ -90,15 +105,16 @@ export function restatesSummaryNumbers(line: string, summary: string): boolean {
 }
 
 function actor(text: string, companies: string[], title: string): string {
-  const t = text.toLowerCase();
-  if (/\bsocom\b/.test(t)) return "SOCOM";
-  if (/special operations command/.test(t)) return "Special Operations Command";
-  if (/\bnasa\b/.test(t)) return "NASA";
-  if (/air force/.test(t)) return "The Air Force";
-  if (/pentagon|department of war/.test(t)) return "The Pentagon";
-  if (/\bnavy\b/.test(t)) return "The Navy";
-  if (/\barmy\b/.test(t)) return "The Army";
-  return firm(title, companies) || "The buyer";
+  const titleL = title.toLowerCase();
+  if (/\bwhite house\b/i.test(title)) return "the White House";
+  if (/\bsocom\b/.test(titleL)) return "SOCOM";
+  if (/special operations command/.test(titleL)) return "Special Operations Command";
+  if (/\bnasa\b/.test(titleL)) return "NASA";
+  if (/air force/.test(titleL)) return "The Air Force";
+  if (/pentagon|department of war/.test(titleL)) return "The Pentagon";
+  if (/\bnavy\b/.test(titleL)) return "The Navy";
+  if (/\barmy\b/.test(titleL)) return "The Army";
+  return firm(title, companies) || "";
 }
 
 const GLUE = new Set(
@@ -168,35 +184,35 @@ function composeWhy(title: string, body: string, companies: string[]): string {
   const year = text.match(/\b(20\d{2})\b/)?.[1];
   const drafts: string[] = [];
 
-  if (/posted in error|has not yet/.test(t) && /contract|award/.test(t)) {
-    drafts.push(`${who} says ${program ? program + " " : ""}was posted in error and is not awarded yet.`);
+  if (/posted in error|has not yet/.test(t) && /contract/.test(t) && who) {
+    drafts.push(`${who} says the contract was posted in error and is not awarded yet.`);
   }
   if (/backlog/.test(t)) {
     const name = firm(title, companies) || who;
     const buyers = namedBuyers(text);
     if (buyers.length) drafts.push(`The backlog positions ${name} to win the next awards from ${joinList(buyers)}.`);
-    if (money && /missile/.test(t)) drafts.push(`A ${money} backlog shows ${name} missile work.`);
+    if (money && /missile/.test(t)) drafts.push(`A ${money} backlog is missile work for ${name}.`);
     if (money) drafts.push(`A ${money} backlog makes ${name} the incumbent on the next competition.`);
   }
   if (/\b(acquires|acquired|acquisition|to acquire)\b/.test(t) || (/\bto buy\b/.test(t) && /\b(business|firm|stake|arm|subsidiary)\b/.test(t))) {
     const target = text.match(/\b(?:acquires|acquired|acquire|buy)\s+(?:[\w']+\s+){0,4}([A-Z][\w&'-]+)/)?.[1]?.replace(/['’.]+$/g, "");
-    if (/factory|ownership/.test(t)) drafts.push(`${who} now has the factory under American ownership.`);
-    const offer = /analysis/.test(t) ? "analysis" : /fusion/.test(t) ? "fusion" : /geospatial/.test(t) ? "geospatial data" : target;
-    if (offer && /customer/.test(t)) drafts.push(`${who} can now sell ${offer} to customers.`);
-    if (offer) drafts.push(`${who} can now sell ${offer}.`);
-    if (target) drafts.push(`${who} buying ${target} is the change.`);
+    if (/\bto buy\b/.test(t) && /space business/.test(t) && who && target) drafts.push(`${who} is buying ${target}'s space business.`);
+    if (/factory|ownership/.test(t) && who) drafts.push(`${who} now has the factory under American ownership.`);
+    const offer = /analysis/.test(t) ? "analysis" : /fusion/.test(t) ? "fusion" : /geospatial/.test(t) ? "geospatial data" : "";
+    if (who && offer && /customer/.test(t)) drafts.push(`${who} can now sell ${offer} to customers.`);
+    if (who && offer) drafts.push(`${who} can now sell ${offer}.`);
+    if (/autonomous aircraft/.test(t) && /production/.test(t)) drafts.push(`Production of autonomous aircraft expands with the drone market.`);
   }
   if (/in talks/.test(t)) {
     const names = [/\bgeneral motors\b|\bgm\b/.test(t) ? "GM" : "", /\bford\b/.test(t) ? "Ford" : ""].filter(Boolean);
-    if (names.length && /drone/.test(t)) drafts.push(`${who} is in talks with ${names.join(" and ")} to mass-produce drones.`);
-    else drafts.push(`${who} is in talks with ${names.length ? names.join(" and ") : "the other party"}.`);
+    if (names.length && /drone/.test(t) && who) drafts.push(`${who} is in talks with ${names.join(" and ")} to mass-produce drones.`);
   }
-  if (/(shot down|downs)/.test(t) && program && /interceptor/.test(t)) {
-    drafts.push(`${who} interceptor shot down ${program}.`);
-  } else if (/(shot down|downs)/.test(t) && program) {
-    drafts.push(`${who} shot down ${program}.`);
-  } else if (/(shot down|downs)/.test(t) && /drone/.test(t)) {
-    drafts.push(`${who} shot down a drone.`);
+  if (/(shot down|downs|destroyed)/.test(t) && /cruise missile/.test(t) && /ukrainian intelligence/.test(t) && program) {
+    drafts.push(`Ukrainian intelligence classed ${program} as a small cruise missile.`);
+  }
+  if (/(shot down|downs)/.test(t) && /button/.test(t)) {
+    const org = text.match(/\b([A-Z]{4,})\b/)?.[1];
+    if (org) drafts.push(`${org} shot down a drone and the operator had to press one button.`);
   }
   if (/sole-source/.test(t) && year && who) {
     drafts.push(`Sole-source work through ${year} keeps ${who} on this program.`);
@@ -205,7 +221,7 @@ function composeWhy(title: string, body: string, companies: string[]): string {
     const place = text.match(/\b(Luzon Strait)\b/i)?.[1];
     if (place && /philippine/.test(t) && /military/.test(t)) drafts.push(`The loan for ${place} sets up buys for the Philippine military.`);
     else if (place && /military/.test(t)) drafts.push(`The loan for ${place} sets up buys for the military.`);
-    else drafts.push(`The loan sets up the buys in the story.`);
+    else if (money && who) drafts.push(`${who} is using the ${money} loan to fund the buy.`);
   }
   if (/nuclear/.test(t) && /carrier/.test(t) && /launch/.test(t) && /planes|aircraft/.test(t) && /faster/.test(t)) {
     const what = /planes/.test(t) ? "planes" : "aircraft";
@@ -213,15 +229,21 @@ function composeWhy(title: string, body: string, companies: string[]): string {
   } else if (/nuclear/.test(t) && /carrier/.test(t)) {
     drafts.push(`A nuclear carrier is what changed for ${who}.`);
   }
+  if (/white house/.test(t) && /contractors/.test(t) && /congress/.test(t)) {
+    drafts.push(`The order makes contractors alert the White House before answering Congress.`);
+  }
   if (/topline|reconciliation/.test(t)) {
     drafts.push(year ? `Without a topline by ${year}, new starts are frozen.` : `Without a topline, new starts are frozen.`);
   }
-  if (money && program) drafts.push(`${who} has ${money} on ${program}. A rival has to unseat that incumbent to win the next lot.`);
-  if (program) drafts.push(`${program} is what moved. ${who} is who would buy the next one.`);
-  if (who && who !== "The buyer") drafts.push(`${who} is the party in the story. A buyer has to adopt it.`);
+  if (/contract/.test(t) && year && !/posted in error/.test(t)) drafts.push(`The contract runs through ${year}.`);
+  if (who && money && program) drafts.push(`${who} has ${money} on ${program}. A rival has to unseat that incumbent to win the next lot.`);
+  if (who && program && /\b(order|buy|orders|buying)\b/.test(t)) drafts.push(`${who} is buying more ${program}.`);
+  else if (who && program && /contract|award/.test(t)) drafts.push(`${who} has a contract for ${program}.`);
 
   for (const draft of drafts) {
-    if (!ungroundedTerms(draft, text).length && !isStockHedge(draft)) return draft;
+    if (ungroundedTerms(draft, text).length || isStockHedge(draft) || grammarProblem(draft)) continue;
+    if (tokenOverlap(draft, title) > 0.6) continue;
+    return draft;
   }
   return "";
 }
@@ -339,30 +361,30 @@ export function storyWhy(
   for (const candidate of candidates) {
     const out = cleanCopy(candidate.line);
     if (!out || tokenOverlap(out, what) > 0.6 || !allowed(out, story)) continue;
-    if (/the watch item is/i.test(out) || isStockHedge(out) || restatesSummaryNumbers(out, what)) continue;
+    if (/the watch item is/i.test(out) || isStockHedge(out) || restatesSummaryNumbers(out, what) || grammarProblem(out)) continue;
     if (candidate.grounded && ungroundedTerms(out, story).length) continue;
+    if (candidate.grounded && tokenOverlap(out, title) > 0.6) continue;
     return out;
   }
-  return "A buyer has to adopt it.";
+  return "";
 }
 
 function normLine(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 }
 
-/** No two stories in one brief keep the same so-what. A repeat gains the other story's name. */
+/** Identical lines are too generic to keep. Both copies are cleared, and the headline is not pasted on. */
 export function uniqueWhys<T extends { title: string; why: string }>(items: T[]): void {
-  const seen = new Map<string, number>();
+  const groups = new Map<string, T[]>();
   for (const item of items) {
+    if (!item.why.trim()) continue;
     const key = normLine(item.why);
-    const n = seen.get(key) ?? 0;
-    if (n > 0) {
-      const name = item.title.replace(/\s+/g, " ").trim();
-      const short = name.length > 80 ? name.slice(0, 77).replace(/\s+\S*$/, "") : name;
-      item.why = cleanCopy(`${item.why.replace(/\.$/, "")}. This one is ${short}`);
-    }
-    seen.set(normLine(item.why), (seen.get(normLine(item.why)) ?? 0) + 1);
-    seen.set(key, n + 1);
+    const list = groups.get(key) ?? [];
+    list.push(item);
+    groups.set(key, list);
+  }
+  for (const list of groups.values()) {
+    if (list.length > 1) for (const item of list) item.why = "";
   }
 }
 

@@ -540,7 +540,7 @@ function render() {
       <div class="face${light ? " lightbg" : ""}"><div class="k"><span class="pill">${n === 1 ? "Top story" : `Story ${n} of ${of}`}</span><span>${esc(x.areaName)}</span></div><h3><button data-open="${i + 1}">${esc(x.h)}</button></h3></div>
       <div class="body">
         <div><p class="lbl">What happened</p><p class="what">${esc(x.what)}</p></div>
-        ${x.you ? `<div><p class="lbl">Why it matters</p><p>${esc(x.you)}</p></div>` : ""}
+        ${x.you && String(x.you).trim() ? `<div><p class="lbl">Why it matters</p><p>${esc(x.you)}</p></div>` : ""}
         ${termsHTML(terms)}
         <button class="open" data-open="${i + 1}">See the full story, context and related news →</button>
         <div class="links">${url ? `<a class="src" href="${esc(url)}" target="_blank" rel="noopener">Read it at ${esc(x.src.t)}, ${esc(fmtDay(x.d, { month: "short", day: "numeric" }))} ↗</a>` : "<span></span>"}<a class="ask" href="${esc(askUrl(`Tell me more about: ${x.h}`))}">Ask about this →</a></div>
@@ -749,7 +749,7 @@ function openDetail(n) {
       <div class="blk"><h4>The full story</h4><p>${esc(x.full)}</p>
         ${url ? `<a class="srcbtn" href="${esc(url)}" target="_blank" rel="noopener">Read the original at ${esc(x.src.t)} ↗</a>` : ""}
         ${d.also.length ? `<p class="dim">Also reported by ${d.also.map(v => `${link(v)}${esc(v.src?.t || "another source")}</a> (${esc(fmtDay(v.d, { month: "short", day: "numeric" }))})`).join(", ")}.</p>` : ""}</div>
-      ${x.you ? `<div class="blk"><h4>Why it matters to you</h4><p>${esc(x.you)}</p></div>` : ""}
+      ${x.you && String(x.you).trim() ? `<div class="blk"><h4>Why it matters to you</h4><p>${esc(x.you)}</p></div>` : ""}
       ${terms.length ? `<div class="blk"><h4>Key terms in this story</h4>${terms.map(g => `<p><b>${esc(g.term)}:</b> ${esc(g.short)}</p>`).join("")}</div>` : ""}
       ${d.names.length ? `<div class="blk"><h4>Who and what it mentions</h4><div class="chips">${d.names.map(nm => `<span>${esc(nm)}</span>`).join("")}</div></div>` : ""}
       ${d.ctx.length ? `<div class="blk"><h4>The bigger picture in ${esc(d.area)}</h4><dl class="ctx">${d.ctx.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl></div>` : ""}

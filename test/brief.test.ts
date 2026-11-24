@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { briefTitle, classify, storyWhy } from "../src/classify.ts";
-import { cleanCopy, isStockHedge, limitActor, restatesSummaryNumbers, storyWhy as storyWhyWith, tokenOverlap, ungroundedTerms, uniqueWhys } from "../src/why.ts";
+import { cleanCopy, grammarProblem, isStockHedge, limitActor, restatesSummaryNumbers, storyWhy as storyWhyWith, tokenOverlap, ungroundedTerms, uniqueWhys } from "../src/why.ts";
 import { briefSummary, dedupeEvents, eventKey, isFiller, isListicle, materiallyNew, pickTop, sameEvent, sameStory, storyGist, storyScore } from "../src/brief.ts";
 import { selectBriefVideos } from "../src/brief-videos.ts";
 import { isCaption, isRawQuote, summaryFromFields } from "../src/rss.ts";
@@ -144,9 +144,8 @@ describe("types and why lines", () => {
     assert.equal(c.sectors[0]?.id, "space");
     assert.ok(c.sectors[0].titleScore < 4);
     const line = storyWhy(title, body, c.sectors[0], c.type, []);
-    assert.ok(line.length > 0);
-    assert.notEqual(line, GENERIC_SPACE);
-    assert.ok(tokenOverlap(line, body) <= 0.6);
+    assert.equal(line, "");
+    assert.doesNotMatch(line, /is the party in the story|This one is /);
   });
 
   it("does not use the old ground-robot line on the Morocco missile", () => {
@@ -175,8 +174,8 @@ describe("published brief stories", () => {
     for (const [title, body, companies] of stories) {
       const c = classify(title, body);
       const line = storyWhy(title, body, c.sectors[0], c.type, companies);
-      assert.ok(line.trim().length > 20, title);
-      assert.doesNotMatch(line, STOCK, title);
+      assert.doesNotMatch(line, /is the party in the story|This one is /i, title);
+      if (line.trim()) assert.doesNotMatch(line, STOCK, title);
       assert.doesNotMatch(line, /how the U\.$/);
     }
   });
@@ -535,6 +534,49 @@ describe("Nov 24 brief quality", () => {
     assert.ok(tokenOverlap(buy, "BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis.") <= 0.6);
   });
 
+  it("names the real actor, and stays empty when the headline is the only fact", () => {
+    const cases: [string, string, RegExp, RegExp?][] = [
+      ["Yes, no, maybe? The countries that can deliver Ukraine's F-16s", "Yes, no, maybe? The countries that can deliver Ukraine's F-16s.", /Yes is the party/, /^$/],
+      ["Upgrading cellular networks with space support", "Using satellites to connect smartphones beyond cell towers.", /Upgrading is/, /^$/],
+      ["Thruster glitch clouds BepiColombo arrival at Mercury", "A mission entered orbit around Mercury after a thruster shutdown.", /Thruster is/, /^$/],
+      ["White House sets limits on contractors' contacts with Congress", "Federal contractors are required to alert the White House before answering Congress and withhold privileged material under an executive order.", /White is the party/, /White House/],
+      ["Israeli firm says its new spy drone broke a range record", "An Israeli company flew a spy drone farther than its last one.", /^Israeli is/, /^$/],
+      ["European officials make the case for a human spaceflight program", "European government officials want a crew vehicle.", /^European is/, /^$/],
+      ["Russia rebuilds key military base 60 km from Finland", "Russia has torn down barracks at its army base near Finland.", /The Army is the party/, /^$/],
+      ["Investment firm Cerberus to buy space business of US Airbus arm", "Airbus will expand production of autonomous aircraft.", /sell Airbus/, /Cerberus is buying Airbus/],
+      ["$16 billion propulsion mega-contract posted in error, Air Force says", "The Air Force is planning to award the contract, but has not yet done so.", /says was posted/, /says the contract was posted/],
+    ];
+    for (const [title, body, absent, present] of cases) {
+      const line = why(title, body);
+      assert.doesNotMatch(line, absent, `${title} -> ${line}`);
+      assert.doesNotMatch(line, /is the party in the story|This one is /i, line);
+      if (present) assert.match(line, present, `${title} -> ${line}`);
+      if (line) assert.ok(tokenOverlap(line, title) <= 0.6, line);
+      assert.equal(grammarProblem(line), "", line);
+    }
+  });
+
+  it("leaves a line empty when it would only name a party or paste the headline", () => {
+    const samples: [string, string][] = [
+      ["Yes, no, maybe? The countries that can deliver Ukraine's 40 requested F-16s", "Yes, no, maybe? The countries that can or can't deliver Ukraine's 40 requested F-16s."],
+      ["Upgrading cellular networks with space support", "Using satellites to connect smartphones beyond the reach of cell towers."],
+      ["Thruster glitch clouds BepiColombo arrival at Mercury", "A joint mission entered orbit around Mercury after a thruster shutdown."],
+      ["A battalion delayed a weather exercise", "The battalion waited out the weather before the road march."],
+    ];
+    for (const [title, body] of samples) {
+      const line = why(title, body);
+      assert.doesNotMatch(line, /is the party in the story|This one is /i, line);
+      if (line) assert.ok(tokenOverlap(line, title) <= 0.6, line);
+    }
+    const items = [
+      { title: "One", why: "A buyer has to adopt it." },
+      { title: "Two", why: "A buyer has to adopt it." },
+    ];
+    uniqueWhys(items);
+    assert.equal(items[0].why, "");
+    assert.equal(items[1].why, "");
+  });
+
   it("does not reuse a canned line when the story only shares a broad keyword", () => {
     const battalion = why("A battalion delayed a weather exercise", "The battalion waited out the weather before the road march.");
     assert.doesNotMatch(battalion, /Odin|brigade|2042|propulsion|nuclear weapon/i);
@@ -543,8 +585,8 @@ describe("Nov 24 brief quality", () => {
       "NOAA weather contract posted in error",
       "A weather instrument contract was posted in error and has not yet been awarded.",
     );
-    assert.doesNotMatch(weather, /propulsion|engine|2042|Northrop/i);
-    assert.match(weather, /error|awarded/i);
+    assert.doesNotMatch(weather, /propulsion|engine|2042|Northrop|says was posted/i);
+    if (weather) assert.ok(tokenOverlap(weather, "NOAA weather contract posted in error") <= 0.6, weather);
     const nuclear = why(
       "Firm launches a nuclear-powered communications satellite",
       "The satellite uses nuclear power for its radio.",
@@ -575,7 +617,8 @@ describe("Nov 24 brief quality", () => {
       const line = why(title, body);
       assert.equal(isStockHedge(line), false, line);
       assert.equal(restatesSummaryNumbers(line, `${title} ${body}`), false, line);
-      assert.ok(line.length > 40, line);
+      assert.doesNotMatch(line, /is the party in the story|This one is /i);
+      if (line) assert.ok(tokenOverlap(line, title) <= 0.6, `${title} -> ${line}`);
     }
   });
 
@@ -631,7 +674,9 @@ describe("Nov 24 brief quality", () => {
       { title: "A second radar satellite story", why: "The story names an event. It does not name a buyer, a dollar figure, or a deadline." },
     ];
     uniqueWhys(items);
-    assert.notEqual(items[0].why, items[1].why);
+    assert.equal(items[0].why, "");
+    assert.equal(items[1].why, "");
+    assert.doesNotMatch(items.map((i) => i.why).join(" "), /This one is /);
   });
 
   it("files the Philippine defense loan under allies, not maritime, even when the caption says maritime", () => {
