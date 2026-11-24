@@ -15,8 +15,9 @@ import { loadDesk, saveDaily, slug } from "./store.ts";
 import { buildApi } from "./build-api.ts";
 import { tagCompanies } from "./companies.ts";
 import { briefTitle, classify, storyWhy } from "./classify.ts";
-import { briefSummary, pickTop, storyGist, storyScore } from "./brief.ts";
-import { cleanCopy, polishWhys } from "./why.ts";
+import { briefSummary, dedupeEvents, isFiller, pickTop, storyGist, storyScore, weekLine } from "./brief.ts";
+import { cleanCopy, polishWhys, uniqueWhys, type WhyContext } from "./why.ts";
+import { selectBriefVideos } from "./brief-videos.ts";
 import { flaggedFeeds, updateFeedHealth, type FeedHealth, type FeedObservation } from "./feed-health.ts";
 import { matchCompanies } from "./names.ts";
 import type { Brief, Update } from "./schema.ts";
@@ -35,6 +36,8 @@ const FEEDS: { name: string; url: string; tier: Tier; wp?: boolean }[] = [
   { name: "Defense One", url: "https://www.defenseone.com/rss/all/", tier: "news" },
   { name: "U.S. Department of War", url: "https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945&max=10", tier: "primary" },
   { name: "Defence Blog", url: "https://defence-blog.com/feed/", tier: "news" },
+  // Cybersecurity and Army headlines used to miss every sector and were dropped.
+  // A title already saved from GovConWire is one story, not a second.
   { name: "ExecutiveGov", url: "https://www.executivegov.com/feed/", tier: "news" },
 ];
 
@@ -80,21 +83,30 @@ console.log(`Fetched ${articles.length} recent articles from ${FEEDS.length} fee
 
 const knownUrls = new Set(desk.updates.map((u) => u.src?.u));
 const knownIds = new Set(desk.updates.map((u) => u.id));
+const knownTitles = new Set(desk.updates.map((u) => `${u.d}|${u.title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()}`));
+const shortHash = (s: string) => {
+  let h = 0;
+  for (const c of s) h = (h * 33 + c.charCodeAt(0)) >>> 0;
+  return h.toString(36).slice(0, 4);
+};
 const addedAt = new Date().toISOString();
 const added: (Update & { score: number; titleScore: number })[] = [];
 
 for (const a of articles) {
   const { sectors, type } = classify(a.title, a.summary);
   if (!sectors.length) continue;
-  if (NOISE.test(a.title)) continue;
-  const id = `u-${a.date.replace(/-/g, "")}-${slug(a.title)}`;
+  if (NOISE.test(a.title) || isFiller(a.title, a.summary)) continue;
+  const titleKey = `${a.date}|${a.title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()}`;
+  let id = `u-${a.date.replace(/-/g, "")}-${slug(a.title)}`;
   const row = counts.get(a.source.name)!;
-  if (knownUrls.has(a.link) || knownIds.has(id)) {
+  if (knownUrls.has(a.link) || knownTitles.has(titleKey)) {
     row.duplicates++;
     continue;
   }
+  if (knownIds.has(id)) id = `${id}-${shortHash(titleKey)}`;
   knownUrls.add(a.link);
   knownIds.add(id);
+  knownTitles.add(titleKey);
   const companies = matchCompanies(`${a.title} ${a.summary}`, directory);
   const titleScore = sectors[0].titleScore;
   row.added++;
@@ -113,11 +125,23 @@ try {
 } catch (err) {
   console.warn(`Company tagging skipped: ${err instanceof Error ? err.message : err}`);
 }
+const cr = desk.catalysts.find((c) => c.id === "c-cr" || /stopgap|continuing resolution/i.test(c.title));
+const whyCtx: WhyContext = {
+  deadline: cr ? new Date(cr.d + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" }) : undefined,
+  stakes: [/\bDAWG\b/.test(cr?.why ?? "") ? "DAWG" : "", /Golden Dome/i.test(cr?.why ?? "") ? "Golden Dome" : ""].filter(Boolean),
+};
 for (let i = 0; i < fresh.length; i++) {
   const u = fresh[i];
-  const again = classify(u.title, u.body);
   u.body = cleanCopy(u.body);
-  u.why = storyWhy(u.title, u.body, again.sectors[0], u.type, u.companies);
+  const again = classify(u.title, u.body);
+  if (again.sectors.length) {
+    u.sectors = again.sectors.map((s) => s.id) as Update["sectors"];
+    if (again.type) u.type = again.type as Update["type"];
+  }
+  u.why = storyWhy(u.title, u.body, again.sectors[0], u.type, u.companies, whyCtx);
+  added[i].body = u.body;
+  added[i].sectors = u.sectors;
+  added[i].type = u.type;
   added[i].score = storyScore({
     type: u.type, companies: u.companies, title: u.title, body: u.body,
     titleScore: again.sectors[0]?.titleScore ?? 0, primary: added[i].src?.q === "primary",
@@ -125,16 +149,27 @@ for (let i = 0; i < fresh.length; i++) {
   added[i].why = u.why;
   added[i].companies = u.companies;
 }
-const whyPack = fresh.map((u) => ({ id: u.id, title: u.title, body: u.body, why: u.why, sector: u.sectors[0] }));
+const priorStories = desk.updates.filter((u) => u.d < today && u.d >= new Date(Date.parse(today) - 7 * 864e5).toISOString().slice(0, 10));
+const recent = priorStories;
+const { kept, dropped } = dedupeEvents(added, recent);
+for (const row of dropped) console.log(`Deduped: ${row.item.title} — ${row.because}`);
+const keptFresh = kept.map((u) => fresh.find((f) => f.id === u.id)!).filter(Boolean);
+uniqueWhys(keptFresh);
+for (const u of keptFresh) {
+  const ranked = kept.find((k) => k.id === u.id);
+  if (ranked) ranked.why = u.why;
+}
+const whyPack = keptFresh.map((u) => ({ id: u.id, title: u.title, body: u.body, why: u.why, sector: u.sectors[0] }));
 await polishWhys(whyPack);
 for (const row of whyPack) {
-  const live = fresh.find((u) => u.id === row.id);
-  const ranked = added.find((u) => u.id === row.id);
+  const live = keptFresh.find((u) => u.id === row.id);
+  const ranked = kept.find((u) => u.id === row.id);
   if (live) live.why = row.why;
   if (ranked) ranked.why = row.why;
 }
-desk.updates.push(...fresh);
-console.log(`Added ${added.length} new updates.`);
+uniqueWhys(keptFresh);
+desk.updates.push(...keptFresh);
+console.log(`Added ${keptFresh.length} new updates (${dropped.length} dropped as the same event or filler already told).`);
 
 let priorHealth: FeedHealth | null = null;
 try {
@@ -152,31 +187,47 @@ for (const row of counts.values()) {
 
 // Free brief: only when nothing (e.g. a Claude-written brief) exists for today yet.
 let brief: Brief | null = null;
-if (!desk.briefs.some((b) => b.date === today) && added.length) {
-  const prior = desk.updates.filter((u) => u.d < today && u.d >= new Date(Date.parse(today) - 3 * 864e5).toISOString().slice(0, 10));
-  const picked = pickTop(added, 5, prior);
+if (!desk.briefs.some((b) => b.date === today) && keptFresh.length) {
+  const prior = priorStories.filter((u) => u.d >= new Date(Date.parse(today) - 3 * 864e5).toISOString().slice(0, 10));
+  const picked = pickTop(kept, 5, prior);
   const sectorName = (id: string) => desk.sectors.find((s) => s.id === id)?.name ?? id;
   const next = desk.catalysts.filter((c) => c.d >= today).sort((a, b) => a.d.localeCompare(b.d))[0];
   const idea = desk.ideas.length ? desk.ideas[Math.floor(Date.parse(today) / 864e5) % desk.ideas.length] : null;
   const lead = picked[0];
   if (!lead) {
     console.log("Every new story repeats an event from the last three days. No brief.");
-  } else brief = {
-    date: today,
-    title: briefTitle(lead.title, lead.body),
-    big: briefSummary(picked.length, added.map((u) => u.sectors[0]), picked.map((u) => u.sectors[0]), {
-      gist: picked.length === 1 ? storyGist(picked[0].title, picked[0].body) : undefined,
-      text: picked.map((u) => `${u.title} ${u.body}`).join(" "),
-    }),
-    stories: picked.map((u) => ({ tag: sectorName(u.sectors[0]), h: u.title, what: u.body, you: u.why, ref: u.id })),
-    watch: next ? { h: next.title, why: `${next.approx ? "Around " : ""}${new Date(next.d + "T12:00:00Z").toLocaleDateString("en-US", { month: "long", day: "numeric", timeZone: "UTC" })}. ${next.why}` } : { h: "Nothing scheduled", why: "" },
-    idea: idea ? { h: String(idea.t), why: `${idea.what} ${idea.why}` } : { h: "", why: "" },
-    auto: true,
-  } as Brief & { auto: boolean };
+  } else {
+    const stories = picked.map((u) => ({ tag: sectorName(u.sectors[0]), h: u.title, what: u.body, you: u.why, ref: u.id }));
+    const clips = desk.videos?.length
+      ? selectBriefVideos(
+          stories.map((s) => ({ title: s.h, body: `${s.what} ${s.you}`, sector: s.tag })),
+          desk.videos.filter((v) => v.topic === "defense"),
+        ).kept.map((k) => ({ id: k.video.id, title: k.video.title, channel: k.video.channel, because: k.because }))
+      : [];
+    brief = {
+      date: today,
+      title: briefTitle(lead.title, lead.body),
+      big: briefSummary(keptFresh.length, kept.map((u) => u.sectors[0]), picked.map((u) => u.sectors[0]), {
+        gist: picked.length === 1 ? storyGist(picked[0].title, picked[0].body) : undefined,
+        text: picked.map((u) => `${u.title} ${u.body}`).join(" "),
+      }),
+      stories,
+      watch: next ? { h: next.title, why: `${next.approx ? "Around " : ""}${new Date(next.d + "T12:00:00Z").toLocaleDateString("en-US", { month: "long", day: "numeric", timeZone: "UTC" })}. ${next.why}` } : { h: "Nothing scheduled", why: "" },
+      idea: idea ? { h: String(idea.t), why: `${idea.what} ${idea.why}` } : { h: "", why: "" },
+      clips,
+      auto: true,
+    } as Brief & { auto: boolean };
+  }
   if (brief) desk.briefs.push(brief);
 }
 
-desk.meta = { ...desk.meta, collectedAt: addedAt, feedHealth: { checkedAt: addedAt, flags } };
+desk.meta = {
+  ...desk.meta,
+  collectedAt: addedAt,
+  week: weekLine(desk.updates, today),
+  weekAsOf: today,
+  feedHealth: { checkedAt: addedAt, flags },
+};
 await saveDaily(desk, brief);
 await buildApi(desk);
 console.log(brief ? `Wrote the ${today} brief with ${brief.stories.length} stories.` : "Brief for today already exists or nothing new; kept it.");

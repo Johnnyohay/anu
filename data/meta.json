@@ -69,9 +69,24 @@
       ]
     }
   ],
-  "collectedAt": "2026-11-24T01:25:56.539Z",
+  "collectedAt": "2026-11-24T17:14:46.017Z",
   "feedHealth": {
-    "checkedAt": "2026-11-24T01:25:56.539Z",
-    "flags": []
-  }
+    "checkedAt": "2026-11-24T17:14:46.017Z",
+    "flags": [
+      {
+        "name": "Air & Space Forces",
+        "flag": "fresh items were dropped by the filter for 4 straight runs"
+      },
+      {
+        "name": "Defense One",
+        "flag": "every in-window item duplicated another feed for 5 straight runs"
+      },
+      {
+        "name": "U.S. Department of War",
+        "flag": "fresh items were dropped by the filter for 4 straight runs"
+      }
+    ]
+  },
+  "week": "507 stories since 2026-11-10, led by drones (120), space (64), budget and policy (53).",
+  "weekAsOf": "2026-11-24"
 }

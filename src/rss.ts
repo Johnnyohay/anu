@@ -37,28 +37,51 @@ const textOf = (v: unknown): string => {
   return "";
 };
 
-/** First real paragraph of the article body. Skips captions, bylines, and newsletter junk. */
+/** Photo captions and unit roll calls are not the news. */
+export function isCaption(text: string): boolean {
+  if (/\b(assigned to|pictured|shown here)\b/i.test(text) && /\b(participate|training|exercise|during|ceremony)\b/i.test(text)) return true;
+  if (/^(left to right|courtesy of|photo\b|image\b)/i.test(text.trim())) return true;
+  return false;
+}
+
+/** A paragraph that is only someone speaking, with no news verb of its own. */
+export function isRawQuote(text: string): boolean {
+  const t = text.trim();
+  if (/^[“"']/.test(t)) return true;
+  if (/\b(said|says|told)\b/i.test(t) && /^(if|we|i|you|this|that|there|when)\b/i.test(t)) return true;
+  return false;
+}
+
+function substantive(text: string): boolean {
+  if (text.length < 80) return false;
+  if (isCaption(text) || isRawQuote(text)) return false;
+  if (/^(related|also read|more from|subscribe|sign up|advertisement|photo|image|watch:|video:|by [A-Z]|table of contents|logo:)/i.test(text)) return false;
+  if (/\b(hear about|register now|webinar)\b/i.test(text)) return false;
+  return true;
+}
+
+/** First real paragraph of the article body. Skips captions, pull quotes, bylines, and newsletter junk. */
 function firstParagraph(html: string): string {
   const broken = html
     .replace(/<\/(p|div|h\d|li|blockquote|figcaption)>/gi, "\n")
     .replace(/<br\s*\/?>/gi, "\n");
   for (const part of broken.split(/\n+/)) {
     const text = dropFeedFooter(strip(part));
-    if (text.length < 80) continue;
-    if (/^(related|also read|more from|subscribe|sign up|advertisement|photo|image|watch:|video:|by [A-Z])/i.test(text)) continue;
+    if (!substantive(text)) continue;
     return text;
   }
   return "";
 }
 
 /**
- * Prefer the article lede (first paragraph of content:encoded) over the feed's
- * description, which some outlets fill with a pull quote from the middle of the story.
+ * Prefer the article lede (first substantive paragraph of content:encoded) over the
+ * feed's description, which some outlets fill with a pull quote or a photo caption.
  */
 export function summaryFromFields(description: unknown, encoded: unknown): string {
   const lede = firstParagraph(textOf(encoded));
   const blurb = dropFeedFooter(strip(textOf(description)));
-  return firstSentences(lede || blurb);
+  const blurbOk = blurb.length >= 40 && !isCaption(blurb) && !isRawQuote(blurb);
+  return firstSentences(lede || (blurbOk ? blurb : ""));
 }
 
 export interface FeedReport { items: FeedItem[]; error?: string }

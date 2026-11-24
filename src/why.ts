@@ -22,6 +22,13 @@ export function tokenOverlap(a: string, b: string): number {
   return n / new Set([...A, ...B]).size;
 }
 
+/** True when the line is a near-copy of any one sentence in the story, not only of the whole summary. */
+export function copiesBodySentence(line: string, body: string): boolean {
+  if (!line.trim() || !body.trim()) return false;
+  const parts = body.split(/(?<=[.!?])\s+/).map((s) => s.trim()).filter(Boolean);
+  return (parts.length ? parts : [body.trim()]).some((s) => tokenOverlap(line, s) > 0.6);
+}
+
 /** Quotes, dangling commas, and the USV misnomer. */
 export function cleanCopy(text: string): string {
   let s = text
@@ -34,27 +41,10 @@ export function cleanCopy(text: string): string {
     .replace(/[,"'\s]+$/g, "")
     .replace(/\s+/g, " ")
     .trim();
-  if (s && !/[.!?]$/.test(s)) s += ".";
+  s = s.replace(/(?:…|\.{3,})+\.?$/g, "…");
+  if (s && !/[.!?…]$/.test(s)) s += ".";
   return s;
 }
-
-const WATCH: Record<string, string> = {
-  air: "which airframe or weapon gets a production order after the demo",
-  sea: "port force-protection and counter-USV sensing",
-  cuas: "a counter-drone shot cheap enough to issue to every unit",
-  strike: "who can deliver the munition in volume",
-  missiledef: "which interceptor and which sensor get the production buy",
-  global: "which ally actually places the order",
-  policy: "whether the memo turns into a restriction on contracts",
-  adversary: "what the other side fields next, because that sets the requirement",
-  space: "which orbit and which bus get the next order",
-  cyber: "who gets the defensive contract after the intrusion",
-  ew: "which jammer or sensor gets onto the ship",
-  ai: "whether the software becomes the system of record",
-  primes: "where the prime subcontracts instead of building it",
-  mfg: "which factory can actually raise output",
-  capital: "whether the round turns into a program of record",
-};
 
 function blobOf(title: string, body: string): string {
   return cleanCopy(`${title}. ${body}`).toLowerCase();
@@ -68,16 +58,197 @@ export function limitActor(text: string): string | undefined {
   return m[1].replace(/^the /i, "");
 }
 
-function namedThing(title: string, body: string): string | undefined {
-  const text = `${title} ${body}`;
-  const hit = text.match(/\b(Mirage 2000|Nightmare FPV|Fort Bragg|Fort Benning|Benghazi|Libya|Canada|Stinger|SEWIP|THAAD|F-35|DropShip|Pyka|corvette)\b/i);
-  return hit?.[1];
+/** A dollar figure as written, with billion shortened to B so lines stay comparable. */
+function moneyPhrase(text: string): string | undefined {
+  const m = text.match(/\$\s?(\d[\d,]*(?:\.\d+)?)\s*(billion|million|bn|m|b)\b/i);
+  if (!m) return;
+  const n = m[1].replace(/,/g, "");
+  const unit = m[2].toLowerCase();
+  if (unit === "billion" || unit === "bn" || unit === "b") return `$${n}B`;
+  return `$${n} million`;
 }
 
-function sectorLine(sector: string | undefined, title: string, body: string): string {
-  const thing = namedThing(title, body);
-  const watch = WATCH[sector || ""] || "whether a buyer funds a follow-on";
-  return cleanCopy(`${thing ? `${thing} changes what gets bought. ` : ""}The watch item is ${watch}.`);
+const NOT_ACTOR = new Set(
+  "yes no new how from with top opening private investment equity firm the company reports says said orders lands wins closes acquires launches takes joins sets gives wants upgrading thruster european israeli turkish russian chinese american ukrainian german french british colombian polish japanese korean indian canadian philippine finnish libyan white despite after before over into about their house".split(" "),
+);
+
+/** A company or institution from the headline, not a leading adjective, verb, or fragment of "White House". */
+function firm(title: string, companies: string[]): string | undefined {
+  if (/\bwhite house\b/i.test(title)) return "the White House";
+  const bad = /\b(reports|says|said|orders|lands|wins|closes|acquires|journal|development)\b/i;
+  const good = companies.find((c) => !bad.test(c) && !NOT_ACTOR.has(c.toLowerCase()));
+  if (good) return good;
+  const phrase = title.match(/\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,2})\b/);
+  if (phrase && !phrase[1].split(" ").some((w) => NOT_ACTOR.has(w.toLowerCase()) || bad.test(w))) return phrase[1];
+  const words = title.match(/\b[A-Z][A-Za-z0-9&'.-]{2,}\b/g) ?? [];
+  return words.find((w) => !NOT_ACTOR.has(w.toLowerCase()) && !bad.test(w));
+}
+
+const STOCK_HEDGE = /that is a funded order|not a new program of record|ownership change|the order book, not|names the event|does not name a buyer|this story moves|whether a service funds the next lot|is the party in the story|a buyer has to adopt|this one is /i;
+
+/** A canned closer that avoids saying what the buyer gains. */
+export function isStockHedge(line: string): boolean {
+  return STOCK_HEDGE.test(line);
+}
+
+/** Reject a sentence with no subject, or "says was" with the object missing. */
+export function grammarProblem(line: string): string {
+  const s = line.trim();
+  if (!s) return "";
+  if (/\bsays was\b/i.test(s)) return "missing object";
+  if (!/^(?:The |A |An )?[A-Z0-9$]/.test(s)) return "no subject";
+  return "";
+}
+
+/** The line's job is the dollar figure already in the summary, not a consequence. */
+export function restatesSummaryNumbers(line: string, summary: string): boolean {
+  const figs = [...summary.matchAll(/\$\s?(\d[\d.]*)/g)].map((m) => m[1]);
+  if (!figs.length) return false;
+  const inLine = [...line.matchAll(/\$\s?(\d[\d.]*)/g)].map((m) => m[1]);
+  const shared = inLine.filter((n) => figs.some((f) => f === n || f.startsWith(n) || n.startsWith(f)));
+  if (!shared.length) return false;
+  if (/\b(positions|win the next|sell|keeps the|incumbent|analysis|imagery|jam|adopt|release|exempts|not awarded|export|mainstream)\b/i.test(line)) return false;
+  return /reported|figure on the table|that is a funded order|that is the order book/i.test(line);
+}
+
+function actor(text: string, companies: string[], title: string): string {
+  const titleL = title.toLowerCase();
+  if (/\bwhite house\b/i.test(title)) return "the White House";
+  if (/\bsocom\b/.test(titleL)) return "SOCOM";
+  if (/special operations command/.test(titleL)) return "Special Operations Command";
+  if (/\bnasa\b/.test(titleL)) return "NASA";
+  if (/air force/.test(titleL)) return "The Air Force";
+  if (/pentagon|department of war/.test(titleL)) return "The Pentagon";
+  if (/\bnavy\b/.test(titleL)) return "The Navy";
+  if (/\barmy\b/.test(titleL)) return "The Army";
+  return firm(title, companies) || "";
+}
+
+const GLUE = new Set(
+  "the a an of to for and or in on with from its their this that has have after over into than then says said will would about new more most first next was were been being who what when just only not now can may also them they your per under lot lots buy buys buyer buyers buying sell selling sold win winning award awards order orders ordered contract contracts posted error awarded hold holds holding keep keeps adding added another until before shows show shown make makes made let lets offer offers want wants already change changes gain gains market markets customer customers follow service services adopt adopts adopting work line lines unit units system systems program programs field fielding sets yet named story competition incumbent unseat rival rivals frozen starts without through keeps moved party depends respond ordering talks manufacturers build would about says positions".split(" "),
+);
+
+/** Content words in a line that do not appear in the story. Template glue is allowed. */
+export function ungroundedTerms(line: string, story: string): string[] {
+  const words = story.toLowerCase().replace(/[^a-z0-9+-]+/g, " ").split(/\s+/).filter(Boolean);
+  const known = new Set(words);
+  for (const w of words) {
+    known.add(w.replace(/s$/, ""));
+    for (const part of w.split("-")) if (part.length > 2) known.add(part);
+  }
+  const bad: string[] = [];
+  for (const raw of line.toLowerCase().replace(/[^a-z0-9+-]+/g, " ").split(/\s+/)) {
+    const w = raw.replace(/^\$/, "");
+    if (!w || w.length <= 3 || GLUE.has(w) || GLUE.has(w.replace(/s$/, ""))) continue;
+    if (known.has(w) || known.has(w.replace(/s$/, "")) || known.has(`${w}s`)) continue;
+    if (/^\d/.test(w) && story.toLowerCase().includes(w.replace(/b$/, ""))) continue;
+    bad.push(w);
+  }
+  return bad;
+}
+
+function present(text: string, word: string): boolean {
+  return new RegExp(`\\b${word}\\b`, "i").test(text);
+}
+
+function namedBuyers(text: string): string[] {
+  const t = text.toLowerCase();
+  return [present(t, "navy") ? "the Navy" : "", present(t, "army") ? "the Army" : "", present(t, "nga") ? "NGA" : "", /nuclear/.test(t) ? "nuclear" : ""].filter(Boolean);
+}
+
+function joinList(parts: string[]): string {
+  if (parts.length <= 1) return parts[0] ?? "";
+  return `${parts.slice(0, -1).join(", ")} and ${parts.at(-1)}`;
+}
+
+/** A program token copied from the story, not from a fixed list of headlines. */
+function extractProgram(title: string, body: string): string | undefined {
+  const text = `${title} ${body}`;
+  const patterns = [
+    /\b(Trident(?: II)?(?: D5)?)\b/,
+    /\b([A-Z]{1,6}-\d+[A-Z0-9]*)\b/,
+    /\b([A-Z][a-z]+-\d+)\b/,
+    /\b([A-Z]{2,}(?:-[A-Z0-9]+)+)\b/,
+    /\b(Type \d+)\b/,
+  ];
+  for (const re of patterns) {
+    const hit = text.match(re)?.[1];
+    if (hit && hit.length > 2) return hit;
+  }
+  return undefined;
+}
+
+/**
+ * One consequence sentence. Every slot is a span copied from the story.
+ * Drafts that name something the story does not say are dropped.
+ */
+function composeWhy(title: string, body: string, companies: string[]): string {
+  const text = `${title}. ${body}`;
+  const t = text.toLowerCase();
+  const who = actor(text, companies, title);
+  const program = extractProgram(title, body);
+  const money = moneyPhrase(text);
+  const year = text.match(/\b(20\d{2})\b/)?.[1];
+  const drafts: string[] = [];
+
+  if (/posted in error|has not yet/.test(t) && /contract/.test(t) && who) {
+    drafts.push(`${who} says the contract was posted in error and is not awarded yet.`);
+  }
+  if (/backlog/.test(t)) {
+    const name = firm(title, companies) || who;
+    const buyers = namedBuyers(text);
+    if (buyers.length) drafts.push(`The backlog positions ${name} to win the next awards from ${joinList(buyers)}.`);
+    if (money && /missile/.test(t)) drafts.push(`A ${money} backlog makes ${name} the incumbent on missile defense.`);
+    if (money) drafts.push(`A ${money} backlog makes ${name} the incumbent on the next competition.`);
+  }
+  if (/\b(acquires|acquired|acquisition|to acquire)\b/.test(t)) {
+    if (who && /analysis/.test(t) && /customer/.test(t)) {
+      drafts.push(/data fusion/.test(t) && /defense/.test(t)
+        ? `Defense customers can buy analysis and data fusion from ${who}.`
+        : `${who} can sell analysis to customers.`);
+    }
+  }
+  if (/(shot down|downs|destroyed)/.test(t) && /interceptor/.test(t) && /ukrain/.test(t) && program) {
+    drafts.push(`The next buy is more of the Ukrainian interceptor that destroyed ${program}.`);
+  }
+  if (/sole-source/.test(t) && year && who) {
+    drafts.push(`Sole-source work through ${year} keeps ${who} on this program.`);
+  }
+  if (/\bloan\b/.test(t)) {
+    const place = text.match(/\b(Luzon Strait)\b/i)?.[1];
+    if (place && /philippine/.test(t) && /military/.test(t)) drafts.push(`The loan for ${place} sets up buys for the Philippine military.`);
+    else if (place && /military/.test(t)) drafts.push(`The loan for ${place} sets up buys for the military.`);
+    else if (money && who) drafts.push(`${who} is using the ${money} loan to fund the buy.`);
+  }
+  if (/white house/.test(t) && /contractors/.test(t) && /congress/.test(t)) {
+    drafts.push(`The order makes contractors alert the White House before answering Congress.`);
+  }
+  if (/topline|reconciliation/.test(t)) {
+    drafts.push(year ? `Without a topline by ${year}, new starts are frozen.` : `Without a topline, new starts are frozen.`);
+  }
+  if (who && money && program) drafts.push(`${who} has ${money} on ${program}. A rival has to unseat that incumbent to win the next lot.`);
+
+  for (const draft of drafts) {
+    if (ungroundedTerms(draft, text).length || isStockHedge(draft) || grammarProblem(draft)) continue;
+    if (tokenOverlap(draft, title) > 0.6) continue;
+    return draft;
+  }
+  return "";
+}
+
+function factLine(title: string, body: string, companies: string[], _ctx?: WhyContext): string {
+  return composeWhy(title, body, companies);
+}
+
+function honestThin(title: string, body: string): string {
+  return composeWhy(title, body, []);
+}
+
+export interface WhyContext {
+  /** Next budget deadline, e.g. "Dec 11", used only when the story is about the topline. */
+  deadline?: string;
+  /** Programs the deadline actually puts at stake, from the calendar, not invented. */
+  stakes?: string[];
 }
 
 function patternLine(title: string, body: string): string {
@@ -88,7 +259,7 @@ function patternLine(title: string, body: string): string {
   if (/(corvette|warship)/.test(t) && /(libya|benghazi)/.test(t)) {
     return "A Russian corvette lost at Benghazi puts Moscow's Libyan naval base in range of small boats. The buy that follows is port force-protection and counter-USV sensing, not another anti-ship missile.";
   }
-  if (/(mirage|cannon|built-in gun|\bgun\b)/.test(t) && /drone/.test(t) && /(gun|cannon)/.test(t)) {
+  if (/mirage/.test(t) && /drone/.test(t) && /(gun|cannon)/.test(t)) {
     return "A fighter gun, not a missile, killed a jet-powered drone. Air forces will buy cannon cueing and ammunition for that shot, because the missile is the expensive side of the trade.";
   }
   if (/(nightmare|fpv|kamikaze)/.test(t) && /(special forces|fort bragg|socom)/.test(t)) {
@@ -146,18 +317,64 @@ function patternLine(title: string, body: string): string {
   return "";
 }
 
+const FORBIDDEN = [
+  { word: /\bmemo\b/i, inStory: /\bmemo\b/i },
+  { word: /which orbit|which bus/i, inStory: /\b(orbit|bus)\b/i },
+  { word: /munition in volume/i, inStory: /\bvolume\b/i },
+];
+
+function allowed(line: string, story: string): boolean {
+  return FORBIDDEN.every((f) => !f.word.test(line) || f.inStory.test(story));
+}
+
 /**
- * Consequence for a buyer or builder. Never the lede, and never a near-copy of it.
- * `lead` is only used for the sector watch fallback.
+ * Consequence for a buyer or builder, from this story's own facts.
+ * A sector watch line is never used: a concept that is not in the story is rejected.
  */
-export function storyWhy(title: string, body: string, lead?: { id?: string }, _type?: string, _companies: string[] = []): string {
+export function storyWhy(
+  title: string,
+  body: string,
+  _lead?: { id?: string },
+  _type?: string,
+  companies: string[] = [],
+  ctx?: WhyContext,
+): string {
   const what = cleanCopy(body || title);
+  const story = `${title}. ${body}`;
   const specific = patternLine(title, body);
-  const fallback = sectorLine(lead?.id, title, body);
-  const line = specific && tokenOverlap(specific, what) <= 0.6 ? specific : fallback;
-  const out = cleanCopy(line);
-  if (out && tokenOverlap(out, what) <= 0.6) return out;
-  return cleanCopy(`The watch item is ${WATCH[lead?.id || ""] || "whether a buyer funds a follow-on"}.`);
+  const candidates: { line: string; grounded: boolean }[] = [
+    { line: specific && tokenOverlap(specific, what) <= 0.6 ? specific : "", grounded: false },
+    { line: factLine(title, body, companies, ctx), grounded: true },
+  ];
+  for (const candidate of candidates) {
+    const out = cleanCopy(candidate.line);
+    if (!out || tokenOverlap(out, what) > 0.6 || !allowed(out, story)) continue;
+    if (/the watch item is/i.test(out) || isStockHedge(out) || restatesSummaryNumbers(out, what) || grammarProblem(out)) continue;
+    if (copiesBodySentence(out, body) || copiesBodySentence(out, title)) continue;
+    if (candidate.grounded && ungroundedTerms(out, story).length) continue;
+    if (candidate.grounded && tokenOverlap(out, title) > 0.6) continue;
+    return out;
+  }
+  return "";
+}
+
+function normLine(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+/** Identical lines are too generic to keep. Both copies are cleared, and the headline is not pasted on. */
+export function uniqueWhys<T extends { title: string; why: string }>(items: T[]): void {
+  const groups = new Map<string, T[]>();
+  for (const item of items) {
+    if (!item.why.trim()) continue;
+    const key = normLine(item.why);
+    const list = groups.get(key) ?? [];
+    list.push(item);
+    groups.set(key, list);
+  }
+  for (const list of groups.values()) {
+    if (list.length > 1) for (const item of list) item.why = "";
+  }
 }
 
 /**

@@ -1,59 +1,6 @@
 {
-  "updatedAt": "2026-11-24T01:25:56.539Z",
+  "updatedAt": "2026-11-24T17:14:46.017Z",
   "feeds": {
-    "Breaking Defense": {
-      "url": "https://breakingdefense.com/feed/",
-      "runs": [
-        {
-          "date": "2026-11-24",
-          "fetched": 15,
-          "inWindow": 9,
-          "added": 5,
-          "duplicates": 2,
-          "newest": "2026-11-23"
-        },
-        {
-          "date": "2026-11-23",
-          "fetched": 15,
-          "inWindow": 12,
-          "added": 0,
-          "duplicates": 8,
-          "newest": "2026-11-21"
-        },
-        {
-          "date": "2026-11-22",
-          "fetched": 15,
-          "inWindow": 15,
-          "added": 0,
-          "duplicates": 10,
-          "newest": "2026-11-21"
-        },
-        {
-          "date": "2026-11-21",
-          "fetched": 15,
-          "inWindow": 15,
-          "added": 2,
-          "duplicates": 8,
-          "newest": "2026-11-21"
-        },
-        {
-          "date": "2026-11-20",
-          "fetched": 15,
-          "inWindow": 15,
-          "added": 5,
-          "duplicates": 6,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-19",
-          "fetched": 15,
-          "inWindow": 15,
-          "added": 5,
-          "duplicates": 5,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
     "DefenseScoop": {
       "url": "https://defensescoop.com/feed/",
       "runs": [
@@ -61,8 +8,8 @@
           "date": "2026-11-24",
           "fetched": 10,
           "inWindow": 2,
-          "added": 2,
-          "duplicates": 0,
+          "added": 0,
+          "duplicates": 2,
           "newest": "2026-11-23"
         },
         {
@@ -107,16 +54,122 @@
         }
       ]
     },
+    "Breaking Defense": {
+      "url": "https://breakingdefense.com/feed/",
+      "runs": [
+        {
+          "date": "2026-11-24",
+          "fetched": 15,
+          "inWindow": 15,
+          "added": 0,
+          "duplicates": 13,
+          "newest": "2026-11-24"
+        },
+        {
+          "date": "2026-11-23",
+          "fetched": 15,
+          "inWindow": 12,
+          "added": 0,
+          "duplicates": 8,
+          "newest": "2026-11-21"
+        },
+        {
+          "date": "2026-11-22",
+          "fetched": 15,
+          "inWindow": 15,
+          "added": 0,
+          "duplicates": 10,
+          "newest": "2026-11-21"
+        },
+        {
+          "date": "2026-11-21",
+          "fetched": 15,
+          "inWindow": 15,
+          "added": 2,
+          "duplicates": 8,
+          "newest": "2026-11-21"
+        },
+        {
+          "date": "2026-11-20",
+          "fetched": 15,
+          "inWindow": 15,
+          "added": 5,
+          "duplicates": 6,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 15,
+          "inWindow": 15,
+          "added": 5,
+          "duplicates": 5,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
+    "The War Zone": {
+      "url": "https://www.twz.com/feed",
+      "runs": [
+        {
+          "date": "2026-11-24",
+          "fetched": 31,
+          "inWindow": 5,
+          "added": 1,
+          "duplicates": 3,
+          "newest": "2026-11-23"
+        },
+        {
+          "date": "2026-11-23",
+          "fetched": 34,
+          "inWindow": 8,
+          "added": 1,
+          "duplicates": 4,
+          "newest": "2026-11-22"
+        },
+        {
+          "date": "2026-11-22",
+          "fetched": 36,
+          "inWindow": 11,
+          "added": 0,
+          "duplicates": 8,
+          "newest": "2026-11-21"
+        },
+        {
+          "date": "2026-11-21",
+          "fetched": 40,
+          "inWindow": 16,
+          "added": 0,
+          "duplicates": 12,
+          "newest": "2026-11-21"
+        },
+        {
+          "date": "2026-11-20",
+          "fetched": 40,
+          "inWindow": 20,
+          "added": 3,
+          "duplicates": 15,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 41,
+          "inWindow": 18,
+          "added": 3,
+          "duplicates": 14,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
     "USNI News": {
       "url": "https://news.usni.org/feed",
       "runs": [
         {
           "date": "2026-11-24",
           "fetched": 30,
-          "inWindow": 3,
-          "added": 3,
-          "duplicates": 0,
-          "newest": "2026-11-23"
+          "inWindow": 4,
+          "added": 0,
+          "duplicates": 4,
+          "newest": "2026-11-24"
         },
         {
           "date": "2026-11-23",
@@ -166,10 +219,10 @@
         {
           "date": "2026-11-24",
           "fetched": 9,
-          "inWindow": 4,
-          "added": 2,
-          "duplicates": 0,
-          "newest": "2026-11-23"
+          "inWindow": 5,
+          "added": 0,
+          "duplicates": 1,
+          "newest": "2026-11-24"
         },
         {
           "date": "2026-11-23",
@@ -211,166 +264,8 @@
           "duplicates": 4,
           "newest": "2026-11-19"
         }
-      ]
-    },
-    "The War Zone": {
-      "url": "https://www.twz.com/feed",
-      "runs": [
-        {
-          "date": "2026-11-24",
-          "fetched": 31,
-          "inWindow": 5,
-          "added": 3,
-          "duplicates": 1,
-          "newest": "2026-11-23"
-        },
-        {
-          "date": "2026-11-23",
-          "fetched": 34,
-          "inWindow": 8,
-          "added": 1,
-          "duplicates": 4,
-          "newest": "2026-11-22"
-        },
-        {
-          "date": "2026-11-22",
-          "fetched": 36,
-          "inWindow": 11,
-          "added": 0,
-          "duplicates": 8,
-          "newest": "2026-11-21"
-        },
-        {
-          "date": "2026-11-21",
-          "fetched": 40,
-          "inWindow": 16,
-          "added": 0,
-          "duplicates": 12,
-          "newest": "2026-11-21"
-        },
-        {
-          "date": "2026-11-20",
-          "fetched": 40,
-          "inWindow": 20,
-          "added": 3,
-          "duplicates": 15,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-19",
-          "fetched": 41,
-          "inWindow": 18,
-          "added": 3,
-          "duplicates": 14,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
-    "Defense News": {
-      "url": "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml",
-      "runs": [
-        {
-          "date": "2026-11-24",
-          "fetched": 10,
-          "inWindow": 8,
-          "added": 7,
-          "duplicates": 0,
-          "newest": "2026-11-23"
-        },
-        {
-          "date": "2026-11-23",
-          "fetched": 10,
-          "inWindow": 3,
-          "added": 0,
-          "duplicates": 3,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-22",
-          "fetched": 10,
-          "inWindow": 10,
-          "added": 0,
-          "duplicates": 8,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-21",
-          "fetched": 10,
-          "inWindow": 10,
-          "added": 0,
-          "duplicates": 8,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-20",
-          "fetched": 10,
-          "inWindow": 10,
-          "added": 2,
-          "duplicates": 6,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-19",
-          "fetched": 10,
-          "inWindow": 10,
-          "added": 5,
-          "duplicates": 3,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
-    "U.S. Department of War": {
-      "url": "https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945&max=10",
-      "runs": [
-        {
-          "date": "2026-11-24",
-          "fetched": 10,
-          "inWindow": 3,
-          "added": 1,
-          "duplicates": 0,
-          "newest": "2026-11-23"
-        },
-        {
-          "date": "2026-11-23",
-          "fetched": 10,
-          "inWindow": 4,
-          "added": 0,
-          "duplicates": 1,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-22",
-          "fetched": 10,
-          "inWindow": 7,
-          "added": 0,
-          "duplicates": 3,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-21",
-          "fetched": 10,
-          "inWindow": 10,
-          "added": 0,
-          "duplicates": 3,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-20",
-          "fetched": 10,
-          "inWindow": 10,
-          "added": 1,
-          "duplicates": 2,
-          "newest": "2026-11-20"
-        },
-        {
-          "date": "2026-11-19",
-          "fetched": 10,
-          "inWindow": 10,
-          "added": 2,
-          "duplicates": 3,
-          "newest": "2026-11-19"
-        }
-      ]
+      ],
+      "flag": "fresh items were dropped by the filter for 4 straight runs"
     },
     "Defense One": {
       "url": "https://www.defenseone.com/rss/all/",
@@ -378,9 +273,9 @@
         {
           "date": "2026-11-24",
           "fetched": 23,
-          "inWindow": 4,
-          "added": 1,
-          "duplicates": 3,
+          "inWindow": 5,
+          "added": 0,
+          "duplicates": 5,
           "newest": "2026-11-23"
         },
         {
@@ -423,6 +318,113 @@
           "duplicates": 7,
           "newest": "2026-11-19"
         }
+      ],
+      "flag": "every in-window item duplicated another feed for 5 straight runs"
+    },
+    "Defense News": {
+      "url": "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml",
+      "runs": [
+        {
+          "date": "2026-11-24",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 2,
+          "duplicates": 4,
+          "newest": "2026-11-24"
+        },
+        {
+          "date": "2026-11-23",
+          "fetched": 10,
+          "inWindow": 3,
+          "added": 0,
+          "duplicates": 3,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-22",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 0,
+          "duplicates": 8,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-21",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 0,
+          "duplicates": 8,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-20",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 2,
+          "duplicates": 6,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 5,
+          "duplicates": 3,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
+    "ExecutiveGov": {
+      "url": "https://www.executivegov.com/feed/",
+      "runs": [
+        {
+          "date": "2026-11-24",
+          "fetched": 0,
+          "inWindow": 0,
+          "added": 0,
+          "duplicates": 0,
+          "error": "HTTP 403"
+        },
+        {
+          "date": "2026-11-23",
+          "fetched": 10,
+          "inWindow": 7,
+          "added": 0,
+          "duplicates": 1,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-22",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 0,
+          "duplicates": 2,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-21",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 0,
+          "duplicates": 2,
+          "newest": "2026-11-20"
+        },
+        {
+          "date": "2026-11-20",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 0,
+          "duplicates": 7,
+          "newest": "2026-11-19"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 10,
+          "inWindow": 10,
+          "added": 1,
+          "duplicates": 6,
+          "newest": "2026-11-19"
+        }
       ]
     },
     "GovConWire": {
@@ -431,10 +433,10 @@
         {
           "date": "2026-11-24",
           "fetched": 10,
-          "inWindow": 6,
-          "added": 2,
-          "duplicates": 0,
-          "newest": "2026-11-23"
+          "inWindow": 10,
+          "added": 0,
+          "duplicates": 6,
+          "newest": "2026-11-24"
         },
         {
           "date": "2026-11-23",
@@ -478,21 +480,21 @@
         }
       ]
     },
-    "ExecutiveGov": {
-      "url": "https://www.executivegov.com/feed/",
+    "U.S. Department of War": {
+      "url": "https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945&max=10",
       "runs": [
         {
           "date": "2026-11-24",
           "fetched": 10,
-          "inWindow": 1,
+          "inWindow": 3,
           "added": 0,
-          "duplicates": 0,
-          "newest": "2026-11-24"
+          "duplicates": 1,
+          "newest": "2026-11-23"
         },
         {
           "date": "2026-11-23",
           "fetched": 10,
-          "inWindow": 7,
+          "inWindow": 4,
           "added": 0,
           "duplicates": 1,
           "newest": "2026-11-20"
@@ -500,9 +502,9 @@
         {
           "date": "2026-11-22",
           "fetched": 10,
-          "inWindow": 10,
+          "inWindow": 7,
           "added": 0,
-          "duplicates": 2,
+          "duplicates": 3,
           "newest": "2026-11-20"
         },
         {
@@ -510,79 +512,27 @@
           "fetched": 10,
           "inWindow": 10,
           "added": 0,
-          "duplicates": 2,
+          "duplicates": 3,
           "newest": "2026-11-20"
         },
         {
           "date": "2026-11-20",
-          "fetched": 10,
-          "inWindow": 10,
-          "added": 0,
-          "duplicates": 7,
-          "newest": "2026-11-19"
-        },
-        {
-          "date": "2026-11-19",
           "fetched": 10,
           "inWindow": 10,
           "added": 1,
-          "duplicates": 6,
-          "newest": "2026-11-19"
-        }
-      ]
-    },
-    "SpaceNews": {
-      "url": "https://spacenews.com/wp-json/wp/v2/posts?per_page=15&_fields=date,link,title,excerpt",
-      "runs": [
-        {
-          "date": "2026-11-24",
-          "fetched": 15,
-          "inWindow": 8,
-          "added": 8,
-          "duplicates": 0,
-          "newest": "2026-11-23"
-        },
-        {
-          "date": "2026-11-23",
-          "fetched": 16,
-          "inWindow": 0,
-          "added": 0,
-          "duplicates": 0,
-          "newest": "2026-11-19"
-        },
-        {
-          "date": "2026-11-22",
-          "fetched": 16,
-          "inWindow": 2,
-          "added": 0,
           "duplicates": 2,
-          "newest": "2026-11-19"
-        },
-        {
-          "date": "2026-11-21",
-          "fetched": 16,
-          "inWindow": 5,
-          "added": 0,
-          "duplicates": 5,
-          "newest": "2026-11-19"
-        },
-        {
-          "date": "2026-11-20",
-          "fetched": 16,
-          "inWindow": 7,
-          "added": 0,
-          "duplicates": 7,
-          "newest": "2026-11-19"
+          "newest": "2026-11-20"
         },
         {
           "date": "2026-11-19",
-          "fetched": 16,
-          "inWindow": 8,
+          "fetched": 10,
+          "inWindow": 10,
           "added": 2,
-          "duplicates": 6,
+          "duplicates": 3,
           "newest": "2026-11-19"
         }
-      ]
+      ],
+      "flag": "fresh items were dropped by the filter for 4 straight runs"
     },
     "Defence Blog": {
       "url": "https://defence-blog.com/feed/",
@@ -591,9 +541,9 @@
           "date": "2026-11-24",
           "fetched": 10,
           "inWindow": 10,
-          "added": 9,
-          "duplicates": 1,
-          "newest": "2026-11-23"
+          "added": 0,
+          "duplicates": 8,
+          "newest": "2026-11-24"
         },
         {
           "date": "2026-11-23",
@@ -633,6 +583,59 @@
           "inWindow": 10,
           "added": 6,
           "duplicates": 1,
+          "newest": "2026-11-19"
+        }
+      ]
+    },
+    "SpaceNews": {
+      "url": "https://spacenews.com/wp-json/wp/v2/posts?per_page=15&_fields=date,link,title,excerpt",
+      "runs": [
+        {
+          "date": "2026-11-24",
+          "fetched": 15,
+          "inWindow": 15,
+          "added": 0,
+          "duplicates": 15,
+          "newest": "2026-11-24"
+        },
+        {
+          "date": "2026-11-23",
+          "fetched": 16,
+          "inWindow": 0,
+          "added": 0,
+          "duplicates": 0,
+          "newest": "2026-11-19"
+        },
+        {
+          "date": "2026-11-22",
+          "fetched": 16,
+          "inWindow": 2,
+          "added": 0,
+          "duplicates": 2,
+          "newest": "2026-11-19"
+        },
+        {
+          "date": "2026-11-21",
+          "fetched": 16,
+          "inWindow": 5,
+          "added": 0,
+          "duplicates": 5,
+          "newest": "2026-11-19"
+        },
+        {
+          "date": "2026-11-20",
+          "fetched": 16,
+          "inWindow": 7,
+          "added": 0,
+          "duplicates": 7,
+          "newest": "2026-11-19"
+        },
+        {
+          "date": "2026-11-19",
+          "fetched": 16,
+          "inWindow": 8,
+          "added": 2,
+          "duplicates": 6,
           "newest": "2026-11-19"
         }
       ]

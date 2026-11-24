@@ -24,7 +24,7 @@ export interface VideoReject {
   reason: string;
 }
 
-const ENTITIES = ["mirage", "benghazi", "libya", "nightmare", "bragg", "benning", "corvette", "sewip", "thaad", "stinger", "pyka", "crimea", "kaliningrad", "fpv", "usv", "shotgun", "himars", "valkyrie", "dropship", "black sea"];
+const ENTITIES = ["mirage", "benghazi", "libya", "nightmare", "bragg", "benning", "corvette", "sewip", "thaad", "stinger", "pyka", "crimea", "kaliningrad", "fpv", "usv", "shotgun", "himars", "valkyrie", "dropship", "black sea", "philippines", "philippine", "luzon", "geran", "trident"];
 
 function specificTokens(text: string): string[] {
   const raw = text.toLowerCase();

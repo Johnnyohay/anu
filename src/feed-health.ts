@@ -66,6 +66,8 @@ function flagFor(runs: FeedRun[], today: string): string | undefined {
   }
   const shadow = streak(runs, (r) => r.inWindow > 0 && r.added === 0 && r.duplicates > 0 && r.duplicates * 2 >= r.inWindow);
   if (shadow >= SHADOW_RUNS) return `every in-window item duplicated another feed for ${shadow} straight runs`;
+  const filtered = streak(runs, (r) => r.fetched > 0 && r.inWindow >= 3 && r.added === 0 && r.duplicates * 2 < r.inWindow);
+  if (filtered >= 3) return `fresh items were dropped by the filter for ${filtered} straight runs`;
   return undefined;
 }
 

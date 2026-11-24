@@ -29,7 +29,7 @@ const SPECS: Spec[] = [
     rule(w("software|algorithm"), 2, 1),
   ]},
   { id: "air", priority: 58, rules: [
-    rule(w("drones?|UAS|UAV|unmanned aircraft|loitering munition|CCA|collaborative combat aircraft|FPV|Drone Dominance|Replicator|F-35s?|F-47s?|B-21s?|bombers?|Shield AI"), 6, 3),
+    rule(w("drones?|UAS|UAV|unmanned aircraft|loitering munition|CCA|collaborative combat aircraft|FPV|Drone Dominance|Replicator|F-35s?|F-47s?|B-21s?|bombers?|Shield AI|Air Force|USAF"), 6, 3),
     rule(w("fighter"), 4, 2),
     rule(w("aircraft"), 2, 1),
   ]},
@@ -63,7 +63,7 @@ const SPECS: Spec[] = [
     rule(w("EW|spectrum"), 3, 1),
   ]},
   { id: "cyber", priority: 70, rules: [
-    rule(w("ransomware|Salt Typhoon|Volt Typhoon|zero trust|CYBERCOM|malware|hackers?|hacked|hacking"), 6, 3),
+    rule(w("ransomware|Salt Typhoon|Volt Typhoon|zero trust|CYBERCOM|malware|hackers?|hacked|hacking|cybersecurity|cyber security|\\bCISA\\b|\\bNSA\\b"), 6, 3),
     rule(w("cyber"), 4, 2),
   ]},
   { id: "sensing", priority: 66, rules: [
@@ -88,17 +88,21 @@ const SPECS: Spec[] = [
   { id: "policy", priority: 40, rules: [
     rule(w("NDAA|appropriations|continuing resolution|acquisition reform|executive order|House Armed Services|Hegseth|confirmation"), 5, 3),
     rule(w("Senate|Congress|lawmakers|budget|grills"), 5, 2),
+    // A bare service name is a weak signal. It must not outrank a real budget or program match.
+    rule(w("Pentagon|Department of War|\\bDOW\\b|Defense Innovation Unit|\\bDIU\\b|Army"), 2, 1),
   ]},
   { id: "capital", priority: 30, rules: [
     rule(w("funding round|Series [A-H]|IPO|SPAC|venture capital"), 6, 3),
     rule(/raises?\s+\$\d|raised\s+\$\d/i, 6, 3),
     rule(w("valuation|acquires|acquisition of|merger"), 4, 2),
+    rule(w("backlog|revenue|net bookings"), 4, 2),
   ]},
   { id: "primes", priority: 20, rules: [
     rule(w("Lockheed|Raytheon|RTX|Northrop|General Dynamics|L3Harris|Boeing Defense|BAE Systems|Huntington Ingalls|Leidos|SAIC"), 3, 2),
   ]},
   { id: "global", priority: 18, rules: [
-    rule(w("Ukraine|NATO|Israel|Taiwan|Japan|Australia|AUKUS|Europe(?:an)?|Germany|Poland|UK|Britain|South Korea|India|Philippines"), 3, 1),
+    rule(w("Ukraine|NATO|Israel|Taiwan|Japan|Australia|AUKUS|Europe(?:an)?|Germany|Poland|UK|Britain|South Korea|India|Philippines|Philippine"), 5, 2),
+    rule(w("defense loan|foreign military financ"), 6, 2),
   ]},
   { id: "adversary", priority: 15, rules: [
     rule(w("China|Chinese|PLA|Russians?|Russia|Iran(?:ian)?|North Korea|Beijing|Moscow|Kremlin|Houthi"), 3, 1),
@@ -156,6 +160,24 @@ function sentenceCase(input: string): string {
   });
 }
 
+/**
+ * Title Case and ALL CAPS headlines are sentence-cased. A mixed headline keeps
+ * the capitals it already had, so a name like "Space Beyond" stays a name.
+ */
+function headlineCase(input: string): string {
+  const words = input.match(/[A-Za-z0-9][A-Za-z0-9'’%./-]*/g) ?? [];
+  const long = words.filter((w) => w.replace(/[^A-Za-z]/g, "").length > 3);
+  const capped = long.filter((w) => /^[A-Z]/.test(w));
+  if (long.length > 0 && capped.length / long.length >= 0.55) return sentenceCase(input);
+  let seen = false;
+  return input.replace(/[A-Za-z0-9][A-Za-z0-9'’%./-]*/g, (word) => {
+    const first = !seen;
+    seen = true;
+    if (first && /^[a-z]/.test(word)) return word.charAt(0).toUpperCase() + word.slice(1);
+    return word;
+  });
+}
+
 /** Brief headline taken from the lead story, with the standout percent folded in when the headline says "bigger". */
 export function briefTitle(title: string, body: string): string {
   let t = title.replace(/\s+/g, " ").trim();
@@ -164,7 +186,7 @@ export function briefTitle(title: string, body: string): string {
   t = t.replace(/,\s+but\b.*$/i, "").trim();
   const pct = /\b(\d{1,3}(?:\.\d+)?)\s*percent\b/i.exec(`${body} ${title}`)?.[1];
   if (pct && !t.includes("%") && !t.includes(pct)) t = t.replace(/\bbigger\b/i, `a ${pct}% bigger`);
-  t = sentenceCase(t).replace(/\bspace force\b/gi, "Space Force").replace(/\bblack sea\b/gi, "Black Sea").replace(/\bair force\b/gi, "Air Force");
+  t = headlineCase(t).replace(/\bspace force\b/gi, "Space Force").replace(/\bblack sea\b/gi, "Black Sea").replace(/\bair force\b/gi, "Air Force");
   if (t.length > 92) t = t.slice(0, 89).replace(/\s+\S*$/, "").trim() + "…";
   return t;
 }

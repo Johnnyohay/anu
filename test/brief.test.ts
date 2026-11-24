@@ -1,10 +1,11 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { briefTitle, classify, storyWhy } from "../src/classify.ts";
-import { cleanCopy, limitActor, tokenOverlap } from "../src/why.ts";
-import { briefSummary, eventKey, isListicle, materiallyNew, pickTop, sameEvent, storyGist, storyScore } from "../src/brief.ts";
+import { cleanCopy, grammarProblem, isStockHedge, limitActor, restatesSummaryNumbers, storyWhy as storyWhyWith, tokenOverlap, ungroundedTerms, uniqueWhys } from "../src/why.ts";
+import { briefSummary, dedupeEvents, eventKey, isFiller, isListicle, materiallyNew, pickTop, sameEvent, sameStory, storyGist, storyScore } from "../src/brief.ts";
+import { copiesBodySentence } from "../src/why.ts";
 import { selectBriefVideos } from "../src/brief-videos.ts";
-import { summaryFromFields } from "../src/rss.ts";
+import { isCaption, isRawQuote, summaryFromFields } from "../src/rss.ts";
 import { extraCompany, junkMention, matchCompanies, resolveName } from "../src/names.ts";
 import { updateFeedHealth, type FeedHealth, type FeedObservation } from "../src/feed-health.ts";
 
@@ -144,9 +145,8 @@ describe("types and why lines", () => {
     assert.equal(c.sectors[0]?.id, "space");
     assert.ok(c.sectors[0].titleScore < 4);
     const line = storyWhy(title, body, c.sectors[0], c.type, []);
-    assert.ok(line.length > 0);
-    assert.notEqual(line, GENERIC_SPACE);
-    assert.ok(tokenOverlap(line, body) <= 0.6);
+    assert.equal(line, "");
+    assert.doesNotMatch(line, /is the party in the story|This one is /);
   });
 
   it("does not use the old ground-robot line on the Morocco missile", () => {
@@ -175,8 +175,8 @@ describe("published brief stories", () => {
     for (const [title, body, companies] of stories) {
       const c = classify(title, body);
       const line = storyWhy(title, body, c.sectors[0], c.type, companies);
-      assert.ok(line.trim().length > 20, title);
-      assert.doesNotMatch(line, STOCK, title);
+      assert.doesNotMatch(line, /is the party in the story|This one is /i, title);
+      if (line.trim()) assert.doesNotMatch(line, STOCK, title);
       assert.doesNotMatch(line, /how the U\.$/);
     }
   });
@@ -448,5 +448,318 @@ describe("brief videos", () => {
     assert.match(byId["1"], /no shared/);
     assert.match(byId["2"], /not a defense/);
     assert.match(byId["4"], /no shared/);
+  });
+});
+
+describe("Nov 24 brief quality", () => {
+  const ctx = { deadline: "Dec 11", stakes: ["DAWG", "Golden Dome"] };
+  const memorial = {
+    title: "Space Beyond orders hardware for 10 more memorial cubesat missions",
+    body: "Space Beyond has ordered enough hardware for 10 follow-on cubesats after growing sales for the Florida startup's first memorial spacecraft, slated to carry cremated remains into orbit in October 2027.",
+  };
+  const corvette = {
+    title: "Ukraine confirms it sank Russian corvette in Libyan port",
+    body: "Ukraine confirmed it sank a Russian corvette in the Libyan port of Benghazi with naval drones.",
+  };
+  const carrier = {
+    title: "China’s fourth aircraft carrier, bigger than others and nuclear-powered, nears completion",
+    body: "China's fourth aircraft carrier, known as Type 004, will be bigger than its predecessors and nuclear powered.",
+  };
+  const geran = {
+    title: "New SPYS interceptor shot down Russia’s Geran-5 cruise missile",
+    body: "A Ukrainian-built interceptor drone has destroyed a Geran-5, classed by Ukrainian intelligence as a small cruise missile.",
+  };
+
+  it("ranks a nuclear carrier ahead of a NASA weather contract and a SPAC", () => {
+    const carrierScore = storyScore({ title: carrier.title, body: carrier.body, titleScore: 6 });
+    const nasa = storyScore({
+      type: "Contract",
+      companies: ["Northrop Grumman"],
+      title: "Northrop Grumman Lands $291M NASA Contract for NOAA NEON Microwave Sounders",
+      body: "The contract runs through April 2042 and covers instruments for National Weather Service forecasts.",
+      titleScore: 6,
+    });
+    const spac = storyScore({
+      type: "M&A & IPO",
+      companies: ["Quantum Space", "Inflection Point"],
+      title: "Quantum Space Closes SPAC Merger With Inflection Point Ahead of NYSE Debut",
+      body: "Quantum Space is set to begin trading on NYSE as QSPC.",
+      titleScore: 6,
+    });
+    assert.ok(carrierScore > nasa);
+    assert.ok(carrierScore > spac);
+    assert.ok(carrierScore > storyScore({ title: memorial.title, body: memorial.body, titleScore: 6 }));
+  });
+
+  it("names the buyer on a helicopter order, an erroneous contract, a backlog, and a drone-plant talk", () => {
+    const heli = why(
+      "U.S. Special Operations Command orders more MH-47Gs",
+      "Boeing has received a $197.3 million order modification to buy more MH-47G special operations helicopters for U.S. Special Operations Command.",
+    );
+    assert.match(heli, /Special Operations Command/);
+    assert.match(heli, /MH-47G/);
+    assert.doesNotMatch(heli, /funded order/);
+    assert.equal(restatesSummaryNumbers(heli, "Boeing has received a $197.3 million order modification to buy more MH-47G special operations helicopters."), false);
+    const err = why(
+      "$16 billion propulsion mega-contract posted in error, Air Force says",
+      "The Air Force is planning to award the $16.1 billion contract, but has not yet done so.",
+    );
+    assert.match(err, /Air Force/);
+    assert.match(err, /not awarded/);
+    assert.doesNotMatch(err, /\$16/);
+    const book = why(
+      "Amentum Reports $13.8B in FY2026 Revenue, $48.3B Backlog",
+      "Amentum secured $15 billion in net bookings, including major NGA, Navy, Army and international nuclear program awards.",
+      ["Amentum Reports"],
+    );
+    assert.match(book, /backlog/);
+    assert.match(book, /Amentum/);
+    assert.match(book, /Navy|Army|NGA/);
+    assert.doesNotMatch(book, /\$13\.8B|\$48\.3B|order book/);
+    assert.equal(restatesSummaryNumbers(book, "Amentum Reports $13.8B in FY2026 Revenue, $48.3B Backlog"), false);
+    const drones = why(
+      "Pentagon in talks with GM and Ford to help build drones",
+      "The Pentagon is in talks with General Motors, Ford and other manufacturers about helping mass-produce military drones.",
+    );
+    assert.equal(drones, "");
+    const buy = why(
+      "BlackSky acquires data firm EpochGeo",
+      "BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis.",
+    );
+    assert.match(buy, /analysis/);
+    assert.doesNotMatch(buy, /imagery|ownership change|not a new program|does not name a buyer/);
+    assert.deepEqual(ungroundedTerms(buy, "BlackSky acquires data firm EpochGeo. BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis."), []);
+    assert.equal(isStockHedge(buy), false);
+    assert.ok(tokenOverlap(buy, "BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis.") <= 0.6);
+  });
+
+  it("names the real actor, and stays empty when the headline is the only fact", () => {
+    const cases: [string, string, RegExp, RegExp?][] = [
+      ["Yes, no, maybe? The countries that can deliver Ukraine's F-16s", "Yes, no, maybe? The countries that can deliver Ukraine's F-16s.", /Yes is the party/, /^$/],
+      ["Upgrading cellular networks with space support", "Using satellites to connect smartphones beyond cell towers.", /Upgrading is/, /^$/],
+      ["Thruster glitch clouds BepiColombo arrival at Mercury", "A mission entered orbit around Mercury after a thruster shutdown.", /Thruster is/, /^$/],
+      ["White House sets limits on contractors' contacts with Congress", "Federal contractors are required to alert the White House before answering Congress and withhold privileged material under an executive order.", /White is the party/, /White House/],
+      ["Israeli firm says its new spy drone broke a range record", "An Israeli company flew a spy drone farther than its last one.", /^Israeli is/, /^$/],
+      ["European officials make the case for a human spaceflight program", "European government officials want a crew vehicle.", /^European is/, /^$/],
+      ["Russia rebuilds key military base 60 km from Finland", "Russia has torn down barracks at its army base near Finland.", /The Army is the party/, /^$/],
+      ["Investment firm Cerberus to buy space business of US Airbus arm", "Airbus will expand production of autonomous aircraft.", /sell Airbus|is buying Airbus/, /^$/],
+      ["$16 billion propulsion mega-contract posted in error, Air Force says", "The Air Force is planning to award the contract, but has not yet done so.", /says was posted/, /says the contract was posted/],
+    ];
+    for (const [title, body, absent, present] of cases) {
+      const line = why(title, body);
+      assert.doesNotMatch(line, absent, `${title} -> ${line}`);
+      assert.doesNotMatch(line, /is the party in the story|This one is /i, line);
+      if (present) assert.match(line, present, `${title} -> ${line}`);
+      if (line) assert.ok(tokenOverlap(line, title) <= 0.6, line);
+      assert.equal(grammarProblem(line), "", line);
+    }
+  });
+
+  it("leaves a line empty when it would only name a party or paste the headline", () => {
+    const samples: [string, string][] = [
+      ["Yes, no, maybe? The countries that can deliver Ukraine's 40 requested F-16s", "Yes, no, maybe? The countries that can or can't deliver Ukraine's 40 requested F-16s."],
+      ["Upgrading cellular networks with space support", "Using satellites to connect smartphones beyond the reach of cell towers."],
+      ["Thruster glitch clouds BepiColombo arrival at Mercury", "A joint mission entered orbit around Mercury after a thruster shutdown."],
+      ["A battalion delayed a weather exercise", "The battalion waited out the weather before the road march."],
+    ];
+    for (const [title, body] of samples) {
+      const line = why(title, body);
+      assert.doesNotMatch(line, /is the party in the story|This one is /i, line);
+      if (line) assert.ok(tokenOverlap(line, title) <= 0.6, line);
+    }
+    const items = [
+      { title: "One", why: "A buyer has to adopt it." },
+      { title: "Two", why: "A buyer has to adopt it." },
+    ];
+    uniqueWhys(items);
+    assert.equal(items[0].why, "");
+    assert.equal(items[1].why, "");
+  });
+
+  it("does not reuse a canned line when the story only shares a broad keyword", () => {
+    const battalion = why("A battalion delayed a weather exercise", "The battalion waited out the weather before the road march.");
+    assert.doesNotMatch(battalion, /Odin|brigade|2042|propulsion|nuclear weapon/i);
+    assert.deepEqual(ungroundedTerms(battalion, "A battalion delayed a weather exercise. The battalion waited out the weather before the road march."), []);
+    const weather = why(
+      "NOAA weather contract posted in error",
+      "A weather instrument contract was posted in error and has not yet been awarded.",
+    );
+    assert.doesNotMatch(weather, /propulsion|engine|2042|Northrop|says was posted/i);
+    if (weather) assert.ok(tokenOverlap(weather, "NOAA weather contract posted in error") <= 0.6, weather);
+    const nuclear = why(
+      "Firm launches a nuclear-powered communications satellite",
+      "The satellite uses nuclear power for its radio.",
+    );
+    assert.doesNotMatch(nuclear, /weapon|orbit a nuclear|warning/i);
+    assert.deepEqual(ungroundedTerms(nuclear, "Firm launches a nuclear-powered communications satellite. The satellite uses nuclear power for its radio."), []);
+  });
+
+  it("does not file an earnings backlog under budget just because the Army is a customer", () => {
+    const c = classify(
+      "Amentum Reports $13.8B in FY2026 Revenue, $48.3B Backlog",
+      "Amentum secured $15 billion in net bookings, including major NGA, Navy, Army and international nuclear program awards.",
+    );
+    assert.notEqual(c.sectors[0]?.id, "policy");
+  });
+
+  it("does not restate summary dollars or close with a stock hedge", () => {
+    const samples: [string, string][] = [
+      ["Northrop Grumman Lands $291M NASA Contract for NOAA NEON Microwave Sounders", "The contract runs through April 2042 and covers three instruments aimed at improving National Weather Service forecasts."],
+      ["Private equity firm Cerberus to acquire Airbus' U.S. satellite business", "The deal brings a factory built for OneWeb's broadband constellation under American ownership."],
+      ["Poland, UK sign deal to develop CAMM-MR missile", "Poland and the United Kingdom signed an agreement to develop CAMM-MR, a new air defense missile meant to reach beyond 100 km."],
+      ["Ukrainian army gets German Lynx fighting vehicles", "Ukrainian soldiers are crewing Rheinmetall's Lynx infantry fighting vehicles after Berlin handed over a batch."],
+      ["Marines Want Naval Strike Missiles With Double The Range", "The U.S. Marine Corps is looking at ways to at least double the range of its Naval Strike Missile."],
+      ["White House sets limits on contractors' contacts with Congress", "Federal contractors must alert the White House before answering Congress and withhold anything deemed privileged."],
+      ["Canada's air force bets on F-35 as its core fighter jet", "Canada's air force sketched a future fighter fleet built around the F-35 and it doesn't mention the Swedish Gripen."],
+    ];
+    for (const [title, body] of samples) {
+      const line = why(title, body);
+      assert.equal(isStockHedge(line), false, line);
+      assert.equal(restatesSummaryNumbers(line, `${title} ${body}`), false, line);
+      assert.doesNotMatch(line, /is the party in the story|This one is /i);
+      if (line) assert.ok(tokenOverlap(line, title) <= 0.6, `${title} -> ${line}`);
+    }
+  });
+
+  it("ranks a sinking, a nuclear carrier, and an interceptor kill ahead of a memorial cubesat", () => {
+    const score = (s: { title: string; body: string }) => storyScore({ title: s.title, body: s.body, type: "Conflict & allies", titleScore: 6 });
+    assert.ok(score(corvette) > score(memorial));
+    assert.ok(score(carrier) > score(memorial));
+    assert.ok(score(geran) > score(memorial));
+    assert.ok(score(corvette) > score(carrier));
+  });
+
+  it("keeps Space Beyond capitalized in a mixed-case headline", () => {
+    const title = briefTitle(memorial.title, memorial.body);
+    assert.match(title, /Space Beyond/);
+    assert.doesNotMatch(title, /Space beyond/);
+  });
+
+  it("writes the Coons, Trident, Philippines, and IAI lines from facts in those stories", () => {
+    const coons = storyWhyWith(
+      "Congress is out of time to decide on reconciliation, needs to settle topline spending: Sen. Coons",
+      "If we could get to a bipartisan topline, we could spend the time from Thanksgiving to the end of the year getting a lot of this finished, said Sen. Chris Coons.",
+      undefined, "", [], ctx,
+    );
+    assert.match(coons, /topline/);
+    assert.doesNotMatch(coons, /memo|DAWG|Golden Dome|Dec 11/i);
+    assert.deepEqual(ungroundedTerms(coons, "Congress is out of time to decide on reconciliation, needs to settle topline spending. If we could get to a bipartisan topline."), []);
+    const trident = why(
+      "Lockheed Martin Secures $1.5B Modification for Trident II D5 Missile Production, Fleet Support",
+      "The sole-source contract calls for work in Utah, Florida, Colorado and other sites running through 2031.",
+    );
+    assert.match(trident, /Sole-source work through 2031/);
+    assert.match(trident, /Lockheed/);
+    assert.doesNotMatch(trident, /watch item/i);
+    const loan = why(
+      "U.S. Commits $2B Defense Loan for Philippine Military, Luzon Strait Development",
+      "The United States committed a $2 billion defense loan for Philippine military construction along the Luzon Strait.",
+    );
+    assert.match(loan, /Luzon Strait/);
+    assert.match(loan, /Philippine military/);
+    const iai = why(
+      "Israel Aerospace Industries profit jumps 37% as backlog hits $35.6 billion",
+      "Israel Aerospace Industries reported a record $35.6 billion order backlog. The maker of the Arrow missile-defense system said net profit jumped.",
+    );
+    assert.match(iai, /backlog/);
+    assert.match(iai, /missile/);
+    assert.doesNotMatch(iai, /mainstream export/);
+    assert.deepEqual(ungroundedTerms(iai, "Israel Aerospace Industries profit jumps as backlog hits $35.6 billion. The maker of the Arrow missile-defense system said net profit jumped."), []);
+  });
+
+  it("does not repeat one so-what across stories", () => {
+    const items = [
+      { title: "Umbra unveils a new radar satellite", why: "The story names an event. It does not name a buyer, a dollar figure, or a deadline." },
+      { title: "A second radar satellite story", why: "The story names an event. It does not name a buyer, a dollar figure, or a deadline." },
+    ];
+    uniqueWhys(items);
+    assert.equal(items[0].why, "");
+    assert.equal(items[1].why, "");
+    assert.doesNotMatch(items.map((i) => i.why).join(" "), /This one is /);
+  });
+
+  it("files the Philippine defense loan under allies, not maritime, even when the caption says maritime", () => {
+    const c = classify(
+      "U.S. Commits $2B Defense Loan for Philippine Military, Luzon Strait Development",
+      "Philippine marines assigned to 4th Marine Brigade participate in a training event for maritime key terrain security operations during KAMANDAG.",
+    );
+    assert.equal(c.sectors[0].id, "global");
+    assert.notEqual(c.sectors[0].id, "sea");
+  });
+
+  it("skips a photo caption and a raw quote, and does not leave a doubled ellipsis", () => {
+    const caption = "Philippine marines assigned to 4th Marine Brigade, and U.S. Marines assigned to 3rd Littoral Combat Team, participate in a cumulative training event for maritime key terrain security operations during KAMANDAG.";
+    const quote = "If we could get to a bipartisan topline, we could spend the time from Thanksgiving to the end of the year getting a lot of this finished, said Sen. Chris Coons, the top democrat on the Senate Appropriations defense subcommittee.";
+    const news = "The United States committed a $2 billion defense loan for Philippine military construction along the Luzon Strait, the Pentagon said on Monday.";
+    assert.equal(isCaption(caption), true);
+    assert.equal(isRawQuote(quote), true);
+    const summary = summaryFromFields(quote, `<p>${caption}</p><p>${quote}</p><p>${news}</p>`);
+    assert.match(summary, /\$2 billion defense loan/);
+    assert.doesNotMatch(summary, /assigned to/);
+    assert.equal(cleanCopy("operations during…."), "operations during…");
+  });
+
+  it("counts every new story and does not call a five-way tie mostly allies", () => {
+    const line = briefSummary(43, ["space", "space", "sea", "strike"], ["space", "strike", "policy", "sea", "global"]);
+    assert.match(line, /^43 new stories/);
+    assert.doesNotMatch(line, /mostly about allies/);
+  });
+
+  it("blocks ceremonies, show episodes, and a repeated drone-tools segment", () => {
+    assert.equal(isFiller("Navy Family Takes Oath of Enlistment Together"), true);
+    assert.equal(isFiller("F-35 Demo Team Returns to Luke Ahead of 2027 Season"), true);
+    assert.equal(isFiller("A race for lifesaving battlefield drones Defense News Weekly Full Episode 11.24.26"), true);
+    assert.equal(isFiller("Two major veterans bills pass the House MOAA Headlines"), true);
+    const a = { title: "New tools for troops to gun down drones Defense News Weekly Full Episode 11.17.26", body: "A weekly segment." };
+    const b = { title: "New tools for troops to gun down drones Defense News Weekly Full Episode 11.19.26", body: "The same weekly segment." };
+    assert.equal(sameStory(a, b), true);
+  });
+
+  it("treats the two Cerberus Airbus headlines as one deal", () => {
+    const a = { title: "Investment firm Cerberus to buy space business of US Airbus arm", body: "Airbus will expand production of autonomous aircraft." };
+    const b = { title: "Private equity firm Cerberus to acquire Airbus' U.S. satellite business", body: "The deal brings a factory built for OneWeb under American ownership." };
+    assert.equal(eventKey(a.title, a.body), "cerberus@airbus");
+    assert.equal(sameStory(a, b), true);
+    const { kept, dropped } = dedupeEvents(
+      [{ ...a, score: 4 }, { ...b, score: 6 }],
+      [],
+    );
+    assert.equal(kept.length, 1);
+    assert.match(kept[0].title, /satellite/);
+    assert.equal(dropped.length, 1);
+  });
+
+  it("rejects a line that copies one sentence of the body", () => {
+    const body = "A Russian Navy corvette burned and capsized after being struck by Ukrainian uncrewed surface vessels while docked in Benghazi, Libya. A cargo ship was also hit.";
+    const copy = "A Russian Navy corvette burned and capsized after being struck by Ukrainian uncrewed surface vessels while docked in Benghazi, Libya.";
+    assert.equal(copiesBodySentence(copy, body), true);
+    const soWhat = why("Ukraine's campaign against Russian naval assets", body);
+    assert.equal(copiesBodySentence(soWhat, body), false);
+    assert.doesNotMatch(soWhat, /burned and capsized/);
+  });
+
+  it("keeps one Benghazi write-up and drops the rest of the same strike", () => {
+    const items = [
+      { ...corvette, score: 20 },
+      { title: "Ukraine strikes Russian warship and cargo vessel with naval drones in Libya", body: "Naval drones hit a Russian warship in Libya.", score: 12 },
+      { title: "Did Ukraine Use A Mothership To Launch Its Sea Drone Attack On Russian Ships in Benghazi?", body: "A mothership may have launched the Benghazi sea drone attack.", score: 9 },
+      { title: "Russian convoy idles off Tunisia after sea drones hit Benghazi", body: "A Russian convoy waited off Tunisia after the Benghazi strike.", score: 8 },
+    ];
+    const { kept, dropped } = dedupeEvents(items, []);
+    assert.equal(kept.length, 1);
+    assert.equal(kept[0].title, corvette.title);
+    assert.equal(dropped.length, 3);
+    assert.equal(eventKey(items[3].title, items[3].body), "warship@libya");
+  });
+
+  it("keeps a cybersecurity advisory and an Army installations story instead of dropping them", () => {
+    const cyber = classify("NSA Issues Cybersecurity Advisory on AI-Generated Attacks Against Siemens PLCs", "The NSA urged programmable logic controller operators to patch systems.");
+    assert.equal(cyber.sectors[0].id, "cyber");
+    const army = classify(
+      "New guide lays out how Army installations can coordinate with local agencies before disaster strikes",
+      "The Army relies on local fuel, water and electricity to keep its installations going.",
+    );
+    assert.ok(army.sectors.length > 0);
+    assert.notEqual(army.sectors[0].id, "");
   });
 });
