@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { briefTitle, classify, storyWhy } from "../src/classify.ts";
-import { cleanCopy, limitActor, storyWhy as storyWhyWith, tokenOverlap, uniqueWhys } from "../src/why.ts";
+import { cleanCopy, isStockHedge, limitActor, restatesSummaryNumbers, storyWhy as storyWhyWith, tokenOverlap, uniqueWhys } from "../src/why.ts";
 import { briefSummary, dedupeEvents, eventKey, isFiller, isListicle, materiallyNew, pickTop, sameEvent, sameStory, storyGist, storyScore } from "../src/brief.ts";
 import { selectBriefVideos } from "../src/brief-videos.ts";
 import { isCaption, isRawQuote, summaryFromFields } from "../src/rss.ts";
@@ -497,23 +497,26 @@ describe("Nov 24 brief quality", () => {
       "Boeing has received a $197.3 million order modification to buy more MH-47G special operations helicopters for U.S. Special Operations Command.",
     );
     assert.match(heli, /SOCOM/);
-    assert.match(heli, /\$197\.3 million/);
     assert.match(heli, /MH-47G/);
-    assert.match(heli, /funded order/);
+    assert.doesNotMatch(heli, /funded order/);
+    assert.equal(restatesSummaryNumbers(heli, "Boeing has received a $197.3 million order modification to buy more MH-47G special operations helicopters."), false);
     const err = why(
       "$16 billion propulsion mega-contract posted in error, Air Force says",
       "The Air Force is planning to award the $16.1 billion contract, but has not yet done so.",
     );
     assert.match(err, /Air Force/);
     assert.match(err, /not awarded/);
+    assert.doesNotMatch(err, /\$16/);
     const book = why(
       "Amentum Reports $13.8B in FY2026 Revenue, $48.3B Backlog",
       "Amentum secured $15 billion in net bookings, including major NGA, Navy, Army and international nuclear program awards.",
       ["Amentum Reports"],
     );
-    assert.match(book, /^Amentum reported/);
-    assert.match(book, /\$48\.3B backlog/);
-    assert.doesNotMatch(book, /Amentum Reports/);
+    assert.match(book, /positions Amentum to win the next awards/);
+    assert.match(book, /NGA/);
+    assert.match(book, /Navy/);
+    assert.doesNotMatch(book, /\$13\.8B|\$48\.3B|order book/);
+    assert.equal(restatesSummaryNumbers(book, "Amentum Reports $13.8B in FY2026 Revenue, $48.3B Backlog"), false);
     const drones = why(
       "Pentagon in talks with GM and Ford to help build drones",
       "The Pentagon is in talks with General Motors, Ford and other manufacturers about helping mass-produce military drones.",
@@ -525,9 +528,28 @@ describe("Nov 24 brief quality", () => {
       "BlackSky acquires data firm EpochGeo",
       "BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis.",
     );
-    assert.match(buy, /EpochGeo/);
-    assert.doesNotMatch(buy, /does not name a buyer/);
+    assert.match(buy, /analysis, not just imagery/);
+    assert.doesNotMatch(buy, /ownership change|not a new program|does not name a buyer/);
+    assert.equal(isStockHedge(buy), false);
     assert.ok(tokenOverlap(buy, "BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis.") <= 0.6);
+  });
+
+  it("does not restate summary dollars or close with a stock hedge", () => {
+    const samples: [string, string][] = [
+      ["Northrop Grumman Lands $291M NASA Contract for NOAA NEON Microwave Sounders", "The contract runs through April 2042 and covers three instruments aimed at improving National Weather Service forecasts."],
+      ["Private equity firm Cerberus to acquire Airbus' U.S. satellite business", "The deal brings a factory built for OneWeb's broadband constellation under American ownership."],
+      ["Poland, UK sign deal to develop CAMM-MR missile", "Poland and the United Kingdom signed an agreement to develop CAMM-MR, a new air defense missile meant to reach beyond 100 km."],
+      ["Ukrainian army gets German Lynx fighting vehicles", "Ukrainian soldiers are crewing Rheinmetall's Lynx infantry fighting vehicles after Berlin handed over a batch."],
+      ["Marines Want Naval Strike Missiles With Double The Range", "The U.S. Marine Corps is looking at ways to at least double the range of its Naval Strike Missile."],
+      ["White House sets limits on contractors' contacts with Congress", "Federal contractors must alert the White House before answering Congress and withhold anything deemed privileged."],
+      ["Canada's air force bets on F-35 as its core fighter jet", "Canada's air force sketched a future fighter fleet built around the F-35 and it doesn't mention the Swedish Gripen."],
+    ];
+    for (const [title, body] of samples) {
+      const line = why(title, body);
+      assert.equal(isStockHedge(line), false, line);
+      assert.equal(restatesSummaryNumbers(line, `${title} ${body}`), false, line);
+      assert.ok(line.length > 40, line);
+    }
   });
 
   it("ranks a sinking, a nuclear carrier, and an interceptor kill ahead of a memorial cubesat", () => {
