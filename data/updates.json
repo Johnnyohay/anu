@@ -30,7 +30,7 @@
     "d": "2026-11-24",
     "title": "BlackSky acquires data firm EpochGeo",
     "body": "WASHINGTON — BlackSky Technology announced it acquired geospatial data firm EpochGeo, a move to expand its slate of real-time intelligence tools as defense customers seek deeper analysis and data fusion capabilities.",
-    "why": "BlackSky Technology can now sell analysis to customers.",
+    "why": "Defense customers can buy analysis and data fusion from BlackSky Technology.",
     "sectors": [
       "capital"
     ],
@@ -76,7 +76,7 @@
     "d": "2026-11-24",
     "title": "Pentagon in talks with GM and Ford to help build drones",
     "body": "The Pentagon is in talks with General Motors, Ford and other manufacturers about helping mass-produce military drones, The Wall Street Journal reported on Tuesday, citing people familiar with the matter.",
-    "why": "The Pentagon is in talks with GM and Ford to mass-produce drones.",
+    "why": "",
     "sectors": [
       "air",
       "policy"
@@ -171,29 +171,6 @@
     "addedAt": "2026-11-24T16:58:40.409Z",
     "orgs": [
       "Elbit Systems"
-    ]
-  },
-  {
-    "id": "u-20261124-investment-firm-cerberus-to-buy-space-business-of-",
-    "d": "2026-11-24",
-    "title": "Investment firm Cerberus to buy space business of US Airbus arm",
-    "body": "Airbus intends for its US subsidiary to double down on production of autonomous aircraft as the market for drones continues to expand, the company said.",
-    "why": "Cerberus is buying Airbus's space business.",
-    "sectors": [
-      "space",
-      "air"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Breaking Defense",
-      "u": "https://breakingdefense.com/2026/11/investment-firm-cerberus-to-buy-space-business-of-us-airbus-arm/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Cerberus",
-      "Airbus"
     ]
   },
   {
@@ -417,7 +394,7 @@
     "d": "2026-11-24",
     "title": "Russia gets more SV-98 sniper rifles used in war on Ukraine",
     "body": "Russia's Kalashnikov Concern says it has finished a state contract for SV-98 sniper rifles, a bolt-action weapon it says is widely used by Russian troops fighting in Ukraine.",
-    "why": "Russia has a contract for SV-98.",
+    "why": "",
     "sectors": [
       "global",
       "adversary"
@@ -634,7 +611,7 @@
     "d": "2026-11-24",
     "title": "Private equity firm Cerberus to acquire Airbus’ U.S. satellite business",
     "body": "The deal brings a factory built for OneWeb's broadband constellation under American ownership.",
-    "why": "Cerberus now has the factory under American ownership.",
+    "why": "",
     "sectors": [
       "space",
       "mfg"
@@ -658,7 +635,7 @@
     "d": "2026-11-24",
     "title": "Northrop Grumman Lands $291M NASA Contract for NOAA NEON Microwave Sounders",
     "body": "The contract runs through April 2042 and covers three instruments aimed at improving National Weather Service forecasts.",
-    "why": "The contract runs through 2042.",
+    "why": "",
     "sectors": [
       "primes"
     ],
@@ -683,7 +660,7 @@
     "d": "2026-11-23",
     "title": "China’s fourth aircraft carrier, bigger than others and nuclear-powered, nears completion",
     "body": "NEW TAIPEI CITY, Taiwan — China's fourth aircraft carrier, a gigantic vessel known so far as just Type 004, will come out as early as next year bigger than its predecessors and with nuclear power that can launch planes faster than usual in case of any…",
-    "why": "A nuclear carrier can launch planes faster.",
+    "why": "",
     "sectors": [
       "sea",
       "energy",
@@ -1295,7 +1272,7 @@
     "d": "2026-11-23",
     "title": "New SPYS interceptor shot down Russia’s Geran-5 cruise missile",
     "body": "A Ukrainian-built interceptor drone has destroyed a Geran-5 K5-K, a weapon widely reported as Russia's newest jet-powered attack drone but classed by Ukrainian intelligence as a small cruise missile.",
-    "why": "Ukrainian intelligence classed Geran-5 as a small cruise missile.",
+    "why": "The next buy is more of the Ukrainian interceptor that destroyed Geran-5.",
     "sectors": [
       "strike",
       "missiledef",
@@ -1358,7 +1335,7 @@
     "d": "2026-11-23",
     "title": "Israel Aerospace Industries profit jumps 37% as backlog hits $35.6 billion",
     "body": "Israel Aerospace Industries reported a record $35.6 billion order backlog on Monday and urged the government to settle a Defense Ministry debt that the state-owned company put at billions of shekels. The maker of the Arrow missile-defense system said net….",
-    "why": "A $35.6B backlog is missile work for Israel Aerospace Industries.",
+    "why": "A $35.6B backlog makes Israel Aerospace Industries the incumbent on missile defense.",
     "sectors": [
       "global",
       "capital"
@@ -1446,7 +1423,7 @@
     "d": "2026-11-23",
     "title": "Turkish naval gun system shoots down jet drone in live-fire test",
     "body": "A Turkish twin-cannon ship defense system shot down a fast jet-powered drone off Türkiye's northern coast, and its operator only had to press one button. ASELSAN released video of the test on Monday.",
-    "why": "ASELSAN shot down a drone and the operator had to press one button.",
+    "why": "",
     "sectors": [
       "air",
       "sea"
@@ -1618,7 +1595,7 @@
     "d": "2026-11-22",
     "title": "Ukraine’s Campaign Against Russian Naval Assets Far Beyond The Black Sea Enters A New Phase",
     "body": "A Russian Navy corvette burned and capsized after being struck by Ukrainian uncrewed service vessels (USVs) while docked in Benghazi, Libya. In addition, a Russian cargo ship was struck by Ukrainian USVs while operating off Benghazi in the Mediterranean.",
-    "why": "A Russian Navy corvette burned and capsized after being struck by Ukrainian uncrewed service vessels (USVs) while docked in Benghazi, Libya.",
+    "why": "Ukraine can now hit Russian ships 1,000+ miles from the Black Sea, so Russia's Mediterranean basing in Libya is exposed. Expect demand for port force-protection and counter-USV sensing.",
     "sectors": [
       "sea",
       "global",

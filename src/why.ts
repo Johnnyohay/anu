@@ -22,6 +22,13 @@ export function tokenOverlap(a: string, b: string): number {
   return n / new Set([...A, ...B]).size;
 }
 
+/** True when the line is a near-copy of any one sentence in the story, not only of the whole summary. */
+export function copiesBodySentence(line: string, body: string): boolean {
+  if (!line.trim() || !body.trim()) return false;
+  const parts = body.split(/(?<=[.!?])\s+/).map((s) => s.trim()).filter(Boolean);
+  return (parts.length ? parts : [body.trim()]).some((s) => tokenOverlap(line, s) > 0.6);
+}
+
 /** Quotes, dangling commas, and the USV misnomer. */
 export function cleanCopy(text: string): string {
   let s = text
@@ -191,28 +198,18 @@ function composeWhy(title: string, body: string, companies: string[]): string {
     const name = firm(title, companies) || who;
     const buyers = namedBuyers(text);
     if (buyers.length) drafts.push(`The backlog positions ${name} to win the next awards from ${joinList(buyers)}.`);
-    if (money && /missile/.test(t)) drafts.push(`A ${money} backlog is missile work for ${name}.`);
+    if (money && /missile/.test(t)) drafts.push(`A ${money} backlog makes ${name} the incumbent on missile defense.`);
     if (money) drafts.push(`A ${money} backlog makes ${name} the incumbent on the next competition.`);
   }
-  if (/\b(acquires|acquired|acquisition|to acquire)\b/.test(t) || (/\bto buy\b/.test(t) && /\b(business|firm|stake|arm|subsidiary)\b/.test(t))) {
-    const target = text.match(/\b(?:acquires|acquired|acquire|buy)\s+(?:[\w']+\s+){0,4}([A-Z][\w&'-]+)/)?.[1]?.replace(/['’.]+$/g, "");
-    if (/\bto buy\b/.test(t) && /space business/.test(t) && who && target) drafts.push(`${who} is buying ${target}'s space business.`);
-    if (/factory|ownership/.test(t) && who) drafts.push(`${who} now has the factory under American ownership.`);
-    const offer = /analysis/.test(t) ? "analysis" : /fusion/.test(t) ? "fusion" : /geospatial/.test(t) ? "geospatial data" : "";
-    if (who && offer && /customer/.test(t)) drafts.push(`${who} can now sell ${offer} to customers.`);
-    if (who && offer) drafts.push(`${who} can now sell ${offer}.`);
-    if (/autonomous aircraft/.test(t) && /production/.test(t)) drafts.push(`Production of autonomous aircraft expands with the drone market.`);
+  if (/\b(acquires|acquired|acquisition|to acquire)\b/.test(t)) {
+    if (who && /analysis/.test(t) && /customer/.test(t)) {
+      drafts.push(/data fusion/.test(t) && /defense/.test(t)
+        ? `Defense customers can buy analysis and data fusion from ${who}.`
+        : `${who} can sell analysis to customers.`);
+    }
   }
-  if (/in talks/.test(t)) {
-    const names = [/\bgeneral motors\b|\bgm\b/.test(t) ? "GM" : "", /\bford\b/.test(t) ? "Ford" : ""].filter(Boolean);
-    if (names.length && /drone/.test(t) && who) drafts.push(`${who} is in talks with ${names.join(" and ")} to mass-produce drones.`);
-  }
-  if (/(shot down|downs|destroyed)/.test(t) && /cruise missile/.test(t) && /ukrainian intelligence/.test(t) && program) {
-    drafts.push(`Ukrainian intelligence classed ${program} as a small cruise missile.`);
-  }
-  if (/(shot down|downs)/.test(t) && /button/.test(t)) {
-    const org = text.match(/\b([A-Z]{4,})\b/)?.[1];
-    if (org) drafts.push(`${org} shot down a drone and the operator had to press one button.`);
+  if (/(shot down|downs|destroyed)/.test(t) && /interceptor/.test(t) && /ukrain/.test(t) && program) {
+    drafts.push(`The next buy is more of the Ukrainian interceptor that destroyed ${program}.`);
   }
   if (/sole-source/.test(t) && year && who) {
     drafts.push(`Sole-source work through ${year} keeps ${who} on this program.`);
@@ -223,22 +220,13 @@ function composeWhy(title: string, body: string, companies: string[]): string {
     else if (place && /military/.test(t)) drafts.push(`The loan for ${place} sets up buys for the military.`);
     else if (money && who) drafts.push(`${who} is using the ${money} loan to fund the buy.`);
   }
-  if (/nuclear/.test(t) && /carrier/.test(t) && /launch/.test(t) && /planes|aircraft/.test(t) && /faster/.test(t)) {
-    const what = /planes/.test(t) ? "planes" : "aircraft";
-    drafts.push(`A nuclear carrier can launch ${what} faster.`);
-  } else if (/nuclear/.test(t) && /carrier/.test(t)) {
-    drafts.push(`A nuclear carrier is what changed for ${who}.`);
-  }
   if (/white house/.test(t) && /contractors/.test(t) && /congress/.test(t)) {
     drafts.push(`The order makes contractors alert the White House before answering Congress.`);
   }
   if (/topline|reconciliation/.test(t)) {
     drafts.push(year ? `Without a topline by ${year}, new starts are frozen.` : `Without a topline, new starts are frozen.`);
   }
-  if (/contract/.test(t) && year && !/posted in error/.test(t)) drafts.push(`The contract runs through ${year}.`);
   if (who && money && program) drafts.push(`${who} has ${money} on ${program}. A rival has to unseat that incumbent to win the next lot.`);
-  if (who && program && /\b(order|buy|orders|buying)\b/.test(t)) drafts.push(`${who} is buying more ${program}.`);
-  else if (who && program && /contract|award/.test(t)) drafts.push(`${who} has a contract for ${program}.`);
 
   for (const draft of drafts) {
     if (ungroundedTerms(draft, text).length || isStockHedge(draft) || grammarProblem(draft)) continue;
@@ -362,6 +350,7 @@ export function storyWhy(
     const out = cleanCopy(candidate.line);
     if (!out || tokenOverlap(out, what) > 0.6 || !allowed(out, story)) continue;
     if (/the watch item is/i.test(out) || isStockHedge(out) || restatesSummaryNumbers(out, what) || grammarProblem(out)) continue;
+    if (copiesBodySentence(out, body) || copiesBodySentence(out, title)) continue;
     if (candidate.grounded && ungroundedTerms(out, story).length) continue;
     if (candidate.grounded && tokenOverlap(out, title) > 0.6) continue;
     return out;

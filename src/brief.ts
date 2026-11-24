@@ -99,6 +99,7 @@ export function eventKey(title: string, body = ""): string | null {
   const libya = /(benghazi|libya|tunis)/.test(t);
   if (naval && libya) return "warship@libya";
   if (libya && /(sank|sunk|struck|strike)/.test(t) && /(ship|vessel|corvette|naval|convoy|drone)/.test(t)) return "warship@libya";
+  if (/\bcerberus\b/.test(t) && /\bairbus\b/.test(t)) return "cerberus@airbus";
   if (/\bmirage\b/.test(t) && /drone/.test(t)) return "mirage@drone";
   if (/nightmare|\bfpv\b/.test(t) && /(bragg|special forces)/.test(t)) return "fpv@bragg";
   if (/(shotgun|12-gauge)/.test(t) && /benning/.test(t)) return "shotgun@benning";

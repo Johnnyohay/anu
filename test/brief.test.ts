@@ -3,6 +3,7 @@ import { describe, it } from "node:test";
 import { briefTitle, classify, storyWhy } from "../src/classify.ts";
 import { cleanCopy, grammarProblem, isStockHedge, limitActor, restatesSummaryNumbers, storyWhy as storyWhyWith, tokenOverlap, ungroundedTerms, uniqueWhys } from "../src/why.ts";
 import { briefSummary, dedupeEvents, eventKey, isFiller, isListicle, materiallyNew, pickTop, sameEvent, sameStory, storyGist, storyScore } from "../src/brief.ts";
+import { copiesBodySentence } from "../src/why.ts";
 import { selectBriefVideos } from "../src/brief-videos.ts";
 import { isCaption, isRawQuote, summaryFromFields } from "../src/rss.ts";
 import { extraCompany, junkMention, matchCompanies, resolveName } from "../src/names.ts";
@@ -520,9 +521,7 @@ describe("Nov 24 brief quality", () => {
       "Pentagon in talks with GM and Ford to help build drones",
       "The Pentagon is in talks with General Motors, Ford and other manufacturers about helping mass-produce military drones.",
     );
-    assert.match(drones, /Pentagon/);
-    assert.match(drones, /GM and Ford/);
-    assert.doesNotMatch(drones, /does not name a buyer/);
+    assert.equal(drones, "");
     const buy = why(
       "BlackSky acquires data firm EpochGeo",
       "BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis.",
@@ -543,7 +542,7 @@ describe("Nov 24 brief quality", () => {
       ["Israeli firm says its new spy drone broke a range record", "An Israeli company flew a spy drone farther than its last one.", /^Israeli is/, /^$/],
       ["European officials make the case for a human spaceflight program", "European government officials want a crew vehicle.", /^European is/, /^$/],
       ["Russia rebuilds key military base 60 km from Finland", "Russia has torn down barracks at its army base near Finland.", /The Army is the party/, /^$/],
-      ["Investment firm Cerberus to buy space business of US Airbus arm", "Airbus will expand production of autonomous aircraft.", /sell Airbus/, /Cerberus is buying Airbus/],
+      ["Investment firm Cerberus to buy space business of US Airbus arm", "Airbus will expand production of autonomous aircraft.", /sell Airbus|is buying Airbus/, /^$/],
       ["$16 billion propulsion mega-contract posted in error, Air Force says", "The Air Force is planning to award the contract, but has not yet done so.", /says was posted/, /says the contract was posted/],
     ];
     for (const [title, body, absent, present] of cases) {
@@ -714,6 +713,29 @@ describe("Nov 24 brief quality", () => {
     const a = { title: "New tools for troops to gun down drones Defense News Weekly Full Episode 11.17.26", body: "A weekly segment." };
     const b = { title: "New tools for troops to gun down drones Defense News Weekly Full Episode 11.19.26", body: "The same weekly segment." };
     assert.equal(sameStory(a, b), true);
+  });
+
+  it("treats the two Cerberus Airbus headlines as one deal", () => {
+    const a = { title: "Investment firm Cerberus to buy space business of US Airbus arm", body: "Airbus will expand production of autonomous aircraft." };
+    const b = { title: "Private equity firm Cerberus to acquire Airbus' U.S. satellite business", body: "The deal brings a factory built for OneWeb under American ownership." };
+    assert.equal(eventKey(a.title, a.body), "cerberus@airbus");
+    assert.equal(sameStory(a, b), true);
+    const { kept, dropped } = dedupeEvents(
+      [{ ...a, score: 4 }, { ...b, score: 6 }],
+      [],
+    );
+    assert.equal(kept.length, 1);
+    assert.match(kept[0].title, /satellite/);
+    assert.equal(dropped.length, 1);
+  });
+
+  it("rejects a line that copies one sentence of the body", () => {
+    const body = "A Russian Navy corvette burned and capsized after being struck by Ukrainian uncrewed surface vessels while docked in Benghazi, Libya. A cargo ship was also hit.";
+    const copy = "A Russian Navy corvette burned and capsized after being struck by Ukrainian uncrewed surface vessels while docked in Benghazi, Libya.";
+    assert.equal(copiesBodySentence(copy, body), true);
+    const soWhat = why("Ukraine's campaign against Russian naval assets", body);
+    assert.equal(copiesBodySentence(soWhat, body), false);
+    assert.doesNotMatch(soWhat, /burned and capsized/);
   });
 
   it("keeps one Benghazi write-up and drops the rest of the same strike", () => {
