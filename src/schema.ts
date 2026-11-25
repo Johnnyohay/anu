@@ -61,7 +61,14 @@ export const DailyOutput = z.object({
 
 export type DailyOutput = z.infer<typeof DailyOutput>;
 export type UpdateDraft = z.infer<typeof UpdateDraft>;
-export type Update = UpdateDraft & { id: string; dApprox?: boolean; addedAt?: string; orgs?: string[] };
+export type Update = UpdateDraft & {
+  id: string;
+  dApprox?: boolean;
+  addedAt?: string;
+  orgs?: string[];
+  /** Other outlets that reported this same story. `src` stays the one we kept. */
+  sources?: { t: string; u: string }[];
+};
 export type Catalyst = z.infer<typeof Catalyst> & { id: string };
 export interface Sector { id: string; order: number; name: string; heat: number; state: string; money: string; watch: string }
 export interface Brief {

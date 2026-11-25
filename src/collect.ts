@@ -18,7 +18,7 @@ import { briefTitle, classify, storyWhy } from "./classify.ts";
 import { briefSummary, dedupeEvents, isFiller, pickTop, storyGist, storyScore, weekLine } from "./brief.ts";
 import { cleanCopy, polishWhys, uniqueWhys, type WhyContext } from "./why.ts";
 import { selectBriefVideos } from "./brief-videos.ts";
-import { flaggedFeeds, updateFeedHealth, type FeedHealth, type FeedObservation } from "./feed-health.ts";
+import { feedBadges, flaggedFeeds, updateFeedHealth, type FeedHealth, type FeedObservation } from "./feed-health.ts";
 import { matchCompanies } from "./names.ts";
 import type { Brief, Update } from "./schema.ts";
 
@@ -36,8 +36,7 @@ const FEEDS: { name: string; url: string; tier: Tier; wp?: boolean }[] = [
   { name: "Defense One", url: "https://www.defenseone.com/rss/all/", tier: "news" },
   { name: "U.S. Department of War", url: "https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945&max=10", tier: "primary" },
   { name: "Defence Blog", url: "https://defence-blog.com/feed/", tier: "news" },
-  // Cybersecurity and Army headlines used to miss every sector and were dropped.
-  // A title already saved from GovConWire is one story, not a second.
+  // The /feed/ URL often 403s. fetchFeedReport falls back to the WordPress JSON posts API.
   { name: "ExecutiveGov", url: "https://www.executivegov.com/feed/", tier: "news" },
 ];
 
@@ -226,7 +225,7 @@ desk.meta = {
   collectedAt: addedAt,
   week: weekLine(desk.updates, today),
   weekAsOf: today,
-  feedHealth: { checkedAt: addedAt, flags },
+  feedHealth: { checkedAt: addedAt, flags, badges: feedBadges(health) },
 };
 await saveDaily(desk, brief);
 await buildApi(desk);

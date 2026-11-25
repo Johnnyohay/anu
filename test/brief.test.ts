@@ -5,9 +5,9 @@ import { cleanCopy, grammarProblem, isStockHedge, limitActor, restatesSummaryNum
 import { briefSummary, dedupeEvents, eventKey, isFiller, isListicle, materiallyNew, pickTop, sameEvent, sameStory, storyGist, storyScore } from "../src/brief.ts";
 import { copiesBodySentence } from "../src/why.ts";
 import { selectBriefVideos } from "../src/brief-videos.ts";
-import { isCaption, isRawQuote, summaryFromFields } from "../src/rss.ts";
-import { extraCompany, junkMention, matchCompanies, resolveName } from "../src/names.ts";
-import { updateFeedHealth, type FeedHealth, type FeedObservation } from "../src/feed-health.ts";
+import { fallbackFeedUrls, FEED_HEADERS, fetchFeedReport, isCaption, isRawQuote, summaryFromFields } from "../src/rss.ts";
+import { cleanMention, extraCompany, junkMention, matchCompanies, resolveName } from "../src/names.ts";
+import { feedBadges, refreshFeedHealth, updateFeedHealth, type FeedHealth, type FeedObservation } from "../src/feed-health.ts";
 
 const GENERIC_SPACE = "More of the military's sensing and communications now runs through orbit, and new suppliers are getting in.";
 const GENERIC_SEA = "The Navy is short of ships and is turning to cheaper unmanned boats, which opens the door to new builders.";
@@ -521,7 +521,11 @@ describe("Nov 24 brief quality", () => {
       "Pentagon in talks with GM and Ford to help build drones",
       "The Pentagon is in talks with General Motors, Ford and other manufacturers about helping mass-produce military drones.",
     );
-    assert.equal(drones, "");
+    assert.match(drones, /General Motors/);
+    assert.match(drones, /Ford/);
+    assert.match(drones, /mass-produce/);
+    assert.doesNotMatch(drones, /in talks with General Motors, Ford and other manufacturers about helping/i);
+    assert.ok(tokenOverlap(drones, "The Pentagon is in talks with General Motors, Ford and other manufacturers about helping mass-produce military drones.") <= 0.6);
     const buy = why(
       "BlackSky acquires data firm EpochGeo",
       "BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis.",
@@ -718,7 +722,7 @@ describe("Nov 24 brief quality", () => {
   it("treats the two Cerberus Airbus headlines as one deal", () => {
     const a = { title: "Investment firm Cerberus to buy space business of US Airbus arm", body: "Airbus will expand production of autonomous aircraft." };
     const b = { title: "Private equity firm Cerberus to acquire Airbus' U.S. satellite business", body: "The deal brings a factory built for OneWeb under American ownership." };
-    assert.equal(eventKey(a.title, a.body), "cerberus@airbus");
+    assert.equal(eventKey(a.title, a.body), null);
     assert.equal(sameStory(a, b), true);
     const { kept, dropped } = dedupeEvents(
       [{ ...a, score: 4 }, { ...b, score: 6 }],
@@ -761,5 +765,216 @@ describe("Nov 24 brief quality", () => {
     );
     assert.ok(army.sectors.length > 0);
     assert.notEqual(army.sectors[0].id, "");
+  });
+});
+
+describe("Nov 24 fixes", () => {
+  it("files the icebreaker at sea, the Odin app under AI, the robot scout on the ground, and the helicopter in the air", () => {
+    const ice = classify(
+      "‘A new competition space’: US Coast Guard takes icebreaker on maiden voyage to the Arctic",
+      "The U.S. Coast Guard's first new icebreaker in nearly three decades returned from a maiden voyage to the Arctic.",
+    );
+    assert.equal(ice.sectors[0].id, "sea");
+    assert.ok(!ice.sectors.some((s) => s.id === "space"));
+    const odin = classify(
+      "How a small Army team built a lightweight battle planning app: Odin",
+      "Software optimized for brigades and above does not translate to battalion and below.",
+    );
+    assert.equal(odin.sectors[0].id, "ai");
+    assert.ok(!odin.sectors.some((s) => s.id === "policy"));
+    const scout = classify(
+      "Robot scout spots targets for British troops in Kenya",
+      "A robot vehicle working with British troops in Kenya spotted targets and sent them into the British Army's targeting network.",
+    );
+    assert.equal(scout.sectors[0].id, "ground");
+    assert.ok(!scout.sectors.some((s) => s.id === "policy"));
+    const heli = classify(
+      "U.S. Special Operations Command orders more MH-47Gs",
+      "Boeing has received a $197.3 million order modification to buy more MH-47G special operations helicopters for U.S. Special Operations Command, according to a Department of War contract announcement.",
+    );
+    assert.equal(heli.sectors[0].id, "air");
+    assert.ok(!heli.sectors.some((s) => s.id === "policy"));
+  });
+
+  it("keeps Northrop sounders in space as well as primes, and does not file the Airbus space sale under air", () => {
+    const sounders = classify(
+      "Northrop Grumman Lands $291M NASA Contract for NOAA NEON Microwave Sounders",
+      "The contract runs through April 2042 and covers three instruments aimed at improving National Weather Service forecasts.",
+    );
+    assert.ok(sounders.sectors.some((s) => s.id === "space"));
+    assert.ok(sounders.sectors.some((s) => s.id === "primes"));
+    const sale = classify(
+      "Investment firm Cerberus to buy space business of US Airbus arm",
+      "Airbus intends for its US subsidiary to double down on production of autonomous aircraft as the market for drones continues to expand.",
+    );
+    assert.equal(sale.sectors[0].id, "space");
+    assert.ok(!sale.sectors.some((s) => s.id === "air"));
+  });
+
+  it("leaves policy in place for a real budget story and drops it when the only hit is the word Army", () => {
+    const hearing = classify(
+      "Senate grills acting Navy secretary on Iran war costs, extended deployments",
+      "Lawmakers pressed him about ballooning Iran war costs.",
+    );
+    assert.equal(hearing.sectors[0].id, "policy");
+    const drones = classify(
+      "Pentagon in talks with GM and Ford to help build drones",
+      "The Pentagon is in talks with General Motors and Ford about military drones.",
+    );
+    assert.equal(drones.sectors[0].id, "air");
+    assert.ok(!drones.sectors.some((s) => s.id === "policy"));
+  });
+
+  it("strips a trailing verb and blocks outlets, schools, and generic nouns", () => {
+    const text = "Amentum Reports earnings. The Wall Street Journal reported. Honolulu Community College hosted. First All-Guardian Squadron Graduates Officer Training School. Risks to Energy Infrastructure.";
+    assert.equal(resolveName("Amentum Reports", text, []), "Amentum");
+    assert.equal(resolveName("Northrop Grumman Lands", "Northrop Grumman Lands a contract.", ["Northrop Grumman"]), "Northrop Grumman");
+    assert.equal(cleanMention("Energy Infrastructure", text, []), null);
+    assert.equal(cleanMention("The Wall Street Journal", text, []), null);
+    assert.equal(cleanMention("Honolulu Community College", text, []), null);
+    assert.equal(cleanMention("Officer Training School", text, []), null);
+    assert.equal(junkMention("First All-Guardian", text), true);
+    assert.equal(extraCompany("The Wall Street Journal", text), false);
+  });
+
+  it("drops contests, archaeological notes, and routine training, and keeps a live-fire result", () => {
+    assert.equal(isFiller("Airman’s Spicy Chicken Dish Wins National Competition—and It’s Coming Soon to Some Bases", "An Airman took first place in the culinary competition."), true);
+    assert.equal(isFiller("Corps of Engineers Navigates Historic Archaeological Discoveries in Hungary", "The team stumbled upon archaeological sites."), true);
+    assert.equal(isFiller("Kearsarge Conducts Surface Warfare Advanced Tactical Training", "The ship participated in training designed to increase interoperability."), true);
+    assert.equal(isFiller("Turkish naval gun system shoots down jet drone in live-fire test", "A twin-cannon ship defense system shot down a jet-powered drone."), false);
+  });
+
+  it("merges same-day stories that share a company or a rare program, and keeps every source", () => {
+    const day = "2026-11-24";
+    type Row = { title: string; body: string; d: string; score: number; src: { t: string; u: string }; sources?: { t: string; u: string }[] };
+    const cerberusA: Row = { title: "Investment firm Cerberus to buy space business of US Airbus arm", body: "Airbus will expand production of autonomous aircraft.", d: day, score: 4, src: { t: "Breaking Defense", u: "https://breakingdefense.com/cerberus" } };
+    const cerberusB = { title: "Private equity firm Cerberus to acquire Airbus' U.S. satellite business", body: "The deal brings a factory built for OneWeb under American ownership.", d: day, score: 8, src: { t: "SpaceNews", u: "https://spacenews.com/cerberus" } };
+    const lynxA = { title: "Ukrainian army gets German Lynx fighting vehicles", body: "Ukrainian soldiers are crewing Rheinmetall's Lynx infantry fighting vehicles.", d: day, score: 3, src: { t: "Defence Blog", u: "https://defence-blog.com/lynx" } };
+    const lynxB = { title: "Lynx KF41 Fighting Vehicles, Newly Arrived In Ukraine, Will Take On Counter-Drone Mission", body: "Ukraine has received its first batch of Lynx KF41 Infantry Fighting Vehicles from Germany.", d: day, score: 6, src: { t: "The War Zone", u: "https://www.twz.com/lynx" } };
+    const dome = { title: "White House seeks funding exemptions for Golden Dome, Trump battleship in next funding stopgap", body: "The Pentagon's munitions ramp could face turmoil if anomalies for key programs are not approved.", d: day, score: 7, src: { t: "Breaking Defense", u: "https://breakingdefense.com/dome" } };
+    const cr = { title: "Ford-class Redesign, Battleship Funds on White House List for CR Anomaly Funding", body: "The Trump administration wants Congress to fund the Trump-class battleship in the next patchwork spending bill.", d: day, score: 4, src: { t: "USNI News", u: "https://news.usni.org/cr" } };
+    const gm = { title: "Pentagon in talks with GM and Ford to help build drones", body: "The Pentagon is in talks with General Motors, Ford and other manufacturers about helping mass-produce military drones.", d: day, score: 6, src: { t: "Defence Blog", u: "https://defence-blog.com/gm" } };
+    const ford = { title: "Ford in talks with the Pentagon to supply military vehicles", body: "Ford said it has held talks with the Pentagon about supplying military vehicles.", d: day, score: 2, src: { t: "Defense News", u: "https://www.defensenews.com/ford" } };
+    const other = { title: "Canada's air force bets on F-35 as its core fighter jet", body: "Canada sketched a future fighter fleet built around the F-35.", d: day, score: 5, src: { t: "Defence Blog", u: "https://defence-blog.com/f35" } };
+    const { kept, dropped } = dedupeEvents([cerberusA, cerberusB, lynxA, lynxB, dome, cr, gm, ford, other] as Row[], []);
+    assert.equal(kept.length, 5);
+    const byUrl = Object.fromEntries(kept.map((item) => [item.src.u, item]));
+    assert.ok(byUrl[cerberusB.src.u]);
+    assert.deepEqual(byUrl[cerberusB.src.u].sources, [{ t: "Breaking Defense", u: cerberusA.src.u }]);
+    assert.ok(byUrl[lynxB.src.u].sources?.some((s) => s.t === "Defence Blog"));
+    assert.ok(byUrl[dome.src.u].sources?.some((s) => s.t === "USNI News"));
+    assert.ok(byUrl[gm.src.u].sources?.some((s) => s.t === "Defense News"));
+    assert.equal(dropped.length, 4);
+    assert.equal(sameStory(cerberusA, other), false);
+  });
+
+  it("writes a consequence for the CR anomaly, the Airbus sale, CAMM-MR, the SPAC, and the drone talks", () => {
+    const dome = why(
+      "White House seeks funding exemptions for Golden Dome, Trump battleship in next funding stopgap",
+      "The Pentagon's munitions ramp up could also face turmoil if anomalies for key programs are not approved, the White House warned.",
+    );
+    assert.match(dome, /Golden Dome/);
+    assert.match(dome, /battleship/);
+    assert.match(dome, /turmoil/);
+    assert.ok(tokenOverlap(dome, "The Pentagon's munitions ramp up could also face turmoil if anomalies for key programs are not approved, the White House warned.") <= 0.6);
+    const sale = why(
+      "Private equity firm Cerberus to acquire Airbus' U.S. satellite business",
+      "The deal brings a factory built for OneWeb's broadband constellation under American ownership.",
+    );
+    assert.match(sale, /Cerberus/);
+    assert.match(sale, /OneWeb/);
+    assert.match(sale, /American ownership/);
+    assert.equal(copiesBodySentence(sale, "The deal brings a factory built for OneWeb's broadband constellation under American ownership."), false);
+    const camm = why(
+      "Poland, UK sign deal to develop CAMM-MR missile",
+      "Poland and the United Kingdom signed an agreement that opens the way to developing CAMM-MR, a new air defense missile meant to reach beyond 100 km.",
+    );
+    assert.match(camm, /CAMM-MR/);
+    assert.match(camm, /100/);
+    assert.ok(tokenOverlap(camm, "Poland, UK sign deal to develop CAMM-MR missile") <= 0.6);
+    const spac = why(
+      "Quantum Space Closes SPAC Merger With Inflection Point Ahead of NYSE Debut",
+      "Quantum Space is set to begin trading on NYSE as QSPC following its merger with special purpose acquisition company Inflection Point.",
+    );
+    assert.match(spac, /QSPC/);
+    assert.match(spac, /Inflection Point/);
+    assert.equal(isStockHedge(spac), false);
+    assert.deepEqual(ungroundedTerms(spac, "Quantum Space Closes SPAC Merger With Inflection Point Ahead of NYSE Debut. Quantum Space is set to begin trading on NYSE as QSPC following its merger with special purpose acquisition company Inflection Point."), []);
+    const thin = why("Investment firm Cerberus to buy space business of US Airbus arm", "Airbus will expand production of autonomous aircraft.");
+    assert.equal(thin, "");
+  });
+
+  it("falls back from a 403 RSS feed to the WordPress JSON posts, with a browser user agent", async () => {
+    const calls: { url: string; ua: string }[] = [];
+    const original = globalThis.fetch;
+    globalThis.fetch = (async (url: string | URL, init?: RequestInit) => {
+      const headers = init?.headers as Record<string, string>;
+      calls.push({ url: String(url), ua: headers["user-agent"] ?? "" });
+      if (String(url).includes("/wp-json/")) {
+        return new Response(JSON.stringify([{
+          date: "2026-11-24T17:34:22",
+          link: "https://www.executivegov.com/articles/nro-nrol-136",
+          title: { rendered: "NRO Sends NROL-136 to Orbit" },
+          excerpt: { rendered: "NRO launched a satellite for the proliferated architecture." },
+        }]), { status: 200, headers: { "content-type": "application/json" } });
+      }
+      return new Response("blocked", { status: 403 });
+    }) as typeof fetch;
+    try {
+      assert.ok(FEED_HEADERS["user-agent"].includes("Chrome"));
+      assert.ok(fallbackFeedUrls("https://www.executivegov.com/feed/").some((u) => u.includes("/wp-json/")));
+      const report = await fetchFeedReport("ExecutiveGov", "https://www.executivegov.com/feed/");
+      assert.equal(report.error, undefined);
+      assert.equal(report.items.length, 1);
+      assert.match(report.items[0].title, /NROL-136/);
+      assert.equal(report.items[0].date, "2026-11-24");
+      assert.equal(calls.length, 2);
+      assert.match(calls[0].ua, /Chrome/);
+      assert.match(calls[1].url, /wp-json/);
+    } finally {
+      globalThis.fetch = original;
+    }
+  });
+
+  it("badges a feed down on the first failure, and shows a stuck newest date after the feed recovers", () => {
+    let health: FeedHealth | null = null;
+    health = updateFeedHealth(health, [{
+      name: "ExecutiveGov", url: "https://www.executivegov.com/feed/", fetched: 0, inWindow: 0, added: 0, duplicates: 0, error: "HTTP 403",
+    }], "2026-11-24", "2026-11-24T14:00:00.000Z");
+    assert.equal(health.feeds.ExecutiveGov.down, true);
+    assert.equal(health.feeds.ExecutiveGov.flag, undefined);
+    const badges = feedBadges(health);
+    assert.equal(badges[0].kind, "down");
+    assert.match(badges[0].label, /feed down/);
+    assert.match(badges[0].label, /HTTP 403/);
+
+    const runs = ["2026-11-20", "2026-11-21", "2026-11-22", "2026-11-23"].map((date) => ({
+      name: "SpaceNews", url: "https://spacenews.com/feed/", fetched: 16, inWindow: 2, added: 0, duplicates: 2, newest: "2026-11-19",
+    }));
+    let space: FeedHealth | null = null;
+    for (const row of runs) space = updateFeedHealth(space, [row], row.newest ? "2026-11-23" : row.name, "2026-11-23T14:00:00.000Z");
+    // Replay each day with that day's date so the stuck span is the run dates, not one repeated day.
+    space = null;
+    for (const date of ["2026-11-19", "2026-11-20", "2026-11-21", "2026-11-22", "2026-11-23", "2026-11-24"]) {
+      const newest = date === "2026-11-24" ? "2026-11-24" : "2026-11-19";
+      space = updateFeedHealth(space, [{
+        name: "SpaceNews", url: "https://spacenews.com/wp-json/wp/v2/posts", fetched: 15, inWindow: date === "2026-11-23" ? 0 : 4, added: 0, duplicates: 4, newest,
+      }], date, `${date}T14:00:00.000Z`);
+    }
+    assert.equal(space!.feeds.SpaceNews.stale, undefined);
+    assert.match(space!.feeds.SpaceNews.flag ?? "", /2026-11-20–2026-11-23/);
+    assert.match(space!.feeds.SpaceNews.flag ?? "", /stuck at 2026-11-19/);
+    let lag: FeedHealth | null = null;
+    for (const date of ["2026-11-21", "2026-11-22", "2026-11-23", "2026-11-24"]) {
+      lag = updateFeedHealth(lag, [{
+        name: "DefenseScoop", url: "https://defensescoop.com/feed/", fetched: 10, inWindow: 3, added: 0, duplicates: 2,
+        newest: date === "2026-11-24" ? "2026-11-24" : "2026-11-20",
+      }], date, `${date}T14:00:00.000Z`);
+    }
+    assert.equal(lag!.feeds.DefenseScoop.flag, undefined);
+    const staleBadge = feedBadges(space!).find((b) => b.name === "SpaceNews");
+    assert.equal(staleBadge?.kind, "stale");
+    const again = refreshFeedHealth(space!, "2026-11-24");
+    assert.match(again.feeds.SpaceNews.flag ?? "", /stuck at 2026-11-19/);
   });
 });

@@ -41,12 +41,17 @@ export function isListicle(title: string, body = ""): boolean {
   return /\b(roundup|what you need to know|check out these|week in review|sponsored|list of)\b/i.test(text);
 }
 
-/** Ceremonies, promo, and show episodes are not brief stories. */
+/** Ceremonies, promo, show episodes, contests, and routine training are not brief stories. */
 export function isFiller(title: string, body = ""): boolean {
   const text = `${title} ${body}`;
   if (/\b(oath of enlistment|demo team returns|full episode|week in review)\b/i.test(text)) return true;
   if (/\bMOAA\b/.test(title) || /\bheadlines$/i.test(title.trim())) return true;
   if (/\bveterans bills\b/i.test(title)) return true;
+  if (/\b(culinary|cook-?off|archaeolog\w*|recipe|spicy chicken)\b/i.test(text)) return true;
+  if (/\b(ceremony|ceremonies|change of command|ribbon cutting)\b/i.test(title)) return true;
+  if (/\b(graduates?|graduation)\b/i.test(title) && /\b(school|squadron|class)\b/i.test(text)) return true;
+  if (/\bwins?\b/i.test(title) && /\b(competition|contest)\b/i.test(title) && !/\b(contract|drone|missile|weapon|laser)\b/i.test(text)) return true;
+  if (/\b(conducts|holds|completes)\b/i.test(title) && /\btraining\b/i.test(title) && !/\$\d|\b(contract|award|deploy|shot down|destroys)\b/i.test(text)) return true;
   return false;
 }
 
@@ -99,7 +104,6 @@ export function eventKey(title: string, body = ""): string | null {
   const libya = /(benghazi|libya|tunis)/.test(t);
   if (naval && libya) return "warship@libya";
   if (libya && /(sank|sunk|struck|strike)/.test(t) && /(ship|vessel|corvette|naval|convoy|drone)/.test(t)) return "warship@libya";
-  if (/\bcerberus\b/.test(t) && /\bairbus\b/.test(t)) return "cerberus@airbus";
   if (/\bmirage\b/.test(t) && /drone/.test(t)) return "mirage@drone";
   if (/nightmare|\bfpv\b/.test(t) && /(bragg|special forces)/.test(t)) return "fpv@bragg";
   if (/(shotgun|12-gauge)/.test(t) && /benning/.test(t)) return "shotgun@benning";
@@ -123,15 +127,86 @@ function titleAlike(a: string, b: string): boolean {
   return inter.length >= 3 && inter.length / union >= 0.45;
 }
 
+const ANCHOR_BLOCK = new Set(
+  "army navy marines marine congress senate pentagon nasa noaa nato ukraine ukrainian russia russian china chinese germany german poland polish britain british israel israeli iran iranian kenya hungary japan japanese korea korean australia canada canadian finland finnish sweden swedish turkey france french italy italian india taiwan philippines philippine europe european american trump biden house white force forces defense defence space news command department national united states kingdom corps guard coast service weather office agency group first general special operations private investment equity firm opening remarks program looks readiness questions monday tuesday wednesday thursday friday saturday sunday report reports says said news journal times post the will take newly arrived counter mission fighting vehicles infantry seeks funds list from with have been were more most next over into about after before under their would could should other helping military and for its this that systems drone drones florida democrats congressional software network satellite satellites aircraft company business production contract contracts naval launches launch fleet energy industry innovation health safety campaign nuclear research online connected infrastructure".split(" "),
+);
+const PHRASE_BLOCK = /^(white house|air force|space force|marine corps|department of war|department of defense|special operations command|coast guard|national weather service|united states|united kingdom|wall street journal|ground forces|armament agency|breaking defense|defense news|defense one|the war zone|air & space forces)$/i;
+
+export interface StoryRef { title: string; body?: string; d?: string }
+
+/** Companies and program codes worth merging on. Generic institutions and outlets are not. */
+export function storyAnchors(title: string, body = ""): Set<string> {
+  const text = `${title} ${body}`;
+  const out = new Set<string>();
+  const add = (raw: string) => {
+    const key = raw.toLowerCase().replace(/\s+/g, " ").trim();
+    if (key.length < 4 || ANCHOR_BLOCK.has(key) || PHRASE_BLOCK.test(key)) return;
+    if (key.split(" ").every((w) => ANCHOR_BLOCK.has(w))) return;
+    out.add(key);
+  };
+  for (const m of text.matchAll(/\b([A-Z]{2,}(?:-[A-Z0-9]+)+)\b/g)) add(m[1]);
+  for (const m of text.matchAll(/\b([A-Z]{1,6}-\d+[A-Z0-9]*)\b/g)) add(m[1]);
+  for (const m of text.matchAll(/\b([A-Z]{2,}\d+[A-Z0-9]*)\b/g)) add(m[1]);
+  for (const m of text.matchAll(/\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)\b/g)) add(m[1]);
+  for (const m of text.matchAll(/\b([A-Z][a-z]{3,})(?!-)\b/g)) {
+    if ((m.index ?? 0) === 0) continue;
+    add(m[1]);
+  }
+  return out;
+}
+
+function sameDay(a: StoryRef, b: StoryRef): boolean {
+  if (a.d && b.d) return a.d === b.d;
+  return true;
+}
+
+/** A whole word in a headline, not the "Ford" inside "Ford-class". */
+function titleHasWord(title: string, word: string): boolean {
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`(?<![a-z0-9])${escaped}(?![a-z0-9-])`, "i").test(title);
+}
+
+const TITLE_WORD_BLOCK = new Set(
+  `${[...ANCHOR_BLOCK].join(" ")} shipbuilding competition redesign automated infrastructure solution spending launches vehicle vehicles fighting fundamental readiness electronic`.split(" "),
+);
+
+function titleWords(title: string): Set<string> {
+  return new Set(
+    title.toLowerCase().replace(/[^a-z0-9]+/g, " ").split(/\s+/).filter((w) => w.length >= 8 && !TITLE_WORD_BLOCK.has(w)),
+  );
+}
+
 /**
- * Same event across feeds, by a shared event key or by the headline itself.
+ * A headline word that shows up in exactly two stories that day.
+ * "battleship" in two CR headlines is one story. A word that is everywhere is not.
+ */
+function sharesRareTitle(a: StoryRef, b: StoryRef, peers: StoryRef[]): boolean {
+  if (!a.d || !b.d || a.d !== b.d) return false;
+  const day = peers.filter((p) => p.d === a.d);
+  const freq = new Map<string, number>();
+  for (const peer of day) for (const word of titleWords(peer.title)) freq.set(word, (freq.get(word) ?? 0) + 1);
+  const left = titleWords(a.title);
+  const right = titleWords(b.title);
+  for (const word of left) if (right.has(word) && freq.get(word) === 2) return true;
+  return false;
+}
+
+/**
+ * Same event across feeds, by a shared event key, the headline, or the same
+ * companies and programs. One shared company merges only inside a single day.
  * Appropriations bills are not collapsed here; `sameEvent` does that inside one day.
  */
-export function sameStory(a: { title: string; body?: string }, b: { title: string; body?: string }): boolean {
+export function sameStory(a: StoryRef, b: StoryRef, peers?: StoryRef[]): boolean {
   const ka = eventKey(a.title, a.body);
   const kb = eventKey(b.title, b.body ?? "");
   if (ka && ka === kb) return true;
-  return titleAlike(a.title, b.title);
+  if (titleAlike(a.title, b.title)) return true;
+  const shared = [...storyAnchors(a.title, a.body)].filter((token) => storyAnchors(b.title, b.body).has(token))
+    .filter((token) => titleHasWord(a.title, token) && titleHasWord(b.title, token));
+  if (shared.length >= 2 && sameDay(a, b)) return true;
+  if (shared.length >= 1 && a.d && b.d && a.d === b.d) return true;
+  if (peers && sharesRareTitle(a, b, peers)) return true;
+  return false;
 }
 
 /** True when two items are the same event told twice, not two events in one sector. */
@@ -144,8 +219,23 @@ export function sameEvent(a: { title: string; body?: string }, b: { title: strin
 
 export interface DedupeDrop<T> { item: T; because: string }
 
+type WithSource = { src?: { t: string; u: string }; sources?: { t: string; u: string }[] };
+
+/** Keep the survivor and attach the other outlet instead of throwing the link away. */
+function mergeSources(host: WithSource, other: WithSource): void {
+  const incoming = [...(other.src ? [other.src] : []), ...(other.sources ?? [])];
+  if (!incoming.length) return;
+  const list = host.sources ??= [];
+  const seen = new Set([host.src?.u, ...list.map((s) => s.u)].filter(Boolean));
+  for (const src of incoming) {
+    if (!src.u || seen.has(src.u)) continue;
+    list.push({ t: src.t, u: src.u });
+    seen.add(src.u);
+  }
+}
+
 /** Keep the highest-scored write-up of each event. Recent days count as already told. */
-export function dedupeEvents<T extends { title: string; body?: string; score: number }>(
+export function dedupeEvents<T extends { title: string; body?: string; score: number; d?: string }>(
   items: T[],
   prior: { title: string; body?: string; d?: string }[] = [],
 ): { kept: T[]; dropped: DedupeDrop<T>[] } {
@@ -158,9 +248,20 @@ export function dedupeEvents<T extends { title: string; body?: string; score: nu
       dropped.push({ item, because: earlier.d ? `already covered on ${earlier.d}` : "already covered" });
       continue;
     }
-    const twin = kept.find((p) => sameStory(p, item));
+    const twin = kept.find((p) => sameStory(p, item, ranked));
     if (twin) {
-      dropped.push({ item, because: `same event as “${twin.title}”` });
+      const whyOf = (row: { why?: string }) => (row.why ?? "").trim();
+      const incoming = item as WithSource & { why?: string };
+      const host = twin as WithSource & { why?: string };
+      // Keep the write-up that states a consequence when the higher score does not.
+      if (whyOf(incoming) && !whyOf(host)) {
+        mergeSources(incoming, host);
+        kept[kept.indexOf(twin)] = item;
+        dropped.push({ item: twin, because: `same event as “${item.title}”` });
+      } else {
+        mergeSources(host, incoming);
+        dropped.push({ item, because: `same event as “${twin.title}”` });
+      }
       continue;
     }
     kept.push(item);

@@ -1,7 +1,7 @@
 import type { Desk } from "./store.ts";
 import type { Update } from "./schema.ts";
 import { tagOrganizations } from "./hf.ts";
-import { junkMention, matchCompanies, nameParts, resolveName } from "./names.ts";
+import { cleanMention, junkMention, matchCompanies, nameParts, resolveName } from "./names.ts";
 
 const inDirectory = (name: string, names: string[]) =>
   names.some((n) => n === name || nameParts(n).includes(name));
@@ -23,10 +23,9 @@ export async function tagCompanies(desk: Desk, updates: Update[]): Promise<numbe
     const fromNer = tags[i].companies
       .map((org) => resolveName(org, text, names))
       .filter((s): s is string => !!s);
-    u.orgs = tags[i].orgs.filter((org) => !junkMention(org, text));
-    u.companies = [...new Set([...matchCompanies(text, names), ...u.companies, ...fromNer])].filter(
-      (name) => !junkMention(name, text) && (inDirectory(name, names) || fromNer.includes(name)),
-    );
+    u.orgs = [...new Set(tags[i].orgs.map((org) => cleanMention(org, text, names) ?? (junkMention(org, text) ? "" : org)).filter((s) => !!s))];
+    u.companies = [...new Set([...matchCompanies(text, names), ...u.companies, ...fromNer].map((name) => cleanMention(name, text, names) ?? ""))]
+      .filter((name) => !!name && (inDirectory(name, names) || fromNer.includes(name)));
     if (!before && u.companies.length) gained++;
   });
   return gained;

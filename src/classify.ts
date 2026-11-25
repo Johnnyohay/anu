@@ -25,26 +25,28 @@ const rule = (re: RegExp, title: number, body: number): Rule => ({ re, title, bo
 const SPECS: Spec[] = [
   { id: "ai", priority: 50, rules: [
     rule(w("artificial intelligence|machine learning|\\bLLM|Palantir|Maven|CDAO|Scale AI|JADC2|CJADC2|data platform"), 6, 3),
+    rule(w("apps?|battle planning"), 6, 3),
     rule(w("AI|command and control|C2"), 4, 2),
     rule(w("software|algorithm"), 2, 1),
   ]},
   { id: "air", priority: 58, rules: [
-    rule(w("drones?|UAS|UAV|unmanned aircraft|loitering munition|CCA|collaborative combat aircraft|FPV|Drone Dominance|Replicator|F-35s?|F-47s?|B-21s?|bombers?|Shield AI|Air Force|USAF"), 6, 3),
+    rule(w("drones?|UAS|UAV|unmanned aircraft|loitering munition|CCA|collaborative combat aircraft|FPV|Drone Dominance|Replicator|F-35s?|F-47s?|B-21s?|bombers?|helicopters?|Shield AI|Air Force|USAF"), 6, 3),
     rule(w("fighter"), 4, 2),
     rule(w("aircraft"), 2, 1),
   ]},
   { id: "sea", priority: 56, rules: [
-    rule(w("corvette|warship|naval base|uncrewed surface|submarine|USV|UUV|unmanned surface|undersea|frigate|destroyer|carrier|shipbuilding|shipyard|Saronic"), 8, 4),
-    rule(w("ships?|maritime"), 4, 2),
+    rule(w("corvette|warship|naval base|uncrewed surface|submarine|USV|UUV|unmanned surface|undersea|frigate|destroyer|carrier|shipbuilding|shipyard|Saronic|icebreakers?|coast guard"), 8, 4),
+    rule(w("ships?|maritime|cutter"), 4, 2),
     rule(w("Navy"), 2, 1),
   ]},
   { id: "ground", priority: 54, rules: [
-    rule(w("ground robots?|UGV|unmanned ground|robotic combat vehicle|Abrams|tank"), 6, 3),
+    rule(w("ground robots?|UGV|unmanned ground|uncrewed ground|robotic combat vehicle|robots?|robotic|Abrams|tank"), 6, 3),
     rule(w("armou?red|infantry fighting"), 4, 2),
   ]},
   { id: "space", priority: 60, rules: [
-    rule(w("Space Force|satellite|orbit|Starshield|SpaceX|constellation|SDA"), 6, 3),
-    rule(w("space"), 4, 2),
+    rule(w("Space Force|satellite|orbit|Starshield|SpaceX|constellation|SDA|microwave sounders?"), 6, 3),
+    // "competition space" and "office space" are not the space domain.
+    rule(w("(?<!competition\\s|white\\s|office\\s|trade\\s|problem\\s|solution\\s|design\\s|color\\s|colour\\s)space"), 4, 2),
     rule(w("launch"), 2, 1),
   ]},
   { id: "missiledef", priority: 85, rules: [
@@ -133,10 +135,33 @@ const TYPE_RULES: [string, RegExp][] = [
   ["Tech milestone", w("test-?fires?|test launch|prototype|first flight|first time|downs|destroys|demonstrates|fielded")],
 ];
 
+const STRONG_POLICY = [
+  w("NDAA|appropriations|continuing resolution|acquisition reform|executive order|House Armed Services|Hegseth|confirmation"),
+  w("Senate|Congress|lawmakers|budget|grills"),
+];
+const VEHICLE = new Set(["air", "sea", "ground", "space"]);
+
+/** Policy from a bare Pentagon/Army/DoW mention, with no budget or oversight signal. */
+function weakPolicyOnly(title: string, body: string): boolean {
+  return !STRONG_POLICY.some((re) => re.test(title) || (body && re.test(body)));
+}
+
 export function classify(title: string, body: string): { sectors: SectorHit[]; type: string } {
-  const sectors = SPECS
+  let hits = SPECS
     .map((spec) => ({ id: spec.id, priority: spec.priority, ...scoreSpec(spec, title, body) }))
-    .filter((h) => h.score >= 2)
+    .filter((h) => h.score >= 2);
+  // Policy is a last resort: a bare service name does not count once any other sector matches.
+  if (hits.some((h) => h.id !== "policy") && weakPolicyOnly(title, body)) hits = hits.filter((h) => h.id !== "policy");
+  // A headline that is clearly one domain (space business, icebreaker) does not also take a
+  // different domain that showed up only as an aside in the body.
+  const headlined = hits
+    .filter((h) => VEHICLE.has(h.id) && h.titleScore >= 4)
+    .sort((a, b) => b.titleScore - a.titleScore || b.score - a.score);
+  if (headlined.length) {
+    const lead = headlined[0].id;
+    hits = hits.filter((h) => !VEHICLE.has(h.id) || h.id === lead || h.titleScore >= 4);
+  }
+  const sectors = hits
     .sort((a, b) => b.score - a.score || b.priority - a.priority)
     .slice(0, 4)
     .map(({ id, score, titleScore }) => ({ id, score, titleScore }));

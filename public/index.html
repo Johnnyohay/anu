@@ -120,6 +120,10 @@ main>*{min-width:0;width:100%}
 .cos .bar i{display:block;height:100%;background:var(--fg);opacity:.75;border-radius:3px}
 .areas .d{font-family:var(--ui);font-weight:700;font-size:12px;margin-left:6px}
 .method{font-size:12.5px;color:var(--muted);margin:12px 0 0}
+.feedbadges{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
+.feedbadge{font-family:var(--ui);font-size:12.5px;font-weight:700;letter-spacing:.02em;border-radius:999px;padding:5px 11px;border:1px solid var(--bad);color:var(--bad);background:color-mix(in srgb, var(--bad) 12%, var(--surface))}
+.feedbadge.stale{border-color:#C99332;color:#8A5A12;background:#FBF6EA}
+@media (prefers-color-scheme:dark){.feedbadge.stale{color:#F0C36A;background:#2A2416;border-color:#C99332}}
 
 /* Coming up + busiest areas */
 .duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:14px;align-items:start}
@@ -284,6 +288,7 @@ body.expert .teach{display:none!important}
 </header>
 
 <main class="gut" id="top">
+  <div class="wrap feedbadges" id="feed-flags" hidden></div>
   <section class="wrap teach" id="lesson-wrap" aria-label="Lesson of the day" hidden></section>
 
   <section class="wrap" aria-labelledby="top5">
@@ -339,8 +344,6 @@ body.expert .teach{display:none!important}
     <div class="sec-head"><h2 id="clips-h">Watch with today's stories</h2><p id="clips-p">Only clips that share a program, system, or place with a story above.</p></div>
     <div id="clips"></div>
   </section>
-  <p class="wrap method" id="feed-flags" hidden></p>
-
   <section class="wrap" aria-label="Earlier briefs"><div class="archive" id="archive"></div></section>
 
   <div id="detail" hidden></div>
@@ -456,7 +459,7 @@ function render() {
   if (newsT) (brief.stories || []).forEach(s => {
     const u = byId.get(s.ref) || {};
     const area = (u.sectors || [])[0] || [...sectors.values()].find(x => x.name === s.tag)?.id || "";
-    cards.push({ topic: newsT, kind: "news", h: s.h, what: clean(s.what || u.body), full: clean(u.body || s.what), you: s.you, src: u.src || null, d: u.d || brief.date, u, area, areaName: nameOf(area) || s.tag });
+    cards.push({ topic: newsT, kind: "news", h: s.h, what: clean(s.what || u.body), full: clean(u.body || s.what), you: s.you, src: u.src || null, sources: u.sources || [], d: u.d || brief.date, u, area, areaName: nameOf(area) || s.tag });
   });
   if (houseT) {
     const pick = HN.filter(n => within(n.d, 3)).sort((a, b) => (b.topics || []).includes("rates") - (a.topics || []).includes("rates") || b.d.localeCompare(a.d));
@@ -543,7 +546,7 @@ function render() {
         ${x.you && String(x.you).trim() ? `<div><p class="lbl">Why it matters</p><p>${esc(x.you)}</p></div>` : ""}
         ${termsHTML(terms)}
         <button class="open" data-open="${i + 1}">See the full story, context and related news →</button>
-        <div class="links">${url ? `<a class="src" href="${esc(url)}" target="_blank" rel="noopener">Read it at ${esc(x.src.t)}, ${esc(fmtDay(x.d, { month: "short", day: "numeric" }))} ↗</a>` : "<span></span>"}<a class="ask" href="${esc(askUrl(`Tell me more about: ${x.h}`))}">Ask about this →</a></div>
+        <div class="links">${url ? `<a class="src" href="${esc(url)}" target="_blank" rel="noopener">Read it at ${esc(x.src.t)}${(x.sources || []).length ? `, also ${(x.sources || []).map(s => esc(s.t)).join(", ")}` : ""}, ${esc(fmtDay(x.d, { month: "short", day: "numeric" }))} ↗</a>` : "<span></span>"}<a class="ask" href="${esc(askUrl(`Tell me more about: ${x.h}`))}">Ask about this →</a></div>
       </div>
     </article>`;
   }).join("") || `<p class="notice">No stories yet today.</p>`;
@@ -605,10 +608,11 @@ function render() {
         <span class="m"><span class="kind">${esc(kind)}</span>${area ? `<span>${esc(nameOf(area))}</span>` : ""}<span>${esc(u.src?.t || "")} · ${esc(fmtDay(u.d, { month: "short", day: "numeric" }))}</span></span></li>`;
     }).join("") || `<li><span style="color:var(--muted)">No deals with a dollar amount this week.</span></li>`;
     $("#deals-note").textContent = dw.length ? "Counted from headlines that announce a deal; the same deal reported by two outlets is counted once. Dollar amounts only." : "";
-    const NOT_CO = /strike group|stockpile|network|program|office|agency|command|ministry|department|congress|parliament|party|army|navy|air force|marine|guard|forces|government|council|white house|pentagon|nato|united nations/i;
+    const NOT_CO = /strike group|stockpile|network|program|office|agency|command|ministry|department|congress|parliament|party|army|navy|air force|marine|guard|forces|government|council|white house|pentagon|nato|united nations|journal|college|university|training school|high school|wall street|infrastructure|community college/i;
+    const stripCo = n => String(n).replace(/\s+(reports|says|said|orders|lands|wins|closes|acquires|launches|seeks|warns|announces|plans|gets|makes)$/i, "");
     const known = new Set(S.companies.map(c => c.name.toLowerCase()));
     const cc = new Map();
-    week.forEach(u => new Set(u.companies || []).forEach(n => { if (isName(n) && !NOT_CO.test(n)) cc.set(n, (cc.get(n) || 0) + 1); }));
+    week.forEach(u => new Set(u.companies || []).forEach(raw => { const n = stripCo(raw); if (isName(n) && !NOT_CO.test(n) && !NOT_CO.test(raw)) cc.set(n, (cc.get(n) || 0) + 1); }));
     const coRows = [...cc.entries()].sort((a, b) => b[1] - a[1] || known.has(b[0].toLowerCase()) - known.has(a[0].toLowerCase())).slice(0, 8);
     const coMax = Math.max(1, ...coRows.map(r => r[1]));
     $("#cos").innerHTML = coRows.map(([n, c]) => `<li><a href="${esc(askUrl(`What's the latest on ${n}?`))}"><span class="nm">${esc(n)}</span><span class="n">${c} ${c === 1 ? "story" : "stories"}</span><span class="bar" aria-hidden="true"><i style="width:${(c / coMax * 100).toFixed(0)}%"></i></span></a></li>`).join("") || `<li>No companies tagged this week.</li>`;
@@ -676,10 +680,15 @@ function render() {
     clipsWrap.hidden = false;
     $("#clips").innerHTML = clips.map(c => `<p><a href="https://www.youtube.com/watch?v=${encodeURIComponent(c.id || "")}" target="_blank" rel="noopener">${esc(c.title)}</a> <span class="dim">${esc((c.because || []).join(", "))}</span></p>`).join("");
   } else clipsWrap.hidden = true;
-  const flags = (S.meta && S.meta.feedHealth && S.meta.feedHealth.flags) || [];
+  const health = (S.meta && S.meta.feedHealth) || {};
+  const badges = health.badges || [];
+  const flags = health.flags || [];
   const flagEl = $("#feed-flags");
-  if (flags.length) { flagEl.hidden = false; flagEl.textContent = "Feed health: " + flags.map(f => `${f.name} (${f.flag})`).join("; "); }
-  else flagEl.hidden = true;
+  const shown = badges.length ? badges : flags.map(f => ({ name: f.name, kind: /feed down|HTTP|0 items/i.test(f.flag || "") ? "down" : "stale", label: f.flag }));
+  if (shown.length) {
+    flagEl.hidden = false;
+    flagEl.innerHTML = shown.map(b => `<span class="feedbadge ${esc(b.kind)}">${esc(b.name)}: ${esc(b.label)}</span>`).join("");
+  } else flagEl.hidden = true;
 
   $("#archive").innerHTML = `<span>Earlier briefs:</span>` + briefs.slice(0, 6).map((b, i) =>
     `<a href="${i === 0 ? "./" : `?d=${esc(b.date)}`}"${b === brief ? ' aria-current="page"' : ""}>${i === 0 ? "Latest" : esc(fmtDay(b.date, { weekday: "short", month: "short", day: "numeric" }))}</a>`).join("")
@@ -743,7 +752,7 @@ function openDetail(n) {
     <div class="sheet-top${light ? " lightbg" : ""}">
       <div class="row"><span class="k tpill"><i></i>${esc(x.topic.label)} · ${esc(d.area)}${x.u.type ? ` · ${esc(x.u.type)}` : ""}</span><button class="close" data-close>Close ✕</button></div>
       <h2 id="dh">${esc(x.h)}</h2>
-      ${x.src ? `<span class="meta">Reported by ${esc(x.src.t)} on ${esc(fmtDay(x.d, { month: "long", day: "numeric" }))}</span>` : ""}
+      ${x.src ? `<span class="meta">Reported by ${esc(x.src.t)}${(x.sources || []).length ? `; also ${(x.sources || []).map(s => esc(s.t)).join(", ")}` : ""} on ${esc(fmtDay(x.d, { month: "long", day: "numeric" }))}</span>` : ""}
     </div>
     <div class="sheet-body">
       <div class="blk"><h4>The full story</h4><p>${esc(x.full)}</p>

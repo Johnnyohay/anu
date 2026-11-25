@@ -72,8 +72,20 @@
   "collectedAt": "2026-11-24T23:21:03.529Z",
   "feedHealth": {
     "checkedAt": "2026-11-24T23:21:03.529Z",
-    "flags": []
+    "flags": [
+      {
+        "name": "SpaceNews",
+        "flag": "stale 2026-11-20–2026-11-23: newest item stuck at 2026-11-19"
+      }
+    ],
+    "badges": [
+      {
+        "name": "SpaceNews",
+        "kind": "stale",
+        "label": "stale 2026-11-20–2026-11-23: newest item stuck at 2026-11-19"
+      }
+    ]
   },
-  "week": "528 stories since 2026-11-10, led by drones (125), space (67), ships (57).",
+  "week": "529 stories since 2026-11-10, led by drones (125), space (66), ships (57).",
   "weekAsOf": "2026-11-24"
 }

@@ -324,11 +324,11 @@
       "runs": [
         {
           "date": "2026-11-24",
-          "fetched": 0,
-          "inWindow": 0,
-          "added": 0,
-          "duplicates": 0,
-          "error": "HTTP 403"
+          "fetched": 15,
+          "inWindow": 15,
+          "added": 10,
+          "duplicates": 5,
+          "newest": "2026-11-24"
         },
         {
           "date": "2026-11-23",
@@ -635,7 +635,8 @@
           "duplicates": 6,
           "newest": "2026-11-19"
         }
-      ]
+      ],
+      "flag": "stale 2026-11-20–2026-11-23: newest item stuck at 2026-11-19"
     }
   }
 }

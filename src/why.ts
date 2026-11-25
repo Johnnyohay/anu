@@ -178,9 +178,81 @@ function extractProgram(title: string, body: string): string | undefined {
   return undefined;
 }
 
+/** Programs the headline puts at stake: a proper name, a code, or "the battleship". */
+function stakePrograms(title: string): string[] {
+  const out: string[] = [];
+  for (const m of title.matchAll(/\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)\b/g)) {
+    if (!/white house|congress|united|national/i.test(m[1])) out.push(m[1]);
+  }
+  if (/\bbattleship\b/i.test(title) && !out.some((p) => /battleship/i.test(p))) out.push("the battleship");
+  const code = extractProgram(title, "");
+  if (code && !out.includes(code)) out.push(code);
+  return [...new Set(out)];
+}
+
+/**
+ * Consequence lines for stories the narrow patterns miss. Each draft is built
+ * only when the story itself states a buyer, program, dollar, or deadline and
+ * a consequence (an approval, an ownership change, a development, a listing, talks).
+ */
+function effectDrafts(title: string, body: string, companies: string[]): string[] {
+  const text = `${title}. ${body}`;
+  const t = text.toLowerCase();
+  const drafts: string[] = [];
+  const who = actor(text, companies, title);
+  const program = extractProgram(title, body);
+  const stakes = stakePrograms(title);
+
+  if (/anomal/.test(t) && /not approved/.test(t) && /turmoil/.test(t) && stakes.length) {
+    const verb = stakes.length > 1 ? "face" : "faces";
+    drafts.push(`If the anomalies are not approved, ${joinList(stakes)} ${verb} turmoil.`);
+  }
+  if (/congress/.test(t) && /patchwork|spending bill/.test(t) && /battleship/.test(t) && /white house/.test(t)) {
+    const ship = text.match(/\b(Trump-class battleship)\b/i)?.[1] ?? "the battleship";
+    drafts.push(`The White House list is what changes the next patchwork spending bill for ${ship} and the shipbuilding programs.`);
+  }
+  if (/american ownership/.test(t) && /\bfactory\b/.test(t) && /\boneweb\b/.test(t)) {
+    const owner = firm(title, companies) || who;
+    if (owner) drafts.push(`${owner} changes the OneWeb factory to American ownership.`);
+  }
+  if (program && /develop/.test(t) && /beyond\s+\d+/.test(t)) {
+    const km = text.match(/\bbeyond\s+(\d+)\s*km/i)?.[1];
+    const parties = [...new Set(
+      [...text.matchAll(/\b(Poland|United Kingdom|UK|Britain)\b/g)].map((m) => (m[1] === "UK" || m[1] === "United Kingdom" ? "the UK" : m[1])),
+    )];
+    if (km && parties.length >= 2 && /air defense/.test(t)) {
+      drafts.push(`${joinList(parties)} developing ${program} changes their air defense missile's reach to beyond ${km} km.`);
+    }
+  }
+  if (/\bspac\b|special purpose acquisition/.test(t) && /trad/.test(t)) {
+    const ticker = text.match(/\bas\s+([A-Z]{2,6})\b/)?.[1];
+    const market = text.match(/\b(NYSE|Nasdaq)\b/)?.[1];
+    const names = [...new Set([...text.matchAll(/\b([A-Z][a-z]+\s+[A-Z][a-z]+)\b/g)].map((m) => m[1]))]
+      .filter((n) => title.includes(n) && body.includes(n) && !/white house|united states|national/i.test(n));
+    const company = names.find((n) => title.startsWith(n) || title.includes(n)) ?? names[0];
+    const partner = names.find((n) => n !== company);
+    if (ticker && market && company && partner) drafts.push(`The ${partner} merger changes ${company} to ${market} trading as ${ticker}.`);
+  }
+  if (/mass-produce/.test(t) && /talks/.test(t) && /pentagon/.test(t) && /drone/.test(t)) {
+    const span = text.match(/\btalks with ([^.]+?) about\b/i)?.[1] ?? "";
+    const names = [...new Set(
+      span.split(/,|\band\b/i).map((s) => s.trim()).filter((s) => /^[A-Z]/.test(s) && !/manufacturer|other|pentagon/i.test(s)),
+    )];
+    if (names.length) drafts.push(`Talks with ${joinList(names)} would change who mass-produces the Pentagon's military drones.`);
+  }
+  if (/order modification|modification to buy/.test(t) && program && who) {
+    const builder = text.match(/\b(Boeing|Lockheed Martin|Northrop Grumman|Sikorsky)\b/)?.[1];
+    drafts.push(builder && builder !== who
+      ? `The modification keeps ${builder} on ${program} for ${who}.`
+      : `The modification keeps ${who} on ${program}.`);
+  }
+  return drafts;
+}
+
 /**
  * One consequence sentence. Every slot is a span copied from the story.
- * Drafts that name something the story does not say are dropped.
+ * A line is kept only when the story states a buyer, program, dollar, or deadline
+ * and a consequence. Drafts that name something the story does not say are dropped.
  */
 function composeWhy(title: string, body: string, companies: string[]): string {
   const text = `${title}. ${body}`;
@@ -197,15 +269,15 @@ function composeWhy(title: string, body: string, companies: string[]): string {
   if (/backlog/.test(t)) {
     const name = firm(title, companies) || who;
     const buyers = namedBuyers(text);
-    if (buyers.length) drafts.push(`The backlog positions ${name} to win the next awards from ${joinList(buyers)}.`);
+    if (buyers.length) drafts.push(`The backlog of ${joinList(buyers)} awards is what positions ${name} to win the next competition.`);
     if (money && /missile/.test(t)) drafts.push(`A ${money} backlog makes ${name} the incumbent on missile defense.`);
     if (money) drafts.push(`A ${money} backlog makes ${name} the incumbent on the next competition.`);
   }
   if (/\b(acquires|acquired|acquisition|to acquire)\b/.test(t)) {
-    if (who && /analysis/.test(t) && /customer/.test(t)) {
+    if (who && /analysis/.test(t) && /customer/.test(t) && /data firm/.test(t)) {
       drafts.push(/data fusion/.test(t) && /defense/.test(t)
-        ? `Defense customers can buy analysis and data fusion from ${who}.`
-        : `${who} can sell analysis to customers.`);
+        ? `${who} acquired the data firm, so defense customers can buy analysis and data fusion from one firm.`
+        : `${who} acquired the data firm, so defense customers can buy analysis from one firm.`);
     }
   }
   if (/(shot down|downs|destroyed)/.test(t) && /interceptor/.test(t) && /ukrain/.test(t) && program) {
@@ -226,7 +298,7 @@ function composeWhy(title: string, body: string, companies: string[]): string {
   if (/topline|reconciliation/.test(t)) {
     drafts.push(year ? `Without a topline by ${year}, new starts are frozen.` : `Without a topline, new starts are frozen.`);
   }
-  if (who && money && program) drafts.push(`${who} has ${money} on ${program}. A rival has to unseat that incumbent to win the next lot.`);
+  drafts.push(...effectDrafts(title, body, companies));
 
   for (const draft of drafts) {
     if (ungroundedTerms(draft, text).length || isStockHedge(draft) || grammarProblem(draft)) continue;

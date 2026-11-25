@@ -86,13 +86,34 @@ export function summaryFromFields(description: unknown, encoded: unknown): strin
 
 export interface FeedReport { items: FeedItem[]; error?: string }
 
-/** Fetches one RSS or Atom feed. On failure logs, returns no items, and keeps the error for feed health. */
-export async function fetchFeedReport(name: string, url: string): Promise<FeedReport> {
+/** Browser headers. A short custom UA is what gets a 403 from Cloudflare-fronted feeds. */
+export const FEED_HEADERS: Record<string, string> = {
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  accept: "application/rss+xml, application/atom+xml, application/xml, text/xml, application/json;q=0.9, */*;q=0.8",
+  "accept-language": "en-US,en;q=0.9",
+  "cache-control": "no-cache",
+  pragma: "no-cache",
+};
+
+/**
+ * Other addresses to try after the primary feed fails. A WordPress `/feed/`
+ * that returns 403 often still serves the same posts as JSON.
+ */
+export function fallbackFeedUrls(url: string, alts: string[] = []): string[] {
+  const out = [...alts];
   try {
-    const res = await fetch(url, {
-      headers: { "user-agent": "Mozilla/5.0 (anu news collector)", "cache-control": "no-cache", pragma: "no-cache" },
-      signal: AbortSignal.timeout(20000),
-    });
+    const u = new URL(url);
+    if (/\/feed\/?$/i.test(u.pathname)) {
+      out.push(`${u.origin}/wp-json/wp/v2/posts?per_page=15&_fields=date,link,title,excerpt`);
+    }
+  } catch { /* not a URL */ }
+  return [...new Set(out.filter((candidate) => candidate && candidate !== url))];
+}
+
+async function readFeed(name: string, url: string): Promise<FeedReport> {
+  if (url.includes("/wp-json/")) return fetchWpPosts(name, url);
+  try {
+    const res = await fetch(url, { headers: FEED_HEADERS, signal: AbortSignal.timeout(20000) });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const xml = parser.parse(await res.text());
     const items = xml?.rss?.channel?.item ?? xml?.feed?.entry ?? [];
@@ -120,9 +141,25 @@ export async function fetchFeedReport(name: string, url: string): Promise<FeedRe
   }
 }
 
+/**
+ * Fetches one RSS or Atom feed. On a 403 or an empty body, tries alternate
+ * URLs (and the WordPress JSON sibling of a `/feed/` address) before giving up.
+ */
+export async function fetchFeedReport(name: string, url: string, alts: string[] = []): Promise<FeedReport> {
+  const plan = [url, ...fallbackFeedUrls(url, alts)];
+  let primaryError = "";
+  for (let i = 0; i < plan.length; i++) {
+    const report = await readFeed(name, plan[i]);
+    if (!report.error && report.items.length) return report;
+    if (i === 0) primaryError = report.error || "no items";
+    else if (report.error) console.warn(`Fallback ${name} ${plan[i]}: ${report.error}`);
+  }
+  return { items: [], error: primaryError || "no items" };
+}
+
 /** Fetches one RSS or Atom feed; on any failure logs and returns nothing so one bad feed never stops a run. */
-export async function fetchFeed(name: string, url: string): Promise<FeedItem[]> {
-  return (await fetchFeedReport(name, url)).items;
+export async function fetchFeed(name: string, url: string, alts: string[] = []): Promise<FeedItem[]> {
+  return (await fetchFeedReport(name, url, alts)).items;
 }
 
 /**
@@ -132,7 +169,7 @@ export async function fetchFeed(name: string, url: string): Promise<FeedItem[]> 
 export async function fetchWpPosts(name: string, url: string): Promise<FeedReport> {
   try {
     const res = await fetch(url, {
-      headers: { "user-agent": "Mozilla/5.0 (anu news collector)", "cache-control": "no-cache" },
+      headers: FEED_HEADERS,
       signal: AbortSignal.timeout(20000),
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);

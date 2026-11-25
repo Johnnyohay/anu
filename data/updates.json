@@ -4,13 +4,13 @@
     "d": "2026-11-24",
     "title": "Amentum Reports $13.8B in FY2026 Revenue, $48.3B Backlog",
     "body": "Amentum secured $15 billion in net bookings, including major NGA, Navy, Army and international nuclear program awards.",
-    "why": "The backlog positions Amentum to win the next awards from the Navy, the Army, NGA and nuclear.",
+    "why": "The backlog of the Navy, the Army, NGA and nuclear awards is what positions Amentum to win the next competition.",
     "sectors": [
       "capital"
     ],
     "type": "",
     "companies": [
-      "Amentum Reports"
+      "Amentum"
     ],
     "src": {
       "t": "GovConWire",
@@ -19,18 +19,60 @@
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
     "orgs": [
-      "Amentum Reports",
-      "NGA",
-      "Navy",
-      "Army"
+      "Amentum"
     ]
+  },
+  {
+    "id": "u-20261124-air-force-signs-48-7m-deal-for-weather-data-from-b",
+    "d": "2026-11-24",
+    "title": "Air Force Signs $48.7M Deal for Weather Data from ‘Balloons with Brains’",
+    "body": "The Air Force recently signed a contract worth nearly $50 million to beef up its weather data collection through a company that has found a way to quickly and cheaply launch thousands of lighter-than-air, autonomous, long-duration weather balloons.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/air-force-deal-weather-data-autonomous-balloons/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261124-house-lawmakers-launch-bipartisan-ai-safety-innova",
+    "d": "2026-11-24",
+    "title": "House Lawmakers Launch Bipartisan AI Safety Innovation Caucus",
+    "body": "House lawmakers cite unauthorized AI agent activity at OpenAI and Anthropic as they organize a bipartisan response to emerging threats.",
+    "why": "",
+    "sectors": [
+      "policy",
+      "ai",
+      "space"
+    ],
+    "type": "Policy & budget",
+    "companies": [
+      "Anthropic",
+      "OpenAI"
+    ],
+    "orgs": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/house-bipartisan-ai-safety-innovation-caucus",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z"
   },
   {
     "id": "u-20261124-blacksky-acquires-data-firm-epochgeo",
     "d": "2026-11-24",
     "title": "BlackSky acquires data firm EpochGeo",
     "body": "WASHINGTON — BlackSky Technology announced it acquired geospatial data firm EpochGeo, a move to expand its slate of real-time intelligence tools as defense customers seek deeper analysis and data fusion capabilities.",
-    "why": "Defense customers can buy analysis and data fusion from BlackSky Technology.",
+    "why": "BlackSky Technology acquired the data firm, so defense customers can buy analysis and data fusion from one firm.",
     "sectors": [
       "capital"
     ],
@@ -53,9 +95,9 @@
     "d": "2026-11-24",
     "title": "U.S. Special Operations Command orders more MH-47Gs",
     "body": "Boeing has received a $197.3 million order modification to buy more MH-47G special operations helicopters for U.S. Special Operations Command, according to a Department of War contract announcement Monday.",
-    "why": "Special Operations Command has $197.3 million on MH-47G. A rival has to unseat that incumbent to win the next lot.",
+    "why": "The modification keeps Boeing on MH-47G for Special Operations Command.",
     "sectors": [
-      "policy"
+      "air"
     ],
     "type": "Contract",
     "companies": [],
@@ -65,26 +107,20 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "U.S. Special Operations Command",
-      "Boeing",
-      "Department of War"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261124-pentagon-in-talks-with-gm-and-ford-to-help-build-d",
     "d": "2026-11-24",
     "title": "Pentagon in talks with GM and Ford to help build drones",
     "body": "The Pentagon is in talks with General Motors, Ford and other manufacturers about helping mass-produce military drones, The Wall Street Journal reported on Tuesday, citing people familiar with the matter.",
-    "why": "",
+    "why": "Talks with General Motors and Ford would change who mass-produces the Pentagon's military drones.",
     "sectors": [
-      "air",
-      "policy"
+      "air"
     ],
     "type": "",
     "companies": [
-      "General Motors",
-      "The Wall Street Journal"
+      "General Motors"
     ],
     "src": {
       "t": "Defence Blog",
@@ -93,10 +129,13 @@
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
     "orgs": [
-      "Pentagon",
-      "Ford",
-      "General Motors",
-      "The Wall Street Journal"
+      "General Motors"
+    ],
+    "sources": [
+      {
+        "t": "Defense News",
+        "u": "https://www.defensenews.com/pentagon/2026/11/24/ford-in-talks-with-the-pentagon-to-supply-military-vehicles/"
+      }
     ]
   },
   {
@@ -119,33 +158,7 @@
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
     "orgs": [
-      "Sense",
-      "Spacemanic",
       "World from Space"
-    ]
-  },
-  {
-    "id": "u-20261124-the-grid-under-siege-how-ai-is-creating-new-risks-",
-    "d": "2026-11-24",
-    "title": "The Grid Under Siege: How AI Is Creating New Risks to America’s Energy Infrastructure",
-    "body": "Brooks Consulting President Chuck Brooks, a GovCon Expert, examines how AI-enabled threats are raising cyber risks to the energy grid.",
-    "why": "",
-    "sectors": [
-      "ai",
-      "cyber"
-    ],
-    "type": "",
-    "companies": [
-      "Energy Infrastructure"
-    ],
-    "src": {
-      "t": "GovConWire",
-      "u": "https://www.govconwire.com/articles/chuck-brooks-ai-energy-grid-cybersecurity-threats-critical-infrastructure",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Energy Infrastructure"
     ]
   },
   {
@@ -174,11 +187,137 @@
     ]
   },
   {
+    "id": "u-20261124-space-systems-command-eyes-mid-2028-for-gps-sustai",
+    "d": "2026-11-24",
+    "title": "Space Systems Command eyes mid-2028 for GPS sustainment upgrade contract",
+    "body": "The Space Force has marked mid-2028 as the planned award window for next-generation GPS sustainment services under a five-year contract as it susses out potential capabilities with a new survey to industry.",
+    "why": "",
+    "sectors": [
+      "space"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/24/space-systems-command-gps-sustainment-upgrade-contract/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "Space Systems Command",
+      "Space Force"
+    ]
+  },
+  {
+    "id": "u-20261124-turkish-kizilelma-fighter-drone-declared-operation",
+    "d": "2026-11-24",
+    "title": "Turkish Kizilelma Fighter Drone Declared Operational",
+    "body": "Turkish drone manufacturer Baykar says it has made aviation history, announcing that the first three of its Bayraktar Kizilelma uncrewed combat aircraft have entered the inventory of the Turkish security forces following the completion of acceptance testing.",
+    "why": "",
+    "sectors": [
+      "air",
+      "mfg"
+    ],
+    "type": "",
+    "companies": [
+      "Bayraktar Kizilelma"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/turkish-kizilelma-fighter-drone-declared-operational",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [
+      "Bayraktar Kizilelma"
+    ]
+  },
+  {
+    "id": "u-20261124-cbo-navy-s-fy-2027-shipbuilding-plan-would-cost-53",
+    "d": "2026-11-24",
+    "title": "CBO: Navy’s FY 2027 Shipbuilding Plan Would Cost $53.8B Annually",
+    "body": "CBO has estimated that the Navy's FY 2027 shipbuilding plan would cost $53.8 billion a year, 41 percent above recent appropriations.",
+    "why": "",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "orgs": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/cbo-navy-fy-2027-shipbuilding-plan-cost-estimate",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z"
+  },
+  {
+    "id": "u-20261124-nro-sends-nrol-136-to-orbit-as-proliferated-archit",
+    "d": "2026-11-24",
+    "title": "NRO Sends NROL-136 to Orbit as Proliferated Architecture Reaches 15th Mission",
+    "body": "NRO said it launched NROL-136, its 15th proliferated architecture mission, aboard a SpaceX Falcon 9 from Vandenberg Space Force Base.",
+    "why": "",
+    "sectors": [
+      "space"
+    ],
+    "type": "",
+    "companies": [
+      "SpaceX"
+    ],
+    "orgs": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/nro-nrol-136-proliferated-architecture-launch",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z"
+  },
+  {
+    "id": "u-20261124-executive-order-requires-contractors-to-coordinate",
+    "d": "2026-11-24",
+    "title": "Executive Order Requires Contractors to Coordinate With White House on Congressional Inquiries",
+    "body": "Agencies may cancel contracts or debar firms that skip White House coordination on privileged material.",
+    "why": "",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "orgs": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/trump-eo-federal-contractors-congressional-requests-executive-privilege",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z"
+  },
+  {
+    "id": "u-20261124-the-grid-under-siege-how-ai-is-creating-new-risks-",
+    "d": "2026-11-24",
+    "title": "The Grid Under Siege: How AI Is Creating New Risks to America’s Energy Infrastructure",
+    "body": "Brooks Consulting President Chuck Brooks, a GovCon Expert, examines how AI-enabled threats are raising cyber risks to the energy grid.",
+    "why": "",
+    "sectors": [
+      "ai",
+      "cyber"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "GovConWire",
+      "u": "https://www.govconwire.com/articles/chuck-brooks-ai-energy-grid-cybersecurity-threats-critical-infrastructure",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T16:58:40.409Z",
+    "orgs": []
+  },
+  {
     "id": "u-20261124-white-house-seeks-funding-exemptions-for-golden-do",
     "d": "2026-11-24",
     "title": "White House seeks funding exemptions for Golden Dome, Trump battleship in next funding stopgap",
     "body": "The Pentagon's munitions ramp up could also face turmoil if anomalies for key programs are not approved, the White House warned.",
-    "why": "",
+    "why": "If the anomalies are not approved, Golden Dome and the battleship face turmoil.",
     "sectors": [
       "missiledef",
       "strike"
@@ -191,8 +330,12 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Pentagon"
+    "orgs": [],
+    "sources": [
+      {
+        "t": "USNI News",
+        "u": "https://news.usni.org/2026/11/24/ford-class-redesign-battleship-funds-on-white-house-list-for-cr-anomaly-funding"
+      }
     ]
   },
   {
@@ -202,7 +345,7 @@
     "body": "Software optimized for brigades and above, where large staffs have bulky generators to power an arsenal of laptops, routers, and servers, doesn't necessarily translate to battalion and below, Maj. Andrew Durfee explained to Breaking Defense.",
     "why": "",
     "sectors": [
-      "policy"
+      "ai"
     ],
     "type": "",
     "companies": [],
@@ -212,10 +355,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Army",
-      "Breaking Defense"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261124-trump-s-carrier-desire-might-not-take-flight-and-a",
@@ -234,9 +374,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Navy"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261124-from-horsepower-to-firepower-japan-draws-auto-supp",
@@ -256,10 +394,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Aster",
-      "Toyota"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261124-russia-may-launch-nuke-laden-satellite-by-year-s-e",
@@ -317,16 +452,14 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Broadcom"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261124-poland-uk-sign-deal-to-develop-camm-mr-missile",
     "d": "2026-11-24",
     "title": "Poland, UK sign deal to develop CAMM-MR missile",
     "body": "Poland and the United Kingdom signed an intergovernmental agreement on Tuesday that opens the way to developing CAMM-MR, a new air defense missile meant to reach beyond 100 km (62 miles), Poland's Armament Agency said in a statement.",
-    "why": "",
+    "why": "Poland and the UK developing CAMM-MR changes their air defense missile's reach to beyond 100 km.",
     "sectors": [
       "strike",
       "global",
@@ -340,9 +473,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Armament Agency"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261124-canada-s-air-force-bets-on-f-35-as-its-core-fighte",
@@ -361,33 +492,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "CBC News"
-    ]
-  },
-  {
-    "id": "u-20261124-ukrainian-army-gets-german-lynx-fighting-vehicles",
-    "d": "2026-11-24",
-    "title": "Ukrainian army gets German Lynx fighting vehicles",
-    "body": "Ukrainian soldiers who trained in Germany are now crewing Rheinmetall's Lynx infantry fighting vehicles with a frontline brigade, Ukraine's Ground Forces said, after Berlin handed over a batch of the tracked armored vehicles.",
-    "why": "",
-    "sectors": [
-      "ground",
-      "policy",
-      "global"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Defence Blog",
-      "u": "https://defence-blog.com/ukrainian-army-gets-german-lynx-fighting-vehicles/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Rheinmetall",
-      "Ground Forces"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261124-russia-gets-more-sv-98-sniper-rifles-used-in-war-o",
@@ -427,31 +532,277 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Force"
-    ]
+    "orgs": []
   },
   {
-    "id": "u-20261124-laneve-s-campaign-plan-aims-for-top-down-guidance-",
+    "id": "u-20261124-robot-scout-spots-targets-for-british-troops-in-ke",
     "d": "2026-11-24",
-    "title": "LaNeve’s campaign plan aims for top-down guidance, flipping ‘transformation in contact’ era",
-    "body": "If the guidance does become the service's official campaign plan, How the Army Fights will leave behind the service's Continuous Transformation campaign, including initiatives such as Transformation in Contact, in an effort to give soldiers clearer…",
+    "title": "Robot scout spots targets for British troops in Kenya",
+    "body": "A robot vehicle working with British troops in Kenya spotted targets and sent them straight into the British Army's AI-enabled targeting network, cutting the time from detection to strike by a factor of 10, its maker said Tuesday.",
     "why": "",
     "sectors": [
-      "policy"
+      "ground"
     ],
-    "type": "Earnings",
+    "type": "",
     "companies": [],
     "src": {
-      "t": "Breaking Defense",
-      "u": "https://breakingdefense.com/2026/11/laneves-campaign-plan-aims-for-top-down-guidance-flipping-transformation-in-contact-era/",
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/robot-scout-spots-targets-for-british-troops-in-kenya/",
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "LaNeve",
-      "Army"
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-program-looks-to-build-shipbuilding-defense-manufa",
+    "d": "2026-11-24",
+    "title": "Program looks to build shipbuilding, defense manufacturing capability in Hawaii",
+    "body": "HONOLULU— A Pentagon-funded workforce-development program at Honolulu Community College is aiming to forge the next generation of Hawaii manufacturing industry leaders—and grow the defense industrial base in the Pacific.",
+    "why": "",
+    "sectors": [
+      "sea",
+      "mfg"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/business/2026/11/program-looks-build-shipbuilding-defense-manufacturing-capability-hawaii/417440/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-uk-s-mi5-warns-local-defense-firms-of-russian-sabo",
+    "d": "2026-11-24",
+    "title": "UK’s MI5 warns local defense firms of Russian sabotage risk",
+    "body": "The alert urges industry to respond immediately and reduce opportunities for hostile actors to identify your organisation or people as targets, conduct hostile reconnaissance, and attack people, sites or operations.",
+    "why": "",
+    "sectors": [
+      "global",
+      "adversary",
+      "sensing"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/uks-mi5-warns-local-defense-firms-of-russian-sabotage-risk/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-the-army-has-told-us-how-it-fights-we-can-t-do-tha",
+    "d": "2026-11-24",
+    "title": "The Army has told us how it fights. We can’t do that in an analog tank.",
+    "body": "Decades of upgrades have pushed the Abrams tank to its limits. A generational redesign is the only way forward, a former three-star general argues.",
+    "why": "",
+    "sectors": [
+      "ground"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/the-army-has-told-us-how-it-fights-we-cant-do-that-in-an-analog-tank/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-private-equity-firm-cerberus-to-acquire-airbus-u-s",
+    "d": "2026-11-24",
+    "title": "Private equity firm Cerberus to acquire Airbus’ U.S. satellite business",
+    "body": "The deal brings a factory built for OneWeb's broadband constellation under American ownership.",
+    "why": "Cerberus changes the OneWeb factory to American ownership.",
+    "sectors": [
+      "space",
+      "mfg"
+    ],
+    "type": "M&A & IPO",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/private-equity-firm-cerberus-to-acquire-airbus-u-s-satellite-business/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T16:58:40.409Z",
+    "orgs": [],
+    "sources": [
+      {
+        "t": "Breaking Defense",
+        "u": "https://breakingdefense.com/2026/11/investment-firm-cerberus-to-buy-space-business-of-us-airbus-arm/"
+      }
     ]
+  },
+  {
+    "id": "u-20261124-questions-about-dod-s-frontier-ai-organization-lin",
+    "d": "2026-11-24",
+    "title": "Questions about DOD’s frontier AI organization linger after Trump-ordered rebrand and website redesign",
+    "body": "Questions are swirling about recent reforms to the office that leads the Defense Department's enterprise artificial intelligence deployments after a public rebrand and subsequent redesign that removed basic details about the team's current priorities and…",
+    "why": "",
+    "sectors": [
+      "ai"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/24/trump-ai-rebrand-pentagon-super-intelligence-office-sio/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-a-new-competition-space-us-coast-guard-takes-icebr",
+    "d": "2026-11-24",
+    "title": "‘A new competition space’: US Coast Guard takes icebreaker on maiden voyage to the Arctic",
+    "body": "The U.S. Coast Guard's first new icebreaker in nearly three decades returned from a maiden voyage to the Arctic this month, having demonstrated a spectrum of military operations that open up future possibilities for the service in the increasingly dynamic…",
+    "why": "",
+    "sectors": [
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/naval/2026/11/24/a-new-competition-space-us-coast-guard-takes-icebreaker-on-maiden-voyage-to-the-arctic/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-lynx-kf41-fighting-vehicles-newly-arrived-in-ukrai",
+    "d": "2026-11-24",
+    "title": "Lynx KF41 Fighting Vehicles, Newly Arrived In Ukraine, Will Take On Counter-Drone Mission",
+    "body": "Ukraine has finally received its first batch of Lynx KF41 Infantry Fighting Vehicles from Germany.",
+    "why": "",
+    "sectors": [
+      "cuas",
+      "global",
+      "ground"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/land/lynx-kf41-fighting-vehicles-newly-arrived-in-ukraine-will-take-on-counter-drone-mission",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": [],
+    "sources": [
+      {
+        "t": "Defence Blog",
+        "u": "https://defence-blog.com/ukrainian-army-gets-german-lynx-fighting-vehicles/"
+      }
+    ]
+  },
+  {
+    "id": "u-20261124-fireant-mini-uncrewed-ground-vehicles-deploy-drone",
+    "d": "2026-11-24",
+    "title": "FireAnt Mini Uncrewed Ground Vehicles Deploy Drone Detection Sensors In U.S. Army Test",
+    "body": "A FireAnt uncrewed ground vehicle (UGV) was used to deploy small sensors capable of detecting hostile drones on the ground during a recent U.S. Army test exercise.",
+    "why": "",
+    "sectors": [
+      "air",
+      "ground"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/land/fireant-mini-uncrewed-ground-vehicles-deploy-drone-detection-sensors-in-u-s-army-test",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-sweden-s-gripens-are-doing-big-things-with-a-tiny-",
+    "d": "2026-11-24",
+    "title": "Sweden’s Gripens Are Doing Big Things With A Tiny Footprint In Poland",
+    "body": "Russian cruise missiles enter Polish airspace during a major attack on Ukraine . NATO fighters scramble . Two Swedish Gripens join Polish F-16s in the response, tracking airborne threats over Poland.",
+    "why": "",
+    "sectors": [
+      "global",
+      "strike"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/swedens-tiny-gripen-fighter-detachment-takes-on-a-big-nato-role",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-philippine-forces-train-to-secure-luzon-strait-wit",
+    "d": "2026-11-24",
+    "title": "Philippine Forces Train to Secure Luzon Strait with Warships, BrahMos Missiles",
+    "body": "MANILA, Philippines — Philippine forces are practicing how to secure the Luzon Strait through the deployment of warships and a BrahMos missile battery for maritime strike operations this month.",
+    "why": "",
+    "sectors": [
+      "strike",
+      "global",
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/24/philippine-forces-train-to-secure-luzon-strait-with-warships-brahmos-missiles",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-dni-jay-clayton-to-serve-as-acting-national-cyber-",
+    "d": "2026-11-24",
+    "title": "DNI Jay Clayton to Serve as Acting National Cyber Director",
+    "body": "Director of National Intelligence Jay Clayton has been tapped as acting national cyber director as Kirsten Davies awaits confirmation.",
+    "why": "",
+    "sectors": [
+      "cyber",
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "orgs": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/dni-jay-clayton-named-acting-national-cyber-director",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z"
+  },
+  {
+    "id": "u-20261124-dow-s-cameron-stanley-stresses-need-for-faster-ai-",
+    "d": "2026-11-24",
+    "title": "DOW’s Cameron Stanley Stresses Need for Faster AI Integration",
+    "body": "DOW Chief Super Intelligence Officer Cameron Stanley called for faster AI integration and discussed GenAI.mil and open-source data.",
+    "why": "",
+    "sectors": [
+      "ai"
+    ],
+    "type": "",
+    "companies": [],
+    "orgs": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/cameron-stanley-dow-faster-ai-integration",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z"
   },
   {
     "id": "u-20261124-opening-remarks-from-william-toti-to-be-undersecre",
@@ -471,9 +822,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "U.S. Senate Committee on Armed Services"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261124-a-reset-in-the-military-spending-debate",
@@ -492,10 +841,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Congress",
-      "Pentagon"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261124-ariane-6-launches-fourth-set-of-amazon-leo-satelli",
@@ -534,9 +880,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "NASA"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261124-top-pro-war-russian-blogger-pours-cold-water-on-su",
@@ -557,486 +901,6 @@
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
     "orgs": []
-  },
-  {
-    "id": "u-20261124-robot-scout-spots-targets-for-british-troops-in-ke",
-    "d": "2026-11-24",
-    "title": "Robot scout spots targets for British troops in Kenya",
-    "body": "A robot vehicle working with British troops in Kenya spotted targets and sent them straight into the British Army's AI-enabled targeting network, cutting the time from detection to strike by a factor of 10, its maker said Tuesday.",
-    "why": "",
-    "sectors": [
-      "policy"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Defence Blog",
-      "u": "https://defence-blog.com/robot-scout-spots-targets-for-british-troops-in-kenya/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "British Army"
-    ]
-  },
-  {
-    "id": "u-20261124-quantum-space-closes-spac-merger-with-inflection-p",
-    "d": "2026-11-24",
-    "title": "Quantum Space Closes SPAC Merger With Inflection Point Ahead of NYSE Debut",
-    "body": "Quantum Space is set to begin trading on NYSE as QSPC following its merger with special purpose acquisition company Inflection Point.",
-    "why": "",
-    "sectors": [
-      "capital",
-      "space"
-    ],
-    "type": "M&A & IPO",
-    "companies": [
-      "Quantum Space",
-      "Inflection Point"
-    ],
-    "src": {
-      "t": "GovConWire",
-      "u": "https://www.govconwire.com/articles/quantum-space-inflection-point-spac-merger-nyse-debut",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Quantum Space",
-      "QSPC",
-      "Inflection Point"
-    ]
-  },
-  {
-    "id": "u-20261124-private-equity-firm-cerberus-to-acquire-airbus-u-s",
-    "d": "2026-11-24",
-    "title": "Private equity firm Cerberus to acquire Airbus’ U.S. satellite business",
-    "body": "The deal brings a factory built for OneWeb's broadband constellation under American ownership.",
-    "why": "",
-    "sectors": [
-      "space",
-      "mfg"
-    ],
-    "type": "M&A & IPO",
-    "companies": [],
-    "src": {
-      "t": "SpaceNews",
-      "u": "https://spacenews.com/private-equity-firm-cerberus-to-acquire-airbus-u-s-satellite-business/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Cerberus",
-      "Airbus",
-      "OneWeb"
-    ]
-  },
-  {
-    "id": "u-20261124-northrop-grumman-lands-291m-nasa-contract-for-noaa",
-    "d": "2026-11-24",
-    "title": "Northrop Grumman Lands $291M NASA Contract for NOAA NEON Microwave Sounders",
-    "body": "The contract runs through April 2042 and covers three instruments aimed at improving National Weather Service forecasts.",
-    "why": "",
-    "sectors": [
-      "primes"
-    ],
-    "type": "Contract",
-    "companies": [
-      "Northrop Grumman"
-    ],
-    "src": {
-      "t": "GovConWire",
-      "u": "https://www.govconwire.com/articles/northrop-grumman-nasa-noaa-neon-microwave-sounder-contract-award",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Northrop Grumman Lands",
-      "NASA",
-      "National Weather Service"
-    ]
-  },
-  {
-    "id": "u-20261124-air-force-signs-48-7m-deal-for-weather-data-from-b",
-    "d": "2026-11-24",
-    "title": "Air Force Signs $48.7M Deal for Weather Data from ‘Balloons with Brains’",
-    "body": "The Air Force recently signed a contract worth nearly $50 million to beef up its weather data collection through a company that has found a way to quickly and cheaply launch thousands of lighter-than-air, autonomous, long-duration weather balloons.",
-    "why": "",
-    "sectors": [
-      "air"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Air & Space Forces",
-      "u": "https://www.airandspaceforces.com/air-force-deal-weather-data-autonomous-balloons/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "Air Force",
-      "‘Balloons"
-    ]
-  },
-  {
-    "id": "u-20261124-first-all-guardian-squadron-graduates-officer-trai",
-    "d": "2026-11-24",
-    "title": "First All-Guardian Squadron Graduates Officer Training School, Enters Space Force",
-    "body": "The first Officer Training School squadron comprised entirely of new Space Force officer candidates graduated Nov. 20, minting 36 new Guardians for the Space Force.",
-    "why": "",
-    "sectors": [
-      "space"
-    ],
-    "type": "",
-    "companies": [
-      "First All-Guardian",
-      "Officer Training School"
-    ],
-    "src": {
-      "t": "Air & Space Forces",
-      "u": "https://www.airandspaceforces.com/space-forces-first-all-guardian-class-graduates-officer-training-school/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "First All-Guardian",
-      "Officer Training School",
-      "Space Force"
-    ]
-  },
-  {
-    "id": "u-20261124-space-systems-command-eyes-mid-2028-for-gps-sustai",
-    "d": "2026-11-24",
-    "title": "Space Systems Command eyes mid-2028 for GPS sustainment upgrade contract",
-    "body": "The Space Force has marked mid-2028 as the planned award window for next-generation GPS sustainment services under a five-year contract as it susses out potential capabilities with a new survey to industry.",
-    "why": "",
-    "sectors": [
-      "space"
-    ],
-    "type": "Contract",
-    "companies": [],
-    "src": {
-      "t": "DefenseScoop",
-      "u": "https://defensescoop.com/2026/11/24/space-systems-command-gps-sustainment-upgrade-contract/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "Space Systems Command",
-      "Space Force"
-    ]
-  },
-  {
-    "id": "u-20261124-turkish-kizilelma-fighter-drone-declared-operation",
-    "d": "2026-11-24",
-    "title": "Turkish Kizilelma Fighter Drone Declared Operational",
-    "body": "Turkish drone manufacturer Baykar says it has made aviation history, announcing that the first three of its Bayraktar Kizilelma uncrewed combat aircraft have entered the inventory of the Turkish security forces following the completion of acceptance testing.",
-    "why": "",
-    "sectors": [
-      "air",
-      "mfg"
-    ],
-    "type": "",
-    "companies": [
-      "Bayraktar Kizilelma"
-    ],
-    "src": {
-      "t": "The War Zone",
-      "u": "https://www.twz.com/air/turkish-kizilelma-fighter-drone-declared-operational",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "Baykar",
-      "Bayraktar Kizilelma"
-    ]
-  },
-  {
-    "id": "u-20261124-program-looks-to-build-shipbuilding-defense-manufa",
-    "d": "2026-11-24",
-    "title": "Program looks to build shipbuilding, defense manufacturing capability in Hawaii",
-    "body": "HONOLULU— A Pentagon-funded workforce-development program at Honolulu Community College is aiming to forge the next generation of Hawaii manufacturing industry leaders—and grow the defense industrial base in the Pacific.",
-    "why": "",
-    "sectors": [
-      "sea",
-      "mfg"
-    ],
-    "type": "",
-    "companies": [
-      "Honolulu Community College"
-    ],
-    "src": {
-      "t": "Defense One",
-      "u": "https://www.defenseone.com/business/2026/11/program-looks-build-shipbuilding-defense-manufacturing-capability-hawaii/417440/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "Honolulu Community College"
-    ]
-  },
-  {
-    "id": "u-20261124-uk-s-mi5-warns-local-defense-firms-of-russian-sabo",
-    "d": "2026-11-24",
-    "title": "UK’s MI5 warns local defense firms of Russian sabotage risk",
-    "body": "The alert urges industry to respond immediately and reduce opportunities for hostile actors to identify your organisation or people as targets, conduct hostile reconnaissance, and attack people, sites or operations.",
-    "why": "",
-    "sectors": [
-      "global",
-      "adversary",
-      "sensing"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Breaking Defense",
-      "u": "https://breakingdefense.com/2026/11/uks-mi5-warns-local-defense-firms-of-russian-sabotage-risk/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "MI5"
-    ]
-  },
-  {
-    "id": "u-20261124-the-army-has-told-us-how-it-fights-we-can-t-do-tha",
-    "d": "2026-11-24",
-    "title": "The Army has told us how it fights. We can’t do that in an analog tank.",
-    "body": "Decades of upgrades have pushed the Abrams tank to its limits. A generational redesign is the only way forward, a former three-star general argues.",
-    "why": "",
-    "sectors": [
-      "ground",
-      "policy"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Breaking Defense",
-      "u": "https://breakingdefense.com/2026/11/the-army-has-told-us-how-it-fights-we-cant-do-that-in-an-analog-tank/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "Army"
-    ]
-  },
-  {
-    "id": "u-20261124-investment-firm-cerberus-to-buy-space-business-of-",
-    "d": "2026-11-24",
-    "title": "Investment firm Cerberus to buy space business of US Airbus arm",
-    "body": "Airbus intends for its US subsidiary to double down on production of autonomous aircraft as the market for drones continues to expand, the company said.",
-    "why": "",
-    "sectors": [
-      "space",
-      "air"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Breaking Defense",
-      "u": "https://breakingdefense.com/2026/11/investment-firm-cerberus-to-buy-space-business-of-us-airbus-arm/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "Cerberus",
-      "Airbus"
-    ]
-  },
-  {
-    "id": "u-20261124-questions-about-dod-s-frontier-ai-organization-lin",
-    "d": "2026-11-24",
-    "title": "Questions about DOD’s frontier AI organization linger after Trump-ordered rebrand and website redesign",
-    "body": "Questions are swirling about recent reforms to the office that leads the Defense Department's enterprise artificial intelligence deployments after a public rebrand and subsequent redesign that removed basic details about the team's current priorities and…",
-    "why": "",
-    "sectors": [
-      "ai"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "DefenseScoop",
-      "u": "https://defensescoop.com/2026/11/24/trump-ai-rebrand-pentagon-super-intelligence-office-sio/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "DOD",
-      "Defense Department"
-    ]
-  },
-  {
-    "id": "u-20261124-a-new-competition-space-us-coast-guard-takes-icebr",
-    "d": "2026-11-24",
-    "title": "‘A new competition space’: US Coast Guard takes icebreaker on maiden voyage to the Arctic",
-    "body": "The U.S. Coast Guard's first new icebreaker in nearly three decades returned from a maiden voyage to the Arctic this month, having demonstrated a spectrum of military operations that open up future possibilities for the service in the increasingly dynamic…",
-    "why": "",
-    "sectors": [
-      "space"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Defense News",
-      "u": "https://www.defensenews.com/naval/2026/11/24/a-new-competition-space-us-coast-guard-takes-icebreaker-on-maiden-voyage-to-the-arctic/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "US Coast Guard",
-      "U.S. Coast Guard"
-    ]
-  },
-  {
-    "id": "u-20261124-lynx-kf41-fighting-vehicles-newly-arrived-in-ukrai",
-    "d": "2026-11-24",
-    "title": "Lynx KF41 Fighting Vehicles, Newly Arrived In Ukraine, Will Take On Counter-Drone Mission",
-    "body": "Ukraine has finally received its first batch of Lynx KF41 Infantry Fighting Vehicles from Germany.",
-    "why": "",
-    "sectors": [
-      "cuas",
-      "global",
-      "ground"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "The War Zone",
-      "u": "https://www.twz.com/land/lynx-kf41-fighting-vehicles-newly-arrived-in-ukraine-will-take-on-counter-drone-mission",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": []
-  },
-  {
-    "id": "u-20261124-fireant-mini-uncrewed-ground-vehicles-deploy-drone",
-    "d": "2026-11-24",
-    "title": "FireAnt Mini Uncrewed Ground Vehicles Deploy Drone Detection Sensors In U.S. Army Test",
-    "body": "A FireAnt uncrewed ground vehicle (UGV) was used to deploy small sensors capable of detecting hostile drones on the ground during a recent U.S. Army test exercise.",
-    "why": "",
-    "sectors": [
-      "air",
-      "ground",
-      "policy"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "The War Zone",
-      "u": "https://www.twz.com/land/fireant-mini-uncrewed-ground-vehicles-deploy-drone-detection-sensors-in-u-s-army-test",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "U.S. Army"
-    ]
-  },
-  {
-    "id": "u-20261124-sweden-s-gripens-are-doing-big-things-with-a-tiny-",
-    "d": "2026-11-24",
-    "title": "Sweden’s Gripens Are Doing Big Things With A Tiny Footprint In Poland",
-    "body": "Russian cruise missiles enter Polish airspace during a major attack on Ukraine . NATO fighters scramble . Two Swedish Gripens join Polish F-16s in the response, tracking airborne threats over Poland.",
-    "why": "",
-    "sectors": [
-      "global",
-      "strike"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "The War Zone",
-      "u": "https://www.twz.com/air/swedens-tiny-gripen-fighter-detachment-takes-on-a-big-nato-role",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "NATO"
-    ]
-  },
-  {
-    "id": "u-20261124-philippine-forces-train-to-secure-luzon-strait-wit",
-    "d": "2026-11-24",
-    "title": "Philippine Forces Train to Secure Luzon Strait with Warships, BrahMos Missiles",
-    "body": "MANILA, Philippines — Philippine forces are practicing how to secure the Luzon Strait through the deployment of warships and a BrahMos missile battery for maritime strike operations this month.",
-    "why": "",
-    "sectors": [
-      "strike",
-      "global",
-      "sea"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "USNI News",
-      "u": "https://news.usni.org/2026/11/24/philippine-forces-train-to-secure-luzon-strait-with-warships-brahmos-missiles",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "Philippine Forces",
-      "MANILA"
-    ]
-  },
-  {
-    "id": "u-20261124-corps-of-engineers-navigates-historic-archaeologic",
-    "d": "2026-11-24",
-    "title": "Corps of Engineers Navigates Historic Archaeological Discoveries in Hungary",
-    "body": "The U.S. Army Corps of Engineers, Europe District, began construction to increase the capacity of Kecskemét Air Base in Hungary, only to stumble upon archaeological sites across the footprint of the planned construction project.",
-    "why": "",
-    "sectors": [
-      "global"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "U.S. Department of War",
-      "u": "https://www.war.gov/News/News-Stories/Article/Article/4659247/corps-of-engineers-navigates-historic-archaeological-discoveries-in-hungary/",
-      "q": "primary"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "U.S. Army Corps of Engineers"
-    ]
-  },
-  {
-    "id": "u-20261124-kearsarge-conducts-surface-warfare-advanced-tactic",
-    "d": "2026-11-24",
-    "title": "Kearsarge Conducts Surface Warfare Advanced Tactical Training",
-    "body": "The amphibious assault ship USS Kearsarge participated in surface warfare advanced tactical training, designed to increase force interoperability and combat capability by providing multiship, multiplatform and multiwarfare area training to surface units.",
-    "why": "",
-    "sectors": [
-      "sea"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "U.S. Department of War",
-      "u": "https://www.war.gov/News/News-Stories/Article/Article/4659197/kearsarge-conducts-surface-warfare-advanced-tactical-training/",
-      "q": "primary"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": []
-  },
-  {
-    "id": "u-20261124-ford-in-talks-with-the-pentagon-to-supply-military",
-    "d": "2026-11-24",
-    "title": "Ford in talks with the Pentagon to supply military vehicles",
-    "body": "Ford said on Tuesday it has held talks with the Pentagon about supplying military vehicles and other defense products to the U.S. military, as legacy automakers seek a share of fast-rising defense spending amid tough competition in the auto sector.",
-    "why": "",
-    "sectors": [
-      "policy"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Defense News",
-      "u": "https://www.defensenews.com/pentagon/2026/11/24/ford-in-talks-with-the-pentagon-to-supply-military-vehicles/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "Ford",
-      "Pentagon"
-    ]
   },
   {
     "id": "u-20261124-seoul-scrambles-f-15ks-as-russian-warplanes-come-w",
@@ -1075,50 +939,7 @@
     },
     "addedAt": "2026-11-24T23:21:03.529Z",
     "orgs": [
-      "CSAF",
       "Air Force"
-    ]
-  },
-  {
-    "id": "u-20261124-airman-s-spicy-chicken-dish-wins-national-competit",
-    "d": "2026-11-24",
-    "title": "Airman’s Spicy Chicken Dish Wins National Competition—and It’s Coming Soon to Some Bases",
-    "body": "An Airman stationed at Travis Air Force Base who grew up learning to cook in Jamaica recently took first place in the 3rd Annual U.S. Airmen Culinary Competition 2026.",
-    "why": "",
-    "sectors": [
-      "air"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Air & Space Forces",
-      "u": "https://www.airandspaceforces.com/airman-spicy-chicken-dish-wins-national-culinary-competition/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": []
-  },
-  {
-    "id": "u-20261124-ford-class-redesign-battleship-funds-on-white-hous",
-    "d": "2026-11-24",
-    "title": "Ford-class Redesign, Battleship Funds on White House List for CR Anomaly Funding",
-    "body": "The Trump administration wants Congress to fund several major shipbuilding programs, including the Trump-class battleship, in the next patchwork spending bill that keeps the government funded, according to a document obtained by USNI News.",
-    "why": "",
-    "sectors": [
-      "sea",
-      "policy"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "USNI News",
-      "u": "https://news.usni.org/2026/11/24/ford-class-redesign-battleship-funds-on-white-house-list-for-cr-anomaly-funding",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T23:21:03.529Z",
-    "orgs": [
-      "Congress",
-      "USNI News"
     ]
   },
   {
@@ -1139,10 +960,175 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T23:21:03.529Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261124-nga-seeks-industry-input-on-sustaining-software-re",
+    "d": "2026-11-24",
+    "title": "NGA Seeks Industry Input on Sustaining Software Requirements Workflow Platform",
+    "body": "NGA is asking vendors how they would sustain and modernize its Software Requirements Workflow platform, including AI-enabled features.",
+    "why": "",
+    "sectors": [
+      "ai"
+    ],
+    "type": "",
+    "companies": [],
+    "orgs": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/nga-software-requirements-workflow-sources-sought-notice",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z"
+  },
+  {
+    "id": "u-20261124-army-setaf-af-to-conduct-connected-innovation-camp",
+    "d": "2026-11-24",
+    "title": "Army SETAF-AF to Conduct Connected Innovation Campaign",
+    "body": "SETAF-AF has outlined a connected innovation campaign to test AI, counter-UAS and other emerging tech in its FY 2027 Africa exercises.",
+    "why": "",
+    "sectors": [
+      "cuas",
+      "ai"
+    ],
+    "type": "",
+    "companies": [],
+    "orgs": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/army-setaf-af-innovation-campaign-ai-counter-uas",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z"
+  },
+  {
+    "id": "u-20261124-inl-brings-arco-online-for-nuclear-energy-research",
+    "d": "2026-11-24",
+    "title": "INL Brings Arco Online for Nuclear Energy Research",
+    "body": "DOE said INL's new Arco supercomputer uses NVIDIA H200 GPUs for nuclear energy modeling, simulation and AI research.",
+    "why": "",
+    "sectors": [
+      "ai"
+    ],
+    "type": "",
+    "companies": [],
+    "orgs": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/inl-arco-supercomputer-nuclear-energy-research",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z"
+  },
+  {
+    "id": "u-20261124-readiness-first-what-military-health-needs-from-in",
+    "d": "2026-11-24",
+    "title": "Readiness First: What Military Health Needs From Industry",
+    "body": "Military health leaders identified data analytics, AI and other capabilities needed to support warfighter medical readiness.",
+    "why": "",
+    "sectors": [
+      "ai"
+    ],
+    "type": "",
+    "companies": [],
+    "orgs": [],
+    "src": {
+      "t": "ExecutiveGov",
+      "u": "https://www.executivegov.com/articles/military-health-warfighter-readiness-dha-ai-data",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T23:21:03.529Z"
+  },
+  {
+    "id": "u-20261124-quantum-space-closes-spac-merger-with-inflection-p",
+    "d": "2026-11-24",
+    "title": "Quantum Space Closes SPAC Merger With Inflection Point Ahead of NYSE Debut",
+    "body": "Quantum Space is set to begin trading on NYSE as QSPC following its merger with special purpose acquisition company Inflection Point.",
+    "why": "The Inflection Point merger changes Quantum Space to NYSE trading as QSPC.",
+    "sectors": [
+      "capital",
+      "space"
+    ],
+    "type": "M&A & IPO",
+    "companies": [
+      "Quantum Space",
+      "Inflection Point"
+    ],
+    "src": {
+      "t": "GovConWire",
+      "u": "https://www.govconwire.com/articles/quantum-space-inflection-point-spac-merger-nyse-debut",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T16:58:40.409Z",
     "orgs": [
-      "Fleet",
-      "US Navy"
+      "Quantum Space",
+      "Inflection Point"
     ]
+  },
+  {
+    "id": "u-20261124-northrop-grumman-lands-291m-nasa-contract-for-noaa",
+    "d": "2026-11-24",
+    "title": "Northrop Grumman Lands $291M NASA Contract for NOAA NEON Microwave Sounders",
+    "body": "The contract runs through April 2042 and covers three instruments aimed at improving National Weather Service forecasts.",
+    "why": "",
+    "sectors": [
+      "space",
+      "primes"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Northrop Grumman"
+    ],
+    "src": {
+      "t": "GovConWire",
+      "u": "https://www.govconwire.com/articles/northrop-grumman-nasa-noaa-neon-microwave-sounder-contract-award",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T16:58:40.409Z",
+    "orgs": [
+      "Northrop Grumman"
+    ]
+  },
+  {
+    "id": "u-20261123-new-spys-interceptor-shot-down-russia-s-geran-5-cr",
+    "d": "2026-11-23",
+    "title": "New SPYS interceptor shot down Russia’s Geran-5 cruise missile",
+    "body": "A Ukrainian-built interceptor drone has destroyed a Geran-5 K5-K, a weapon widely reported as Russia's newest jet-powered attack drone but classed by Ukrainian intelligence as a small cruise missile.",
+    "why": "The next buy is more of the Ukrainian interceptor that destroyed Geran-5.",
+    "sectors": [
+      "strike",
+      "missiledef",
+      "cuas",
+      "air"
+    ],
+    "type": "Conflict & allies",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/new-spys-interceptor-shot-down-russias-geran-5-cruise-missile/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-turkish-naval-gun-system-shoots-down-jet-drone-in-",
+    "d": "2026-11-23",
+    "title": "Turkish naval gun system shoots down jet drone in live-fire test",
+    "body": "A Turkish twin-cannon ship defense system shot down a fast jet-powered drone off Türkiye's northern coast, and its operator only had to press one button. ASELSAN released video of the test on Monday.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/turkish-naval-gun-system-shoots-down-jet-drone-in-live-fire-test/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
   },
   {
     "id": "u-20261123-china-s-fourth-aircraft-carrier-bigger-than-others",
@@ -1154,7 +1140,7 @@
       "sea",
       "energy",
       "adversary",
-      "air"
+      "global"
     ],
     "type": "",
     "companies": [],
@@ -1186,8 +1172,55 @@
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
     "orgs": [
-      "Philippine Military",
       "Luzon Strait Development"
+    ]
+  },
+  {
+    "id": "u-20261123-lockheed-martin-secures-1-5b-modification-for-trid",
+    "d": "2026-11-23",
+    "title": "Lockheed Martin Secures $1.5B Modification for Trident II D5 Missile Production, Fleet Support",
+    "body": "The sole-source contract calls for work in Utah, Florida, Colorado and other sites running through 2031.",
+    "why": "Sole-source work through 2031 keeps Lockheed Martin on this program.",
+    "sectors": [
+      "strike",
+      "primes"
+    ],
+    "type": "",
+    "companies": [
+      "Lockheed Martin"
+    ],
+    "src": {
+      "t": "GovConWire",
+      "u": "https://www.govconwire.com/articles/lockheed-martin-navy-1-5b-trident-ii-d5-missile-production",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Lockheed Martin"
+    ]
+  },
+  {
+    "id": "u-20261123-israel-aerospace-industries-profit-jumps-37-as-bac",
+    "d": "2026-11-23",
+    "title": "Israel Aerospace Industries profit jumps 37% as backlog hits $35.6 billion",
+    "body": "Israel Aerospace Industries reported a record $35.6 billion order backlog on Monday and urged the government to settle a Defense Ministry debt that the state-owned company put at billions of shekels. The maker of the Arrow missile-defense system said net…",
+    "why": "A $35.6B backlog makes Israel Aerospace Industries the incumbent on missile defense.",
+    "sectors": [
+      "global",
+      "capital"
+    ],
+    "type": "",
+    "companies": [
+      "Israel Aerospace Industries"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/israel-aerospace-industries-profit-jumps-37-as-backlog-hits-35-6-billion/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": [
+      "Israel Aerospace Industries"
     ]
   },
   {
@@ -1208,8 +1241,7 @@
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
     "orgs": [
-      "Air Force",
-      "Breaking Defense"
+      "Air Force"
     ]
   },
   {
@@ -1229,9 +1261,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Congress"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261123-3-launches-in-2-weeks-space-data-network-backbone-",
@@ -1278,9 +1308,7 @@
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
     "orgs": [
-      "U.S. Marines",
       "Force Reconnaissance Company",
-      "2d Marine Division",
       "US Marine Corps"
     ]
   },
@@ -1305,7 +1333,6 @@
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
     "orgs": [
-      "Ford",
       "Revolution Space"
     ]
   },
@@ -1326,30 +1353,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Congress"
-    ]
-  },
-  {
-    "id": "u-20261123-dow-launches-automated-si-solution-for-classificat",
-    "d": "2026-11-23",
-    "title": "DOW Launches Automated SI Solution for Classification Management",
-    "body": "The Automated Classification Management Environment aims to leverage super intelligence and automated workflows to classify and declassify millions of documents.",
-    "why": "",
-    "sectors": [
-      "policy"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "U.S. Department of War",
-      "u": "https://www.war.gov/News/News-Stories/Article/Article/4658620/dow-launches-automated-si-solution-for-classification-management/",
-      "q": "primary"
-    },
-    "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "DOW"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261123-colombia-races-for-counter-drone-tech-as-militant-",
@@ -1372,27 +1376,6 @@
     "orgs": []
   },
   {
-    "id": "u-20261123-army-publishes-guidebook-for-defending-critical-in",
-    "d": "2026-11-23",
-    "title": "Army publishes guidebook for defending critical infrastructure at local installations",
-    "body": "Many of the systems needed to support bases and military movements in the US are owned and operated by private companies and local municipalities, not the federal government or the military.",
-    "why": "",
-    "sectors": [
-      "policy"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Breaking Defense",
-      "u": "https://breakingdefense.com/2026/11/army-publishes-guidebook-for-defending-critical-infrastructure-at-local-installations/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Army"
-    ]
-  },
-  {
     "id": "u-20261123-umbra-iceye-tout-higher-resolution-radar-imaging-w",
     "d": "2026-11-23",
     "title": "Umbra, ICEYE tout higher-resolution radar imaging with new satellites",
@@ -1409,10 +1392,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Umbra",
-      "ICEYE"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261123-beijing-s-takeaway-from-the-midterms-will-to-fight",
@@ -1471,8 +1451,7 @@
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
     "orgs": [
-      "Defense Information Systems Agency",
-      "Department of Defense Cyber Defense"
+      "Defense Information Systems Agency"
     ]
   },
   {
@@ -1492,9 +1471,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "DARPA"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261123-marines-want-naval-strike-missiles-with-double-the",
@@ -1537,8 +1514,6 @@
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
     "orgs": [
-      "People's Liberation Army Navy",
-      "PLAN",
       "& Aerospace"
     ]
   },
@@ -1578,9 +1553,102 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "FEHRM"
-    ]
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-israeli-firm-says-its-new-spy-drone-broke-range-re",
+    "d": "2026-11-23",
+    "title": "Israeli firm says its new spy drone broke range record",
+    "body": "A backpack-sized Israeli spy drone flew 16 km (10 miles) out and back on a single flight without any external antennas, its maker said Monday. The company called it a new all-time range record.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/israeli-firm-says-its-new-spy-drone-broke-range-record/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-powerus-turns-existing-boats-into-crewless-drone-l",
+    "d": "2026-11-23",
+    "title": "Powerus turns existing boats into crewless drone launchers",
+    "body": "U.S. drone maker Powerus is offering to turn boats that militaries already own into crewless drone carriers. Its maritime conversion, called Blue Sky Horizon, adds launch rails on the bow for long-range drones.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/powerus-turns-existing-boats-into-crewless-drone-launchers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-dow-launches-automated-si-solution-for-classificat",
+    "d": "2026-11-23",
+    "title": "DOW Launches Automated SI Solution for Classification Management",
+    "body": "The Automated Classification Management Environment aims to leverage super intelligence and automated workflows to classify and declassify millions of documents.",
+    "why": "",
+    "sectors": [
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4658620/dow-launches-automated-si-solution-for-classification-management/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-24T16:58:40.409Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-u-s-army-ampv-gets-self-driving-prototype-renk-say",
+    "d": "2026-11-23",
+    "title": "U.S. Army AMPV gets self-driving prototype, RENK says",
+    "body": "A driverless version of the U.S. Army's Armored Multi-Purpose Vehicle, or AMPV, is due for its first demonstration in February 2027. The part that lets it drive itself is an upgrade to the transmission it already uses, according to supplier RENK America.",
+    "why": "",
+    "sectors": [
+      "ground"
+    ],
+    "type": "Tech milestone",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-ampv-gets-self-driving-prototype-renk-says/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-army-publishes-guidebook-for-defending-critical-in",
+    "d": "2026-11-23",
+    "title": "Army publishes guidebook for defending critical infrastructure at local installations",
+    "body": "Many of the systems needed to support bases and military movements in the US are owned and operated by private companies and local municipalities, not the federal government or the military.",
+    "why": "",
+    "sectors": [
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/army-publishes-guidebook-for-defending-critical-infrastructure-at-local-installations/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T16:58:40.409Z",
+    "orgs": []
   },
   {
     "id": "u-20261123-marine-corps-moving-new-chatbot-prototyped-at-rece",
@@ -1620,10 +1688,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "USNI News Fleet",
-      "U.S. Navy"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261123-umbra-unveils-new-family-of-sar-satellites",
@@ -1643,10 +1708,7 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Umbra",
-      "WASHINGTON"
-    ]
+    "orgs": []
   },
   {
     "id": "u-20261123-thruster-glitch-clouds-bepicolombo-arrival-at-merc",
@@ -1705,9 +1767,45 @@
       "q": "news"
     },
     "addedAt": "2026-11-24T16:58:40.409Z",
-    "orgs": [
-      "Congressional"
-    ]
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-u-s-navy-clears-german-lar-8000-combat-diving-rebr",
+    "d": "2026-11-23",
+    "title": "U.S. Navy clears German LAR 8000 combat diving rebreather",
+    "body": "An oxygen rebreather built to let combat divers swim without trailing bubbles has passed a U.S. Navy safety review, its maker said Monday.",
+    "why": "",
+    "sectors": [
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-navy-clears-german-lar-8000-combat-diving-rebreather/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261123-russia-rebuilds-key-military-base-60-km-from-finla",
+    "d": "2026-11-23",
+    "title": "Russia rebuilds key military base 60 km from Finland",
+    "body": "Russia has torn down two mess halls, two barracks and more than a dozen vehicle and maintenance halls at its most important army base near Finland, and new construction has started in their place.",
+    "why": "",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russia-rebuilds-key-military-base-60-km-from-finland/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-24T01:25:56.539Z",
+    "orgs": []
   },
   {
     "id": "u-20261123-space-beyond-orders-hardware-for-10-more-memorial-",
@@ -1730,203 +1828,6 @@
     "addedAt": "2026-11-24T16:58:40.409Z",
     "orgs": [
       "Space Beyond"
-    ]
-  },
-  {
-    "id": "u-20261123-lockheed-martin-secures-1-5b-modification-for-trid",
-    "d": "2026-11-23",
-    "title": "Lockheed Martin Secures $1.5B Modification for Trident II D5 Missile Production, Fleet Support",
-    "body": "The sole-source contract calls for work in Utah, Florida, Colorado and other sites running through 2031.",
-    "why": "Sole-source work through 2031 keeps Lockheed Martin on this program.",
-    "sectors": [
-      "strike",
-      "primes"
-    ],
-    "type": "",
-    "companies": [
-      "Lockheed Martin"
-    ],
-    "src": {
-      "t": "GovConWire",
-      "u": "https://www.govconwire.com/articles/lockheed-martin-navy-1-5b-trident-ii-d5-missile-production",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T01:25:56.539Z",
-    "orgs": [
-      "Lockheed Martin"
-    ]
-  },
-  {
-    "id": "u-20261123-new-spys-interceptor-shot-down-russia-s-geran-5-cr",
-    "d": "2026-11-23",
-    "title": "New SPYS interceptor shot down Russia’s Geran-5 cruise missile",
-    "body": "A Ukrainian-built interceptor drone has destroyed a Geran-5 K5-K, a weapon widely reported as Russia's newest jet-powered attack drone but classed by Ukrainian intelligence as a small cruise missile.",
-    "why": "The next buy is more of the Ukrainian interceptor that destroyed Geran-5.",
-    "sectors": [
-      "strike",
-      "missiledef",
-      "cuas",
-      "air"
-    ],
-    "type": "Conflict & allies",
-    "companies": [],
-    "src": {
-      "t": "Defence Blog",
-      "u": "https://defence-blog.com/new-spys-interceptor-shot-down-russias-geran-5-cruise-missile/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T01:25:56.539Z",
-    "orgs": []
-  },
-  {
-    "id": "u-20261123-u-s-army-ampv-gets-self-driving-prototype-renk-say",
-    "d": "2026-11-23",
-    "title": "U.S. Army AMPV gets self-driving prototype, RENK says",
-    "body": "A driverless version of the U.S. Army's Armored Multi-Purpose Vehicle, or AMPV, is due for its first demonstration in February 2027. The part that lets it drive itself is an upgrade to the transmission it already uses, according to supplier RENK America.",
-    "why": "",
-    "sectors": [
-      "ground",
-      "policy"
-    ],
-    "type": "Tech milestone",
-    "companies": [],
-    "src": {
-      "t": "Defence Blog",
-      "u": "https://defence-blog.com/u-s-army-ampv-gets-self-driving-prototype-renk-says/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T01:25:56.539Z",
-    "orgs": [
-      "U.S. Army"
-    ]
-  },
-  {
-    "id": "u-20261123-israeli-firm-says-its-new-spy-drone-broke-range-re",
-    "d": "2026-11-23",
-    "title": "Israeli firm says its new spy drone broke range record",
-    "body": "A backpack-sized Israeli spy drone flew 16 km (10 miles) out and back on a single flight without any external antennas, its maker said Monday. The company called it a new all-time range record.",
-    "why": "",
-    "sectors": [
-      "air"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Defence Blog",
-      "u": "https://defence-blog.com/israeli-firm-says-its-new-spy-drone-broke-range-record/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T01:25:56.539Z",
-    "orgs": []
-  },
-  {
-    "id": "u-20261123-israel-aerospace-industries-profit-jumps-37-as-bac",
-    "d": "2026-11-23",
-    "title": "Israel Aerospace Industries profit jumps 37% as backlog hits $35.6 billion",
-    "body": "Israel Aerospace Industries reported a record $35.6 billion order backlog on Monday and urged the government to settle a Defense Ministry debt that the state-owned company put at billions of shekels. The maker of the Arrow missile-defense system said net….",
-    "why": "A $35.6B backlog makes Israel Aerospace Industries the incumbent on missile defense.",
-    "sectors": [
-      "global",
-      "capital"
-    ],
-    "type": "",
-    "companies": [
-      "Israel Aerospace Industries"
-    ],
-    "src": {
-      "t": "Defence Blog",
-      "u": "https://defence-blog.com/israel-aerospace-industries-profit-jumps-37-as-backlog-hits-35-6-billion/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T01:25:56.539Z",
-    "orgs": [
-      "Israel Aerospace Industries",
-      "Defense Ministry"
-    ]
-  },
-  {
-    "id": "u-20261123-powerus-turns-existing-boats-into-crewless-drone-l",
-    "d": "2026-11-23",
-    "title": "Powerus turns existing boats into crewless drone launchers",
-    "body": "U.S. drone maker Powerus is offering to turn boats that militaries already own into crewless drone carriers. Its maritime conversion, called Blue Sky Horizon, adds launch rails on the bow for long-range drones.",
-    "why": "",
-    "sectors": [
-      "air",
-      "sea"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Defence Blog",
-      "u": "https://defence-blog.com/powerus-turns-existing-boats-into-crewless-drone-launchers/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T01:25:56.539Z",
-    "orgs": [
-      "Powerus",
-      "Sky"
-    ]
-  },
-  {
-    "id": "u-20261123-u-s-navy-clears-german-lar-8000-combat-diving-rebr",
-    "d": "2026-11-23",
-    "title": "U.S. Navy clears German LAR 8000 combat diving rebreather",
-    "body": "An oxygen rebreather built to let combat divers swim without trailing bubbles has passed a U.S. Navy safety review, its maker said Monday.",
-    "why": "",
-    "sectors": [
-      "sea"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Defence Blog",
-      "u": "https://defence-blog.com/u-s-navy-clears-german-lar-8000-combat-diving-rebreather/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T01:25:56.539Z",
-    "orgs": [
-      "U.S. Navy"
-    ]
-  },
-  {
-    "id": "u-20261123-russia-rebuilds-key-military-base-60-km-from-finla",
-    "d": "2026-11-23",
-    "title": "Russia rebuilds key military base 60 km from Finland",
-    "body": "Russia has torn down two mess halls, two barracks and more than a dozen vehicle and maintenance halls at its most important army base near Finland, and new construction has started in their place.",
-    "why": "",
-    "sectors": [
-      "adversary"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Defence Blog",
-      "u": "https://defence-blog.com/russia-rebuilds-key-military-base-60-km-from-finland/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T01:25:56.539Z",
-    "orgs": []
-  },
-  {
-    "id": "u-20261123-turkish-naval-gun-system-shoots-down-jet-drone-in-",
-    "d": "2026-11-23",
-    "title": "Turkish naval gun system shoots down jet drone in live-fire test",
-    "body": "A Turkish twin-cannon ship defense system shot down a fast jet-powered drone off Türkiye's northern coast, and its operator only had to press one button. ASELSAN released video of the test on Monday.",
-    "why": "",
-    "sectors": [
-      "air",
-      "sea"
-    ],
-    "type": "",
-    "companies": [],
-    "src": {
-      "t": "Defence Blog",
-      "u": "https://defence-blog.com/turkish-naval-gun-system-shoots-down-jet-drone-in-live-fire-test/",
-      "q": "news"
-    },
-    "addedAt": "2026-11-24T01:25:56.539Z",
-    "orgs": [
-      "ASELSAN"
     ]
   },
   {
