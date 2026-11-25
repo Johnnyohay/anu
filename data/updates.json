@@ -435,6 +435,538 @@
     ]
   },
   {
+    "id": "u-20261125-air-force-gives-boeing-2-8b-contract-for-more-kc-4",
+    "d": "2026-11-25",
+    "title": "Air Force Gives Boeing $2.8B Contract for More KC-46s, as Price Rises",
+    "body": "The Air Force has awarded Boeing a $2.82 billion contract modification for 15 more KC-46A Pegasus aerial refuelers, the 13th production lot of the tanker.",
+    "why": "The Air Force has $2.8B on KC-46A. A rival has to unseat that incumbent to win the next lot.",
+    "sectors": [
+      "air"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/air-force-boeing-2-8b-contract-more-kc-46s/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "Air Force",
+      "Boeing"
+    ]
+  },
+  {
+    "id": "u-20261125-air-force-issues-boeing-2-8-billion-for-more-kc-46",
+    "d": "2026-11-25",
+    "title": "Air Force issues Boeing $2.8 billion for more KC-46s",
+    "body": "The award brings the total number of air refuelers under contract to 203, and is the final production batch for the US Air Force under the program's original fixed-price contract.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/air-force-issues-boeing-2-8-billion-for-more-kc-46s/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "US Air Force"
+    ]
+  },
+  {
+    "id": "u-20261125-israel-increases-defense-budget-by-5-billion-as-co",
+    "d": "2026-11-25",
+    "title": "Israel increases defense budget by $5 billion as concerns continue over future funding",
+    "body": "Israel has scrambled several times this year to increase its defense spending, at the cost of other priorities.",
+    "why": "",
+    "sectors": [
+      "policy",
+      "global"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/israel-increases-defense-budget-by-5-billion-as-concerns-continue-over-future-funding/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261125-us-air-force-buys-final-kc-46-lot-under-boeing-s-o",
+    "d": "2026-11-25",
+    "title": "US Air Force buys final KC-46 lot under Boeing’s original tanker deal",
+    "body": "The Pentagon on Tuesday announced a $2.82 billion Boeing contract for 15 more KC-46A Pegasus tankers, the final production lot under the program's original 2011 contract.",
+    "why": "The Air Force has $2.82B on KC-46. A rival has to unseat that incumbent to win the next lot.",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/industry/techwatch/2026/11/25/us-air-force-buys-final-kc-46-lot-under-boeings-original-tanker-deal/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "US Air Force",
+      "Boeing",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261125-hegseth-directs-military-pay-system-modernization-",
+    "d": "2026-11-25",
+    "title": "Hegseth Directs Military Pay System Modernization Prioritizing Warfighters",
+    "body": "Secretary of War Pete Hegseth announced a Warrior Pay Modernization initiative that will serve as a comprehensive transformation of military pay systems to ensure warfighters are paid first and errors are reduced.",
+    "why": "",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4660118/hegseth-directs-military-pay-system-modernization-prioritizing-warfighters/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261125-final-kc-46-tankers-under-original-contract-with-b",
+    "d": "2026-11-25",
+    "title": "Final KC-46 Tankers Under Original Contract With Boeing Ordered By USAF",
+    "body": "The U.S. Air Force put in its final order for KC-46A Pegasus tankers under the original contract signed with manufacturer Boeing back in 2011.",
+    "why": "",
+    "sectors": [
+      "air",
+      "mfg"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/final-kc-46-tankers-under-original-contract-with-boeing-ordered-by-usaf",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "Boeing",
+      "USAF",
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261125-ship-killing-arrw-hypersonic-missile-variant-strug",
+    "d": "2026-11-25",
+    "title": "Ship-Killing ARRW Hypersonic Missile Variant Struggling To Get Full Support From Lawmakers",
+    "body": "Senate appropriators recently put forward a defense spending bill that would give the U.S. Air Force just a quarter of the funding it had sought for work on a new version of the AGM-183A Air-launched Rapid Response Weapon (ARRW) hypersonic missile.",
+    "why": "",
+    "sectors": [
+      "strike",
+      "policy",
+      "air"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/ship-killing-arrw-hypersonic-missile-variant-struggling-to-get-full-support-from-lawmakers",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "Senate",
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261125-china-s-cargo-drones-keep-getting-bigger-with-new-",
+    "d": "2026-11-25",
+    "title": "China’s Cargo Drones Keep Getting Bigger With New W8000",
+    "body": "China's ambitions to field increasingly large, uncrewed cargo aircraft are growing, with Air White Whale unveiling its W8000, a cargo UAV reportedly designed to carry up to eight metric tons — a little less than 18,000 pounds.",
+    "why": "",
+    "sectors": [
+      "air",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [
+      "Air White Whale"
+    ],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/chinas-cargo-drones-keep-getting-bigger-with-new-w8000",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "Drones",
+      "Air White Whale"
+    ]
+  },
+  {
+    "id": "u-20261125-pentagon-asks-congress-for-stopgap-help-with-golde",
+    "d": "2026-11-25",
+    "title": "Pentagon Asks Congress for Stopgap Help with Golden Dome, MQ-9 Fleet",
+    "body": "With a Dec. 11 deadline looming to keep the government funded—and another continuing resolution the likely outcome—the White House's Office of Management and Budget has reportedly asked Congress to insert $5 billion in new funding to keep the Golden Dome…",
+    "why": "The Pentagon has $5B on MQ-9. A rival has to unseat that incumbent to win the next lot.",
+    "sectors": [
+      "policy",
+      "missiledef"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/pentagon-congress-help-with-golden-dome-mq-9/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "Pentagon",
+      "Congress",
+      "Office of Management",
+      "Budget"
+    ]
+  },
+  {
+    "id": "u-20261125-fcc-authorizes-spacex-to-deploy-one-million-orbita",
+    "d": "2026-11-25",
+    "title": "FCC authorizes SpaceX to deploy one million orbital data centers",
+    "body": "The Federal Communications Commission cleared SpaceX to deploy one million orbital data centers Nov. 25, rejecting calls to block a constellation of unprecedented size over interference, orbital safety and environmental concerns.",
+    "why": "",
+    "sectors": [
+      "space"
+    ],
+    "type": "",
+    "companies": [
+      "SpaceX"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/fcc-authorizes-spacex-to-deploy-one-million-orbital-data-centers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "FCC",
+      "SpaceX",
+      "Federal Communications Commission"
+    ]
+  },
+  {
+    "id": "u-20261125-the-us-is-racing-to-fix-its-missile-production-cha",
+    "d": "2026-11-25",
+    "title": "The US is racing to fix its missile production challenge. Will it work, and can partners help?",
+    "body": "Global demand for missiles and missile defense means production can't keep up. The Breaking Defense roundtable debates the way forward.",
+    "why": "",
+    "sectors": [
+      "strike",
+      "missiledef"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/the-us-is-racing-to-fix-its-missile-production-challenge-will-it-work-and-can-partners-help/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "Breaking Defense"
+    ]
+  },
+  {
+    "id": "u-20261125-coast-guard-s-updated-force-design-plan-includes-m",
+    "d": "2026-11-25",
+    "title": "Coast Guard’s updated Force Design plan includes Maven Smart System, other digital advancements",
+    "body": "The U.S. Coast Guard's latest force design update includes the Maven Smart System AI tool that has been embraced by the Pentagon, among other digital modernization initiatives.",
+    "why": "",
+    "sectors": [
+      "ai"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "DefenseScoop",
+      "u": "https://defensescoop.com/2026/11/25/coast-guard-force-design-update-digital-modernization/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "U.S. Coast Guard",
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261125-estimates-of-russians-killed-in-ukraine-surpass-al",
+    "d": "2026-11-25",
+    "title": "Estimates of Russians killed in Ukraine surpass all combined US war deaths since WWI",
+    "body": "More than 700,000 Russian soldiers have been killed in the war in Ukraine since Russia launched its full-scale war against the nation nearly five years ago, according to an updated estimate released on Monday.",
+    "why": "",
+    "sectors": [
+      "global",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/25/estimates-of-russians-killed-in-ukraine-surpass-all-combined-us-war-deaths-since-wwi/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261125-japan-to-use-indian-ranges-for-long-range-missile-",
+    "d": "2026-11-25",
+    "title": "Japan to use Indian ranges for long-range missile training under new pact",
+    "body": "NEW DELHI — India will allow Japanese troops to conduct live-fire missile training at its firing ranges for the first time as Tokyo looks overseas for facilities to test its long-range missile capabilities including surface-to-ship missiles.",
+    "why": "",
+    "sectors": [
+      "strike",
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/asia-pacific/2026/11/25/japan-to-use-indian-ranges-for-long-range-missile-training-under-new-pact/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261125-drone-threats-prompt-raf-to-install-netting-at-bas",
+    "d": "2026-11-25",
+    "title": "Drone Threats Prompt RAF To Install Netting At Bases To Protect Aircraft: Reports",
+    "body": "Faced with increasing threats from drones, the Royal Air Force (RAF) is reportedly increasing passive defensive measures to protect its aircraft.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/news-features/drone-threats-prompt-raf-to-install-netting-at-bases-to-protect-aircraft-reports",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "RAF",
+      "Royal Air Force"
+    ]
+  },
+  {
+    "id": "u-20261125-pentagon-elevates-air-force-program-using-ai-for-c",
+    "d": "2026-11-25",
+    "title": "Pentagon Elevates Air Force Program Using AI for Classification Decisions",
+    "body": "The entire Pentagon will soon use an Air Force program applying artificial intelligence tools to the cumbersome process of determining documents and data's classification levels.",
+    "why": "",
+    "sectors": [
+      "ai",
+      "air",
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Air & Space Forces",
+      "u": "https://www.airandspaceforces.com/pentagon-elevates-air-force-program-ai-classification/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "Pentagon",
+      "Air Force"
+    ]
+  },
+  {
+    "id": "u-20261125-defense-business-brief-building-warships-drones-ne",
+    "d": "2026-11-25",
+    "title": "Defense Business Brief: Building warships; Drones; Neighborhood watch; and more...",
+    "body": "Even as they fervently push for the frictionless building of a new frigate, Congress can't seem to fully stomach the idea of making Navy warships overseas.",
+    "why": "",
+    "sectors": [
+      "air",
+      "sea",
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense One",
+      "u": "https://www.defenseone.com/business/2026/11/defense-business-brief-building-warships-drones-neighborhood-watch-and-more/417441/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "Congress",
+      "Navy"
+    ]
+  },
+  {
+    "id": "u-20261125-u-s-mexican-army-leaders-strengthen-bilateral-part",
+    "d": "2026-11-25",
+    "title": "U.S., Mexican Army Leaders Strengthen Bilateral Partnership",
+    "body": "U.S. and Mexican army leaders met in Mexico City and finalized a plan to expand joint training, improve information sharing and strengthen border security cooperation through fiscal year 2027.",
+    "why": "",
+    "sectors": [
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4660227/us-mexican-army-leaders-strengthen-bilateral-partnership/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261125-delivery-of-first-mv-75-for-testing-officially-del",
+    "d": "2026-11-25",
+    "title": "Delivery of first MV-75 for testing officially delayed amid funding setbacks: Army",
+    "body": "A funding shortfall disrupted communications between the Army and Bell, pushing the service past its original delivery target as officials work to establish a revised schedule.",
+    "why": "",
+    "sectors": [
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/delivery-of-first-mv-75-for-testing-officially-delayed-amid-funding-setbacks-army/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "Army",
+      "Bell"
+    ]
+  },
+  {
+    "id": "u-20261125-why-the-pentagon-is-asking-for-anomalies-as-it-pla",
+    "d": "2026-11-25",
+    "title": "Why the Pentagon is asking for ‘anomalies’ as it plans for a long-term CR",
+    "body": "The Trump administration is trying to protect Golden Dome and other priority programs as the budget remains uncertain.",
+    "why": "",
+    "sectors": [
+      "policy",
+      "missiledef"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/why-the-pentagon-is-asking-for-anomalies-as-it-plans-for-a-long-term-cr/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "u-20261125-blast-heard-smoke-seen-rising-over-farmland-near-i",
+    "d": "2026-11-25",
+    "title": "Blast heard, smoke seen rising over farmland near Iowa Army lead azide detonation site",
+    "body": "The Army went ahead with its planned detonation of volatile lead azide reserves Wednesday morning, according to the service.",
+    "why": "",
+    "sectors": [
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/video/2026/11/25/blast-heard-smoke-seen-rising-over-farmland-near-iowa-army-lead-azide-detonation-site/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "Iowa Army"
+    ]
+  },
+  {
+    "id": "u-20261125-opening-remarks-from-richard-breckenridge-to-be-th",
+    "d": "2026-11-25",
+    "title": "Opening Remarks from Richard Breckenridge to be the Navy’s Chief Acquisition Official",
+    "body": "The following are Richard Breckenridge's opening remarks, provided to the U.S. Senate Committee on Armed Services during a Nov. 19, 2026, hearing to consider Breckenridge to be the assistant secretary of the Navy for research, development and acquisition.",
+    "why": "",
+    "sectors": [
+      "sea",
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/25/opening-remarks-from-richard-breckenridge-to-be-the-navys-chief-acquisition-official",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "U.S",
+      "Committee on Armed Services"
+    ]
+  },
+  {
+    "id": "u-20261125-nasa-exploring-earthdaily-data-to-complement-lands",
+    "d": "2026-11-25",
+    "title": "NASA exploring EarthDaily data to complement Landsat",
+    "body": "WASHINGTON — EarthDaily's recent contract to validate the quality and compatibility of its data with NASA's Landsat imaging constellation could offer the civil space agency a complementary commercial source for Earth observation and analytics.",
+    "why": "",
+    "sectors": [
+      "space"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/nasa-exploring-earthdaily-data-to-complement-landsat/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": [
+      "NASA",
+      "EarthDaily",
+      "Landsat",
+      "WASHINGTON"
+    ]
+  },
+  {
+    "id": "u-20261125-china-s-first-commercial-lunar-missions-take-shape",
+    "d": "2026-11-25",
+    "title": "China’s first commercial lunar missions take shape",
+    "body": "HELSINKI — Two Chinese commercial companies are developing lunar spacecraft, signalling the start of a new phase in the country's moon exploration efforts.",
+    "why": "",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/chinas-first-commercial-lunar-missions-take-shape/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-25T22:53:27.040Z",
+    "orgs": []
+  },
+  {
     "id": "u-20261124-amentum-reports-13-8b-in-fy2026-revenue-48-3b-back",
     "d": "2026-11-24",
     "title": "Amentum Reports $13.8B in FY2026 Revenue, $48.3B Backlog",

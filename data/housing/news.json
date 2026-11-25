@@ -80,6 +80,172 @@
   }
  },
  {
+  "id": "h-20261125-court-upholds-nyc-rent-freeze-backed-by-mayor-mamd",
+  "d": "2026-11-25",
+  "title": "Court upholds NYC rent freeze backed by Mayor Mamdani",
+  "body": "Judge Lantry dismissed claims that the mayor predetermined the outcome, and cited the board’s 42-page explanatory statement",
+  "topics": [
+   "rents"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/court-upholds-nyc-rent-freeze/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261125-new-home-sales-surge-in-october-but-demand-signals",
+  "d": "2026-11-25",
+  "title": "New home sales surge in October, but demand signals remain soft",
+  "body": "Subject to revision, sales rose to 701,000 annual pace, while the median sales price fell 3.2% year over year to $391,000",
+  "topics": [
+   "prices",
+   "sales",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/new-home-sales-october-2026/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261125-housing-data-shocks-to-the-upside-will-we-get-sub-",
+  "d": "2026-11-25",
+  "title": "Housing data shocks to the upside: Will we get sub-7% rates for Christmas?",
+  "body": "We're getting surprisingly positive data right before Thanksgiving",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/10-year-yield-482-holiday-rates/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261125-colorado-first-responders-can-now-get-state-home-m",
+  "d": "2026-11-25",
+  "title": "Colorado first responders can now get state home mortgage help",
+  "body": "The new CHFA option follows years of state efforts to expand housing access",
+  "topics": [],
+  "states": [
+   "CO"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/colorado-chfa-mortgage-help/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261125-better-signs-agreement-with-mortgage-servicer-to-g",
+  "d": "2026-11-25",
+  "title": "Better signs agreement with mortgage servicer to grow HELOC volume",
+  "body": "The company's Week 7 scorecard cites $38.97M in corporate savings — more than halfway to its $64.2M target",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/better-mortgage-servicer-heloc/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261125-luminate-bank-buys-real-genius-mortgage-unit",
+  "d": "2026-11-25",
+  "title": "Luminate Bank buys Real Genius mortgage unit",
+  "body": "Deal expands Minneapolis bank’s reach in the consumer-direct channel",
+  "topics": [],
+  "states": [
+   "MN"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/luminate-bank-acquires-real-genius/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261125-how-real-estate-agents-handle-proof-of-funds-and-d",
+  "d": "2026-11-25",
+  "title": "How real estate agents handle proof of funds and disclosures",
+  "body": "Why agents should request documents after the buyer appointment, then limit sharing with a signed authorization",
+  "topics": [
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/proof-funds-disclosure-best-practices/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261125-mortgage-applications-rise-6-1-even-as-30-year-hit",
+  "d": "2026-11-25",
+  "title": "Mortgage applications rise 6.1% even as 30-year hits 7.38%",
+  "body": "Purchase index rose 10% week over week, ARM share climbed to 11.5%, the highest in over a year",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/mortgage-applications-rise-61/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261125-freddie-mac-ai-investment-volatility-prompts-rates",
+  "d": "2026-11-25",
+  "title": "Freddie Mac: AI investment Volatility Prompts Rates to Pull Back",
+  "body": "The Freddie Mac 30-year mortgage rate fell 7 basis points to 7.21% this week, recovering some of the previous-week’s jump that brought rates to 7.28%.",
+  "topics": [
+   "rates",
+   "policy"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/freddie-mac-mortgage-rates-november-25-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261125-new-home-sales-rebound-in-october-due-to-strong-pe",
+  "d": "2026-11-25",
+  "title": "New Home Sales Rebound in October due to Strong Performance in the South",
+  "body": "New home sales picked up in October to a seasonally adjusted annual pace of 701,000. This is a 14.2% increase from September and a 7.5% increase from last October.",
+  "topics": [
+   "sales",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/new-home-sales-october-2026/",
+   "q": "research"
+  }
+ },
+ {
+  "id": "h-20261125-weekly-housing-trends-u-s-market-update-week-endin",
+  "d": "2026-11-25",
+  "title": "Weekly Housing Trends: U.S. Market Update (Week Ending Nov. 21, 2026)",
+  "body": "Get the latest U.S. housing market trends, including inventory shifts, listing activity, prices, and buyer-seller dynamics, with fresh weekly data and insights.",
+  "topics": [
+   "inventory",
+   "sales"
+  ],
+  "states": [],
+  "src": {
+   "t": "Realtor.com Research",
+   "u": "https://www.realtor.com/research/weekly-housing-trends-view-data-week-november-21-2026/",
+   "q": "research"
+  }
+ },
+ {
   "id": "h-20261124-as-cities-act-to-shred-housing-s-red-tape-boston-h",
   "d": "2026-11-24",
   "title": "As cities act to shred housing’s red-tape, Boston homes in on parking",
