@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { briefTitle, classify, storyWhy } from "../src/classify.ts";
-import { cleanCopy, grammarProblem, isStockHedge, limitActor, restatesSummaryNumbers, storyWhy as storyWhyWith, tokenOverlap, ungroundedTerms, uniqueWhys } from "../src/why.ts";
+import { backlogYears, cleanCopy, grammarProblem, isMechanicalChange, isStockHedge, limitActor, restatesSummaryNumbers, storyWhy as storyWhyWith, tokenOverlap, ungroundedTerms, uniqueWhys } from "../src/why.ts";
 import { briefSummary, dedupeEvents, eventKey, isFiller, isListicle, materiallyNew, pickTop, sameEvent, sameStory, storyGist, storyScore } from "../src/brief.ts";
 import { copiesBodySentence } from "../src/why.ts";
 import { selectBriefVideos } from "../src/brief-videos.ts";
@@ -498,7 +498,9 @@ describe("Nov 24 brief quality", () => {
     );
     assert.match(heli, /Special Operations Command/);
     assert.match(heli, /MH-47G/);
-    assert.doesNotMatch(heli, /funded order/);
+    assert.match(heli, /next lot/);
+    assert.match(heli, /Boeing/);
+    assert.doesNotMatch(heli, /modification keeps|funded order/);
     assert.equal(restatesSummaryNumbers(heli, "Boeing has received a $197.3 million order modification to buy more MH-47G special operations helicopters."), false);
     const err = why(
       "$16 billion propulsion mega-contract posted in error, Air Force says",
@@ -514,8 +516,12 @@ describe("Nov 24 brief quality", () => {
     );
     assert.match(book, /backlog/);
     assert.match(book, /Amentum/);
-    assert.match(book, /Navy|Army|NGA/);
-    assert.doesNotMatch(book, /\$13\.8B|\$48\.3B|order book/);
+    assert.match(book, /3\.5 years/);
+    assert.match(book, /\$48\.3B/);
+    assert.match(book, /\$13\.8B/);
+    assert.match(book, /NGA/);
+    assert.match(book, /nuclear/);
+    assert.doesNotMatch(book, /the Navy, the Army, NGA and nuclear awards/);
     assert.equal(restatesSummaryNumbers(book, "Amentum Reports $13.8B in FY2026 Revenue, $48.3B Backlog"), false);
     const drones = why(
       "Pentagon in talks with GM and Ford to help build drones",
@@ -530,8 +536,9 @@ describe("Nov 24 brief quality", () => {
       "BlackSky acquires data firm EpochGeo",
       "BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis.",
     );
-    assert.match(buy, /analysis/);
-    assert.doesNotMatch(buy, /imagery|ownership change|not a new program|does not name a buyer/);
+    assert.match(buy, /sells analysis/);
+    assert.match(buy, /geospatial/);
+    assert.doesNotMatch(buy, /imagery|acquired the data firm|ownership change|not a new program|does not name a buyer/);
     assert.deepEqual(ungroundedTerms(buy, "BlackSky acquires data firm EpochGeo. BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis."), []);
     assert.equal(isStockHedge(buy), false);
     assert.ok(tokenOverlap(buy, "BlackSky Technology announced it acquired geospatial data firm EpochGeo as defense customers seek deeper analysis.") <= 0.6);
@@ -868,6 +875,44 @@ describe("Nov 24 fixes", () => {
     assert.equal(sameStory(cerberusA, other), false);
   });
 
+  it("turns backlog and revenue into years of work, and leaves a restated listing blank", () => {
+    const amentumTitle = "Amentum Reports $13.8B in FY2026 Revenue, $48.3B Backlog";
+    const amentumBody = "Amentum secured $15 billion in net bookings, including major NGA, Navy, Army and international nuclear program awards.";
+    assert.equal(backlogYears(`${amentumTitle}. ${amentumBody}`), "3.5");
+    const book = why(amentumTitle, amentumBody, ["Amentum"]);
+    assert.match(book, /\$48\.3B backlog is about 3\.5 years of the \$13\.8B revenue/);
+    assert.match(book, /NGA, nuclear, Navy and Army/);
+    assert.doesNotMatch(book, /the backlog of the Navy/i);
+    const black = why(
+      "BlackSky acquires data firm EpochGeo",
+      "WASHINGTON — BlackSky Technology announced it acquired geospatial data firm EpochGeo, a move to expand its slate of real-time intelligence tools as defense customers seek deeper analysis and data fusion capabilities.",
+      ["BlackSky Technology"],
+    );
+    assert.match(black, /sells analysis and data fusion/);
+    assert.match(black, /not only geospatial data/);
+    assert.doesNotMatch(black, /acquired the data firm|imagery|NGA|Maven/);
+    assert.deepEqual(ungroundedTerms(black, "BlackSky acquires data firm EpochGeo. WASHINGTON — BlackSky Technology announced it acquired geospatial data firm EpochGeo, a move to expand its slate of real-time intelligence tools as defense customers seek deeper analysis and data fusion capabilities."), []);
+    const heli = why(
+      "U.S. Special Operations Command orders more MH-47Gs",
+      "Boeing has received a $197.3 million order modification to buy more MH-47G special operations helicopters for U.S. Special Operations Command.",
+    );
+    assert.match(heli, /Boeing keeps the next lot of MH-47G helicopters for Special Operations Command/);
+    assert.doesNotMatch(heli, /modification/);
+    const dome = why(
+      "White House seeks funding exemptions for Golden Dome, Trump battleship in next funding stopgap",
+      "The Pentagon's munitions ramp up could also face turmoil if anomalies for key programs are not approved.",
+    );
+    assert.match(dome, /have no stopgap funding until anomalies are approved/);
+    assert.doesNotMatch(dome, /turmoil/);
+    const spac = why(
+      "Quantum Space Closes SPAC Merger With Inflection Point Ahead of NYSE Debut",
+      "Quantum Space is set to begin trading on NYSE as QSPC following its merger with special purpose acquisition company Inflection Point.",
+    );
+    assert.equal(spac, "");
+    assert.equal(isMechanicalChange("Cerberus changes the OneWeb factory to American ownership."), true);
+    assert.equal(isMechanicalChange("The Inflection Point merger changes Quantum Space to NYSE trading as QSPC."), true);
+  });
+
   it("writes a consequence for the CR anomaly, the Airbus sale, CAMM-MR, the SPAC, and the drone talks", () => {
     const dome = why(
       "White House seeks funding exemptions for Golden Dome, Trump battleship in next funding stopgap",
@@ -875,15 +920,15 @@ describe("Nov 24 fixes", () => {
     );
     assert.match(dome, /Golden Dome/);
     assert.match(dome, /battleship/);
-    assert.match(dome, /turmoil/);
+    assert.match(dome, /stopgap funding/);
+    assert.match(dome, /anomalies are approved/);
+    assert.doesNotMatch(dome, /turmoil|face turmoil/);
     assert.ok(tokenOverlap(dome, "The Pentagon's munitions ramp up could also face turmoil if anomalies for key programs are not approved, the White House warned.") <= 0.6);
     const sale = why(
       "Private equity firm Cerberus to acquire Airbus' U.S. satellite business",
       "The deal brings a factory built for OneWeb's broadband constellation under American ownership.",
     );
-    assert.match(sale, /Cerberus/);
-    assert.match(sale, /OneWeb/);
-    assert.match(sale, /American ownership/);
+    assert.equal(sale, "");
     assert.equal(copiesBodySentence(sale, "The deal brings a factory built for OneWeb's broadband constellation under American ownership."), false);
     const camm = why(
       "Poland, UK sign deal to develop CAMM-MR missile",
@@ -896,10 +941,9 @@ describe("Nov 24 fixes", () => {
       "Quantum Space Closes SPAC Merger With Inflection Point Ahead of NYSE Debut",
       "Quantum Space is set to begin trading on NYSE as QSPC following its merger with special purpose acquisition company Inflection Point.",
     );
-    assert.match(spac, /QSPC/);
-    assert.match(spac, /Inflection Point/);
+    assert.equal(spac, "");
     assert.equal(isStockHedge(spac), false);
-    assert.deepEqual(ungroundedTerms(spac, "Quantum Space Closes SPAC Merger With Inflection Point Ahead of NYSE Debut. Quantum Space is set to begin trading on NYSE as QSPC following its merger with special purpose acquisition company Inflection Point."), []);
+    assert.doesNotMatch(spac, /changes .+ to NYSE/);
     const thin = why("Investment firm Cerberus to buy space business of US Airbus arm", "Airbus will expand production of autonomous aircraft.");
     assert.equal(thin, "");
   });

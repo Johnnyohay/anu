@@ -4,7 +4,7 @@
     "d": "2026-11-24",
     "title": "Amentum Reports $13.8B in FY2026 Revenue, $48.3B Backlog",
     "body": "Amentum secured $15 billion in net bookings, including major NGA, Navy, Army and international nuclear program awards.",
-    "why": "The backlog of the Navy, the Army, NGA and nuclear awards is what positions Amentum to win the next competition.",
+    "why": "Amentum's $48.3B backlog is about 3.5 years of the $13.8B revenue, including NGA, nuclear, Navy and Army awards.",
     "sectors": [
       "capital"
     ],
@@ -72,7 +72,7 @@
     "d": "2026-11-24",
     "title": "BlackSky acquires data firm EpochGeo",
     "body": "WASHINGTON — BlackSky Technology announced it acquired geospatial data firm EpochGeo, a move to expand its slate of real-time intelligence tools as defense customers seek deeper analysis and data fusion capabilities.",
-    "why": "BlackSky Technology acquired the data firm, so defense customers can buy analysis and data fusion from one firm.",
+    "why": "BlackSky Technology sells analysis and data fusion to defense customers, not only geospatial data.",
     "sectors": [
       "capital"
     ],
@@ -95,7 +95,7 @@
     "d": "2026-11-24",
     "title": "U.S. Special Operations Command orders more MH-47Gs",
     "body": "Boeing has received a $197.3 million order modification to buy more MH-47G special operations helicopters for U.S. Special Operations Command, according to a Department of War contract announcement Monday.",
-    "why": "The modification keeps Boeing on MH-47G for Special Operations Command.",
+    "why": "Boeing keeps the next lot of MH-47G helicopters for Special Operations Command.",
     "sectors": [
       "air"
     ],
@@ -317,7 +317,7 @@
     "d": "2026-11-24",
     "title": "White House seeks funding exemptions for Golden Dome, Trump battleship in next funding stopgap",
     "body": "The Pentagon's munitions ramp up could also face turmoil if anomalies for key programs are not approved, the White House warned.",
-    "why": "If the anomalies are not approved, Golden Dome and the battleship face turmoil.",
+    "why": "Golden Dome and the battleship have no stopgap funding until anomalies are approved.",
     "sectors": [
       "missiledef",
       "strike"
@@ -459,7 +459,7 @@
     "d": "2026-11-24",
     "title": "Poland, UK sign deal to develop CAMM-MR missile",
     "body": "Poland and the United Kingdom signed an intergovernmental agreement on Tuesday that opens the way to developing CAMM-MR, a new air defense missile meant to reach beyond 100 km (62 miles), Poland's Armament Agency said in a statement.",
-    "why": "Poland and the UK developing CAMM-MR changes their air defense missile's reach to beyond 100 km.",
+    "why": "Without the agreement, Poland and the UK do not develop CAMM-MR beyond 100 km.",
     "sectors": [
       "strike",
       "global",
@@ -618,7 +618,7 @@
     "d": "2026-11-24",
     "title": "Private equity firm Cerberus to acquire Airbus’ U.S. satellite business",
     "body": "The deal brings a factory built for OneWeb's broadband constellation under American ownership.",
-    "why": "Cerberus changes the OneWeb factory to American ownership.",
+    "why": "",
     "sectors": [
       "space",
       "mfg"
@@ -1044,7 +1044,7 @@
     "d": "2026-11-24",
     "title": "Quantum Space Closes SPAC Merger With Inflection Point Ahead of NYSE Debut",
     "body": "Quantum Space is set to begin trading on NYSE as QSPC following its merger with special purpose acquisition company Inflection Point.",
-    "why": "The Inflection Point merger changes Quantum Space to NYSE trading as QSPC.",
+    "why": "",
     "sectors": [
       "capital",
       "space"

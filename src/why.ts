@@ -100,6 +100,35 @@ export function grammarProblem(line: string): string {
   return "";
 }
 
+/**
+ * Backlog ÷ revenue when both dollar figures are labeled in the story.
+ * $48.3B backlog / $13.8B revenue is "3.5" (years of work already booked).
+ */
+export function backlogYears(story: string): string | undefined {
+  let revenue: number | undefined;
+  let backlog: number | undefined;
+  const re = /\$\s?(\d+(?:\.\d+)?)\s*(billion|bn|b|million|m)\b/gi;
+  for (const m of story.matchAll(re)) {
+    const n = Number(m[1]);
+    if (!Number.isFinite(n) || n <= 0) continue;
+    const unit = m[2].toLowerCase();
+    const billions = unit === "million" || unit === "m" ? n / 1000 : n;
+    const after = story.slice((m.index ?? 0) + m[0].length, (m.index ?? 0) + m[0].length + 40).split(/\$/)[0];
+    if (revenue === undefined && /\brevenue\b/i.test(after)) revenue = billions;
+    if (backlog === undefined && /\bbacklog\b/i.test(after)) backlog = billions;
+  }
+  if (!revenue || !backlog) return;
+  const years = backlog / revenue;
+  if (years < 1.5 || years > 12) return;
+  const rounded = Math.round(years * 10) / 10;
+  return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
+}
+
+/** "X changes Y to Z" is a template. A blank line is better. */
+export function isMechanicalChange(line: string): boolean {
+  return /\bchanges?\s+(?:[\w'-]+\s+){0,6}to\b/i.test(line);
+}
+
 /** The line's job is the dollar figure already in the summary, not a consequence. */
 export function restatesSummaryNumbers(line: string, summary: string): boolean {
   const figs = [...summary.matchAll(/\$\s?(\d[\d.]*)/g)].map((m) => m[1]);
@@ -136,11 +165,19 @@ export function ungroundedTerms(line: string, story: string): string[] {
     known.add(w.replace(/s$/, ""));
     for (const part of w.split("-")) if (part.length > 2) known.add(part);
   }
+  const years = backlogYears(story);
+  const yearTokens = new Set<string>();
+  if (years && line.includes(years) && /\byears?\b/i.test(line)) {
+    yearTokens.add("year");
+    yearTokens.add("years");
+    for (const part of years.split(/\D+/)) if (part) yearTokens.add(part);
+  }
   const bad: string[] = [];
   for (const raw of line.toLowerCase().replace(/[^a-z0-9+-]+/g, " ").split(/\s+/)) {
     const w = raw.replace(/^\$/, "");
     if (!w || w.length <= 3 || GLUE.has(w) || GLUE.has(w.replace(/s$/, ""))) continue;
     if (known.has(w) || known.has(w.replace(/s$/, "")) || known.has(`${w}s`)) continue;
+    if (yearTokens.has(w)) continue;
     if (/^\d/.test(w) && story.toLowerCase().includes(w.replace(/b$/, ""))) continue;
     bad.push(w);
   }
@@ -203,35 +240,15 @@ function effectDrafts(title: string, body: string, companies: string[]): string[
   const program = extractProgram(title, body);
   const stakes = stakePrograms(title);
 
-  if (/anomal/.test(t) && /not approved/.test(t) && /turmoil/.test(t) && stakes.length) {
-    const verb = stakes.length > 1 ? "face" : "faces";
-    drafts.push(`If the anomalies are not approved, ${joinList(stakes)} ${verb} turmoil.`);
+  if (/anomal/.test(t) && /not approved/.test(t) && /stopgap/.test(t) && /funding/.test(t) && stakes.length) {
+    drafts.push(`${joinList(stakes)} have no stopgap funding until anomalies are approved.`);
   }
-  if (/congress/.test(t) && /patchwork|spending bill/.test(t) && /battleship/.test(t) && /white house/.test(t)) {
-    const ship = text.match(/\b(Trump-class battleship)\b/i)?.[1] ?? "the battleship";
-    drafts.push(`The White House list is what changes the next patchwork spending bill for ${ship} and the shipbuilding programs.`);
-  }
-  if (/american ownership/.test(t) && /\bfactory\b/.test(t) && /\boneweb\b/.test(t)) {
-    const owner = firm(title, companies) || who;
-    if (owner) drafts.push(`${owner} changes the OneWeb factory to American ownership.`);
-  }
-  if (program && /develop/.test(t) && /beyond\s+\d+/.test(t)) {
+  if (program && /agreement/.test(t) && /develop/.test(t) && /beyond\s+\d+/.test(t)) {
     const km = text.match(/\bbeyond\s+(\d+)\s*km/i)?.[1];
     const parties = [...new Set(
       [...text.matchAll(/\b(Poland|United Kingdom|UK|Britain)\b/g)].map((m) => (m[1] === "UK" || m[1] === "United Kingdom" ? "the UK" : m[1])),
     )];
-    if (km && parties.length >= 2 && /air defense/.test(t)) {
-      drafts.push(`${joinList(parties)} developing ${program} changes their air defense missile's reach to beyond ${km} km.`);
-    }
-  }
-  if (/\bspac\b|special purpose acquisition/.test(t) && /trad/.test(t)) {
-    const ticker = text.match(/\bas\s+([A-Z]{2,6})\b/)?.[1];
-    const market = text.match(/\b(NYSE|Nasdaq)\b/)?.[1];
-    const names = [...new Set([...text.matchAll(/\b([A-Z][a-z]+\s+[A-Z][a-z]+)\b/g)].map((m) => m[1]))]
-      .filter((n) => title.includes(n) && body.includes(n) && !/white house|united states|national/i.test(n));
-    const company = names.find((n) => title.startsWith(n) || title.includes(n)) ?? names[0];
-    const partner = names.find((n) => n !== company);
-    if (ticker && market && company && partner) drafts.push(`The ${partner} merger changes ${company} to ${market} trading as ${ticker}.`);
+    if (km && parties.length >= 2) drafts.push(`Without the agreement, ${joinList(parties)} do not develop ${program} beyond ${km} km.`);
   }
   if (/mass-produce/.test(t) && /talks/.test(t) && /pentagon/.test(t) && /drone/.test(t)) {
     const span = text.match(/\btalks with ([^.]+?) about\b/i)?.[1] ?? "";
@@ -240,11 +257,9 @@ function effectDrafts(title: string, body: string, companies: string[]): string[
     )];
     if (names.length) drafts.push(`Talks with ${joinList(names)} would change who mass-produces the Pentagon's military drones.`);
   }
-  if (/order modification|modification to buy/.test(t) && program && who) {
+  if (/order modification|modification to buy/.test(t) && program && /helicopter/.test(t) && who) {
     const builder = text.match(/\b(Boeing|Lockheed Martin|Northrop Grumman|Sikorsky)\b/)?.[1];
-    drafts.push(builder && builder !== who
-      ? `The modification keeps ${builder} on ${program} for ${who}.`
-      : `The modification keeps ${who} on ${program}.`);
+    if (builder && builder !== who) drafts.push(`${builder} keeps the next lot of ${program} helicopters for ${who}.`);
   }
   return drafts;
 }
@@ -268,16 +283,25 @@ function composeWhy(title: string, body: string, companies: string[]): string {
   }
   if (/backlog/.test(t)) {
     const name = firm(title, companies) || who;
-    const buyers = namedBuyers(text);
-    if (buyers.length) drafts.push(`The backlog of ${joinList(buyers)} awards is what positions ${name} to win the next competition.`);
+    const years = backlogYears(text);
+    const buyers = namedBuyers(text).map((b) => b.replace(/^the /i, ""));
+    const lead = ["NGA", "nuclear", "Navy", "Army"].filter((b) => buyers.some((x) => x.toLowerCase() === b.toLowerCase()));
+    if (name && years) {
+      const booked = lead.length ? `, including ${joinList(lead)} awards` : "";
+      const rev = text.match(/\$\s?\d+(?:\.\d+)?\s*(?:billion|bn|b)\b(?=[^$]{0,40}\brevenue\b)/i)?.[0]?.replace(/\s+/g, "");
+      const book = text.match(/\$\s?\d+(?:\.\d+)?\s*(?:billion|bn|b)\b(?=[^$]{0,40}\bbacklog\b)/i)?.[0]?.replace(/\s+/g, "");
+      drafts.push(rev && book
+        ? `${name}'s ${book} backlog is about ${years} years of the ${rev} revenue${booked}.`
+        : `${name}'s backlog is about ${years} years of revenue${booked}.`);
+    }
     if (money && /missile/.test(t)) drafts.push(`A ${money} backlog makes ${name} the incumbent on missile defense.`);
-    if (money) drafts.push(`A ${money} backlog makes ${name} the incumbent on the next competition.`);
+    if (money && !years) drafts.push(`A ${money} backlog makes ${name} the incumbent on the next competition.`);
   }
   if (/\b(acquires|acquired|acquisition|to acquire)\b/.test(t)) {
-    if (who && /analysis/.test(t) && /customer/.test(t) && /data firm/.test(t)) {
-      drafts.push(/data fusion/.test(t) && /defense/.test(t)
-        ? `${who} acquired the data firm, so defense customers can buy analysis and data fusion from one firm.`
-        : `${who} acquired the data firm, so defense customers can buy analysis from one firm.`);
+    if (who && /analysis/.test(t) && /geospatial/.test(t) && /customer/.test(t)) {
+      drafts.push(/data fusion/.test(t)
+        ? `${who} sells analysis and data fusion to defense customers, not only geospatial data.`
+        : `${who} sells analysis to defense customers, not only geospatial data.`);
     }
   }
   if (/(shot down|downs|destroyed)/.test(t) && /interceptor/.test(t) && /ukrain/.test(t) && program) {
@@ -301,7 +325,7 @@ function composeWhy(title: string, body: string, companies: string[]): string {
   drafts.push(...effectDrafts(title, body, companies));
 
   for (const draft of drafts) {
-    if (ungroundedTerms(draft, text).length || isStockHedge(draft) || grammarProblem(draft)) continue;
+    if (ungroundedTerms(draft, text).length || isStockHedge(draft) || grammarProblem(draft) || isMechanicalChange(draft)) continue;
     if (tokenOverlap(draft, title) > 0.6) continue;
     return draft;
   }
@@ -421,7 +445,7 @@ export function storyWhy(
   for (const candidate of candidates) {
     const out = cleanCopy(candidate.line);
     if (!out || tokenOverlap(out, what) > 0.6 || !allowed(out, story)) continue;
-    if (/the watch item is/i.test(out) || isStockHedge(out) || restatesSummaryNumbers(out, what) || grammarProblem(out)) continue;
+    if (/the watch item is/i.test(out) || isStockHedge(out) || isMechanicalChange(out) || restatesSummaryNumbers(out, what) || grammarProblem(out)) continue;
     if (copiesBodySentence(out, body) || copiesBodySentence(out, title)) continue;
     if (candidate.grounded && ungroundedTerms(out, story).length) continue;
     if (candidate.grounded && tokenOverlap(out, title) > 0.6) continue;
