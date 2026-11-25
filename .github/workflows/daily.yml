@@ -21,6 +21,8 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -37,6 +39,26 @@ jobs:
         with:
           path: .hf-cache
           key: hf-models-bert-base-NER-v1
+
+      # Same free model Ask ANU uses. Cold pull is a few minutes; later runs hit the cache.
+      # continue-on-error: a failed install must not block the brief. Rules still write the lines.
+      - uses: actions/cache@v4
+        if: env.GROQ_API_KEY == '' && github.event_name != 'push'
+        with:
+          path: ~/.ollama/models
+          key: ollama-qwen3.5:4b
+      - name: Start a free model for so-what lines (no Groq key)
+        if: env.GROQ_API_KEY == '' && github.event_name != 'push'
+        timeout-minutes: 12
+        continue-on-error: true
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          sudo systemctl stop ollama 2>/dev/null || true   # run our own, with the cached model folder
+          (OLLAMA_MODELS=$HOME/.ollama/models ollama serve > /tmp/ollama.log 2>&1 &)
+          for _ in $(seq 1 30); do curl -s localhost:11434/api/tags >/dev/null && break; sleep 1; done
+          OLLAMA_MODELS=$HOME/.ollama/models ollama pull qwen3.5:4b
+          echo "OLLAMA_MODEL=qwen3.5:4b" >> "$GITHUB_ENV"
+          echo "WHY_MODEL_TIMEOUT_MS=90000" >> "$GITHUB_ENV"
 
       - name: Collect today's news and write the brief (free, no API key)
         if: github.event_name != 'push'

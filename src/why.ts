@@ -4,6 +4,7 @@
  * summary. The lede is never the fallback: a weak match uses the sector's watch
  * item, tied to a name from the story.
  */
+import { PROVIDERS, chat, type Provider } from "./llm.ts";
 const STOP = new Set("the a an of to for and or in on with from its their this that has have after over into than then says said will would about new more most first next was were been being into than".split(" "));
 
 export function tokens(text: string): Set<string> {
@@ -377,29 +378,56 @@ export function uniqueWhys<T extends { title: string; why: string }>(items: T[])
   }
 }
 
+const WHY_PROMPT =
+  "Write one concrete so-what sentence per story for someone buying or building defense tech. Name who buys or acts and what changes for them. Never restate or paraphrase the lede. 40 to 320 characters, one or two sentences. Return JSON {\"lines\":[{\"id\":\"...\",\"why\":\"...\"}]}.";
+
+/** Groq when a key is set, otherwise a local Ollama model when the daily job started one. Nothing when neither is configured. */
+export function whyModel(): Provider | null {
+  if (process.env.GROQ_API_KEY) return PROVIDERS.groq();
+  if (process.env.OLLAMA_MODEL || process.env.OLLAMA_HOST) return PROVIDERS.ollama();
+  return null;
+}
+
+export function acceptModelWhy(why: string, summary: string): boolean {
+  const line = cleanCopy(why);
+  if (line.length < 40 || line.length > 420) return false;
+  if (!/[a-z]/i.test(line)) return false;
+  if (/(.)\1{8,}/.test(line)) return false;
+  if (tokenOverlap(line, summary) > 0.6) return false;
+  return true;
+}
+
 /**
- * One Groq call for the day's lines, only when GROQ_API_KEY is set.
- * A line that copies the summary is discarded and the rule-based line stays.
- * The daily job and CI have no key, so they keep the rule-based lines.
+ * One model call for the day's lines. Groq if GROQ_API_KEY is set, otherwise Ollama
+ * when OLLAMA_MODEL or OLLAMA_HOST is set (the daily job starts Ollama in that case).
+ * Empty, garbage, or near-copy lines are rejected per story. Any failure leaves the
+ * rule-based line in place. WHY_MODEL_TIMEOUT_MS (default 90s) stops a slow model
+ * from holding up the publish.
  */
 export async function polishWhys(items: { id: string; title: string; body: string; why: string; sector?: string }[]): Promise<void> {
-  if (!process.env.GROQ_API_KEY || !items.length) return;
+  const provider = whyModel();
+  if (!items.length || !provider) return;
+  const ms = Number(process.env.WHY_MODEL_TIMEOUT_MS ?? 90_000);
   try {
-    const { PROVIDERS } = await import("./llm.ts");
-    const { chat } = await import("./llm.ts");
-    const res = await chat(PROVIDERS.groq(), {
-      temperature: 0.2,
-      json: true,
-      messages: [
-        { role: "system", content: "Write one so-what sentence per story for someone buying or building defense tech: who buys, what changes, who benefits. Do not paraphrase the lede. Return JSON {\"lines\":[{\"id\":\"...\",\"why\":\"...\"}]}." },
-        { role: "user", content: JSON.stringify(items.map((i) => ({ id: i.id, title: i.title, sector: i.sector, body: i.body.slice(0, 420) }))) },
-      ],
-    });
-    const parsed = JSON.parse(res.content) as { lines?: { id: string; why: string }[] };
+    const res = await chat(
+      provider,
+      {
+        temperature: 0.2,
+        json: true,
+        // qwen3.5 thinks by default. On the free runner that spends the timeout before any JSON.
+        ...(provider.id === "ollama" ? { reasoningEffort: "none" as const } : {}),
+        messages: [
+          { role: "system", content: WHY_PROMPT },
+          { role: "user", content: JSON.stringify(items.map((i) => ({ id: i.id, title: i.title, sector: i.sector, body: i.body.slice(0, 420) }))) },
+        ],
+      },
+      { signal: AbortSignal.timeout(Number.isFinite(ms) && ms > 0 ? ms : 90_000) },
+    );
+    const raw = res.content.match(/\{[\s\S]*\}/)?.[0] ?? res.content;
+    const parsed = JSON.parse(raw) as { lines?: { id: string; why: string }[] };
     for (const row of parsed.lines ?? []) {
       const item = items.find((i) => i.id === row.id);
-      const why = cleanCopy(row.why ?? "");
-      if (item && why && tokenOverlap(why, item.body) <= 0.6) item.why = why;
+      if (item && acceptModelWhy(row.why ?? "", item.body)) item.why = cleanCopy(row.why);
     }
   } catch (err) {
     console.warn(`Why-line model skipped: ${err instanceof Error ? err.message : err}`);
