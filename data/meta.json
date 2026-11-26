@@ -69,11 +69,11 @@
       ]
     }
   ],
-  "collectedAt": "2026-11-25T22:53:27.040Z",
+  "collectedAt": "2026-11-26T14:00:32.821Z",
   "feedHealth": {
-    "checkedAt": "2026-11-25T22:53:27.040Z",
+    "checkedAt": "2026-11-26T14:00:32.821Z",
     "flags": []
   },
-  "week": "518 stories since 2026-11-11, led by drones (119), space (65), ships (55).",
-  "weekAsOf": "2026-11-25"
+  "week": "495 stories since 2026-11-12, led by drones (119), space (59), ships (54).",
+  "weekAsOf": "2026-11-26"
 }

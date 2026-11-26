@@ -1,5 +1,194 @@
 [
   {
+    "id": "u-20261126-pratt-whitney-gets-2-5-billion-to-service-f-35-jet",
+    "d": "2026-11-26",
+    "title": "Pratt Whitney gets $2.5 billion to service F-35 jet engines",
+    "body": "The U.S. Navy has awarded RTX's Pratt Whitney a $2.53 billion contract to keep the F135 engine running across the global F-35 fleet for another year. That's roughly $925 million more than the deal it replaces.",
+    "why": "RTX has $2.5B on F-35. A rival has to unseat that incumbent to win the next lot.",
+    "sectors": [
+      "air",
+      "primes"
+    ],
+    "type": "Contract",
+    "companies": [
+      "RTX",
+      "Pratt Whitney"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/pratt-whitney-gets-2-5-billion-to-service-f-35-jet-engines/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T14:00:32.821Z",
+    "orgs": [
+      "Pratt Whitney",
+      "U.S. Navy",
+      "RTX"
+    ]
+  },
+  {
+    "id": "u-20261126-u-s-navy-orders-three-more-e-130j-test-aircraft-fo",
+    "d": "2026-11-26",
+    "title": "U.S. Navy orders three more E-130J test aircraft for $1.13 billion",
+    "body": "The U.S. Navy has awarded Northrop Grumman $1.13 billion to build three more test aircraft for the E-130J Phoenix II. The C-130J-based plane will take over the service's submarine communications relay mission from the aging E-6B Mercury.",
+    "why": "The Navy has $1.13B on E-130J. A rival has to unseat that incumbent to win the next lot.",
+    "sectors": [
+      "sea",
+      "air",
+      "primes"
+    ],
+    "type": "Contract",
+    "companies": [
+      "Northrop Grumman"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-navy-orders-three-more-e-130j-test-aircraft-for-1-13-billion/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T14:00:32.821Z",
+    "orgs": [
+      "U.S. Navy",
+      "Northrop Grumman",
+      "Mercury"
+    ]
+  },
+  {
+    "id": "u-20261126-japan-takes-delivery-of-ai-guided-interceptor-dron",
+    "d": "2026-11-26",
+    "title": "Japan takes delivery of AI-guided interceptor drones",
+    "body": "Japan has taken delivery of its first batch of Terra B1 interceptor drones, about three months after signing a mass-production contract, according to Tokyo-based maker Terra Drone.",
+    "why": "",
+    "sectors": [
+      "cuas",
+      "air",
+      "global"
+    ],
+    "type": "",
+    "companies": [
+      "Terra Drone"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/japan-takes-delivery-of-ai-guided-interceptor-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T14:00:32.821Z",
+    "orgs": [
+      "Terra Drone"
+    ]
+  },
+  {
+    "id": "u-20261126-german-electric-drone-sets-727-km-h-world-speed-re",
+    "d": "2026-11-26",
+    "title": "German electric drone sets 727 km/h world speed record",
+    "body": "A German battery-powered drone has flown a measured 100-meter course at 727 km/h (452 mph), averaged over runs in both directions, setting a new world speed record for electric flight, its maker Quantum Systems said Thursday.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [
+      "Quantum Systems"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/german-electric-drone-sets-727-km-h-world-speed-record/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T14:00:32.821Z",
+    "orgs": [
+      "Quantum Systems"
+    ]
+  },
+  {
+    "id": "u-20261126-ukraine-formally-seeks-italy-s-retiring-eurofighte",
+    "d": "2026-11-26",
+    "title": "Ukraine formally seeks Italy’s retiring Eurofighters, report says",
+    "body": "Ukraine has formally expressed interest in receiving between 10 and 20 Eurofighter Typhoon fighter jets that Italy plans to retire from its air force, and the two governments are already negotiating, Italian daily La Repubblica reported.",
+    "why": "",
+    "sectors": [
+      "air",
+      "global"
+    ],
+    "type": "",
+    "companies": [
+      "La Repubblica"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/ukraine-formally-seeks-italys-retiring-eurofighters-report-says/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T14:00:32.821Z",
+    "orgs": [
+      "La Repubblica"
+    ]
+  },
+  {
+    "id": "u-20261126-u-s-army-says-first-dark-eagle-hypersonic-battery-",
+    "d": "2026-11-26",
+    "title": "U.S. Army says first Dark Eagle hypersonic battery is ready",
+    "body": "The U.S. Army's first Dark Eagle hypersonic missile battery is now fully fielded and ready for combat, nearly three years after the original target date, the service's top weapons buyer for long-range fires said. It is fully fielded. It is ready to go, Lt.",
+    "why": "",
+    "sectors": [
+      "strike",
+      "policy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/u-s-army-says-first-dark-eagle-hypersonic-battery-is-ready/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T14:00:32.821Z",
+    "orgs": [
+      "U.S. Army"
+    ]
+  },
+  {
+    "id": "u-20261126-four-f-16-donors-fund-ukraine-s-biggest-u-s-jet-su",
+    "d": "2026-11-26",
+    "title": "Four F-16 donors fund Ukraine’s biggest U.S. jet support package yet",
+    "body": "The U.S. State Department has approved a possible $621.9 million sale of F-16 sustainment equipment to Ukraine, paid for entirely by Belgium, Denmark, the Netherlands and Norway.",
+    "why": "Four has $621.9 million on F-16. A rival has to unseat that incumbent to win the next lot.",
+    "sectors": [
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/four-f-16-donors-fund-ukraines-biggest-u-s-jet-support-package-yet/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T14:00:32.821Z",
+    "orgs": [
+      "U.S. State Department"
+    ]
+  },
+  {
+    "id": "u-20261126-russia-s-delayed-su-75-resurfaces-on-state-tv-stil",
+    "d": "2026-11-26",
+    "title": "Russia’s delayed Su-75 resurfaces on state TV, still not flying",
+    "body": "Russian state television has given a rare look at the long-delayed Su-75 Checkmate stealth fighter, not on a runway but on a screen inside the aircraft plant that is supposed to build it.",
+    "why": "",
+    "sectors": [
+      "air",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/russias-delayed-su-75-resurfaces-on-state-tv-still-not-flying/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T14:00:32.821Z",
+    "orgs": []
+  },
+  {
     "id": "u-20261125-ukraine-says-rare-russian-aerospace-sensor-hit-in-",
     "d": "2026-11-25",
     "title": "Ukraine says rare Russian aerospace sensor hit in Smolensk",
@@ -965,6 +1154,27 @@
     },
     "addedAt": "2026-11-25T22:53:27.040Z",
     "orgs": []
+  },
+  {
+    "id": "u-20261125-nasa-nuclear-propulsion-demo-mission-to-make-limit",
+    "d": "2026-11-25",
+    "title": "NASA nuclear propulsion demo mission to make limited use of nuclear propulsion",
+    "body": "A NASA mission billed as the first in-space demonstration of nuclear propulsion will be propelled by nuclear power for only the initial part of its journey to Mars.",
+    "why": "",
+    "sectors": [
+      "energy"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/nasa-nuclear-propulsion-demo-mission-to-make-limited-use-of-nuclear-propulsion/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T14:00:32.821Z",
+    "orgs": [
+      "NASA"
+    ]
   },
   {
     "id": "u-20261124-amentum-reports-13-8b-in-fy2026-revenue-48-3b-back",
