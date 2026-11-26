@@ -189,6 +189,140 @@
     "orgs": []
   },
   {
+    "id": "u-20261126-hegseth-extends-thanksgiving-greetings-to-troops-d",
+    "d": "2026-11-26",
+    "title": "Hegseth Extends Thanksgiving Greetings to Troops Deployed at Home, Abroad",
+    "body": "Secretary of War Pete Hegseth made a series of video morale calls from the Pentagon to service members, thanking the troops for their service and wishing them a happy Thanksgiving.",
+    "why": "",
+    "sectors": [
+      "policy"
+    ],
+    "type": "Policy & budget",
+    "companies": [],
+    "src": {
+      "t": "U.S. Department of War",
+      "u": "https://www.war.gov/News/News-Stories/Article/Article/4659678/hegseth-extends-thanksgiving-greetings-to-troops-deployed-at-home-abroad/",
+      "q": "primary"
+    },
+    "addedAt": "2026-11-26T22:42:59.256Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261126-taiwan-navy-receives-last-tuo-chiang-class-missile",
+    "d": "2026-11-26",
+    "title": "Taiwan Navy Receives Last Tuo Chiang-class Missile Corvettes",
+    "body": "ROCS Bao Jiang (PCG-632) was delivered by Lungteh Shipbuilding to the Republic of China Navy on Nov. 19, 2026. ROC Navy image.",
+    "why": "",
+    "sectors": [
+      "strike",
+      "sea",
+      "global"
+    ],
+    "type": "",
+    "companies": [
+      "Lungteh Shipbuilding"
+    ],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/26/taiwan-navy-receives-last-tuo-chiang-class-missile-corvettes",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T22:42:59.256Z",
+    "orgs": [
+      "Taiwan Navy",
+      "Lungteh Shipbuilding",
+      "Republic of China Navy"
+    ]
+  },
+  {
+    "id": "u-20261126-european-startup-osmos-x-begins-bodyguard-satellit",
+    "d": "2026-11-26",
+    "title": "European startup OSMOS X begins bodyguard satellite development to address European capability gap",
+    "body": "LONDON – A consortium of European space companies and research institutions has kicked off development of a dual-use orbital capture demonstrator aiming to address the European technology gap in space control and orbital defense.",
+    "why": "",
+    "sectors": [
+      "space",
+      "global"
+    ],
+    "type": "",
+    "companies": [
+      "OSMOS X"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/european-startup-osmos-x-begins-bodyguard-satellite-development-to-address-european-capability-gap/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T22:42:59.256Z",
+    "orgs": [
+      "OSMOS X"
+    ]
+  },
+  {
+    "id": "u-20261126-gao-on-how-the-defense-department-can-address-muni",
+    "d": "2026-11-26",
+    "title": "GAO on How the Defense Department can Address Munitions Shortages",
+    "body": "The following is the Nov. 19, 2026, Government Accountability Office report, DOD Munitions: Planning and Leadership Needed to Address Persistent Shortages. The report was submitted to the House of Representative's Committee on Armed Services.",
+    "why": "",
+    "sectors": [
+      "strike"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/26/gao-on-how-the-defense-department-can-address-munitions-shortages",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T22:42:59.256Z",
+    "orgs": [
+      "Department",
+      "Government Accountability Office",
+      "DOD",
+      "House of Representative",
+      "Committee on Armed Services"
+    ]
+  },
+  {
+    "id": "u-20261126-the-bare-knuckled-future-of-life-in-space-with-tim",
+    "d": "2026-11-26",
+    "title": "The ‘bare-knuckled’ future of life in space with Tim Marshall",
+    "body": "In this episode, Mike Gruss speaks with journalist and best-selling author Tim Marshall. They discuss how the war in Ukraine represented a wakeup call for how Europe and the United [ ].",
+    "why": "",
+    "sectors": [
+      "space",
+      "global"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/the-bare-knuckled-future-of-life-in-space-with-tim-marshall/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T22:42:59.256Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261126-china-prepares-for-weekend-shenzhou-23-return-laun",
+    "d": "2026-11-26",
+    "title": "China prepares for weekend Shenzhou-23 return, launches new Yaogan series",
+    "body": "HELSINKI — China is preparing to bring three astronauts, including Pakistan's first, back to Earth Nov. 29, while lofting a new series of Yaogan satellites Thursday.",
+    "why": "",
+    "sectors": [
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/china-prepares-for-weekend-shenzhou-23-return-launches-new-yaogan-series/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-26T22:42:59.256Z",
+    "orgs": []
+  },
+  {
     "id": "u-20261125-ukraine-says-rare-russian-aerospace-sensor-hit-in-",
     "d": "2026-11-25",
     "title": "Ukraine says rare Russian aerospace sensor hit in Smolensk",
