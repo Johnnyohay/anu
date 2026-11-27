@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-27",
+  "title": "Space Force reopens $13 billion satellite services program to new vendors",
+  "big": "9 new stories. The new stories are led by drones; the top five are mostly about counter-drone and drones.",
+  "stories": [
+    {
+      "tag": "Space",
+      "h": "Space Force reopens $13 billion satellite services program to new vendors",
+      "what": "SpaceX accounts for about 96% of nearly $1 billion in recorded obligations under the program.",
+      "you": "",
+      "ref": "u-20261127-space-force-reopens-13-billion-satellite-services-"
+    },
+    {
+      "tag": "Counter-drone & directed energy",
+      "h": "Rafael shows its laser in action at U.S.-Israel drone trials",
+      "what": "Israel's Rafael Advanced Defense Systems has released new footage of its laser weapon from Black Sands, the first joint U.S.-Israeli counter-drone trials held on Israeli soil. Don't believe us?",
+      "you": "",
+      "ref": "u-20261127-rafael-shows-its-laser-in-action-at-u-s-israel-dro"
+    },
+    {
+      "tag": "Drones & air autonomy",
+      "h": "Leonardo rolls out first M-346 jet for Italy’s Air Force stunt flying unit",
+      "what": "ROME — Italian defense giant Leonardo has rolled out the first of 15 M-346 jets due to take over stunt flying duties with the Italian Air Force's aerobatic team.",
+      "you": "",
+      "ref": "u-20261127-leonardo-rolls-out-first-m-346-jet-for-italy-s-air"
+    },
+    {
+      "tag": "Allies & theaters",
+      "h": "Canadian armored vehicles proven in Ukraine find new buyers",
+      "what": "Canadian armored vehicle maker Roshel has picked up two new orders for its Senator in Latin America in a single week: six armored personnel carriers for Guatemala's military and 24 vehicles for police in Rio de Janeiro.",
+      "you": "",
+      "ref": "u-20261127-canadian-armored-vehicles-proven-in-ukraine-find-n"
+    },
+    {
+      "tag": "Counter-drone & directed energy",
+      "h": "France kicks off defense-industry pact to build up counter-drone efforts",
+      "what": "PARIS — France kicked off an initiative with its defense industry to produce counter-drone systems, a new chapter in efforts to foster a local drone ecosystem through pacts with industry that bring together firms and military end users, cut procurement red…",
+      "you": "",
+      "ref": "u-20261127-france-kicks-off-defense-industry-pact-to-build-up"
+    }
+  ],
+  "watch": {
+    "h": "Stopgap funding expires: FY27 appropriations or another CR",
+    "why": "December 11. Decides whether DAWG's $54.6B and Golden Dome's growth become real money."
+  },
+  "idea": {
+    "h": "Contract intelligence and capture agent for small vendors",
+    "why": "An LLM agent that watches SAM.gov, DIU, OTA consortia, budget documents and portfolio acquisition executives, matches openings to a product, and drafts responses. Thousands of new vendors are navigating DAWG and the new acquisition rules; turning valuations into orders is the stated test."
+  },
+  "clips": [],
+  "auto": true
+}

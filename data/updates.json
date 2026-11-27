@@ -1,5 +1,205 @@
 [
   {
+    "id": "u-20261127-space-force-reopens-13-billion-satellite-services-",
+    "d": "2026-11-27",
+    "title": "Space Force reopens $13 billion satellite services program to new vendors",
+    "body": "SpaceX accounts for about 96% of nearly $1 billion in recorded obligations under the program.",
+    "why": "",
+    "sectors": [
+      "space"
+    ],
+    "type": "",
+    "companies": [
+      "SpaceX"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/space-force-reopens-13-billion-satellite-services-program-to-new-vendors/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T14:06:31.601Z",
+    "orgs": [
+      "Space Force",
+      "SpaceX"
+    ]
+  },
+  {
+    "id": "u-20261127-rafael-shows-its-laser-in-action-at-u-s-israel-dro",
+    "d": "2026-11-27",
+    "title": "Rafael shows its laser in action at U.S.-Israel drone trials",
+    "body": "Israel's Rafael Advanced Defense Systems has released new footage of its laser weapon from Black Sands, the first joint U.S.-Israeli counter-drone trials held on Israeli soil. Don't believe us?",
+    "why": "",
+    "sectors": [
+      "cuas",
+      "air",
+      "global"
+    ],
+    "type": "",
+    "companies": [
+      "Rafael"
+    ],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/rafael-shows-its-laser-in-action-at-u-s-israel-drone-trials/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T14:06:31.601Z",
+    "orgs": [
+      "Rafael Advanced Defense Systems"
+    ]
+  },
+  {
+    "id": "u-20261127-leonardo-rolls-out-first-m-346-jet-for-italy-s-air",
+    "d": "2026-11-27",
+    "title": "Leonardo rolls out first M-346 jet for Italy’s Air Force stunt flying unit",
+    "body": "ROME — Italian defense giant Leonardo has rolled out the first of 15 M-346 jets due to take over stunt flying duties with the Italian Air Force's aerobatic team.",
+    "why": "",
+    "sectors": [
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/27/leonardo-rolls-out-first-m-346-jet-for-italys-air-force-stunt-flying-unit/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T14:06:31.601Z",
+    "orgs": [
+      "Air Force",
+      "ROME",
+      "Italian"
+    ]
+  },
+  {
+    "id": "u-20261127-france-kicks-off-defense-industry-pact-to-build-up",
+    "d": "2026-11-27",
+    "title": "France kicks off defense-industry pact to build up counter-drone efforts",
+    "body": "PARIS — France kicked off an initiative with its defense industry to produce counter-drone systems, a new chapter in efforts to foster a local drone ecosystem through pacts with industry that bring together firms and military end users, cut procurement red…",
+    "why": "",
+    "sectors": [
+      "cuas",
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/global/europe/2026/11/27/france-kicks-off-defense-industry-pact-to-build-up-counter-drone-efforts/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T14:06:31.601Z",
+    "orgs": [
+      "PARIS"
+    ]
+  },
+  {
+    "id": "u-20261127-rocket-lab-sets-electron-launch-record-with-synspe",
+    "d": "2026-11-27",
+    "title": "Rocket Lab sets Electron launch record with Synspective mission",
+    "body": "Rocket Lab set a new record for most Electron launches in a year with the flight of a Japanese radar-imaging satellite Nov. 26.",
+    "why": "",
+    "sectors": [
+      "space"
+    ],
+    "type": "",
+    "companies": [
+      "Rocket Lab"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/rocket-lab-sets-electron-launch-record-with-synspective-mission/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T14:06:31.601Z",
+    "orgs": [
+      "Rocket Lab"
+    ]
+  },
+  {
+    "id": "u-20261127-ukraine-spots-new-russian-jet-drone",
+    "d": "2026-11-27",
+    "title": "Ukraine spots new Russian jet drone",
+    "body": "A new jet-powered Russian drone has turned up on the front lines in Ukraine, according to Serhii Flash Beskrestnov, a radio technology specialist who advises Ukrainian President Volodymyr Zelenskyy on defense technology.",
+    "why": "",
+    "sectors": [
+      "air",
+      "global",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/ukraine-spots-new-russian-jet-drone/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T14:06:31.601Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261127-french-troops-get-first-homegrown-interceptor-dron",
+    "d": "2026-11-27",
+    "title": "French troops get first homegrown interceptor drones",
+    "body": "France's armed forces have received their first homegrown interceptor drones, small aircraft that hunt down enemy drones at up to 350 km/h (217 mph) and knock them out by ramming them, with no explosive charge.",
+    "why": "",
+    "sectors": [
+      "air",
+      "cuas"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/french-troops-get-first-homegrown-interceptor-drones/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T14:06:31.601Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261127-canadian-armored-vehicles-proven-in-ukraine-find-n",
+    "d": "2026-11-27",
+    "title": "Canadian armored vehicles proven in Ukraine find new buyers",
+    "body": "Canadian armored vehicle maker Roshel has picked up two new orders for its Senator in Latin America in a single week: six armored personnel carriers for Guatemala's military and 24 vehicles for police in Rio de Janeiro.",
+    "why": "",
+    "sectors": [
+      "global",
+      "ground"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/canadian-armored-vehicles-proven-in-ukraine-find-new-buyers/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T14:06:31.601Z",
+    "orgs": [
+      "Roshel"
+    ]
+  },
+  {
+    "id": "u-20261127-chinese-startup-publishes-geo-tracking-report-from",
+    "d": "2026-11-27",
+    "title": "Chinese startup publishes GEO tracking report from global telescope network, including Chinese and U.S. military satellites",
+    "body": "HELSINKI — A Beijing startup has released a year-long survey of activity in geostationary orbit, based on observations from what it describes as a global telescope network.",
+    "why": "",
+    "sectors": [
+      "space",
+      "adversary"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/chinese-startup-publishes-geo-tracking-report-from-global-telescope-network-including-chinese-and-u-s-military-satellites/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T14:06:31.601Z",
+    "orgs": []
+  },
+  {
     "id": "u-20261126-pratt-whitney-gets-2-5-billion-to-service-f-35-jet",
     "d": "2026-11-26",
     "title": "Pratt Whitney gets $2.5 billion to service F-35 jet engines",
