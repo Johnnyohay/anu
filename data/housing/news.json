@@ -104,6 +104,80 @@
   }
  },
  {
+  "id": "h-20261127-will-the-anthropic-ipo-supercharge-san-francisco-s",
+  "d": "2026-11-27",
+  "title": "Will the Anthropic IPO supercharge San Francisco’s already-hot housing market?",
+  "body": "The median single-family price rose 29% to $2.39M in October, and 86% sold above asking.",
+  "topics": [],
+  "states": [
+   "CA"
+  ],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/anthropic-ipo-sf-housing/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261127-the-referral-source-real-estate-agents-overlook-is",
+  "d": "2026-11-27",
+  "title": "The referral source real estate agents overlook is sitting in the next office",
+  "body": "Consistent outreach to 3 to 5 agents monthly can create two-way deal flow across markets over time",
+  "topics": [],
+  "states": [],
+  "src": {
+   "t": "HousingWire",
+   "u": "https://www.housingwire.com/articles/build-agent-referral-network/",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261127-highest-new-home-sales-in-nearly-a-year",
+  "d": "2026-11-27",
+  "title": "Highest New Home Sales in Nearly a Year",
+  "body": "New home sales continued their recovery in October, returning to levels not seen since the start of 2026.",
+  "topics": [
+   "sales",
+   "construction"
+  ],
+  "states": [],
+  "src": {
+   "t": "Mortgage News Daily",
+   "u": "https://www.mortgagenewsdaily.com/news/11272026-new-home-sales",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261127-purchase-applications-post-strongest-week-since-se",
+  "d": "2026-11-27",
+  "title": "Purchase Applications Post Strongest Week Since September",
+  "body": "Mortgage applications rebounded as rates eased over the course of the week, despite a slight increase in the weekly average. The Mortgage Bankers Association (MBA) reported a 6.1% increase in total application volume for the week ending November 20, 2026.",
+  "topics": [
+   "rates"
+  ],
+  "states": [],
+  "src": {
+   "t": "Mortgage News Daily",
+   "u": "https://www.mortgagenewsdaily.com/news/11272026-mortgage-applications-mba",
+   "q": "news"
+  }
+ },
+ {
+  "id": "h-20261127-home-price-appreciation-remains-positive",
+  "d": "2026-11-27",
+  "title": "Home Price Appreciation Remains Positive",
+  "body": "Home prices continued to post modest annual gains in September. The S&P Cotality Case-Shiller National Home Price Index rose 2.1% year over year in September, matching August's gain.",
+  "topics": [
+   "prices"
+  ],
+  "states": [],
+  "src": {
+   "t": "Mortgage News Daily",
+   "u": "https://www.mortgagenewsdaily.com/news/11272026-case-shiller-fhfa-home-prices-prices-apprecia",
+   "q": "news"
+  }
+ },
+ {
   "id": "h-20261126-scott-galloway-stop-being-an-earner-start-being-an",
   "d": "2026-11-26",
   "title": "Scott Galloway: Stop Being an Earner, Start Being an Owner",

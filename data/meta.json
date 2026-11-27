@@ -69,9 +69,9 @@
       ]
     }
   ],
-  "collectedAt": "2026-11-27T14:06:31.601Z",
+  "collectedAt": "2026-11-27T22:26:10.702Z",
   "feedHealth": {
-    "checkedAt": "2026-11-27T14:06:31.601Z",
+    "checkedAt": "2026-11-27T22:26:10.702Z",
     "flags": [
       {
         "name": "ExecutiveGov",
@@ -79,6 +79,6 @@
       }
     ]
   },
-  "week": "462 stories since 2026-11-13, led by drones (109), space (55), ships (49).",
+  "week": "474 stories since 2026-11-13, led by drones (110), space (57), ships (51).",
   "weekAsOf": "2026-11-27"
 }

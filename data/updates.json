@@ -200,6 +200,273 @@
     "orgs": []
   },
   {
+    "id": "u-20261127-80-000-tons-of-libert",
+    "d": "2026-11-27",
+    "title": "80,000 Tons of Liberté",
+    "body": "PARIS — The namesake of France's next nuclear aircraft carrier isn't a place or a person. It's an idea.",
+    "why": "",
+    "sectors": [
+      "sea"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "USNI News",
+      "u": "https://news.usni.org/2026/11/27/80000-tons-of-liberte",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T22:26:10.702Z",
+    "orgs": [
+      "Liberté"
+    ]
+  },
+  {
+    "id": "u-20261127-germany-s-dlr-awards-airbus-6-5-million-for-in-orb",
+    "d": "2026-11-27",
+    "title": "Germany’s DLR awards Airbus $6.5 million for in-orbit refueling experiment on the ISS",
+    "body": "JOHANNESBURG — The German Space Agency at DLR has awarded Airbus Defence and Space a 5.94 million euro ($6.51 million) contract to continue the development of an experiment that will support the advancement of in-orbit refueling technologies.",
+    "why": "",
+    "sectors": [
+      "global",
+      "space"
+    ],
+    "type": "Contract",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/germanys-dlr-awards-airbus-6-5-million-for-in-orbit-refueling-experiment-on-the-iss/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T22:26:10.702Z",
+    "orgs": [
+      "DLR",
+      "German Space Agency",
+      "Airbus Defence"
+    ]
+  },
+  {
+    "id": "u-20261127-bae-h-gglunds-lands-record-6b-deal-for-400-cv90s-f",
+    "d": "2026-11-27",
+    "title": "BAE Hägglunds lands record $6B deal for 400+ CV90s from five NATO nations",
+    "body": "The joint procurement by Finland, Lithuania, the Netherlands, Norway and Sweden is expressly linked to the threat from Russia.",
+    "why": "",
+    "sectors": [
+      "global"
+    ],
+    "type": "",
+    "companies": [
+      "BAE Hägglunds"
+    ],
+    "src": {
+      "t": "Breaking Defense",
+      "u": "https://breakingdefense.com/2026/11/bae-hagglunds-lands-record-6b-deal-for-400-cv90s-from-five-nato-nations/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T22:26:10.702Z",
+    "orgs": [
+      "BAE Hägglunds",
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261127-white-house-seeks-5-billion-for-golden-dome-in-sto",
+    "d": "2026-11-27",
+    "title": "White House seeks $5 billion for Golden Dome in stopgap spending bill",
+    "body": "Administration warns Golden Dome production at risk without funding fix.",
+    "why": "",
+    "sectors": [
+      "missiledef"
+    ],
+    "type": "",
+    "companies": [
+      "Golden Dome"
+    ],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/white-house-seeks-5-billion-for-golden-dome-in-stopgap-spending-bill/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T22:26:10.702Z",
+    "orgs": [
+      "White",
+      "Golden Dome",
+      "Administration"
+    ]
+  },
+  {
+    "id": "u-20261127-governments-invest-71-8b-in-space-defense-as-milit",
+    "d": "2026-11-27",
+    "title": "Governments Invest $71.8B in Space Defense as Militarization of Space Accelerates",
+    "body": "Paris, France | November 2026 — Novaspace's Space Defense & Security, 2nd Edition finds that governments invested approximately $71.8 billion in space defense and security activities globally in 2025, reflecting [ ].",
+    "why": "",
+    "sectors": [
+      "space"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/governments-invest-71-8b-in-space-defense-as-militarization-of-space-accelerates/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T22:26:10.702Z",
+    "orgs": [
+      "Novaspace",
+      "Space Defense & Security"
+    ]
+  },
+  {
+    "id": "u-20261127-hackers-breach-us-air-force-flagship-cloud-one-com",
+    "d": "2026-11-27",
+    "title": "Hackers breach US Air Force flagship Cloud One computing platform",
+    "body": "Hackers have breached the U.S. Air Force's flagship cloud computing platform, three people familiar with the matter told Reuters, in a development that could jeopardize a vast swathe of sensitive tactical, personnel and logistics data.",
+    "why": "",
+    "sectors": [
+      "cyber",
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defense News",
+      "u": "https://www.defensenews.com/pentagon/2026/11/27/hackers-breach-us-air-force-flagship-cloud-one-computing-platform/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T22:26:10.702Z",
+    "orgs": [
+      "US Air Force",
+      "U.S. Air Force",
+      "Reuters"
+    ]
+  },
+  {
+    "id": "u-20261127-unique-aim-9x-sidewinders-now-seen-on-usaf-f-35as-",
+    "d": "2026-11-27",
+    "title": "Unique AIM-9X Sidewinders Now Seen On USAF F-35As In The Middle East",
+    "body": "U.S. Air Force F-35A Joint Strike Fighters in the Middle East have started carrying AIM-9X Sidewinders painted almost entirely white or light gray. This is a scheme that does not appear to have been previously seen on these missiles.",
+    "why": "",
+    "sectors": [
+      "air",
+      "strike"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/air/unique-aim-9x-sidewinders-now-seen-on-usaf-f-35as-in-the-middle-east",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T22:26:10.702Z",
+    "orgs": [
+      "U.S. Air Force"
+    ]
+  },
+  {
+    "id": "u-20261127-europe-bets-big-on-cv90-armored-fighting-vehicle",
+    "d": "2026-11-27",
+    "title": "Europe Bets Big On CV90 Armored Fighting Vehicle",
+    "body": "Five European NATO members have signed a landmark agreement to jointly procure more than 400 CV90 series infantry fighting vehicles, in a deal valued at approximately $6 billion.",
+    "why": "",
+    "sectors": [
+      "global",
+      "ground"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/land/europe-bets-big-on-cv90-armored-fighting-vehicle",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T22:26:10.702Z",
+    "orgs": [
+      "NATO"
+    ]
+  },
+  {
+    "id": "u-20261127-china-s-liaoning-aircraft-carrier-returns-to-south",
+    "d": "2026-11-27",
+    "title": "China’s Liaoning aircraft carrier returns to South China Sea",
+    "body": "China's Type 001-class aircraft carrier Liaoning (CV-16) is back in the South China Sea after more than a month in the Philippine Sea, according to satellite tracking by U.S. maritime intelligence firm SynMax.",
+    "why": "",
+    "sectors": [
+      "sea",
+      "space",
+      "adversary",
+      "air"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/chinas-liaoning-aircraft-carrier-returns-to-south-china-sea/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T22:26:10.702Z",
+    "orgs": [
+      "SynMax"
+    ]
+  },
+  {
+    "id": "u-20261127-lithuania-signs-1-4-billion-deal-for-100-cv90-figh",
+    "d": "2026-11-27",
+    "title": "Lithuania signs $1.4 billion deal for 100 CV90 fighting vehicles",
+    "body": "Lithuania has signed a €1.3 billion ($1.42 billion) deal for 100 CV90 MkIV infantry fighting vehicles, and it will be the first of five countries in a joint order to receive them.",
+    "why": "",
+    "sectors": [
+      "ground"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "Defence Blog",
+      "u": "https://defence-blog.com/lithuania-signs-1-4-billion-deal-for-100-cv90-fighting-vehicles/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T22:26:10.702Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261127-sneak-down-the-chimney-undetected-in-this-newly-up",
+    "d": "2026-11-27",
+    "title": "Sneak Down The Chimney Undetected In This Newly Upgraded Very Stealthy Christmas Tree T-Shirt",
+    "body": "It's that time of year again! After Santa's sleigh came out of depot maintenance for another hypersonic flight around the globe, the elves are calibrating its radar and replacing the bulb in Rudolph's beacon. That's right, we are back in the holiday swing.",
+    "why": "",
+    "sectors": [
+      "strike",
+      "sensing"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "The War Zone",
+      "u": "https://www.twz.com/uncategorized/sneak-down-the-chimney-undetected-in-this-newly-upgraded-very-stealthy-christmas-tree-t-shirt",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T22:26:10.702Z",
+    "orgs": []
+  },
+  {
+    "id": "u-20261127-engineers-develop-workaround-for-bepicolombo-softw",
+    "d": "2026-11-27",
+    "title": "Engineers develop workaround for BepiColombo software issue",
+    "body": "The BepiColombo mission has developed a workaround for the software issue that cut short its Mercury orbit insertion burn.",
+    "why": "",
+    "sectors": [
+      "space",
+      "ai"
+    ],
+    "type": "",
+    "companies": [],
+    "src": {
+      "t": "SpaceNews",
+      "u": "https://spacenews.com/engineers-develop-workaround-for-bepicolombo-software-issue/",
+      "q": "news"
+    },
+    "addedAt": "2026-11-27T22:26:10.702Z",
+    "orgs": []
+  },
+  {
     "id": "u-20261126-pratt-whitney-gets-2-5-billion-to-service-f-35-jet",
     "d": "2026-11-26",
     "title": "Pratt Whitney gets $2.5 billion to service F-35 jet engines",
